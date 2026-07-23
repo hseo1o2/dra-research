@@ -1,0 +1,43 @@
+# Secrets / credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+*.egg
+
+# Data (too large / publicly downloadable from HuggingFace)
+data/
+
+# Upstream library (separate git repo — install via: cd open_deep_research && uv sync)
+open_deep_research/
+
+# Experiment outputs (generated at runtime)
+artifacts/
+runs/
+outputs/
+
+# HuggingFace cache
+.cache/
+
+# Obsidian device-local state
+research-log/.obsidian/workspace.json
+research-log/.obsidian/workspace-mobile.json
+research-log/.obsidian/cache/
+
+# Claude Code internal state
+.claude/
