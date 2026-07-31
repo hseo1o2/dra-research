@@ -26,6 +26,13 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parent.parent
 
+# Make `scripts` and `open_deep_research.src` importable when invoked directly.
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+_ODR_SRC = str(ROOT / "open_deep_research" / "src")
+if _ODR_SRC not in sys.path:
+    sys.path.insert(0, _ODR_SRC)
+
 try:
     from dotenv import load_dotenv
     load_dotenv(ROOT / ".env")
