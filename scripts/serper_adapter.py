@@ -44,7 +44,7 @@ SEARCH_TIMEOUT_SEC = 120
 
 _SERPER_URL = "https://google.serper.dev/search"
 _SEARCH_SCHEMA_VERSION = "dra_serper_search_v1"
-_LEDGER_SCHEMA_VERSION = 1
+_LEDGER_SCHEMA_VERSION = 2
 _RUN_ID_PATTERN = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$")
 _ACTIVE_ADAPTER: ContextVar[SerperAdapter | None] = ContextVar(
     "dra_active_serper_adapter",
@@ -75,6 +75,7 @@ class FailureCode:
     INVALID_JSON = "invalid_json"
     EMPTY_ORGANIC = "empty_organic"
     MALFORMED_ORGANIC = "malformed_organic"
+    NO_NEW_SOURCES = "no_new_sources"
     INTERNAL_ERROR = "internal_error"
 
 
@@ -153,7 +154,7 @@ class GlobalLedger:
 
     A query slot is reserved before a network request and settled immediately
     after the response. This prevents concurrent report runs from exceeding the
-    2,400-success hard stop. A killed process can leave a conservative stale
+    2,400-request hard stop. A killed process can leave a conservative stale
     reservation, which blocks new calls rather than allowing an overshoot.
     """
 
@@ -168,6 +169,7 @@ class GlobalLedger:
     def _default_data() -> dict[str, Any]:
         return {
             "schema_version": _LEDGER_SCHEMA_VERSION,
+            "attempted_queries": 0,
             "successful_queries": 0,
             "reservations": {},
             "runs": [],
@@ -178,21 +180,42 @@ class GlobalLedger:
             return self._default_data()
         with open(self.path, encoding="utf-8") as handle:
             data = json.load(handle)
-        # Migrate the initial adapter ledger without losing recorded usage.
-        data.setdefault("schema_version", _LEDGER_SCHEMA_VERSION)
+        on_disk = data.get("schema_version")
+        if not isinstance(on_disk, int):
+            raise ValueError(
+                f"Global ledger has unreadable schema_version: {on_disk!r}"
+            )
+        if on_disk > _LEDGER_SCHEMA_VERSION:
+            raise ValueError(
+                f"Global ledger schema_version {on_disk} is newer than "
+                f"supported {_LEDGER_SCHEMA_VERSION}; upgrade the code first"
+            )
+        # Migrate v1 → v2: v1 tracked only successful responses. Conservatively
+        # treat those as the minimum number of requests already consumed.
+        if on_disk == 1:
+            data.setdefault(
+                "attempted_queries",
+                int(data.get("successful_queries", 0)),
+            )
+        data["schema_version"] = _LEDGER_SCHEMA_VERSION
         data.setdefault("reservations", {})
         data.setdefault("runs", [])
         return data
 
     @staticmethod
     def _validate(data: dict[str, Any]) -> None:
+        attempted = data.get("attempted_queries")
         successful = data.get("successful_queries")
         reservations = data.get("reservations")
         runs = data.get("runs")
+        if not isinstance(attempted, int) or attempted < 0:
+            raise ValueError("Invalid global ledger: attempted_queries")
         if not isinstance(successful, int) or successful < 0:
             raise ValueError("Invalid global ledger: successful_queries")
-        if successful > GLOBAL_QUERY_HARD_STOP:
+        if attempted > GLOBAL_QUERY_HARD_STOP:
             raise ValueError("Global ledger already exceeds the hard stop")
+        if successful > attempted:
+            raise ValueError("Global ledger successes exceed attempts")
         if not isinstance(reservations, dict) or not isinstance(runs, list):
             raise ValueError("Invalid global ledger structure")
 
@@ -217,6 +240,11 @@ class GlobalLedger:
         with self._locked_data() as data:
             return int(data["successful_queries"])
 
+    @property
+    def attempted_queries(self) -> int:
+        with self._locked_data() as data:
+            return int(data["attempted_queries"])
+
     def reserve(self, run_id: str, requested: int) -> tuple[str | None, int]:
         """Reserve up to ``requested`` possible successful query slots."""
         if requested <= 0:
@@ -229,7 +257,7 @@ class GlobalLedger:
             available = max(
                 0,
                 GLOBAL_QUERY_HARD_STOP
-                - int(data["successful_queries"])
+                - int(data["attempted_queries"])
                 - reserved,
             )
             granted = min(requested, available)
@@ -243,19 +271,28 @@ class GlobalLedger:
             }
             return reservation_id, granted
 
-    def settle(self, reservation_id: str | None, successful: int) -> None:
-        """Commit successful queries and release the remainder of a reservation."""
+    def settle(
+        self,
+        reservation_id: str | None,
+        *,
+        attempted: int,
+        successful: int,
+    ) -> None:
+        """Commit sent requests and successes, releasing unused reservations."""
         if reservation_id is None:
-            if successful:
-                raise ValueError("Cannot settle success without a reservation")
+            if attempted or successful:
+                raise ValueError("Cannot settle usage without a reservation")
             return
         with self._locked_data() as data:
             reservation = data["reservations"].pop(reservation_id, None)
             if reservation is None:
                 raise ValueError(f"Unknown ledger reservation: {reservation_id}")
             reserved = int(reservation["count"])
-            if successful < 0 or successful > reserved:
+            if attempted < 0 or attempted > reserved:
+                raise ValueError("Attempted count exceeds reserved query slots")
+            if successful < 0 or successful > attempted:
                 raise ValueError("Successful count exceeds reserved query slots")
+            data["attempted_queries"] += attempted
             data["successful_queries"] += successful
 
     def record_run(self, run_id: str, snapshot: dict[str, Any]) -> None:
@@ -270,6 +307,12 @@ class GlobalLedger:
             "unique_urls": snapshot["run_unique_urls"],
             "global_successful_queries_at_start": snapshot[
                 "global_successful_queries_at_start"
+            ],
+            "global_attempted_queries_at_start": snapshot[
+                "global_attempted_queries_at_start"
+            ],
+            "global_attempted_queries_at_finalize": snapshot[
+                "global_attempted_queries"
             ],
             "global_successful_queries_at_finalize": snapshot[
                 "global_successful_queries"
@@ -292,6 +335,8 @@ class SerperAdapter:
         run_id: str,
         global_ledger: GlobalLedger,
         raw_dir: Path,
+        *,
+        max_queries_per_call: int = QUERIES_PER_REPORT_MAX,
     ):
         if not _RUN_ID_PATTERN.fullmatch(run_id):
             raise ValueError(
@@ -315,6 +360,8 @@ class SerperAdapter:
         self._query_sequence = 0
         self._finalized = False
         self._global_success_at_start = self._global.successful_queries
+        self._global_attempted_at_start = self._global.attempted_queries
+        self._max_queries_per_call = max(1, int(max_queries_per_call))
         # Serialize tool invocations. Queries inside one tool call remain parallel.
         self._search_lock = asyncio.Lock()
 
@@ -365,7 +412,10 @@ class SerperAdapter:
 
         report_remaining = max(
             0,
-            QUERIES_PER_REPORT_MAX - self._run_attempted,
+            min(
+                QUERIES_PER_REPORT_MAX - self._run_attempted,
+                self._max_queries_per_call,
+            ),
         )
         report_accepted = valid[:report_remaining]
         report_rejected = valid[report_remaining:]
@@ -421,7 +471,11 @@ class SerperAdapter:
                     if record["status"] == "ok":
                         successful += 1
         finally:
-            self._global.settle(reservation_id, successful)
+            self._global.settle(
+                reservation_id,
+                attempted=len(executable),
+                successful=successful,
+            )
 
         self._commit_records(records)
         return self._serialize_tool_result(records)
@@ -564,6 +618,16 @@ class SerperAdapter:
                 break
             self._unique_urls.add(url)
             selected.append(source)
+
+        if not selected:
+            return self._failure_record(
+                query,
+                FailureCode.NO_NEW_SOURCES,
+                attempted=True,
+                message="All organic URLs were duplicates or the URL cap was reached",
+                raw_response=response,
+                query_sequence=query_sequence,
+            )
 
         record = self._base_record(
             query,
@@ -775,7 +839,10 @@ class SerperAdapter:
             "run_unique_urls": len(self._unique_urls),
             "global_successful_queries_at_start": self._global_success_at_start,
             "global_successful_queries": self._global.successful_queries,
+            "global_attempted_queries_at_start": self._global_attempted_at_start,
+            "global_attempted_queries": self._global.attempted_queries,
             "report_query_cap": QUERIES_PER_REPORT_MAX,
+            "report_max_queries_per_call": self._max_queries_per_call,
             "report_unique_url_cap": UNIQUE_URLS_PER_REPORT_MAX,
             "global_query_hard_stop": GLOBAL_QUERY_HARD_STOP,
         }

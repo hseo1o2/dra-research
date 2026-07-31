@@ -24,7 +24,7 @@ Serper adapter를 구현하고 `organic[]`을 query/title/link/domain/rank/snipp
 
 - report당 최대 7 queries
 - 계획 최대 2,205 queries
-- global hard stop 2,400 successful queries
+- global hard stop 2,400 attempted network queries
 - 무료 2,500회 초과 및 $50 Starter 자동 구매 금지
 
 ## Risks
@@ -41,4 +41,3 @@ Serper adapter를 구현하고 `organic[]`을 query/title/link/domain/rank/snipp
 
 - [[2026-07-22]]
 - [Notion research specification](https://app.notion.com/p/396780c0050b8143a21fdfbbb1d613fc)
-

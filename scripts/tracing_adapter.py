@@ -26,7 +26,7 @@ from typing import Any, Iterator
 from langchain_core.messages import AIMessage, BaseMessage, ToolMessage
 
 
-ARTIFACT_SCHEMA_VERSION = "dra_trace_v1"
+ARTIFACT_SCHEMA_VERSION = "dra_trace_v2"
 SEARCH_TOOL_NAMES = {"serper_search", "tavily_search"}
 ERROR_REPORT_PREFIXES = (
     "Error generating final report:",
@@ -88,6 +88,21 @@ def _iter_messages(value: Any, seen: set[int] | None = None) -> Iterator[BaseMes
             yield from _iter_messages(child, seen)
 
 
+def _extract_text_content(value: Any) -> str | None:
+    """Return plain text from a string or a list of Gemini content blocks."""
+    if isinstance(value, str):
+        return value.strip() or None
+    if isinstance(value, list):
+        parts = [
+            item.get("text", "")
+            for item in value
+            if isinstance(item, dict) and item.get("type") == "text"
+        ]
+        text = "".join(parts).strip()
+        return text or None
+    return None
+
+
 def _find_field(value: Any, key: str, seen: set[int] | None = None) -> Any:
     """Find a named value in dicts or LangGraph ``Command.update`` payloads."""
     if seen is None:
@@ -141,6 +156,7 @@ class ArtifactBundle:
     search_trace: list[dict[str, Any]] = field(default_factory=list)
     compressed_research: list[dict[str, Any]] = field(default_factory=list)
     final_report: str | None = None
+    execution_config: dict[str, Any] = field(default_factory=dict)
     token_ledger: dict[str, Any] = field(default_factory=dict)
     capture_completeness: dict[str, Any] = field(default_factory=dict)
     execution_error: str | None = None
@@ -165,6 +181,7 @@ class ArtifactBundle:
                 key=lambda item: item["topic_id"],
             ),
             "final_report": self.final_report or "",
+            "execution_config": self.execution_config,
             "token_ledger": self.token_ledger,
             "capture_completeness": self.capture_completeness,
             "execution_error": self.execution_error,
@@ -188,6 +205,7 @@ class DRATracer:
         output_dir: Path,
         *,
         search_adapter: Any | None = None,
+        execution_config: dict[str, Any] | None = None,
     ):
         if not _RUN_ID_PATTERN.fullmatch(run_id):
             raise ValueError(
@@ -197,9 +215,13 @@ class DRATracer:
         self.output_dir = output_dir
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self.search_adapter = search_adapter
-        self._bundle = ArtifactBundle(run_id=run_id)
+        self._bundle = ArtifactBundle(
+            run_id=run_id,
+            execution_config=dict(execution_config or {}),
+        )
 
         self._topic_counter = 0
+        self._topic_id_by_text: dict[str, str] = {}
         self._unassigned_topic_ids_by_text: dict[str, deque[str]] = defaultdict(deque)
         self._assigned_topic_ids: set[str] = set()
         self._topic_by_researcher_run: dict[str, str] = {}
@@ -293,14 +315,14 @@ class DRATracer:
         if node_name == "supervisor":
             self._capture_supervisor_topics(output)
 
-        if node_name == "compress_research":
-            compressed = _find_field(output, "compressed_research")
+        compressed = _find_field(output, "compressed_research")
+        if isinstance(compressed, str) and compressed.strip():
             topic_id = self._topic_id_for_event(event)
             topic_text = _find_field(data.get("input"), "research_topic")
+            if topic_id is None and isinstance(topic_text, str):
+                topic_id = self._topic_id_by_text.get(topic_text.strip())
             if (
                 topic_id is not None
-                and isinstance(compressed, str)
-                and compressed.strip()
                 and not compressed.startswith(ERROR_REPORT_PREFIXES)
             ):
                 self._compressed_by_topic[topic_id] = {
@@ -313,10 +335,13 @@ class DRATracer:
                     "compressed_research": compressed.strip(),
                 }
 
-        if node_name == "final_report_generation":
-            final_report = _find_field(output, "final_report")
-            if isinstance(final_report, str) and final_report.strip():
-                self._bundle.final_report = final_report.strip()
+        final_report_raw = _find_field(output, "final_report")
+        final_report_text = _extract_text_content(final_report_raw)
+        if final_report_text:
+            is_error = final_report_text.startswith(ERROR_REPORT_PREFIXES)
+            is_better = node_name == "final_report_generation" or not self._bundle.final_report
+            if not is_error and is_better:
+                self._bundle.final_report = final_report_text
 
     def _capture_supervisor_topics(self, value: Any) -> None:
         for message in _iter_messages(value):
@@ -339,8 +364,12 @@ class DRATracer:
                 self._register_topic(topic_text, tool_call_id)
 
     def _register_topic(self, topic_text: str, tool_call_id: str = "") -> str:
+        existing = self._topic_id_by_text.get(topic_text)
+        if existing is not None:
+            return existing
         self._topic_counter += 1
         topic_id = f"topic_{self._topic_counter:03d}"
+        self._topic_id_by_text[topic_text] = topic_id
         # The tool-call ID is internal only; it is removed before serialization.
         self._bundle.research_topics.append(
             {
@@ -353,6 +382,9 @@ class DRATracer:
         return topic_id
 
     def _assign_topic(self, topic_text: str) -> str:
+        existing = self._topic_id_by_text.get(topic_text)
+        if existing is not None and existing in self._assigned_topic_ids:
+            return existing
         candidates = self._unassigned_topic_ids_by_text[topic_text]
         while candidates and candidates[0] in self._assigned_topic_ids:
             candidates.popleft()
@@ -663,15 +695,17 @@ class DRATracer:
             item["status"] in {"ok", "failure"}
             for item in self._bundle.search_trace
         )
-        successful_queries_have_sources = any(
-            item["status"] == "ok" and item["sources"]
+        topics_with_sources = {
+            item["topic_id"]
             for item in self._bundle.search_trace
-        )
+            if item["status"] == "ok" and item["sources"]
+        }
+        every_topic_has_sources = bool(topic_ids) and topic_ids <= topics_with_sources
         self._bundle.capture_completeness = {
             "research_brief": bool(self._bundle.research_brief),
             "research_topics_ordered": bool(topic_ids),
             "search_query_and_source": (
-                search_terminal and successful_queries_have_sources
+                search_terminal and every_topic_has_sources
             ),
             "compressed_research_per_topic": (
                 bool(topic_ids) and compressed_ids == topic_ids
@@ -705,6 +739,7 @@ REQUIRED_KEYS = {
     "search_trace",
     "compressed_research",
     "final_report",
+    "execution_config",
     "token_ledger",
     "capture_completeness",
 }
@@ -741,6 +776,51 @@ def validate_artifact_data(data: Any) -> dict[str, list[str]]:
             schema_errors.append(f"{key} must be a list")
     if not isinstance(data["final_report"], str):
         schema_errors.append("final_report must be a string")
+    execution_config = data["execution_config"]
+    if not isinstance(execution_config, dict):
+        schema_errors.append("execution_config must be an object")
+    else:
+        required_execution_keys = {
+            "generation_seed",
+            "manifest_sha256",
+            "models",
+            "prompt_sha256",
+            "service_tier",
+            "timeout_sec",
+        }
+        missing_execution = sorted(
+            required_execution_keys - set(execution_config)
+        )
+        schema_errors.extend(
+            f"execution_config missing key: {key}"
+            for key in missing_execution
+        )
+        if execution_config.get("service_tier") not in ("flex", "default"):
+            schema_errors.append(
+                "execution_config.service_tier must be 'flex' or 'default'"
+            )
+        if not isinstance(execution_config.get("generation_seed"), int):
+            schema_errors.append(
+                "execution_config.generation_seed must be an integer"
+            )
+        if (
+            not isinstance(execution_config.get("timeout_sec"), int)
+            or execution_config.get("timeout_sec", 0) <= 0
+        ):
+            schema_errors.append(
+                "execution_config.timeout_sec must be a positive integer"
+            )
+        for hash_key in ("manifest_sha256", "prompt_sha256"):
+            value = execution_config.get(hash_key)
+            if (
+                not isinstance(value, str)
+                or not re.fullmatch(r"[0-9a-f]{64}", value)
+            ):
+                schema_errors.append(
+                    f"execution_config.{hash_key} must be SHA-256"
+                )
+        if not isinstance(execution_config.get("models"), dict):
+            schema_errors.append("execution_config.models must be an object")
     if not isinstance(data["token_ledger"], dict):
         schema_errors.append("token_ledger must be an object")
     if schema_errors:
@@ -886,12 +966,21 @@ def validate_artifact_data(data: Any) -> dict[str, list[str]]:
         completeness_errors.append("research_topics not captured")
     if not data["search_trace"]:
         completeness_errors.append("search query not captured")
-    if not any(
-        item.get("status") == "ok" and item.get("sources")
+    topics_with_sources = {
+        item.get("topic_id")
         for item in data["search_trace"]
-        if isinstance(item, dict)
-    ):
-        completeness_errors.append("search source not captured")
+        if (
+            isinstance(item, dict)
+            and item.get("status") == "ok"
+            and item.get("sources")
+        )
+    }
+    missing_source_topics = sorted(set(actual_topic_ids) - topics_with_sources)
+    if missing_source_topics:
+        completeness_errors.append(
+            "no successful search source for topics: "
+            + ", ".join(missing_source_topics)
+        )
     if sorted(compressed_ids) != sorted(actual_topic_ids):
         completeness_errors.append(
             "compressed_research is not one-to-one with topics"
