@@ -57,7 +57,7 @@ Our artifacts, tracing adapter, and evaluation code are released to facilitate r
 \subsection{Personalized Deep Research}
 
 Personalization in information retrieval has a long history grounded in user modeling and collaborative filtering~\cite{placeholder}.
-Recent work has extended personalization to large language model (LLM) generation, with benchmarks such as LaMP~\cite{placeholder} testing whether models can condition outputs on user-specific history.
+Recent work has extended personalization to large language model (LLM) generation, with benchmarks such as LaMP~\cite{lamp} testing whether models can condition outputs on user-specific history.
 \textbf{PDR-Bench}~\cite{pdr-bench} is the first benchmark specifically targeting personalized \emph{deep research}---multi-step, long-form report generation conditioned on rich user personas.
 PDR-Bench provides 25 personas and 250 English query pairs spanning five domains, with personas encoding both identity attributes (demographics, occupation) and actionable preferences (information-seeking style, decision-making patterns).
 
@@ -69,9 +69,8 @@ We address this gap by framing personalization as an N-way attribution problem a
 Classical authorship attribution identifies the author of a text from a closed candidate set, relying on stylometric features such as function-word distributions and syntactic patterns~\cite{placeholder}.
 Neural approaches have shifted toward dense embeddings and fine-tuned classifiers~\cite{placeholder}.
 
-\textbf{AuthorMap}~\cite{authormap} is the closest prior work to ours: it frames persona attribution as an N-way classification problem, using an LLM to identify which persona a summary was written for.
-However, AuthorMap operates on \textbf{pairwise} comparisons of one-shot summaries---a single-stage, single-output setting.
-Our work departs from AuthorMap in two fundamental ways:
+\citet{authormap} is the closest prior work to ours: they propose \emph{comparative personalization} for multi-document summarization, identifying fine-grained preference differences by comparing a target user against other users---effectively a pairwise preference attribution task.
+Our work departs from this line in two fundamental ways:
 (1)~\textbf{N-way simultaneous} attribution ($N=3$ by default, with $N\in\{2,5\}$ as sensitivity analyses), without decomposing into pairwise decisions; and
 (2)~\textbf{stage-wise} attribution across a four-stage DRA pipeline, enabling \emph{localization} of where in the pipeline the conditioning signal is expressed or lost.
 

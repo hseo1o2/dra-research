@@ -42,7 +42,7 @@ except ImportError:
 DEFAULT_MANIFEST = ROOT / "manifest.json"
 ALLOW_ENV = "DRA_ALLOW_EXTERNAL_API"
 MODEL_NAME = "google_genai:gemini-3.6-flash"
-TIMEOUT_SEC = 900
+TIMEOUT_SEC = 1500  # raised from 900: some long-running tasks exceeded 900s
 MAX_RETRIES = 3
 REQUESTS_PER_MINUTE = 4
 RETRY_INITIAL_DELAY_SEC = 15
