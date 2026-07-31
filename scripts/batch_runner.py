@@ -228,6 +228,12 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help="Skip runs whose artifact already exists and is schema_valid",
     )
+    parser.add_argument(
+        "--limit",
+        type=int,
+        default=None,
+        help="Stop after this many runs (for chunked execution; use --resume to continue)",
+    )
     args = parser.parse_args(argv)
     use_flex = not args.no_flex
 
@@ -296,7 +302,11 @@ def main(argv: list[str] | None = None) -> int:
         ledger = GlobalLedger(args.output_dir / "global_query_ledger.json")
 
         results = []
+        executed = 0
         for idx, (task, gt_userid, seed, source_query_id) in enumerate(experiments, 1):
+            if args.limit is not None and executed >= args.limit:
+                print(f"\n--limit {args.limit} reached, stopping. Re-run with --resume to continue.")
+                break
             rid = _run_id(task["taskid"], gt_userid, seed)
             artifact_path = args.output_dir / f"{rid}_artifacts.json"
             label = f"[{idx}/{len(experiments)}] {rid}"
@@ -333,9 +343,11 @@ def main(argv: list[str] | None = None) -> int:
                     status += f" completeness_errors={summary['completeness_errors']}"
                 print(f"  {status}  tokens={summary['token_ledger'].get('total_tokens')}  elapsed={summary['token_ledger'].get('elapsed_sec')}s")
                 results.append(summary)
+                executed += 1
             except Exception as exc:
                 print(f"  ERROR: {exc}", file=sys.stderr)
                 results.append({"run_id": rid, "error": str(exc)})
+                executed += 1
 
         batch_summary_path = args.output_dir / f"batch_{args.split}_seed{args.seed}_summary.json"
         with open(batch_summary_path, "w", encoding="utf-8") as fh:
