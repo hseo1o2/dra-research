@@ -501,6 +501,7 @@ def test_model_wiring_includes_flex_seed_and_timeout(monkeypatch):
         max_retries=3,
         requests_per_minute=4,
         retry_initial_delay_sec=15,
+        use_flex=True,
     )
     _verify_model_wiring(
         model_name="google_genai:gemini-3.6-flash",
@@ -509,4 +510,38 @@ def test_model_wiring_includes_flex_seed_and_timeout(monkeypatch):
         timeout_sec=900,
         requests_per_minute=4,
         retry_initial_delay_sec=15,
+        use_flex=True,
     )
+
+
+def test_batch_runner_plan_yields_correct_experiment_count():
+    """batch_runner plan-only must enumerate 15 dev experiments (5 groups × 3)."""
+    import json
+    from pathlib import Path
+    from scripts.batch_runner import _iter_experiments
+
+    manifest_path = Path(__file__).resolve().parent.parent / "manifest.json"
+    with open(manifest_path) as fh:
+        manifest = json.load(fh)
+
+    rows = _iter_experiments(manifest, "dev", seed=0)
+    assert len(rows) == 15
+    taskids = [r[0]["taskid"] for r in rows]
+    # 5 distinct tasks, each appearing 3 times
+    unique_tasks = set(taskids)
+    assert len(unique_tasks) == 5
+    assert all(taskids.count(t) == 3 for t in unique_tasks)
+    # all gt_userids distinct within each task group
+    for task_id in unique_tasks:
+        group_users = [r[1] for r in rows if r[0]["taskid"] == task_id]
+        assert len(set(group_users)) == 3
+
+
+def test_batch_runner_plan_only_prints_without_execute(capsys):
+    """batch_runner without --execute must not raise and must print plan lines."""
+    from scripts.batch_runner import main
+    rc = main(["--split", "dev", "--seed", "0"])
+    assert rc == 0
+    captured = capsys.readouterr()
+    assert "Plan only" in captured.out
+    assert "pilot_task3_User10_seed0" in captured.out
