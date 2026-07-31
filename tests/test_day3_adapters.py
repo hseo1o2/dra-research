@@ -545,3 +545,113 @@ def test_batch_runner_plan_only_prints_without_execute(capsys):
     captured = capsys.readouterr()
     assert "Plan only" in captured.out
     assert "pilot_task3_User10_seed0" in captured.out
+
+
+# ---------------------------------------------------------------------------
+# LLM matcher tests (network-free)
+# ---------------------------------------------------------------------------
+
+class TestLLMMatcher:
+    """Contract tests for llm_matcher serializers and persona formatter."""
+
+    FAKE_ARTIFACTS = {
+        "research_brief": "I am User42, a software engineer. Research quantum computing.",
+        "search_trace": [
+            {
+                "status": "success",
+                "query": "quantum computing basics",
+                "topic_id": "topic_001",
+                "query_id": "q1",
+                "attempted": True,
+                "failure_code": None,
+                "sources": [
+                    {
+                        "title": "Intro to Quantum",
+                        "snippet": "Quantum computers use qubits...",
+                        "link": "https://example.com/quantum",
+                        "domain": "example.com",
+                        "rank": 1,
+                        "query": "quantum computing basics",
+                    }
+                ],
+            },
+            {
+                "status": "failed",
+                "query": "should be excluded",
+                "topic_id": "topic_002",
+                "query_id": "q2",
+                "attempted": True,
+                "failure_code": "no_results",
+                "sources": [],
+            },
+        ],
+        "compressed_research": [
+            {"topic_id": "topic_001", "topic_text": "Quantum Computing", "compressed_research": "Qubits enable superposition."},
+        ],
+        "final_report": "A" * 10000,  # 10K chars to test truncation
+    }
+
+    def test_serialize_plan_returns_research_brief(self):
+        from scripts.llm_matcher import serialize_artifact
+        result = serialize_artifact(self.FAKE_ARTIFACTS, "plan")
+        assert result == self.FAKE_ARTIFACTS["research_brief"]
+
+    def test_serialize_search_only_successful_queries(self):
+        from scripts.llm_matcher import serialize_artifact
+        result = serialize_artifact(self.FAKE_ARTIFACTS, "search")
+        assert "quantum computing basics" in result
+        assert "should be excluded" not in result
+        assert "Intro to Quantum" in result
+
+    def test_serialize_compress_includes_topic_ids(self):
+        from scripts.llm_matcher import serialize_artifact
+        result = serialize_artifact(self.FAKE_ARTIFACTS, "compress")
+        assert "topic_001" in result
+        assert "Qubits enable superposition" in result
+
+    def test_serialize_write_truncates_long_report(self):
+        from scripts.llm_matcher import serialize_artifact, STAGE_CHAR_CAPS
+        result = serialize_artifact(self.FAKE_ARTIFACTS, "write")
+        assert len(result) <= STAGE_CHAR_CAPS["write"] + 20  # +20 for "[...]" separator
+
+    def test_format_persona_flattens_nested_dict(self):
+        from scripts.llm_matcher import format_persona
+        persona = {
+            "userid": "User42",
+            "Basic Attributes": {
+                "Identity Characteristics": {
+                    "Occupation": "Engineer",
+                    "Age": "25-30",
+                }
+            },
+            "Health Status": {"Status": "Healthy"},  # should be excluded
+        }
+        text = format_persona(persona)
+        assert "Engineer" in text
+        assert "25-30" in text
+        assert "Healthy" not in text  # Health Status excluded
+
+    def test_shuffle_is_deterministic_same_seed(self):
+        import random
+        from scripts.llm_matcher import format_persona, load_personas
+        candidates = ["User10", "User18", "User20"]
+        def shuffle(seed):
+            rng = random.Random(seed)
+            c = list(candidates)
+            rng.shuffle(c)
+            return c
+        assert shuffle(42) == shuffle(42)
+        assert shuffle(0) != shuffle(42)  # different seeds differ (with high prob)
+
+    def test_lookup_manifest_finds_correct_candidates(self):
+        import json
+        from pathlib import Path
+        from scripts.llm_matcher import _lookup_manifest, MANIFEST_PATH
+        if not MANIFEST_PATH.exists():
+            import pytest
+            pytest.skip("manifest.json not found")
+        manifest = json.loads(MANIFEST_PATH.read_text())
+        gt, candidates = _lookup_manifest("pilot_task3_User10_seed0", manifest)
+        assert gt == "User10"
+        assert "User10" in candidates
+        assert len(candidates) == 3
