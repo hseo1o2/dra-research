@@ -305,8 +305,10 @@ def match_one_stage(
 ) -> StageMatch:
     artifact_text = serialize_artifact(artifacts, stage)
 
-    # Shuffle candidate order deterministically
-    rng = random.Random(shuffle_seed)
+    # Shuffle candidate order deterministically per (run_id, stage) to avoid
+    # position bias from a fixed global seed.
+    per_run_seed = abs(hash(f"{run_id}:{stage}")) % (2 ** 31)
+    rng = random.Random(per_run_seed)
     shuffled = list(candidate_userids)
     rng.shuffle(shuffled)
     labels = ["A", "B", "C"][: len(shuffled)]
