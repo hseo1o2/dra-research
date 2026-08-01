@@ -20,6 +20,7 @@ import argparse
 import asyncio
 import json
 import os
+import subprocess
 import sys
 from pathlib import Path
 from typing import Any
@@ -46,6 +47,159 @@ TIMEOUT_SEC = 1500  # raised from 900: some long-running tasks exceeded 900s
 MAX_RETRIES = 3
 REQUESTS_PER_MINUTE = 4
 RETRY_INITIAL_DELAY_SEC = 15
+
+
+def _repository_state() -> dict[str, Any]:
+    """Return the exact local code state without failing outside a Git repo."""
+    try:
+        head = subprocess.run(
+            ["git", "rev-parse", "HEAD"],
+            cwd=ROOT,
+            check=True,
+            capture_output=True,
+            text=True,
+        ).stdout.strip()
+        status = subprocess.run(
+            ["git", "status", "--porcelain"],
+            cwd=ROOT,
+            check=True,
+            capture_output=True,
+            text=True,
+        ).stdout.strip()
+    except (OSError, subprocess.CalledProcessError):
+        return {"code_commit": None, "code_dirty": None}
+    return {"code_commit": head, "code_dirty": bool(status)}
+
+
+def _load_run_summary(path: Path) -> dict[str, Any] | None:
+    """Load one per-run summary, returning None for missing/invalid files."""
+    if not path.exists():
+        return None
+    try:
+        value = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+    if not isinstance(value, dict) or not value.get("run_id"):
+        return None
+    return value
+
+
+def _collect_batch_results(
+    output_dir: Path,
+    experiments: list[tuple[dict[str, Any], str, int, int]],
+    current_results: list[dict[str, Any]] | None = None,
+) -> list[dict[str, Any]]:
+    """Collect full-batch state, including summaries from prior chunks.
+
+    A resumed/chunked invocation must not replace completed run summaries with
+    ``{"skipped": true}`` placeholders. Per-run summary files are the source
+    of truth; current invocation errors are retained when no summary exists.
+    """
+    current_by_id = {
+        result["run_id"]: result
+        for result in (current_results or [])
+        if isinstance(result, dict) and result.get("run_id")
+    }
+    collected: list[dict[str, Any]] = []
+    for task, gt_userid, seed, _source_query_id in experiments:
+        run_id = _run_id(task["taskid"], gt_userid, seed)
+        saved = _load_run_summary(output_dir / f"{run_id}_summary.json")
+        if saved is not None:
+            collected.append(saved)
+        elif run_id in current_by_id:
+            collected.append(current_by_id[run_id])
+        else:
+            collected.append({"run_id": run_id, "missing": True})
+    return collected
+
+
+def _aggregate_batch_results(results: list[dict[str, Any]]) -> dict[str, Any]:
+    """Build a bounded, JSON-serializable quality summary for a full batch."""
+    completed = [
+        result
+        for result in results
+        if result.get("schema_valid") is not None
+    ]
+    token_ledgers = [
+        result.get("token_ledger", {})
+        for result in completed
+        if isinstance(result.get("token_ledger"), dict)
+    ]
+
+    def _sum_ledger(field: str) -> int | float:
+        return sum(
+            ledger.get(field, 0) or 0
+            for ledger in token_ledgers
+        )
+
+    return {
+        "expected_runs": len(results),
+        "completed_runs": len(completed),
+        "missing_runs": sum(1 for result in results if result.get("missing")),
+        "error_runs": sum(1 for result in results if result.get("error")),
+        "schema_valid_runs": sum(
+            1 for result in completed if result.get("schema_valid") is True
+        ),
+        "success_criteria_met_runs": sum(
+            1
+            for result in completed
+            if result.get("success_criteria_met") is True
+        ),
+        "completeness_issue_runs": sum(
+            1
+            for result in completed
+            if result.get("completeness_errors")
+        ),
+        "ledger_issue_runs": sum(
+            1 for result in completed if result.get("ledger_errors")
+        ),
+        "execution_error_runs": sum(
+            1
+            for result in completed
+            if result.get("execution_error") is not None
+        ),
+        "total_tokens": _sum_ledger("total_tokens"),
+        "total_elapsed_sec": round(float(_sum_ledger("elapsed_sec")), 3),
+        "queries_attempted": _sum_ledger("queries_attempted"),
+        "queries_successful": _sum_ledger("queries_successful"),
+        "queries_failed": _sum_ledger("queries_failed"),
+        "sources_selected": _sum_ledger("sources_selected"),
+    }
+
+
+def _write_batch_summaries(
+    output_dir: Path,
+    split: str,
+    seed: int,
+    experiments: list[tuple[dict[str, Any], str, int, int]],
+    current_results: list[dict[str, Any]] | None = None,
+) -> dict[str, Any]:
+    """Write full run-level and aggregate summaries from per-run truth."""
+    full_results = _collect_batch_results(
+        output_dir,
+        experiments,
+        current_results=current_results,
+    )
+    batch_summary_path = output_dir / f"batch_{split}_seed{seed}_summary.json"
+    with open(batch_summary_path, "w", encoding="utf-8") as fh:
+        json.dump(full_results, fh, indent=2, ensure_ascii=False, sort_keys=True)
+
+    quality = _aggregate_batch_results(full_results)
+    quality_summary_path = (
+        output_dir / f"batch_{split}_seed{seed}_quality_summary.json"
+    )
+    with open(quality_summary_path, "w", encoding="utf-8") as fh:
+        json.dump(quality, fh, indent=2, ensure_ascii=False, sort_keys=True)
+
+    print(f"\nBatch summary → {batch_summary_path}")
+    print(f"Quality summary → {quality_summary_path}")
+    print(
+        f"completed={quality['completed_runs']}/{quality['expected_runs']}  "
+        f"schema_valid={quality['schema_valid_runs']}  "
+        f"success_criteria_met={quality['success_criteria_met_runs']}  "
+        f"missing={quality['missing_runs']}  errors={quality['error_runs']}"
+    )
+    return quality
 
 
 def _iter_experiments(
@@ -134,6 +288,7 @@ async def _run_one(
             "global_hard_stop": 2400,
         },
         "prompt_sha256": _text_sha256(user_message),
+        **_repository_state(),
     }
     configurable = {
         "allow_clarification": False,
@@ -234,6 +389,11 @@ def main(argv: list[str] | None = None) -> int:
         default=None,
         help="Stop after this many runs (for chunked execution; use --resume to continue)",
     )
+    parser.add_argument(
+        "--summarize-only",
+        action="store_true",
+        help="Rebuild batch summaries from existing per-run files; no API calls",
+    )
     args = parser.parse_args(argv)
     use_flex = not args.no_flex
 
@@ -251,6 +411,16 @@ def main(argv: list[str] | None = None) -> int:
     print(f"flex={'yes' if use_flex else 'no'}  experiments={len(experiments)}")
     print(f"output={args.output_dir}")
     print()
+
+    if args.summarize_only:
+        args.output_dir.mkdir(parents=True, exist_ok=True)
+        quality = _write_batch_summaries(
+            args.output_dir,
+            args.split,
+            args.seed,
+            experiments,
+        )
+        return 0 if quality["error_runs"] == 0 else 1
 
     if args.execute:
         if os.environ.get(ALLOW_ENV, "").strip() != "1":
@@ -349,16 +519,14 @@ def main(argv: list[str] | None = None) -> int:
                 results.append({"run_id": rid, "error": str(exc)})
                 executed += 1
 
-        batch_summary_path = args.output_dir / f"batch_{args.split}_seed{args.seed}_summary.json"
-        with open(batch_summary_path, "w", encoding="utf-8") as fh:
-            json.dump(results, fh, indent=2, ensure_ascii=False, sort_keys=True)
-        print(f"\nBatch summary → {batch_summary_path}")
-
-        ok = sum(1 for r in results if r.get("schema_valid"))
-        skip = sum(1 for r in results if r.get("skipped"))
-        fail = len(results) - ok - skip
-        print(f"schema_valid={ok}  skipped={skip}  failed={fail}")
-        return 0 if fail == 0 else 1
+        quality = _write_batch_summaries(
+            args.output_dir,
+            args.split,
+            args.seed,
+            experiments,
+            current_results=results,
+        )
+        return 0 if quality["error_runs"] == 0 else 1
 
     else:
         # Plan-only: just print what would run

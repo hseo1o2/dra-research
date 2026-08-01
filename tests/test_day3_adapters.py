@@ -547,6 +547,25 @@ def test_batch_runner_plan_only_prints_without_execute(capsys):
     assert "pilot_task3_User10_seed0" in captured.out
 
 
+def test_batch_runner_summarize_only_is_network_free(tmp_path, capsys):
+    from scripts.batch_runner import main
+
+    rc = main([
+        "--split", "dev",
+        "--seed", "0",
+        "--output-dir", str(tmp_path),
+        "--summarize-only",
+    ])
+
+    assert rc == 0
+    quality_path = tmp_path / "batch_dev_seed0_quality_summary.json"
+    quality = json.loads(quality_path.read_text())
+    assert quality["expected_runs"] == 15
+    assert quality["completed_runs"] == 0
+    assert quality["missing_runs"] == 15
+    assert "completed=0/15" in capsys.readouterr().out
+
+
 # ---------------------------------------------------------------------------
 # LLM matcher tests (network-free)
 # ---------------------------------------------------------------------------
@@ -644,15 +663,126 @@ class TestLLMMatcher:
         assert shuffle(42) == shuffle(42)
         assert shuffle(0) != shuffle(42)  # different seeds differ (with high prob)
 
-    def test_lookup_manifest_finds_correct_candidates(self):
-        import json
-        from pathlib import Path
-        from scripts.llm_matcher import _lookup_manifest, MANIFEST_PATH
-        if not MANIFEST_PATH.exists():
-            import pytest
-            pytest.skip("manifest.json not found")
-        manifest = json.loads(MANIFEST_PATH.read_text())
-        gt, candidates = _lookup_manifest("pilot_task3_User10_seed0", manifest)
-        assert gt == "User10"
-        assert "User10" in candidates
-        assert len(candidates) == 3
+    def test_matcher_shuffle_is_stable_sha256(self):
+        from scripts.llm_matcher import match_one_stage
+
+        personas = {
+            userid: {
+                "Basic Attributes": {
+                    "Identity Characteristics": {"Name": userid}
+                }
+            }
+            for userid in ("User1", "User2", "User3")
+        }
+        kwargs = {
+            "run_id": "pilot_task1_User1_seed0",
+            "stage": "plan",
+            "artifacts": {"research_brief": "test artifact"},
+            "gt_userid": "User1",
+            "candidate_userids": ["User1", "User2", "User3"],
+            "personas_by_id": personas,
+            "matcher": None,
+            "shuffle_seed": 42,
+            "dry_run": True,
+        }
+
+        first = match_one_stage(**kwargs)
+        second = match_one_stage(**kwargs)
+
+        assert first.shuffled_order == second.shuffled_order
+
+
+def test_batch_summary_collects_prior_chunks(tmp_path):
+    from scripts.batch_runner import (
+        _aggregate_batch_results,
+        _collect_batch_results,
+    )
+
+    task = {"taskid": 1}
+    experiments = [
+        (task, "User1", 0, 1),
+        (task, "User2", 0, 2),
+    ]
+    prior = {
+        "run_id": "pilot_task1_User1_seed0",
+        "schema_valid": True,
+        "success_criteria_met": True,
+        "completeness_errors": [],
+        "ledger_errors": [],
+        "execution_error": None,
+        "token_ledger": {
+            "total_tokens": 100,
+            "elapsed_sec": 2.5,
+            "queries_attempted": 2,
+            "queries_successful": 2,
+            "queries_failed": 0,
+            "sources_selected": 3,
+        },
+    }
+    current = {
+        "run_id": "pilot_task1_User2_seed0",
+        "schema_valid": True,
+        "success_criteria_met": False,
+        "completeness_errors": ["missing source"],
+        "ledger_errors": [],
+        "execution_error": None,
+        "token_ledger": {
+            "total_tokens": 200,
+            "elapsed_sec": 3.5,
+            "queries_attempted": 2,
+            "queries_successful": 1,
+            "queries_failed": 1,
+            "sources_selected": 2,
+        },
+    }
+    (tmp_path / "pilot_task1_User1_seed0_summary.json").write_text(
+        json.dumps(prior)
+    )
+
+    results = _collect_batch_results(
+        tmp_path,
+        experiments,
+        current_results=[current],
+    )
+    quality = _aggregate_batch_results(results)
+
+    assert [result["run_id"] for result in results] == [
+        "pilot_task1_User1_seed0",
+        "pilot_task1_User2_seed0",
+    ]
+    assert quality["completed_runs"] == 2
+    assert quality["schema_valid_runs"] == 2
+    assert quality["success_criteria_met_runs"] == 1
+    assert quality["completeness_issue_runs"] == 1
+    assert quality["total_tokens"] == 300
+
+
+def test_provenance_excludes_secrets_and_lock_files(tmp_path):
+    from scripts.build_provenance import _iter_files
+
+    source = tmp_path / "runs"
+    source.mkdir()
+    artifact = source / "run_artifacts.json"
+    artifact.write_text("{}")
+    lock = source / "global.json.lock"
+    lock.write_text("lock")
+    cache = source / "__pycache__"
+    cache.mkdir()
+    (cache / "module.pyc").write_bytes(b"cache")
+
+    files = _iter_files([source])
+
+    assert files == [artifact]
+
+
+def test_lookup_manifest_finds_correct_candidates():
+    from scripts.llm_matcher import _lookup_manifest, MANIFEST_PATH
+
+    if not MANIFEST_PATH.exists():
+        import pytest
+        pytest.skip("manifest.json not found")
+    manifest = json.loads(MANIFEST_PATH.read_text())
+    gt, candidates = _lookup_manifest("pilot_task3_User10_seed0", manifest)
+    assert gt == "User10"
+    assert "User10" in candidates
+    assert len(candidates) == 3

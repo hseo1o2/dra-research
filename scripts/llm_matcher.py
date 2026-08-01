@@ -25,6 +25,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import random
@@ -37,6 +38,12 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent.parent
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
+
+try:
+    from dotenv import load_dotenv
+    load_dotenv(ROOT / ".env")
+except ImportError:
+    pass
 
 # ---------------------------------------------------------------------------
 # Constants
@@ -183,6 +190,8 @@ class StageMatch:
     model: str
     prompt_chars: int
     latency_sec: float
+    shuffle_algorithm: str = "sha256-first-64-bit"
+    shuffle_seed: int = 42
 
 
 # ---------------------------------------------------------------------------
@@ -306,8 +315,14 @@ def match_one_stage(
     artifact_text = serialize_artifact(artifacts, stage)
 
     # Shuffle candidate order deterministically per (run_id, stage) to avoid
-    # position bias from a fixed global seed.
-    per_run_seed = abs(hash(f"{run_id}:{stage}")) % (2 ** 31)
+    # position bias from a fixed global seed. Do not use Python's built-in
+    # hash(), which is randomized between interpreter processes.
+    seed_material = f"{shuffle_seed}:{run_id}:{stage}".encode("utf-8")
+    per_run_seed = int.from_bytes(
+        hashlib.sha256(seed_material).digest()[:8],
+        byteorder="big",
+        signed=False,
+    )
     rng = random.Random(per_run_seed)
     shuffled = list(candidate_userids)
     rng.shuffle(shuffled)
@@ -332,6 +347,7 @@ def match_one_stage(
             candidate_userids=candidate_userids, shuffled_order=shuffled,
             predicted_label="?", predicted_userid="?", correct=False,
             reasoning="DRY_RUN", model="none", prompt_chars=prompt_chars, latency_sec=0.0,
+            shuffle_seed=shuffle_seed,
         )
 
     t0 = time.monotonic()
@@ -348,6 +364,7 @@ def match_one_stage(
         correct=(predicted_userid == gt_userid),
         reasoning=reasoning, model=matcher.model,
         prompt_chars=prompt_chars, latency_sec=round(latency, 2),
+        shuffle_seed=shuffle_seed,
     )
 
 
@@ -451,6 +468,12 @@ def main() -> None:
                         help="Directory to write match results")
     parser.add_argument("--stage", choices=STAGES + ["all"], default="all",
                         help="Which stage(s) to match (default: all)")
+    parser.add_argument(
+        "--seed",
+        type=int,
+        default=None,
+        help="Only match artifacts whose run ID ends with this seed",
+    )
     parser.add_argument("--model", default=MODEL_PRIMARY,
                         help=f"Model name (default: {MODEL_PRIMARY})")
     parser.add_argument("--base-url", default=UPSTAGE_BASE_URL,
@@ -478,6 +501,11 @@ def main() -> None:
         artifact_paths = [artifact_dir / f"{args.run_id}_artifacts.json"]
     else:
         artifact_paths = sorted(args.batch_dir.glob("*_artifacts.json"))
+        if args.seed is not None:
+            suffix = f"_seed{args.seed}_artifacts.json"
+            artifact_paths = [
+                path for path in artifact_paths if path.name.endswith(suffix)
+            ]
 
     all_results: list[StageMatch] = []
 
@@ -518,7 +546,14 @@ def main() -> None:
         print(f"  macro    Acc={acc['macro_avg']:.3f}  (chance={acc['chance']:.3f}, N={acc['n']})")
 
         summary_path = args.output_dir / "match_accuracy_summary.json"
-        summary_path.write_text(json.dumps({"accuracy": acc, "model": args.model}, indent=2))
+        summary_path.write_text(json.dumps({
+            "accuracy": acc,
+            "model": args.model,
+            "shuffle": {
+                "algorithm": "sha256-first-64-bit",
+                "base_seed": 42,
+            },
+        }, indent=2))
         print(f"\nSummary → {summary_path}")
 
 
