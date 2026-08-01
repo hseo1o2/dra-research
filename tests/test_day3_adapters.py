@@ -598,6 +598,7 @@ class TestLLMMatcher:
 
     def test_serialize_search_only_successful_queries(self):
         from scripts.llm_matcher import serialize_artifact
+        # status "success" and "ok" both included; "failed"/"failure" excluded
         result = serialize_artifact(self.FAKE_ARTIFACTS, "search")
         assert "quantum computing basics" in result
         assert "should be excluded" not in result

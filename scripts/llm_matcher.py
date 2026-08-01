@@ -70,7 +70,7 @@ def _serialize_plan(artifacts: dict) -> str:
 def _serialize_search(artifacts: dict, max_chars: int = STAGE_CHAR_CAPS["search"]) -> str:
     lines: list[str] = []
     for call in artifacts.get("search_trace", []):
-        if call.get("status") != "success":
+        if call.get("status") not in ("success", "ok"):
             continue
         query = call.get("query", "")
         topic = call.get("topic_id", "")
@@ -510,7 +510,8 @@ def main() -> None:
         acc = compute_accuracy(all_results)
         print("\n--- Attribution Accuracy ---")
         for stage in STAGES:
-            bar = "█" * int(acc.get(stage, 0) * 20)
+            val = acc.get(stage, float("nan"))
+            bar = "█" * int(val * 20) if val == val else "—"  # nan check
             print(f"  {stage:8s}  Acc={acc.get(stage, float('nan')):.3f}  {bar}")
         print(f"  macro    Acc={acc['macro_avg']:.3f}  (chance={acc['chance']:.3f}, N={acc['n']})")
 
