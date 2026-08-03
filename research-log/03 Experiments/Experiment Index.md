@@ -22,6 +22,7 @@ type: index
 - [[EXP-013 Candidate prior and strong identity masking]]
 - [[EXP-014 GPT-5.4-nano matcher replication]]
 - [[EXP-015 Shuffled-actionable generation control]]
+- [[EXP-016 N=2 N=5 candidate-set-size sensitivity]]
 
 ## Next
 
