@@ -29,6 +29,7 @@ import hashlib
 import json
 import os
 import random
+import re
 import sys
 import time
 from dataclasses import asdict, dataclass
@@ -50,6 +51,10 @@ except ImportError:
 # ---------------------------------------------------------------------------
 
 STAGES = ["plan", "search", "compress", "write"]
+SEARCH_VIEWS = ["full", "queries", "snippets"]
+ABLATION_RUN_PREFIX = re.compile(
+    r"^ablation_(?:actionable_only|identity_only|shuffled_actionable)_"
+)
 
 PERSONA_DATA_PATH = ROOT / "data" / "pdr-bench" / "persona_data" / "personas_en.jsonl"
 MANIFEST_PATH = ROOT / "manifest.json"
@@ -74,18 +79,28 @@ def _serialize_plan(artifacts: dict) -> str:
     return artifacts.get("research_brief", "")
 
 
-def _serialize_search(artifacts: dict, max_chars: int = STAGE_CHAR_CAPS["search"]) -> str:
+def _serialize_search(
+    artifacts: dict,
+    max_chars: int = STAGE_CHAR_CAPS["search"],
+    view: str = "full",
+) -> str:
+    if view not in SEARCH_VIEWS:
+        raise ValueError(f"Unknown search view: {view}")
     lines: list[str] = []
     for call in artifacts.get("search_trace", []):
         if call.get("status") not in ("success", "ok"):
             continue
         query = call.get("query", "")
         topic = call.get("topic_id", "")
-        lines.append(f"Query [{topic}]: {query}")
-        for src in (call.get("sources") or [])[:3]:
-            title = src.get("title", "")
-            snippet = src.get("snippet", "")
-            lines.append(f"  • {title}: {snippet[:200]}")
+        if view in ("full", "queries"):
+            lines.append(f"Query [{topic}]: {query}")
+        if view in ("full", "snippets"):
+            if view == "snippets":
+                lines.append(f"Retrieved sources [{topic}]:")
+            for src in (call.get("sources") or [])[:3]:
+                title = src.get("title", "")
+                snippet = src.get("snippet", "")
+                lines.append(f"  • {title}: {snippet[:200]}")
     text = "\n".join(lines)
     return text[:max_chars]
 
@@ -118,8 +133,38 @@ _SERIALIZERS = {
 }
 
 
-def serialize_artifact(artifacts: dict, stage: str) -> str:
+def serialize_artifact(
+    artifacts: dict,
+    stage: str,
+    search_view: str = "full",
+) -> str:
+    if stage == "search":
+        return _serialize_search(artifacts, view=search_view)
     return _SERIALIZERS[stage](artifacts)
+
+
+def _canonical_shuffle_run_id(run_id: str) -> str:
+    """Map generation-ablation IDs to their full-condition pairing key."""
+    return ABLATION_RUN_PREFIX.sub("pilot_", run_id)
+
+
+def deterministic_candidate_order(
+    run_id: str,
+    stage: str,
+    candidate_userids: list[str],
+    shuffle_seed: int = 42,
+) -> list[str]:
+    """Return the process-independent candidate order for one decision."""
+    shuffle_run_id = _canonical_shuffle_run_id(run_id)
+    seed_material = f"{shuffle_seed}:{shuffle_run_id}:{stage}".encode("utf-8")
+    per_run_seed = int.from_bytes(
+        hashlib.sha256(seed_material).digest()[:8],
+        byteorder="big",
+        signed=False,
+    )
+    shuffled = list(candidate_userids)
+    random.Random(per_run_seed).shuffle(shuffled)
+    return shuffled
 
 
 # ---------------------------------------------------------------------------
@@ -192,6 +237,11 @@ class StageMatch:
     latency_sec: float
     shuffle_algorithm: str = "sha256-first-64-bit"
     shuffle_seed: int = 42
+    artifact_view: str = "full"
+    input_tokens: int | None = None
+    output_tokens: int | None = None
+    total_tokens: int | None = None
+    api_response_id: str | None = None
 
 
 # ---------------------------------------------------------------------------
@@ -251,6 +301,16 @@ def _build_user_prompt(stage: str, artifact_text: str, labeled_personas: list[tu
     return "\n".join(parts)
 
 
+@dataclass(frozen=True)
+class MatcherResponse:
+    predicted_label: str
+    reasoning: str
+    input_tokens: int | None
+    output_tokens: int | None
+    total_tokens: int | None
+    api_response_id: str | None
+
+
 class SolarMatcher:
     def __init__(self, model: str = MODEL_PRIMARY, base_url: str = UPSTAGE_BASE_URL,
                  api_key: str | None = None):
@@ -267,8 +327,8 @@ class SolarMatcher:
             )
         self.client = OpenAI(api_key=key, base_url=base_url)
 
-    def call(self, system: str, user: str, retries: int = 3) -> tuple[str, str]:
-        """Returns (predicted_label, reasoning). Raises on failure."""
+    def call(self, system: str, user: str, retries: int = 3) -> MatcherResponse:
+        """Return the attribution plus provider usage metadata."""
         last_err: Exception | None = None
         for attempt in range(retries):
             try:
@@ -283,13 +343,28 @@ class SolarMatcher:
                     tool_choice={"type": "function", "function": {"name": "submit_attribution"}},
                 )
                 msg = resp.choices[0].message
+                usage = getattr(resp, "usage", None)
+                usage_fields = {
+                    "input_tokens": getattr(usage, "prompt_tokens", None),
+                    "output_tokens": getattr(usage, "completion_tokens", None),
+                    "total_tokens": getattr(usage, "total_tokens", None),
+                    "api_response_id": getattr(resp, "id", None),
+                }
                 if msg.tool_calls:
                     args = json.loads(msg.tool_calls[0].function.arguments)
-                    return args["predicted_label"], args.get("reasoning", "")
+                    return MatcherResponse(
+                        predicted_label=args["predicted_label"],
+                        reasoning=args.get("reasoning", ""),
+                        **usage_fields,
+                    )
                 # fallback: parse JSON from content
                 content = (msg.content or "").strip()
                 parsed = json.loads(content)
-                return parsed["predicted_label"], parsed.get("reasoning", "")
+                return MatcherResponse(
+                    predicted_label=parsed["predicted_label"],
+                    reasoning=parsed.get("reasoning", ""),
+                    **usage_fields,
+                )
             except Exception as e:
                 last_err = e
                 if attempt < retries - 1:
@@ -311,21 +386,19 @@ def match_one_stage(
     matcher: SolarMatcher | None,
     shuffle_seed: int = 42,
     dry_run: bool = False,
+    estimate_only: bool = False,
+    search_view: str = "full",
 ) -> StageMatch:
-    artifact_text = serialize_artifact(artifacts, stage)
+    artifact_text = serialize_artifact(
+        artifacts, stage, search_view=search_view
+    )
 
     # Shuffle candidate order deterministically per (run_id, stage) to avoid
     # position bias from a fixed global seed. Do not use Python's built-in
     # hash(), which is randomized between interpreter processes.
-    seed_material = f"{shuffle_seed}:{run_id}:{stage}".encode("utf-8")
-    per_run_seed = int.from_bytes(
-        hashlib.sha256(seed_material).digest()[:8],
-        byteorder="big",
-        signed=False,
+    shuffled = deterministic_candidate_order(
+        run_id, stage, candidate_userids, shuffle_seed
     )
-    rng = random.Random(per_run_seed)
-    shuffled = list(candidate_userids)
-    rng.shuffle(shuffled)
     labels = ["A", "B", "C"][: len(shuffled)]
 
     labeled_personas = [
@@ -336,35 +409,44 @@ def match_one_stage(
     user_prompt = _build_user_prompt(stage, artifact_text, labeled_personas)
     prompt_chars = len(SYSTEM_PROMPT) + len(user_prompt)
 
-    if dry_run or matcher is None:
-        print(f"\n{'='*60}")
-        print(f"DRY RUN  run={run_id}  stage={stage}  gt={gt_userid}")
-        print(f"Candidates (shuffled): {dict(zip(labels, shuffled))}")
-        print(f"Artifact ({stage}, {len(artifact_text)} chars):\n{artifact_text[:300]}...")
-        print(f"Prompt total chars: {prompt_chars}")
+    if dry_run or estimate_only or matcher is None:
+        if not estimate_only:
+            print(f"\n{'='*60}")
+            print(f"DRY RUN  run={run_id}  stage={stage}  gt={gt_userid}")
+            print(f"Candidates (shuffled): {dict(zip(labels, shuffled))}")
+            print(f"Artifact ({stage}, {len(artifact_text)} chars):\n{artifact_text[:300]}...")
+            print(f"Prompt total chars: {prompt_chars}")
         return StageMatch(
             run_id=run_id, stage=stage, gt_userid=gt_userid,
             candidate_userids=candidate_userids, shuffled_order=shuffled,
             predicted_label="?", predicted_userid="?", correct=False,
-            reasoning="DRY_RUN", model="none", prompt_chars=prompt_chars, latency_sec=0.0,
+            reasoning="ESTIMATE_ONLY" if estimate_only else "DRY_RUN",
+            model="none", prompt_chars=prompt_chars, latency_sec=0.0,
             shuffle_seed=shuffle_seed,
+            artifact_view=search_view if stage == "search" else "full",
         )
 
     t0 = time.monotonic()
-    predicted_label, reasoning = matcher.call(SYSTEM_PROMPT, user_prompt)
+    response = matcher.call(SYSTEM_PROMPT, user_prompt)
     latency = time.monotonic() - t0
 
     label_to_uid = dict(zip(labels, shuffled))
-    predicted_userid = label_to_uid.get(predicted_label, "UNKNOWN")
+    predicted_userid = label_to_uid.get(response.predicted_label, "UNKNOWN")
 
     return StageMatch(
         run_id=run_id, stage=stage, gt_userid=gt_userid,
         candidate_userids=candidate_userids, shuffled_order=shuffled,
-        predicted_label=predicted_label, predicted_userid=predicted_userid,
+        predicted_label=response.predicted_label,
+        predicted_userid=predicted_userid,
         correct=(predicted_userid == gt_userid),
-        reasoning=reasoning, model=matcher.model,
+        reasoning=response.reasoning, model=matcher.model,
         prompt_chars=prompt_chars, latency_sec=round(latency, 2),
         shuffle_seed=shuffle_seed,
+        artifact_view=search_view if stage == "search" else "full",
+        input_tokens=response.input_tokens,
+        output_tokens=response.output_tokens,
+        total_tokens=response.total_tokens,
+        api_response_id=response.api_response_id,
     )
 
 
@@ -376,6 +458,8 @@ def match_one_run(
     matcher: SolarMatcher | None,
     stages: list[str] = STAGES,
     dry_run: bool = False,
+    estimate_only: bool = False,
+    search_view: str = "full",
 ) -> list[StageMatch]:
     with open(artifact_path) as f:
         artifacts = json.load(f)
@@ -385,7 +469,9 @@ def match_one_run(
 
     results: list[StageMatch] = []
     for stage in stages:
-        artifact_text = serialize_artifact(artifacts, stage)
+        artifact_text = serialize_artifact(
+            artifacts, stage, search_view=search_view
+        )
         if not artifact_text.strip():
             print(f"  SKIP {stage}: empty artifact")
             continue
@@ -394,39 +480,21 @@ def match_one_run(
             gt_userid=gt_userid, candidate_userids=candidate_userids,
             personas_by_id=personas_by_id, matcher=matcher,
             dry_run=dry_run,
+            estimate_only=estimate_only,
+            search_view=search_view,
         )
         results.append(result)
         status = "✓" if result.correct else "✗"
-        if not dry_run:
+        if not dry_run and not estimate_only:
             print(f"  {status} {stage:8s}  pred={result.predicted_userid}  gt={gt_userid}  {result.latency_sec:.1f}s")
     return results
 
 
 def _lookup_manifest(run_id: str, manifest: dict) -> tuple[str, list[str]]:
-    """Parse run_id like 'pilot_task3_User10_seed0' to find gt and candidate set."""
-    # run_id format: {prefix}_task{taskid}_{gt_userid}_seed{seed}
-    parts = run_id.split("_")
-    # find taskid and userid
-    taskid: int | None = None
-    gt_userid: str | None = None
-    for i, p in enumerate(parts):
-        if p.startswith("task") and p[4:].isdigit():
-            taskid = int(p[4:])
-        if p.startswith("User") and p[4:].isdigit():
-            gt_userid = p
+    """Return GT and the frozen per-run candidate set."""
+    from scripts.candidate_protocol import lookup_pdr_candidates
 
-    if taskid is None or gt_userid is None:
-        raise ValueError(f"Cannot parse run_id: {run_id}")
-
-    # search all manifest splits
-    for split_name in ("dev", "confirmatory"):
-        for task_row in manifest.get("pdr_bench", {}).get(split_name, []):
-            if task_row["taskid"] == taskid:
-                candidates = task_row.get("personas_n3", [])
-                if gt_userid in candidates:
-                    return gt_userid, candidates
-
-    raise ValueError(f"run_id {run_id} not found in manifest (task={taskid}, gt={gt_userid})")
+    return lookup_pdr_candidates(run_id, manifest)
 
 
 # ---------------------------------------------------------------------------
@@ -448,7 +516,10 @@ def compute_accuracy(results: list[StageMatch]) -> dict:
     all_vals = [v for vals in stage_correct.values() for v in vals]
     acc["macro_avg"] = round(sum(all_vals) / len(all_vals), 4) if all_vals else float("nan")
     acc["chance"] = round(1 / 3, 4)
-    acc["n"] = len(all_vals) // len(STAGES) if all_vals else 0
+    acc["n"] = max((len(vals) for vals in stage_correct.values()), default=0)
+    acc["n_by_stage"] = {
+        stage: len(stage_correct.get(stage, [])) for stage in STAGES
+    }
     return acc
 
 
@@ -480,6 +551,17 @@ def main() -> None:
                         help="API base URL")
     parser.add_argument("--dry-run", action="store_true",
                         help="Print prompts without calling the API")
+    parser.add_argument(
+        "--estimate-only",
+        action="store_true",
+        help="Report call count and prompt characters without API calls",
+    )
+    parser.add_argument(
+        "--search-view",
+        choices=SEARCH_VIEWS,
+        default="full",
+        help="Search artifact components to expose (default: full)",
+    )
     parser.add_argument("--resume", action="store_true",
                         help="Skip runs where output file already exists")
 
@@ -490,7 +572,7 @@ def main() -> None:
     manifest = json.loads(MANIFEST_PATH.read_text())
 
     matcher: SolarMatcher | None = None
-    if not args.dry_run:
+    if not args.dry_run and not args.estimate_only:
         matcher = SolarMatcher(model=args.model, base_url=args.base_url)
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
@@ -519,7 +601,8 @@ def main() -> None:
             all_results.extend(loaded)
             continue
 
-        print(f"\n[{run_id}]")
+        if not args.estimate_only:
+            print(f"\n[{run_id}]")
         try:
             results = match_one_run(
                 run_id=run_id,
@@ -529,14 +612,25 @@ def main() -> None:
                 matcher=matcher,
                 stages=stages,
                 dry_run=args.dry_run,
+                estimate_only=args.estimate_only,
+                search_view=args.search_view,
             )
             all_results.extend(results)
-            if not args.dry_run:
+            if not args.dry_run and not args.estimate_only:
                 out_path.write_text(json.dumps([asdict(r) for r in results], indent=2))
         except Exception as e:
             print(f"  ERROR: {e}")
 
-    if all_results and not args.dry_run:
+    if all_results and args.estimate_only:
+        print(json.dumps({
+            "external_api_calls": 0,
+            "planned_calls": len(all_results),
+            "prompt_chars": sum(row.prompt_chars for row in all_results),
+            "stage": args.stage,
+            "search_view": args.search_view,
+            "model": args.model,
+        }, indent=2))
+    elif all_results and not args.dry_run:
         acc = compute_accuracy(all_results)
         print("\n--- Attribution Accuracy ---")
         for stage in STAGES:
@@ -546,13 +640,29 @@ def main() -> None:
         print(f"  macro    Acc={acc['macro_avg']:.3f}  (chance={acc['chance']:.3f}, N={acc['n']})")
 
         summary_path = args.output_dir / "match_accuracy_summary.json"
+        rows_with_usage = [
+            row for row in all_results if row.total_tokens is not None
+        ]
         summary_path.write_text(json.dumps({
             "accuracy": acc,
+            "usage": {
+                "records_with_usage": len(rows_with_usage),
+                "input_tokens": sum(
+                    row.input_tokens or 0 for row in rows_with_usage
+                ),
+                "output_tokens": sum(
+                    row.output_tokens or 0 for row in rows_with_usage
+                ),
+                "total_tokens": sum(
+                    row.total_tokens or 0 for row in rows_with_usage
+                ),
+            },
             "model": args.model,
             "shuffle": {
                 "algorithm": "sha256-first-64-bit",
                 "base_seed": 42,
             },
+            "search_view": args.search_view,
         }, indent=2))
         print(f"\nSummary → {summary_path}")
 

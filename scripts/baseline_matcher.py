@@ -32,6 +32,7 @@ python scripts/baseline_matcher.py \
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import random as _random
 import sys
@@ -126,24 +127,9 @@ def _load_personas() -> dict[str, Any]:
 
 def _lookup_run(run_id: str, manifest: dict[str, Any]) -> tuple[str, list[str]]:
     """Return (gt_userid, [candidate_userids]) for a run_id."""
-    # run_id like pilot_task3_User10_seed0
-    parts = run_id.split("_")
-    task_token = next((p for p in parts if p.startswith("task")), None)
-    user_token = next((p for p in parts if p.startswith("User")), None)
-    if not task_token or not user_token:
-        raise ValueError(f"Cannot parse run_id: {run_id}")
-    task_id = int(task_token.replace("task", ""))
+    from scripts.candidate_protocol import lookup_pdr_candidates
 
-    # Search across dev + confirmatory splits in pdr_bench
-    pdr = manifest.get("pdr_bench", {})
-    for split_tasks in (pdr.get("dev", []), pdr.get("confirmatory", [])):
-        for task in split_tasks:
-            if task.get("taskid") != task_id:
-                continue
-            candidates = task.get("personas_n3", [])
-            if user_token in candidates:
-                return user_token, list(candidates)
-    raise ValueError(f"run_id {run_id} not found in manifest")
+    return lookup_pdr_candidates(run_id, manifest)
 
 
 # ---------------------------------------------------------------------------
@@ -175,7 +161,18 @@ def _get_embed_model():
     global _embed_model
     if _embed_model is None:
         from sentence_transformers import SentenceTransformer
-        _embed_model = SentenceTransformer(EMBEDDING_MODEL)
+        try:
+            _embed_model = SentenceTransformer(
+                EMBEDDING_MODEL,
+                local_files_only=True,
+            )
+        except OSError as exc:
+            raise RuntimeError(
+                f"Embedding model {EMBEDDING_MODEL!r} is not available in "
+                "the local Hugging Face cache. Baseline execution is "
+                "network-disabled; prefetch the model separately only with "
+                "explicit approval."
+            ) from exc
     return _embed_model
 
 
@@ -199,7 +196,12 @@ def _embedding_predict(
 # ---------------------------------------------------------------------------
 
 def _random_predict(run_id: str, stage: str, candidates: list[str]) -> str:
-    seed = hash(f"random:{run_id}:{stage}") % (2 ** 31)
+    seed_material = f"random:{run_id}:{stage}".encode("utf-8")
+    seed = int.from_bytes(
+        hashlib.sha256(seed_material).digest()[:8],
+        byteorder="big",
+        signed=False,
+    )
     rng = _random.Random(seed)
     return rng.choice(candidates)
 
