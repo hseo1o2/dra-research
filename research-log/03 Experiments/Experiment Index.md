@@ -11,8 +11,20 @@ type: index
 - EXP-003 PDR-Bench confirmatory generation
 - EXP-004 PDR-Bench shortcut ablation
 - EXP-005 LaMP-QA replication
-- EXP-006 GPT matcher replication
 - EXP-007 SIGIR human-authored sanity check
 
-실험이 실제로 준비될 때 `99 Templates/Experiment Note`에서 note를 생성한다. 계획 이름만으로 실행됐다고 간주하지 않는다.
+## Completed
 
+- [[EXP-008 Contribution cross-condition analysis]]
+- [[EXP-009 Search-view controls]]
+- [[EXP-010 Corrected two-seed identifier masking]]
+- [[EXP-012 Corrected per-GT Solar matching]]
+- [[EXP-013 Candidate prior and strong identity masking]]
+- [[EXP-014 GPT-5.4-nano matcher replication]]
+- [[EXP-015 Shuffled-actionable generation control]]
+
+## Next
+
+- [[EXP-011 Generation-time shortcut ablation]]
+
+실험이 실제로 준비될 때 `99 Templates/Experiment Note`에서 note를 생성한다. 계획 이름만으로 실행됐다고 간주하지 않는다.
