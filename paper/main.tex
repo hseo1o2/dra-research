@@ -46,9 +46,8 @@ and 0.225 at Writing, but not at Search or Compression.
 After conservatively masking named entities and candidate-derived identity
 phrases, the trajectory persists (0.725/0.558/0.575/0.783); masking reduces
 Planning by 0.083 but changes no later stage by more than 0.017.
-An independent GPT-5.4-nano replication on seed 0 yields the same shape
-(0.750/0.467/0.617/0.850), with 0.783 overall prediction agreement and
-Cohen's $\kappa=0.763$ against Solar.
+An independent GPT-5.4-nano replication reproduces the same shape across
+both seeds ($\kappa=0.763$ on seed~0; $\kappa=0.745$ on seed~1).
 We provide tracing, deterministic candidate ordering, non-LLM baselines, and analysis code as a reproducible diagnostic protocol.
 \end{abstract}
 
@@ -208,7 +207,7 @@ Shuffled-actionable   & Donor actionable prefs, shell identity       & Actionabl
 \end{tabular}
 \caption{Shortcut control conditions executed in this paper.
 Identifier masking is a post-processing pass on all four existing stage
-artifacts; shuffled-actionable is a 15-report generation-time intervention.
+artifacts; shuffled-actionable is a 30-report two-seed generation-time intervention.
 Two additional generation-time conditions (actionable-only, identity-only)
 were attempted but did not pass the pre-specified completeness gate
 (Appendix~\ref{app:exp011}).}
@@ -376,8 +375,10 @@ $[-0.433,-0.133]$), followed by a Compression-to-Writing gain of $+0.233$
 Cohen's $\kappa=0.763$). Stage-wise $\kappa$ mirrors the primary trajectory:
 highest at Writing (0.855) and Planning (0.837), and lower at Search (0.680)
 and Compression (0.673)---the two stages with the lowest attribution accuracy.
-The replicated trajectory is therefore not specific to the primary evaluator.
-Table~\ref{tab:matcher_agreement} gives per-stage detail.
+On seed 1, GPT-5.4-nano produces 0.833/0.583/0.600/0.733, agreeing with Solar
+on 76.7\% of decisions ($\kappa=0.745$); the dip-and-recovery shape is
+consistent across evaluators and seeds.
+Table~\ref{tab:matcher_agreement} gives per-stage detail for seed~0.
 
 \begin{table}[t]
 \centering
@@ -628,22 +629,21 @@ the remaining evidence corresponds exclusively to actionable preferences:
 paraphrased identity cues and other lexical shortcuts may remain.
 
 \paragraph{Shuffled-actionable intervention.}
-In a frozen 15-report seed-0 subset, we replace each identity shell's
+Across 30 reports (seeds 0 and 1), we replace each identity shell's
 actionable preferences with those of another candidate persona.
 Table~\ref{tab:shuffled_actionable} shows prediction rates for the shell,
 the actionable donor, and the third candidate at each stage. Predictions
-strongly favor the shell over the donor at Planning (0.667 vs.\ 0.133;
-donor-minus-shell $-0.533$, $[-0.933,-0.133]$) and Writing
-(0.800 vs.\ 0.133; $-0.667$, $[-0.933,-0.400]$). Search is the only stage
+strongly favor the shell over the donor at Planning (0.633 vs.\ 0.200;
+donor-minus-shell $-0.433$, $[-0.800,-0.100]$) and Writing
+(0.733 vs.\ 0.167; $-0.567$, $[-0.867,-0.267]$). Search is the only stage
 where donor and shell prediction rates approach parity ($-0.133$,
-$[-0.600,+0.200]$), consistent with its role as the lowest-recoverability
-stage. The Writing result holds in the strict-quality subset ($n=8$: shell
-0.875, donor 0.125). The two key claims---Planning and Writing shell
+$[-0.567,+0.133]$), consistent with its role as the lowest-recoverability
+stage. The Writing result holds in the strict-quality subset ($n=21$: shell
+0.762, donor 0.190). The two key claims---Planning and Writing shell
 dominance---are supported by confidence intervals entirely below zero
-($[-0.933,-0.133]$ and $[-0.933,-0.400]$ respectively), so the direction
-is reliable despite the small sample; the ambiguous stages (Search, Compression)
-have intervals that include zero, consistent with their role as the
-lowest-accuracy stages where the shell-donor gap is weakest.
+($[-0.800,-0.100]$ and $[-0.867,-0.267]$ respectively); the ambiguous stages
+(Search, Compression) have intervals that include zero, consistent with their
+role as the lowest-accuracy stages where the shell-donor gap is weakest.
 Thus, detectable output identity remains anchored more strongly to the identity
 shell than to transplanted actionable preferences; this does not establish that
 the model ignores actionable preferences.
@@ -656,15 +656,15 @@ the model ignores actionable preferences.
 \toprule
 \textbf{Stage} & \textbf{Shell} & \textbf{Donor} & \textbf{Other} & \textbf{$\Delta$} & \textbf{95\% CI} \\
 \midrule
-Planning    & 0.667 & 0.133 & 0.200 & $-0.533$ & $[-0.933,-0.133]$ \\
-Search      & 0.467 & 0.333 & 0.200 & $-0.133$ & $[-0.600,+0.200]$ \\
-Compression & 0.533 & 0.200 & 0.267 & $-0.333$ & $[-0.733,+0.000]$ \\
-Writing     & 0.800 & 0.133 & 0.067 & $-0.667$ & $[-0.933,-0.400]$ \\
+Planning    & 0.633 & 0.200 & 0.167 & $-0.433$ & $[-0.800,-0.100]$ \\
+Search      & 0.433 & 0.300 & 0.267 & $-0.133$ & $[-0.567,+0.133]$ \\
+Compression & 0.500 & 0.233 & 0.267 & $-0.267$ & $[-0.667,+0.000]$ \\
+Writing     & 0.733 & 0.167 & 0.100 & $-0.567$ & $[-0.867,-0.267]$ \\
 \bottomrule
 \end{tabular}}
 \caption{Shuffled-actionable intervention: Solar prediction rates for the
   identity shell, the actionable donor, and the third candidate
-  ($n=15$, seed 0). $\Delta$ = Donor$-$Shell; 95\% CI: task-cluster
+  ($n=30$, seeds 0 and 1). $\Delta$ = Donor$-$Shell; 95\% CI: task-cluster
   bootstrap. Search is the only stage where donor and shell are not
   clearly separated.}
 \label{tab:shuffled_actionable}
@@ -691,10 +691,9 @@ while paraphrased identity cues may remain. The per-ground-truth
 hard-negative construction also provides a weak candidate-only structural
 prior; we report a symmetric task-shared sensitivity because this can affect
 absolute accuracy. Our Search views are post-hoc, while the
-shuffled-actionable intervention is small (15 reports, one seed; eight
-strict-quality reports). Neither establishes downstream causal effects or
-utility. GPT replication covers seed 0 only, and cross-dataset replication
-remains an important next step.
+shuffled-actionable intervention covers 30 reports across two seeds
+(21 strict-quality). Neither establishes downstream causal effects or
+utility. Cross-dataset replication remains an important next step.
 
 % ---------------------------------------------------------------------------
 \section{Conclusion}
@@ -715,12 +714,12 @@ or Compression. The same shape remains after conservative identity masking
 protocol. Together, these results localize a robust early-stage drop and
 late-stage recovery without establishing causal signal loss, harmful
 retrieval, or downstream utility.
-A generation-time shuffled-actionable control further favors the identity
-shell over the actionable donor at Writing (0.800 vs.\ 0.133), exposing a gap
+A 30-report two-seed shuffled-actionable control further favors the identity
+shell over the actionable donor at Writing (0.733 vs.\ 0.167), exposing a gap
 between identity recoverability and actionable-preference transmission.
-GPT-5.4-nano independently reproduces the trajectory and agrees with Solar on
-78.3\% of decisions ($\kappa=0.763$), reducing dependence on a single
-evaluator.
+GPT-5.4-nano independently reproduces the trajectory across both seeds
+($\kappa=0.763$ on seed~0; $\kappa=0.745$ on seed~1), reducing dependence on
+a single evaluator.
 
 Candidate-set-size sensitivity across two seeds at $N=2$ and $N=5$ confirms the
 dip-and-recovery shape is not an artefact of the three-way choice structure;
