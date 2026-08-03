@@ -1,0 +1,2540 @@
+{
+  "candidate_sizes": [
+    2,
+    3,
+    5
+  ],
+  "experiments": 60,
+  "external_api_calls": 0,
+  "input_sha256": {
+    "manifest": "8110d1b3656fa5ba021f7b1bd053a92a11922c4efecd8d43d552e80cda4ad2a9",
+    "personas": "4fbd651033892bdaa48dcc5eca0372a4c4aa113672fe014ca75286d4c49bfee5",
+    "queries": "e1b782361ec57ac3b21c34a143c74a34a57b42df222e42b7d6efb978ff998091"
+  },
+  "method": "GT plus top-k same-domain hard negatives ranked by actionable-token Jaccard; score descending, userid ascending tie-break",
+  "n3_manifest_exact_matches": 60,
+  "purpose": "candidate-set-size sensitivity plan",
+  "rows": [
+    {
+      "candidate_sets": {
+        "2": [
+          "User2",
+          "User1"
+        ],
+        "3": [
+          "User2",
+          "User1",
+          "User7"
+        ],
+        "5": [
+          "User2",
+          "User1",
+          "User7",
+          "User4",
+          "User20"
+        ]
+      },
+      "domain": "Education",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User2",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2729,
+          "userid": "User1"
+        },
+        {
+          "jaccard": 0.2683,
+          "userid": "User7"
+        },
+        {
+          "jaccard": 0.2655,
+          "userid": "User4"
+        },
+        {
+          "jaccard": 0.2618,
+          "userid": "User20"
+        }
+      ],
+      "taskid": 2
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User6",
+          "User18"
+        ],
+        "3": [
+          "User6",
+          "User18",
+          "User2"
+        ],
+        "5": [
+          "User6",
+          "User18",
+          "User2",
+          "User9",
+          "User7"
+        ]
+      },
+      "domain": "Education",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User6",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2602,
+          "userid": "User18"
+        },
+        {
+          "jaccard": 0.2576,
+          "userid": "User2"
+        },
+        {
+          "jaccard": 0.2559,
+          "userid": "User9"
+        },
+        {
+          "jaccard": 0.2484,
+          "userid": "User7"
+        }
+      ],
+      "taskid": 2
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User7",
+          "User20"
+        ],
+        "3": [
+          "User7",
+          "User20",
+          "User18"
+        ],
+        "5": [
+          "User7",
+          "User20",
+          "User18",
+          "User2",
+          "User4"
+        ]
+      },
+      "domain": "Education",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User7",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2701,
+          "userid": "User20"
+        },
+        {
+          "jaccard": 0.2683,
+          "userid": "User18"
+        },
+        {
+          "jaccard": 0.2683,
+          "userid": "User2"
+        },
+        {
+          "jaccard": 0.2585,
+          "userid": "User4"
+        }
+      ],
+      "taskid": 2
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User9",
+          "User11"
+        ],
+        "3": [
+          "User9",
+          "User11",
+          "User6"
+        ],
+        "5": [
+          "User9",
+          "User11",
+          "User6",
+          "User8",
+          "User20"
+        ]
+      },
+      "domain": "Education",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User9",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.257,
+          "userid": "User11"
+        },
+        {
+          "jaccard": 0.2559,
+          "userid": "User6"
+        },
+        {
+          "jaccard": 0.248,
+          "userid": "User8"
+        },
+        {
+          "jaccard": 0.2439,
+          "userid": "User20"
+        }
+      ],
+      "taskid": 4
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User19",
+          "User10"
+        ],
+        "3": [
+          "User19",
+          "User10",
+          "User18"
+        ],
+        "5": [
+          "User19",
+          "User10",
+          "User18",
+          "User11",
+          "User21"
+        ]
+      },
+      "domain": "Education",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User19",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2797,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2602,
+          "userid": "User18"
+        },
+        {
+          "jaccard": 0.2594,
+          "userid": "User11"
+        },
+        {
+          "jaccard": 0.2593,
+          "userid": "User21"
+        }
+      ],
+      "taskid": 4
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User21",
+          "User10"
+        ],
+        "3": [
+          "User21",
+          "User10",
+          "User8"
+        ],
+        "5": [
+          "User21",
+          "User10",
+          "User8",
+          "User19",
+          "User4"
+        ]
+      },
+      "domain": "Education",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User21",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2716,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2611,
+          "userid": "User8"
+        },
+        {
+          "jaccard": 0.2593,
+          "userid": "User19"
+        },
+        {
+          "jaccard": 0.2464,
+          "userid": "User4"
+        }
+      ],
+      "taskid": 4
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User19",
+          "User10"
+        ],
+        "3": [
+          "User19",
+          "User10",
+          "User18"
+        ],
+        "5": [
+          "User19",
+          "User10",
+          "User18",
+          "User11",
+          "User8"
+        ]
+      },
+      "domain": "Career",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User19",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2797,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2602,
+          "userid": "User18"
+        },
+        {
+          "jaccard": 0.2594,
+          "userid": "User11"
+        },
+        {
+          "jaccard": 0.2584,
+          "userid": "User8"
+        }
+      ],
+      "taskid": 7
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User18",
+          "User8"
+        ],
+        "3": [
+          "User18",
+          "User8",
+          "User10"
+        ],
+        "5": [
+          "User18",
+          "User8",
+          "User10",
+          "User15",
+          "User11"
+        ]
+      },
+      "domain": "Career",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User18",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.3029,
+          "userid": "User8"
+        },
+        {
+          "jaccard": 0.283,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2732,
+          "userid": "User15"
+        },
+        {
+          "jaccard": 0.2698,
+          "userid": "User11"
+        }
+      ],
+      "taskid": 7
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User10",
+          "User18"
+        ],
+        "3": [
+          "User10",
+          "User18",
+          "User8"
+        ],
+        "5": [
+          "User10",
+          "User18",
+          "User8",
+          "User11",
+          "User19"
+        ]
+      },
+      "domain": "Career",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User10",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.283,
+          "userid": "User18"
+        },
+        {
+          "jaccard": 0.2822,
+          "userid": "User8"
+        },
+        {
+          "jaccard": 0.2817,
+          "userid": "User11"
+        },
+        {
+          "jaccard": 0.2797,
+          "userid": "User19"
+        }
+      ],
+      "taskid": 7
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User18",
+          "User8"
+        ],
+        "3": [
+          "User18",
+          "User8",
+          "User10"
+        ],
+        "5": [
+          "User18",
+          "User8",
+          "User10",
+          "User15",
+          "User11"
+        ]
+      },
+      "domain": "Career",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User18",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.3029,
+          "userid": "User8"
+        },
+        {
+          "jaccard": 0.283,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2732,
+          "userid": "User15"
+        },
+        {
+          "jaccard": 0.2698,
+          "userid": "User11"
+        }
+      ],
+      "taskid": 9
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User9",
+          "User11"
+        ],
+        "3": [
+          "User9",
+          "User11",
+          "User12"
+        ],
+        "5": [
+          "User9",
+          "User11",
+          "User12",
+          "User8",
+          "User20"
+        ]
+      },
+      "domain": "Career",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User9",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.257,
+          "userid": "User11"
+        },
+        {
+          "jaccard": 0.2557,
+          "userid": "User12"
+        },
+        {
+          "jaccard": 0.248,
+          "userid": "User8"
+        },
+        {
+          "jaccard": 0.2439,
+          "userid": "User20"
+        }
+      ],
+      "taskid": 9
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User8",
+          "User18"
+        ],
+        "3": [
+          "User8",
+          "User18",
+          "User10"
+        ],
+        "5": [
+          "User8",
+          "User18",
+          "User10",
+          "User11",
+          "User12"
+        ]
+      },
+      "domain": "Career",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User8",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.3029,
+          "userid": "User18"
+        },
+        {
+          "jaccard": 0.2822,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2715,
+          "userid": "User11"
+        },
+        {
+          "jaccard": 0.2619,
+          "userid": "User12"
+        }
+      ],
+      "taskid": 9
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User9",
+          "User11"
+        ],
+        "3": [
+          "User9",
+          "User11",
+          "User14"
+        ],
+        "5": [
+          "User9",
+          "User11",
+          "User14",
+          "User20",
+          "User18"
+        ]
+      },
+      "domain": "Health",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User9",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.257,
+          "userid": "User11"
+        },
+        {
+          "jaccard": 0.2547,
+          "userid": "User14"
+        },
+        {
+          "jaccard": 0.2439,
+          "userid": "User20"
+        },
+        {
+          "jaccard": 0.2432,
+          "userid": "User18"
+        }
+      ],
+      "taskid": 12
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User2",
+          "User1"
+        ],
+        "3": [
+          "User2",
+          "User1",
+          "User7"
+        ],
+        "5": [
+          "User2",
+          "User1",
+          "User7",
+          "User4",
+          "User20"
+        ]
+      },
+      "domain": "Health",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User2",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2729,
+          "userid": "User1"
+        },
+        {
+          "jaccard": 0.2683,
+          "userid": "User7"
+        },
+        {
+          "jaccard": 0.2655,
+          "userid": "User4"
+        },
+        {
+          "jaccard": 0.2618,
+          "userid": "User20"
+        }
+      ],
+      "taskid": 12
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User5",
+          "User4"
+        ],
+        "3": [
+          "User5",
+          "User4",
+          "User2"
+        ],
+        "5": [
+          "User5",
+          "User4",
+          "User2",
+          "User11",
+          "User3"
+        ]
+      },
+      "domain": "Health",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User5",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2652,
+          "userid": "User4"
+        },
+        {
+          "jaccard": 0.2552,
+          "userid": "User2"
+        },
+        {
+          "jaccard": 0.2484,
+          "userid": "User11"
+        },
+        {
+          "jaccard": 0.2466,
+          "userid": "User3"
+        }
+      ],
+      "taskid": 12
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User14",
+          "User20"
+        ],
+        "3": [
+          "User14",
+          "User20",
+          "User13"
+        ],
+        "5": [
+          "User14",
+          "User20",
+          "User13",
+          "User16",
+          "User15"
+        ]
+      },
+      "domain": "Health",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User14",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2899,
+          "userid": "User20"
+        },
+        {
+          "jaccard": 0.2747,
+          "userid": "User13"
+        },
+        {
+          "jaccard": 0.2737,
+          "userid": "User16"
+        },
+        {
+          "jaccard": 0.2678,
+          "userid": "User15"
+        }
+      ],
+      "taskid": 14
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User3",
+          "User1"
+        ],
+        "3": [
+          "User3",
+          "User1",
+          "User5"
+        ],
+        "5": [
+          "User3",
+          "User1",
+          "User5",
+          "User16",
+          "User10"
+        ]
+      },
+      "domain": "Health",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User3",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2609,
+          "userid": "User1"
+        },
+        {
+          "jaccard": 0.2466,
+          "userid": "User5"
+        },
+        {
+          "jaccard": 0.2452,
+          "userid": "User16"
+        },
+        {
+          "jaccard": 0.2414,
+          "userid": "User10"
+        }
+      ],
+      "taskid": 14
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User22",
+          "User10"
+        ],
+        "3": [
+          "User22",
+          "User10",
+          "User16"
+        ],
+        "5": [
+          "User22",
+          "User10",
+          "User16",
+          "User18",
+          "User23"
+        ]
+      },
+      "domain": "Health",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User22",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.3086,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.3068,
+          "userid": "User16"
+        },
+        {
+          "jaccard": 0.2713,
+          "userid": "User18"
+        },
+        {
+          "jaccard": 0.2705,
+          "userid": "User23"
+        }
+      ],
+      "taskid": 14
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User16",
+          "User22"
+        ],
+        "3": [
+          "User16",
+          "User22",
+          "User10"
+        ],
+        "5": [
+          "User16",
+          "User22",
+          "User10",
+          "User18",
+          "User14"
+        ]
+      },
+      "domain": "Travel",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User16",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.3068,
+          "userid": "User22"
+        },
+        {
+          "jaccard": 0.3019,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2827,
+          "userid": "User18"
+        },
+        {
+          "jaccard": 0.2737,
+          "userid": "User14"
+        }
+      ],
+      "taskid": 17
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User10",
+          "User22"
+        ],
+        "3": [
+          "User10",
+          "User22",
+          "User16"
+        ],
+        "5": [
+          "User10",
+          "User22",
+          "User16",
+          "User18",
+          "User8"
+        ]
+      },
+      "domain": "Travel",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User10",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.3086,
+          "userid": "User22"
+        },
+        {
+          "jaccard": 0.3019,
+          "userid": "User16"
+        },
+        {
+          "jaccard": 0.283,
+          "userid": "User18"
+        },
+        {
+          "jaccard": 0.2822,
+          "userid": "User8"
+        }
+      ],
+      "taskid": 17
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User17",
+          "User25"
+        ],
+        "3": [
+          "User17",
+          "User25",
+          "User22"
+        ],
+        "5": [
+          "User17",
+          "User25",
+          "User22",
+          "User10",
+          "User16"
+        ]
+      },
+      "domain": "Travel",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User17",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2955,
+          "userid": "User25"
+        },
+        {
+          "jaccard": 0.2747,
+          "userid": "User22"
+        },
+        {
+          "jaccard": 0.272,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2683,
+          "userid": "User16"
+        }
+      ],
+      "taskid": 17
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User10",
+          "User22"
+        ],
+        "3": [
+          "User10",
+          "User22",
+          "User16"
+        ],
+        "5": [
+          "User10",
+          "User22",
+          "User16",
+          "User18",
+          "User8"
+        ]
+      },
+      "domain": "Travel",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User10",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.3086,
+          "userid": "User22"
+        },
+        {
+          "jaccard": 0.3019,
+          "userid": "User16"
+        },
+        {
+          "jaccard": 0.283,
+          "userid": "User18"
+        },
+        {
+          "jaccard": 0.2822,
+          "userid": "User8"
+        }
+      ],
+      "taskid": 18
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User22",
+          "User10"
+        ],
+        "3": [
+          "User22",
+          "User10",
+          "User16"
+        ],
+        "5": [
+          "User22",
+          "User10",
+          "User16",
+          "User17",
+          "User18"
+        ]
+      },
+      "domain": "Travel",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User22",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.3086,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.3068,
+          "userid": "User16"
+        },
+        {
+          "jaccard": 0.2747,
+          "userid": "User17"
+        },
+        {
+          "jaccard": 0.2713,
+          "userid": "User18"
+        }
+      ],
+      "taskid": 18
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User19",
+          "User10"
+        ],
+        "3": [
+          "User19",
+          "User10",
+          "User16"
+        ],
+        "5": [
+          "User19",
+          "User10",
+          "User16",
+          "User18",
+          "User11"
+        ]
+      },
+      "domain": "Travel",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User19",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2797,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2616,
+          "userid": "User16"
+        },
+        {
+          "jaccard": 0.2602,
+          "userid": "User18"
+        },
+        {
+          "jaccard": 0.2594,
+          "userid": "User11"
+        }
+      ],
+      "taskid": 18
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User15",
+          "User20"
+        ],
+        "3": [
+          "User15",
+          "User20",
+          "User18"
+        ],
+        "5": [
+          "User15",
+          "User20",
+          "User18",
+          "User14",
+          "User13"
+        ]
+      },
+      "domain": "Finance",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User15",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2828,
+          "userid": "User20"
+        },
+        {
+          "jaccard": 0.2732,
+          "userid": "User18"
+        },
+        {
+          "jaccard": 0.2678,
+          "userid": "User14"
+        },
+        {
+          "jaccard": 0.2673,
+          "userid": "User13"
+        }
+      ],
+      "taskid": 22
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User18",
+          "User8"
+        ],
+        "3": [
+          "User18",
+          "User8",
+          "User10"
+        ],
+        "5": [
+          "User18",
+          "User8",
+          "User10",
+          "User16",
+          "User15"
+        ]
+      },
+      "domain": "Finance",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User18",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.3029,
+          "userid": "User8"
+        },
+        {
+          "jaccard": 0.283,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2827,
+          "userid": "User16"
+        },
+        {
+          "jaccard": 0.2732,
+          "userid": "User15"
+        }
+      ],
+      "taskid": 22
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User14",
+          "User20"
+        ],
+        "3": [
+          "User14",
+          "User20",
+          "User13"
+        ],
+        "5": [
+          "User14",
+          "User20",
+          "User13",
+          "User16",
+          "User15"
+        ]
+      },
+      "domain": "Finance",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User14",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2899,
+          "userid": "User20"
+        },
+        {
+          "jaccard": 0.2747,
+          "userid": "User13"
+        },
+        {
+          "jaccard": 0.2737,
+          "userid": "User16"
+        },
+        {
+          "jaccard": 0.2678,
+          "userid": "User15"
+        }
+      ],
+      "taskid": 22
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User13",
+          "User20"
+        ],
+        "3": [
+          "User13",
+          "User20",
+          "User14"
+        ],
+        "5": [
+          "User13",
+          "User20",
+          "User14",
+          "User15",
+          "User18"
+        ]
+      },
+      "domain": "Finance",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User13",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2833,
+          "userid": "User20"
+        },
+        {
+          "jaccard": 0.2747,
+          "userid": "User14"
+        },
+        {
+          "jaccard": 0.2673,
+          "userid": "User15"
+        },
+        {
+          "jaccard": 0.2642,
+          "userid": "User18"
+        }
+      ],
+      "taskid": 24
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User17",
+          "User10"
+        ],
+        "3": [
+          "User17",
+          "User10",
+          "User16"
+        ],
+        "5": [
+          "User17",
+          "User10",
+          "User16",
+          "User19",
+          "User24"
+        ]
+      },
+      "domain": "Finance",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User17",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.272,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2683,
+          "userid": "User16"
+        },
+        {
+          "jaccard": 0.2492,
+          "userid": "User19"
+        },
+        {
+          "jaccard": 0.2465,
+          "userid": "User24"
+        }
+      ],
+      "taskid": 24
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User12",
+          "User10"
+        ],
+        "3": [
+          "User12",
+          "User10",
+          "User20"
+        ],
+        "5": [
+          "User12",
+          "User10",
+          "User20",
+          "User8",
+          "User18"
+        ]
+      },
+      "domain": "Finance",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User12",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2668,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2659,
+          "userid": "User20"
+        },
+        {
+          "jaccard": 0.2619,
+          "userid": "User8"
+        },
+        {
+          "jaccard": 0.256,
+          "userid": "User18"
+        }
+      ],
+      "taskid": 24
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User14",
+          "User13"
+        ],
+        "3": [
+          "User14",
+          "User13",
+          "User15"
+        ],
+        "5": [
+          "User14",
+          "User13",
+          "User15",
+          "User9",
+          "User18"
+        ]
+      },
+      "domain": "Creative",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User14",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2747,
+          "userid": "User13"
+        },
+        {
+          "jaccard": 0.2678,
+          "userid": "User15"
+        },
+        {
+          "jaccard": 0.2547,
+          "userid": "User9"
+        },
+        {
+          "jaccard": 0.2473,
+          "userid": "User18"
+        }
+      ],
+      "taskid": 27
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User13",
+          "User14"
+        ],
+        "3": [
+          "User13",
+          "User14",
+          "User15"
+        ],
+        "5": [
+          "User13",
+          "User14",
+          "User15",
+          "User18",
+          "User12"
+        ]
+      },
+      "domain": "Creative",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User13",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2747,
+          "userid": "User14"
+        },
+        {
+          "jaccard": 0.2673,
+          "userid": "User15"
+        },
+        {
+          "jaccard": 0.2642,
+          "userid": "User18"
+        },
+        {
+          "jaccard": 0.2504,
+          "userid": "User12"
+        }
+      ],
+      "taskid": 27
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User2",
+          "User1"
+        ],
+        "3": [
+          "User2",
+          "User1",
+          "User7"
+        ],
+        "5": [
+          "User2",
+          "User1",
+          "User7",
+          "User4",
+          "User12"
+        ]
+      },
+      "domain": "Creative",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User2",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2729,
+          "userid": "User1"
+        },
+        {
+          "jaccard": 0.2683,
+          "userid": "User7"
+        },
+        {
+          "jaccard": 0.2655,
+          "userid": "User4"
+        },
+        {
+          "jaccard": 0.2554,
+          "userid": "User12"
+        }
+      ],
+      "taskid": 27
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User18",
+          "User10"
+        ],
+        "3": [
+          "User18",
+          "User10",
+          "User15"
+        ],
+        "5": [
+          "User18",
+          "User10",
+          "User15",
+          "User7",
+          "User13"
+        ]
+      },
+      "domain": "Creative",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User18",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.283,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2732,
+          "userid": "User15"
+        },
+        {
+          "jaccard": 0.2683,
+          "userid": "User7"
+        },
+        {
+          "jaccard": 0.2642,
+          "userid": "User13"
+        }
+      ],
+      "taskid": 29
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User13",
+          "User14"
+        ],
+        "3": [
+          "User13",
+          "User14",
+          "User15"
+        ],
+        "5": [
+          "User13",
+          "User14",
+          "User15",
+          "User18",
+          "User12"
+        ]
+      },
+      "domain": "Creative",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User13",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2747,
+          "userid": "User14"
+        },
+        {
+          "jaccard": 0.2673,
+          "userid": "User15"
+        },
+        {
+          "jaccard": 0.2642,
+          "userid": "User18"
+        },
+        {
+          "jaccard": 0.2504,
+          "userid": "User12"
+        }
+      ],
+      "taskid": 29
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User10",
+          "User18"
+        ],
+        "3": [
+          "User10",
+          "User18",
+          "User19"
+        ],
+        "5": [
+          "User10",
+          "User18",
+          "User19",
+          "User4",
+          "User12"
+        ]
+      },
+      "domain": "Creative",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User10",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.283,
+          "userid": "User18"
+        },
+        {
+          "jaccard": 0.2797,
+          "userid": "User19"
+        },
+        {
+          "jaccard": 0.278,
+          "userid": "User4"
+        },
+        {
+          "jaccard": 0.2668,
+          "userid": "User12"
+        }
+      ],
+      "taskid": 29
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User13",
+          "User14"
+        ],
+        "3": [
+          "User13",
+          "User14",
+          "User18"
+        ],
+        "5": [
+          "User13",
+          "User14",
+          "User18",
+          "User6",
+          "User12"
+        ]
+      },
+      "domain": "Shopping",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User13",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2747,
+          "userid": "User14"
+        },
+        {
+          "jaccard": 0.2642,
+          "userid": "User18"
+        },
+        {
+          "jaccard": 0.2524,
+          "userid": "User6"
+        },
+        {
+          "jaccard": 0.2504,
+          "userid": "User12"
+        }
+      ],
+      "taskid": 32
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User11",
+          "User10"
+        ],
+        "3": [
+          "User11",
+          "User10",
+          "User8"
+        ],
+        "5": [
+          "User11",
+          "User10",
+          "User8",
+          "User18",
+          "User19"
+        ]
+      },
+      "domain": "Shopping",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User11",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2817,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2715,
+          "userid": "User8"
+        },
+        {
+          "jaccard": 0.2698,
+          "userid": "User18"
+        },
+        {
+          "jaccard": 0.2594,
+          "userid": "User19"
+        }
+      ],
+      "taskid": 32
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User18",
+          "User8"
+        ],
+        "3": [
+          "User18",
+          "User8",
+          "User10"
+        ],
+        "5": [
+          "User18",
+          "User8",
+          "User10",
+          "User11",
+          "User7"
+        ]
+      },
+      "domain": "Shopping",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User18",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.3029,
+          "userid": "User8"
+        },
+        {
+          "jaccard": 0.283,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2698,
+          "userid": "User11"
+        },
+        {
+          "jaccard": 0.2683,
+          "userid": "User7"
+        }
+      ],
+      "taskid": 32
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User7",
+          "User18"
+        ],
+        "3": [
+          "User7",
+          "User18",
+          "User2"
+        ],
+        "5": [
+          "User7",
+          "User18",
+          "User2",
+          "User4",
+          "User11"
+        ]
+      },
+      "domain": "Shopping",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User7",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2683,
+          "userid": "User18"
+        },
+        {
+          "jaccard": 0.2683,
+          "userid": "User2"
+        },
+        {
+          "jaccard": 0.2585,
+          "userid": "User4"
+        },
+        {
+          "jaccard": 0.2512,
+          "userid": "User11"
+        }
+      ],
+      "taskid": 33
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User13",
+          "User14"
+        ],
+        "3": [
+          "User13",
+          "User14",
+          "User18"
+        ],
+        "5": [
+          "User13",
+          "User14",
+          "User18",
+          "User6",
+          "User12"
+        ]
+      },
+      "domain": "Shopping",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User13",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2747,
+          "userid": "User14"
+        },
+        {
+          "jaccard": 0.2642,
+          "userid": "User18"
+        },
+        {
+          "jaccard": 0.2524,
+          "userid": "User6"
+        },
+        {
+          "jaccard": 0.2504,
+          "userid": "User12"
+        }
+      ],
+      "taskid": 33
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User12",
+          "User10"
+        ],
+        "3": [
+          "User12",
+          "User10",
+          "User8"
+        ],
+        "5": [
+          "User12",
+          "User10",
+          "User8",
+          "User18",
+          "User9"
+        ]
+      },
+      "domain": "Shopping",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User12",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2668,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2619,
+          "userid": "User8"
+        },
+        {
+          "jaccard": 0.256,
+          "userid": "User18"
+        },
+        {
+          "jaccard": 0.2557,
+          "userid": "User9"
+        }
+      ],
+      "taskid": 33
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User20",
+          "User14"
+        ],
+        "3": [
+          "User20",
+          "User14",
+          "User13"
+        ],
+        "5": [
+          "User20",
+          "User14",
+          "User13",
+          "User12",
+          "User16"
+        ]
+      },
+      "domain": "Real Estate",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User20",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2899,
+          "userid": "User14"
+        },
+        {
+          "jaccard": 0.2833,
+          "userid": "User13"
+        },
+        {
+          "jaccard": 0.2659,
+          "userid": "User12"
+        },
+        {
+          "jaccard": 0.2543,
+          "userid": "User16"
+        }
+      ],
+      "taskid": 37
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User8",
+          "User18"
+        ],
+        "3": [
+          "User8",
+          "User18",
+          "User10"
+        ],
+        "5": [
+          "User8",
+          "User18",
+          "User10",
+          "User11",
+          "User16"
+        ]
+      },
+      "domain": "Real Estate",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User8",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.3029,
+          "userid": "User18"
+        },
+        {
+          "jaccard": 0.2822,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2715,
+          "userid": "User11"
+        },
+        {
+          "jaccard": 0.2689,
+          "userid": "User16"
+        }
+      ],
+      "taskid": 37
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User14",
+          "User20"
+        ],
+        "3": [
+          "User14",
+          "User20",
+          "User13"
+        ],
+        "5": [
+          "User14",
+          "User20",
+          "User13",
+          "User16",
+          "User23"
+        ]
+      },
+      "domain": "Real Estate",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User14",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2899,
+          "userid": "User20"
+        },
+        {
+          "jaccard": 0.2747,
+          "userid": "User13"
+        },
+        {
+          "jaccard": 0.2737,
+          "userid": "User16"
+        },
+        {
+          "jaccard": 0.2579,
+          "userid": "User23"
+        }
+      ],
+      "taskid": 37
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User10",
+          "User22"
+        ],
+        "3": [
+          "User10",
+          "User22",
+          "User16"
+        ],
+        "5": [
+          "User10",
+          "User22",
+          "User16",
+          "User18",
+          "User8"
+        ]
+      },
+      "domain": "Real Estate",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User10",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.3086,
+          "userid": "User22"
+        },
+        {
+          "jaccard": 0.3019,
+          "userid": "User16"
+        },
+        {
+          "jaccard": 0.283,
+          "userid": "User18"
+        },
+        {
+          "jaccard": 0.2822,
+          "userid": "User8"
+        }
+      ],
+      "taskid": 38
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User19",
+          "User10"
+        ],
+        "3": [
+          "User19",
+          "User10",
+          "User16"
+        ],
+        "5": [
+          "User19",
+          "User10",
+          "User16",
+          "User18",
+          "User11"
+        ]
+      },
+      "domain": "Real Estate",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User19",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2797,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2616,
+          "userid": "User16"
+        },
+        {
+          "jaccard": 0.2602,
+          "userid": "User18"
+        },
+        {
+          "jaccard": 0.2594,
+          "userid": "User11"
+        }
+      ],
+      "taskid": 38
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User12",
+          "User22"
+        ],
+        "3": [
+          "User12",
+          "User22",
+          "User10"
+        ],
+        "5": [
+          "User12",
+          "User22",
+          "User10",
+          "User20",
+          "User8"
+        ]
+      },
+      "domain": "Real Estate",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User12",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2673,
+          "userid": "User22"
+        },
+        {
+          "jaccard": 0.2668,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2659,
+          "userid": "User20"
+        },
+        {
+          "jaccard": 0.2619,
+          "userid": "User8"
+        }
+      ],
+      "taskid": 38
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User11",
+          "User10"
+        ],
+        "3": [
+          "User11",
+          "User10",
+          "User18"
+        ],
+        "5": [
+          "User11",
+          "User10",
+          "User18",
+          "User22",
+          "User19"
+        ]
+      },
+      "domain": "Law",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User11",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2817,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2698,
+          "userid": "User18"
+        },
+        {
+          "jaccard": 0.2647,
+          "userid": "User22"
+        },
+        {
+          "jaccard": 0.2594,
+          "userid": "User19"
+        }
+      ],
+      "taskid": 42
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User18",
+          "User10"
+        ],
+        "3": [
+          "User18",
+          "User10",
+          "User16"
+        ],
+        "5": [
+          "User18",
+          "User10",
+          "User16",
+          "User22",
+          "User11"
+        ]
+      },
+      "domain": "Law",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User18",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.283,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2827,
+          "userid": "User16"
+        },
+        {
+          "jaccard": 0.2713,
+          "userid": "User22"
+        },
+        {
+          "jaccard": 0.2698,
+          "userid": "User11"
+        }
+      ],
+      "taskid": 42
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User1",
+          "User4"
+        ],
+        "3": [
+          "User1",
+          "User4",
+          "User22"
+        ],
+        "5": [
+          "User1",
+          "User4",
+          "User22",
+          "User18",
+          "User10"
+        ]
+      },
+      "domain": "Law",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User1",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2604,
+          "userid": "User4"
+        },
+        {
+          "jaccard": 0.2595,
+          "userid": "User22"
+        },
+        {
+          "jaccard": 0.2584,
+          "userid": "User18"
+        },
+        {
+          "jaccard": 0.2508,
+          "userid": "User10"
+        }
+      ],
+      "taskid": 42
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User11",
+          "User10"
+        ],
+        "3": [
+          "User11",
+          "User10",
+          "User18"
+        ],
+        "5": [
+          "User11",
+          "User10",
+          "User18",
+          "User22",
+          "User19"
+        ]
+      },
+      "domain": "Law",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User11",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2817,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2698,
+          "userid": "User18"
+        },
+        {
+          "jaccard": 0.2647,
+          "userid": "User22"
+        },
+        {
+          "jaccard": 0.2594,
+          "userid": "User19"
+        }
+      ],
+      "taskid": 43
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User10",
+          "User22"
+        ],
+        "3": [
+          "User10",
+          "User22",
+          "User16"
+        ],
+        "5": [
+          "User10",
+          "User22",
+          "User16",
+          "User18",
+          "User11"
+        ]
+      },
+      "domain": "Law",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User10",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.3086,
+          "userid": "User22"
+        },
+        {
+          "jaccard": 0.3019,
+          "userid": "User16"
+        },
+        {
+          "jaccard": 0.283,
+          "userid": "User18"
+        },
+        {
+          "jaccard": 0.2817,
+          "userid": "User11"
+        }
+      ],
+      "taskid": 43
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User18",
+          "User10"
+        ],
+        "3": [
+          "User18",
+          "User10",
+          "User16"
+        ],
+        "5": [
+          "User18",
+          "User10",
+          "User16",
+          "User22",
+          "User11"
+        ]
+      },
+      "domain": "Law",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User18",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.283,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2827,
+          "userid": "User16"
+        },
+        {
+          "jaccard": 0.2713,
+          "userid": "User22"
+        },
+        {
+          "jaccard": 0.2698,
+          "userid": "User11"
+        }
+      ],
+      "taskid": 43
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User12",
+          "User10"
+        ],
+        "3": [
+          "User12",
+          "User10",
+          "User16"
+        ],
+        "5": [
+          "User12",
+          "User10",
+          "User16",
+          "User13",
+          "User17"
+        ]
+      },
+      "domain": "Parenting",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User12",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2668,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2538,
+          "userid": "User16"
+        },
+        {
+          "jaccard": 0.2504,
+          "userid": "User13"
+        },
+        {
+          "jaccard": 0.2355,
+          "userid": "User17"
+        }
+      ],
+      "taskid": 47
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User17",
+          "User10"
+        ],
+        "3": [
+          "User17",
+          "User10",
+          "User16"
+        ],
+        "5": [
+          "User17",
+          "User10",
+          "User16",
+          "User13",
+          "User12"
+        ]
+      },
+      "domain": "Parenting",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User17",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.272,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2683,
+          "userid": "User16"
+        },
+        {
+          "jaccard": 0.2448,
+          "userid": "User13"
+        },
+        {
+          "jaccard": 0.2355,
+          "userid": "User12"
+        }
+      ],
+      "taskid": 47
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User16",
+          "User10"
+        ],
+        "3": [
+          "User16",
+          "User10",
+          "User17"
+        ],
+        "5": [
+          "User16",
+          "User10",
+          "User17",
+          "User12",
+          "User13"
+        ]
+      },
+      "domain": "Parenting",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User16",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.3019,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2683,
+          "userid": "User17"
+        },
+        {
+          "jaccard": 0.2538,
+          "userid": "User12"
+        },
+        {
+          "jaccard": 0.2434,
+          "userid": "User13"
+        }
+      ],
+      "taskid": 47
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User10",
+          "User16"
+        ],
+        "3": [
+          "User10",
+          "User16",
+          "User17"
+        ],
+        "5": [
+          "User10",
+          "User16",
+          "User17",
+          "User12",
+          "User13"
+        ]
+      },
+      "domain": "Parenting",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User10",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.3019,
+          "userid": "User16"
+        },
+        {
+          "jaccard": 0.272,
+          "userid": "User17"
+        },
+        {
+          "jaccard": 0.2668,
+          "userid": "User12"
+        },
+        {
+          "jaccard": 0.2473,
+          "userid": "User13"
+        }
+      ],
+      "taskid": 48
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User13",
+          "User12"
+        ],
+        "3": [
+          "User13",
+          "User12",
+          "User10"
+        ],
+        "5": [
+          "User13",
+          "User12",
+          "User10",
+          "User17",
+          "User16"
+        ]
+      },
+      "domain": "Parenting",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User13",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2504,
+          "userid": "User12"
+        },
+        {
+          "jaccard": 0.2473,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2448,
+          "userid": "User17"
+        },
+        {
+          "jaccard": 0.2434,
+          "userid": "User16"
+        }
+      ],
+      "taskid": 48
+    },
+    {
+      "candidate_sets": {
+        "2": [
+          "User12",
+          "User10"
+        ],
+        "3": [
+          "User12",
+          "User10",
+          "User16"
+        ],
+        "5": [
+          "User12",
+          "User10",
+          "User16",
+          "User13",
+          "User17"
+        ]
+      },
+      "domain": "Parenting",
+      "fallback_to_all_domains": false,
+      "gt_userid": "User12",
+      "ranked_negatives_top4": [
+        {
+          "jaccard": 0.2668,
+          "userid": "User10"
+        },
+        {
+          "jaccard": 0.2538,
+          "userid": "User16"
+        },
+        {
+          "jaccard": 0.2504,
+          "userid": "User13"
+        },
+        {
+          "jaccard": 0.2355,
+          "userid": "User17"
+        }
+      ],
+      "taskid": 48
+    }
+  ],
+  "schema_version": 1
+}

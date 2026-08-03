@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "created_date": "2026-08-03",
+  "external_api_calls": 960,
+  "candidate_protocol": "per-GT attribution_candidate_set_n3",
+  "model": "solar-pro",
+  "required_matcher_jobs": [
+    {
+      "job": "full_two_seed_all_stages",
+      "planned_calls": 480,
+      "executed_calls": 480,
+      "status": "completed",
+      "prompt_chars": 13172117
+    },
+    {
+      "job": "identifier_masked_two_seed_all_stages",
+      "planned_calls": 480,
+      "executed_calls": 480,
+      "status": "completed with candidate-derived identity masking",
+      "prompt_chars": 13148235
+    },
+    {
+      "job": "search_queries_two_seed",
+      "planned_calls": 120,
+      "executed_calls": 0,
+      "status": "pending",
+      "prompt_chars": 2784043
+    },
+    {
+      "job": "search_snippets_two_seed",
+      "planned_calls": 120,
+      "executed_calls": 0,
+      "status": "pending",
+      "prompt_chars": 3062272
+    }
+  ],
+  "total_if_all_retained": {
+    "planned_calls": 1200,
+    "prompt_chars": 32166667
+  },
+  "offline_baselines": {
+    "status": "completed",
+    "external_api_calls": 0,
+    "match_files": 360,
+    "output_dirs": [
+      "runs/confirmatory/baselines_hardneg_v1_seed0",
+      "runs/confirmatory/baselines_hardneg_v1_seed1"
+    ]
+  },
+  "seed0_generation_ablation_matcher": {
+    "external_api_calls": 0,
+    "status": "estimate-only; not executed",
+    "planned_calls": 119,
+    "prompt_chars": 3212315,
+    "jobs": [
+      {
+        "condition": "actionable_only",
+        "planned_calls": 59,
+        "prompt_chars": 1594511,
+        "note": "one empty Writing artifact"
+      },
+      {
+        "condition": "identity_only",
+        "planned_calls": 60,
+        "prompt_chars": 1617804
+      }
+    ]
+  },
+  "execution_status": "corrected full and candidate-derived identity masking completed (960 calls); search-view controls pending (240 planned calls)"
+}

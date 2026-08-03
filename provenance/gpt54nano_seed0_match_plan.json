@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-03",
+  "external_api_calls": 241,
+  "status": "completed",
+  "model": "gpt-5.4-nano-2026-03-17",
+  "base_url": "https://api.openai.com/v1",
+  "input_dir": "runs/confirmatory",
+  "output_dir": "runs/confirmatory/gpt54nano_seed0_matches",
+  "generation_seed": 0,
+  "stages": [
+    "plan",
+    "search",
+    "compress",
+    "write"
+  ],
+  "reports": 60,
+  "planned_calls": 240,
+  "completed_matcher_calls": 240,
+  "smoke_calls": 1,
+  "match_files": 60,
+  "prompt_chars": 6588904,
+  "smoke_prompt_chars": 23070,
+  "provider_usage_metadata": "not captured by the matcher version used for this run; exact billing must be read from the provider dashboard",
+  "corrected_candidate_set_mismatches": 0,
+  "corrected_candidate_order_mismatches": 0,
+  "solar_gpt_observed_agreement": 0.7833333333333333,
+  "solar_gpt_cohen_kappa": 0.7631608911830569,
+  "candidate_shuffle": "canonical SHA-256 run-stage ordering",
+  "purpose": "Secondary-matcher replication and Solar-GPT Cohen's kappa."
+}
