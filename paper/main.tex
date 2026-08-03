@@ -126,6 +126,19 @@ We operationalize this motivation with a tracing adapter that captures determini
 \section{Method}
 \label{sec:method}
 
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=\textwidth]{figures/pipeline_overview.pdf}
+  \caption{DRA-PULSE framework. A user persona $p^*$ and query $q$ condition
+    a four-stage DRA pipeline (Planning, Search, Compression, Writing).
+    At each stage, an independent N-way attribution probe identifies $p^*$
+    from a hard-negative candidate set $\mathcal{C}$ using only the stage
+    artifact. Blue stages (Planning, Writing) have high persona recoverability;
+    orange stages (Search, Compression) are low. The dip-and-recovery
+    trajectory (\S\ref{sec:results}) is the core empirical finding.}
+  \label{fig:pipeline}
+\end{figure*}
+
 \subsection{Task Formulation}
 
 Let $P$ be a DRA pipeline and $\mathcal{C} = \{p_1, \dots, p_N\}$ be a candidate persona set ($N=3$ in our primary experiments).
