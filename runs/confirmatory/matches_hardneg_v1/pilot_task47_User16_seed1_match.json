@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task47_User16_seed1",
+    "stage": "plan",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "Candidate C is a 40-45-year-old father of a middle-school-aged son who enjoys soccer and video games, aligning perfectly with the document's focus on creating an exercise plan for a similar demographic. The document emphasizes family participation (e.g., weekend activities with a dog), which matches Candidate C's golden retriever and family walks. Additionally, the request for evidence-based guidelines aligns with his rational, research-driven decision-making style (e.g., comparing products before purchasing). Candidate A (a nurse with older children) and Candidate B (a marketing manager with younger children) do not match the specific age, family structure, or interests described in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24003,
+    "latency_sec": 1.66,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task47_User16_seed1",
+    "stage": "search",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document focuses on youth physical activity guidelines (ages 12-15), resistance training safety, and bone-strengthening exercises\u2014topics aligning with Candidate B's profile. As a father of a middle-school-aged son (12-15) who enjoys sports (football), Candidate B would prioritize evidence-based guidelines for adolescent fitness. His interest in health, practical consumption habits (e.g., smart home products for family well-being), and outdoor activities (hiking, walking with his dog) reflect the document's emphasis on structured, family-oriented physical activity. Candidates A (focused on nursing/pet care) and C (business-oriented) lack the direct parental and health-conscious framing for youth athletic development.",
+    "model": "solar-pro",
+    "prompt_chars": 25513,
+    "latency_sec": 1.78,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task47_User16_seed1",
+    "stage": "compress",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document focuses on youth physical activity guidelines (ages 12\u201315), emphasizing sports science, developmental benefits, and practical exercise recommendations. Candidate B, a 40-45-year-old father of a middle-school-aged son, aligns most closely with this content. His profile highlights concerns about his son's health, family-oriented activities, and interest in practical exercise (e.g., hiking, cycling, and walking with his dog). Unlike Candidate A (focused on pet care and square dancing) or Candidate C (prioritizing golf and yoga), Candidate B\u2019s exercise habits, family dynamics, and interest in health/activity benefits directly mirror the document\u2019s framing. His recent exploration of hiking and cycling also aligns with the document\u2019s emphasis on bone-strengthening and aerobic activities for adolescents.",
+    "model": "solar-pro",
+    "prompt_chars": 28006,
+    "latency_sec": 1.82,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task47_User16_seed1",
+    "stage": "write",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document focuses on creating a structured, family-integrated exercise plan for 12\u201315-year-olds, emphasizing scientific guidelines, balanced physical and mental development, and parental involvement. Candidate B, a 40\u201345-year-old father of a middle-school son who enjoys football and video games, aligns most closely with this content. His profile highlights family harmony, outdoor activities (walks, hiking), and a pragmatic approach to health\u2014mirroring the report's emphasis on combining exercise with family bonding, addressing screen-time challenges, and prioritizing holistic well-being. Unlike Candidate A (a nurse focused on pet care and square dancing) or Candidate C (a corporate manager prioritizing golf and yoga), Candidate B\u2019s interests in football, family walks, and rural heritage resonate with the document\u2019s focus on youth sports, parental engagement, and balancing academics with physical activity.",
+    "model": "solar-pro",
+    "prompt_chars": 30017,
+    "latency_sec": 2.7,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

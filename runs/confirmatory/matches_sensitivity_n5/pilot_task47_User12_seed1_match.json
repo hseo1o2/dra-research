@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task47_User12_seed1",
+    "stage": "plan",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16",
+      "User13",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User13",
+      "User17",
+      "User12"
+    ],
+    "predicted_label": "E",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document explicitly mentions a 5-year-old daughter, a family living in Haidian District, Beijing, and a focus on evidence-based exercise science aligned with WHO/pediatric guidelines. Candidate E matches all these criteria: he is a 30-35-year-old father of a 5-year-old daughter, resides in Haidian District, and has a technical/analytical background (AI entrepreneur) that aligns with the document's emphasis on scientific rigor. The request for structured schedules, family participation, and dietary support also mirrors E's habits (e.g., consistent bedtime stories, yoga routines, and interest in low-sugar diets). Other candidates either lack a 5-year-old child (A, C, D) or reside in different cities (B in Shanghai, C in Shanghai, D in Beijing but no mention of Haidian).",
+    "model": "solar-pro",
+    "prompt_chars": 39935,
+    "latency_sec": 2.23,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task47_User12_seed1",
+    "stage": "search",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16",
+      "User13",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User10",
+      "User12",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on physical activity guidelines for children (especially 5-year-olds), caloric intake, and child-friendly outdoor spaces\u2014topics directly tied to parenting a young child. Candidate C (Liu Qiang) is a father of a 5-year-old son and 8-year-old daughter, with explicit interests in family-friendly parks, child nutrition, and physical activity. His profile emphasizes child-centric activities (e.g., weekend park visits, educational expenses, and family bonding through travel), aligning with the document's focus on pediatric health, MVPA recommendations, and child-friendly destinations like Haidian Park and the National Botanical Garden. Other candidates lack this specific family dynamic or child-focused priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 41737,
+    "latency_sec": 2.23,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task47_User12_seed1",
+    "stage": "compress",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16",
+      "User13",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User16",
+      "User12",
+      "User10",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on physical activity guidelines for 5-year-olds, emphasizing developmental frameworks, fundamental motor skills, and structured/unstructured play. Candidate C, a father of a 5-year-old daughter, aligns most closely with this content. His profile highlights family-centric priorities, interest in child development (bedtime stories, family activities), and investments in high-quality products for his child. While other candidates have children, only Candidate C explicitly mentions a 5-year-old and integrates child-centric activities into his daily routine, making the document's focus on age-specific physical activity directly relevant to his needs as a parent.",
+    "model": "solar-pro",
+    "prompt_chars": 44230,
+    "latency_sec": 2.33,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task47_User12_seed1",
+    "stage": "write",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16",
+      "User13",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User12",
+      "User17",
+      "User16",
+      "User13"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document is a family-centered exercise guide for a 5-year-old in Haidian, Beijing, emphasizing developmental psychology, pediatric health, and practical routines. Candidate B, an AI entrepreneur in Haidian with a 5-year-old daughter, aligns perfectly: he lives in the specified district, prioritizes family-centered activities, and has a background in science/technology (mirroring the document's evidence-based approach). His interest in health, structured routines, and local outdoor destinations (e.g., parks) matches the guide's focus on bone density, nutrition, and Haidian-specific recommendations. Other candidates either lack the Haidian connection (A, C, D, E), have older children (C, D), or lack the scientific/pediatric framing (E).",
+    "model": "solar-pro",
+    "prompt_chars": 46241,
+    "latency_sec": 2.36,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

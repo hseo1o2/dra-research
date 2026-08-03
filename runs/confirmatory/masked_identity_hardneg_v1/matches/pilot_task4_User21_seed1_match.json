@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task4_User21_seed1",
+    "stage": "plan",
+    "gt_userid": "User21",
+    "candidate_userids": [
+      "User21",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User21",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User8",
+    "correct": false,
+    "reasoning": "Candidate A (Chen Hao) is a 26-30-year-old investment manager with a finance background, seeking to balance work and study while prioritizing cost-effectiveness and career advancement. The document's focus on program structures (full-time/part-time/online), ROI payback periods, and skill gaps aligns with his meticulous, data-driven decision-making style. His interest in non-degree programs and emphasis on practical skills (e.g., data analytics) matches the document's comparative analysis of curriculum rigor and career impact. Unlike Candidates B (entrepreneur) and C (marketing manager), who prioritize luxury, family, and international travel, Candidate A\u2019s frugality, focus on domestic/international brand recognition for career mobility, and preference for structured learning roadmaps directly reflect the document\u2019s priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 24550,
+    "latency_sec": 2.23,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task4_User21_seed1",
+    "stage": "search",
+    "gt_userid": "User21",
+    "candidate_userids": [
+      "User21",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User21",
+      "User10",
+      "User8"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User21",
+    "correct": true,
+    "reasoning": "The document focuses on MBA/EMBA tuition fees, scholarships, and application details for elite Chinese business schools (CEIBS, Tsinghua SEM, Guanghua). Candidate A, an entrepreneur with an MBA from Fudan University, aligns most closely with this content due to his background in economics/business, entrepreneurial focus, and interest in high-end education investments. His pragmatic decision-making style and emphasis on long-term value (e.g., art collections, family education) reflect the document's framing of MBA programs as strategic, high-cost investments. Candidates B (marketing manager) and C (investment manager) lack A's entrepreneurial perspective and explicit focus on executive education as a career accelerator.",
+    "model": "solar-pro",
+    "prompt_chars": 25412,
+    "latency_sec": 1.76,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task4_User21_seed1",
+    "stage": "compress",
+    "gt_userid": "User21",
+    "candidate_userids": [
+      "User21",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User21",
+      "User8"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User21",
+    "correct": true,
+    "reasoning": "The document focuses on detailed financial and programmatic comparisons of elite Chinese MBA/EMBA programs, emphasizing tuition costs, rankings, and specialized tracks. Candidate B, an entrepreneur with an MBA from Fudan University, aligns most closely due to his business-oriented priorities, interest in global rankings, and focus on cost-value analysis for high-end educational investments. His entrepreneurial background and frequent international travel for business also match the document's emphasis on dual-degree programs and global executive education. Candidates A (marketing manager) and C (investment manager) lack B's direct entrepreneurial focus on program ROI and institutional prestige, which are central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 28546,
+    "latency_sec": 1.72,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task4_User21_seed1",
+    "stage": "write",
+    "gt_userid": "User21",
+    "candidate_userids": [
+      "User21",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User21"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User21",
+    "correct": true,
+    "reasoning": "The document focuses on executive education programs (EMBA, specialized master's, certificates) tailored for senior professionals (10+ years experience, C-suite/VP track) seeking leadership development, global business execution, and strategic networking. Candidate C, a 40-45-year-old entrepreneur with 10+ years of experience, aligns perfectly: his profile emphasizes executive decision-making, international business travel, and a focus on leadership/management content. The document's emphasis on ROI, corporate sponsorship, and global modular formats matches his entrepreneurial background, quarterly international business trips, and pragmatic investment style. Candidates A (marketing manager) and B (investment manager) are earlier in their careers and lack the seniority or strategic focus on executive leadership development reflected in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30557,
+    "latency_sec": 1.88,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

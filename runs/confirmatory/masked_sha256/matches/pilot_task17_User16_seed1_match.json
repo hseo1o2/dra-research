@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task17_User16_seed1",
+    "stage": "plan",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on a multi-generational family vacation (including elderly parents, a middle-school son, and a 40-45-year-old manager). The document emphasizes landscape photography, self-guided travel, Northeastern Chinese cuisine preferences (stews/barbecue), and cost-effective yet high-quality accommodations\u2014all of which match Candidate A's interests, background (Mechanical Engineering graduate from Northeast China), and travel style. The mention of a golden retriever and family activities (e.g., walks, chess) further supports this, as Candidate A's family dynamics and hobbies mirror the document's priorities. Candidates B and C lack the specific focus on elderly-friendly coastal destinations, photography, or Northeastern culinary preferences.",
+    "model": "solar-pro",
+    "prompt_chars": 24081,
+    "latency_sec": 2.12,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User16_seed1",
+    "stage": "search",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on July weather, sea temperatures, luxury hotels, and landscape photography in coastal cities like Yantai, Weihai, Qinhuangdao, and Qingdao. Candidate B, a marketing manager with a preference for natural attractions, historical sites, and high-end accommodations, aligns most closely. His interest in photography (evidenced by his investment in high-quality equipment) and family-friendly travel (emphasizing comfort and cultural experiences) matches the document's emphasis on beach quality, hotel amenities, and scenic landscapes. While Candidates A and C also travel, their priorities (pet-friendly destinations for A, practicality for C) are less central to the document's framing of luxury and photography-focused coastal travel.",
+    "model": "solar-pro",
+    "prompt_chars": 25305,
+    "latency_sec": 1.91,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User16_seed1",
+    "stage": "compress",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document focuses on weather, beach quality, photography spots, and seafood markets in Weihai/Yantai, emphasizing practical details like water temperatures, hotel accessibility, and food processing. Candidate B, a state-owned enterprise manager with interests in photography, nature, and family-friendly travel, aligns best. His preferences for self-guided tours, landscape photography, and Northeastern cuisine (compatible with seafood markets) match the document's framing. Candidate A prioritizes business/management content, while Candidate C focuses on health/pet care, neither of which align with the document's travel and photography focus.",
+    "model": "solar-pro",
+    "prompt_chars": 28006,
+    "latency_sec": 1.54,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User16_seed1",
+    "stage": "write",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document emphasizes a multi-generational family vacation balancing landscape photography, teenage adventure, and elderly accessibility\u2014aligning with Candidate C's profile. C is a 40-45-year-old state-owned enterprise manager with a middle-school son (matching the 'active teenager' angle), a photography hobby (explicitly mentioned in his interests), and a focus on practical, family-oriented travel. The document's emphasis on step-free accessibility, coastal vistas for photography, and Shandong's climate (mild for elderly parents) mirrors C's preferences for natural attractions, detailed itineraries, and family bonding. Candidates A (nurse with pet focus) and B (marketing manager with urban lifestyle) lack the explicit photography hobby and multi-generational travel framing central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30017,
+    "latency_sec": 2.33,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

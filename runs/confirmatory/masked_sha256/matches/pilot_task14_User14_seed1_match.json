@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User3",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User3",
+      "User22",
+      "User14"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document explicitly mentions a freelance illustrator in [MASKED] with a 5-day/week, 1-hour training schedule in city parks, integrating yoga, Pilates, and hiking. Candidate C is a freelance illustrator in Shanghai with identical exercise habits (yoga 2-3x/week, Pilates, hiking), flexible daily routines, and a focus on adaptable health practices. The document's emphasis on balancing creative work with training aligns with C's artistic lifestyle, while A (student) and B (manufacturing director) lack the freelance illustrator context and specific exercise integration described.",
+    "model": "solar-pro",
+    "prompt_chars": 23422,
+    "latency_sec": 1.57,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User3",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User3",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User22",
+    "correct": false,
+    "reasoning": "The document focuses on marathon training strategies (run/walk ratios, pacing, air quality considerations), route planning, and beginner-friendly progression plans\u2014topics aligning with Candidate A's exercise habits (running 3x/week, marathon training, dog walking) and pragmatic, goal-oriented personality. The technical framing (e.g., AQI thresholds, structured training intervals) matches his engineering background and preference for data-driven approaches. Candidate B (student) and C (illustrator) lack the document's focus on endurance training, equipment optimization, or marathon-specific planning, which are central to Candidate A's documented interests and lifestyle.",
+    "model": "solar-pro",
+    "prompt_chars": 24989,
+    "latency_sec": 1.66,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User3",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User22",
+      "User3"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User22",
+    "correct": false,
+    "reasoning": "The document focuses on a structured, time-bound marathon training plan emphasizing safety, gradual progression, and practical execution\u2014aligning with Candidate B's pragmatic, detail-oriented personality and his interest in systematic approaches (e.g., Industry 4.0, technical optimization). The plan's emphasis on alternating long runs with recovery weeks mirrors B's disciplined daily routine (6 a.m. wake-up, calligraphy practice) and his preference for cost-effective, practical solutions. Additionally, B's exercise habits (running 3x/week, brisk walking) and his recent interest in cycling for exploration align with the document's pacing strategies and outdoor mobility focus. Candidate A (artist) and C (student) lack the document's technical, methodical framing and prioritize creativity/leisure over structured physical regimens.",
+    "model": "solar-pro",
+    "prompt_chars": 28448,
+    "latency_sec": 2.01,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User3",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User3",
+      "User14"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document is tailored for a freelance illustrator in Shanghai, integrating yoga, Pilates, and hiking into a 12-week marathon plan. Candidate C matches this profile exactly: a freelance illustrator in Shanghai who practices yoga 2-3x/week, does Pilates, and hikes. The plan's focus on balancing creative energy with training, urban pavement adaptation, and injury prevention aligns with C's lifestyle preferences (artistic, health-conscious) and exercise habits (yoga/Pilates/hiking). Candidates A (manufacturing director) and B (student) lack the freelance illustrator background, urban Shanghai context, and specific cross-training practices mentioned in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30459,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

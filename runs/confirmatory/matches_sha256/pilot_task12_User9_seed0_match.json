@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User5",
+      "User2"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "Candidate A (Zhao Li) is a product operations professional with an advertising background and psychology minor, directly aligning with the document's focus on emotional management and self-awareness. The request for a 7:00\u20139:00 AM routine matches her morning exercise/meditation habits, while her interest in mental health articles, yoga, and journaling reflects the document's emphasis on CBT, MBSR, and daily tracking. Candidate B (engineering student) and C (clinical psychology grad student) lack the document's specific professional context (product operations/advertising) and morning routine integration focus.",
+    "model": "solar-pro",
+    "prompt_chars": 22722,
+    "latency_sec": 1.61,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User9",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "The document focuses on emotional regulation, mindfulness (MBSR), and DBT techniques, which align with Candidate C's background in Clinical Psychology and her interest in mental health. Her academic focus, content preferences (psychology articles, emotional communication), and behavioral traits (rational consumer of mental health resources, use of digital tools for psychology learning) directly match the document's themes. Candidates A (engineering focus) and B (product operations/creative interests) lack the psychological and therapeutic context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24735,
+    "latency_sec": 1.46,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User5",
+      "User9"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "The document focuses on emotional regulation and CBT techniques, emphasizing academic rigor, practical exercises, and workplace stress applications. Candidate A, a clinical psychology graduate student, aligns perfectly with this content due to her academic background, interest in psychology resources, and frequent engagement with emotional communication materials. The document's structured, evidence-based approach matches her learning habits (e.g., time management tools, cloud-based study notes) and professional goals. Candidates B (mechanical engineering) and C (product operations) lack the same depth of psychological focus or academic framing, making A the clearest fit.",
+    "model": "solar-pro",
+    "prompt_chars": 27412,
+    "latency_sec": 1.54,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User5",
+      "User2"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on emotional regulation, self-awareness, and stress management tailored for high-pressure corporate environments, particularly in internet product operations. Candidate A is explicitly described as a Product Operations professional at an internet company, with a psychology minor and a documented need for emotional support under stress. The report's emphasis on frameworks like RULER, DBT, and CBT aligns with her role's demands for cross-functional alignment, rapid decision-making, and stress management. Candidates B (mechanical engineering graduate student) and C (clinical psychology graduate student) lack the direct occupational context and stress triggers (e.g., product launches, executive stakeholder interactions) central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 29423,
+    "latency_sec": 1.72,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

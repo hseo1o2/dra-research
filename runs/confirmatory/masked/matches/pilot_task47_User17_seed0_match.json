@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task47_User17_seed0",
+    "stage": "plan",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User12",
+      "User17",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User12",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User17",
+    "correct": true,
+    "reasoning": "Candidate A, a medical professional (Head Nurse) with a focus on evidence-based practices, aligns perfectly with the document's emphasis on WHO guidelines, pediatric health organizations, and scientific rigor. The request for a structured, age-flexible exercise plan for her child reflects her nursing background and family-oriented priorities (e.g., family participatory activities, nutritional advice). Her content preferences (health, family education) and offline behaviors (low-oil cooking, pet-friendly outdoor activities) further mirror the document's framing. Candidates B (tech entrepreneur) and C (state-owned enterprise manager) lack the medical professionalism and child-centric health focus central to the query.",
+    "model": "solar-pro",
+    "prompt_chars": 25231,
+    "latency_sec": 1.54,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task47_User17_seed0",
+    "stage": "search",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User12",
+      "User17",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User17",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User17",
+    "correct": true,
+    "reasoning": "The document focuses on physical activity guidelines for children and adolescents, emphasizing sedentary behavior reduction, muscle/bone strengthening, injury prevention, and youth sports benefits. Candidate B, a head nurse with children in high school and college, aligns most closely with this content. Her professional background in health, family responsibilities (children's physical well-being), and personal interests in health management (pet care, health forums) make her the most likely audience. The document's emphasis on youth sports specialization risks and overuse injuries also resonates with her role as a caregiver and her recent focus on family health. Candidates A (tech entrepreneur) and C (state-owned enterprise manager) lack the direct health/nursing focus and parental urgency for adolescent guidelines.",
+    "model": "solar-pro",
+    "prompt_chars": 26915,
+    "latency_sec": 1.67,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task47_User17_seed0",
+    "stage": "compress",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User12",
+      "User17",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User12",
+      "User17"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User17",
+    "correct": true,
+    "reasoning": "The document focuses on physical activity guidelines for children and adolescents, emphasizing structured/unstructured exercise, muscle/bone strengthening, and injury prevention. Candidate C, a head nurse with two children (high school and college age), aligns most closely due to her professional background in health, family-oriented priorities, and documented interest in child development (e.g., sharing family education content, prioritizing health-conscious consumption). Her role managing health and her children's well-being directly ties to the document's focus on age-specific exercise recommendations, safety, and holistic health. Candidates A (state-owned enterprise manager) and B (AI entrepreneur) lack the same direct connection to pediatric health guidance or family-focused physical activity planning.",
+    "model": "solar-pro",
+    "prompt_chars": 29408,
+    "latency_sec": 2.11,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task47_User17_seed0",
+    "stage": "write",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User12",
+      "User17",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User12"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document focuses on structured, evidence-based guidelines for children's physical activity and lifestyle planning, emphasizing long-term health, family involvement, and practical implementation. Candidate A, a 40-45-year-old state-owned enterprise manager with a middle-school-aged son, aligns most closely with this content. His profile highlights family-centric values, a focus on his son's physical and academic development, and a preference for practical, health-oriented activities (e.g., outdoor walks, family trips). The document's emphasis on balancing academic performance with physical activity, avoiding early specialization, and fostering family bonding through exercise resonates with Candidate A's role as a father and his documented interest in his son's holistic well-being. Candidates B (a nurse focused on pet care and personal health) and C (an AI entrepreneur prioritizing tech and urban fitness) lack the same direct connection to the document's core themes of childhood development, family-oriented exercise, and structured lifestyle planning for youth.",
+    "model": "solar-pro",
+    "prompt_chars": 31419,
+    "latency_sec": 2.42,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

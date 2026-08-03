@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task2_User6_seed0",
+    "stage": "plan",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User6",
+      "User18",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User18",
+      "User6"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "The brief is explicitly tailored to an undergraduate Environmental Studies student in Zhejiang with strong background in sustainable urban development and circular economy, and it emphasizes field/practice-oriented learning and sustainability research\u2014matching Candidate C\u2019s profile exactly. Candidate C\u2019s interests, vocabulary (climate change, circular economy, eco-friendly lifestyle), and goals (overseas exchange/short-term programs) align with the document\u2019s destination-by-destination academic/cost/visa framework.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 23972,
+    "latency_sec": 1.48,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User6_seed0",
+    "stage": "search",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User6",
+      "User18",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User6",
+      "User2"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "The queries and sources focus on environmental science/sustainability study-abroad and visiting student programs (e.g., KUINEP, USTEP, Berkeley visiting student requirements), aligning with an undergraduate environmental studies student planning international exchange. Candidate B\u2019s profile emphasizes environmental responsibility, sustainability interests, and active engagement with environmental learning and community activities, matching the document\u2019s topic framing and practical program-requirement orientation.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 25601,
+    "latency_sec": 1.6,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User6_seed0",
+    "stage": "compress",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User6",
+      "User18",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User6",
+      "User2",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "The excerpt is centered on environmental science study-abroad/visiting-student programs (UC Berkeley, NUS, NTU, Columbia, etc.), including tuition/requirements and curriculum topics like sustainable urban development, circular economy, and field/lab research\u2014matching an undergraduate environmental-studies student profile. Candidate A\u2019s background, interests, and travel style align strongly with pursuing overseas environmental programs and sustainability-focused learning, whereas B is clinical psychology and C is data analysis with only secondary interest in sustainability.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 28094,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User6_seed0",
+    "stage": "write",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User6",
+      "User18",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User6",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "The excerpt is a guide for undergraduate Environmental Studies students, emphasizing environmental science foundations, sustainable urban development, circular economy, and practical program selection (cost, language minimums, credit/term structure). Candidate B is an undergraduate Environmental Studies student with strong interest in sustainable urban development and circular economy, and the document\u2019s framing around mobility for high-achieving Chinese undergraduates aligns closely with her profile.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 30105,
+    "latency_sec": 1.59,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

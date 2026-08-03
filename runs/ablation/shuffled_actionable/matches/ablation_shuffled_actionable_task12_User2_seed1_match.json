@@ -1,0 +1,118 @@
+[
+  {
+    "run_id": "ablation_shuffled_actionable_task12_User2_seed1",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User5",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "Candidate C is a graduate student in Clinical Psychology, aligning with the document's academic tone and focus on evidence-based self-improvement. The request for scientifically grounded resources (e.g., ACT, CBT, DBT) matches C's psychology background and interest in structured learning. Additionally, C's habits (e.g., using Coursera, journaling, and prioritizing cost-effective, practical strategies) directly reflect the document's emphasis on actionable, research-backed methods. Candidates A and B lack the clinical psychology focus and specific methodological preferences outlined in the query.",
+    "model": "solar-pro",
+    "prompt_chars": 23147,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4905,
+    "output_tokens": 136,
+    "total_tokens": 5041,
+    "api_response_id": "3cc3cbaf-fc18-4ac4-a565-9e2acccab330"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task12_User2_seed1",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User9",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on psychological therapies (Unified Protocol, DBT, MBSR, ACT Matrix) and CBT mechanisms, aligning with Candidate C's background as a Clinical Psychology graduate student. Her academic focus, online behavior (psychology forums, Coursera), and content preferences (psychology articles, emotional communication) directly match the document's technical vocabulary and transdiagnostic treatment framing. Candidates A (mechanical engineering) and B (advertising/operations) lack the domain-specific expertise and daily engagement with psychological frameworks evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24632,
+    "latency_sec": 1.57,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5522,
+    "output_tokens": 132,
+    "total_tokens": 5654,
+    "api_response_id": "b9e59835-533f-4d46-8f75-3593215c68ae"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task12_User2_seed1",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User5",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on clinical psychology literature, transdiagnostic emotion regulation, and evidence-based therapeutic protocols\u2014topics directly aligned with Candidate C's identity as a graduate student in Clinical Psychology. The document's emphasis on academic synthesis, clinical applications, and theoretical frameworks (e.g., Unified Protocol, DBT, ACT) matches C's educational background, research habits, and content preferences (psychology articles, academic resource usage). Candidates A (advertising professional) and B (mechanical engineering student) lack the domain-specific focus and clinical psychology orientation evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 27412,
+    "latency_sec": 1.59,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6402,
+    "output_tokens": 135,
+    "total_tokens": 6537,
+    "api_response_id": "4bebd4f8-41ba-429f-b256-ea381a8abda6"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task12_User2_seed1",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User5",
+      "User9"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document's focus on evidence-based psychological frameworks (CBT, DBT, ACT, MBSR, Affective Neuroscience) and its structured, graduate-level clinical training orientation aligns directly with Candidate A's profile as a Clinical Psychology graduate student. The document's emphasis on academic rigor, Chinese-translated clinical texts, and integration of manualized protocols mirrors A's background in psychology, her use of learning apps (Coursera, Zhihu), and her interest in psychology forums. Candidate B (Mechanical Engineering) and C (Product Operations) lack the clinical psychology specialization and academic focus required to produce such a technically precise, therapy-integrated self-improvement protocol.",
+    "model": "solar-pro",
+    "prompt_chars": 29423,
+    "latency_sec": 2.34,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6344,
+    "output_tokens": 161,
+    "total_tokens": 6505,
+    "api_response_id": "c6dfbb2a-0ad4-4fd8-9888-275c9a3ca560"
+  }
+]

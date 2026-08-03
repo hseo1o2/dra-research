@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task22_User18_seed0",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User18",
+      "User15"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document explicitly describes a 25-30-year-old female data analyst with a statistics background, conservative risk appetite, and focus on retirement planning via annuities, medical insurance, and long-term care. Candidate B (Liu Lu) is the only profile matching these exact demographics (age, gender, occupation, educational background in statistics) and financial priorities (low-risk investments, systematic planning). The document\u2019s technical framing (dynamic allocation strategies, regulatory disclosures, actuarial research) aligns with B\u2019s meticulous, data-driven personality and career in data analysis. Candidates A (male illustrator) and C (freelance writer) lack the statistical/financial rigor and conservative risk profile central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 23089,
+    "latency_sec": 1.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task22_User18_seed0",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User18",
+      "User15"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on insurance products (e.g., annuities, medical insurance, retirement age reforms) with technical details on premiums, tax implications, and regulatory changes. Candidate B, a data analyst with a finance/economics background, aligns best due to her analytical mindset, interest in financial topics (evidenced by her LinkedIn/Zhihu activity on data analysis and industry trends), and practical consumption habits (e.g., researching products before purchase). The document\u2019s framing\u2014quantitative comparisons (e.g., 2.5% vs. 2.0% rates), tax calculations, and policy impacts\u2014matches her data-driven decision-making style. Candidates A (illustrator) and C (writer) lack the financial/analytical focus central to the document\u2019s content.",
+    "model": "solar-pro",
+    "prompt_chars": 23588,
+    "latency_sec": 1.73,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task22_User18_seed0",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User14",
+      "User15"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on detailed financial analysis, tax optimization strategies, and regulatory frameworks for insurance and pension products, requiring strong quantitative skills and data-driven decision-making. Candidate A, a data analyst with a background in statistics and a meticulous, logical personality, aligns most closely with this content. Her preference for structured research, cost-effectiveness, and long-term value aligns with the document's emphasis on tax savings calculations, yield comparisons, and regulatory compliance. Candidates B and C, while creative and detail-oriented, lack the financial/analytical focus and quantitative rigor central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 27367,
+    "latency_sec": 1.51,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task22_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User18",
+      "User15"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document explicitly references '\u5218\u9732\u5973\u58eb' (Liu Lu) as the '\u5178\u578b\u753b\u50cf' (typical profile) and aligns with Candidate B's attributes: a 25-30-year-old female data analyst in Shanghai with a statistics background, conservative risk preferences, and specific family dynamics (parents in Hefei). The document's focus on low-risk financial products, tax optimization, and long-term retirement planning matches B's rational, detail-oriented personality and career goals. Candidates A (male illustrator) and C (Beijing-based writer) lack the statistical background, occupation, and Shanghai-centric context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29378,
+    "latency_sec": 1.91,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

@@ -1,0 +1,381 @@
+{
+  "bootstrap": {
+    "interval": "percentile_95",
+    "repetitions": 5000,
+    "seed": 20260802,
+    "unit": "taskid"
+  },
+  "notes": [
+    "McNemar p-values are unclustered descriptive checks.",
+    "Primary uncertainty intervals use task-level cluster bootstrap.",
+    "Regenerate after SHA-256 matcher outputs or new seeds are added."
+  ],
+  "paired_stage_comparisons": [
+    {
+      "a_correct_b_wrong": 27,
+      "a_wrong_b_correct": 4,
+      "accuracy_difference_b_minus_a": -0.191667,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_unit": "taskid",
+      "ci95_high": -0.116667,
+      "ci95_low": -0.275,
+      "mcnemar_exact_p_unclustered": 3.395e-05,
+      "n_paired_reports": 120,
+      "stage_a": "plan",
+      "stage_b": "search"
+    },
+    {
+      "a_correct_b_wrong": 9,
+      "a_wrong_b_correct": 17,
+      "accuracy_difference_b_minus_a": 0.066667,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.15,
+      "ci95_low": -0.016667,
+      "mcnemar_exact_p_unclustered": 0.16863754,
+      "n_paired_reports": 120,
+      "stage_a": "search",
+      "stage_b": "compress"
+    },
+    {
+      "a_correct_b_wrong": 6,
+      "a_wrong_b_correct": 18,
+      "accuracy_difference_b_minus_a": 0.1,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.191667,
+      "ci95_low": 0.016667,
+      "mcnemar_exact_p_unclustered": 0.02265584,
+      "n_paired_reports": 120,
+      "stage_a": "compress",
+      "stage_b": "write"
+    }
+  ],
+  "quality_sensitivity": [
+    {
+      "accuracy": 0.733333,
+      "correct": 88,
+      "n": 120,
+      "policy": "all_matched",
+      "stage": "plan"
+    },
+    {
+      "accuracy": 0.541667,
+      "correct": 65,
+      "n": 120,
+      "policy": "all_matched",
+      "stage": "search"
+    },
+    {
+      "accuracy": 0.608333,
+      "correct": 73,
+      "n": 120,
+      "policy": "all_matched",
+      "stage": "compress"
+    },
+    {
+      "accuracy": 0.708333,
+      "correct": 85,
+      "n": 120,
+      "policy": "all_matched",
+      "stage": "write"
+    },
+    {
+      "accuracy": 0.766667,
+      "correct": 69,
+      "n": 90,
+      "policy": "success_criteria_met",
+      "stage": "plan"
+    },
+    {
+      "accuracy": 0.566667,
+      "correct": 51,
+      "n": 90,
+      "policy": "success_criteria_met",
+      "stage": "search"
+    },
+    {
+      "accuracy": 0.644444,
+      "correct": 58,
+      "n": 90,
+      "policy": "success_criteria_met",
+      "stage": "compress"
+    },
+    {
+      "accuracy": 0.755556,
+      "correct": 68,
+      "n": 90,
+      "policy": "success_criteria_met",
+      "stage": "write"
+    },
+    {
+      "accuracy": 0.769231,
+      "correct": 70,
+      "n": 91,
+      "policy": "no_completeness_errors",
+      "stage": "plan"
+    },
+    {
+      "accuracy": 0.571429,
+      "correct": 52,
+      "n": 91,
+      "policy": "no_completeness_errors",
+      "stage": "search"
+    },
+    {
+      "accuracy": 0.648352,
+      "correct": 59,
+      "n": 91,
+      "policy": "no_completeness_errors",
+      "stage": "compress"
+    },
+    {
+      "accuracy": 0.758242,
+      "correct": 69,
+      "n": 91,
+      "policy": "no_completeness_errors",
+      "stage": "write"
+    },
+    {
+      "accuracy": 0.731092,
+      "correct": 87,
+      "n": 119,
+      "policy": "no_ledger_errors",
+      "stage": "plan"
+    },
+    {
+      "accuracy": 0.537815,
+      "correct": 64,
+      "n": 119,
+      "policy": "no_ledger_errors",
+      "stage": "search"
+    },
+    {
+      "accuracy": 0.605042,
+      "correct": 72,
+      "n": 119,
+      "policy": "no_ledger_errors",
+      "stage": "compress"
+    },
+    {
+      "accuracy": 0.705882,
+      "correct": 84,
+      "n": 119,
+      "policy": "no_ledger_errors",
+      "stage": "write"
+    }
+  ],
+  "records": 480,
+  "reports": 120,
+  "run_accuracy_distribution": [
+    {
+      "correct_stages": 0,
+      "fraction": 0.141667,
+      "reports": 17
+    },
+    {
+      "correct_stages": 1,
+      "fraction": 0.158333,
+      "reports": 19
+    },
+    {
+      "correct_stages": 2,
+      "fraction": 0.108333,
+      "reports": 13
+    },
+    {
+      "correct_stages": 3,
+      "fraction": 0.15,
+      "reports": 18
+    },
+    {
+      "correct_stages": 4,
+      "fraction": 0.441667,
+      "reports": 53
+    }
+  ],
+  "schema_version": 1,
+  "seed_variance": [
+    {
+      "max_accuracy": 0.733333,
+      "mean_accuracy": 0.733333,
+      "min_accuracy": 0.733333,
+      "n_seeds": 2,
+      "population_sd_across_seeds": 0.0,
+      "seeds": "0,1",
+      "stage": "plan"
+    },
+    {
+      "max_accuracy": 0.566667,
+      "mean_accuracy": 0.541667,
+      "min_accuracy": 0.516667,
+      "n_seeds": 2,
+      "population_sd_across_seeds": 0.025,
+      "seeds": "0,1",
+      "stage": "search"
+    },
+    {
+      "max_accuracy": 0.616667,
+      "mean_accuracy": 0.608333,
+      "min_accuracy": 0.6,
+      "n_seeds": 2,
+      "population_sd_across_seeds": 0.008333,
+      "seeds": "0,1",
+      "stage": "compress"
+    },
+    {
+      "max_accuracy": 0.766667,
+      "mean_accuracy": 0.708333,
+      "min_accuracy": 0.65,
+      "n_seeds": 2,
+      "population_sd_across_seeds": 0.058333,
+      "seeds": "0,1",
+      "stage": "write"
+    }
+  ],
+  "seeds": [
+    0,
+    1
+  ],
+  "source_match_dir": "runs/confirmatory/matches_sha256",
+  "source_run_dir": "runs/confirmatory",
+  "stage_accuracy": [
+    {
+      "accuracy": 0.733333,
+      "correct": 44,
+      "n": 60,
+      "seed": "0",
+      "stage": "plan"
+    },
+    {
+      "accuracy": 0.566667,
+      "correct": 34,
+      "n": 60,
+      "seed": "0",
+      "stage": "search"
+    },
+    {
+      "accuracy": 0.616667,
+      "correct": 37,
+      "n": 60,
+      "seed": "0",
+      "stage": "compress"
+    },
+    {
+      "accuracy": 0.766667,
+      "correct": 46,
+      "n": 60,
+      "seed": "0",
+      "stage": "write"
+    },
+    {
+      "accuracy": 0.733333,
+      "correct": 44,
+      "n": 60,
+      "seed": "1",
+      "stage": "plan"
+    },
+    {
+      "accuracy": 0.516667,
+      "correct": 31,
+      "n": 60,
+      "seed": "1",
+      "stage": "search"
+    },
+    {
+      "accuracy": 0.6,
+      "correct": 36,
+      "n": 60,
+      "seed": "1",
+      "stage": "compress"
+    },
+    {
+      "accuracy": 0.65,
+      "correct": 39,
+      "n": 60,
+      "seed": "1",
+      "stage": "write"
+    },
+    {
+      "accuracy": 0.733333,
+      "correct": 88,
+      "n": 120,
+      "seed": "all",
+      "stage": "plan"
+    },
+    {
+      "accuracy": 0.541667,
+      "correct": 65,
+      "n": 120,
+      "seed": "all",
+      "stage": "search"
+    },
+    {
+      "accuracy": 0.608333,
+      "correct": 73,
+      "n": 120,
+      "seed": "all",
+      "stage": "compress"
+    },
+    {
+      "accuracy": 0.708333,
+      "correct": 85,
+      "n": 120,
+      "seed": "all",
+      "stage": "write"
+    }
+  ],
+  "stage_accuracy_cluster_bootstrap": [
+    {
+      "accuracy": 0.733333,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_seed": 20260802,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.866667,
+      "ci95_low": 0.591667,
+      "n_reports": 120,
+      "n_tasks": 20,
+      "stage": "plan"
+    },
+    {
+      "accuracy": 0.541667,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_seed": 20260803,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.65,
+      "ci95_low": 0.433333,
+      "n_reports": 120,
+      "n_tasks": 20,
+      "stage": "search"
+    },
+    {
+      "accuracy": 0.608333,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_seed": 20260804,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.708333,
+      "ci95_low": 0.508333,
+      "n_reports": 120,
+      "n_tasks": 20,
+      "stage": "compress"
+    },
+    {
+      "accuracy": 0.708333,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_seed": 20260805,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.833333,
+      "ci95_low": 0.575,
+      "n_reports": 120,
+      "n_tasks": 20,
+      "stage": "write"
+    }
+  ],
+  "stages": [
+    "plan",
+    "search",
+    "compress",
+    "write"
+  ],
+  "tasks": 20
+}

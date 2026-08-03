@@ -1,0 +1,118 @@
+[
+  {
+    "run_id": "ablation_shuffled_actionable_task12_User9_seed1",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "Candidate B (Wang Xue) is a Clinical Psychology graduate student with a strong psychology background, aligning with the document's focus on evidence-based emotional regulation (CBT/ACT/DBT). Her structured digital habits (cloud note-taking, time management tools) match the request for actionable daily strategies integrated into tech routines. Unlike Candidate A (advertising background) or C (engineering focus), B's academic focus on psychology and existing use of platforms like Coursera directly align with the document's emphasis on self-study resources and research rigor. Her decision-making style (independent but open to professional advice) also mirrors the user's goal of reducing emotional decision-making flaws.",
+    "model": "solar-pro",
+    "prompt_chars": 23414,
+    "latency_sec": 2.28,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4967,
+    "output_tokens": 160,
+    "total_tokens": 5127,
+    "api_response_id": "73626aa8-de0d-46fd-ad90-b7ee2b6b36f0"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task12_User9_seed1",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "Candidate B, a Clinical Psychology graduate student, aligns most closely with the document's focus on emotional regulation, psychological frameworks (ABCDE model, RULER, physiological sigh), and therapeutic techniques (DBT, REBT). The document's emphasis on evidence-based emotional intelligence tools, cognitive-behavioral strategies, and stress-reduction methods directly matches B's academic background, content preferences (psychology articles, emotional communication), and behavioral habits (sharing psychology content, using time management for study). Candidates A (advertising/psychology minor) and C (mechanical engineering) lack B's specialized focus on clinical psychology and therapeutic frameworks, making B the most likely intended audience.",
+    "model": "solar-pro",
+    "prompt_chars": 24848,
+    "latency_sec": 1.7,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5414,
+    "output_tokens": 159,
+    "total_tokens": 5573,
+    "api_response_id": "a395afdb-4d8a-40ea-b4b4-cc808dc6ac3c"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task12_User9_seed1",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User5",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "The document focuses on emotion science, cognitive behavioral therapy (CBT), and mindfulness-based interventions, aligning with Candidate C's background as a Clinical Psychology graduate student. Her academic focus, interest in psychology resources (e.g., Coursera, Zhihu), and content preferences (psychology articles, emotional communication) directly match the document's emphasis on therapeutic frameworks and mental health. Candidates A and B lack this specialized psychological focus, with A being a product operations professional and B a mechanical engineering student. Candidate C's habits of sharing psychology content, using digital tools for learning, and prioritizing mental health resources make her the most likely audience for this document.",
+    "model": "solar-pro",
+    "prompt_chars": 27412,
+    "latency_sec": 2.27,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 7143,
+    "output_tokens": 152,
+    "total_tokens": 7295,
+    "api_response_id": "88b9ceb7-a6bd-44ed-b0f8-1ade0362e18e"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task12_User9_seed1",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User9",
+      "User5"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document is tailored for a Product Operations professional in the Internet sector, focusing on emotion regulation in high-stress, cross-functional environments. Candidate B is explicitly described as a Product Operations professional at an Internet company, with a minor in psychology and a focus on user behavior analysis. The document's emphasis on integrating clinical psychology frameworks (CBT, ACT, DBT) into daily workflows aligns with B's interest in mental health articles, stress management, and her role's high-pressure context. Candidate A (Clinical Psychology student) and C (Mechanical Engineering graduate) lack the occupational and contextual overlap with the document's Product Operations focus, making B the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 29423,
+    "latency_sec": 1.73,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6246,
+    "output_tokens": 155,
+    "total_tokens": 6401,
+    "api_response_id": "a0c24b3b-768e-4887-ae63-959bf1fa5a98"
+  }
+]

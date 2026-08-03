@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task22_User18_seed1",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate C (Liu Qiang) is a 30-35-year-old married manager with a conservative risk profile, debt-free status, and a focus on long-term financial planning for retirement and family security. The document emphasizes annuity insurance, medical coverage, and care services across life stages\u2014aligning with C's responsibilities as a breadwinner for a family with children. His pragmatic, data-driven decision-making (evident in his MBA background and marketing role) matches the document's structured, risk-averse approach. Unlike Candidates A and B (single, younger professionals focused on career growth), C's priorities include family-oriented financial planning, liquidity management, and integrating health protections (e.g., lumbar care) with household responsibilities, all central to the document's scope.",
+    "model": "solar-pro",
+    "prompt_chars": 24253,
+    "latency_sec": 2.18,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task22_User18_seed1",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate C, a married marketing manager with children, aligns most closely with the document's focus on retirement age policies, pension replacement rates, and long-term financial planning. The document discusses delayed retirement ages (55\u219258 for women), pension systems, and commercial annuity products\u2014topics directly relevant to C's family responsibilities, dual-income household, and need for multi-generational financial stability. Unlike A (single investment manager) or B (childless data analyst), C's profile emphasizes family-oriented consumption (children's education, household budgeting) and practical long-term planning (quarterly family trips, durable goods purchases), mirroring the document's emphasis on phased retirement implementation (2025) and pension optimization. His role managing a foreign enterprise also aligns with the document's institutional framing of policy changes.",
+    "model": "solar-pro",
+    "prompt_chars": 24224,
+    "latency_sec": 2.12,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task22_User18_seed1",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User8",
+    "correct": false,
+    "reasoning": "The document focuses on conservative financial planning, insurance products (e.g., pension annuities, medical coverage), and tax optimization\u2014topics aligning with Candidate B's role as an investment manager and his meticulous, data-driven decision-making style. The emphasis on guaranteed rates (2.5%), risk aversion, and long-term savings mirrors his preference for cost-effectiveness, financial research, and independent analysis. Candidates A (family-oriented marketing manager) and C (data analyst) lack the document's insurance/retirement focus and conservative investment framing, which are central to B's profile.",
+    "model": "solar-pro",
+    "prompt_chars": 28139,
+    "latency_sec": 1.91,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task22_User18_seed1",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document emphasizes a conservative risk appetite, statistical background, and focus on long-term retirement security with tax-deferred pension accounts and guaranteed-rate products. Candidate B, a 25\u201330-year-old data analyst with a statistics degree, conservative financial habits, and a focus on data-driven decision-making, aligns most closely. The document's technical framing (e.g., 'pension income replacement rate,' 'tax quota,' 'guaranteed floor rates') matches B's analytical mindset and career in data analysis. Candidates A (marketing manager) and C (investment manager) lack the document's specific focus on conservative, mathematically sound retirement planning with low-risk instruments.",
+    "model": "solar-pro",
+    "prompt_chars": 30150,
+    "latency_sec": 2.26,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

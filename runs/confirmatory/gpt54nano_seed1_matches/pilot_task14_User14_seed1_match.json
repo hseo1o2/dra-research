@@ -1,0 +1,118 @@
+[
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User13",
+      "User14"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The brief is written from the perspective of a freelance illustrator in Shanghai with yoga/pilates/hiking habits and a preference for adaptable, non-pace-target training\u2014matching Candidate C\u2019s occupation and lifestyle. The emphasis on nearby parks/roads, minimal gear, and integrating existing mind-body routines aligns closely with C\u2019s exercise pattern and creative, self-directed approach.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 24018,
+    "latency_sec": 2.04,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4407,
+    "output_tokens": 96,
+    "total_tokens": 4503,
+    "api_response_id": "chatcmpl-E8piH8v0VsxLAFKKwcezH0vi9IpxX"
+  },
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "The queries mix marathon training specifics (Jeff Galloway run/walk ratios, beginner progression) with practical running-in-environment concerns (AQI thresholds, humidity) and local Shanghai route planning. This aligns with a health/fitness-oriented runner who also seeks actionable, data-informed guidance for city running, which fits Candidate B\u2019s profile (runs/cycling for endurance and stress relief, active in knowledge-sharing communities).",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 25709,
+    "latency_sec": 1.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4897,
+    "output_tokens": 107,
+    "total_tokens": 5004,
+    "api_response_id": "chatcmpl-E8piIjmdcMgVk6Q8Man8iA5V1O3Vd"
+  },
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User20"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "The excerpt is a highly practical, step-by-step beginner marathon training plan with safety disclaimers, run/walk ratios, and week-by-week progression\u2014written in an instructional, analytical tone. Candidate C\u2019s profile (copywriter focused on creative analysis, researching ideas, and running/cycling for endurance and stress relief) aligns best with producing/consuming detailed training guidance, whereas A and B are more oriented to art/coffee lifestyle content rather than structured endurance programming.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 29044,
+    "latency_sec": 1.49,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6266,
+    "output_tokens": 118,
+    "total_tokens": 6384,
+    "api_response_id": "chatcmpl-E8piK81jqDIfRirLMWcKugtQ2XucU"
+  },
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The excerpt is explicitly \u201ccustomized for a freelance illustrator living in Shanghai,\u201d with a 5-day plan that integrates yoga, Pilates, and hiking\u2014matching Candidate C\u2019s occupation and exercise habits. The document\u2019s emphasis on injury prevention, manageable time commitments, and practical local considerations (Shanghai routes, convenience stores) aligns with a creative freelancer\u2019s need for a sustainable routine rather than performance-focused training.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 31055,
+    "latency_sec": 1.6,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6268,
+    "output_tokens": 103,
+    "total_tokens": 6371,
+    "api_response_id": "chatcmpl-E8piLmrAWsXUsAoQuoxLdcIkb0SNS"
+  }
+]

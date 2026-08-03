@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task12_User5_seed0",
+    "stage": "plan",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User5",
+    "correct": true,
+    "reasoning": "The document explicitly states the author is a 'graduate student in mechanical automation' seeking emotional management strategies, aligning perfectly with Candidate C's identity as a Mechanical Automation graduate student. The analytical focus on evidence-based methods (CBT, mindfulness) matches C's detail-oriented, rational decision-making style. The request for structured self-study plans and cost-effective strategies reflects C's frugality and systematic approach to learning (evidenced by Trello usage and academic resource organization). Unlike Candidates A (advertising background) and B (clinical psychology student), C lacks formal psychology training, making the request for foundational emotional regulation resources more essential and contextually appropriate.",
+    "model": "solar-pro",
+    "prompt_chars": 22905,
+    "latency_sec": 1.67,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task12_User5_seed0",
+    "stage": "search",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "Candidate B, a Clinical Psychology graduate student, aligns most closely with the document's focus on emotion regulation, mental health resources (e.g., 'Feeling Good', 'Mind Over Mood'), and academic/research-oriented content (e.g., Coursera, edX courses, Gross's Process Model). Her psychology background, interest in mental health literature, and habits of sharing psychology-related content on social media directly reflect the document's emphasis on therapeutic techniques, stress resilience, and emotion regulation frameworks. Candidates A (advertising/psychology minor) and C (mechanical engineering) lack the same depth of psychological training or professional focus on mental health theory/practice.",
+    "model": "solar-pro",
+    "prompt_chars": 24600,
+    "latency_sec": 1.71,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task12_User5_seed0",
+    "stage": "compress",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User5",
+      "User9"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "The document focuses on cognitive behavioral therapy (CBT), dialectical behavior therapy (DBT), mindfulness-based cognitive therapy (MBCT), and emotion regulation\u2014topics central to clinical psychology. Candidate A is a graduate student in Clinical Psychology with a strong academic background in psychology, aligning directly with the document's technical focus on therapeutic frameworks, structured protocols, and psychological principles. The document's analytical framing (e.g., 'engineering appeal,' 'systematic application,' 'structured log sheets') mirrors Candidate A's rational, methodical approach to learning and research, as evidenced by her use of time management tools, psychology-focused learning apps, and interest in emotion-related content. Candidate B (Mechanical Engineering) and Candidate C (Product Operations) lack the domain-specific expertise and academic focus on clinical psychology that make Candidate A the clear match.",
+    "model": "solar-pro",
+    "prompt_chars": 27412,
+    "latency_sec": 2.36,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task12_User5_seed0",
+    "stage": "write",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User5",
+      "User9"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User5",
+    "correct": true,
+    "reasoning": "The document emphasizes an analytical, systematic approach to emotional regulation, framed as an 'information-processing system' with structured protocols, worksheets, and empirical experiments. This aligns with Candidate B's background in mechanical engineering and technical fields, where logical frameworks and operationalized processes are prioritized. The guide's focus on cognitive distortions as 'logic errors' and its use of tabular logs for debugging thoughts mirror B's preference for cost-effective, rational problem-solving. Candidate A (clinical psychology student) and C (creative operations professional) would likely prioritize more abstract or experiential methods, whereas B's technical mindset aligns with the document's deterministic, toolkit-based structure.",
+    "model": "solar-pro",
+    "prompt_chars": 29423,
+    "latency_sec": 1.8,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

@@ -1,0 +1,118 @@
+[
+  {
+    "run_id": "pilot_task4_User9_seed1",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document brief is written from the perspective of a 22\u201325-year-old Beijing-based Product Operations professional with low risk tolerance and a need to balance work and study, which aligns closely with Candidate A\u2019s age, occupation, location, and early-career stage. It also emphasizes systematic learning, program comparison across MBA/EMBA/analytics/non-degree options, and realistic eligibility\u2014framing that matches Candidate A\u2019s preference for practical guidance and reliance on others\u2019 advice for major decisions.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 23887,
+    "latency_sec": 1.45,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4395,
+    "output_tokens": 121,
+    "total_tokens": 4516,
+    "api_response_id": "chatcmpl-E8po5knEymETayPcwJRh10PFWfuZv"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed1",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User9",
+      "User6"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "The excerpt focuses on MBA admission requirements tied to China\u2019s GRK exam and work-experience thresholds, plus program-specific details like tuition and application prerequisites\u2014information-seeking behavior typical of a prospective applicant. Candidate A\u2019s profile (tech professional, likely considering MBA, detail-oriented and research-driven) aligns best with this practical admissions-requirements framing, whereas B and C are less directly connected to GRK/China MBA work-experience criteria.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 24376,
+    "latency_sec": 1.49,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4876,
+    "output_tokens": 112,
+    "total_tokens": 4988,
+    "api_response_id": "chatcmpl-E8po6by6UkejrRIn8ff9kndzVCZUA"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed1",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User6",
+      "User11",
+      "User9"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The excerpt is explicitly framed around a candidate with 1\u20133 years of Internet product operations experience, and an academic background at Communication University of China with a major in Advertising and a minor in Psychology\u2014this matches Candidate C\u2019s profile almost exactly. The document\u2019s focus on MBA vs EMBA vs MSBA/data analytics and work-experience duration bottlenecks aligns with a product-ops early-career applicant rather than an environmental-studies student (A) or an algorithm engineer (B).",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 27819,
+    "latency_sec": 1.76,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5370,
+    "output_tokens": 122,
+    "total_tokens": 5492,
+    "api_response_id": "chatcmpl-E8po8KVlKEvRQRHp3TxWzXKqdoQCH"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed1",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User6",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The excerpt explicitly defines the candidate as Zhao Li, a 22\u201325-year-old Beijing internet Product Operations professional with an Advertising major (New Media Communication) and a Psychology minor\u2014matching Candidate A\u2019s profile. The report\u2019s emphasis on low risk tolerance, full-time schedule constraints, and bridging a quantitative analytics gap aligns with Candidate A\u2019s early-career, savings-focused decision framing.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 29830,
+    "latency_sec": 1.45,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5511,
+    "output_tokens": 100,
+    "total_tokens": 5611,
+    "api_response_id": "chatcmpl-E8poAcETK4lnGSLcelnnPCdXx2uVc"
+  }
+]

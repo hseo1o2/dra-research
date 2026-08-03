@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task7_User18_seed0",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The brief is highly execution- and research-oriented, emphasizing actionable market research design, MVP/platform architecture, and data-driven feasibility\u2014framing that aligns with a data analyst mindset. Candidate B\u2019s background in statistics/data modeling, use of Notion/Trello, and preference for evidence-based decisions and technical learning (Python/R/SQL, AI-adjacent upskilling) best match the document\u2019s analytical, structured approach.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 24473,
+    "latency_sec": 1.34,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task7_User18_seed0",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The excerpt centers on market research methodologies, higher-ed enrollment demographics/sampling, and EdTech unit economics and GTM benchmarks\u2014topics framed like business/marketing decision support rather than technical system design or pure data analysis. Candidate C is a marketing manager who values market analysis reports, case studies, and uses LinkedIn/industry forums to inform strategy, aligning with the business-oriented framing of the queries.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 25646,
+    "latency_sec": 1.48,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task7_User18_seed0",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The excerpt is a research-oriented market study plan focused on survey sampling methodology, willingness-to-pay/pricing models, and business-plan frameworks\u2014written in a structured, analytical way with emphasis on data sources and study design. That aligns best with a data/analytics professional (Candidate C) who would prioritize evidence, charts/case studies, and rigorous methodology over marketing or finance-only framing.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 28139,
+    "latency_sec": 1.33,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task7_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The excerpt is written like a product/market research and execution brief emphasizing quantitative validation (sampling, surveys, conjoint analysis), data-quality controls, and technical AI learning design (RAG, LangGraph, KG-RAG). Candidate B\u2019s background as a data analyst with strong statistical tooling, preference for evidence-based decisions, and familiarity with Notion/Trello and data-driven reporting aligns best with this framing.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 30150,
+    "latency_sec": 1.83,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

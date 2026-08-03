@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task42_User18_seed0",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on global AI compliance, cross-border data transfers, and risk management\u2014topics requiring technical precision, regulatory analysis, and data-driven decision-making. Candidate B, a data analyst with certifications in data science and project management, aligns best. Her background in statistics, use of analytical tools (Python, SQL, Tableau), and interest in GDPR/CCPA-like frameworks (evidenced by her content preferences for technology and business analysis) directly match the report's technical and legal scope. Unlike Candidates A (state-owned enterprise manager with mechanical engineering focus) and C (marketing manager prioritizing family and cultural interests), B's professional expertise and data-centric mindset make her the most likely audience for this compliance-focused research brief.",
+    "model": "solar-pro",
+    "prompt_chars": 24251,
+    "latency_sec": 1.74,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task42_User18_seed0",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on technical details of Chinese data privacy regulations (PIPL, CAC measures, cross-border data transfer thresholds) with a framing that prioritizes compliance mechanisms, legal thresholds, and procedural requirements. Candidate C, a data analyst with an educational background in statistics and professional focus on data science, aligns most closely with this content. Her technical vocabulary, interest in data-related articles, and career in analyzing structured information match the document's emphasis on regulatory thresholds (10,000/100,000/1,000,000 data subjects), consent requirements, and procedural compliance. Candidates A (state-owned enterprise manager) and B (marketing manager) lack the technical depth and daily engagement with data regulation specifics evident in Candidate C's profile.",
+    "model": "solar-pro",
+    "prompt_chars": 25931,
+    "latency_sec": 2.25,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task42_User18_seed0",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on cross-jurisdictional compliance with privacy regulations (PIPL, GDPR, CPRA) for AI agents, emphasizing legal frameworks, data classification, and technical restrictions. Candidate C, as a marketing manager in a foreign enterprise, operates in a globalized, compliance-sensitive role requiring adherence to international standards. His MBA background, focus on cost-effectiveness, and interest in market trends align with the document's structured, analytical tone. Unlike Candidate A (data analyst) or B (state-owned enterprise manager), Candidate C's role inherently involves navigating complex regulatory landscapes and balancing practical implementation with strategic priorities, mirroring the document's emphasis on jurisdictional compliance matrices and technical restrictions.",
+    "model": "solar-pro",
+    "prompt_chars": 28741,
+    "latency_sec": 1.71,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task42_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on multi-jurisdictional compliance, technical privacy tooling, and cost-efficient regulatory strategies for a tech startup. Candidate C, a data analyst with technical expertise (Python, R, SQL, Tableau) and a focus on efficiency, aligns best. Her rational, detail-oriented personality and interest in data-driven decision-making mirror the document's emphasis on structured compliance matrices, budget optimization, and technical solutions (e.g., PII scrubbing, machine unlearning). Unlike Candidates A (marketing manager) and B (state-owned enterprise manager), C's background in data analysis and preference for technical tools directly align with the document's framing, which prioritizes logical isolation, automated compliance, and precise regulatory adherence.",
+    "model": "solar-pro",
+    "prompt_chars": 30752,
+    "latency_sec": 2.25,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

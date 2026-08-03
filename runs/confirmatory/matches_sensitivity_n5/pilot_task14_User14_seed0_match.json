@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task14_User14_seed0",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13",
+      "User16",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User14",
+      "User16",
+      "User15",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document describes a 28-32-year-old freelance illustrator in Shanghai with no running experience, aligning perfectly with Candidate B's profile (age 28-32, freelance illustrator in Shanghai). Both emphasize yoga/Pilates integration, urban running environments, and evening creative peaks. The request for a beginner-friendly, injury-preventive marathon plan matches B's exercise goals (relaxation, stress relief) and existing routine (yoga 2-3x/week). Other candidates differ in occupation (caf\u00e9 owner, writer, copywriter, manager), location (Beijing, Harbin), or exercise habits (e.g., Candidate E runs weekly but lacks Pilates/yoga focus).",
+    "model": "solar-pro",
+    "prompt_chars": 38787,
+    "latency_sec": 2.1,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task14_User14_seed0",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13",
+      "User16",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User16",
+      "User14",
+      "User13",
+      "User15"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "Candidate C (Lin Nan) is a freelance illustrator with a strong focus on exercise types (yoga, Pilates, hiking) and cross-training methods (pilates/yoga for core stability) that align with the document's emphasis on integrating Pilates/yoga into marathon training. The document's focus on run/walk ratios, long-run progression, and cross-training schedules matches C's exercise habits (hiking, cycling, Pilates) and goals (stress relief, health maintenance). Unlike other candidates, C explicitly mentions Pilates and yoga as part of their routine, directly tying to the document's cross-training recommendations. The Galloway method's structured approach also aligns with C's disciplined creative process and periodic mobility for inspiration, which parallels the training plan's phased structure.",
+    "model": "solar-pro",
+    "prompt_chars": 40036,
+    "latency_sec": 2.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task14_User14_seed0",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13",
+      "User16",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User16",
+      "User13",
+      "User14",
+      "User15"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "The document focuses on a structured 12-week beginner marathon training plan incorporating the Galloway Run-Walk method, cross-training with yoga and Pilates, and urban running adaptations (e.g., Shanghai air quality). Candidate A, a creative copywriter in Shanghai, aligns with this content through his exercise preferences (running, cycling, yoga), urban environment (Shanghai), and interest in integrating creative routines (e.g., meditation, structured schedules). While other candidates have exercise habits, none combine the specific urban context, beginner-friendly training focus, and holistic lifestyle integration (diet, cross-training) as directly as Candidate A. The document\u2019s emphasis on balancing physical activity with creative/mental well-being also mirrors his personality traits.",
+    "model": "solar-pro",
+    "prompt_chars": 43561,
+    "latency_sec": 2.29,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task14_User14_seed0",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13",
+      "User16",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User15",
+      "User13",
+      "User14",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User15",
+    "correct": false,
+    "reasoning": "The document's focus on a 12-week beginner marathon training plan tailored for a freelance writer in Shanghai aligns closely with Candidate B's profile. Key matches include: (1) Freelance occupation with evening creative peak hours, (2) Yoga/Pilates foundation matching Candidate B's exercise habits, (3) Shanghai urban environment and lifestyle integration mirroring Candidate B's Beijing-based but adaptable creative routine. The guide's emphasis on structured yet flexible training, recovery, and lifestyle balance reflects Candidate B's introverted yet detail-oriented personality and her need to maintain physical/mental balance while managing freelance writing stress. Other candidates (A, C, D, E) either lack the freelance writer context, have incompatible schedules (e.g., caf\u00e9 owner's early mornings), or prioritize different exercise types (e.g., Candidate D's illustration-focused routine).",
+    "model": "solar-pro",
+    "prompt_chars": 45572,
+    "latency_sec": 2.33,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

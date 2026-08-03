@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task24_User12_seed0",
+    "stage": "plan",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User10",
+      "User12"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The brief is written in a practical, budget- and coverage-optimization tone, explicitly requesting comparative analysis across major insurers, deductibles, limits, exclusions, and claims efficiency\u2014typical of a pragmatic, cost-effective decision-maker managing family/property risk. Candidate B\u2019s profile (MBA marketing manager, rational and detail-oriented, family-focused, prefers thorough comparisons and official guidelines) aligns best with this structured purchasing research intent.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 26256,
+    "latency_sec": 1.69,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task24_User12_seed0",
+    "stage": "search",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User10",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The excerpt mixes Chinese-language insurance policy/coverage details (catastrophe insurance, exclusions, household property insurance) with practical, market-oriented framing rather than academic modeling. That aligns with a business/marketing manager who seeks actionable case studies and product/market comparisons for decision-making and family risk management.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 26976,
+    "latency_sec": 1.24,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task24_User12_seed0",
+    "stage": "compress",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User10",
+      "User20"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The excerpt is highly technical and policy/insurance-framework oriented (NFRA catastrophe insurance, underwriting exclusions, GIS risk modeling) and reads like research intended for a technically literate, analytical audience. Candidate A\u2019s AI/tech background and data-driven, risk-management mindset align best with this analytical framing, whereas B is more marketing-focused and C is creative/writing-focused.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 30615,
+    "latency_sec": 1.54,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task24_User12_seed0",
+    "stage": "write",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User12",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "\u62a5\u544a\u4ee5\u201c\u79d1\u6280\u4f01\u4e1a\u521b\u59cb\u4eba/\u9ad8\u6548\u80fd\u4eba\u58eb\u201d\u4e3a\u7406\u8d54\u6548\u7387\u4e0e\u7ebf\u4e0a\u5316\u670d\u52a1\u7684\u6838\u5fc3\u8bc9\u6c42\uff0c\u5e76\u5f3a\u8c03\u9ad8\u7aef\u7535\u5b50\u8bbe\u5907\u3001\u667a\u80fd\u5bb6\u5c45\u3001\u7528\u7535\u5b89\u5168/\u77ed\u8def\u9669\u3001\u5355\u4ef6\u9650\u989d\u4e0e\u6e05\u5355\u6295\u4fdd\u7b49\u7ec6\u8282\uff0c\u7b26\u5408\u9ad8\u6536\u5165\u3001\u91cd\u89c6\u98ce\u9669\u63a7\u5236\u4e0e\u9ad8\u7aef\u79d1\u6280\u8d44\u4ea7\u914d\u7f6e\u7684\u753b\u50cf\u3002\u5019\u9009B\u7684AI\u521b\u4e1a\u8005\u80cc\u666f\u3001\u5bf9\u667a\u80fd\u5bb6\u5c45\u4e0e\u9ad8\u7aef\u8bbe\u5907\u7684\u504f\u597d\u3001\u4ee5\u53ca\u7406\u6027\u6570\u636e\u5316\u51b3\u7b56\u98ce\u683c\u4e0e\u8be5\u62a5\u544a\u7684\u4e13\u4e1a\u5bf9\u6bd4\u6846\u67b6\u9ad8\u5ea6\u4e00\u81f4\u3002",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 32626,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

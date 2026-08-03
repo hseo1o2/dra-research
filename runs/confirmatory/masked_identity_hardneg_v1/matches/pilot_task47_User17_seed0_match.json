@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task47_User17_seed0",
+    "stage": "plan",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User17",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document emphasizes evidence-based, scientific exercise and lifestyle planning for a child, prioritizing reputable health guidelines (e.g., WHO) and structured routines. Candidate A, a medical professional and pragmatic manager, aligns with this focus: his MBA background values data-driven decisions, his role as a father of young children (8 and 5) matches the child-centric scope, and his preference for quality, cost-effectiveness, and family bonding (e.g., weekend park walks with his dog) reflects the document\u2019s emphasis on family participatory activities. Unlike Candidates B (nurse focused on pet-friendly activities) and C (state-owned enterprise manager with older children), Candidate A\u2019s urban Shanghai lifestyle, access to high-end facilities, and interest in extracurricular education (e.g., enrolling children in classes) directly mirror the document\u2019s audience needs.",
+    "model": "solar-pro",
+    "prompt_chars": 23829,
+    "latency_sec": 2.32,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task47_User17_seed0",
+    "stage": "search",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on physical activity guidelines for children and adolescents, emphasizing muscle/bone strengthening, youth sports specialization risks, and comparative benefits of different sports. Candidate B (Liu Qiang) is a marketing manager with two children (8 and 5) interested in sports (dancing, basketball). His profile highlights family-oriented activities, educational investments, and health-conscious consumption. The document's emphasis on youth sports safety, physical development, and family-friendly exercise aligns with B's priorities as a parent managing children's extracurricular activities. Candidates A (nurse) and C (engineer) lack the same direct focus on youth sports specialization or child-specific physical activity guidelines.",
+    "model": "solar-pro",
+    "prompt_chars": 25513,
+    "latency_sec": 2.12,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task47_User17_seed0",
+    "stage": "compress",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on structured physical activity guidelines for children and adolescents, emphasizing muscle/bone strengthening, age-specific recommendations, and evidence-based parameters. Candidate C, a marketing manager with two young children (8 and 5), aligns most closely: his profile highlights investment in children's education, extracurricular activities (e.g., painting, basketball), and family-oriented exercise habits (weekend park walks with his dog). The document's emphasis on youth fitness, injury prevention, and developmental stages directly supports Candidate C's priorities as a parent of school-age children. Candidates A (middle-school son, general health focus) and B (teenage children, pet-centric activities) lack the same explicit connection to the document's pediatric exercise framework.",
+    "model": "solar-pro",
+    "prompt_chars": 28006,
+    "latency_sec": 1.98,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task47_User17_seed0",
+    "stage": "write",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on evidence-based, structured physical activity and lifestyle planning for children and adolescents, emphasizing scientific guidelines, multi-dimensional benefits (physical, cognitive, social), and practical implementation strategies. Candidate B, as a marketing manager with an MBA and a family with young children, aligns best with the document's priorities. His profile highlights a strong interest in education, structured routines, and holistic development for his children (e.g., extracurricular classes, educational expenses). The document's emphasis on balancing multiple domains (health, academics, social skills) mirrors B's pragmatic, data-driven decision-making style and his focus on quality-of-life investments. Additionally, B's preference for self-guided tours and detailed planning aligns with the document's systematic approach to lifestyle design. Candidates A and C, while family-oriented, lack the explicit focus on evidence-based child development and structured multi-domain optimization central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30017,
+    "latency_sec": 2.79,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

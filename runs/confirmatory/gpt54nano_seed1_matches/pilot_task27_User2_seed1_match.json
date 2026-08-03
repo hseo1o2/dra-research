@@ -1,0 +1,118 @@
+[
+  {
+    "run_id": "pilot_task27_User2_seed1",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The brief is written from the perspective of an independent music enthusiast with a psychology-adjacent, structured learning and budgeting mindset, emphasizing step-by-step research, cost-effective gear within a fixed RMB budget, and a disciplined weekly time allocation. Candidate A\u2019s profile matches this practical, learning-oriented, cost-conscious behavior and strong use of Chinese social platforms (WeChat/Weibo/Xiaohongshu) for sharing and building an audience, aligning with the document\u2019s marketing and workflow framing.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 23869,
+    "latency_sec": 1.56,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4373,
+    "output_tokens": 121,
+    "total_tokens": 4494,
+    "api_response_id": "chatcmpl-E8pkVNkekGLdJaKc6LcPvR4CkvcAr"
+  },
+  {
+    "run_id": "pilot_task27_User2_seed1",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User1",
+    "correct": false,
+    "reasoning": "The queries mix tech/product evaluation (Neumann TLM 102 price comparisons on JD/Tmall, Temu knockoff testing) with platform-specific \u201chow-to\u201d guides and structured submission/pitching timelines (Spotify for Artists), suggesting a detail-oriented, research-driven user who compares specs and sources. Candidate C\u2019s profile emphasizes rational purchasing on JD/Taobao, interest in high-end electronics, and saving technical specifics\u2014matching the document\u2019s practical, specification-and-platform workflow framing more than the psychology/music-promotion focus of A/B.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 25375,
+    "latency_sec": 1.54,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4737,
+    "output_tokens": 131,
+    "total_tokens": 4868,
+    "api_response_id": "chatcmpl-E8pkXpBCHgouYYifQ4eQIPJes692F"
+  },
+  {
+    "run_id": "pilot_task27_User2_seed1",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User1",
+    "correct": false,
+    "reasoning": "The excerpt is a highly technical, product-comparison style research log focused on specific audio gear models and RMB pricing on JD/Tmall, including repeated search/tool-call patterns. This aligns best with a computer-science student who is detail-oriented, uses online platforms for electronics research, and prefers technical specifics and practical purchase decisions (Candidate C), rather than psychology/new-media framing (A/B).",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 27967,
+    "latency_sec": 1.38,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 7050,
+    "output_tokens": 101,
+    "total_tokens": 7151,
+    "api_response_id": "chatcmpl-E8pkYz7B2lTa4vl4huwXuyQ4FbzSA"
+  },
+  {
+    "run_id": "pilot_task27_User2_seed1",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User7",
+    "correct": false,
+    "reasoning": "\u6587\u6863\u4ee5\u201c\u72ec\u7acb\u97f3\u4e50\u4eba/\u5bb6\u5ead\u5f55\u97f3\u5ba4\u201d\u89c6\u89d2\uff0c\u5f3a\u8c03\u9884\u7b97\uff08\u00a520,000\uff09\u3001\u8bbe\u5907\u9009\u578b\u30016\u4e2a\u6708\u5b66\u4e60\u8def\u7ebf\u3001\u4ee5\u53ca\u5fae\u4fe1/\u5c0f\u7ea2\u4e66/Spotify for Artists \u7b49\u4e2d\u6587\u8bed\u5883\u7684\u53d1\u884c\u4e0e\u79c1\u57df\u8fd0\u8425\uff0c\u660e\u663e\u9762\u5411\u6709\u521b\u4f5c\u4e0e\u63a8\u5e7f\u76ee\u6807\u7684\u4e2a\u4eba\u3002\u5019\u9009A\u5728\u5317\u4eac\u3001\u91cd\u89c6\u7406\u6027\u9884\u7b97\u4e0e\u5b66\u4e60\u5de5\u5177\u3001\u4e14\u9ad8\u9891\u4f7f\u7528\u5fae\u4fe1\u751f\u6001\u4e0eB\u7ad9\u7b49\u5185\u5bb9\u5e73\u53f0\uff0c\u6700\u7b26\u5408\u8be5\u7c7b\u9762\u5411\u72ec\u7acb\u521b\u4f5c\u8005\u7684\u5b9e\u64cd\u578b\u6307\u5357\u9700\u6c42\uff1bB\u504f\u5fc3\u7406\u5b66\u4e0e\u732b\u5185\u5bb9\uff0cC\u504fAI/\u7f16\u7a0b\u4e0e\u6280\u672f\u786c\u4ef6\uff0c\u4e0d\u5339\u914d\u97f3\u4e50\u5236\u4f5c\u4e0e\u5ba3\u53d1\u6846\u67b6\u3002",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 29978,
+    "latency_sec": 1.93,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 8680,
+    "output_tokens": 165,
+    "total_tokens": 8845,
+    "api_response_id": "chatcmpl-E8pkaTQKdroqaXgHCEIXRoAw0yn3I"
+  }
+]

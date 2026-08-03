@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task4_User9_seed1",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User19",
+      "User21"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User19",
+      "User21"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "Candidate A (Zhao Li) is a 22-25-year-old product operations professional at an internet company with a psychology minor, aligning with the document's author profile. The document's focus on balancing work/study, low risk tolerance, and early-career stage matches A's age, experience level, and need for career stability. The emphasis on part-time/hybrid formats, brand influence in tech sectors, and ROI analysis reflects A's practical, budget-conscious preferences (e.g., boutique accommodations, organic food purchases). Content priorities like mental health, sustainable living, and creative interests in the document also mirror A's documented preferences for psychology, vegetarianism, and artistic content. Candidates B and C, being older with more experience (35-45) and established careers, would prioritize different program types (e.g., EMBA) and lack the document's focus on balancing early-career growth with study.",
+    "model": "solar-pro",
+    "prompt_chars": 23202,
+    "latency_sec": 2.02,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed1",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User19",
+      "User21"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User9",
+      "User21"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User21",
+    "correct": false,
+    "reasoning": "Candidate C, an entrepreneur with an MBA from Fudan University, aligns most closely with the document's focus on MBA admissions (work experience requirements, tuition fees, program comparisons) and its emphasis on career advancement, international recognition, and business-oriented content. The document's queries about '\u5927\u5382' (large corporations) and MBA/MSBA program credibility reflect C's entrepreneurial background, global business interests, and prioritization of high-value education for professional growth. Unlike A (supply chain manager) or B (product operations), C's profile as an MBA holder and frequent traveler for business aligns with the document's framing of MBAs as tools for career elevation and corporate recognition.",
+    "model": "solar-pro",
+    "prompt_chars": 23641,
+    "latency_sec": 1.61,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed1",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User19",
+      "User21"
+    ],
+    "shuffled_order": [
+      "User21",
+      "User19",
+      "User9"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on a candidate aged 22\u201325 with 1\u20133 years of work experience in internet product operations, an Advertising major with a Psychology minor, and skill gaps in quantitative/technical areas. These details align precisely with Candidate C's profile: same age, occupation (Product Operations), educational background (Advertising major, Psychology minor), and early-career status. The document's emphasis on balancing human-centric skills with technical skill gaps also mirrors Candidate C's creative personality and recent interest in health/fitness tools, suggesting a similar growth trajectory. Candidates A (40\u201345, entrepreneur) and B (35\u201340, supply chain manager) are mismatched in age, career stage, and academic focus.",
+    "model": "solar-pro",
+    "prompt_chars": 27238,
+    "latency_sec": 1.88,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed1",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User19",
+      "User21"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User21",
+      "User19"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on Zhao Li, a 22\u201325-year-old internet product operations professional with a psychology minor, low risk tolerance, and constraints like a demanding job. Candidate A matches these attributes exactly: same name, age, occupation, educational background (Advertising with Psychology minor), and risk aversion. The report\u2019s emphasis on balancing academic rigor, financial risk, and time commitment aligns with Candidate A\u2019s harmonious family expectations, low stress tolerance, and preference for stable career growth. The content\u2019s focus on early-career skill gaps (quantitative analytics) and flexible learning formats (online/part-time) also mirrors Candidate A\u2019s creative but practical decision-making style and interest in skill-based growth (e.g., fitness tracking, organic products). Candidates B and C are older, have senior roles (entrepreneur/supply chain manager), and prioritize executive or technical networking, which the report explicitly dismisses (e.g., EMBA as 'ineligible').",
+    "model": "solar-pro",
+    "prompt_chars": 29249,
+    "latency_sec": 2.37,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

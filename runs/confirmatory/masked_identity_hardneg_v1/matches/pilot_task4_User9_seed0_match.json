@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User6",
+      "User11"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "Candidate C (Li Zhuo) is a 28-32-year-old algorithm engineer with a Computer Science background and a Master's in AI, aligning with the document's focus on post-graduate education for career advancement. The document emphasizes systematic evaluation of programs (MBA, EMBA, MSc) for early-career professionals, which matches C's age, experience level, and goal of boosting competitiveness in tech. Unlike A (creative, product operations) and B (environmental studies student), C's technical background, rational decision-making style, and interest in ROI-driven education (e.g., certifications, ROI timelines) directly reflect the document's framing. His focus on cost-effectiveness, tech-related investments, and preference for data-driven decisions further align with the document's emphasis on program suitability, financial analysis, and career impact in tech/operations.",
+    "model": "solar-pro",
+    "prompt_chars": 23882,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User9",
+      "User6"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on MBA program requirements (work experience, tuition, dual degrees) and certifications (PMP, Product Operations roles), aligning with Candidate B's profile as a Product Operations professional in an internet company. B's queries about 'Product Operations', 'PMP certifications', and 'ByteDance' directly match the document's content. Candidate A (Algorithm Engineer) and C (Environmental Studies student) lack the document's MBA/career advancement focus. B's interest in tech certifications, career growth, and internet industry context makes her the most likely user.",
+    "model": "solar-pro",
+    "prompt_chars": 25059,
+    "latency_sec": 1.55,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User6",
+      "User11",
+      "User9"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "The document focuses on MBA program details (tuition, work experience requirements, dual-degree options) from top Chinese and international institutions, reflecting a professional's interest in career advancement through formal business education. Candidate B, a 28-32-year-old algorithm engineer with a graduate degree and career in tech, aligns best: his age, educational background, and rational decision-making style match the document's emphasis on work experience norms (2-5 years) and dual-degree programs. Unlike Candidate A (undergrad environmental student) or C (young product operations professional), B's profile as a mid-career tech professional seeking advanced business credentials (e.g., finance MBA) directly correlates with the document's focus on eligibility criteria, tuition costs, and program structures for working professionals.",
+    "model": "solar-pro",
+    "prompt_chars": 27819,
+    "latency_sec": 2.03,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User6",
+      "User9"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on career advancement for early-career Product Operations professionals (1\u20133 years experience) in the internet sector, emphasizing quantitative skills (Python, statistical testing), strategic frameworks, and transitioning into roles like Data Product Manager. Candidate C (22\u201325, Product Operations at an internet company, Psychology minor, Advertising major) directly aligns with this profile. The document\u2019s emphasis on bridging operational execution with quantitative rigor matches C\u2019s background in user behavior analysis and her role in Product Operations. Candidates A (Algorithm Engineer) and B (Environmental Studies student) lack the domain-specific relevance to internet Product Operations and the career trajectory described.",
+    "model": "solar-pro",
+    "prompt_chars": 29830,
+    "latency_sec": 2.19,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

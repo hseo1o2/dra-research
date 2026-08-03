@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task18_User19_seed0",
+    "stage": "plan",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16",
+      "User18",
+      "User11"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User18",
+      "User19",
+      "User11"
+    ],
+    "predicted_label": "D",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document is authored by a Supply Chain Manager based in Chengdu, planning a business trip to Berlin. Candidate D is the only profile explicitly identifying as a Supply Chain Manager (35-40, Chengdu-based) with identical occupation, location, and budget-conscious travel priorities. The document's focus on logistics (flights, ground transport, budget breakdown) aligns with D's expertise in supply chain optimization. His eco-friendly consumption habits and preference for mid-to-high-end business hotels during trips mirror the document's emphasis on sustainable practices and accommodation standards. Other candidates (A: Marketing, B: State-owned enterprise, C: Data Analyst, E: Algorithm Engineer) lack the occupational and contextual specificity required to match the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 40894,
+    "latency_sec": 2.09,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task18_User19_seed0",
+    "stage": "search",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16",
+      "User18",
+      "User11"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User18",
+      "User11",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on Chengdu-to-Berlin flight details, EUR/CNY exchange rates, BVG ticket pricing, and Hainan Airlines costs\u2014all directly relevant to Candidate A, a Chengdu-based supply chain manager planning international travel. His profile highlights annual family trips (often domestic but with international interest), practical consumption (eco-friendly products, cost comparisons), and efficiency-focused decision-making. The document's emphasis on flight durations, layovers, currency conversion, and ticket pricing aligns with his pragmatic, family-oriented travel planning style. Other candidates (B, C, D, E) either lack Chengdu residency, prioritize domestic travel, or focus on different travel motivations (e.g., Candidate B's Nordic interests, Candidate D's business trips to Shenzhen/Chengdu).",
+    "model": "solar-pro",
+    "prompt_chars": 42376,
+    "latency_sec": 2.37,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task18_User19_seed0",
+    "stage": "compress",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16",
+      "User18",
+      "User11"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User11",
+      "User16",
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "E",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on Chengdu-to-Berlin flight logistics, Schengen visa requirements for Chinese citizens, and currency exchange rates (EUR/CNY). These topics align with the needs of a supply chain manager (Candidate E) based in Chengdu who frequently travels internationally for work, requires visa information, and manages cross-border logistics. The document's practical, data-driven framing matches E's rational, efficiency-focused personality and his role in supply chain management, which involves international travel and financial considerations. Other candidates (A-D) lack the specific combination of Chengdu residency, international travel frequency, and supply chain/logistics expertise that directly aligns with the document's content.",
+    "model": "solar-pro",
+    "prompt_chars": 45042,
+    "latency_sec": 2.05,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task18_User19_seed0",
+    "stage": "write",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16",
+      "User18",
+      "User11"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User11",
+      "User16",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "D",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document is a comprehensive business travel itinerary for a Chengdu-based Supply Chain Manager traveling to Berlin, emphasizing eco-friendly practices, logistics efficiency, mid-to-high-end accommodations, and structured business frameworks. Candidate D is explicitly identified as a Supply Chain Manager based in Chengdu, aligning perfectly with the document's target audience. The document's focus on budget constraints (\u00a530,000 RMB), eco-friendly certifications (Green Key, ISO 14001), and practical logistics mirrors Candidate D's preferences for rational, eco-conscious consumption and his role in supply chain management. Other candidates (A, B, C, E) either lack the supply chain background, are based in different cities, or prioritize different aspects (e.g., tech, marketing, or family travel) that do not match the document's professional and sustainability-oriented framing.",
+    "model": "solar-pro",
+    "prompt_chars": 47053,
+    "latency_sec": 2.33,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

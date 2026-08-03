@@ -1,0 +1,31 @@
+[
+  {
+    "run_id": "pilot_task2_User2_seed1",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on queries related to clinical psychology graduate programs, visa restrictions (J1), HIPAA, tuition fees, language of instruction (JLPT/TOEFL), and credit transfers\u2014topics directly tied to Candidate A's identity as a Clinical Psychology master's student in Beijing. Her profile emphasizes academic mobility (exchange programs, credit transfers), international research (NUS, Tokyo, Peking University), and practical concerns (tuition, living costs, language requirements). Candidate B (new media) and C (computer science) lack the clinical psychology focus and institutional affiliations (e.g., Peking University) central to the document. The queries align with Candidate A's educational background, geographic context, and career trajectory.",
+    "model": "solar-pro",
+    "prompt_chars": 22549,
+    "latency_sec": 1.84,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "queries",
+    "input_tokens": 4755,
+    "output_tokens": 167,
+    "total_tokens": 4922,
+    "api_response_id": "ac8f47d1-a698-4efc-ae76-9de52f960bfd"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task47_User16_seed0",
+    "stage": "plan",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The brief is written from a Harbin family context and emphasizes building a scientifically backed exercise/diet routine for a middle-school son with soccer interest, plus family outdoor activities (hiking, dog walks, cycling). Candidate B is the only profile explicitly living in Harbin, has a middle-school son who enjoys football, and already engages in outdoor walking/jogs and hiking/cycling with a dog, aligning closely with the document\u2019s priorities and framing.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 22388,
+    "latency_sec": 1.62,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task47_User16_seed0",
+    "stage": "search",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The excerpt centers on WHO/Chinese physical activity and dietary/sports nutrition guidelines for youth, plus a specific regional climate/sports context (Harbin/Heilongjiang). This aligns with a Harbin-based parent who is interested in practical health guidance and outdoor exercise options for children, rather than a hospital nurse\u2019s clinical/pet-focused framing or a Shanghai marketing manager\u2019s business/analysis focus.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 25513,
+    "latency_sec": 1.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task47_User16_seed0",
+    "stage": "compress",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The excerpt is a research-style synthesis of youth physical activity guidelines and soccer injury-prevention programs (WHO/CDC/NHS/Chinese guidelines, MVPA minutes, screen-time limits, FIFA 11+), written in a clinical/technical framing. Among the candidates, Profile B\u2019s interests include health-adjacent practical information and structured, evidence-based planning for family activities (son plays football), aligning with the document\u2019s focus on youth sports and prevention rather than nursing/pet care (A) or business/marketing analysis (C).",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 28006,
+    "latency_sec": 1.85,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task47_User16_seed0",
+    "stage": "write",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The excerpt is written as a practical, family-oriented lifestyle and health plan for a middle-school boy in Harbin, emphasizing seasonal adaptation, outdoor time, and leveraging family activities (hiking/cycling/walks with a golden retriever). Candidate C matches this Harbin/Northeast context and has a middle-school son who likes football plus a golden retriever, aligning strongly with the document\u2019s framing and priorities.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 30017,
+    "latency_sec": 1.6,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "conditions": {
+    "actionable_only": {
+      "checks": {
+        "all_runs_completed": true,
+        "all_schema_valid": true,
+        "completeness_within_threshold": false,
+        "ledger_clean": false,
+        "no_execution_errors": true
+      },
+      "expected_runs": 15,
+      "generation_gate_passed": false,
+      "observed": {
+        "completed_runs": 15,
+        "completeness_issue_runs": 3,
+        "execution_error_runs": 0,
+        "ledger_issue_runs": 1,
+        "queries_failed": 31,
+        "queries_successful": 74,
+        "schema_valid_runs": 15,
+        "success_criteria_met_runs": 12,
+        "total_tokens": 2361234
+      }
+    },
+    "identity_only": {
+      "checks": {
+        "all_runs_completed": true,
+        "all_schema_valid": true,
+        "completeness_within_threshold": false,
+        "ledger_clean": true,
+        "no_execution_errors": true
+      },
+      "expected_runs": 15,
+      "generation_gate_passed": false,
+      "observed": {
+        "completed_runs": 15,
+        "completeness_issue_runs": 3,
+        "execution_error_runs": 0,
+        "ledger_issue_runs": 0,
+        "queries_failed": 24,
+        "queries_successful": 81,
+        "schema_valid_runs": 15,
+        "success_criteria_met_runs": 12,
+        "total_tokens": 2426862
+      }
+    }
+  },
+  "decision_source": "DEC-006",
+  "external_api_calls": 0,
+  "generation_gate_passed": false,
+  "interpretation": "A failed generation gate requires design review before any seed-1 generation. A passed generation gate still does not authorize API execution.",
+  "matcher_gate": {
+    "required": "Corrected per-GT candidate matching and paired denominator validation",
+    "status": "pending"
+  },
+  "schema_version": 1,
+  "seed1_authorized_by_this_gate": false
+}

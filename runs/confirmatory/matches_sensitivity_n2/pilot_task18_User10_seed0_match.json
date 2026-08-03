@@ -1,0 +1,110 @@
+[
+  {
+    "run_id": "pilot_task18_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns more closely with the document's focus on high-end business travel, marketing-oriented priorities, and integration of leisure with family-oriented cultural experiences. The document emphasizes business meetings, high-end hotels, and a structured itinerary that balances work with cultural exploration\u2014mirroring A's role as a marketing manager who values efficiency, quality, and family-friendly leisure. Additionally, A's preference for Western management concepts and international travel (e.g., Berlin) aligns with the document's global business context, whereas Candidate B's focus on manufacturing and technical exhibitions is less relevant to the marketing and cultural framing of the request.",
+    "model": "solar-pro",
+    "prompt_chars": 17648,
+    "latency_sec": 2.04,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task18_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on travel logistics (flights, ground transport, hotel status, museum openings) and cost comparisons, aligning with Candidate A's role as a marketing manager who frequently travels for business and prioritizes cost-effectiveness. Candidate A's travel preferences (self-guided tours, family vacations, historical/cultural sites) and consumption habits (quality-focused, budget-conscious) match the document's emphasis on flight prices, transportation zones, and hotel operational status. Candidate B, while also interested in travel, focuses more on technical exhibitions and local cuisine, which are less central to the document's content. The document's framing around practical travel planning and cost analysis is more directly relevant to Candidate A's professional and family-oriented travel needs.",
+    "model": "solar-pro",
+    "prompt_chars": 19052,
+    "latency_sec": 1.74,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task18_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User22",
+    "correct": false,
+    "reasoning": "The document focuses on cost-effective travel planning for a single traveler (\u00a530,000 RMB budget) with detailed flight comparisons, budget breakdowns, and practical recommendations. Candidate A, a technical director in manufacturing, aligns with this pragmatic, detail-oriented framing. His preferences for rational decision-making, cost-effectiveness, and self-guided tours (e.g., planning his own itineraries) mirror the document's emphasis on budget allocation, price comparisons, and practical logistics. Candidate B, while also detail-oriented, prioritizes family-centric travel and high-end accommodations, which contrasts with the document's focus on solo travel and frugal spending. The document's technical tone (e.g., baggage weight limits, currency conversions) also aligns with Candidate A's engineering background and affinity for data-driven analysis.",
+    "model": "solar-pro",
+    "prompt_chars": 21562,
+    "latency_sec": 1.93,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task18_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document emphasizes a balance of business efficiency (meetings, workspaces) and high-end leisure (fine dining, cultural exploration), aligning with Candidate B's role as a marketing manager in a foreign enterprise who values quality of life, cost-effectiveness, and family-oriented travel. The focus on international travel (Shanghai to Berlin), premium accommodations, and curated experiences reflects B's preference for combining professional and leisure activities, as seen in his quarterly business trips and family vacations. Candidate A, a technical director in manufacturing, prioritizes practicality and local cultural/historical sites, which is less evident in the document's global, business-leisure hybrid framing.",
+    "model": "solar-pro",
+    "prompt_chars": 23573,
+    "latency_sec": 1.67,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

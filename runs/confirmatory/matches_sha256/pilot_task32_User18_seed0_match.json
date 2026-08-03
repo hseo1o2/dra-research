@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task32_User18_seed0",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on modern aesthetics, art-integrated design, and sustainability. The request for a soft furnishing plan emphasizes a modern style with white walls and gray floors, which mirrors A's artistic background and caf\u00e9's industrial-natural design. A's preference for eco-friendly products and support for local/niche brands aligns with the document's emphasis on sustainability and design quality. Additionally, A's interest in cultural spaces and art exhibitions matches the document's framing of the home as a curated environment, whereas B and C prioritize functionality and tech over artistic integration.",
+    "model": "solar-pro",
+    "prompt_chars": 24918,
+    "latency_sec": 1.52,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task32_User18_seed0",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User13",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "The document focuses on cost-effective home renovation and appliance recommendations (e.g., '89\u5e73\u7c73 \u88c5\u4fee 35000 40000', '\u9884\u7b97\u6e05\u5355', '\u4ef7\u683c') with technical specifications (e.g., '\u5c3a\u5bf8', '\u6df1\u5ea6', '\u89c4\u683c') and brand comparisons (e.g., '\u6d77\u5c14', '\u7c73\u5bb6', '\u7f8e\u7684'). Candidate A, an algorithm engineer, aligns with this rational, data-driven approach to consumption, prioritizing cost-effectiveness, technical details, and practicality. His interest in smart home products and preference for logical decision-making further match the document's framing. Candidates B and C, while detail-oriented, focus more on aesthetics, sustainability, and lifestyle experiences, which are less central to the document's technical and budget-focused tone.",
+    "model": "solar-pro",
+    "prompt_chars": 25685,
+    "latency_sec": 2.38,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task32_User18_seed0",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User18",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on ultra-thin embedded refrigerators and washer-dryer stacks optimized for small-to-medium kitchens (89m\u00b2), emphasizing design aesthetics, smart home integration, and eco-friendly features. Candidate A, a caf\u00e9 owner with a design background, prioritizes sustainability, local/niche brands, and smart home ecosystems (e.g., Xiaomi/\u7c73\u5bb6). The document's emphasis on cabinet fit, odor prevention, and premium finishes aligns with her meticulous, artistic, and eco-conscious preferences. Candidates B (data analyst) and C (engineer) prioritize practicality and cost-effectiveness over design-centric, lifestyle-oriented features highlighted in the text.",
+    "model": "solar-pro",
+    "prompt_chars": 29622,
+    "latency_sec": 1.72,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task32_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User13",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document emphasizes a highly structured, budget-conscious approach to interior design with a focus on practicality, efficiency, and rational decision-making. Candidate A, a data analyst with a meticulous, logical personality and preference for cost-effective, high-quality products, aligns closely with this framing. The document's detailed budget breakdowns, prioritization of durable materials, and emphasis on functional aesthetics mirror Candidate A's rational consumption habits, attention to detail, and interest in sustainable, long-term value. In contrast, Candidate B's artistic focus and Candidate C's tech-oriented preferences are less directly reflected in the document's content priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 31633,
+    "latency_sec": 1.58,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

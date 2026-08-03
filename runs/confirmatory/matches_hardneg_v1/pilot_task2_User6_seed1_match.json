@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task2_User6_seed1",
+    "stage": "plan",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User6",
+      "User18",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User2",
+      "User6"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "Candidate C is an undergraduate Environmental Studies student at a top Zhejiang university, directly aligning with the document's author profile. The document's focus on sustainable urban development, circular economy, and climate change mirrors C's academic background, volunteer activities, and consumption preferences for eco-friendly products. Her interest in low-carbon travel and eco-certified accommodations also aligns with the research brief's emphasis on sustainability. Candidates A (data analyst) and B (clinical psychology graduate student) lack the environmental focus and academic context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24169,
+    "latency_sec": 1.44,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User6_seed1",
+    "stage": "search",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User6",
+      "User18",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User6",
+      "User2",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "The document focuses on study abroad programs, credit transfers, and environmental studies at institutions like UC Berkeley and Zhejiang University. Candidate A, an Environmental Studies undergraduate at a Zhejiang-based university, aligns perfectly with the document's emphasis on credit transfer rules (especially Zhejiang University's policies), environmental themes, and study abroad opportunities. Her academic background, interest in sustainability, and frequent engagement with eco-friendly practices make her the most likely audience. Candidates B (Clinical Psychology) and C (Data Analyst) lack the direct environmental and Zhejiang University-specific context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25323,
+    "latency_sec": 1.54,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User6_seed1",
+    "stage": "compress",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User6",
+      "User18",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User18",
+      "User6"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "The document focuses on environmental studies, sustainability, and international exchange programs (e.g., UC Berkeley, Columbia Climate School, UBC Forestry). Candidate C is an undergraduate in Environmental Studies with a strong interest in sustainability, eco-friendly practices, and global environmental projects. Their academic background, consumption habits (eco-certified products), and content preferences (climate change, circular economy) directly align with the document's emphasis on environmental science, credit transfers for sustainability courses, and partnerships with institutions like Zhejiang University. Candidates A (Clinical Psychology) and B (Data Analyst) lack the domain-specific focus on environmental studies and sustainability that defines the document.",
+    "model": "solar-pro",
+    "prompt_chars": 28094,
+    "latency_sec": 1.99,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User6_seed1",
+    "stage": "write",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User6",
+      "User18",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User18",
+      "User6"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "The document focuses on overseas exchange opportunities for Environmental Studies undergraduates, emphasizing topics like ecological civilization, circular economy, and sustainable infrastructure. Candidate C is an Environmental Studies undergraduate with a strong academic background in the field, a focus on sustainability, and a history of environmental activism. The document's technical vocabulary (e.g., 'circular economy models,' 'sustainable infrastructure') and its emphasis on program alignment with environmental research priorities directly mirror Candidate C's academic interests, career goals, and documented engagement with eco-friendly practices. Candidates A (Clinical Psychology) and B (Data Analyst) lack the domain-specific alignment and content priorities evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30105,
+    "latency_sec": 1.78,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

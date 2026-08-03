@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task7_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User19",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "Candidate B (Liu Lu) is a data analyst with a background in statistics and a strong interest in AI/tech tools, aligning with the document's focus on AI-driven education. Her meticulous, data-driven decision-making style matches the structured research and business plan requirements. Unlike Candidates A (supply chain manager) and C (marketing manager), B's professional focus on data analysis and her engagement with AI/tech tools (Python, R, Tableau) directly correlate with the document's emphasis on AI integration, market research, and tech strategy. Her interest in sustainability and personal growth also aligns with the startup's mission to enhance learning efficiency through innovation.",
+    "model": "solar-pro",
+    "prompt_chars": 24871,
+    "latency_sec": 1.7,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task7_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User19",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on EdTech AI startup economics (LTV/CAC, pricing models), technical architecture (RAG, LMS integrations), and compliance (FERPA, LTI 1.3) \u2014 topics aligned with Candidate B's role as a marketing manager in a foreign enterprise. B's MBA background, interest in market trends, and preference for data-driven decision-making (evident in his LinkedIn activity, case study consumption, and business analysis screenshots) directly reflect the document's emphasis on business models, pricing strategies, and technical standards. Unlike Candidate A (data analyst focused on statistics) or Candidate C (supply chain manager), B's marketing and management expertise make him the most likely audience for content balancing innovation, cost-efficiency, and scalability in EdTech AI.",
+    "model": "solar-pro",
+    "prompt_chars": 26142,
+    "latency_sec": 1.85,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task7_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User19",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on rigorous market research methodologies for an AI EdTech startup targeting university students, emphasizing quantitative techniques (e.g., Van Westendorp, conjoint analysis) and data-driven decision-making. Candidate B, a data analyst with a statistics background and expertise in econometric tools (Python, R, SQL), aligns most closely with this analytical framing. Her preference for data-driven decision-making, certifications in data science, and interest in market trends reflect the document's emphasis on structured research and pricing sensitivity analysis. Candidates A (supply chain) and C (marketing) lack the technical and methodological focus on statistical modeling central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 28635,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task7_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User19",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on AI learning platforms for university students, emphasizing academic pain points (e.g., exam prep, debugging, document synthesis) and Gen Z budget constraints. Candidate A, a data analyst with a statistics background, aligns most closely: her educational history (scholarships, data competitions) and current work (data analysis, certifications) reflect the document's technical rigor and problem-solving focus. Her rational, detail-oriented personality and preference for structured tools (Python, Notion) mirror the document's methodological depth. Candidates B (supply chain) and C (marketing) lack the direct academic/technical context central to the report's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 30646,
+    "latency_sec": 2.41,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

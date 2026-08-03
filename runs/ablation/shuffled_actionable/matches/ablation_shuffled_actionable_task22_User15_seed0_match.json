@@ -1,0 +1,118 @@
+[
+  {
+    "run_id": "ablation_shuffled_actionable_task22_User15_seed0",
+    "stage": "plan",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User18",
+      "User15"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document explicitly identifies the user as Qiu Wen, a 26-30-year-old single professional in Beijing with a conservative investment risk appetite, aligning perfectly with Candidate C's attributes. The research brief's focus on retirement planning with annuities, medical insurance, and long-term care reflects Candidate C's practical, detail-oriented personality and her parents' educational background (emphasizing intellectual exchange and cultural enrichment). The document's structured, long-term financial framing matches her independent decision-making style and rational consumption preferences, particularly her focus on sustainable brands and eco-friendly consumption. Candidate C's Beijing residence, freelance occupation, and interest in health/wellness (yoga, Pilates) further align with the retirement plan's integration of care services and health management.",
+    "model": "solar-pro",
+    "prompt_chars": 23584,
+    "latency_sec": 1.73,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4950,
+    "output_tokens": 170,
+    "total_tokens": 5120,
+    "api_response_id": "71337377-63d3-41e8-8f2d-67bba507a7ff"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task22_User15_seed0",
+    "stage": "search",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User15",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on insurance regulations, interest rate caps, and financial products (e.g., personal pension plans, dividend insurance, and term life insurance). These topics align with Candidate C's background as a data analyst in finance, her interest in economic policies, and her practical consumption habits (e.g., researching products, valuing cost-effectiveness, and investing in durable goods). Unlike Candidates A (freelance illustrator) and B (freelance writer), Candidate C\u2019s analytical mindset, financial literacy, and career in data analysis make her the most likely audience for content detailing insurance rate changes, tax implications, and pension planning. The document\u2019s technical framing and regulatory focus also match her preference for evidence-based decision-making and sustainability considerations.",
+    "model": "solar-pro",
+    "prompt_chars": 23720,
+    "latency_sec": 1.82,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6146,
+    "output_tokens": 168,
+    "total_tokens": 6314,
+    "api_response_id": "fc045929-961d-4ab3-af99-c28a2bcb52d2"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task22_User15_seed0",
+    "stage": "compress",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User14",
+      "User15"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document focuses on insurance products, pension planning, and financial regulations\u2014topics requiring analytical rigor, long-term planning, and attention to regulatory details. Candidate C, a freelance writer with a journalism background, exhibits traits aligning with these priorities: meticulous attention to detail, independent decision-making, and a preference for in-depth analysis (evident in her content preferences for social observation, psychology, and cultural articles). Unlike Candidates A (data analyst focused on technical tools) and B (illustrator prioritizing creative inspiration), Candidate C's rational consumption habits, eco-friendly values, and interest in sustainable products reflect a pragmatic, future-oriented mindset consistent with the document's focus on structured financial planning and regulatory compliance. Her Beijing residence also aligns with the document's emphasis on Beijing-specific insurance products (e.g., Beijing Puhui Jiankang Bao).",
+    "model": "solar-pro",
+    "prompt_chars": 27367,
+    "latency_sec": 1.96,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6464,
+    "output_tokens": 195,
+    "total_tokens": 6659,
+    "api_response_id": "9e3f3e9d-dceb-4b53-b5f5-58debe6b002b"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task22_User15_seed0",
+    "stage": "write",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User14",
+      "User15"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document explicitly names Qiu Wen (28, Beijing-based, data analyst/writer) as the client, matching Candidate C's identity. Both emphasize conservative financial planning (high savings, low-risk instruments), spinal health (desk-worker ergonomics), and Beijing residency. Candidate C's freelance writing aligns with the document's focus on preventive health for desk-bound professionals, while her eco-conscious consumption mirrors the report's structured, long-term planning. Candidates A (Shanghai-based data analyst) and B (freelance illustrator) lack the document's specific financial/health priorities and Beijing context.",
+    "model": "solar-pro",
+    "prompt_chars": 29378,
+    "latency_sec": 1.67,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6320,
+    "output_tokens": 144,
+    "total_tokens": 6464,
+    "api_response_id": "d5edce59-8ec4-4bd1-a7a1-49a353c5dd8d"
+  }
+]

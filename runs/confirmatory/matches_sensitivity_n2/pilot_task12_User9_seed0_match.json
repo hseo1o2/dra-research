@@ -1,0 +1,110 @@
+[
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document aligns with Candidate A's profile as a young female professional in product operations with an advertising background and psychology minor, seeking emotional management strategies. The request for a morning routine (7:00\u20139:00 AM) matches her time preferences, while the focus on CBT, MBSR, and creative integration (yoga, journaling) reflects her personality traits (creative, low stress tolerance) and interests (mental health, art). The emphasis on social media habits, aesthetic sensitivity, and holistic wellness (vegetarianism, organic products) further distinguishes her from Candidate B, an algorithm engineer with a technical focus and nighttime productivity preference.",
+    "model": "solar-pro",
+    "prompt_chars": 16049,
+    "latency_sec": 1.69,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on emotional well-being, mindfulness, and stress reduction (e.g., MBSR courses, DBT emotion regulation worksheets, and books like 'Permission to Feel' and 'Feeling Good'). Candidate A, with a psychology minor, interest in mental health articles, and engagement in yoga/meditation, aligns closely with these themes. Her creative, emotionally expressive personality and stress-management needs (e.g., low stress tolerance, morning meditation routine) make her the more likely audience. Candidate B, while health-conscious, prioritizes tech, logic, and physical fitness, with no explicit interest in emotional regulation or mindfulness practices beyond basic exercise.",
+    "model": "solar-pro",
+    "prompt_chars": 18062,
+    "latency_sec": 1.72,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User9"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "The document focuses on emotional regulation and CBT techniques framed for workplace stress, aligning with Candidate A's profile as an algorithm engineer facing high-pressure technical environments. The content emphasizes logical, structured approaches (e.g., RULER framework, DBT skills) that match A's preference for data-driven problem-solving and rational decision-making. Candidate B's interests in creativity, aesthetics, and spontaneous health purchases are less reflected in the document's pragmatic, logic-oriented tone.",
+    "model": "solar-pro",
+    "prompt_chars": 20739,
+    "latency_sec": 1.91,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on emotional regulation, self-awareness, and stress management in high-pressure corporate environments, particularly for roles like product operations. Candidate A is explicitly described as a Product Operations professional with low stress tolerance and a need for emotional support, aligning with the document's emphasis on psychological resilience. The document's framing (e.g., cross-functional alignment, rapid decision-making) matches Candidate A's role, while Candidate B's background as an algorithm engineer and preference for logical reasoning over emotional frameworks makes the content less directly relevant to their needs.",
+    "model": "solar-pro",
+    "prompt_chars": 22750,
+    "latency_sec": 1.67,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

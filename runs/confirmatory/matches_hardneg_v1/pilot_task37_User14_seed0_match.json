@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task37_User14_seed0",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User13",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on a warm, stylish apartment renovation for a couple with a cat, emphasizing natural materials and creative inspiration. A's background in literature, design-influenced upbringing, and passion for art mirror the document's aesthetic priorities. His recent adoption of a cat (like the document's pet-friendly focus) and his role as a copywriter seeking creative inspiration align with the need for a space that balances functionality (open-plan kitchen) with artistic expression. While B and C share some interests in design, their professional contexts (caf\u00e9 owner, illustrator) prioritize commercial or studio-oriented spaces, whereas A's request for a cozy, personalized urban apartment matches the document's domestic scale and budget constraints.",
+    "model": "solar-pro",
+    "prompt_chars": 24150,
+    "latency_sec": 1.9,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task37_User14_seed0",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on apartment design for heavy cooking, pet-friendly features (cat walk, litter box cabinet, pet screen), and budget allocation for 80 sqm spaces. Candidate A, a caf\u00e9 owner with pets (cats and a dog), prioritizes design aesthetics, functionality for cooking, and pet-friendly spaces. Her caf\u00e9's industrial-natural style aligns with the document's emphasis on open kitchens, glass partitions, and integrated living spaces. Additionally, her budget-conscious yet quality-focused approach (evident in her caf\u00e9 management) matches the detailed budget allocation queries. Candidates B and C, while creative, lack the specific focus on pet-friendly design and heavy-cooking infrastructure that defines the document.",
+    "model": "solar-pro",
+    "prompt_chars": 26030,
+    "latency_sec": 2.3,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task37_User14_seed0",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User20"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document emphasizes heavy cooking in an open kitchen, pet-friendly design for cats, and Japandi aesthetics\u2014all aligning with Candidate A's profile. A is a freelance illustrator who cooks Italian cuisine, owns a lively cat (Mo Mo) that inspires his art, and prefers artistic, design-oriented spaces. The focus on high-end materials (scratch-resistant surfaces, sintered stone) matches his willingness to invest in quality tools. Queries about cat-friendly cabinetry, ventilation, and microfiber flooring directly address his need to balance a creative, pet-inclusive home. Candidates B and C, while also pet owners, lack A's specific focus on heavy cooking, open kitchen partitions, or the artistic integration of pet features into design.",
+    "model": "solar-pro",
+    "prompt_chars": 29044,
+    "latency_sec": 2.06,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task37_User14_seed0",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document emphasizes a pet-friendly, high-efficiency kitchen tailored for heavy cooking (stir-frying/searing), which aligns with Candidate B's role as a caf\u00e9 owner specializing in coffee culture and culinary quality. The focus on integrating feline enrichment (e.g., cat walk) matches her multiple pets (cats and a corgi), which are also a caf\u00e9 attraction. The design's emphasis on natural materials, open spaces, and budget-conscious luxury reflects her aesthetic preferences (industrial + natural elements, support for independent brands) and her need for functional yet artistic spaces. Candidate A (illustrator) and C (copywriter) lack the document's culinary and hospitality-centric priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 31055,
+    "latency_sec": 1.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

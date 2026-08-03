@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task43_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The brief is written in a highly professional, legal-research oriented tone with explicit requests for PRC labor law, Supreme People\u2019s Court interpretations, and Shanghai-specific judicial practice\u2014matching a user who is a marketing manager in a foreign enterprise and likely needs actionable, evidence-based guidance for a career/legal risk scenario. Candidate B\u2019s Shanghai location (Pudong), MBA/management background, and preference for in-depth case studies align with the document\u2019s structured, precedent-focused and practical defense strategy framing.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 25135,
+    "latency_sec": 1.6,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task43_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The excerpt is legal-research oriented, focusing on PRC Labour Contract Law Article 23/24 and Supreme People\u2019s Court judicial interpretations about non-compete (\u7ade\u4e1a\u9650\u5236), including practical compliance angles (duration limits, termination/compensation, breach/penalties). This aligns best with a Shanghai marketing manager in a foreign enterprise who would need to understand restrictive covenants and trade-secret/confidentiality obligations for employment and executive/managerial roles, rather than a technical director or state-owned engineering manager with less emphasis on labor-law compliance for marketing personnel.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 26204,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task43_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The excerpt focuses on PRC labor contract law non-compete enforcement for marketing roles (marketing manager/director), including compensation mechanics and Shanghai court practice\u2014topics aligned with a marketing department manager who needs legal risk guidance for employee restrictive covenants. The framing is business-practical, case/interpretation oriented, and references Shanghai specifically, matching a Shanghai-based marketing manager profile.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 29375,
+    "latency_sec": 2.04,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task43_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The excerpt is a Shanghai-focused, practitioner-style legal analysis aimed at a foreign enterprise marketing manager facing a non-compete dispute, with emphasis on marketing personnel qualification, trade secret proof, and actionable defense strategy. Candidate C matches this role and context (Marketing Department manager in a foreign enterprise in Shanghai/Pudong) and would be most interested in enforceability standards, judicial trends, and practical litigation/defense framing.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 31386,
+    "latency_sec": 2.2,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

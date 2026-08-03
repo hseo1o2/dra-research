@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task14_User14_seed0",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User13",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "Candidate A matches the document's focus on a beginner's marathon training plan emphasizing injury prevention, cross-training (yoga/Pilates), and urban running. The document's creative framing (e.g., 'peak creative work in evenings') aligns with A's identity as a copywriter with evening creative routines. A's exercise habits (weekly running, yoga) and urban environment (Shanghai parks) directly mirror the user's described setup. Candidates B and C prioritize coffee culture/art entrepreneurship and illustration, respectively, which are tangential to the marathon-focused document.",
+    "model": "solar-pro",
+    "prompt_chars": 24260,
+    "latency_sec": 1.57,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User14_seed0",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "The document focuses on marathon training strategies, particularly the Galloway run/walk method, 12-week plans, and cross-training with Pilates/yoga. Candidate B aligns most closely: he is a runner (exercises weekly, uses a fitness tracker), values structured training (12-week plans), and prioritizes Pilates/yoga for stress relief and core stability. While Candidates A and C also practice yoga/Pilates, B\u2019s explicit focus on running, endurance goals, and methodical training (e.g., meditation, time management) directly mirrors the document\u2019s emphasis on progressive, balanced marathon preparation. Candidate C\u2019s caf\u00e9 ownership and Candidate A\u2019s illustration focus lack this athletic framing.",
+    "model": "solar-pro",
+    "prompt_chars": 25413,
+    "latency_sec": 1.9,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User14_seed0",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User14",
+      "User13"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document focuses on a structured 12-week beginner marathon training plan incorporating the Galloway run-walk method, cross-training (Pilates/Yoga), and safety adaptations. Candidate B's profile aligns most closely: (1) He explicitly practices Pilates 2-3x/week and has recently started yoga, matching the document's emphasis on these exercises for core stability and injury prevention. (2) His exercise goals prioritize stress relief and health maintenance, consistent with the document's beginner-friendly, injury-aware approach. (3) His artistic background and creative decision-making style align with the document's methodical yet adaptable training framework. Candidates A and C lack comparable exercise specificity or cross-training focus.",
+    "model": "solar-pro",
+    "prompt_chars": 29044,
+    "latency_sec": 1.92,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User14_seed0",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document emphasizes a creative freelance workflow aligned with an 8:00 AM wake-up schedule and evening peak creative hours, mirroring Candidate A's adjusted routine (sleeping early, waking at 8 AM, using mornings for productivity). The focus on yoga and Pilates as a foundation matches Candidate A's exercise habits (2-3x weekly yoga, recent Pilates adoption). The urban environment (Shanghai) and mention of a cat ('Mo Mo') align with Candidate A's residence and pet ownership. The document's emphasis on art-inspired travel and content preferences (photography, design) also closely matches Candidate A's interests. Candidate B and C lack the specific combination of freelance illustration, morning/evening schedule, and yoga/Pilates foundation detailed in the text.",
+    "model": "solar-pro",
+    "prompt_chars": 31055,
+    "latency_sec": 1.96,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

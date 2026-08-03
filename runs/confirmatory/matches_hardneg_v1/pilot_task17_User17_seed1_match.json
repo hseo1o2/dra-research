@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task17_User17_seed1",
+    "stage": "plan",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User25",
+      "User22",
+      "User17"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User17",
+    "correct": true,
+    "reasoning": "Candidate C (Chen Fang) is a 45-50-year-old nurse in Beijing with high school/college-aged children and a focus on family-centric travel. The document emphasizes a multi-generational beach vacation balancing active activities for youth and restful options for seniors, aligning with C's role as a caregiver and her documented interest in pet-friendly, health-conscious travel. Her preference for clean, comfortable accommodations, low-oil/low-salt dining (matching her culinary experiments), and self-guided itineraries with cultural/nature experiences directly mirrors the request. Unlike A (retired, prioritizing frugality) and B (tech-focused, less emphasis on family health), C\u2019s profile uniquely combines practicality, health awareness, and intergenerational family needs.",
+    "model": "solar-pro",
+    "prompt_chars": 23277,
+    "latency_sec": 1.81,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed1",
+    "stage": "search",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The document focuses on flight queries (Beijing to Sanya, Okinawa, Da Nang) and a luxury hotel (Ritz-Carlton Sanya), reflecting travel planning priorities. Candidate B (Li Xiuying) aligns best: she travels 2-3 times/year, prioritizes natural/historical destinations, and values comfort in accommodations. Her recent interest in hot spring vacations and eco-tourism matches the Sanya (beach resort) and Okinawa (cultural/natural) destinations. Unlike Candidate A (domestic-focused, pet-friendly trips) or C (work-related travel), B\u2019s leisure-oriented travel style, age (retired), and family context (grandson, husband) fit the document\u2019s emphasis on flexible, comfort-driven travel planning.",
+    "model": "solar-pro",
+    "prompt_chars": 25628,
+    "latency_sec": 1.85,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed1",
+    "stage": "compress",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The document focuses on flight logistics and accommodation details for Okinawa and Da Nang, emphasizing practical travel planning, cost comparisons, and pet-friendly considerations. Candidate B, a retired 65-70-year-old with a Shiba Inu, aligns best: she travels 2-3 times yearly, prioritizes comfort and cost-effectiveness, and values pet-friendly destinations. Her interest in travel guides, health-conscious choices, and recent exploration of eco-tourism and hot springs mirrors the document's emphasis on balanced, family-oriented travel planning. Candidates A (a nurse with a cat) and C (a technical director) lack the same travel frequency, destination preferences, and pet-centric framing as B.",
+    "model": "solar-pro",
+    "prompt_chars": 28121,
+    "latency_sec": 1.81,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed1",
+    "stage": "write",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User25",
+      "User22",
+      "User17"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The document emphasizes multi-generational travel balancing elderly needs (gentle beach access, low-salt dining, barrier-free resorts) with youth activities, aligning with Candidate A's role as a grandmother planning trips for her family. It prioritizes health-conscious cuisine (low-oil/low-salt) and domestic destinations (Sanya), reflecting her frugal yet family-focused spending habits and preference for local cultural experiences. The focus on accessibility, safety, and family unity mirrors her harmonious family values and recent interest in eco-tourism. Candidates B and C lack the multi-generational family structure and specific health-conscious travel priorities central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30132,
+    "latency_sec": 1.74,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

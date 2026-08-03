@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task37_User20_seed1",
+    "stage": "plan",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User20",
+      "User14",
+      "User13",
+      "User12",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User12",
+      "User13",
+      "User14",
+      "User20"
+    ],
+    "predicted_label": "E",
+    "predicted_userid": "User20",
+    "correct": true,
+    "reasoning": "The document emphasizes Japanese/Italian cooking, pet-friendly design (orange cat named Jinju), artistic aesthetics (natural wood, soft fabrics), and a focus on creating a warm, stylish home in Shanghai. Candidate E shares identical pet details (orange cat 'Jinju'), matches the cooking interests (Japanese bento, Italian dishes), and aligns with the artistic sensibilities (literature, design, creative work). While Candidate C also has a cat, her profile centers on caf\u00e9 ownership and coffee culture, which are absent in the document. Candidate E\u2019s urban Shanghai residence, creative profession, and emphasis on design/artistic details make him the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 41727,
+    "latency_sec": 2.19,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task37_User20_seed1",
+    "stage": "search",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User20",
+      "User14",
+      "User13",
+      "User12",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User14",
+      "User16",
+      "User20",
+      "User13"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": false,
+    "reasoning": "The document focuses on Shanghai apartment renovation costs, regulations, and layout optimization for an 80m\u00b2 space. Candidate B, a freelance illustrator in Shanghai, aligns best due to his urban residence, interest in practical yet quality-driven renovations (evident in his consumption habits for art supplies and home essentials), and need for a functional yet inspiring living/workspace. His frequent mobility, budget-conscious yet quality-focused spending, and emphasis on aesthetic details (reflected in his illustration work and apartment decor) match the document's emphasis on cost breakdowns, noise regulations, and layout optimization for small urban spaces. Other candidates either lack Shanghai residency (A, C), have different priorities (A's tech focus, C's rural ties), or are less aligned with the document's practical renovation focus (D's creative but less budget-oriented habits, E's caf\u00e9-centric priorities).",
+    "model": "solar-pro",
+    "prompt_chars": 42435,
+    "latency_sec": 2.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task37_User20_seed1",
+    "stage": "compress",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User20",
+      "User14",
+      "User13",
+      "User12",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User16",
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User14",
+    "correct": false,
+    "reasoning": "The document focuses on a detailed, budget-conscious renovation plan for an 80 sqm Shanghai apartment, emphasizing cost optimization, practical material choices, and cat-friendly features. Candidate C, a freelance illustrator in Shanghai, aligns most closely with this content. He lives in a small Shanghai apartment, prioritizes practical yet high-quality purchases (e.g., art supplies, photography equipment), and has a cat that influences his lifestyle. The document's emphasis on precise budgeting, space optimization, and pet-friendly design mirrors C's rational consumption habits, focus on quality tools, and integration of his cat 'Mo Mo' into his creative process. Other candidates either lack the Shanghai residence (A, B), focus on family-oriented renovations (A, B, E), or prioritize different spending categories (e.g., tech for A, state-owned enterprise stability for B).",
+    "model": "solar-pro",
+    "prompt_chars": 45620,
+    "latency_sec": 2.49,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task37_User20_seed1",
+    "stage": "write",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User20",
+      "User14",
+      "User13",
+      "User12",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User12",
+      "User13",
+      "User16",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User20",
+    "correct": true,
+    "reasoning": "The document emphasizes pet safety (cat-friendly design), Japanese/Italian cuisine ergonomics, creative aesthetics, and budget-conscious renovation\u2014all aligning with Candidate A's profile. A is a copywriter with a cat, learning bento-making, and values artistic design in living spaces. The report's focus on compact urban living, creative workflows, and cost control under RMB 150,000 matches A's restrained spending habits and mid-range design preferences. Other candidates (B, C, D, E) prioritize tech, business, caf\u00e9 operations, or state-owned enterprise management, which lack the document's personal, creative, and pet-centric framing.",
+    "model": "solar-pro",
+    "prompt_chars": 47631,
+    "latency_sec": 2.11,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

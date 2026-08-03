@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task9_User8_seed1",
+    "stage": "plan",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User8",
+    "correct": true,
+    "reasoning": "The document's author is an Investment Manager transitioning to an AI Product Manager role, emphasizing financial analysis, quantitative modeling, and data-driven decision-making. Candidate B shares identical occupation (Investment Manager), educational background (211 university, Finance major), and career goals (transitioning into AI/tech roles). The document's focus on skill gaps (machine learning, product lifecycle management) and hands-on projects aligns with Candidate B's meticulous, data-driven personality and interest in tech/electronics. Candidate A (Marketing Manager) and C (Data Analyst) lack the financial-securities industry context and specific transition narrative matching the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 23905,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task9_User8_seed1",
+    "stage": "search",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User8",
+    "correct": true,
+    "reasoning": "The document focuses on AI Product Manager (PM) job market trends, salary data, and transition pathways, particularly in Shanghai and FinTech sectors. Candidate A, an Investment Manager with a finance background, aligns most closely due to his strong interest in career transitions (evidenced by his research on AI PM roles), financial analysis skills, and Shanghai-based location. The document's emphasis on salary comparisons, industry growth, and non-technical AI roles (e.g., PM) matches A's data-driven decision-making style and goal of leveraging his finance expertise into emerging fields. Candidates B (data analyst) and C (marketing manager) lack A's direct finance-to-AI PM transition focus and Shanghai-specific context.",
+    "model": "solar-pro",
+    "prompt_chars": 25165,
+    "latency_sec": 2.14,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task9_User8_seed1",
+    "stage": "compress",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User8",
+    "correct": true,
+    "reasoning": "The document focuses on AI Product Manager (AI PM) job market trends, salary data, and recruitment activities in Shanghai, particularly within FinTech and tech sectors. Candidate C, an Investment Manager at a securities company with a finance background, aligns most closely with the document's emphasis on financial institutions (e.g., securities firms, FinTech vendors) and data-driven analysis. His frequent use of financial apps (Xueqiu, Tonghuashun), interest in market trends, and preference for data-supported decision-making mirror the document's framing. While Candidate A (marketing manager) and B (data analyst) have tangential relevance, neither shares the same domain-specific focus on finance, AI commercialization, or Shanghai's AI/FinTech ecosystem as Candidate C.",
+    "model": "solar-pro",
+    "prompt_chars": 28139,
+    "latency_sec": 2.24,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task9_User8_seed1",
+    "stage": "write",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User8",
+    "correct": true,
+    "reasoning": "The document focuses on transitioning from a quantitative finance background (CFA, securities firm) to an AI Product Manager role, emphasizing technical skill gaps (RAG, probabilistic PRDs), evaluation frameworks (RAGAS), and bridging finance rigor with AI product execution. Candidate B is an Investment Manager at a securities company with a finance background, CFA-relevant quantitative skills, and explicit interest in career transition (researching new fields, data-driven decision-making). Candidate A (marketing manager) and C (data analyst) lack the finance-to-AI PM alignment central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 30150,
+    "latency_sec": 2.56,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

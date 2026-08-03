@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task42_User1_seed0",
+    "stage": "plan",
+    "gt_userid": "User1",
+    "candidate_userids": [
+      "User1",
+      "User4",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User4",
+      "User1",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User1",
+    "correct": true,
+    "reasoning": "The brief is highly technical and compliance-engineering oriented (AI agent data collection, cross-border transfers, audit roadmaps, risk controls, architecture/anonymization), matching a computer science/AI-focused profile. Candidate B\u2019s background and interests in AI/NLP, technical tooling, and practical implementation align with producing detailed, actionable compliance guidance for a global product launch.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 24704,
+    "latency_sec": 1.46,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task42_User1_seed0",
+    "stage": "search",
+    "gt_userid": "User1",
+    "candidate_userids": [
+      "User1",
+      "User4",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User1",
+      "User22",
+      "User4"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User4",
+    "correct": false,
+    "reasoning": "The queries emphasize legal/regulatory compliance for AI agents (China PIPL, CAC interim measures, EU AI Act/GDPR, breach notification timelines) with thresholds and procedural requirements\u2014framing typical of a law student focused on statutes and cross-border data governance. Candidate C\u2019s background in civil/criminal law, interest in Western legal systems, and habit of saving screenshots of legal provisions aligns best with this regulatory, compliance-oriented research angle.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 26652,
+    "latency_sec": 1.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task42_User1_seed0",
+    "stage": "compress",
+    "gt_userid": "User1",
+    "candidate_userids": [
+      "User1",
+      "User4",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User1",
+      "User4",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User1",
+    "correct": true,
+    "reasoning": "The excerpt is a technical, compliance-focused research summary centered on AI agents, generative AI regulations, and data types like precise geolocation, chat transcripts, and telemetry\u2014framed in a way that aligns with a computer science student doing AI/NLP research. It emphasizes cross-jurisdiction regulatory mapping (China PIPL/CAC, EU GDPR/EU AI Act, California CCPA/CPRA) and architectural concerns (tool calls, sub-agent delegation), matching a detail-oriented, tech-oriented profile like Candidate A rather than a law-student or manufacturing director.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 29145,
+    "latency_sec": 1.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task42_User1_seed0",
+    "stage": "write",
+    "gt_userid": "User1",
+    "candidate_userids": [
+      "User1",
+      "User4",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User4",
+      "User1",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User1",
+    "correct": true,
+    "reasoning": "The excerpt is written from a product/engineering compliance and governance implementation perspective for an AI agent, emphasizing technical controls (PII redaction pipelines, SIEM/DLP, tool-call boundary enforcement, prompt-injection defense) and cross-border regulatory engineering work. Candidate B is a computer science undergraduate focused on AI/NLP and technical specifics, matching the document\u2019s blend of AI agent architecture and operational compliance planning rather than a purely legal-student or manufacturing-director viewpoint.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 31156,
+    "latency_sec": 1.58,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

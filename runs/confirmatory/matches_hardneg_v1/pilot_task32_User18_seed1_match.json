@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task32_User18_seed1",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User8"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on a modern, minimalist aesthetic, pet-friendly materials (specifically for a cat), and budget-conscious yet high-quality recommendations. The document emphasizes ergonomic, scratch-resistant furniture and smart appliances with ecosystem compatibility\u2014details that resonate with A's meticulous, data-driven decision-making style and her recent adoption of a cat. Additionally, A's preference for online research, cost-performance analysis, and sustainable products mirrors the document's structured, comparison-based approach. While B and C also value quality, B's family-oriented needs (e.g., child-friendly spaces) and C's investment-focused habits are less directly reflected in the document's single-person, modern-lifestyle framing.",
+    "model": "solar-pro",
+    "prompt_chars": 24053,
+    "latency_sec": 1.69,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task32_User18_seed1",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "Candidate A is the best match due to her cat ownership (Xiao Cheng) and frequent searches for cat-friendly furniture (e.g., '\u732b\u6293\u5e03'/'cat-scratch fabric' in sofa queries). The document emphasizes pet-friendly materials (\u9632\u6f51\u6c34/\u9632\u8c93\u6293\u5e03) and space-efficient solutions (500L/600mm depth refrigerators, 89\u33a1 budget allocation), aligning with her urban apartment lifestyle. Her practical, research-driven shopping habits (e.g., comparing prices/sizes) and focus on cost-effective durability match the document's emphasis on value-for-money products (CP\u503c\u9ad8, 10\u4e07\u9884\u7b97\u5206\u914d). Unlike Candidates B (considering a cat) and C (focused on family/high-end purchases), A\u2019s single-person household and pet-centric needs directly correlate with the document\u2019s content priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 24192,
+    "latency_sec": 1.96,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task32_User18_seed1",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on pet-friendly furniture (cat-scratch fabric), modern minimalist aesthetics, and cost-effective solutions for a compact urban apartment. Candidate B explicitly mentions owning a cat ('Xiao Cheng') and prioritizes practical, durable, and stylish home furnishings. The document's emphasis on tech fabrics, space optimization, and budget-conscious selections aligns with B's rational consumption habits, data-driven decision-making, and interest in eco-friendly/sustainable products. Candidates A (considering a future pet) and C (focused on family-centric, high-end purchases) lack the direct pet ownership and urban apartment context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 28139,
+    "latency_sec": 2.1,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task32_User18_seed1",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document emphasizes pet-friendly materials (cat-scratch fabric), ergonomic furniture, and a modern aesthetic tailored to a single occupant or small household. Candidate C, a data analyst with a cat, prioritizes practicality, durability, and cost-effectiveness in home furnishings. The focus on smart home integration, minimalist design, and budget-conscious spending aligns with C's rational, detail-oriented personality and her recent adoption of a cat. Candidate A (family with children and a dog) and B (single, no pet yet) lack the specific pet-centric and ergonomic priorities central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30150,
+    "latency_sec": 1.86,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

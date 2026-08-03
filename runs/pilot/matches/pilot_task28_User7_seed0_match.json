@@ -1,0 +1,90 @@
+[
+  {
+    "run_id": "pilot_task28_User7_seed0",
+    "stage": "plan",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User2",
+      "User7",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User10",
+      "User7"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "Candidate C is a graduate student in new media and public opinion research, aligning directly with the document's focus on personal branding for academic influence in this field. The document emphasizes Python proficiency, data analysis, and social media strategy (Zhihu, Weibo, etc.), which matches C's stated skills and online habits. Unlike A (clinical psychology) or B (marketing management), C's background, tools, and content preferences (e.g., social issues, communication research) mirror the document's technical and thematic priorities. The 1-1.5-hour daily time constraint also aligns with C's time-management habits and academic schedule.",
+    "model": "solar-pro",
+    "prompt_chars": 25143,
+    "latency_sec": 1.57
+  },
+  {
+    "run_id": "pilot_task28_User7_seed0",
+    "stage": "search",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User2",
+      "User7",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User10",
+      "User2"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on new media, big data, academic IP, and platform algorithms (e.g., Weibo, Zhihu, WeChat, Bilibili), aligning with Candidate A's graduate studies in new media/public opinion research. A's online habits (Weibo/Zhihu usage, academic content sharing) and research tools (Python, data analysis) directly match the document's technical and analytical framing. Candidate B (marketing manager) and C (clinical psychology student) lack the document's academic focus on media ecosystems and algorithmic content distribution, which are central to A's expertise.",
+    "model": "solar-pro",
+    "prompt_chars": 25091,
+    "latency_sec": 1.45
+  },
+  {
+    "run_id": "pilot_task28_User7_seed0",
+    "stage": "compress",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User2",
+      "User7",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on academic influencers and media creators in new media, computational communication, and public opinion research. Candidate B, a graduate student in new media and public opinion research, aligns most closely with the document's themes. His academic background, online behavior (active on Weibo/Zhihu, follows media professionals), and content preferences (social issues, communication research) directly mirror the document's emphasis on new media platforms, academic personas, and digital tool usage. Candidates A (clinical psychology student) and C (marketing manager) lack the domain-specific relevance to the document's core focus on media studies and new media research.",
+    "model": "solar-pro",
+    "prompt_chars": 28527,
+    "latency_sec": 1.55
+  },
+  {
+    "run_id": "pilot_task28_User7_seed0",
+    "stage": "write",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User2",
+      "User7",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User7",
+      "User2"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on personal brand-building for a graduate student in new media and public opinion research, emphasizing Python-driven data analysis, computational communication science, and digital content creation. Candidate B is a graduate student in the same field, actively uses digital tools (Python, Weibo/Zhihu), and aligns with the document's priorities: industry insights, data-driven analysis, and academic rigor. Candidate A (marketing manager) and Candidate C (clinical psychology student) lack the direct academic and technical focus on new media/public opinion research central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30538,
+    "latency_sec": 1.44
+  }
+]

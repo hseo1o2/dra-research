@@ -1,0 +1,101 @@
+[
+  {
+    "run_id": "pilot_task14_User3_seed1",
+    "stage": "plan",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User3",
+      "User1",
+      "User5",
+      "User16",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User1",
+      "User16",
+      "User3",
+      "User10"
+    ],
+    "predicted_label": "D",
+    "predicted_userid": "User3",
+    "correct": true,
+    "reasoning": "The document describes a beginner runner (undergraduate student) with limited time (7 AM\u201311 PM schedule), no prior structured running experience, and a focus on injury prevention and adaptability. Candidate D, a 17-20-year-old mechanical engineering student, aligns most closely: he is frugal, values cost-effectiveness, and has a busy academic schedule with lab work and competitions. His exercise habits (ping-pong, jogging) and goals (stress relief, fitness) mirror the document\u2019s emphasis on simplicity, adaptability, and health. Unlike other candidates (e.g., A\u2019s cycling focus, B\u2019s tech interests, C/E\u2019s managerial/family priorities), D\u2019s pragmatic, student-centric lifestyle and rural upbringing (emphasizing frugality) directly align with the document\u2019s tone and requirements.",
+    "model": "solar-pro",
+    "prompt_chars": 38814,
+    "latency_sec": 2.69,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task14_User3_seed1",
+    "stage": "compress",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User3",
+      "User1",
+      "User5",
+      "User16",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User3",
+      "User1",
+      "User5",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User5",
+    "correct": false,
+    "reasoning": "The document focuses on a 12-week marathon training plan for beginners, emphasizing structured schedules, progressive overload, injury prevention (ACWR), and practical tools like the Galloway run-walk method. Candidate C, a graduate student in Mechanical Automation with a strong interest in intelligent manufacturing and robotics, aligns best due to their systematic approach, focus on efficiency, and preference for structured routines. The document's emphasis on incremental progress, recovery weeks, and data-driven guidelines mirrors Candidate C's detail-oriented personality, rational decision-making, and interest in cost-effective, practical solutions. Additionally, Candidate C's exercise habits (cycling, badminton) and goal of stress relief through physical activity align with the document's focus on balancing training intensity with recovery, unlike other candidates whose interests or professions (e.g., marketing, computer science) lack this direct connection to structured physical training frameworks.",
+    "model": "solar-pro",
+    "prompt_chars": 43534,
+    "latency_sec": 2.35,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task14_User3_seed1",
+    "stage": "write",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User3",
+      "User1",
+      "User5",
+      "User16",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User5",
+      "User1",
+      "User3",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User5",
+    "correct": false,
+    "reasoning": "The document is a 12-week marathon training guide tailored for university students with no prior running experience, emphasizing safety, time constraints (5 days/week, 1 hour/day), and low-cost/no-equipment methods. Candidate B (Han Lei) is a 22-25-year-old mechanical engineering graduate student with a strict academic schedule, limited budget, and interest in cycling/running for stress relief. The guide's focus on academic-friendly timing (7 AM\u201311 PM), cost-effective training, and injury prevention aligns with B's pragmatic, detail-oriented personality and his need to balance rigorous studies with physical health. Other candidates (A, C, D, E) are either older professionals, computer science students, or have different exercise preferences (e.g., golf, basketball) that don't match the document's student-centric, marathon-specific framing.",
+    "model": "solar-pro",
+    "prompt_chars": 45545,
+    "latency_sec": 2.51,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

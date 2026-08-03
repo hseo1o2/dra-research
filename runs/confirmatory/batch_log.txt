@@ -1,0 +1,81 @@
+split=confirmatory  seed=0  model=google_genai:gemini-3.6-flash
+flex=yes  experiments=60
+output=runs/confirmatory
+
+[1/60] pilot_task2_User2_seed0  SKIP (schema_valid artifact exists)
+[2/60] pilot_task2_User6_seed0  SKIP (schema_valid artifact exists)
+[3/60] pilot_task2_User7_seed0  SKIP (schema_valid artifact exists)
+[4/60] pilot_task4_User9_seed0  SKIP (schema_valid artifact exists)
+[5/60] pilot_task4_User19_seed0  SKIP (schema_valid artifact exists)
+[6/60] pilot_task4_User21_seed0  SKIP (schema_valid artifact exists)
+[7/60] pilot_task7_User19_seed0  SKIP (schema_valid artifact exists)
+[8/60] pilot_task7_User18_seed0  SKIP (schema_valid artifact exists)
+[9/60] pilot_task7_User10_seed0  SKIP (schema_valid artifact exists)
+[10/60] pilot_task9_User18_seed0  SKIP (schema_valid artifact exists)
+[11/60] pilot_task9_User9_seed0  SKIP (schema_valid artifact exists)
+[12/60] pilot_task9_User8_seed0  SKIP (schema_valid artifact exists)
+[13/60] pilot_task12_User9_seed0  SKIP (schema_valid artifact exists)
+[14/60] pilot_task12_User2_seed0  SKIP (schema_valid artifact exists)
+[15/60] pilot_task12_User5_seed0  SKIP (schema_valid artifact exists)
+[16/60] pilot_task14_User14_seed0  SKIP (schema_valid artifact exists)
+[17/60] pilot_task14_User3_seed0  SKIP (schema_valid artifact exists)
+[18/60] pilot_task14_User22_seed0  SKIP (schema_valid artifact exists)
+[19/60] pilot_task17_User16_seed0  SKIP (schema_valid artifact exists)
+[20/60] pilot_task17_User10_seed0  SKIP (schema_valid artifact exists)
+[21/60] pilot_task17_User17_seed0  SKIP (schema_valid artifact exists)
+[22/60] pilot_task18_User10_seed0  SKIP (schema_valid artifact exists)
+[23/60] pilot_task18_User22_seed0  SKIP (schema_valid artifact exists)
+[24/60] pilot_task18_User19_seed0  SKIP (schema_valid artifact exists)
+[25/60] pilot_task22_User15_seed0  SKIP (schema_valid artifact exists)
+[26/60] pilot_task22_User18_seed0  SKIP (schema_valid artifact exists)
+[27/60] pilot_task22_User14_seed0  SKIP (schema_valid artifact exists)
+[28/60] pilot_task24_User13_seed0  SKIP (schema_valid artifact exists)
+[29/60] pilot_task24_User17_seed0  SKIP (schema_valid artifact exists)
+[30/60] pilot_task24_User12_seed0  SKIP (schema_valid artifact exists)
+[31/60] pilot_task27_User14_seed0  SKIP (schema_valid artifact exists)
+[32/60] pilot_task27_User13_seed0  SKIP (schema_valid artifact exists)
+[33/60] pilot_task27_User2_seed0  SKIP (schema_valid artifact exists)
+[34/60] pilot_task29_User18_seed0  SKIP (schema_valid artifact exists)
+[35/60] pilot_task29_User13_seed0  SKIP (schema_valid artifact exists)
+[36/60] pilot_task29_User10_seed0  SKIP (schema_valid artifact exists)
+[37/60] pilot_task32_User13_seed0  SKIP (schema_valid artifact exists)
+[38/60] pilot_task32_User11_seed0  SKIP (schema_valid artifact exists)
+[39/60] pilot_task32_User18_seed0  SKIP (schema_valid artifact exists)
+[40/60] pilot_task33_User7_seed0  SKIP (schema_valid artifact exists)
+[41/60] pilot_task33_User13_seed0  SKIP (schema_valid artifact exists)
+[42/60] pilot_task33_User12_seed0  SKIP (schema_valid artifact exists)
+[43/60] pilot_task37_User20_seed0  SKIP (schema_valid artifact exists)
+[44/60] pilot_task37_User8_seed0  SKIP (schema_valid artifact exists)
+[45/60] pilot_task37_User14_seed0  SKIP (schema_valid artifact exists)
+[46/60] pilot_task38_User10_seed0  SKIP (schema_valid artifact exists)
+[47/60] pilot_task38_User19_seed0  task=38 Real Estate  gt=User19
+  OK  tokens=207165  elapsed=420.082s
+[48/60] pilot_task38_User12_seed0  task=38 Real Estate  gt=User12
+  OK completeness_errors=['no successful search source for topics: topic_002, topic_003']  tokens=216522  elapsed=423.335s
+[49/60] pilot_task42_User11_seed0  task=42 Law  gt=User11
+  OK  tokens=171748  elapsed=460.939s
+[50/60] pilot_task42_User18_seed0  task=42 Law  gt=User18
+  OK completeness_errors=['no successful search source for topics: topic_003']  tokens=183752  elapsed=409.623s
+[51/60] pilot_task42_User1_seed0  task=42 Law  gt=User1
+  OK  tokens=177732  elapsed=397.605s
+[52/60] pilot_task43_User11_seed0  task=43 Law  gt=User11
+  OK completeness_errors=['no successful search source for topics: topic_002, topic_003', 'compressed_research is not one-to-one with topics']  tokens=93282  elapsed=326.641s
+[53/60] pilot_task43_User10_seed0  task=43 Law  gt=User10
+  OK completeness_errors=['no successful search source for topics: topic_003']  tokens=180936  elapsed=387.568s
+[54/60] pilot_task43_User18_seed0  task=43 Law  gt=User18
+  OK  tokens=135705  elapsed=293.668s
+[55/60] pilot_task47_User12_seed0  task=47 Parenting  gt=User12
+  OK  tokens=129655  elapsed=301.62s
+[56/60] pilot_task47_User17_seed0  task=47 Parenting  gt=User17
+  OK completeness_errors=['no successful search source for topics: topic_003']  tokens=135485  elapsed=395.503s
+[57/60] pilot_task47_User16_seed0  task=47 Parenting  gt=User16
+  OK  tokens=150326  elapsed=387.787s
+[58/60] pilot_task48_User10_seed0  task=48 Parenting  gt=User10
+  OK  tokens=134796  elapsed=359.602s
+[59/60] pilot_task48_User13_seed0  task=48 Parenting  gt=User13
+  OK  tokens=141095  elapsed=309.018s
+[60/60] pilot_task48_User12_seed0  task=48 Parenting  gt=User12
+  OK completeness_errors=['no successful search source for topics: topic_003']  tokens=159134  elapsed=387.643s
+
+Batch summary → runs/confirmatory/batch_confirmatory_seed0_summary.json
+schema_valid=14  skipped=46  failed=0

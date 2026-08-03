@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task48_User13_seed0",
+    "stage": "plan",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User10",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document explicitly identifies the user as a single mother and caf\u00e9 owner with a design/art background, seeking a 6-month art education plan for her 5-year-old child. Candidate C matches all these attributes: she is a divorced single mother, caf\u00e9 owner, studied design/business, and has a 5-year-old child. The document's focus on art, crafts, and eco-friendly materials aligns with her artistic sensibilities, caf\u00e9 business (which values aesthetics), and support for sustainable brands. The request for home-based creative activities also fits her lifestyle, as she prioritizes quality time with her child despite a busy schedule. Candidates A and B are fathers with different professions (tech entrepreneur and marketing manager) and lack the direct art/design background emphasized in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25930,
+    "latency_sec": 1.73,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task48_User13_seed0",
+    "stage": "search",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User12",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on developmental milestones, arts education, music education methods (Dalcroze Eurhythmics, Orff Schulwerk), and creative art activities for 5-year-olds\u2014topics aligning with Candidate A's background as a caf\u00e9 owner with a design/art education, her emphasis on art and music exposure for her child, and her interest in creative, hands-on activities. The document's framing around child development through art and music reflects her values, while references to Shanghai's cultural environment (e.g., Suzhou Creek) match her Shanghai residence and artistic lifestyle. Candidates B and C, focused on tech entrepreneurship and corporate marketing respectively, lack the document's artistic/educational focus and personal connection to early childhood development through creative arts.",
+    "model": "solar-pro",
+    "prompt_chars": 27680,
+    "latency_sec": 2.12,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task48_User13_seed0",
+    "stage": "compress",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User10",
+      "User12"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on early childhood art education, emotional regulation, and creative development for 5-year-olds, aligning with Candidate A's profile as a single mother of a 5-year-old who prioritizes art and quality time with her child. The document's emphasis on process art, parent-child co-creation, and home-based artistic environments mirrors her interest in art exhibitions, caf\u00e9 design, and fostering creativity. Candidates B and C, while both parents, focus more on career and structured extracurriculars (e.g., golf, tech) rather than the holistic, emotionally grounded art practices detailed in the text.",
+    "model": "solar-pro",
+    "prompt_chars": 30173,
+    "latency_sec": 1.96,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task48_User13_seed0",
+    "stage": "write",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document explicitly mentions a 'single mother operating a boutique caf\u00e9' with a design/art background, aligning perfectly with Candidate B's profile as a caf\u00e9 owner and design graduate. The plan integrates caf\u00e9 materials (coffee grounds, burlap sacks) and Shanghai's Haipai culture, reflecting B's Shanghai-based caf\u00e9 environment and cultural interests. The focus on art education for her 5-year-old daughter Xiaoyu matches B's role as a single mother prioritizing creative development. Candidate A (marketing manager) and C (AI entrepreneur) lack the caf\u00e9 context, art/design background, and specific focus on child-centered creative learning through repurposed caf\u00e9 materials.",
+    "model": "solar-pro",
+    "prompt_chars": 32184,
+    "latency_sec": 2.04,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

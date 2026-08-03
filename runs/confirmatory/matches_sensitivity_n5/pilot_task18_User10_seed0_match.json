@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task18_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16",
+      "User18",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User22",
+      "User16",
+      "User18",
+      "User8"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate A (Liu Qiang) is a marketing manager with an MBA, prioritizing efficiency, cost-effectiveness, and high-quality experiences. The document emphasizes a structured, budget-conscious business-leisure trip with high-end accommodations, business meeting frameworks, and cultural/leisure activities\u2014aligning with A's preferences for self-guided, family-oriented travel, quality accommodations, and blending work with cultural exploration. Unlike other candidates (e.g., B\u2019s technical focus, C\u2019s Northeastern cuisine preference, D\u2019s data-centric habits, or E\u2019s investment priorities), A\u2019s profile directly matches the document\u2019s blend of business efficiency, family-friendly leisure, and premium service expectations.",
+    "model": "solar-pro",
+    "prompt_chars": 39651,
+    "latency_sec": 2.09,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task18_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16",
+      "User18",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User16",
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on travel logistics (flights, ground transport, hotel status, museum/tourist site details) and reflects a user planning trips with family or cultural interests. Candidate C, a marketing manager in Shanghai, aligns best: he travels 2-3x/year for family vacations, prefers self-guided tours, and values cultural/historical sites (e.g., Dunhuang, Huangshan). His content preferences (market trends, management case studies) and practical decision-making style match the document's structured, detail-oriented framing. Other candidates either lack travel frequency (A, B, D) or focus on solo/financial travel (D, E), while C\u2019s family-centric travel and interest in cultural destinations directly align with the document\u2019s Berlin-centric queries (museums, hotels, transport).",
+    "model": "solar-pro",
+    "prompt_chars": 41055,
+    "latency_sec": 2.34,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task18_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16",
+      "User18",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User16",
+      "User10",
+      "User22",
+      "User8"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on cost-effective travel planning for a solo trip to Berlin, emphasizing budget-conscious choices, self-guided itineraries, and detailed research on flights, accommodations, and transportation. Candidate A, a data analyst with a meticulous, rational decision-making style, aligns with this framing. Her preferences for independent travel, compact itineraries, and cost-effectiveness (e.g., comparing prices, prioritizing practicality) mirror the document's emphasis on budget allocation, efficient planning, and self-guided exploration. Additionally, her interest in exploring new cultures and her habit of conducting detailed comparisons before purchases align with the document's structured, data-driven approach to travel planning.",
+    "model": "solar-pro",
+    "prompt_chars": 43565,
+    "latency_sec": 2.04,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task18_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16",
+      "User18",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User18",
+      "User22",
+      "User8"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document emphasizes a high-end, business-leisure hybrid travel plan with a focus on efficiency, luxury accommodations, and cultural exploration\u2014aligning closely with Candidate B's profile. B, a marketing manager in a foreign enterprise, values quality of life, cost-effectiveness, and combines Eastern/Western thinking. The document's emphasis on premium hotels (e.g., Ritz-Carlton, Westin), fine dining, and structured itineraries mirrors B's preference for high-end chain hotels, self-guided tours, and balancing business with family/cultural experiences. Additionally, B's interest in photography and cultural sites aligns with the plan's 'scenic autumn photography' and 'cultural exploration' focus. Other candidates (A, C, D, E) prioritize different aspects (e.g., family trips, tech/data, manufacturing, or frugal investments) that don't match the document's executive-leisure framing.",
+    "model": "solar-pro",
+    "prompt_chars": 45576,
+    "latency_sec": 2.38,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

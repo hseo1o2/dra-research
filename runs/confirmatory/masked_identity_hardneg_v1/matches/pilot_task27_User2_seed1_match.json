@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task27_User2_seed1",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User7",
+    "correct": false,
+    "reasoning": "Candidate C, a graduate student in new media and public opinion research, aligns most closely with the document's focus on independent music production, budget-conscious planning, and digital distribution. The document emphasizes structured research, cost-effective gear recommendations, and strategic use of social media for promotion\u2014all of which reflect C's analytical mindset, interest in new media, and rational consumption habits. Unlike Candidate A (psychology student with limited tech focus) or B (CS student prioritizing AI), C's background in communication, social media engagement, and preference for self-guided projects directly mirror the document's emphasis on DIY music creation, platform distribution, and audience-building tactics. Additionally, C's interest in eco-friendly products and budget-conscious spending aligns with the project's financial constraints.",
+    "model": "solar-pro",
+    "prompt_chars": 23784,
+    "latency_sec": 2.26,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task27_User2_seed1",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User1",
+    "correct": false,
+    "reasoning": "The document focuses on technical aspects of music production (microphone specs, copyright verification, promotion strategies), aligning with Candidate C's background in computer science and AI. C's interest in technology, cost-effective product analysis, and online content consumption (technical blogs, GitHub) matches the document's framing. Candidates A (media research) and B (clinical psychology) lack the technical focus and product-oriented analysis central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25296,
+    "latency_sec": 1.35,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task27_User2_seed1",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User1",
+    "correct": false,
+    "reasoning": "The document focuses on technical audio equipment (microphones, interfaces, speakers) with repeated price queries and comparisons, indicating a strong interest in audio technology and hardware specifications. Candidate C, a computer science student specializing in AI and NLP, aligns best due to his technical background, interest in electronics, and rational purchasing habits for cost-effective tech products. The document's framing (spec comparisons, price tracking) matches C's behavior of researching products independently and prioritizing practicality/functionality. Candidates A (media research) and B (clinical psychology) lack the technical focus and hardware-oriented consumption patterns evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 27967,
+    "latency_sec": 2.32,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task27_User2_seed1",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User7",
+    "correct": false,
+    "reasoning": "The document focuses on independent music production, budgeting, and DIY recording techniques tailored for indie folk/pop artists. Candidate A, a journalism/communication graduate student with interests in social issues, content creation, and a vibrant urban lifestyle, aligns best. The document's emphasis on self-directed projects, detailed planning, and leveraging digital tools (e.g., DAWs, social media promotion) mirrors A's analytical, goal-oriented personality and habits. While Candidate B shares some interest in creative content, her focus on psychology and pet care lacks direct relevance. Candidate C, a tech-focused CS student, prioritizes AI/algorithms over the artistic and narrative framing central to the document. A's background in media, budget-conscious rationality, and engagement with platforms like Bilibili/Weibo make him the most likely audience for this guide.",
+    "model": "solar-pro",
+    "prompt_chars": 29978,
+    "latency_sec": 2.12,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

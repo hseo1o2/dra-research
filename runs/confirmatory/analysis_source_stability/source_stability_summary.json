@@ -1,0 +1,42 @@
+{
+  "claim_boundary": "Higher within-persona stability is consistent with persona-conditioned evidence acquisition, but is not a causal estimate.",
+  "estimand": "Macro task-level Jaccard overlap: within-persona cross-seed minus between-persona same-seed.",
+  "external_api_calls": 0,
+  "metrics": {
+    "queries": {
+      "between_pair_count": 120,
+      "between_persona_same_seed_mean": 0.0,
+      "task_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "within_minus_between": 0.0,
+      "within_pair_count": 60,
+      "within_persona_cross_seed_mean": 0.0
+    },
+    "urls": {
+      "between_pair_count": 120,
+      "between_persona_same_seed_mean": 0.03383315907166482,
+      "task_bootstrap_ci95": [
+        -0.0014311827353056744,
+        0.01875378236316361
+      ],
+      "within_minus_between": 0.008406319738528633,
+      "within_pair_count": 60,
+      "within_persona_cross_seed_mean": 0.04223947881019345
+    }
+  },
+  "normalization": {
+    "query": "Unicode casefold and whitespace collapse",
+    "url": "lowercase scheme/host, remove fragment/trailing slash; keep query"
+  },
+  "population": {
+    "personas_per_task": 3,
+    "seeds": [
+      0,
+      1
+    ],
+    "tasks": 20
+  },
+  "schema_version": 1
+}

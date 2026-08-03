@@ -1,0 +1,90 @@
+[
+  {
+    "run_id": "pilot_task23_User14_seed0",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User11",
+      "User14",
+      "User9"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User14",
+      "User9"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on data-driven decision-making, cost-effectiveness, and structured analysis. The document emphasizes comparing insurance providers based on coverage details, pricing factors, and personalized discounts\u2014mirroring Candidate A's rational, analytical decision-making style and preference for logical reasoning. Additionally, Candidate A's background in computer science and AI, combined with their interest in financial planning and conservative risk appetite, aligns with the document's emphasis on budget constraints (\u00a53,500\u2013\u00a54,500) and systematic evaluation of insurance options. The document\u2019s prioritization of official sources and regulatory data also reflects Candidate A\u2019s academic rigor and technical focus, unlike Candidates B and C, whose profiles emphasize artistic or lifestyle-oriented priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 23809,
+    "latency_sec": 1.66
+  },
+  {
+    "run_id": "pilot_task23_User14_seed0",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User11",
+      "User14",
+      "User9"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User14",
+      "User11"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "The document focuses on technical details of the 2020 car insurance reforms, including coverage limits, attached insurance products, and service terms (e.g., towing distances, rescue services). Candidate C, an algorithm engineer with a background in computer science and AI, aligns best due to their preference for data-driven, structured content (e.g., technical articles, code snippets) and rational consumption habits. The document\u2019s emphasis on policy specifics, numerical comparisons (e.g., 50km vs. 100km towing), and procedural details mirrors C\u2019s analytical mindset and interest in cost-effective, logically framed information. Candidates A and B, while creative and detail-oriented, prioritize aesthetic, lifestyle, or artistic content, which is less central to the document\u2019s technical and regulatory focus.",
+    "model": "solar-pro",
+    "prompt_chars": 23766,
+    "latency_sec": 1.79
+  },
+  {
+    "run_id": "pilot_task23_User14_seed0",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User11",
+      "User14",
+      "User9"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User9",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "The document focuses on technical details of auto insurance reforms, coverage structures, and financial implications, reflecting a preference for data-driven, structured analysis. Candidate A, an algorithm engineer with a background in computer science and AI, aligns with this analytical framing. His rational decision-making style, cost-effectiveness focus, and interest in financial planning (e.g., conservative investments, tech stock knowledge) match the document's emphasis on policy limits, deductibles, and value-added service comparisons. Candidates B and C, while detail-oriented, prioritize aesthetics, creativity, and lifestyle content, which are less central to the insurance document's technical and financial focus.",
+    "model": "solar-pro",
+    "prompt_chars": 27835,
+    "latency_sec": 1.6
+  },
+  {
+    "run_id": "pilot_task23_User14_seed0",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User11",
+      "User14",
+      "User9"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User14",
+      "User11"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "The document focuses on auto insurance mechanics, cost optimization, and structured financial planning for a first-time city SUV buyer in China. Candidate C, an algorithm engineer with a rational, data-driven decision-making style and strong financial literacy, aligns best. The report's emphasis on budget constraints (\u00a53,500\u2013\u00a54,500), carrier comparisons, and multi-year premium optimization reflects C's preference for cost-effectiveness, logical analysis, and long-term planning. Unlike Candidates A (creative, emotionally driven) and B (artistic, intuitive), C's technical background and conservative risk appetite match the document's analytical tone and financial focus.",
+    "model": "solar-pro",
+    "prompt_chars": 29846,
+    "latency_sec": 1.91
+  }
+]

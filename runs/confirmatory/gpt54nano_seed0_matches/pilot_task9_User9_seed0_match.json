@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task9_User9_seed0",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User11",
+      "User12"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The brief is written from the perspective of Zhao Li, a 22\u201325 Product Operations specialist in Beijing with an Advertising/New Media Communication background and a minor in Psychology, explicitly requesting skill-gap analysis, hands-on portfolio projects, and networking tailored to that profile. The emphasis on user behavior analysis, psychology-informed UX, and PRD writing for AI features aligns with Candidate A\u2019s communication/psychology orientation rather than Candidate B\u2019s deep algorithm focus or Candidate C\u2019s entrepreneur/technical-lead framing.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 24967,
+    "latency_sec": 1.57,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task9_User9_seed0",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User9",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": false,
+    "reasoning": "The excerpt centers on AI Product Manager PRD frameworks for probabilistic LLM products, including evals, guardrails, and agent specifications\u2014language and priorities that align with a technically grounded AI founder/technical lead who consumes AI research and builds AI applications. Candidate A\u2019s background (CS PhD-level exposure, startup context, heavy GitHub/Notion use, and interest in AI application cases) best matches this implementation-oriented, product+evaluation framing.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 26934,
+    "latency_sec": 1.44,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task9_User9_seed0",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User12",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The excerpt is framed as a transition plan from Product Operations/Advertising/New Media/Psychology into an AI Product Manager role, with heavy emphasis on user psychology, qualitative research, and operational metrics\u2014matching Candidate A\u2019s advertising+new media+psychology background and product-ops occupation. The vocabulary focuses on UX trust, cognitive load, prompt/UX patterns, and evaluation pipelines rather than deep model research, aligning with a product-oriented, behavior-focused profile.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 29504,
+    "latency_sec": 1.64,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task9_User9_seed0",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User12",
+      "User9"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The excerpt is framed as a practical 6-month career transition guide for someone moving from Product Operations into AI Product Management, emphasizing user psychology, qualitative research, UX copy, and operational metrics\u2014core themes aligned with a Product Operations background. The tone is instructional and structured around skill mapping and gap analysis rather than deep technical model-building, matching a non-researcher PM/ops profile like Candidate C.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 31515,
+    "latency_sec": 1.5,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

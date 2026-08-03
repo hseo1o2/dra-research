@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task29_User10_seed1",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate A (Liu Qiang) is a marketing manager in a foreign enterprise with an MBA, aligning with the document's focus on data-backed business planning, market analysis, and strategic positioning. His pragmatic, detail-oriented personality and experience in marketing (e.g., organizing campus activities, analyzing market trends) directly match the document's emphasis on competitor analysis, budget allocation, and targeted marketing strategies for white-collar workers. Unlike Candidate B (data analyst) or C (supply chain manager), Liu Qiang's background in business management and marketing, combined with his interest in cost-effectiveness and high-quality service, makes him the most likely author of a comprehensive, actionable business plan for a healthy fast-food venture.",
+    "model": "solar-pro",
+    "prompt_chars": 24758,
+    "latency_sec": 1.87,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task29_User10_seed1",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on market trends, cost analysis, and strategic decision-making for light meal (\u8f7b\u98df) businesses in Shanghai, emphasizing data-driven insights, budget constraints (500,000 yuan), and supply chain logistics. Candidate B, a marketing manager in a foreign enterprise with an MBA, aligns most closely with this framing. His background in business analysis, cost-effectiveness, and interest in market trends (e.g., saving articles on Harvard Business Review) reflect the document's priorities. Additionally, his Shanghai-based residence and focus on family-friendly consumption (e.g., budgeting for household expenses) align with the Shanghai-centric, practical cost analysis in the queries. Candidate A (data analyst) and C (supply chain manager in Chengdu) lack the same contextual fit in location, industry focus, or decision-making style.",
+    "model": "solar-pro",
+    "prompt_chars": 24432,
+    "latency_sec": 2.52,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task29_User10_seed1",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate C, a marketing manager in Shanghai, aligns most closely with the document's focus on the light meal industry's premium mid-tier (\u00a540\u2013\u00a560) segment, urban white-collar professionals, and strategic market positioning. The document emphasizes Tier-1 city (Shanghai/Pudong) consumer behavior, premium pricing, and differentiation through clean-label nutrition\u2014mirroring C's Shanghai-based, high-end lifestyle, rational consumption habits, and interest in quality/value. Unlike A (data analyst with frugal habits) or B (Chengdu-based supply chain manager focused on cost-efficiency), C's profile as a marketing leader in a foreign enterprise aligns with the document's strategic framing, premium product analysis, and urban commercial district focus. His preferences for boutique hotels, high-quality purchases, and family-oriented consumption also reflect the target audience described.",
+    "model": "solar-pro",
+    "prompt_chars": 28635,
+    "latency_sec": 2.18,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task29_User10_seed1",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on a health-focused fast-casual business plan targeting Shanghai's CBD white-collar workers and fitness enthusiasts, emphasizing cost-efficiency, supply chain optimization, and urban lifestyle alignment. Candidate B, a marketing manager in Shanghai's Pudong New Area, aligns most closely: (1) His urban, high-end community residence and frequent CBD mobility match the document's geographic focus. (2) His pragmatic, data-driven decision-making style aligns with the plan's financial projections and supply chain cost controls. (3) His family-oriented yet efficiency-focused lifestyle resonates with the target audience of time-constrained professionals seeking quality health solutions. (4) His preference for cost-effective premium products mirrors the project's mid-range pricing strategy. Candidates A (Chengdu-based supply chain manager) and C (data analyst with less urban mobility) lack the Shanghai-centric urban professional context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30646,
+    "latency_sec": 2.84,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

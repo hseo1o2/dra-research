@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task42_User18_seed0",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User11",
+      "User18",
+      "User1"
+    ],
+    "shuffled_order": [
+      "User1",
+      "User11",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "Candidate B (Li Zhuo) is a 28-32-year-old algorithm engineer with a strong technical background in AI and recommendation systems, aligning with the document's focus on a global AI Agent application. His experience in cross-border technical environments (Wuhan/Hangzhou) and pragmatic, data-driven decision-making style match the report's emphasis on compliance frameworks, budget allocation, and risk management for a startup. Unlike Candidate A (a student) or C (a data analyst), B's professional role, financial stability, and familiarity with legal/technical challenges in cross-border data flows make him the most likely user for this detailed compliance research brief.",
+    "model": "solar-pro",
+    "prompt_chars": 24693,
+    "latency_sec": 1.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task42_User18_seed0",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User11",
+      "User18",
+      "User1"
+    ],
+    "shuffled_order": [
+      "User1",
+      "User18",
+      "User11"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "The document focuses on technical and regulatory aspects of cross-border data transfers, AI governance, and compliance thresholds under Chinese laws (PIPL, CAC). Candidate C, an algorithm engineer with a graduate background in AI and recommendation systems, has the most relevant technical expertise and professional context to engage with such content. His work in AI, interest in regulatory applications of technology, and focus on cost-effective tech consumption align with the document's framing. Candidates A (undergraduate student) and B (data analyst) lack the advanced technical background and industry-specific focus on AI compliance that Candidate C demonstrates.",
+    "model": "solar-pro",
+    "prompt_chars": 26471,
+    "latency_sec": 1.92,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task42_User18_seed0",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User11",
+      "User18",
+      "User1"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User1",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "The document focuses on cross-jurisdictional AI compliance, emphasizing technical depth, regulatory frameworks (PIPL, GDPR, CPRA), and structured legal analysis. Candidate A, an algorithm engineer with a strong AI/legal-tech alignment, matches this focus: his academic background in AI, work in Hangzhou (a tech hub), and interest in AI applications for social fields align with the document's technical-legal framing. Unlike Candidate B (student) or C (data analyst), A's professional experience and pragmatic, problem-solving mindset directly mirror the document's emphasis on compliance implementation, data minimization, and jurisdictional technical requirements.",
+    "model": "solar-pro",
+    "prompt_chars": 28964,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task42_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User11",
+      "User18",
+      "User1"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User1",
+      "User11"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "Candidate C, an algorithm engineer with a strong AI/tech background, aligns most closely with the document's focus on cross-border AI compliance, technical governance, and multi-jurisdictional regulatory frameworks. The document's emphasis on legal thresholds, model training rules, and cost-efficient compliance architecture reflects C's professional expertise in AI systems and his rational, data-driven decision-making style. Unlike Candidate A (a data analyst focused on business metrics) or Candidate B (a student with theoretical AI interest), Candidate C's technical depth, experience with real-world AI deployment, and familiarity with compliance challenges in global tech operations make him the most likely audience for this specialized compliance strategy document.",
+    "model": "solar-pro",
+    "prompt_chars": 30975,
+    "latency_sec": 2.67,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

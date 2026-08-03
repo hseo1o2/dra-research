@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task48_User12_seed0",
+    "stage": "plan",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The brief is written from a parent\u2019s perspective seeking a structured, research-backed, home-based 6-month plan for a 5-year-old in Beijing, emphasizing creativity, emotional expression, focus, and self-confidence. Candidate A matches the Beijing location, has a 5-year-old daughter, and shows a preference for detailed, evidence-informed planning and high-quality resources, aligning with the request for child-development principles and specific materials/activities.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 25587,
+    "latency_sec": 1.53,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task48_User12_seed0",
+    "stage": "search",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User12",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document excerpt centers on early childhood development and art education curricula for 5-year-olds (fine/gross motor, attention span, Piaget, Reggio/Orff/Dalcroze/process art). This aligns most with a parent-focused, education-investment mindset and interest in children\u2019s learning resources, which matches Candidate C\u2019s profile (two children, wife as primary school teacher, generous with children\u2019s educational expenses). Candidate A is more engineering/finance and Candidate B is AI entrepreneur with less explicit early-child education framing.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 28032,
+    "latency_sec": 1.61,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task48_User12_seed0",
+    "stage": "compress",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User12",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The excerpt is a research-style synthesis with academic framing (Piaget\u2019s preoperational stage, Vygotsky/scaffolding, executive function, attention span) and a strong emphasis on evidence-based developmental impacts of specific educational arts/music/movement methods. This aligns best with an AI entrepreneur who regularly consumes technical papers and organizes research insights for practical application to a child\u2019s development, rather than a marketing manager or a state-owned enterprise manager who are less likely to produce such theory-heavy, cross-disciplinary child-development literature reviews.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 30525,
+    "latency_sec": 1.79,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task48_User12_seed0",
+    "stage": "write",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User12",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The excerpt is written like a structured, research-backed curriculum plan with explicit developmental frameworks (Piaget, executive function), step-by-step activity blueprints, and references to international education models\u2014matching an AI/tech entrepreneur\u2019s preference for analytical, evidence-oriented content and systematic planning. It also emphasizes measurable attention spans, facilitation steps, and curated interdisciplinary integration, aligning with a data/logical mindset and interest in organizing knowledge for practical application at home.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 32536,
+    "latency_sec": 1.55,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

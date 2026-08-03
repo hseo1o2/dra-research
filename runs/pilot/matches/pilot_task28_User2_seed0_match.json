@@ -1,0 +1,90 @@
+[
+  {
+    "run_id": "pilot_task28_User2_seed0",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User7",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document explicitly identifies the author as Wang Xue, a 22\u201325-year-old female clinical psychology graduate student in Beijing, aligning perfectly with Candidate A's attributes. The content focuses on personal branding for psychology professionals, leveraging academic rigor, time management, and social media strategies\u2014key themes in Candidate A's profile. Candidate B (male, new media focus) and Candidate C (older male marketing manager) lack the psychological background, student status, and specific social media goals (e.g., Xiaohongshu, Zhihu) central to the document. Candidate A\u2019s cat ownership, hometown ties, and eco-friendly preferences also subtly align with the document\u2019s personal branding angle, making it the only viable match.",
+    "model": "solar-pro",
+    "prompt_chars": 24913,
+    "latency_sec": 1.68
+  },
+  {
+    "run_id": "pilot_task28_User2_seed0",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User7",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User10",
+      "User7"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on psychology-related content creation, particularly on platforms like Xiaohongshu and Zhihu, with an emphasis on academic psychology (e.g., master's programs, clinical psychology, and research). Candidate A, a clinical psychology graduate student, aligns most closely with this content due to her academic background, active engagement in psychology forums, and habit of sharing psychology-related articles on social media. The document\u2019s framing\u2014analyzing psychology bloggers, discussing academic credentials, and emphasizing content creation for educational purposes\u2014reflects Candidate A\u2019s identity as a psychology student and her documented interest in popularizing psychology. Candidates B (a marketing manager) and C (a new media graduate) lack the same direct academic and content-creation focus on psychology as Candidate A.",
+    "model": "solar-pro",
+    "prompt_chars": 24363,
+    "latency_sec": 2.1
+  },
+  {
+    "run_id": "pilot_task28_User2_seed0",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User7",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User10",
+      "User7"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on a 22\u201325-year-old female clinical psychology Master\u2019s student in Beijing, aligning perfectly with Candidate A\u2019s profile. Key matches include her academic background (Hunan Normal University undergrad, Beijing-based clinical psychology grad student), content priorities (evidence-based psychology, relatable warmth), and framing (targeting young urban professionals/students with practical mental health tools). Candidate B (male marketing manager) and C (male new media grad student) lack the clinical psychology focus, gender, and specific audience alignment (e.g., '\u5fc3\u7406\u5b66\u5b66\u59d0' persona, cat ownership, Changsha hometown ties) central to the document\u2019s strategy.",
+    "model": "solar-pro",
+    "prompt_chars": 28527,
+    "latency_sec": 1.57
+  },
+  {
+    "run_id": "pilot_task28_User2_seed0",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User7",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document is a personal brand-building strategy for Wang Xue, a Clinical Psychology graduate student in Beijing, mirroring Candidate B's identity, educational background, and career focus. The content emphasizes academic rigor (DSM-5-TR, CBT/ACT) and empathetic warmth, aligning with B's personality traits (empathetic, communication skills) and interests (psychology, pet care). The platform strategy (Xiaohongshu, Zhihu) matches B's online habits (social media for psychology content, cat care tips). Candidate A (new media student) and C (marketing manager) lack the clinical psychology focus and personal branding context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30538,
+    "latency_sec": 1.57
+  }
+]

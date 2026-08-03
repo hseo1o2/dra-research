@@ -1,0 +1,90 @@
+[
+  {
+    "run_id": "pilot_task12_User5_seed0",
+    "stage": "plan",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User2",
+      "User9"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User5",
+    "correct": true,
+    "reasoning": "The document's focus on mechanical automation, analytical mindset, and cost-effective self-study aligns with Candidate A's background as a mechanical engineering graduate student. The request for structured emotional regulation strategies (e.g., trigger logs, time management tools) mirrors A's detail-oriented personality and use of Trello for task planning. Preferences for Chinese-translated evidence-based books and platforms like Coursera/edX match A's academic habits (IEEE, Google Scholar) and rational consumption patterns. Candidate B (clinical psychology) and C (product operations) lack the technical/engineering framing and prioritize different content domains (psychology, creative industries).",
+    "model": "solar-pro",
+    "prompt_chars": 22921,
+    "latency_sec": 1.53
+  },
+  {
+    "run_id": "pilot_task12_User5_seed0",
+    "stage": "search",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User2",
+      "User9"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "The document focuses on psychology-related resources (e.g., 'Feeling Good', 'Mind Over Mood', emotion regulation models, and Coursera courses on well-being and positive psychology). Candidate B, a Clinical Psychology graduate student, aligns most closely with this content due to her academic focus, frequent use of psychology learning platforms (Coursera, Zhihu), and interest in emotional well-being topics. Her behavioral traits\u2014such as sharing psychology articles, studying emotion regulation, and adopting a pet for stress relief\u2014directly mirror the document's emphasis on mental health strategies. Candidates A (Mechanical Engineering) and C (Product Operations) lack the same depth of psychological engagement.",
+    "model": "solar-pro",
+    "prompt_chars": 24746,
+    "latency_sec": 1.6
+  },
+  {
+    "run_id": "pilot_task12_User5_seed0",
+    "stage": "compress",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User9",
+      "User5"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "The document focuses on structured psychological therapies (CBT, DBT, MBCT) with an analytical, protocol-driven appeal, emphasizing cognitive frameworks, worksheets, and systematic exercises. Candidate A, a Clinical Psychology graduate student, aligns perfectly with this content due to her academic background, daily engagement with psychology resources, and interest in emotion regulation. The document's emphasis on technical CBT/DBT/MBCT methodologies matches her professional training and research needs, unlike Candidate B (advertising/psychology minor) or Candidate C (mechanical engineering), whose interests are less directly tied to clinical psychological frameworks.",
+    "model": "solar-pro",
+    "prompt_chars": 27412,
+    "latency_sec": 1.54
+  },
+  {
+    "run_id": "pilot_task12_User5_seed0",
+    "stage": "write",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User5",
+    "correct": true,
+    "reasoning": "The document emphasizes an analytical, systematic approach to emotional regulation, framed as an 'information-processing system' with structured protocols, worksheets, and empirical tracking. Candidate C, a mechanical engineering graduate student in robotics automation, aligns with this technical framing: his background in engineering, preference for structured problem-solving, and interest in deterministic processes (evident in his academic focus on intelligent manufacturing and use of time-management tools like Trello) mirror the document's emphasis on cognitive 'debugging,' system troubleshooting, and data-driven emotional resilience. Unlike Candidates A (creative, social-media-oriented) and B (clinical psychology student, more intuitive/empathy-driven), Candidate C's analytical mindset and preference for operationalized routines (e.g., cycling metrics, planned expenses) directly match the document's engineering-inspired methodology.",
+    "model": "solar-pro",
+    "prompt_chars": 29423,
+    "latency_sec": 1.79
+  }
+]

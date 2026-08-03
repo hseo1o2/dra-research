@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task4_User9_seed1",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6",
+      "User8",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User6",
+      "User11",
+      "User9",
+      "User20",
+      "User8"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document's author, Zhao Li, is a 22-25-year-old Product Operations professional with an Advertising (New Media Communication) background, evaluating MBA/EMBA/Master's programs to enhance career competitiveness. Candidate C shares identical demographics (age, gender, occupation, educational background) and mirrors Zhao Li's career stage (early-career, 1-3 years experience), risk tolerance (low), and work-study balance needs. The document's focus on program comparison, career impact in tech/internet sectors, and ROI aligns with Candidate C's role in an internet company and her interest in data analytics/skill gaps. Unlike other candidates (e.g., A's environmental focus, B's technical background, D's creative writing, E's finance), Candidate C's profile directly reflects the document's priorities: professional development in operations, user behavior analysis, and balancing work with study. Vocabulary (e.g., 'career competitiveness,' 'ROI') and framing (pragmatic, goal-oriented) also match her rational consumer style and health/wellness interests.",
+    "model": "solar-pro",
+    "prompt_chars": 38999,
+    "latency_sec": 2.59,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task4_User9_seed1",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6",
+      "User8",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User6",
+      "User20",
+      "User8",
+      "User9"
+    ],
+    "predicted_label": "D",
+    "predicted_userid": "User8",
+    "correct": false,
+    "reasoning": "The document focuses on MBA admission requirements (work experience, GRK exams, tuition fees) and ROI analysis (salary increases, career advancement in tech/finance roles). Candidate D, an investment manager with a finance background, aligns best: his priorities include cost-effective education, career advancement, and data-driven decision-making. The document's emphasis on work experience (3+ years), ROI (salary comparisons), and program costs mirrors D's financial acumen and career goals. Other candidates (A: tech focus, B: environmental studies, C: creative fields, E: product operations) lack the financial/management framing central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 39488,
+    "latency_sec": 2.44,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task4_User9_seed1",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6",
+      "User8",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User6",
+      "User20",
+      "User8",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on a candidate with 1-3 years of work experience in internet product operations, an Advertising major with a Psychology minor from Communication University of China, and a quantitative/technical skill gap. Candidate A matches these attributes exactly: same age, occupation, educational background, and skill gaps. The document's analysis of program fit (MBA, MSBA, etc.) aligns with Candidate A's early-career stage and goals to bridge technical gaps while leveraging her human-centric strengths. Other candidates (B-E) differ significantly in background (environmental studies, literature, finance, computer science) or career stage, making them mismatches.",
+    "model": "solar-pro",
+    "prompt_chars": 42931,
+    "latency_sec": 2.49,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task4_User9_seed1",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6",
+      "User8",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User20",
+      "User11",
+      "User6",
+      "User8"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on Zhao Li, a 22\u201325-year-old Product Operations professional with an Advertising and Psychology background, seeking education options that balance low risk, time constraints, and career growth in tech. Candidate A matches this profile exactly in age, occupation, educational background, and risk tolerance. The report's emphasis on bridging quantitative skill gaps (SQL, Python) aligns with Candidate A's creative yet analytical interests, while the focus on part-time/hybrid programs matches her demanding schedule and Beijing location. Other candidates (B-E) differ significantly in age, occupation, or educational background, making them mismatches.",
+    "model": "solar-pro",
+    "prompt_chars": 44942,
+    "latency_sec": 2.05,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

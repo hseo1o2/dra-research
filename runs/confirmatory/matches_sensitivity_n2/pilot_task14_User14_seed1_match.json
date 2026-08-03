@@ -1,0 +1,110 @@
+[
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document explicitly mentions a freelance illustrator in Shanghai with a 5-day/week training schedule, yoga/Pilates habits, and a focus on adaptable routines. Candidate B matches all these traits: occupation (freelance illustrator), location (Shanghai), exercise habits (yoga 2-3x/week, Pilates, hiking), and creative lifestyle. Candidate A is a copywriter with different exercise habits (weekly running/cycling) and lacks the illustrator-specific context. The document's emphasis on integrating yoga/Pilates and accommodating a creative professional's schedule aligns exclusively with Candidate B.",
+    "model": "solar-pro",
+    "prompt_chars": 16557,
+    "latency_sec": 1.54,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "The document focuses on marathon training methods (Galloway run/walk ratios), air quality considerations for runners in Shanghai, and local running routes (West Bund, Century Park). These align with Candidate A's exercise habits (weekly running, cycling, and interest in endurance improvement) and Shanghai-based lifestyle. Candidate A's frequent visits to parks, interest in nature, and stress-relief goals through exercise directly connect to the document's practical training advice and environmental context. Candidate B, while also in Shanghai, emphasizes yoga/Pilates and hiking over marathon training, and their content preferences focus on art/photography rather than athletic performance or urban running logistics.",
+    "model": "solar-pro",
+    "prompt_chars": 18248,
+    "latency_sec": 1.7,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "The document focuses on a structured, time-bound marathon training plan emphasizing safety, gradual progression, and stress reduction\u2014aligning with Candidate B's exercise goals of stress relief and health maintenance. While both candidates engage in physical activity, Candidate B explicitly mentions running and cycling as primary exercises, whereas Candidate A prefers yoga, Pilates, and hiking. The document's emphasis on endurance-building and cutback weeks also mirrors B's interest in improving physical fitness and balancing work/leisure, unlike A's focus on relaxation and creativity. Additionally, B's urban exploration habits (e.g., parks, botanical gardens) align with the training's outdoor running context, making B the better match.",
+    "model": "solar-pro",
+    "prompt_chars": 21583,
+    "latency_sec": 1.69,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document explicitly states it is 'customized for a freelance illustrator living in Shanghai,' matching Candidate B's occupation and location. It integrates Yoga, Pilates, and hiking\u2014exactly B's exercise habits\u2014and references a cat ('Cat companionship'), aligning with B's pet 'Mo Mo.' The plan's focus on injury prevention over speed, urban Shanghai routes, and cross-training (Yoga/Pilates) reflects B's health goals and creative lifestyle. Candidate A, a copywriter, lacks these specific overlaps in profession, exercise routines, and environmental context.",
+    "model": "solar-pro",
+    "prompt_chars": 23594,
+    "latency_sec": 1.59,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

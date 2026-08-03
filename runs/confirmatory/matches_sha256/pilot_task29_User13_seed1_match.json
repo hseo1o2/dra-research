@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task29_User13_seed1",
+    "stage": "plan",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User18",
+      "User13",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "Candidate C (Guo Yuan) is a caf\u00e9 owner with a strong focus on health-conscious, high-quality food and sustainability, aligning with the document's emphasis on healthy fast food, eco-friendly packaging, and premium pricing. Her background in design and business, combined with her interest in organic ingredients and local/niche brands, mirrors the document's priorities for menu design, sourcing, and branding. Unlike Candidates A (a data analyst) and B (a marketing manager), Candidate C's entrepreneurial experience in the food sector and her detailed focus on customer experience, aesthetics, and operational logistics directly match the document's scope and framing.",
+    "model": "solar-pro",
+    "prompt_chars": 24007,
+    "latency_sec": 1.54,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task29_User13_seed1",
+    "stage": "search",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User18",
+      "User13",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "Candidate C (Guo Yuan), a caf\u00e9 owner with a focus on coffee culture and design, aligns most closely with the document's emphasis on the light-food market, particularly its framing around urban, design-conscious, and health-oriented consumption. The document highlights trends in premium light-food brands (e.g., Wagas), cost considerations for CBD locations, and the integration of aesthetics (e.g., boutique hotels, stylish caf\u00e9s) with functional needs\u2014mirroring C's preferences for eco-friendly packaging, local designer products, and her caf\u00e9's industrial-natural design. Unlike Candidate A (a data analyst focused on cost-efficiency) or B (a family-oriented marketer prioritizing durability), C's entrepreneurial background in food service, attention to ingredient quality, and interest in cultural spaces (e.g., art districts, farmers' markets) directly reflect the document's focus on market trends, branding, and spatial strategy in Shanghai's competitive light-food sector.",
+    "model": "solar-pro",
+    "prompt_chars": 24348,
+    "latency_sec": 2.02,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task29_User13_seed1",
+    "stage": "compress",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User18",
+      "User13",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on market trends, competitive analysis, and pricing strategies in Shanghai's CBD light meal sector, emphasizing data-driven insights, operational efficiency, and tiered market segmentation. Candidate C, a marketing manager in a foreign enterprise, aligns most closely with this analytical, business-oriented framing. His MBA background, data-driven decision-making style, and interest in market trends (e.g., saving articles on business management, analyzing market reports) reflect the document's emphasis on structured industry analysis. Unlike Candidate A (a caf\u00e9 owner focused on aesthetics and sustainability) or Candidate B (a data analyst prioritizing personal efficiency), Candidate C\u2019s professional focus on marketing, pricing strategies, and tiered consumer segmentation directly mirrors the document\u2019s priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 28389,
+    "latency_sec": 1.7,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task29_User13_seed1",
+    "stage": "write",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User18",
+      "User13",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User13",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on market positioning, financial feasibility, and operational efficiency for a healthy fast-food concept targeting urban professionals in Tier-1 CBDs. Candidate A, a marketing manager with an MBA, aligns with this focus through his data-driven decision-making, emphasis on cost-effectiveness, and interest in market trends. His role in a foreign enterprise and preference for practical, high-quality solutions mirror the document's pragmatic approach to business planning. While Candidate B (caf\u00e9 owner) and Candidate C (data analyst) share some interests, neither directly aligns with the document's corporate, market-research-oriented framing or its target audience of urban professionals seeking efficient, nutritionally balanced meals.",
+    "model": "solar-pro",
+    "prompt_chars": 30400,
+    "latency_sec": 1.67,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

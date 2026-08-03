@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task24_User17_seed1",
+    "stage": "plan",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate C (Liu Qiang) best matches the document's focus on comprehensive home insurance for a seaside property in Xiamen. As a marketing manager in Shanghai with a high-end residence and family, he prioritizes cost-effectiveness, quality, and detailed analysis\u2014aligning with the document's emphasis on budget-conscious yet thorough coverage comparisons. His pragmatic decision-making style, focus on durable household items (reflecting the \u00a5300k belongings valuation), and interest in value-added services (e.g., safety inspections) mirror the document's analytical depth. Unlike Candidates A (healthcare-focused, Beijing-based) and B (state-owned enterprise manager in Harbin), Candidate C's urban, financially literate profile and coastal hometown ties to Suzhou make him more likely to seek specialized coastal disaster coverage and digital claims services.",
+    "model": "solar-pro",
+    "prompt_chars": 24341,
+    "latency_sec": 1.95,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task24_User17_seed1",
+    "stage": "search",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate B (Liu Qiang) aligns most closely with the document's focus on high-end home insurance products, detailed coverage limits (e.g., 300,000 yuan for indoor property), and cost-benefit analysis. As a marketing manager in a foreign enterprise, he prioritizes quality, cost-effectiveness, and comprehensive coverage\u2014key themes in the document. His pragmatic decision-making style, interest in financial planning, and family-oriented consumption (e.g., investing in children\u2019s education and durable household items) mirror the document\u2019s emphasis on premium insurance features and value for money. Unlike Candidates A (healthcare-focused nurse) and C (state-owned enterprise manager with rural ties), B\u2019s urban, high-income profile and focus on modern risk management align with the document\u2019s framing of high-end insurance as a strategic investment.",
+    "model": "solar-pro",
+    "prompt_chars": 23937,
+    "latency_sec": 2.01,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task24_User17_seed1",
+    "stage": "compress",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User17",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on high-end home insurance products with premiums of \u00a53,000\u2013\u00a55,000, emphasizing coverage for luxury properties (e.g., '\u8c6a\u5b85'), high indoor property valuations (\u00a5300,000+), and natural disaster add-ons (typhoons, earthquakes). Candidate A, a Shanghai-based marketing manager in a high-end community, aligns with this focus: his profile highlights a preference for quality, cost-effectiveness, and high-end durable household items, as well as a pragmatic, data-driven decision-making style. The document\u2019s emphasis on premium tiers, coverage limits, and risk management mirrors A\u2019s background in business analysis and his family\u2019s affluent lifestyle. Candidates B and C, while rational consumers, lack the explicit focus on luxury assets or high-value property insurance that defines the document\u2019s framing.",
+    "model": "solar-pro",
+    "prompt_chars": 28006,
+    "latency_sec": 2.51,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task24_User17_seed1",
+    "stage": "write",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on a high-end, comprehensive insurance solution for a coastal residential property in Xiamen, emphasizing premium coverage for indoor assets (\u00a5300,000), risk mitigation for natural disasters (typhoons, floods), and cost-effectiveness within a \u00a53,000\u2013\u00a55,000 annual budget. Candidate B, a marketing manager in Shanghai, aligns best due to his pragmatic, data-driven decision-making style, preference for quality and cost-effectiveness, and focus on family-centric investments (e.g., children\u2019s education, durable household items). The document\u2019s emphasis on structured analysis, financial planning, and balancing premiums with coverage mirrors B\u2019s MBA background and career in strategic marketing. Unlike Candidate A (a nurse prioritizing health/pet care) or C (a state-owned enterprise manager focused on practicality and rural nostalgia), B\u2019s urban, high-income profile and interest in modern lifestyle solutions (e.g., smart home products, premium services) align with the document\u2019s focus on a sophisticated, urban coastal property owner seeking tailored insurance.",
+    "model": "solar-pro",
+    "prompt_chars": 30017,
+    "latency_sec": 3.04,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

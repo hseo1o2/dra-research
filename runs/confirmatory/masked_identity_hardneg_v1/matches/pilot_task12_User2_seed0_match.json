@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task12_User2_seed0",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "Candidate A is a Clinical Psychology graduate student with a strong background in evidence-based modalities (e.g., ACT, emotion-focused approaches) explicitly mentioned in the document. The request for self-awareness, emotional regulation, and self-reflection aligns with her academic focus and personal interests in psychology, journaling, and mindfulness. Her behavioral traits\u2014such as using psychology apps, sharing academic resources, and prioritizing time management\u2014directly mirror the document\u2019s emphasis on structured routines, primary sources, and psychological depth. Candidates B (new media focus) and C (computer science) lack the domain-specific alignment with clinical psychology and emotional regulation frameworks required here.",
+    "model": "solar-pro",
+    "prompt_chars": 23076,
+    "latency_sec": 2.13,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task12_User2_seed0",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on therapeutic techniques (CBT, DBT, EFT) and practical tools (thought records, ACT models), aligning with Candidate B's clinical psychology background. Her academic focus, online behavior (psychology forums, saving psychology materials), and consumption habits (psychology books) directly reflect the document's content priorities. Candidates A (media research) and C (computer science) lack the domain-specific focus on therapeutic methods evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25235,
+    "latency_sec": 1.42,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task12_User2_seed0",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User1",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on therapeutic techniques (CBT, DBT, ACT, MBSR, EFT) and their practical applications, emphasizing self-study resources, clinical training, and psychological research. Candidate C, a graduate student in Clinical Psychology, aligns directly with this content due to her academic background, interest in psychology, and consumption of psychology-related materials. The document\u2019s framing (e.g., 'value for psychology students,' 'clinical conceptualization') matches her professional goals and learning habits, unlike Candidates A (new media research) or B (computer science).",
+    "model": "solar-pro",
+    "prompt_chars": 27967,
+    "latency_sec": 1.74,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task12_User2_seed0",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document is a 6-month self-improvement framework explicitly designed for clinical psychology trainees, integrating evidence-based therapeutic modalities (CBT, DBT, ACT, MBSR, EFT) with academic and clinical pressures. Candidate B is a graduate student in Clinical Psychology, aligning perfectly with the document's target audience. The content's focus on emotional regulation, cognitive restructuring, and clinical efficacy mirrors her academic background, professional goals, and personal interests in psychology. Candidate A (new media research) and C (computer science) lack the domain-specific relevance to the document's clinical psychology focus, making B the only essential match.",
+    "model": "solar-pro",
+    "prompt_chars": 29978,
+    "latency_sec": 1.82,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task38_User19_seed1",
+    "stage": "plan",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on purchasing a second-hand home in Chengdu for a family with a 6-year-old daughter and a pet dog, emphasizing school districts, subway access, and budget constraints. Candidate A is a Chengdu resident with a similar family structure (married with a 6-year-old daughter and a pet dog), prioritizes school quality, and has a budget-conscious, practical approach to housing. The document's emphasis on Chengdu districts, family-friendly amenities, and detailed financial planning aligns with Candidate A's background, lifestyle, and decision-making style. Candidates B (Harbin-based) and C (Shanghai-based) lack the Chengdu-specific context and family/pet details matching the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25576,
+    "latency_sec": 1.69,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task38_User19_seed1",
+    "stage": "search",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on Beijing's education policies (e.g., '1911' multi-school districting, '630' policies) and housing-related financial regulations (e.g., down payment ratios, green building incentives). Candidate C, a Shanghai-based marketing manager with two school-aged children, aligns most closely with this content. His profile highlights priorities around education (e.g., extracurricular classes, school districting), family-centric decision-making, and practical financial planning\u2014all directly reflected in the document's emphasis on housing policies, school enrollment rules, and mortgage adjustments. Candidates A (Harbin-based, single school-aged child) and B (Chengdu-based, one child) lack the same urgency around Beijing-specific policies or multi-child educational planning, which are central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 25282,
+    "latency_sec": 2.08,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task38_User19_seed1",
+    "stage": "compress",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on Beijing's school district policies (Haidian and Chaoyang) and real estate recommendations for families with school-age children, emphasizing educational priorities, property ownership, and strategic planning. Candidate C, a Shanghai-based marketing manager with two young children (8 and 5), aligns most closely with this content. His profile highlights a strong emphasis on education (wife as a teacher, children in extracurricular activities), family-centric decision-making, and a pragmatic approach to quality-of-life investments (e.g., high-end community, educational expenses). Unlike Candidates A (Harbin-based, son in middle school) and B (Chengdu-based, daughter in primary school), Candidate C\u2019s urban Shanghai residence, frequent business trips to cities like Shenzhen, and interest in real estate/education planning mirror the document\u2019s focus on competitive school districts and property strategies for optimal educational outcomes.",
+    "model": "solar-pro",
+    "prompt_chars": 29467,
+    "latency_sec": 2.23,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task38_User19_seed1",
+    "stage": "write",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User19",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on a family with a 6-year-old child preparing for primary school and a large dog, prioritizing educational policies, commute efficiency, green spaces, and budget constraints (\u00a56M). Candidate B (Zhou Jun) is a 35-40-year-old supply chain manager in Chengdu with a 6-year-old daughter and an Alaskan Malamute, aligning perfectly with the family profile. The document's emphasis on school enrollment mechanisms, pet-friendly communities, and budget-conscious purchasing mirrors B's priorities: family education, pet ownership, and rational consumption. Candidates A (Shanghai-based, older children) and C (Harbin-based, middle-school child) do not match the age, location, or specific needs outlined in the report.",
+    "model": "solar-pro",
+    "prompt_chars": 31478,
+    "latency_sec": 2.01,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

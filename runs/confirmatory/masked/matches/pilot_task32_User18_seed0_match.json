@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task32_User18_seed0",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on modern aesthetics, design, and sustainability. The document emphasizes a modern hard furnishing base (white walls/gray floors), prioritizes smart home connectivity, and values eco-friendly products\u2014all reflected in A's artistic background, caf\u00e9 design sensibilities, and support for independent/local brands. Additionally, A's interest in art exhibitions, boutique hotels, and cultural integration mirrors the document's emphasis on design and ambiance. Candidates B and C, while rational consumers, lack A's explicit focus on design, art, and the holistic aesthetic integration described in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24919,
+    "latency_sec": 1.52,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task32_User18_seed0",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User13",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on interior design, home appliances, and budget planning for a modern living space, emphasizing aesthetics, functionality, and cost-effectiveness. Candidate B, a caf\u00e9 owner with a background in design and a strong preference for high-quality, sustainable, and artistically curated products, aligns most closely with these themes. Her attention to detail, appreciation for design, and interest in eco-friendly products mirror the document's emphasis on stylish yet practical home solutions. Candidates A and C, while rational consumers, lack the design-centric and lifestyle-focused perspective evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25677,
+    "latency_sec": 1.47,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task32_User18_seed0",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User18",
+      "User11"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "The document focuses on technical specifications, cost-performance analysis, and smart home integration of appliances (refrigerators, washer-dryer combos) for a compact urban apartment. Candidate C, an algorithm engineer, aligns with this framing through his rational, data-driven decision-making style, interest in cost-effective smart home products, and focus on practicality. Unlike Candidate A (caf\u00e9 owner, design-focused) or B (data analyst with broader lifestyle interests), C's technical background, preference for detailed product comparisons, and recent investments in smart home devices (e.g., lighting control) directly mirror the document's emphasis on specifications, system efficiency, and ecosystem integration (e.g., Mijia/App compatibility).",
+    "model": "solar-pro",
+    "prompt_chars": 29622,
+    "latency_sec": 1.71,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task32_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User13",
+      "User11"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document emphasizes aesthetic warmth, tactile material selection, and design cohesion in a modern apartment setting, aligning with Candidate B's background as a caf\u00e9 owner with a strong design sensibility. Her focus on eco-friendly products, support for independent brands, and interest in art/design (evident in her caf\u00e9's industrial-natural style and her content preferences for art/coffee culture) directly mirror the report's emphasis on color palettes, material textures, and curated decor. Unlike Candidates A (data-driven, practical) and C (tech-focused, minimalist), Candidate B's artistic meticulousness and passion for creating emotionally resonant spaces make her the most likely audience for this design-oriented soft furnishing guide.",
+    "model": "solar-pro",
+    "prompt_chars": 31633,
+    "latency_sec": 1.69,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

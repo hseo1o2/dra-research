@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task2_User2_seed0",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User6",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on psychology/clinical psychology graduate programs, academic competitiveness for PhD/career goals, and practical guidance for short-term study abroad. Candidate C is explicitly a graduate student in Clinical Psychology, aligning directly with the document's academic focus. Her profile emphasizes research capabilities, international academic networking, and PhD preparation\u2014key themes in the document. Additionally, her behavioral traits (e.g., using psychology learning apps, participating in academic forums, and prioritizing cost-effective yet quality resources) mirror the document's emphasis on budget-conscious preparation and systematic research. Candidates A (new media) and B (environmental studies) lack the clinical psychology specialization and academic goals central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24152,
+    "latency_sec": 2.13,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User2_seed0",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User6"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on psychology-related topics (visiting graduate students in psychology, clinical practice licenses, scholarships for psychology students), which aligns with Candidate A's identity as a Clinical Psychology graduate student. The content also references academic research, licensing, and institutional frameworks, reflecting A's academic background and interest in psychology. Candidates B (new media/public opinion) and C (environmental studies) lack direct relevance to the document's core themes. A's frequent engagement with psychology forums, academic resources, and clinical psychology studies further confirms the match.",
+    "model": "solar-pro",
+    "prompt_chars": 25454,
+    "latency_sec": 1.46,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User2_seed0",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User6"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on graduate-level psychology programs, clinical research restrictions, visa requirements, and cost analyses for international students\u2014all directly aligned with Candidate A's profile as a Clinical Psychology master's student. Her academic background, interest in psychology research, and practical concerns about international study (e.g., cost-effectiveness, visa logistics) match the document's framing. Candidates B (new media) and C (environmental studies) lack the domain-specific focus on clinical psychology and graduate research programs that define the document's purpose.",
+    "model": "solar-pro",
+    "prompt_chars": 28244,
+    "latency_sec": 1.6,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User2_seed0",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User6"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on clinical psychology exchange programs, emphasizing academic rigor, research methodologies, and regulatory constraints in clinical practice. Candidate B is a graduate student in Clinical Psychology with a strong academic background, interest in psychology research, and practical engagement with professional platforms (e.g., Coursera, Zhihu Psychology). The document's technical vocabulary (e.g., 'HIPAA,' 'IRB,' 'fMRI/EEG data processing') aligns with Candidate B's specialized education and career goals. Candidate A (new media/public opinion) and Candidate C (environmental studies) lack the domain-specific expertise and priorities reflected in the report's framing, which centers on clinical psychology research and international academic mobility.",
+    "model": "solar-pro",
+    "prompt_chars": 30255,
+    "latency_sec": 1.72,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

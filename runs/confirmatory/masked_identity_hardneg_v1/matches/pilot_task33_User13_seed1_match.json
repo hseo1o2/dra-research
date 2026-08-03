@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task33_User13_seed1",
+    "stage": "plan",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User14",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "Candidate C is the best match due to their multi-pet household (two cats and a dog), focus on eco-conscious design, and emphasis on cohesive product ecosystems that align with their caf\u00e9's aesthetic and sustainability values. The document's framing around durability, smart features, and long-term value mirrors C's rational, design-oriented consumption style. Additionally, C's role as a caf\u00e9 owner with pets as a key attraction aligns with the document's need for sleek, functional products that serve both practical and social purposes.",
+    "model": "solar-pro",
+    "prompt_chars": 23725,
+    "latency_sec": 1.67,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task33_User13_seed1",
+    "stage": "search",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on pet care products (automatic litter boxes, cat food, dog cameras) and pet-related queries, aligning with Candidate B's profile as a caf\u00e9 owner with multiple pets (two cats and a corgi). The content emphasizes product comparisons, recalls, and health considerations, reflecting B's meticulous nature and interest in quality (evident in her caf\u00e9's design and product standards). Candidate A (illustrator with one cat) and C (data analyst with one cat) lack the same depth of pet-related engagement or multi-pet household context, making B the most likely audience for this document.",
+    "model": "solar-pro",
+    "prompt_chars": 25484,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task33_User13_seed1",
+    "stage": "compress",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User18",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on evaluating pet care products (litter boxes, feeders, water fountains) with technical specifications, comparisons, and user safety\u2014aligning with Candidate C's role as a caf\u00e9 owner with multiple pets (cats and a dog) and her emphasis on quality, design, and sustainability. The document's structured, detail-oriented analysis mirrors her meticulous personality and business background, while its focus on multi-pet suitability reflects her need to cater to her own pets and caf\u00e9 customers. Candidates A (illustrator) and B (data analyst) lack the direct pet-centric context and product evaluation priorities evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 28122,
+    "latency_sec": 1.87,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task33_User13_seed1",
+    "stage": "write",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User18",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document's focus on multi-pet household management, premium product recommendations (e.g., automatic litter boxes, specialized grooming tools), and integration of aesthetic/functional design aligns with Candidate A's profile. As a caf\u00e9 owner with three pets (Doudou, Beibei, Coco) that serve as a business attraction, she prioritizes high-quality, sustainable, and design-conscious products. The report's emphasis on ergonomic solutions (e.g., Ragdoll-friendly litter box entry, noise-sensitive grooming tools) mirrors her meticulous, artistic personality and her need to balance practicality with visual appeal. Candidates B and C lack the multi-pet context and business-oriented product curation central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30133,
+    "latency_sec": 1.87,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

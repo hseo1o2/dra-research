@@ -1,0 +1,118 @@
+[
+  {
+    "run_id": "ablation_shuffled_actionable_task7_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User19",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "Candidate B (Liu Lu) is a data analyst with a background in statistics and a focus on AI/edtech-relevant skills (Python, R, data modeling). The document emphasizes AI-driven education, market research, and data-driven decision-making, aligning with B's technical expertise and analytical mindset. Unlike A (supply chain) and C (marketing), B's profession and interests in data science, certifications, and edtech-adjacent tools (Notion, Trello) directly mirror the document's focus on AI integration, quantitative research, and scalable tech solutions for education. Her preference for evidence-based decision-making and sustainability also aligns with the startup's goals.",
+    "model": "solar-pro",
+    "prompt_chars": 24690,
+    "latency_sec": 2.09,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5168,
+    "output_tokens": 158,
+    "total_tokens": 5326,
+    "api_response_id": "75861eb6-62af-44b5-a575-8a06db980ad1"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task7_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User19",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on AI adoption trends in higher education, student willingness to pay for AI tools, and EdTech pricing models. Candidate B, as a marketing manager in a foreign enterprise with an MBA in marketing and business management, aligns most closely with this content. His professional background emphasizes market trends, data-driven decision-making, and interest in innovative management models\u2014mirrored in the document's focus on AI adoption statistics, pricing strategies, and institutional budgeting. Additionally, his preference for in-depth analysis, case studies, and market trend articles (e.g., Harvard Business Review) directly aligns with the document's framing. Candidates A (data analyst) and C (supply chain manager) lack the same focus on EdTech market dynamics or higher education trends.",
+    "model": "solar-pro",
+    "prompt_chars": 26142,
+    "latency_sec": 2.1,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5645,
+    "output_tokens": 175,
+    "total_tokens": 5820,
+    "api_response_id": "f0e98209-52b5-4d4d-afd3-97f644df4a62"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task7_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User19",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on AI EdTech market research methodologies, student adoption metrics, and pricing strategies\u2014topics aligning with Candidate B's role as a data analyst. Her expertise in quantitative analysis (Python, R, SQL), preference for data-driven decision-making, and interest in market trends (evident in her LinkedIn/Zhihu activity and article-saving habits) directly mirror the document's emphasis on empirical data, surveys, and statistical tools like Van Westendorp PSM and MaxDiff. Candidates A (supply chain) and C (marketing) lack the technical-analytical focus and EdTech-specific research context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 28635,
+    "latency_sec": 1.79,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6211,
+    "output_tokens": 150,
+    "total_tokens": 6361,
+    "api_response_id": "a44cc7b3-7cbf-4938-b5fd-c11f5752224f"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task7_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User19",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate C, a marketing manager in a foreign enterprise, aligns most closely with the document's focus on market research, strategic execution, and EdTech platform launch. The document emphasizes quantitative/qualitative methodologies, pricing strategies, and digital media tactics\u2014all core to marketing roles. Candidate C's MBA in marketing, LinkedIn activity, and interest in market trends (e.g., saving HBR articles) reflect the document's analytical and strategic framing. Unlike Candidates A (data analyst) and B (supply chain), Candidate C's background in marketing, content preferences (case studies, market analysis), and use of platforms like LinkedIn and Zhihu for industry insights directly mirror the document's priorities. The document's focus on student engagement via TikTok, Discord, and influencer partnerships also aligns with Candidate C's marketing-oriented interests and travel style (exploring local markets during business trips).",
+    "model": "solar-pro",
+    "prompt_chars": 30646,
+    "latency_sec": 2.31,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6481,
+    "output_tokens": 202,
+    "total_tokens": 6683,
+    "api_response_id": "ae74117a-31a6-4d40-bbc0-a2f6dd6cb72e"
+  }
+]

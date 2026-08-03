@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task22_User15_seed1",
+    "stage": "plan",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User15",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document's author is a 26-30-year-old female freelance writer with a risk-averse financial profile, matching Candidate B's attributes (Qiu Wen: 26-30, female, freelance writer). The focus on low-risk investments, annuities, and long-term care aligns with B's practical, rational consumption style and eco-friendly preferences. The document's framing (e.g., 'variable income,' 'no corporate pension') mirrors B's freelance challenges and her parents' educational background (emphasizing stability). Candidate A (male illustrator) and C (data analyst) differ in occupation, risk tolerance, and content priorities (e.g., C's tech focus vs. the document's insurance/retirement emphasis).",
+    "model": "solar-pro",
+    "prompt_chars": 22928,
+    "latency_sec": 1.95,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task22_User15_seed1",
+    "stage": "search",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document focuses on tax-advantaged personal pension plans, health insurance options (e.g., Beijing\u666e\u60e0\u5065\u5eb7\u4fdd), and insurance products tailored for freelancers or flexible workers. Candidate A, a freelance writer in Beijing, aligns with this content due to her occupation (freelance), location (Beijing), and financial interests (eco-friendly consumption, cost-effectiveness). The document\u2019s emphasis on tax deductions, health insurance with low deductibles, and flexible employment benefits directly addresses her needs as a self-employed individual. Candidates B (data analyst in Shanghai) and C (freelance illustrator in Shanghai) lack the geographic and occupational specificity matching the Beijing-centric health insurance details and freelance-focused pension products.",
+    "model": "solar-pro",
+    "prompt_chars": 23167,
+    "latency_sec": 1.88,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task22_User15_seed1",
+    "stage": "compress",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User14",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document focuses on freelance workers' pension planning, tax advantages, and flexible insurance products, aligning with Candidate A's profile as a freelance writer. Keywords like '\u81ea\u7531\u804c\u4e1a\u8005' (freelance), '\u7a3f\u916c\u6240\u5f97' (royalty income), and '\u7075\u6d3b\u7f34\u8d39' (flexible payments) directly match A's occupation, income type, and financial needs. The document's emphasis on low-risk ESG investments and tax-saving strategies also aligns with A's eco-friendly consumption preferences and practical financial decision-making style. Candidates B (illustrator) and C (data analyst) lack the freelance writer-specific context and tax considerations central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 27367,
+    "latency_sec": 1.79,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task22_User15_seed1",
+    "stage": "write",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User15",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document focuses on a 26\u201330-year-old female freelance writer with variable income, risk-averse investment preferences, and specific healthcare/retirement needs. Candidate B (Qiu Wen) is a 26\u201330-year-old freelance writer in Beijing, shares the same risk-averse financial profile, and has a cat named 'Mo Mo' (mentioned in the document as [MASKED]). The document's emphasis on freelance income volatility, healthcare coverage, and long-term care aligns with B's practical, rational consumption habits and focus on sustainable, eco-friendly choices. Candidates A (illustrator) and C (data analyst) do not match the occupation, financial structure, or thematic priorities of the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29378,
+    "latency_sec": 1.88,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

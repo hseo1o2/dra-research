@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task48_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on structured, age-tailored art education, family interaction, and integration of cultural elements. As a marketing manager with an MBA, Liu Qiang values efficiency, planning, and combining Eastern/Western approaches\u2014mirroring the document's emphasis on a 6-month curriculum, evidence-based analysis, and incorporation of both traditional [MASKED] culture and [MASKED] artistic concepts. His family dynamics (wife as a teacher, children with specific interests, pet ownership) directly match the document's context. Additionally, his preference for quality educational resources, quarterly family trips, and interest in child development align with the document's priorities. Candidates B and C lack the same level of detail regarding art education frameworks, cross-disciplinary projects, or the pragmatic yet creative approach evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 23480,
+    "latency_sec": 2.31,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task48_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on art education's impact on child development (ages 5-8), emphasizing process art, mixed-age projects, and pedagogical frameworks like Orff Schulwerk. Candidate C, a marketing manager with an 8-year-old daughter interested in painting and a 5-year-old son, aligns perfectly. His profile highlights investment in children's education, extracurricular activities, and family bonding through creative projects. The document's emphasis on scaffolding, encouragement, and age-appropriate art methods matches C's values of quality education and practical family engagement, unlike A (focused on engineering/management) or B (nursing/pet care).",
+    "model": "solar-pro",
+    "prompt_chars": 25464,
+    "latency_sec": 1.7,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task48_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on arts education frameworks (e.g., Reggio Emilia, Orff Schulwerk) and their impact on child development, particularly for ages 5-8. Candidate B, a marketing manager with an 8-year-old daughter interested in painting/dancing and a 5-year-old son, aligns most closely. His profile highlights investment in children's education, extracurricular activities, and family trips to cultural/natural sites. The document's emphasis on pedagogical methods, parent feedback, and holistic development mirrors B's priorities in quality education and family bonding. Candidates A (engineering manager with a son focused on sports/gaming) and C (nurse with older children) lack the direct connection to early childhood arts education.",
+    "model": "solar-pro",
+    "prompt_chars": 28006,
+    "latency_sec": 1.77,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task48_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document's focus on a 6-month art education plan for an 8-year-old girl (interested in painting/dance) and 5-year-old boy (interested in building toys/sports) aligns with Candidate C's family structure (same ages, matching interests). The integration of Western art movements with traditional Jiangnan cultural elements reflects C's Jiangnan heritage and Shanghai residence. The emphasis on cross-disciplinary art frameworks (e.g., DBAE, Orff Schulwerk) matches C's MBA background in combining Eastern/Western approaches. The detailed materials list (e.g., calligraphic brushes, pet-safe zones) aligns with C's rational, quality-focused consumption habits and pet ownership. Candidates A and B lack the specific child demographics, cultural heritage, or educational investment focus evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30017,
+    "latency_sec": 2.33,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

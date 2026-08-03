@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task22_User14_seed1",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User15",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document's focus on freelance illustration, variable income, and retirement planning aligns with Candidate A's profile as a freelance illustrator with fluctuating income. The emphasis on the Yangtze River Delta region (Shanghai/Suzhou) matches A's residence and hometown. The document's framing around annuity flexibility, health insurance, and long-term care reflects A's moderate-to-conservative risk tolerance and need for financial stability as a freelancer. Candidate B (freelance writer in Beijing) and C (data analyst in Shanghai) lack the specific occupational and regional context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24127,
+    "latency_sec": 1.51,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task22_User14_seed1",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User14",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on medical insurance programs (e.g., Huhuibao), social security rules for flexible workers, and personal pension tax incentives\u2014topics directly relevant to financial planning, policy analysis, and data-driven decision-making. Candidate C, a data analyst with a background in statistics and certifications in data science, aligns most closely with this content. Her rational, research-oriented decision-making style, interest in sustainability, and focus on cost-effectiveness mirror the document\u2019s emphasis on structured benefits, coverage details, and financial frameworks. Candidates A (freelance writer) and B (illustrator) lack the analytical and policy-oriented focus evident in the document\u2019s framing.",
+    "model": "solar-pro",
+    "prompt_chars": 23489,
+    "latency_sec": 1.73,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task22_User14_seed1",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on Chinese pension systems, insurance products, and tax rules tailored for freelancers/flexible workers, emphasizing financial planning, risk management, and long-term stability. Candidate B, a data analyst in Shanghai with a rational, research-driven mindset, aligns best. Her focus on cost-effectiveness, sustainability, and independent decision-making mirrors the document's emphasis on structured financial tools (e.g., tax-efficient pensions, insurance flexibility). Unlike Candidate A (freelance writer with cultural interests) or C (illustrator prioritizing creativity), B\u2019s analytical background and practical consumption habits directly resonate with the document\u2019s technical, policy-oriented framing and its target audience of financially conscious freelancers.",
+    "model": "solar-pro",
+    "prompt_chars": 27367,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task22_User14_seed1",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User18",
+      "User15"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document focuses on a freelance illustrator's financial planning, emphasizing income volatility, tax optimization, and cash flow smoothing\u2014directly aligning with Candidate A's occupation and financial context. The report's conservative risk appetite (\u7a33\u5065\u504f\u4fdd\u5b88) and liquidity strategies mirror A's practical consumption habits and focus on quality tools. Additionally, the Shanghai residence and cultural influences (e.g., Jiangnan gardens) in A's profile resonate with the document's localized financial references (e.g., Shanghai Urban Employee Basic Pension). Candidates B (data analyst) and C (freelance writer) lack the illustrator-specific financial challenges and creative lifestyle details central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29378,
+    "latency_sec": 1.7,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

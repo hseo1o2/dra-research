@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task37_User14_seed1",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User20",
+      "User8",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User8",
+      "User20"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "Candidate A (Lin Nan) is the best match. The document emphasizes aesthetic warmth, natural materials, and functionality in high-frequency areas (living room/kitchen), aligning with A's artistic background and preference for quality art supplies/handmade crafts. The focus on natural wood/fabrics, open-plan kitchen optimization, and budget-conscious yet high-quality selections reflect A's design sensibility, creative lifestyle, and rational consumption habits. Additionally, the mention of a cat (shared by A and C) and evening creativity (shared by A and B) is more strongly tied to A's identity as a freelance illustrator whose work directly integrates home environment and artistic inspiration.",
+    "model": "solar-pro",
+    "prompt_chars": 24113,
+    "latency_sec": 1.62,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task37_User14_seed1",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User20",
+      "User8",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User14",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document focuses on interior design budgeting (\u786c\u88c5/\u8f6f\u88c5), material selection (\u4e73\u80f6\u6f06, \u6728\u7eb9\u7816), and aesthetic preferences (\u539f\u6728\u98ce, \u65e5\u5f0f, \u5976\u6cb9\u98ce), which aligns with Candidate B's profile as a freelance illustrator with a strong interest in art, design, and creative environments. B's consumption characteristics emphasize quality tools, artistic accommodations, and design-oriented purchases, mirroring the document's emphasis on cost-effective yet aesthetically conscious renovation. Additionally, B's lifestyle preferences for design-oriented spaces and his cat-inspired creative process resonate with the document's framing of interior design as a blend of functionality and artistic expression. Candidates A (investment-focused) and C (literature/creative writing) lack the direct design/material focus evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24264,
+    "latency_sec": 1.88,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task37_User14_seed1",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User20",
+      "User8",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User8",
+      "User14"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document focuses on detailed interior design, budget allocation for a specific aesthetic (\u539f\u6728\u98ce/\u65e5\u5f0f), and itemized line-item planning that aligns with Candidate C's profile as a freelance illustrator with a strong interest in artistic environments, design-oriented consumption, and creative inspiration. The emphasis on wood-grain tiles, eco-friendly materials, and aesthetic details (e.g., Nippon/Dulux paint, wabi-sabi lighting) reflects C's background in art and design, as well as his preference for quality tools and artistic accommodations. Candidate C's frequent travel for inspiration, interest in photography, and focus on integrating creativity into daily life further align with the document's framing. Candidates A (copywriter) and B (investment manager) lack the same depth of design-focused priorities and artistic sensibilities evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 28794,
+    "latency_sec": 1.94,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task37_User14_seed1",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User20",
+      "User8",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "The document emphasizes a warm, organic aesthetic (Japandi/Warm Muji), tactile materials, and natural light optimization\u2014aligning with Candidate B's creative, design-oriented sensibilities. B's background in literature/art, interest in minimalist design, and focus on aesthetic details (e.g., home decor, art merchandise) mirror the report's material and color recommendations. Unlike Candidate A (finance-focused, cost-driven) or C (freelance illustrator with international travel focus), B's urban Shanghai lifestyle, cat ownership, and preference for mid-range design-centric products directly reflect the document's budget-conscious yet stylish renovation approach. The emphasis on soft furnishings, natural textures, and curated spaces resonates with B's creative personality and consumption habits.",
+    "model": "solar-pro",
+    "prompt_chars": 30805,
+    "latency_sec": 1.8,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

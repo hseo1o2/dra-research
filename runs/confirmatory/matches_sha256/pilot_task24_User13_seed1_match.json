@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task24_User13_seed1",
+    "stage": "plan",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User17",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User13",
+      "User12"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User12",
+    "correct": false,
+    "reasoning": "Candidate C (Zhang Yu) is an AI entrepreneur in Beijing with a seaside property in Xiamen, aligning with the document's focus on coastal home insurance. His financial profile (high income, property ownership, moderate risk tolerance) matches the premium budget (\u00a53,000\u20135,000) and need for specialized coverage (earthquakes/floods). The document's emphasis on data-driven comparisons (coverage options, claims efficiency, value-added services) reflects his analytical decision-making style and tech-savvy preferences. Unlike Candidates A (nurse prioritizing family/pet needs) and B (caf\u00e9 owner focused on aesthetics/sustainability), Candidate C's priorities for cost-effectiveness, risk management, and digital efficiency directly align with the report's technical, structured framing.",
+    "model": "solar-pro",
+    "prompt_chars": 24678,
+    "latency_sec": 1.79,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task24_User13_seed1",
+    "stage": "search",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User17",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User12",
+      "User13"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": false,
+    "reasoning": "The document focuses on high-end home insurance (\u5bb6\u8d22\u9669) with specific emphasis on coverage limits (3000-5000\u5143), claim efficiency, and value-added services like home rescue. Candidate B, an AI entrepreneur in Beijing, aligns best due to his high-income status, ownership of a three-bedroom apartment, and family with a pet (cat), which necessitates comprehensive property and liability coverage. His rational, quality-focused consumption habits and interest in eco-friendly smart home devices also reflect the document's framing of premium, feature-rich insurance products. Candidates A (nurse) and C (caf\u00e9 owner) lack the financial profile and urban, tech-oriented lifestyle that directly correlate with the document's emphasis on high-coverage, digitally streamlined insurance solutions.",
+    "model": "solar-pro",
+    "prompt_chars": 24957,
+    "latency_sec": 2.18,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task24_User13_seed1",
+    "stage": "compress",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User17",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User17",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on high-end home insurance for coastal properties in Xiamen, emphasizing coverage for natural disasters (typhoons, storm surges), household belongings clauses (sub-limits, depreciation, proof of value), and premium policy features. Candidate C, a caf\u00e9 owner in Shanghai with a background in design and sustainability, aligns best due to her: (1) **high-value asset ownership** (multiple pets, caf\u00e9 property, and interest in eco-friendly products), (2) **coastal connection** (hometown Hangzhou near West Lake, frequent travel to coastal cities like Xiamen for caf\u00e9 inspiration), and (3) **preference for premium, detail-oriented services** (e.g., supporting niche brands, valuing sustainability in packaging). The document\u2019s technical depth on insurance clauses mirrors her meticulous, quality-focused decision-making style. Candidates A (tech entrepreneur in Beijing) and B (nurse in Beijing) lack the coastal property context and design/sustainability priorities central to the document\u2019s framing.",
+    "model": "solar-pro",
+    "prompt_chars": 29056,
+    "latency_sec": 2.1,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task24_User13_seed1",
+    "stage": "write",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User17",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User12",
+      "User13"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": false,
+    "reasoning": "The document focuses on high-end home insurance for a coastal property in Xiamen, emphasizing technical details like coverage limits, deductibles, and risk mitigation strategies. Candidate B, an AI entrepreneur, aligns with this framing due to his data-driven decision-making style, interest in cost-effectiveness, and preference for high-quality, brand-recommended products. The document's emphasis on financial planning, risk assessment, and premium optimization matches B's background in tech entrepreneurship and his moderate risk appetite. Unlike Candidate A (a nurse prioritizing family and pet care) or Candidate C (a caf\u00e9 owner focused on aesthetics and sustainability), B's analytical mindset and financial acumen directly align with the document's technical, insurance-focused perspective.",
+    "model": "solar-pro",
+    "prompt_chars": 28873,
+    "latency_sec": 1.81,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

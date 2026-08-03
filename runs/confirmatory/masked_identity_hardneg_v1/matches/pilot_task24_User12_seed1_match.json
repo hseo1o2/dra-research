@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task24_User12_seed1",
+    "stage": "plan",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User10",
+      "User12"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on practical, budget-conscious analysis of home insurance for a seaside residence, emphasizing coverage details, cost comparisons, and claims efficiency. Candidate B, a pragmatic marketing manager with a family, aligns best: his rational decision-making, focus on cost-effectiveness, and emphasis on family safety (e.g., children, pet, and household goods) mirror the document's priorities. Unlike Candidate A (creative but less detail-oriented) or Candidate C (tech-focused entrepreneur with higher-risk tolerance), B's structured approach to budgeting, insurance clauses, and service guarantees matches the document's formal, analytical tone and emphasis on tangible risks (floods, theft) relevant to his family's coastal property.",
+    "model": "solar-pro",
+    "prompt_chars": 26083,
+    "latency_sec": 2.12,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task24_User12_seed1",
+    "stage": "search",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User12",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on technical details of household property insurance (\u5bb6\u8d22\u9669), including coverage limits, deductibles, third-party liability, and specific scenarios like typhoon damage or pipe bursts. Candidate B, an AI entrepreneur with a technical background, aligns with the document's emphasis on structured, data-driven analysis (e.g., coverage parameters, policy exclusions). His rational decision-making style, interest in cost-effectiveness, and family-oriented priorities (e.g., protecting assets like his Beijing apartment) make him the most likely user seeking such detailed insurance information. Candidates A (creative copywriter) and C (marketing manager) prioritize artistic or business-oriented content, which is less directly relevant to the document's technical framing.",
+    "model": "solar-pro",
+    "prompt_chars": 26279,
+    "latency_sec": 1.77,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task24_User12_seed1",
+    "stage": "compress",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User20",
+      "User12"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on home property insurance (\u5bb6\u8d22\u9669) with detailed coverage for natural disasters (typhoons, heavy rain), indoor property protection, and third-party liability\u2014priorities aligning with Candidate A's family-oriented profile. As a married manager with children and a home in Shanghai, A's emphasis on quality of life, cost-effectiveness, and family safety (e.g., children's education, household management) directly matches the document's focus on insuring family assets, indoor property, and disaster risks. Candidate B (single copywriter) and C (tech entrepreneur) lack the same family-centric spatial and financial responsibilities (e.g., home structure, children's safety, third-party liability) central to the document. A's pragmatic decision-making and focus on durable household investments further align with the insurance product's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 30615,
+    "latency_sec": 1.93,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task24_User12_seed1",
+    "stage": "write",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User10",
+      "User12"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on high-value property insurance for a coastal residence in Xiamen, emphasizing technical details like coverage limits, risk assessment, and cost-benefit analysis of premium plans. Candidate C, an AI entrepreneur with a technical background (Master's in Computer Science, Tsinghua University), aligns with the document's analytical tone, data-driven approach, and interest in cost-effectiveness. His profile highlights rational decision-making, investment in high-quality tech products, and a focus on risk management\u2014mirroring the report's emphasis on insurance valuation, deductibles, and long-term financial planning. Unlike Candidates A (creative copywriter) and B (marketing manager), Candidate C's technical expertise and entrepreneurial mindset align with the document's structured, detail-oriented analysis of insurance parameters and financial safeguards.",
+    "model": "solar-pro",
+    "prompt_chars": 31659,
+    "latency_sec": 2.18,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

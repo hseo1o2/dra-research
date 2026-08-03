@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task43_User10_seed1",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on legal analysis of a non-compete clause for a marketing manager in a foreign enterprise, emphasizing labor law, compensation standards, and judicial precedents. Candidate A is explicitly described as a 'Manager of Marketing Department in a Foreign Enterprise' with an MBA in marketing and business management, aligning directly with the document's context. The document's technical legal focus and emphasis on strategic career protection also match Candidate A's pragmatic, data-driven decision-making style and interest in business management case studies. Candidates B (technical director in manufacturing) and C (state-owned enterprise manager) lack the marketing and foreign enterprise background central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 25157,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task43_User10_seed1",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on labor law, non-compete clauses, and commercial secrets, particularly referencing a Shanghai court case (2020)\u6caa02\u6c11\u7ec83126\u53f7 involving a market manager. Candidate C, a marketing manager in a foreign enterprise based in Shanghai, aligns most closely with this content. His role, location, and legal context (e.g., non-compete agreements, commercial secrets) directly match the document's focus. Candidates A (state-owned enterprise manager in Harbin) and B (technical director in Suzhou) lack the same occupational and geographical relevance.",
+    "model": "solar-pro",
+    "prompt_chars": 25176,
+    "latency_sec": 2.09,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task43_User10_seed1",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on legal analysis of non-compete clauses under Chinese labor law, specifically referencing Shanghai High Court interpretations and market department manager obligations. Candidate A is a Marketing Department Manager in Shanghai with an MBA, aligning directly with the document's focus on legal nuances relevant to his role. The document's emphasis on commercial secrets, judicial interpretations, and compensation standards reflects the practical legal concerns of a corporate manager in Shanghai, matching Candidate A's professional context and location. Candidates B (state-owned enterprise manager in Harbin) and C (technical director in manufacturing) lack the specific occupational and geographic relevance to the Shanghai-based labor law analysis centered on marketing roles.",
+    "model": "solar-pro",
+    "prompt_chars": 29375,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task43_User10_seed1",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on legal analysis of non-compete agreements for departing marketing department managers in foreign enterprises, emphasizing Shanghai-based judicial practices, commercial secrets, and employee rights. Candidate A is a 30-35-year-old male marketing manager in a foreign enterprise (matching the document's target audience), based in Shanghai, with an MBA in marketing and business management. His profile aligns with the document's focus on legal protections for mid-level marketing roles, commercial secrecy, and compliance with Chinese labor laws. Candidates B (technical director in manufacturing) and C (state-owned enterprise manager) lack the direct occupational and regional relevance to the document's content.",
+    "model": "solar-pro",
+    "prompt_chars": 30963,
+    "latency_sec": 2.11,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

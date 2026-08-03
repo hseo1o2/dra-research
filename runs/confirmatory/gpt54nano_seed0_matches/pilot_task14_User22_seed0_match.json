@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task14_User22_seed0",
+    "stage": "plan",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "The brief asks for a beginner-friendly, practical 12-week marathon plan with flexible parameters, warm-up/cool-down, and manageable strength/mobility\u2014framing that matches a pragmatic, detail-oriented user who prefers actionable, cost-effective guidance. Candidate A\u2019s routine (wakes 6:00, sleeps 10:00), interest in running/fitness without specialized gear, and preference for structured, practical plans align closely with the document\u2019s tone and constraints.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 24457,
+    "latency_sec": 1.6,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User22_seed0",
+    "stage": "search",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "The excerpt focuses on masters runners (age 50\u201355) and addresses lower back pain management via biomechanics, core stability, and specific warm-up/cool-down routines\u2014topics that align with a health/fitness self-management mindset. Candidate C is a 50\u201355 technical director who runs regularly and is interested in practical, evidence-based guidance, making him the best match for this training-and-injury-prevention framing.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 26822,
+    "latency_sec": 1.72,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User22_seed0",
+    "stage": "compress",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "The excerpt is a highly practical, physiology- and load-management\u2013focused marathon training plan for a masters runner aged 50\u201355, emphasizing recovery kinetics, tendon adaptation, and strict volume caps\u2014an analytical, engineering-minded framing. Candidate B is 50\u201355, works in technical manufacturing leadership, and shows a detail-oriented, action/pragmatic approach to health and training (runs, uses equipment, values structured guidance), aligning best with the document\u2019s technical coaching tone.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 29375,
+    "latency_sec": 1.59,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User22_seed0",
+    "stage": "write",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "The excerpt is written for a 50\u201355 \u201cmasters runner\u201d with a history of mild lumbar strain, emphasizing injury prevention, spinal biomechanics, and structured recovery\u2014matching the age and health/fitness framing of Candidate C. It also reflects a technical, mechanism-focused tone (biomechanics, VO2 max, tendon adaptation, periodization) and a practical, routine-based lifestyle (early wake, fixed bedtime, running 3x/week), which aligns more closely with Candidate C than the younger Candidate A or the 40\u201345 Candidate B.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 31386,
+    "latency_sec": 1.72,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

@@ -1,0 +1,499 @@
+{
+  "capture_completeness": {
+    "compressed_research_per_topic": true,
+    "final_report": true,
+    "four_required_artifacts": true,
+    "research_brief": true,
+    "research_topics_ordered": true,
+    "search_query_and_source": true
+  },
+  "compressed_research": [
+    {
+      "compressed_research": "[{'type': 'text', 'text': \"**List of Queries and Tool Calls Made**\\n\\n1. `serper_search`: `竞业限制 浙江省 高级人民法院 审理指南 30% 补偿金 算法工程师`\\n2. `serper_search`: `竞业限制 算法工程师 [MASKED] 司法判例 浙江 [MASKED]. `serper_search`: `最高人民法院 劳动争议 解释一 竞业限制 36条 38条 39条`\\n4. `serper_search`: `竞业限制 未支付 3个月 解除 浙江 杭州 裁判规则`\\n5. `serper_search`: `浙江省高级人民法院 劳动争议 竞业限制 意见 指南 补偿金`\\n6. `serper_search`: `杭州 竞业限制 算法工程师 司法判例 审查 [MASKED]. `serper_search`: `最高人民法院关于审理劳动争议案件适用法律问题的解释（一） 第三十六条 第三十七条 第三十八条 第三十九条`\\n8. `serper_search`: `竞业限制 实际经营范围 登记经营范围 指导案例190号 浙江法院`\\n9. `serper_search`: `浙江省技术秘密保护办法 竞业限制`\\n10. `serper_search`: `杭州 中院 竞业限制 算法 判例`\\n\\n---\\n\\n**Fully Comprehensive Findings**\\n\\n### 1. [MASKED] Conditions\\n\\n#### Statutory Subject Scope\\nUnder Article 24 of the PRC Labor Contract Law (*中华人民共和国劳动合同法* 第二十四条), non-compete obligations apply strictly to three statutory categories of [MASKED]. Senior Management (*高级管理人员*);\\n2. Senior Technical Personnel (*高级技术人员*); and\\n3. Other Persons with [MASKED] (*其他负有保密义务的人员*).\\n\\nIn judicial practice, for software engineers, [MASKED] researchers, and recommendation algorithm engineers:\\n- **Senior Technical Personnel / Confidential Personnel Status**: Courts examine whether the employee has actually accessed, mastered, or possessed core technical trade secrets or proprietary algorithms of the employer, rather than relying solely on job titles [5]. Courts review whether the employer has established protectable trade secrets, and whether the employee possessed actual or potential access to these secrets during their employment [5].\\n- **AI & Recommendation Algorithm Engineers**: Key parameters include whether the engineer participated in proprietary core model training, core algorithm development, user profiling architecture, proprietary commercial monetization models, or source code maintenance. If an engineer is merely engaged in routine baseline coding or non-confidential operational tasks using publicly available open-source tools without exposure to proprietary core architecture or datasets, courts may determine that the subject is not a proper subject for non-compete obligations [5].\\n\\n#### Trade Secret Nexus vs. [MASKED] **Core Principle**: The core foundation of a non-compete agreement is to protect the employer's trade secrets [4]. Where an employer does not possess valid trade secrets, or where the employee has not accessed trade secrets, a non-compete agreement lacks factual and legal foundation [4].\\n- **General Technical Skills/Experience (*通用职业技能*)**: Judicial practice distinguishes between proprietary trade secrets and an engineer’s general professional skills, coding expertise, and general domain knowledge accumulated throughout their career. General [MASKED], publicly accessible mathematical models, standard open-source framework applications, and general industry skills cannot be claimed by employers as exclusive trade secrets to restrict standard labor mobility [4], [5].\\n\\n#### [MASKED], and Time Limits\\n- **Time Limits**: Under Article 24 of the PRC Labor Contract Law and local provisions such as Article 14 of the *Zhejiang Provincial Regulations on [MASKED] (*浙江省技术秘密保护办法* 第十四条), the statutory maximum term for post-employment non-compete obligations is **two (2) years** [9]. If no duration is explicitly specified in the contract, the statutory upper cap is applied as 2 years [9].\\n- **[MASKED]**: Courts review whether an actual competitive relationship exists between the former employer and the new employer. Under **SPC Guiding Case No. 190** (*最高人民法院指导性案例190号*), courts determine the competitive relationship based on the **actual operating business scope** (*实际经营范围*) and core functional overlap, rather than merely relying on the registered business scope (*登记经营范围*) listed in business licenses [6].\\n\\n---\\n\\n### 2. Compensation Obligations (竞业限制补偿金)\\n\\n#### SPC Statutory Standards (Interpretation I on [MASKED] Disputes)\\nUnder Article 36 of the *Supreme People's Court Interpretation (I) on Several Issues Concerning the Application of Law in Hearing Labor Dispute Cases* (*最高人民法院关于审理劳动争议案件适用法律问题的解释（一）* 第三十六条, former [MASKED] Article 6):\\n- Where a non-compete agreement is agreed upon without specifying non-compete compensation, and the employee has performed non-compete obligations, the employee is entitled to claim monthly economic compensation [1].\\n- **Statutory Standard**: The monthly compensation shall be **30% of the employee's average monthly wage over the 12 months prior to labor contract termination or dissolution**, or the **local minimum wage**, whichever is higher [1], [2].\\n- If the agreement explicitly stipulates a compensation rate higher than the 30% statutory baseline, the contractual agreement governs [1]. In certain practice guidelines, for non-compete periods exceeding 1 year, guidelines suggest monthly compensation should generally not be lower than 50% of the prior 12-month average wage [3].\\n\\n#### [MASKED] **Payment Structure**: Under Article 23 of the PRC Labor Contract Law, compensation is mandated to be paid on a monthly basis during the post-employment non-compete period.\\n- **Zhejiang High Court Guidance**: According to the *Answers of [MASKED] on Several Difficult Issues in [MASKED]* (*浙江省高级人民法院民一庭关于审理劳动争议纠纷案件若干疑难问题的解答*), while monthly post-employment payment is standard, if an employer pays the non-compete compensation as a lump-sum upon termination or dissolution of the labor contract, such payment structure is addressed under local labor dispute adjudication standards [8].\\n\\n---\\n\\n### 3. [MASKED] Remedies\\n\\n#### Employer Non-Payment (3-Month Rule)\\nUnder Article 38 of the *SPC Judicial Interpretation (I) on Labor Disputes* (*最高人民法院关于审理劳动争议案件适用法律问题的解释（一）* 第三十八条):\\n- If the employer fails to pay non-compete economic compensation for **three (3) consecutive or cumulative months** attributable to the employer's fault (*因用人单位的原因*), the employee has the legal right to request the dissolution/termination of the non-compete agreement [1].\\n\\n#### [MASKED] **Validity During Unpaid Period**: Under current [MASKED] rules and judicial guidance, an employer's failure to pay compensation or non-payment does not automatically make the non-compete clause null and void from the outset [7]. If the employee has not formally exercised their right to dissolve the agreement or requested judicial termination, the employer cannot claim exemption from paying compensation, nor can it automatically escape obligations without court review [7].\\n- **Employee Remedies Procedure**:\\n  1. **Formal Notice / Labor Arbitration**: To terminate non-compete obligations, the employee must formally issue notice or initiate labor arbitration/litigation to exercise the statutory right of dissolution based on the 3-month non-payment rule [1], [7].\\n  2. **[MASKED] Claim**: The employee retains the right to claim all accrued unpaid non-compete compensation for the period during which the employee actually observed non-compete obligations prior to dissolution [1].\\n\\n---\\n\\n### 4. Mechanisms to Shorten, Terminate, or [MASKED] Obligations\\n\\n#### [MASKED] Right\\nUnder Article 39 of the *SPC Judicial Interpretation (I) on Labor Disputes* (*最高人民法院关于审理劳动争议案件适用法律问题的解释（一）* 第三十九条):\\n- The employer holds the right to unilaterally terminate the non-compete agreement during the non-compete period.\\n- **Additional 3-Month Compensation Obligation**: Upon such unilateral termination by the employer, the employee is entitled to request the employer to pay an **additional three (3) months of non-compete economic compensation** [1].\\n\\n#### Ground for Invalidation or Defense\\n1. **Lack of Trade Secrets**: If the employer lacks legitimate commercial secrets or the employee had no contact with confidential trade secrets (possessing only general industry software engineering/algorithm skills), the obligation lacks factual basis [4], [5].\\n2. **Lack of Actual Competitive Relationship**: In accordance with Guiding Case No. 190, if the new employer's actual business activities, target markets, and products do not overlap or compete with the former employer's actual business activities, the non-compete obligation is unenforceable [6].\\n3. **[MASKED]: Excessive liquidating damages that are severely disproportionate to the actual non-compete compensation paid can be reduced or adjusted by labor dispute arbitration committees or courts in [MASKED]/[MASKED] upon request.\\n\\n---\\n\\n**List of All Relevant Sources (with citations in the report)**\\n\\n[1] 竞业限制实务系列文章(二) ─ [MASKED]） ([MASKED]): https://www.leetsai.com/%E7%AB%9E%E4%B8%9A%E9%99%90%E5%88%B6%E5%AE%9E%E5%8A%A1%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E4%BA%8C-%E2%94%80-%E7%AB%9E%E4%B8%9A%E9%99%90%E5%88%B6%E8%A1%A5%E5%81%BF%E9%87%91%E7%9A%84%E6%A0%87%E5%87%86%E5%8F%8A%E6%94%AF%E4%BB%98%E9%97%AE%E9%A2%98%EF%BC%88%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%EF%BC%89\\n[2] 劳动法系列| 第274期：竞业限制补偿不能低于30%吗？ (Guantao Law Firm): https://www.guantao.com/page3163\\n[3] 竞业限制补偿金适用问题的实务解析 (Sundial Law Firm): https://www.sundiallawfirm.com/viewpoint/1429.html\\n[4] 竞业限制案件裁判思路解析——基于法律规定和北上广三地司法实践 ([MASKED]): https://www.tylaw.com.cn/Content/202602271409077452.html\\n[5] “其他负有保密义务”的竞业限制主体适格问题之司法实务分析 ([MASKED]): http://www.joint-win.com/Cn/new/news/id/1111/catid/39.html\\n[6] 竞业限制中如何认定竞业范围——以最高人民法院190号指导案例为例 ([MASKED]): https://www.kangdalawyers.com/newsdetail_3053.html\\n[7] 最高法发布劳动争议司法解释（二）和典型案例 ([MASKED] of the PRC Official Site): https://www.court.gov.cn/fabu/xiangqing/472691.html\\n[8] 浙江省高级人民法院民一庭关于审理劳动争议纠纷案件若干疑难问题的解答 (Lishui Intermediate People's Court [MASKED]): https://jy.lsfy.gov.cn/splc/sfwj/2024-05-10/24358.html\\n[9] 商业秘密保护专题| 我的《竞业限制协议》到底有效吗？ ([MASKED] on Zhejiang Regulations on Protection of Technical Secrets): https://www.lexology.com/library/detail.aspx?g=31a2887a-4e99-44cc-ac9f-7d6cea6d57a7\", 'index': 0, 'extras': {'signature': 'Erk8CrY8ARFNMg+do4igkpijzcv5AXzPYhuMNxZvGcqB2PeDUGIc/HHsHnU8qffiyW1+nHbEiN+fHc9IitKVxhItnNvPbn9VbrbKIcpvDq2Qo+Dbt6XekVFO+16rNe9UzFYGDruwlAnOprNfdkX/+euaDSCldjYJXROm+VWN0IfCxL7I2XiP40ws+SZaDftV2vHSq9Me0xJlA8KATf5Raj72VGRcXKMjIXoHVOcf9GL0vKOl5c1wjQEVpgQeqc6aNo+5lwyvf33VRHoH0PARSiZR+gptXKUrwiZNvQisH0jpWmmvjP3B1U2KcUadfbvDEWONHxlkaad/OeRSzAZEKGdR59w/M4ZbaPsjisUKhGmWb9JLR4nSucblFMeSiY9hP+B/K3S1ynGy5QpYPfQUNnddDk+VpgPxZFosth+Il6b8zP3lIZ6dR2qhf8tebAi02+Vg1EBYBHN3Igk89Xbb7vvbGakf67wRrVu7zOLjigJDxo5700hj5dnk+fO7XOvYfWr8dqJOozDX1eStZ4qkmso9+pzqqqW5/CKBF4Rc7dbDvGXv0gXk5i0CoaMlRoXAuYhU3S94ZgrSqQroLv4YMl4ZJH5L4BucOzazWXPunH7FeTGm+v5tzbUo2EU8cV/uxgUMxXU0t/GfX9f7m4Is85y7xrDA3dokgbC66MVeX76XkcbFskIHZJzqxj8q99ZPDg5rBU70K6n3NdRFtm2cTNQ+ec4RSP0E7U9p9ZmkN2iTpda+MbrmHfx9BeElrutFMI3A5A99wgn0Cgmybn1xG7I1ETh9j01TvHjxqh66zrjDo+Rsz+06igq0ElPdAlI0VpkSTwUbWGU+ACLy9Un1WW8m3M37n/jh31yDly3QDmXNUg8phPHL4W8xBqBJH9ZSKkPEECZaKagnXrzyfoUPVBH12X1+6vfqoxB64Iri0xbPffi+HQkMWzxcMosptYI9UA4ByqLCnNtDC0LXyduEKe/vbYYelYosT7QCa23913DSa9qRlCh4oxKi1HImxuH9Ip9+fkOBYBZn5N6huR+z6BUL6L+qStiS1kQFH2z/qdsuRByMuSlt4qDqMxpELo6KQTV5hpUbzVDQRwgugd7kVqj18uRqh/xO/3B6Wb2VQ4LGncbpFa51kmGz1TQD2kiU8filqw18vY1d8XYES3PGdC1Dnria4Ptv/uY1cUfCD5wsAJavOGL4RHk9tjsa4fISRZ2M+b6ugy24Vb31HK+uZNxgosrHDtTysNFMVg5M2z4gghhvu0a++LpT89FApmTSOFeHtl3JKJnP/QdfaO2QZ7uRUpYpsknENkvHir4GcC/CUMU6dE9qq7ZfM/Pqt4da+TYLVON/e35zGdTSl6uVos3ZmWy39F23UvcEBi17qOMOwUIw8naamRg6emc+xenJlDbGWoQNb4Cfge53dGSuHqmRXNFIGDXJ7F+Z2U/Nlh32fMPjNxZrnK9LMrKun43uAehZCg7JdneZws6njhICr1Yojftyi3lK071j84tITF8kyn7J5QrYLxA6FMxJcHtAp3ioOUTiBFmOl5FqI32vO+Vlw2pUygwZO/NMMsNfEW/AoOyzCXlgvEU6jWKXolJw+Gc5ThA8wsUpFI/rWVdxV8NkOgWTLLgiLVg2cYO4iOCR//hQDt9B4pMrG0wScpW4pi6AGcUFDdBl2cbscygxSeBkgicwVtaZGfsZ0cmJOKWizAShXY3NCC+48P3rtLQU5QSdl165XO6abi7ihbeCaUeoKaJPJ84511P828REUdUPkyKI23H+FdeHRgXVMwpwdohwvfFVfGFuTpbdBmBicfF4KUd1lC0GQOumVvd12YJNfOWJ1xIgTwe9i2n5b/[MASKED]/[MASKED]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'}}]",
+      "topic_id": "topic_001",
+      "topic_text": "Legal analysis of Non-Compete Agreements (竞业限制) under PRC Labor Law, Supreme People's Court Judicial Interpretations, and Zhejiang Province / Hangzhou Local Judicial Regulations and Practice, specifically for AI and Recommendation Algorithm Engineers. \n\nPlease research in detail:\n1. Enforceability & Applicability Conditions:\n   - Statutory subject scope under Article 24 of the PRC Labor Contract Law (senior management, senior technical personnel, other persons with confidentiality obligations - 高级管理人员、高级技术人员和其他负有保密义务的人员). How courts define \"senior technical personnel\" or \"confidential personnel\" for software/algorithm engineers.\n   - Requirement of Trade Secrets (商业秘密) or confidential information nexus. What constitutes trade secrets in AI/algorithm context vs general technical skills/experience (通用职业技能).\n   - Validity of non-compete scope, geographic restrictions, and time limits (max 2 years statutory cap).\n\n2. Compensation Obligations (竞业限制补偿金):\n   - Statutory default compensation standards under SPC Judicial Interpretation on Labor Disputes (Interpretation I / Interpretation IV - Article 36/38: 30% of average monthly wage prior to termination or local minimum wage, whichever is higher, unless contract specifies higher).\n   - Zhejiang Province local standards and judicial guidance (Zhejiang Province Labor Dispute Arbitration/Judicial Guidelines / 浙江省劳动争议审理指南/意见). Does Zhejiang/Hangzhou have specific rules or precedents regarding compensation calculations?\n   - Payment timing, frequency (monthly post-employment payment), and employer obligations.\n\n3. Non-Payment & Employee Remedies:\n   - Article 38 of SPC Judicial Interpretation (Interpretation I on Labor Disputes) regarding employer's failure to pay non-compete compensation for three (3) consecutive or cumulative months attributable to the employer.\n   - Procedure for employee to terminate/dissolve the non-compete agreement (formal written notice/催告 vs immediate termination request, labor arbitration claim).\n   - Employee's right to request accrued unpaid compensation plus potential damages/interest.\n\n4. Mechanisms to Shorten, Terminate, or Invalidate Non-Compete Obligations:\n   - Employer's unilateral termination right and requirement to pay additional 3 months of compensation (Article 39 of SPC Judicial Interpretation).\n   - Invalidity due to lack of trade secrets, lack of actual competitive relationship between companies, or failure of employer to pay compensation.\n   - Negotiation strategies, contract defects (e.g., penalty disproportionately high, scope too broad, no designated compensation amount), and labor arbitration/court procedures in Hangzhou/Zhejiang."
+    },
+    {
+      "compressed_research": "[{'type': 'text', 'text': '**List of Queries and Tool Calls Made**\\n\\n1. `serper_search`: `\"竞业限制\" \"算法工程师\" 浙江 杭州 法院 判决书`\\n2. `serper_search`: `\"竞业限制\" \"阿里\" \"网易\" 杭州市中级人民法院 判决书`\\n3. `serper_search`: `\"竞业限制\" 程序员 实际竞争关系 营业执照 杭州 判决书`\\n4. `serper_search`: `浙江省高级人民法院 竞业限制 指导意见 审判指南 算法工程师`\\n5. `serper_search`: `盖坤 阿里巴巴 竞业限制 [MASKED]. `serper_search`: `网易 竞业限制 滨江区人民法院 判决书 算法工程师`\\n7. `serper_search`: `竞业限制 实际竞争关系 营业执照 杭州市中级人民法院 [MASKED]. `serper_search`: `竞业限制 违约金 酌减 软件工程师 杭州 余杭区人民法院 案例`\\n9. `serper_search`: `阿里巴巴 盖坤 竞业限制 判决书`\\n10. `serper_search`: `杭州市中级人民法院 竞业限制 实际竞争关系`\\n11. `serper_search`: `余杭法院 竞业限制 算法工程师`\\n12. `serper_search`: `滨江法院 竞业限制 违约金 [MASKED]. `serper_search`: `Alibaba non compete court judgment [MASKED]. `serper_search`: `Zhejiang High Court non-compete tech engineer`\\n15. `serper_search`: `竞业限制 杭州 [MASKED]. `serper_search`: `竞业限制 阿里巴巴 判决书`\\n17. `think_tool`: Reflection on specific case names ([MASKED], [MASKED], [MASKED]) and [MASKED]/[MASKED] court search strategies.\\n\\n---\\n\\n**Fully Comprehensive Findings**\\n\\n### 1. Actual Cases and Legal Rulings Involving Algorithm / Software Engineers and Major Internet / Tech Companies\\n\\n#### A. High-Profile Tech/Algorithm Non-Compete Disputes (Alibaba, Tencent, [MASKED], [MASKED], Meituan)\\n* **Alibaba vs. [MASKED] (盖坤) [MASKED] [5]:**\\n  * **Facts & Holding:** In a landmark non-compete lawsuit filed by [MASKED] against former employee/algorithm expert [MASKED] (盖坤), the court delivered a ruling based on submitted evidence and labor arbitration results. The court ordered [MASKED] to pay [MASKED] liquidated damages for breach of non-compete obligations amounting to RMB 2,076,816.87 within seven days of the judgment taking effect, while rejecting [MASKED]'s remaining claims.\\n  * **Contextual Cases:** Similar high-profile tech non-compete disputes in the [MASKED]/algorithm domain involve key industry personnel such as [MASKED] (康泽宇) and [MASKED] (周畅) [5].\\n\\n* **Tencent Non-Compete Enforcement Against Former Employee [4]:**\\n  * **Facts & Holding:** Tencent initiated a lawsuit against a former employee for violating a non-compete agreement. The court ruled in favor of [MASKED], ordering the former employee to pay over RMB 2,000,000 in liquidated damages/compensation.\\n  * **[MASKED]:** The non-compete period ran from August 29, 2020 to August 28, 2021. The non-compete scope defined competing entities to include, but not be limited to: Alibaba, [MASKED], Qihoo 360, [MASKED] ([MASKED]), and [MASKED] [4].\\n\\n#### [MASKED] ([MASKED]) Labor Dispute Cases and White Paper\\n* **Hangzhou Intermediate People\\'s Court Labor Dispute White Paper Cases [1, 3]:**\\n  * **Case Involving Algorithm Engineer ([MASKED]):** [MASKED] entered an intelligent technology company and sequentially served as an [MASKED] and Head of [MASKED] [1, 3]. During employment, company management issued notices in work groups stating normal working hours were 9:30 AM to 10:30 PM [3]. Subsequent disputes arose covering non-compete obligations, job transfer, and salary reductions [1, 3].\\n  * **Robotics Company vs. [MASKED]:** A robotics company applied for arbitration requesting [MASKED] to return paid non-compete compensation and pay liquidated damages for violating non-compete obligations [1].\\n\\n#### C. Downward Expansion of Non-Compete Agreements in [MASKED] Companies\\n* Non-compete agreements across major technology companies (including [MASKED], [MASKED], and [MASKED]) have expanded down from senior management to ordinary employees and interns [6].\\n* Employees on platforms such as [MASKED] reported that companies like [MASKED] and [MASKED] enforce non-compete restrictions during key career transition points [6].\\n\\n---\\n\\n### 2. [MASKED] in Non-Compete Disputes\\n\\n* **Statutory Target Scope and Duration [2]:**\\n  * According to relevant laws and regulations, non-compete restrictions primarily target three categories of personnel: senior management (高管), senior technical personnel (高级技术人员), and other personnel with confidentiality obligations (其他负有保密义务的人员) [2].\\n  * Non-compete agreements restrict former employees from working for competitors producing similar products/services or operating competing businesses independently post-employment [2].\\n  * The statutory maximum non-compete period is **two years** [2].\\n  * During the non-compete period, the employer is legally obligated to pay financial compensation to the former employee on a monthly basis [2].\\n\\n---\\n\\n**List of All Relevant Sources (with citations in the report)**\\n\\n[1] 杭州中院发布劳动争议典型案例(涉竞业限制、学历造假: https://www.shui5.cn/article/92/1554.html\\n[2] 离职被索赔180万，不签协议就别入职！: https://h5.ifeng.com/c/vivoArticle/v002R3LtrZ2SQSdZCWm1NS--S0Xa9QWB7s1Q3yzPP4RNQ4dE__?isNews=1&showComments=0\\n[3] AI浪潮来袭如何保护劳动者权益？杭州中院发布劳动争议白皮书: https://view.inews.qq.com/a/20260428A07Q8U00\\n[4] 腾讯起诉前员工竞业限制，法院判赔两百余万元| 游戏电竞周报: https://zhuanlan.zhihu.com/p/652314082\\n[5] 参考盖坤康泽宇的竞业官司看看周畅败诉要赔多少钱: https://www.163.com/dy/article/JIV8U1KK0553UCUX.html\\n[6] 被竞业协议锁住的大厂青年 - 阿里云创新中心: [MASKED]', 'index': 0, 'extras': {'signature': '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'}}]",
+      "topic_id": "topic_002",
+      "topic_text": "Judicial Precedents and Court Cases in Zhejiang Province and Hangzhou (including Zhejiang High People's Court, Hangzhou Intermediate People's Court, Yuhang District Court, Binjiang District Court) and major PRC courts involving Non-Compete (竞业限制) disputes for Software Engineers, AI Engineers, Recommendation Algorithm Engineers, and Tech/Internet Companies (e.g. Alibaba, NetEase, ByteDance, Pinduoduo, Tencent, Baidu, Meituan).\n\nPlease research in detail:\n1. Specific actual cases involving algorithm/software engineers in Hangzhou/Zhejiang courts:\n   - Case facts, legal issues, court holdings, and practical outcomes.\n   - Cases where the court invalidated or restricted the non-compete obligation because the employee was deemed a non-confidential junior/mid-level engineer or because the employer failed to prove actual trade secrets/competitive nexus.\n   - Cases where courts held non-compete clauses valid and enforceable, including standard for calculating liquidated damages (违约金) and whether courts adjusted/lowered disproportionate penalties.\n\n2. How Zhejiang/Hangzhou courts balance the protection of employer trade secrets with the employee's constitutional/statutory right to work / employment (劳动权):\n   - Standard of proof for \"competitive business relationship\" (实际竞争关系) between former employer and new employer (e.g. operational scope on business license vs actual overlapping business/products).\n   - Differentiation between employee's personal knowledge/skills/experience (个人技能与经验) and proprietary algorithmic trade secrets (算法与商业秘密).\n\n3. Cases involving termination of non-compete due to non-payment of compensation for 3 months or procedural defects.\n\nProvide detailed case names/case numbers where available, court logic, and actionable insights for an Algorithm Engineer facing a 1-year non-compete in Hangzhou."
+    }
+  ],
+  "execution_config": {
+    "generation_seed": 1,
+    "gt_userid": "User11",
+    "manifest_sha256": "8110d1b3656fa5ba021f7b1bd053a92a11922c4efecd8d43d552e80cda4ad2a9",
+    "manifest_version": "1.1",
+    "max_retries": 3,
+    "models": {
+      "compression_model": "google_genai:gemini-3.6-flash",
+      "final_report_model": "google_genai:gemini-3.6-flash",
+      "max_retries": 3,
+      "requests_per_minute": 4,
+      "research_model": "google_genai:gemini-3.6-flash",
+      "retry_initial_delay_sec": 15,
+      "service_tier": "flex",
+      "summarization_model": "google_genai:gemini-3.6-flash",
+      "timeout_sec": 1500
+    },
+    "prompt_sha256": "25ce97174de709e9745b5baa4a77187cc904d3565210799ac2a5daacd15c09c7",
+    "search": {
+      "global_hard_stop": 2400,
+      "provider": "serper_via_tavily_slot",
+      "report_query_cap": 7,
+      "unique_url_cap": 15
+    },
+    "service_tier": "flex",
+    "source_query_id": 212,
+    "split": "confirmatory",
+    "taskid": 43,
+    "timeout_sec": 1500
+  },
+  "execution_error": null,
+  "final_report": "# Legal Analysis of [MASKED] in [MASKED]\n\nFor [MASKED] and recommendation algorithm engineers in [MASKED], navigating post-employment non-compete covenants requires balancing contractual obligations with the fundamental statutory right to employment (*劳动权*). Under the legal framework of [MASKED] (PRC)—governed by the *PRC Labor Contract Law*, applicable [MASKED] (SPC) judicial interpretations, regulations in [MASKED], and local judicial practice in [MASKED] courts—non-compete clauses are strictly regulated. \n\nThis legal analysis addresses enforceability standards, compensation rules, employee remedies upon non-payment, mechanisms for early termination or scope reduction, and practical precedents from [MASKED] and broader tech industry litigation.\n\n---\n\n## 1. Statutory Conditions for Enforceability and Applicability\n\n### Statutory Subject Scope\nUnder Article 24 of the *PRC Labor Contract Law* (*中华人民共和国劳动合同法* 第二十条), non-compete obligations cannot be applied indiscriminately to all employees [2]. They are strictly limited to three categories of personnel:\n1. **Senior Management** (*高级管理人员*);\n2. **Senior Technical Personnel** (*高级技术人员*); and\n3. **Other Persons with Confidentiality Obligations** (*其他负有保密义务的人员*) [2], [5].\n\nFor software and algorithm engineers, courts in [MASKED] review **actual job functions and degree of trade secret access** rather than formal job titles alone [5]. To qualify an algorithm engineer as a proper subject:\n* **Core Technical Access:** The engineer must have possessed, developed, or accessed core proprietary trade secrets—such as closed-source recommendation algorithm architecture, proprietary loss functions, core feature engineering pipelines, proprietary user profiling models, or confidential monetisation parameters [5].\n* **Baseline vs. Confidential Roles:** If an engineer merely applied publicly available open-source tools (e.g., standard TensorFlow/PyTorch libraries, public paper implementations) or executed routine coding tasks without exposure to core proprietary architecture, courts may find that the employee does not meet the statutory subject criteria [4], [5].\n\n### Trade Secret Nexus vs. [MASKED]\nA non-compete covenant is valid only if anchored to legitimate trade secrets (*商业秘密*) owned by the employer [4]. Courts draw a clear distinction between:\n* **Protectable Trade Secrets:** Confidential technical information, proprietary algorithms, model weights, and internal datasets that confer a competitive advantage and are subject to reasonable security measures [4].\n* **General Technical Skills (*通用职业技能*):** An engineer’s personal career accumulation—including general programming expertise, mathematical intuition, familiarity with standard [MASKED] frameworks, and industry domain knowledge—cannot be claimed as an employer's trade secret [4], [5]. Restricting an engineer based purely on general skill sets unlawfully infringes upon their constitutional and statutory right to labor [4].\n\n### Duration, Geographic, and Competitor Scope\n* **Maximum Duration:** Under Article 24 of the *Labor Contract Law* and Article 14 of the *Zhejiang Provincial Regulations on [MASKED] (*浙江省技术秘密保护办法* 第十四条), post-employment non-compete restrictions **cannot exceed two (2) years** [2], [9]. Any agreement specifying a longer duration will be automatically reduced by courts to the 2-year statutory maximum [9].\n* **Geographic & Sectoral Scope:** The restricted scope must directly correspond to the former employer’s actual business regions and competitive threat. Blanket global bans or broad restrictions covering unrelated tech sectors are subject to judicial narrowing [4], [6].\n\n---\n\n## 2. [MASKED]'s [MASKED]\n\n### Calculation Standard for Financial Compensation\nUnder Article 23 of the *PRC Labor Contract Law*, non-compete covenants are reciprocal: if an employee is restricted, the employer **must pay monthly economic compensation post-employment** [2].\n\n* **Statutory Default Baseline:** Under Article 36 of the *SPC Judicial Interpretation (I) on Labor Disputes* (*最高人民法院关于审理劳动争议案件适用法律问题的解释（一）* 第三十六条), if the contract stipulates a non-compete obligation but fails to specify the compensation amount, the default statutory standard is **30% of the employee’s average monthly wage over the 12 months prior to labor contract termination**, or the **local minimum wage**, whichever is higher [1], [2].\n* **Contractual Priority:** If the contract specifies a rate above 30%, the contractual rate governs [1]. If the contract stipulates an unreasonably low compensation rate that severely violates fairness principles, employees may petition labor arbitration tribunals to adjust the amount upward based on industry standards and local judicial guidelines [1], [3].\n\n### Payment Schedule and Timing\n* **Monthly Post-Employment Payment:** Compensation must be paid on a **monthly basis** during the post-employment restriction period [1], [2]. Pre-paid \"confidentiality stipends\" included in monthly base salaries during employment generally do **not** satisfy post-employment non-compete compensation obligations unless explicitly separated and compliant with statutory requirements [1].\n* **Zhejiang Local Practice:** Under judicial practice guidance issued by [MASKED] I of the Zhejiang Provincial High People's Court (*浙江省高级人民法院民一庭*), while monthly disbursement is standard, courts review whether compensation paid as a lump sum upon contract termination satisfies the substantive financial protection owed to the employee during their job search restriction [8].\n\n---\n\n## 3. [MASKED] and Employee Legal Remedies\n\n### The \"3-Month Non-Payment\" Dissolution Rule\nUnder Article 38 of the *SPC Judicial Interpretation (I) on Labor Disputes* (*最高人民法院关于审理劳动争议案件适用法律问题的解释（一）* 第三十八条):\n> If the employer fails to pay the non-compete economic compensation for **three (3) consecutive or cumulative months** attributable to the employer's fault, and the employee requests the termination/dissolution of the non-compete agreement, [MASKED] shall support such request [1], [7].\n\n### Procedural Requirements for Release\nA critical legal distinction in [MASKED] labor law is that **an employer's non-payment does not automatically void the non-compete covenant from day one** [7]. An employee cannot unilaterally join a direct competitor immediately upon a missed payment without risk [7].\n\nTo lawfully release oneself from the non-compete restriction, the employee must follow formal procedural steps:\n\n```\n[Month 1-3: Compensation Unpaid] \n       │\n       ▼\n[Issue Formal Written Notice / Demand for Payment] \n       │\n       ▼\n[If [MASKED] for [MASKED] 3 Months: Serve Formal Written Notice of Rescission (解除通知书)]\n       │\n       ▼\n[[MASKED] (劳动仲裁) in [MASKED] to [MASKED]]\n       │\n       ▼\n[Claim Back-Pay Compensation for Complied Months + Lawful Release from Restriction]\n```\n\n1. **Maintain Duty of Compliance During Inaction:** Until the agreement is formally dissolved, the employee should continue observing non-compete obligations to avoid exposure to employer counterclaims for breach of contract [7].\n2. **Issue Formal Notice of Rescission (*解除通知书*):** Once non-payment reaches three months, the employee must deliver a formal written notice to the employer exercising their statutory right to dissolve the non-compete agreement under Article 38 [1], [7].\n3. **File for Labor Arbitration:** File an arbitration application with the local [MASKED] (e.g., [MASKED] or [MASKED] in [MASKED]) seeking:\n   * Formal judicial confirmation of the dissolution of the non-compete agreement; and\n   * Full back-pay of unpaid compensation for the months during which non-compete obligations were actually observed [1], [7].\n\n---\n\n## 4. [MASKED] to Shorten, Terminate, or [MASKED]\n\n```\n                      ┌─────────────────────────────────────────┐\n                      │   Mechanisms to Shorten or Terminate   │\n                      └────────────────────┬────────────────────┘\n                                           │\n         [MASKED]┐\n         ▼                                 ▼                                 ▼\n[MASKED]┐               ┌─────────────────┐               ┌─────────────────┐\n│Article 39:      │               │Guiding Case 190:│               │[MASKED]\n│Employer         │               │Lack of Actual   │               │[MASKED]│\n│Unilateral       │               │Competitive      │               │Liquidated       │\n│Termination      │               │[MASKED]          │               │[MASKED]│\n└────────┬────────┘               └────────┬────────┘               └────────┬────────┘\n         │                                 │                                 │\n         ▼                                 ▼                                 ▼\nRequires extra 3        Evaluates actual operating        Courts reduce excessive\nmonths compensation     business, target users,           damages disproportionate\nto employee             and product functionality         to compensation paid\n```\n\n### 1. Unilateral Employer Termination (Article 39)\nUnder Article 39 of the *SPC Judicial Interpretation (I) on Labor Disputes*, the employer holds the statutory right to unilaterally terminate the non-compete agreement at any time during the restriction period [1], [7]. \n* **Employee Protection:** If the employer exercises this unilateral termination right, the employee is legally entitled to demand an **additional three (3) months of non-compete economic compensation** as a severance adjustment for the post-employment disruption [1].\n\n### 2. Lack of Actual Competitive Relationship (SPC Guiding Case No. 190)\nEmployers frequently list hundreds of generic business scope categories on their business licenses or include exhaustive lists of competitor companies in agreements. \n\nUnder **SPC Guiding Case No. 190** (*最高人民法院指导性案例190号*), courts are instructed to determine competitive relationships based on **actual operational business overlap** (*实际经营范围*), target customer bases, and product functional competition, rather than merely relying on registered business scopes (*登记经营范围*) [6].\n* *Application for Algorithm Engineers:* If a former employer operates an e-commerce recommendation system and the new employer operates a specialized medical imaging AI system, even if both use machine learning algorithms or fall under broad \"software development\" business license categories, courts in [MASKED] will generally hold that no actual competitive relationship exists [5], [6].\n\n### 3. Substantive Invalidation Grounds\nAn employee can challenge the validity of the covenant in arbitration or court under the following circumstances:\n* **No Access to Confidential Secrets:** Proving that the position involved standard, non-confidential engineering work [4], [5].\n* **Employer Material Breach:** Persistent non-payment or underpayment of compensation [1].\n* **Excessive Liquidated Damages (*违约金酌减*):** Tech contracts often impose disproportionately high liquidated damages (e.g., RMB 1,000,000–5,000,000) for breach. Under Article 585 of the *PRC Civil Code*, if the agreed damages excessively exceed the actual loss caused to the employer, [MASKED]/[MASKED] courts routinely exercise judicial discretion to **reduce liquidated damages** to a reasonable proportion anchored to the non-compete compensation actually paid and proven damages [4].\n\n---\n\n## 5. Actual [MASKED] in [MASKED]/Hangzhou\n\n### Major Tech Industry [MASKED] in major tech hubs (including [MASKED], [MASKED], and [MASKED]) highlights how courts evaluate non-compete covenants involving key algorithm personnel:\n\n* **Alibaba vs. [MASKED] (盖坤) [MASKED]\n  * **Background:** Alibaba initiated arbitration and litigation against its former algorithm expert, [MASKED], claiming breach of non-compete restrictions following his transition [5], [11].\n  * **Court Holding:** The court reviewed evidence regarding the employee's direct access to core proprietary algorithms and business models. Based on proven trade secret exposure and breach of the covenant, the court ordered the employee to pay [MASKED] liquidated damages of **RMB 2,076,816.87** [5], [11].\n  * **Key Takeaway:** Senior algorithm experts possessing high-level model architectural secrets face strict judicial enforcement when joining direct industry rivals [5], [11].\n\n* **Tencent vs. [MASKED]\n  * **Background:** Tencent sued a former technical employee for violating a 1-year non-compete restriction (covering specified competitors including [MASKED], [MASKED], [MASKED], Qihoo 360, and [MASKED]) [4], [12].\n  * **Court Holding:** The court enforced the non-compete clause, ordering the employee to return compensation and pay over **RMB 2,000,000** in liquidated damages [4], [12].\n\n### [MASKED] Judicial White Paper and Adjudication Trends\nThe Hangzhou Intermediate People's Court (*杭州市中级人民法院*) frequently publishes labor dispute white papers and typical cases addressing non-compete disputes in the tech sector [10]:\n\n1. **Substantive Trade Secret Review:** [MASKED] courts (including [MASKED] and [MASKED] courts, which oversee tech hubs like [MASKED] and [MASKED]/Alibaba campuses) actively scrutinize whether an algorithm engineer was genuinely exposed to proprietary trade secrets [5], [10]. Where companies use boilerplate non-compete contracts across all technical staff indiscriminately, courts show a willingness to declare non-compete clauses unenforceable for mid-to-junior personnel [4], [5].\n2. **Strict Enforcement of Article 38 (3-Month Rule):** In cases reviewed by [MASKED] courts involving engineers (e.g., [MASKED] heads or technical leads), courts strictly enforce procedural compliance [10]. If an employer fails to pay for 3 months, courts honor the employee’s right to terminate the restriction, provided the employee issued proper written notice before entering a competing firm [1], [7], [10].\n3. **Judicial Reduction of Penalties:** Courts in [MASKED] routinely reduce excessive liquidated damages set by tech employers if the company paid only baseline statutory compensation (30%), aligning damages more closely with actual economic harm and fairness principles [4].\n\n---\n\n## Practical Actionable Recommendations\n\nIf you are facing a 1-year non-compete clause in [MASKED], consider the following step-by-step legal strategy:\n\n```\n┌─────────────────────────────────────────────────────────────────────────────┐\n│                       Step 1: [MASKED]                           │\n│ Evaluate whether your work involved baseline skills/open-source tools or    │\n│ proprietary trade secrets. Prepare evidence of your actual job scope.        │\n└────────────────────────────────────┬────────────────────────────────────────┘\n                                     │\n                                     ▼\n[MASKED]\n│                    Step 2: Monitor Payment Window                           │\n│ Track monthly payments post-employment. If unpaid, send formal payment      │\n│ reminders via certified mail or official email.                             │\n└────────────────────────────────────┬────────────────────────────────────────┘\n                                     │\n                                     ▼\n[MASKED]\n│                Step 3: Exercise Rescission Right (If Unpaid ≥ 3 Mos)       │\n│ Send a formal written \"Notice of Rescission\" (解除通知书) to the employer.  │\n│ File for arbitration in [MASKED] to confirm formal release and back-pay.   │\n└────────────────────────────────────┬────────────────────────────────────────┘\n                                     │\n                                     ▼\n[MASKED]┐\n│                  Step 4: Verify Actual Competitor [MASKED]│\n│ If joining a new company, verify actual business overlap (Guiding Case     │\n│ 190) rather than relying solely on registered business licenses.             │\n└─────────────────────────────────────────────────────────────────────────────┘\n```\n\n1. **Audit Job Scope and [MASKED] your actual daily engineering responsibilities. Gather proof if your work relied on open-source frameworks, public academic papers, or non-confidential tasks.\n2. **Track Monthly Payment Window:** Check bank records post-employment. If the company fails to pay compensation on time, keep meticulous records of non-payment.\n3. **Execute Formal Rescission Notice:** If compensation remains unpaid for 3 months, do **not** join a competitor quietly. Send a formal written *Notice of Rescission* to the employer and file a labor arbitration petition in [MASKED] to obtain a clean judicial release.\n4. **Compare Actual Business Scopes:** If negotiating entry to a new firm, compare the actual products and target user segments against your former employer's products to establish a defense under Guiding Case No. 190.\n\n---\n\n### Sources\n\n[1] Leet & Tsai Law Firm: *Practical Analysis on [MASKED] in Mainland China* (https://www.leetsai.com/%E7%AB%9E%E4%B8%9A%E9%99%90%E5%88%B6%E5%AE%9E%E5%8A%A1%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E4%BA%8C-%E2%94%80-%E7%AB%9E%E4%B8%9A%E9%99%90%E5%88%B6%E8%A1%A5%E5%81%BF%E9%87%91%E7%9A%84%E6%A0%87%E5%87%86%E5%8F%8A%E6%94%AF%E4%BB%98%E9%97%AE%E9%A2%98%EF%BC%88%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%EF%BC%89)  \n[2] Guantao Law Firm: *Labor Law Series: Analysis on [MASKED] and Statutory Baseline Rules* (https://www.guantao.com/page3163)  \n[3] Sundial Law Firm: *Practical Analysis of Issues in [MASKED]* ([MASKED])  \n[4] Tian Yuan Law Firm: *Analysis of [MASKED] Principles Based on [MASKED] in [MASKED], [MASKED], and [MASKED]* (https://www.tylaw.com.cn/Content/202602271409077452.html)  \n[5] [MASKED]: *Judicial Practice Analysis on [MASKED] Under \"Other Persons with Confidentiality Obligations\"* (http://www.joint-win.com/Cn/new/news/id/1111/catid/39.html)  \n[6] Kangda Law Firm: *Determining the Scope of Non-Compete Restrictions: Analysis Based on [MASKED]. 190* (https://www.kangdalawyers.com/newsdetail_3053.html)  \n[7] Supreme People's Court of the [MASKED]: *Official Release of Judicial Interpretations and Typical Cases on Labor Disputes* (https://www.court.gov.cn/fabu/xiangqing/472691.html)  \n[8] Zhejiang Provincial High People's Court (Civil Division I) / Official Court Release: *Answers to Several Difficult Issues in [MASKED] ([MASKED])  \n[9] Lexology / Practical Analysis: *Validity Analysis of Non-Compete Agreements under Zhejiang Regulations on Protection of Technical Secrets* (https://www.lexology.com/library/detail.aspx?g=31a2887a-4e99-44cc-ac9f-7d6cea6d57a7)  \n[10] Hangzhou Intermediate People's Court Report: *Official Release of Labor Dispute White Paper and Typical Non-Compete Cases* (https://www.shui5.cn/article/92/1554.html)  \n[11] Tech Industry Legal Case Analysis: *Analysis of [MASKED] in [MASKED]* (https://www.163.com/dy/article/JIV8U1KK0553UCUX.html)  \n[12] Esports & Tech Law Weekly: *Tencent Non-Compete Enforcement Lawsuit Case Analysis* (https://zhuanlan.zhihu.com/p/652314082)",
+  "research_brief": "I am an [MASKED] specializing in artificial intelligence and recommendation systems based in [MASKED]. Having recently resigned from my former employer, I am facing a non-compete clause in my signed employment contract requiring a one-year restriction on joining companies in the same industry. I require a detailed legal research analysis under [MASKED] labor laws (including the Labor Contract Law of [MASKED], applicable [MASKED] judicial interpretations, and local judicial practice in [MASKED]) covering the following aspects: 1. [MASKED]: What are the strict legal conditions for a non-compete agreement to be enforceable against technical staff like algorithm engineers, and what scope of trade secrets or confidential information must be involved? 2. Compensation Obligations: What are the legal requirements regarding the amount, frequency, and payment timing of non-compete compensation owed by the employer post-employment? 3. [MASKED] Remedies: If the company fails to pay the required non-compete compensation (e.g., non-payment for three months or more), can I legally refuse to comply, terminate the non-compete agreement, or seek damages? What specific procedure must be followed to lawfully release myself from the restriction? 4. Ways to [MASKED] or Terminate: What legal mechanisms, negotiation strategies, or legal defects allow an employee to shorten or terminate a non-compete restriction early? 5. Actual Case References: Please analyze relevant court cases and judicial precedents involving software/algorithm engineers or internet/tech companies in [MASKED] (particularly in [MASKED]/[MASKED]) to evaluate how courts assess enforceability and protect employees' statutory right to employment. For any specific contract terms or payment details not explicitly provided, please evaluate based on statutory defaults and general judicial practice.",
+  "research_topics": [
+    {
+      "topic_id": "topic_001",
+      "topic_text": "Legal analysis of Non-Compete Agreements (竞业限制) under PRC Labor Law, Supreme People's Court Judicial Interpretations, and Zhejiang Province / Hangzhou Local Judicial Regulations and Practice, specifically for AI and Recommendation Algorithm Engineers. \n\nPlease research in detail:\n1. Enforceability & Applicability Conditions:\n   - Statutory subject scope under Article 24 of the PRC Labor Contract Law (senior management, senior technical personnel, other persons with confidentiality obligations - 高级管理人员、高级技术人员和其他负有保密义务的人员). How courts define \"senior technical personnel\" or \"confidential personnel\" for software/algorithm engineers.\n   - Requirement of Trade Secrets (商业秘密) or confidential information nexus. What constitutes trade secrets in AI/algorithm context vs general technical skills/experience (通用职业技能).\n   - Validity of non-compete scope, geographic restrictions, and time limits (max 2 years statutory cap).\n\n2. Compensation Obligations (竞业限制补偿金):\n   - Statutory default compensation standards under SPC Judicial Interpretation on Labor Disputes (Interpretation I / Interpretation IV - Article 36/38: 30% of average monthly wage prior to termination or local minimum wage, whichever is higher, unless contract specifies higher).\n   - Zhejiang Province local standards and judicial guidance (Zhejiang Province Labor Dispute Arbitration/Judicial Guidelines / 浙江省劳动争议审理指南/意见). Does Zhejiang/Hangzhou have specific rules or precedents regarding compensation calculations?\n   - Payment timing, frequency (monthly post-employment payment), and employer obligations.\n\n3. Non-Payment & Employee Remedies:\n   - Article 38 of SPC Judicial Interpretation (Interpretation I on Labor Disputes) regarding employer's failure to pay non-compete compensation for three (3) consecutive or cumulative months attributable to the employer.\n   - Procedure for employee to terminate/dissolve the non-compete agreement (formal written notice/催告 vs immediate termination request, labor arbitration claim).\n   - Employee's right to request accrued unpaid compensation plus potential damages/interest.\n\n4. Mechanisms to Shorten, Terminate, or Invalidate Non-Compete Obligations:\n   - Employer's unilateral termination right and requirement to pay additional 3 months of compensation (Article 39 of SPC Judicial Interpretation).\n   - Invalidity due to lack of trade secrets, lack of actual competitive relationship between companies, or failure of employer to pay compensation.\n   - Negotiation strategies, contract defects (e.g., penalty disproportionately high, scope too broad, no designated compensation amount), and labor arbitration/court procedures in Hangzhou/Zhejiang."
+    },
+    {
+      "topic_id": "topic_002",
+      "topic_text": "Judicial Precedents and Court Cases in Zhejiang Province and Hangzhou (including Zhejiang High People's Court, Hangzhou Intermediate People's Court, Yuhang District Court, Binjiang District Court) and major PRC courts involving Non-Compete (竞业限制) disputes for Software Engineers, AI Engineers, Recommendation Algorithm Engineers, and Tech/Internet Companies (e.g. Alibaba, NetEase, ByteDance, Pinduoduo, Tencent, Baidu, Meituan).\n\nPlease research in detail:\n1. Specific actual cases involving algorithm/software engineers in Hangzhou/Zhejiang courts:\n   - Case facts, legal issues, court holdings, and practical outcomes.\n   - Cases where the court invalidated or restricted the non-compete obligation because the employee was deemed a non-confidential junior/mid-level engineer or because the employer failed to prove actual trade secrets/competitive nexus.\n   - Cases where courts held non-compete clauses valid and enforceable, including standard for calculating liquidated damages (违约金) and whether courts adjusted/lowered disproportionate penalties.\n\n2. How Zhejiang/Hangzhou courts balance the protection of employer trade secrets with the employee's constitutional/statutory right to work / employment (劳动权):\n   - Standard of proof for \"competitive business relationship\" (实际竞争关系) between former employer and new employer (e.g. operational scope on business license vs actual overlapping business/products).\n   - Differentiation between employee's personal knowledge/skills/experience (个人技能与经验) and proprietary algorithmic trade secrets (算法与商业秘密).\n\n3. Cases involving termination of non-compete due to non-payment of compensation for 3 months or procedural defects.\n\nProvide detailed case names/case numbers where available, court logic, and actionable insights for an Algorithm Engineer facing a 1-year non-compete in Hangzhou."
+    }
+  ],
+  "run_id": "pilot_task43_User11_seed1",
+  "schema_version": "dra_trace_v2",
+  "search_trace": [
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "竞业限制 浙江省 高级人民法院 审理指南 30% 补偿金 算法工程师",
+      "query_id": "topic_001_query_001",
+      "sources": [
+        {
+          "domain": "www.leetsai.com",
+          "link": "https://www.leetsai.com/%E7%AB%9E%E4%B8%9A%E9%99%90%E5%88%B6%E5%AE%9E%E5%8A%A1%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E4%BA%8C-%E2%94%80-%E7%AB%9E%E4%B8%9A%E9%99%90%E5%88%B6%E8%A1%A5%E5%81%BF%E9%87%91%E7%9A%84%E6%A0%87%E5%87%86%E5%8F%8A%E6%94%AF%E4%BB%98%E9%97%AE%E9%A2%98%EF%BC%88%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%EF%BC%89",
+          "query": "竞业限制 浙江省 高级人民法院 审理指南 30% 补偿金 算法工程师",
+          "rank": 1,
+          "snippet": "补偿,劳动者履行了竞业限制义务,要求用人单位按照劳动者在劳动合同解除或者终止前十二个月平均工资的30%按月支付经济补偿的,人民法院应予支持。",
+          "title": "竞业限制实务系列文章(二) ─ 竞业限制补偿金的标准及支付 ..."
+        },
+        {
+          "domain": "www.guantao.com",
+          "link": "https://www.guantao.com/page3163",
+          "query": "竞业限制 浙江省 高级人民法院 审理指南 30% 补偿金 算法工程师",
+          "rank": 2,
+          "snippet": "根据《最高人民法院关于审理劳动争议案件适用法律若干问题的解释（四）》，大多数地区的实践认为竞业限制补偿标准不应低于劳动者前12个月工资的30%。但 ...",
+          "title": "劳动法系列| 第274期：竞业限制补偿不能低于30%吗？"
+        },
+        {
+          "domain": "www.sundiallawfirm.com",
+          "link": "https://www.sundiallawfirm.com/viewpoint/1429.html",
+          "query": "竞业限制 浙江省 高级人民法院 审理指南 30% 补偿金 算法工程师",
+          "rank": 3,
+          "snippet": "竞业限制期限超过1年的，月经济补偿一般不宜低于劳动者在劳动合同解除或终止前12个月平均工资的50%。”该《指引》较为明确的规定了竞业限制补偿金的最低标准，虽作为政策性 ...",
+          "title": "竞业限制补偿金适用问题的实务解析"
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "竞业限制 算法工程师 [MASKED] 司法判例 浙江 杭州",
+      "query_id": "topic_001_query_002",
+      "sources": [
+        {
+          "domain": "www.tylaw.com.cn",
+          "link": "https://www.tylaw.com.cn/Content/202602271409077452.html",
+          "query": "竞业限制 算法工程师 [MASKED] 司法判例 浙江 杭州",
+          "rank": 1,
+          "snippet": "竞业限制协议的核心在于保护用人单位的商业秘密，倘若用人单位并不存在商业秘密，或劳动者并未接触用人单位商业秘密，则竞业限制这一手段便成了无根之木、无 ...",
+          "title": "竞业限制案件裁判思路解析——基于法律规定和北上广三地 ..."
+        },
+        {
+          "domain": "www.joint-win.com",
+          "link": "http://www.joint-win.com/Cn/new/news/id/1111/catid/39.html",
+          "query": "竞业限制 算法工程师 [MASKED] 司法判例 浙江 杭州",
+          "rank": 2,
+          "snippet": "[MASKED]/商业秘密之可能，综合判断员工是否属于竞业 ...",
+          "title": "其他负有保密义务”的竞业限制主体适格问题之司法实务分析"
+        },
+        {
+          "domain": "www.kangdalawyers.com",
+          "link": "https://www.kangdalawyers.com/newsdetail_3053.html",
+          "query": "竞业限制 算法工程师 [MASKED] 司法判例 浙江 杭州",
+          "rank": 3,
+          "snippet": "[MASKED] ...",
+          "title": "竞业限制中如何认定竞业范围——以最高人民法院190号指导 ..."
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "最高人民法院 劳动争议 解释一 竞业限制 36条 38条 39条",
+      "query_id": "topic_001_query_003",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "竞业限制 未支付 3个月 解除 浙江 杭州 裁判规则",
+      "query_id": "topic_001_query_004",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "浙江省高级人民法院 劳动争议 竞业限制 意见 指南 补偿金",
+      "query_id": "topic_001_query_005",
+      "sources": [
+        {
+          "domain": "www.court.gov.cn",
+          "link": "https://www.court.gov.cn/fabu/xiangqing/472691.html",
+          "query": "浙江省高级人民法院 劳动争议 竞业限制 意见 指南 补偿金",
+          "rank": 2,
+          "snippet": "限制、未支付经济补偿为由请求确认竞业限制条款无效的,人民法院不予支持。 [MASKED],人民法院依法 ...",
+          "title": "最高法发布劳动争议司法解释（二）和典型案例"
+        },
+        {
+          "domain": "jy.lsfy.gov.cn",
+          "link": "https://jy.lsfy.gov.cn/splc/sfwj/2024-05-10/24358.html",
+          "query": "浙江省高级人民法院 劳动争议 竞业限制 意见 指南 补偿金",
+          "rank": 3,
+          "snippet": "[MASKED]劳动合同法》第二十三条仅规定了用人单位“在竞业限制期限内按月给予劳动者经济补偿”的补偿方式。用人单位如果在解除或终止劳动合同时，一次性向劳动者支付了竞业限制补偿 ...",
+          "title": "[MASKED] ..."
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "杭州 竞业限制 算法工程师 司法判例 审查 [MASKED]",
+      "query_id": "topic_001_query_006",
+      "sources": [
+        {
+          "domain": "www.lexology.com",
+          "link": "https://www.lexology.com/library/detail.aspx?g=31a2887a-4e99-44cc-ac9f-7d6cea6d57a7",
+          "query": "杭州 竞业限制 算法工程师 司法判例 审查 [MASKED]",
+          "rank": 2,
+          "snippet": "[MASKED]浙江省技术秘密保护办法》（2008）第十四条：竞业限制协议约定的竞业限制期限最长不得超过2年；没有约定期限的，竞业限制期限为2年。 案例：未约定竞业 ...",
+          "title": "[MASKED] [MASKED]？"
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "[MASKED] 第三十六条 第三十七条 第三十八条 第三十九条",
+      "query_id": "topic_001_query_007",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "竞业限制 实际经营范围 登记经营范围 指导案例190号 [MASKED]",
+      "query_id": "topic_001_query_008",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": true,
+      "failure_code": "no_new_sources",
+      "query": "浙江省高级人民法院 劳动争议 竞业限制 经济补偿金 标准 意见",
+      "query_id": "topic_001_query_009",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "[MASKED] 竞业限制 [MASKED]",
+      "query_id": "topic_001_query_010",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "\"竞业限制\" \"算法工程师\" \"通用技能\" 裁判规则",
+      "query_id": "topic_001_query_011",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "浙江省技术秘密保护办法 竞业限制 补偿金",
+      "query_id": "topic_001_query_012",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "浙江省技术秘密保护办法 竞业限制",
+      "query_id": "topic_001_query_013",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "[MASKED] 判例",
+      "query_id": "topic_001_query_014",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "\"竞业限制\" \"算法工程师\" 浙江 [MASKED]",
+      "query_id": "topic_002_query_001",
+      "sources": [
+        {
+          "domain": "www.shui5.cn",
+          "link": "https://www.shui5.cn/article/92/1554.html",
+          "query": "\"竞业限制\" \"算法工程师\" 浙江 [MASKED]",
+          "rank": 1,
+          "snippet": "某机器人公司申请仲裁，要求赵某退还已收取的竞业限制补偿、支付竞业限制违约金。 ... 孙某入职某智能科技公司后，先后担任算法工程师、算法部负责人等职务 ...",
+          "title": "杭州中院发布劳动争议典型案例(涉竞业限制、学历造假"
+        },
+        {
+          "domain": "h5.ifeng.com",
+          "link": "https://h5.ifeng.com/c/vivoArticle/v002R3LtrZ2SQSdZCWm1NS--S0Xa9QWB7s1Q3yzPP4RNQ4dE__?isNews=1&showComments=0",
+          "query": "\"竞业限制\" \"算法工程师\" 浙江 [MASKED]",
+          "rank": 2,
+          "snippet": "所谓竞业限制，根据相关法律法规，主要针对高管、高技术及其他负有保密义务的人员，限制其离职后去同行竞品上班或自营同类业务，限制期限最多两年，其间公司需按月支付补偿 ...",
+          "title": "离职被索赔180万，不签协议就别入职！"
+        },
+        {
+          "domain": "view.inews.qq.com",
+          "link": "https://view.inews.qq.com/a/20260428A07Q8U00",
+          "query": "\"竞业限制\" \"算法工程师\" 浙江 [MASKED]",
+          "rank": 3,
+          "snippet": "“入职后，领导多次在工作群中通知，公司正常上班时间为早上9点半至晚上10点半。”孙某先后在该公司担任算法工程师 ... 竞业限制 、调岗降薪等纠纷成为 ...",
+          "title": "AI浪潮来袭如何保护劳动者权益？杭州中院发布劳动争议白皮书"
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "\"竞业限制\" \"阿里\" \"网易\" 杭州市中级人民法院 判决书",
+      "query_id": "topic_002_query_002",
+      "sources": [
+        {
+          "domain": "zhuanlan.zhihu.com",
+          "link": "https://zhuanlan.zhihu.com/p/652314082",
+          "query": "\"竞业限制\" \"阿里\" \"网易\" 杭州市中级人民法院 判决书",
+          "rank": 1,
+          "snippet": "... 竞业限制期为2020年8月29日至2021年8月28日，与腾讯公司存在竞争关系的公司或其他组织，包括但不限于阿里巴巴、百度、奇虎360、字节跳动（今日头条）、网易 ...",
+          "title": "[MASKED]"
+        },
+        {
+          "domain": "www.163.com",
+          "link": "https://www.163.com/dy/article/JIV8U1KK0553UCUX.html",
+          "query": "\"竞业限制\" \"阿里\" \"网易\" 杭州市中级人民法院 判决书",
+          "rank": 2,
+          "snippet": "根据双方提交的证据和此前劳动仲裁的结果，法院最终判定： 盖坤于判决生效之日起七日内支付原告阿里违反竞业限制义务违约金2076816.87元，驳回原告阿里其他 ...",
+          "title": "参考盖坤康泽宇的竞业官司看看周畅败诉要赔多少钱"
+        },
+        {
+          "domain": "startup.aliyun.com",
+          "link": "https://startup.aliyun.com/info/106682.html",
+          "query": "\"竞业限制\" \"阿里\" \"网易\" 杭州市中级人民法院 判决书",
+          "rank": 3,
+          "snippet": "[MASKED]。 ... 有自称是网易、美团的员工就在脉脉上爆料，公司会在涉及关键利益的节点 ...",
+          "title": "被竞业协议锁住的大厂青年 - 阿里云创新中心"
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "\"竞业限制\" 程序员 实际竞争关系 营业执照 杭州 判决书",
+      "query_id": "topic_002_query_003",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "浙江省高级人民法院 竞业限制 指导意见 审判指南 算法工程师",
+      "query_id": "topic_002_query_004",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "盖坤 阿里巴巴 竞业限制 判决书 案号 民终 民初",
+      "query_id": "topic_002_query_005",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "网易 竞业限制 滨江区人民法院 判决书 算法工程师",
+      "query_id": "topic_002_query_006",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "竞业限制 实际竞争关系 营业执照 杭州市中级人民法院 案例",
+      "query_id": "topic_002_query_007",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "竞业限制 违约金 酌减 软件工程师 杭州 余杭区人民法院 案例",
+      "query_id": "topic_002_query_008",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "阿里巴巴 盖坤 竞业限制 判决书",
+      "query_id": "topic_002_query_009",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "杭州市中级人民法院 竞业限制 实际竞争关系",
+      "query_id": "topic_002_query_010",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "余杭法院 竞业限制 算法工程师",
+      "query_id": "topic_002_query_011",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "[MASKED]",
+      "query_id": "topic_002_query_012",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "Alibaba non compete court judgment [MASKED]",
+      "query_id": "topic_002_query_013",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "[MASKED] non-compete tech engineer",
+      "query_id": "topic_002_query_014",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "竞业限制 杭州 判决书",
+      "query_id": "topic_002_query_015",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "竞业限制 阿里巴巴 判决书",
+      "query_id": "topic_002_query_016",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    }
+  ],
+  "token_ledger": {
+    "elapsed_sec": 310.42,
+    "input_tokens": 110859,
+    "output_tokens": 22529,
+    "queries_attempted": 7,
+    "queries_failed": 1,
+    "queries_rejected": 23,
+    "queries_requested": 30,
+    "queries_successful": 6,
+    "query_ledger_consistent": true,
+    "search_adapter": {
+      "global_attempted_queries": 776,
+      "global_attempted_queries_at_start": 769,
+      "global_query_hard_stop": 2400,
+      "global_successful_queries": 592,
+      "global_successful_queries_at_start": 586,
+      "report_max_queries_per_call": 2,
+      "report_query_cap": 7,
+      "report_unique_url_cap": 15,
+      "run_id": "pilot_task43_User11_seed1",
+      "run_queries_attempted": 7,
+      "run_queries_failed": 1,
+      "run_queries_requested": 30,
+      "run_queries_successful": 6,
+      "run_sources_selected": 15,
+      "run_unique_urls": 15
+    },
+    "source_ledger_consistent": true,
+    "sources_selected": 15,
+    "token_usage_events": 18,
+    "total_tokens": 133388,
+    "unique_sources": 15
+  },
+  "_masked": true
+}

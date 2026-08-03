@@ -1,0 +1,143 @@
+{
+  "candidate_order_sha256_verified": 120,
+  "claim_boundary": "Donor-following is intervention-based evidence about evaluator recoverability, not user utility or latent-intent recovery.",
+  "external_api_calls": 0,
+  "population": {
+    "reports": 30,
+    "stages": [
+      "plan",
+      "search",
+      "compress",
+      "write"
+    ]
+  },
+  "primary_estimand": "P(predicted=donor)-P(predicted=shell)",
+  "schema_version": 2,
+  "stage_results": [
+    {
+      "donor_minus_shell": -0.43333333333333335,
+      "donor_predictions": 6,
+      "donor_vs_shell_exact_p": 0.01463329792022705,
+      "n": 30,
+      "other_predictions": 5,
+      "p_donor": 0.2,
+      "p_shell": 0.6333333333333333,
+      "shell_predictions": 19,
+      "stage": "plan",
+      "task_bootstrap_ci95": [
+        -0.7999999999999999,
+        -0.1
+      ]
+    },
+    {
+      "donor_minus_shell": -0.13333333333333333,
+      "donor_predictions": 9,
+      "donor_vs_shell_exact_p": 0.5234670639038086,
+      "n": 30,
+      "other_predictions": 8,
+      "p_donor": 0.3,
+      "p_shell": 0.43333333333333335,
+      "shell_predictions": 13,
+      "stage": "search",
+      "task_bootstrap_ci95": [
+        -0.5666666666666667,
+        0.13333333333333333
+      ]
+    },
+    {
+      "donor_minus_shell": -0.26666666666666666,
+      "donor_predictions": 7,
+      "donor_vs_shell_exact_p": 0.13380050659179688,
+      "n": 30,
+      "other_predictions": 8,
+      "p_donor": 0.23333333333333334,
+      "p_shell": 0.5,
+      "shell_predictions": 15,
+      "stage": "compress",
+      "task_bootstrap_ci95": [
+        -0.6666666666666666,
+        0.0
+      ]
+    },
+    {
+      "donor_minus_shell": -0.5666666666666667,
+      "donor_predictions": 5,
+      "donor_vs_shell_exact_p": 0.0015137195587158203,
+      "n": 30,
+      "other_predictions": 3,
+      "p_donor": 0.16666666666666666,
+      "p_shell": 0.7333333333333333,
+      "shell_predictions": 22,
+      "stage": "write",
+      "task_bootstrap_ci95": [
+        -0.8666666666666667,
+        -0.26666666666666666
+      ]
+    }
+  ],
+  "strict_quality_sensitivity": {
+    "reports": 21,
+    "stage_results": [
+      {
+        "donor_minus_shell": -0.42857142857142855,
+        "donor_predictions": 5,
+        "donor_vs_shell_exact_p": 0.063568115234375,
+        "n": 21,
+        "other_predictions": 2,
+        "p_donor": 0.23809523809523808,
+        "p_shell": 0.6666666666666666,
+        "shell_predictions": 14,
+        "stage": "plan",
+        "task_bootstrap_ci95": [
+          -0.7666666666666666,
+          -0.09950000000000728
+        ]
+      },
+      {
+        "donor_minus_shell": -0.09523809523809523,
+        "donor_predictions": 8,
+        "donor_vs_shell_exact_p": 0.8145294189453125,
+        "n": 21,
+        "other_predictions": 3,
+        "p_donor": 0.38095238095238093,
+        "p_shell": 0.47619047619047616,
+        "shell_predictions": 10,
+        "stage": "search",
+        "task_bootstrap_ci95": [
+          -0.6,
+          0.39999999999999997
+        ]
+      },
+      {
+        "donor_minus_shell": -0.2857142857142857,
+        "donor_predictions": 6,
+        "donor_vs_shell_exact_p": 0.237884521484375,
+        "n": 21,
+        "other_predictions": 3,
+        "p_donor": 0.2857142857142857,
+        "p_shell": 0.5714285714285714,
+        "shell_predictions": 12,
+        "stage": "compress",
+        "task_bootstrap_ci95": [
+          -0.6666666666666666,
+          0.013333333333333341
+        ]
+      },
+      {
+        "donor_minus_shell": -0.5714285714285714,
+        "donor_predictions": 4,
+        "donor_vs_shell_exact_p": 0.01181793212890625,
+        "n": 21,
+        "other_predictions": 1,
+        "p_donor": 0.19047619047619047,
+        "p_shell": 0.7619047619047619,
+        "shell_predictions": 16,
+        "stage": "write",
+        "task_bootstrap_ci95": [
+          -0.92,
+          -0.2533333333333333
+        ]
+      }
+    ]
+  }
+}

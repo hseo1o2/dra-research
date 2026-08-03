@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task17_User10_seed1",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate B (Liu Qiang) is the best match. The document describes a multi-generational family (30s couple, 8-year-old daughter who enjoys painting/dancing, 5-year-old son who likes building toys/basketball, and elderly parents) planning a 1-week beach vacation from Shanghai. This aligns perfectly with Candidate B's family composition (married with an 8-year-old daughter and 5-year-old son with identical interests) and Shanghai residence. The request for high-quality, family-friendly accommodations, age-appropriate activities, and Jiangnan-style dining also matches B's preferences for cozy homestays, quality-of-life focus, and Jiangnan cuisine. Unlike Candidates A (Harbin-based, no young children) and C (older children abroad), B's profile directly reflects the document's priorities: balancing child-friendly activities with elderly-friendly logistics, emphasizing family bonding, and valuing detailed itinerary planning\u2014all hallmarks of B's pragmatic, family-oriented travel style.",
+    "model": "solar-pro",
+    "prompt_chars": 25376,
+    "latency_sec": 2.14,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User10_seed1",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on family-oriented travel planning (multi-generational resorts, July weather, flight times) and cost-effective logistics (Shanghai to Sanya/Danang/Okinawa flights, budget-friendly options). Candidate A, a Shanghai-based marketing manager with two young children, prioritizes family vacations (twice yearly, during school holidays), values practicality/cost-effectiveness, and prefers self-guided tours with deep family experiences. His queries align with the document's emphasis on weather, flight durations, and resort amenities for children. Candidates B and C, while family-oriented, focus more on solo hobbies (photography, hiking) and less on multi-generational travel logistics.",
+    "model": "solar-pro",
+    "prompt_chars": 26767,
+    "latency_sec": 1.74,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User10_seed1",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on multi-generational family travel planning, emphasizing child-friendly activities (e.g., art/dance for an 8-year-old girl, building toys/water activities for a 5-year-old boy), accessibility for elderly family members (e.g., stroller/wheelchair-friendly paths), and practical logistics (e.g., flight times, typhoon risks). Candidate B explicitly mentions having an 8-year-old daughter (art/dance interests) and a 5-year-old son (building toys/sports), aligns with Shanghai-based travel logistics (his residence), and prioritizes family bonding through self-guided tours. The document's framing\u2014balancing luxury resorts, safety, and multi-generational ease\u2014matches B's pragmatic, family-centric decision-making style and quarterly family trips. Candidates A (Harbin-based, no mention of young children) and C (older children abroad, focus on solo/industry travel) lack the direct alignment with the document's demographic and logistical focus.",
+    "model": "solar-pro",
+    "prompt_chars": 29375,
+    "latency_sec": 2.34,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User10_seed1",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document's focus on a multi-generational family with young children (8-year-old girl who loves painting/dancing, 5-year-old boy into building toys/basketball) and elderly parents aligns perfectly with Candidate A's family structure. The emphasis on direct Shanghai-to-destination logistics (flights, driving) matches Candidate A's Shanghai residence and travel preferences. The prioritization of luxury resorts with multi-bedroom villas, child-friendly activities, and pet-friendly options (e.g., Zhoushan for pets) reflects Candidate A's status as a high-earning Shanghai-based manager with a Labrador, who values quality family experiences. Candidate B (Suzhou-based engineer) and Candidate C (Harbin-based state-owned enterprise manager) lack the Shanghai departure point, specific child interests, and luxury travel framing central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 31386,
+    "latency_sec": 2.39,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

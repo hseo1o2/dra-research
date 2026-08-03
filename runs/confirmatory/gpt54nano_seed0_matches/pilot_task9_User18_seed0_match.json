@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task9_User18_seed0",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The brief is written from the perspective of a Shanghai-based data analyst with a Statistics background and Python/SQL/Tableau/data modeling skills, plus project management certification\u2014this aligns directly with Candidate B\u2019s profile. It also emphasizes transitioning into an AI Product Manager role, and the document\u2019s focus on portfolio projects, PRDs, user workflows, and networking on LinkedIn/Zhihu matches Candidate B\u2019s active use of those platforms and career-development orientation.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 23841,
+    "latency_sec": 1.45,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task9_User18_seed0",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The excerpt is heavily focused on AI product manager skill gaps, transition pathways from data analyst roles, and portfolio projects\u2014framing that aligns with someone already in analytics and aiming to move into product/management. Candidate B\u2019s background (data analyst, Python/R/SQL, certifications, LinkedIn/Zhihu engagement, explicit goal to transition to product roles) matches the \u201cAI PM lifecycle/skills gap/portfolio\u201d emphasis far better than Candidate A\u2019s marketing management angle or Candidate C\u2019s finance-investment focus.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 25309,
+    "latency_sec": 1.55,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task9_User18_seed0",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The excerpt repeatedly targets a transition from a data analyst background into an AI Product Manager role, explicitly mentioning \u201cData Analyst in Shanghai\u201d and SUFE Statistics, plus technical evaluation frameworks (RAGAS, G-Eval), token economics, and portfolio project ideas. Candidate C matches this profile most closely with her Statistics background at SUFE, current data analyst role in Shanghai, and goal to move into management/product roles.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 28139,
+    "latency_sec": 1.4,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task9_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The excerpt is written as a technical, data-to-product transition blueprint for someone with a statistics/data analyst background (SUFE statistics, Python/SQL/Tableau, PMP) aiming to become an AI Product Manager in Shanghai. It emphasizes building AI PRDs, portfolio projects, and probabilistic/LLM evaluation skills\u2014matching the profile of a Shanghai-based data analyst actively planning to move into product/management roles (Candidate C).",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 30150,
+    "latency_sec": 1.58,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

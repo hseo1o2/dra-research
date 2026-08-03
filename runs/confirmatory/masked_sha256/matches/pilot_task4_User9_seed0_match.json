@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User19",
+      "User21"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User21",
+      "User19"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document aligns most closely with Candidate A, a 22-25-year-old female in Product Operations with a Psychology minor, seeking post-graduate options to boost early-career competitiveness. The focus on balancing work/study, ROI timelines, and program suitability for limited experience mirrors her age, career stage, and practical goals. Content priorities (e.g., domestic/international program comparisons, application requirements, skill gaps) reflect her rational, goal-oriented decision-making style and minor in Psychology (emphasizing user behavior analysis). Candidate B (entrepreneur) and C (supply chain manager) lack the early-career context and specific MBA/MSc evaluation focus central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 23332,
+    "latency_sec": 1.69,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User19",
+      "User21"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User9",
+      "User21"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on MBA program requirements (work experience, tuition, dual degrees) and certifications relevant to tech/product operations roles, aligning with Candidate B's profile as a Product Operations professional. The queries about 'Product Operations' at ByteDance, PMP certifications, and Hukou policies for international students in tech fields directly match her role, educational background (New Media Communication/Psychology), and interest in certifications. Candidate A (Supply Chain Manager) and C (Entrepreneur) lack the specific tech/product operations focus and certification relevance seen in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24465,
+    "latency_sec": 1.58,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User19",
+      "User21"
+    ],
+    "shuffled_order": [
+      "User21",
+      "User19",
+      "User9"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User21",
+    "correct": false,
+    "reasoning": "The document focuses on MBA program details (tuition, work experience requirements, dual-degree options) for top Chinese institutions like Tsinghua, PKU, and CEIBS, emphasizing international exposure (English-taught programs, dual degrees) and elite business education. Candidate A, an entrepreneur with an MBA from Fudan University, aligns best: his background in economics, business acumen, and interest in global markets (evidenced by international travel and luxury hotel preferences) match the document's focus on high-end MBA programs. His pragmatic decision-making style and focus on long-term value (e.g., art collections, tech investments) reflect the document's emphasis on elite, career-advancing education. Candidates B (supply chain manager) and C (internet product operations) lack the entrepreneurial/business leadership focus central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 27238,
+    "latency_sec": 2.0,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User19",
+      "User21"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User21",
+      "User9"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on early-career internet product operations professionals (22\u201325 years old, 1\u20133 years of experience) with a background in psychology and advertising, seeking quantitative skills (Python, statistics) and strategic frameworks for roles like Data Product Manager. Candidate C matches this profile exactly: she is 22\u201325, works in product operations, has a psychology minor, and seeks career advancement in tech. The document\u2019s emphasis on balancing qualitative user analysis with quantitative rigor aligns with her psychology background and interest in data-driven roles. Candidates A (supply chain manager, 35\u201340) and B (entrepreneur, 40\u201345) are older, have unrelated careers, and lack the document\u2019s focus on early-career tech product operations.",
+    "model": "solar-pro",
+    "prompt_chars": 29249,
+    "latency_sec": 1.98,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

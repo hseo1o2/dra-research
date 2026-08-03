@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User3",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User3",
+      "User22",
+      "User14"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document's focus on a freelance illustrator in Shanghai, balancing a 5-day/week training schedule with yoga, Pilates, and hiking, aligns perfectly with Candidate C's profile. The emphasis on adaptable routines, city park training, and integration of creative habits (e.g., cooking, time management) mirrors C's lifestyle as a freelance artist. Key details like 'freelance illustrator,' 'Shanghai,' 'yoga 2-3x/week,' and 'pilates/hiking' directly match C's exercise habits, occupation, and location, while the pragmatic, health-focused marathon plan aligns with C's rational consumption and wellness priorities. Candidates A (student) and B (technical director) lack these specific overlaps.",
+    "model": "solar-pro",
+    "prompt_chars": 23422,
+    "latency_sec": 1.66,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User3",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User3",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User22",
+    "correct": false,
+    "reasoning": "The document focuses on marathon training methods (Galloway run/walk ratios), air quality considerations for running, and Shanghai running routes\u2014topics aligning with Candidate A's exercise habits (running 3x/week, marathon training interest) and geographical context (Suzhou, near Shanghai). Candidate A's pragmatic, goal-oriented personality (improving endurance, stress relief) and practical consumption style (fitness equipment purchases) match the document's emphasis on structured training plans and environmental factors. Candidates B (student with limited travel) and C (illustrator focused on art/creativity) lack the document's marathon-specific focus and Shanghai/Suzhou regional relevance.",
+    "model": "solar-pro",
+    "prompt_chars": 25113,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User3",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User22",
+      "User3"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User22",
+    "correct": false,
+    "reasoning": "The document focuses on a structured, time-bound marathon training plan emphasizing safety, gradual progression, and practical adjustments for a beginner. Candidate B, a pragmatic technical director with a mechanical engineering background, aligns with this content through his rational decision-making, preference for systematic processes (e.g., production optimization), and interest in endurance exercises (running, cycling). His cost-effectiveness mindset and focus on practicality mirror the plan's emphasis on injury prevention and realistic weekly progression. Unlike Candidate A (creative, less structured) or Candidate C (student with limited resources), Candidate B's disciplined routine, technical problem-solving, and physical goals (strength/endurance) directly resonate with the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 28448,
+    "latency_sec": 2.2,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User3",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User3",
+      "User14"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document explicitly states it is 'customized for a freelance illustrator living in Shanghai,' matching Candidate C's occupation and residence. It integrates existing habits (Yoga, Pilates, hiking) that align with C's exercise preferences, and references Shanghai's urban environment, which matches C's frequent places (city center, parks). The focus on balancing creative energy with training reflects C's need to maintain artistic productivity while preparing for the marathon, unlike the more rigid schedules of A (technical director) or B (student).",
+    "model": "solar-pro",
+    "prompt_chars": 30459,
+    "latency_sec": 1.94,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

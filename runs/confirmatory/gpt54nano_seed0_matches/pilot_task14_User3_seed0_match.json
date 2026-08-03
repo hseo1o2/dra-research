@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task14_User3_seed0",
+    "stage": "plan",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User3",
+      "User1",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User1",
+      "User3",
+      "User5"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User3",
+    "correct": true,
+    "reasoning": "The brief emphasizes frugality, beginner-safety, and a highly structured, practical plan without expensive gear or supplements\u2014matching Zhou Kai\u2019s pragmatic, cost-effective mindset and preference for self-managed, budget-friendly routines. It also aligns with his campus-based, evening-focused training constraints and hands-on, mentor-informed approach to building sustainable habits.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 23561,
+    "latency_sec": 1.6,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User3_seed0",
+    "stage": "search",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User3",
+      "User1",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User1",
+      "User5",
+      "User3"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User3",
+    "correct": true,
+    "reasoning": "The queries focus on beginner marathon training specifics (12-week plan, Galloway run/walk ratios, warm-up/cool-down routines, and homemade electrolyte drinks), indicating a practical, self-improvement oriented runner seeking cost-effective, actionable guidance. Candidate C\u2019s profile emphasizes frugality, hands-on problem solving, and careful information gathering before decisions, aligning with DIY/budget and step-by-step training guidance more than the AI/tech-heavy or cycling/robotics-focused candidates.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 24779,
+    "latency_sec": 1.94,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User3_seed0",
+    "stage": "compress",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User3",
+      "User1",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User1",
+      "User3"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User1",
+    "correct": false,
+    "reasoning": "The excerpt is a practical, beginner-focused training and injury-prevention guide with detailed schedules, ratios, and routines\u2014written in a way that suits someone seeking actionable health/fitness plans alongside cost-conscious, self-managed learning. Candidate B\u2019s profile emphasizes structured planning, using online resources for practical guidance, and starting gym/jogging-type activities to maintain health, aligning with the document\u2019s \u201chow-to\u201d framing and emphasis on safe progression and routines.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 28360,
+    "latency_sec": 1.81,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User3_seed0",
+    "stage": "write",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User3",
+      "User1",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User3",
+      "User5",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User3",
+    "correct": true,
+    "reasoning": "The excerpt is written for an absolute beginner marathoner with a tight undergraduate schedule (classes, labs, campus living in Chengdu) and emphasizes frugality, practical routines, and injury-prevention rules. Candidate A matches this strongly: an undergraduate in mechanical engineering living in a Chengdu dorm, with a pragmatic, cost-effective mindset and evening-focused study/lab routines, aligning with the program\u2019s \u201csafe completion without injury\u201d framing and budget-friendly nutrition guidance.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 30371,
+    "latency_sec": 2.0,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

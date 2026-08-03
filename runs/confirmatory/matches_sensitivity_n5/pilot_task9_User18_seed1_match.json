@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task9_User18_seed1",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10",
+      "User15",
+      "User11"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User15",
+      "User8",
+      "User10",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document outlines a career transition from Data Analyst to AI Product Manager, focusing on skill gaps, portfolio projects, target companies, and networking strategies. Candidate A is a Data Analyst with a Statistics background, proficient in Python/SQL/R/Tableau, and explicitly aims to transition into product roles. Her educational background (Shanghai University of Finance and Economics), technical skills, and career goals (product strategy, LLM evaluation, PRD writing) align perfectly with the document's focus. Other candidates (B: Freelance Writer, C: Investment Manager, D: Marketing Manager, E: Algorithm Engineer) lack the direct relevance of a Data Analyst seeking an AI PM role, making A the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 38566,
+    "latency_sec": 2.09,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task9_User18_seed1",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10",
+      "User15",
+      "User11"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User10",
+      "User18",
+      "User15",
+      "User11"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on AI Product Management (PM) skills, PRD requirements, and portfolio projects, particularly emphasizing transitions from data analysis to AI PM roles. Candidate C is a Data Analyst aiming to transition into product roles, with a strong technical background in data analysis, certifications in data science, and an interest in AI-related projects. The document's content aligns with her career goals, technical skills (Python, R, SQL), and interest in AI PM portfolio projects. Other candidates (A, B, D, E) either lack the technical/data background or are not explicitly transitioning into AI PM roles, making Candidate C the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 40900,
+    "latency_sec": 1.97,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task9_User18_seed1",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10",
+      "User15",
+      "User11"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User11",
+      "User18",
+      "User15",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on transitioning from a Data Analyst to an AI Product Manager, emphasizing technical trade-offs, probabilistic systems, and product lifecycle ownership. Candidate C is a Data Analyst with a background in statistics, currently working at an internet company, and explicitly aims to transition to product roles. The document's framing\u2014detailing the shift from deterministic analytics to non-deterministic AI product management\u2014aligns with Candidate C's career goals, technical skills (Python, SQL, Tableau), and interest in product management certifications. Other candidates (A: finance, B: algorithm engineering, D: freelance writing, E: marketing) lack this direct relevance to the document's core theme of bridging data analysis and AI product management.",
+    "model": "solar-pro",
+    "prompt_chars": 43439,
+    "latency_sec": 2.57,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task9_User18_seed1",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10",
+      "User15",
+      "User11"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User11",
+      "User18",
+      "User10",
+      "User15"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on transitioning from a Data Analyst to an AI Product Manager, emphasizing technical skills (SQL, BI tools, model evaluation), mindset shifts (analytics to product lifecycle ownership), and practical strategies (unit economics, build vs. buy decisions). Candidate C is the only current Data Analyst with relevant educational background (Statistics) and explicit career goals to transition to product roles. The document's technical depth, focus on skill gaps, and Shanghai-centric industry targeting align with C's profile as a data professional seeking advancement in AI product management, unlike finance-focused A, engineering-focused B, marketing-focused D, or freelance writer E.",
+    "model": "solar-pro",
+    "prompt_chars": 45450,
+    "latency_sec": 1.95,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

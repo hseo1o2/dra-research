@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task9_User18_seed0",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User9",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User18",
+      "User8"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "Candidate B (Liu Lu) is a data analyst transitioning toward product management, aligning with the document's focus on bridging data analytics/project management skills to an AI Product Manager role. The document's emphasis on technical skill gaps (LLMs, system architecture), hands-on projects (PRDs, API integration), and strategic networking mirrors B's background in statistics, certifications in data science/project management, and goal to transition to product roles. Unlike A (creative/operations-focused) or C (finance/investment-oriented), B's data-driven decision-making, LinkedIn/Zhihu activity, and interest in tech/business analysis directly align with the document's professional framing and primary-source research requirements.",
+    "model": "solar-pro",
+    "prompt_chars": 21990,
+    "latency_sec": 1.66,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task9_User18_seed0",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User9",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18",
+      "User9"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on AI Product Manager skills, career transitions, salary trends, and recruitment requirements\u2014topics directly aligned with Candidate B's profile as a data analyst transitioning to product roles. The content emphasizes technical skills (ML fundamentals, data literacy), portfolio projects, and salary data, which match B's background in statistics, certifications in data science, and career goals. Candidate A (investment manager) and C (product operations) lack the technical/data focus and career transition narrative central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 23483,
+    "latency_sec": 1.48,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task9_User18_seed0",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User9",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User9",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on AI Product Management frameworks, skill transitions for data analysts, and technical topics like token economics, model evaluation (RAGAS/G-Eval), and portfolio projects tailored for career pivots. Candidate C, a data analyst with a statistics background and aspirations to transition to product roles, aligns perfectly with the document's emphasis on skill gaps, technical frameworks, and career blueprints. The masked queries (e.g., 'Data analyst to [MASKED] product manager') and sources (e.g., Udacity's career transition blueprint) directly mirror Candidate C's goals and background, unlike Candidates A (investment manager) or B (product operations).",
+    "model": "solar-pro",
+    "prompt_chars": 26335,
+    "latency_sec": 2.05,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task9_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User9",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User9",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "Candidate C is a data analyst with a statistics background (Shanghai University of Finance and Economics) transitioning toward product management, mirroring the document's focus on moving from data analytics to AI product management. The document's technical depth (LLMs, vector databases, probabilistic UX) aligns with C's proficiency in Python/R/SQL, data modeling competitions, and certifications (PMP equivalent). Content priorities like PRD development, model evaluation (RAGAS), and cost/latency trade-offs match C's analytical rigor and career goals. The document's structured, goal-oriented tone (6-month blueprint, skill gap analysis) reflects C's meticulous personality and independent decision-making style. Candidate A (investment manager) and B (product operations) lack the technical/data science focus central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 28346,
+    "latency_sec": 1.82,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

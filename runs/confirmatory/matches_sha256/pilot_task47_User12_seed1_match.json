@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task47_User12_seed1",
+    "stage": "plan",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User17",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User12",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document's focus on a structured, evidence-based exercise plan for a 5-year-old daughter aligns with Candidate B's profile as a tech entrepreneur in Haidian District, Beijing, who prioritizes data-driven decisions, family involvement, and scientific rigor. The emphasis on WHO/pediatric guidelines mirrors B's preference for authoritative sources (e.g., his academic background and tech industry reliance on validated data). The request for a weekly schedule, family activities, and dietary support reflects B's balanced work-life approach, weekend family time, and interest in health optimization (e.g., his low-sugar diet and fitness routine). Candidate A (nurse) and C (state-owned manager) lack the specific tech/entrepreneurial framing, urban Beijing context, and detailed focus on child development science seen in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25113,
+    "latency_sec": 1.78,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task47_User12_seed1",
+    "stage": "search",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User17",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User12",
+      "User17"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on physical activity guidelines for children (especially 5-year-olds), child-friendly outdoor spaces, and caloric/macronutrient needs\u2014topics directly tied to Candidate B's role as a father of a 5-year-old daughter. His profile emphasizes family-centric activities (e.g., bedtime stories, weekend family time), health-conscious habits (low-sugar diet, exercise routines), and practical investments in child-friendly environments (eco-friendly smart home devices, pet care). The document\u2019s framing aligns with his priorities: balancing work and family, ensuring his daughter\u2019s physical/mental well-being, and seeking structured, evidence-based guidance (e.g., WHO/AAP guidelines). Candidates A and C lack the specific focus on a 5-year-old child\u2019s needs and the tech/health-conscious framing evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 26915,
+    "latency_sec": 1.8,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task47_User12_seed1",
+    "stage": "compress",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User17",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User12",
+      "User17"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on physical activity guidelines for 5-year-olds, emphasizing developmental milestones, multi-sport sampling, and evidence-based recommendations from organizations like WHO, ACSM, and AAP. Candidate B, a father of a 5-year-old daughter, aligns most closely with this content due to his direct parental interest in early childhood development, his data-driven decision-making style (reflecting the document's systematic approach), and his proactive engagement in family health (e.g., bedtime stories, yoga, and outdoor activities). Unlike Candidate A (focused on middle-school-aged son) or Candidate C (centered on pet care and adolescent children), Candidate B\u2019s profile explicitly highlights concerns about child development, physical activity, and scientific rigor, making him the most likely audience for this document.",
+    "model": "solar-pro",
+    "prompt_chars": 29408,
+    "latency_sec": 1.83,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task47_User12_seed1",
+    "stage": "write",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User17",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User16",
+      "User17"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document's focus on a family-centered, science-based exercise and nutrition guide for a 5-year-old girl in Haidian, Beijing aligns most closely with Candidate A. Key indicators include: (1) Candidate A's role as a father to a 5-year-old daughter in Haidian, directly matching the document's target demographic; (2) His tech-entrepreneur background aligns with the document's emphasis on quantitative guidelines, structured protocols, and data-driven recommendations (e.g., WHO/ACSM metrics, hydration tables); (3) His high-income, quality-of-life-focused consumption habits (e.g., organic groceries, fitness equipment) match the document's premium framing (e.g., 'high-end fitness equipment,' 'eco-friendly smart home devices'). Candidate B (state-owned enterprise manager in Harbin) and Candidate C (nurse in Beijing) lack the specific Haidian location, child's age, and tech-entrepreneurial focus that make Candidate A the definitive match.",
+    "model": "solar-pro",
+    "prompt_chars": 31419,
+    "latency_sec": 2.1,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

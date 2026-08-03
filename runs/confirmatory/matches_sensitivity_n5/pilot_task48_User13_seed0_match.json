@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task48_User13_seed0",
+    "stage": "plan",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User12",
+      "User10",
+      "User17",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User16",
+      "User12",
+      "User13",
+      "User10"
+    ],
+    "predicted_label": "D",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document explicitly describes a single mother and caf\u00e9 owner in Shanghai with a design/art background seeking a 6-month art education plan for her 5-year-old child. Candidate D matches all these attributes: she is a caf\u00e9 owner in Shanghai, has a design background, is a single mother to a 5-year-old named Xiaoyu, and emphasizes art/creativity in her lifestyle. The document's focus on art education, home interaction, and eco-friendly materials aligns with D's artistic personality, caf\u00e9-based creative environment, and preference for sustainable products. No other candidate shares this exact combination of identity traits and priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 40022,
+    "latency_sec": 1.93,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task48_User13_seed0",
+    "stage": "search",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User12",
+      "User10",
+      "User17",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User17",
+      "User12",
+      "User16",
+      "User13"
+    ],
+    "predicted_label": "E",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on early childhood development, arts education, music pedagogy (Dalcroze Eurhythmics, Orff Schulwerk), and creative art activities (coffee grounds crafts, Shanghai/Suzhou cultural themes). Candidate E, a caf\u00e9 owner with a design background, aligns best: her profile emphasizes art, creativity, cultural aesthetics, and child-centric activities. She values artistic expression, supports independent brands, and engages in creative content (short videos, caf\u00e9 design), mirroring the document's focus on holistic child development through art and music. Other candidates prioritize business, healthcare, tech, or traditional family activities, which lack the document's artistic and pedagogical framing.",
+    "model": "solar-pro",
+    "prompt_chars": 41737,
+    "latency_sec": 2.11,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task48_User13_seed0",
+    "stage": "compress",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User12",
+      "User10",
+      "User17",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User12",
+      "User17",
+      "User13",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": false,
+    "reasoning": "The document focuses on developmental psychology, arts education, and parent-child interaction dynamics for 5-year-olds, emphasizing evidence-based approaches and pedagogical frameworks. Candidate B, an AI entrepreneur with a 5-year-old daughter, aligns most closely due to his interest in technology and education, his proactive parenting style (e.g., reading bedtime stories, prioritizing family time), and his data-driven decision-making. While Candidate A also has a 5-year-old son, his profile emphasizes marketing and career development, whereas Candidate B\u2019s background in tech and entrepreneurship, combined with his focus on child development and family engagement, better matches the document\u2019s emphasis on structured, research-backed creative activities for early childhood. Candidates C, D, and E lack the same direct focus on child development or arts education methodologies.",
+    "model": "solar-pro",
+    "prompt_chars": 44230,
+    "latency_sec": 2.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task48_User13_seed0",
+    "stage": "write",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User12",
+      "User10",
+      "User17",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User16",
+      "User13",
+      "User17",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document explicitly mentions a 'single mother operating a boutique caf\u00e9 in Shanghai with a background in design and art,' which directly matches Candidate C's profile as a caf\u00e9 owner in Shanghai with a design background. The plan's integration of caf\u00e9 materials (coffee grounds, burlap sacks) and Shanghai's Haipai cultural heritage aligns with Candidate C's lifestyle, work environment, and cultural interests. Additionally, the focus on art education for a 5-year-old (Xiaoyu) matches Candidate C's role as a single mother prioritizing creative development for her child. No other candidate shares this specific combination of occupation, location, and artistic focus.",
+    "model": "solar-pro",
+    "prompt_chars": 46241,
+    "latency_sec": 2.09,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

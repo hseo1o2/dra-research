@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task18_User19_seed0",
+    "stage": "plan",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "Candidate C is a Supply Chain Manager (matching the document's author role) with a focus on budget-conscious, practical travel planning. The document emphasizes cost constraints (\u00a530,000 RMB), mid-to-high-end business hotels, and self-guided cultural immersion\u2014aligning with C's preferences for eco-friendly/sustainable choices, domestic historical/cultural destinations, and self-planned itineraries. Unlike A (manufacturing focus) or B (marketing/family-centric trips), C's profile directly mirrors the document's supply chain context, budget discipline, and interest in balancing work (meetings) with cultural research during non-working hours.",
+    "model": "solar-pro",
+    "prompt_chars": 25082,
+    "latency_sec": 1.72,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task18_User19_seed0",
+    "stage": "search",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on flight costs (CTU to BER), currency exchange rates (EUR to CNY), and public transportation tickets in Berlin, all framed around practical, cost-conscious planning. Candidate A, a supply chain manager from Chengdu (CTU), prioritizes efficiency, cost-effectiveness, and eco-friendly choices, aligning with the document's emphasis on flight durations, ticket pricing, and currency conversion. His domestic travel preferences and focus on family-friendly, budget-conscious decisions (e.g., monthly shopping, annual trips) mirror the document's logistical and financial framing. Candidates B and C, while also pragmatic, have less direct ties to Chengdu (CTU) or the specific travel/ticketing focus of the document.",
+    "model": "solar-pro",
+    "prompt_chars": 26551,
+    "latency_sec": 1.77,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task18_User19_seed0",
+    "stage": "compress",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on flight and currency information for travel from Chengdu (CTU) to Berlin (BER), including visa requirements and airline options. Candidate B resides in Chengdu, has a son studying in Germany, and has a travel history that includes international trips. The document's emphasis on practical logistics (flight durations, exchange rates, visa processes) aligns with Candidate B's pragmatic, efficiency-oriented personality and his role as a supply chain manager, which requires meticulous planning. Additionally, the failed queries about flights and visas suggest a user with specific, repeated needs for such data, consistent with Candidate B's periodic mobility and international travel patterns. Candidates A and C lack direct ties to Chengdu or Germany, making B the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 29269,
+    "latency_sec": 1.77,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task18_User19_seed0",
+    "stage": "write",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document is tailored for a supply chain manager (explicitly stated in the opening paragraph) conducting a business trip to Berlin, emphasizing logistics efficiency, eco-friendly practices, and budget constraints. Candidate B is the only supply chain manager among the three profiles, with a background in logistics management and experience in solving complex supply chain problems. The document's focus on mid-to-high-end accommodations, structured business frameworks, and cultural immersion aligns with Candidate B's preferences for eco-friendly consumption, mid-to-high-end business hotels, and self-planned itineraries that balance work and cultural experiences. Additionally, Candidate B's residence in Chengdu (the departure city mentioned in the document) and his role as a supply chain manager make him the most direct match.",
+    "model": "solar-pro",
+    "prompt_chars": 31280,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

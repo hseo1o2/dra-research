@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task17_User17_seed1",
+    "stage": "plan",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User16",
+      "User10",
+      "User25",
+      "User17"
+    ],
+    "predicted_label": "E",
+    "predicted_userid": "User17",
+    "correct": true,
+    "reasoning": "Candidate E (Chen Fang) is a 45-50-year-old head nurse with high school and college-aged children, aligning with the document's focus on a multi-generational family. Her priorities for healthy, low-oil/low-salt dining, accessible accommodations, and balanced activities (active for youth, relaxing for seniors) mirror her own lifestyle preferences. As a caregiver, she values comfort, cleanliness, and safety\u2014key in the document. Her recent adoption of a pet and focus on pet-friendly destinations also subtly align with the document's emphasis on inclusive family needs. Other candidates lack her direct experience balancing youthful energy with elderly care or her explicit focus on health-conscious dining.",
+    "model": "solar-pro",
+    "prompt_chars": 38451,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task17_User17_seed1",
+    "stage": "search",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User25",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "D",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on flight details (Beijing to Sanya, Okinawa, Da Nang) and luxury accommodations (Ritz-Carlton Sanya), reflecting a traveler prioritizing convenience, efficiency, and quality. Candidate D, a marketing manager in Shanghai, aligns best: he travels 2-3x/year for family vacations, prefers self-guided tours with detailed planning, and values high-end hotels. His interest in natural/historical destinations (e.g., Zhangjiajie, Huangshan) matches the document\u2019s emphasis on scenic routes. Unlike other candidates (e.g., A\u2019s hometown focus, B\u2019s pet-friendly trips, C\u2019s frugal travel, E\u2019s business trips), D\u2019s profile emphasizes cost-effectiveness, quality, and family-oriented leisure travel, directly aligning with the document\u2019s framing.",
+    "model": "solar-pro",
+    "prompt_chars": 40802,
+    "latency_sec": 2.33,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task17_User17_seed1",
+    "stage": "compress",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User25",
+      "User22",
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The document focuses on travel logistics for Okinawa and Da Nang, emphasizing flight details, accommodation options, and cost comparisons. Candidate A, a retired woman in her 60s, aligns with this content due to her travel preferences for natural scenery, historical sites, and eco-tourism, as well as her frugal yet quality-conscious spending habits. The document\u2019s emphasis on budget-friendly options (e.g., one-stop flights starting at $127) and practical travel planning mirrors her rational, cost-effective approach to family travel. Additionally, her recent interest in hot spring vacations and eco-tourism aligns with the document\u2019s focus on destinations like Okinawa, which is known for its natural attractions and hot springs. Other candidates (B, C, D, E) either prioritize business travel, technical interests, or urban exploration, which are less relevant to the document\u2019s leisure-focused, family-oriented framing.",
+    "model": "solar-pro",
+    "prompt_chars": 43295,
+    "latency_sec": 2.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task17_User17_seed1",
+    "stage": "write",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User16",
+      "User10",
+      "User17",
+      "User25"
+    ],
+    "predicted_label": "E",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The document emphasizes multi-generational beach vacations with a focus on accessibility, health-conscious dining, and balancing active/adventurous activities with tranquil options. Candidate E (Li Xiuying) aligns best: as a retired senior with a harmonious family (including grandchildren), she prioritizes health, comfort, and intergenerational bonding. Her interest in eco-tourism, hot springs, and pet-friendly destinations mirrors the report's emphasis on gentle ocean access, low-salt cuisine, and dual-track itineraries. Unlike younger candidates (A-C), E's age and family structure (living with husband, frequenting grandchildren) directly align with the document's multi-generational focus. Candidate D shares some traits but lacks E's explicit emphasis on intergenerational travel and senior-friendly comforts.",
+    "model": "solar-pro",
+    "prompt_chars": 45306,
+    "latency_sec": 2.43,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

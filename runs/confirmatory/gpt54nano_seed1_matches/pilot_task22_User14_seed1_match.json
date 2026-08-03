@@ -1,0 +1,118 @@
+[
+  {
+    "run_id": "pilot_task22_User14_seed1",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User14",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document is written from the perspective of a 28\u201332-year-old single male freelance illustrator in Shanghai with fluctuating income and a moderate-to-conservative risk appetite\u2014this closely matches Candidate B (Lin Nan). The research emphasis on integrating annuity, medical, and long-term care protections for a freelancer aligns with B\u2019s career as a freelance illustrator and his likely need for structured retirement planning without employer benefits.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 26083,
+    "latency_sec": 1.3,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4769,
+    "output_tokens": 106,
+    "total_tokens": 4875,
+    "api_response_id": "chatcmpl-E8pjKoeWerL2BaCZG9XObSU9isBIi"
+  },
+  {
+    "run_id": "pilot_task22_User14_seed1",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User20"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The queries focus on Shanghai\u2019s Huhuibao supplementary medical insurance and flexible employment/social security contribution rules, which align with a freelance worker needing practical, cost-and-coverage details. Candidate A is a Shanghai-based freelance illustrator and would be especially motivated to understand pre-existing-condition coverage and how to pay into social insurance as a flexible worker.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 25320,
+    "latency_sec": 1.92,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4984,
+    "output_tokens": 91,
+    "total_tokens": 5075,
+    "api_response_id": "chatcmpl-E8pjMqxIvlBqOi9h5ImXjIqY0fPA5"
+  },
+  {
+    "run_id": "pilot_task22_User14_seed1",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The excerpt is a highly detailed, policy-and-tax focused guide to China\u2019s personal pension (\u4e2a\u4eba\u517b\u8001\u91d1/\u4e2a\u4eba\u517b\u8001\u91d1EET model), specifically tailored to flexible workers/freelancers in Shanghai, including product categories and withdrawal taxation. Candidate A is a Shanghai-based freelancer and would be most likely to seek practical guidance on pension eligibility, contribution caps, and tax treatment for variable freelance income.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 29044,
+    "latency_sec": 1.5,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5735,
+    "output_tokens": 101,
+    "total_tokens": 5836,
+    "api_response_id": "chatcmpl-E8pjNAi71PXIbU2KcOzEi3JYBlyYn"
+  },
+  {
+    "run_id": "pilot_task22_User14_seed1",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The excerpt is explicitly written for a Shanghai-based freelance illustrator (male, ~28\u201332), with variable commission income, no corporate safety net, and a focus on cash-flow smoothing and retirement security\u2014matching Candidate C\u2019s identity and career path. The document\u2019s technical, finance-structured framing (tiered reserves, tax optimization, annuity/healthcare reserve) aligns with a freelancer who plans budgets and invests rationally, which is consistent with Candidate C\u2019s behavior and interests.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 31055,
+    "latency_sec": 1.55,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5579,
+    "output_tokens": 120,
+    "total_tokens": 5699,
+    "api_response_id": "chatcmpl-E8pjP7MNqIOCJkZR5OqRTfX4fxSur"
+  }
+]

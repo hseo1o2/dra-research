@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task27_User2_seed1",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "Candidate A (Wang Xue) aligns most closely with the document's focus on indie music production, budget-conscious planning, and creative self-expression. While all candidates are students, A's background in psychology and interest in creative outlets (crafts, music) directly mirror the document's emphasis on artistic creation. Her detailed budgeting habits, time management skills, and use of social media (Xiaohongshu, Weibo) for sharing personal projects align with the document's practical, step-by-step approach to music production and promotion. Unlike B (tech-focused) and C (media/opinion research), A's persona as a music enthusiast with limited technical resources but strong DIY ethos matches the document's grassroots, self-taught tone and emphasis on low-cost marketing strategies.",
+    "model": "solar-pro",
+    "prompt_chars": 23869,
+    "latency_sec": 2.29,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task27_User2_seed1",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on music promotion strategies (Xiaohongshu, Spotify), copyright management (NetEase, Tencent), and platform-specific technical requirements\u2014topics aligning with Candidate B's interests in psychology, communication, and social media engagement. B's active use of Xiaohongshu, Weibo, and WeChat for sharing content, combined with her focus on cultural and educational topics, mirrors the document's emphasis on digital distribution, audience engagement, and platform-specific practices. Candidates A and C lack B's direct engagement with music promotion or social media strategy, making B the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 25375,
+    "latency_sec": 2.03,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task27_User2_seed1",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User1",
+    "correct": false,
+    "reasoning": "The document focuses on technical product comparisons (microphones, audio interfaces, headphones) with repeated price queries in RMB and Chinese e-commerce platforms (JD, Tmall). This aligns with Candidate C's profile as a computer science student interested in technology, cost-effectiveness, and frequent online shopping for electronics. The document's framing (spec comparisons, price tracking) matches C's technical focus and consumption habits, unlike A's social research interests or B's psychology/art focus. The failed queries also suggest a systematic, technical approach to data collection typical of C's analytical background.",
+    "model": "solar-pro",
+    "prompt_chars": 27967,
+    "latency_sec": 1.6,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task27_User2_seed1",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User7",
+    "correct": false,
+    "reasoning": "The document focuses on independent music production, budgeting, and DIY distribution strategies for Indie Pop/Folk artists. Candidate A, a journalism graduate student with interests in new media, social responsibility, and content creation, aligns best. The document's emphasis on strategic planning, cost-effective resource allocation, and grassroots marketing (e.g., WeChat communities, TikTok/Reels) mirrors A's analytical mindset, data-driven decision-making, and active engagement in social media (Weibo, Zhihu) for in-depth content sharing. Unlike Candidate B (clinical psychology focus) or C (tech-centric), A's background in communication and public opinion research directly relates to the document's framing for indie artists seeking to build audiences and navigate digital platforms. The detailed budgeting, phase-based timelines, and emphasis on cultural resonance (e.g., Chinese platforms like Bilibili) further align with A's Beijing-based, socially conscious profile.",
+    "model": "solar-pro",
+    "prompt_chars": 29978,
+    "latency_sec": 2.23,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

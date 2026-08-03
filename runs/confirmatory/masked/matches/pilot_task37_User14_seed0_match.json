@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task37_User14_seed0",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User20",
+      "User8",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User14",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "Candidate B (Lin Nan) is the best match. The document emphasizes a warm, stylish apartment design with natural wood and fabrics, an open-plan kitchen for frequent cooking, and a pet-friendly environment\u2014all aligning with B's status as a cat owner (Mo Mo) and his interest in cooking Italian cuisine. His artistic background and preference for quality materials (e.g., high-end art tools) match the document's focus on aesthetic, durable materials. Additionally, B's freelance illustrator lifestyle and need for a creative, comfortable workspace align with the document's emphasis on high-frequency areas and integrated living spaces. Candidates A and C lack the same depth of pet-centric and material-focused preferences.",
+    "model": "solar-pro",
+    "prompt_chars": 23900,
+    "latency_sec": 1.76,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task37_User14_seed0",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User20",
+      "User8",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User8",
+      "User20"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "Candidate A is the best match due to their focus on artistic, design-oriented content and pet-friendly living (owning a cat). The document emphasizes open kitchen layouts, heavy cooking, and cat-friendly design elements like built-in cat walks and scratch-resistant materials, aligning with A's interests in interior design, cooking (Italian cuisine), and cat ownership. Unlike B (investment-focused) and C (copywriter with broader cultural interests), A's profile explicitly highlights their creative lifestyle, home customization, and integration of pets into living spaces, making the document's framing and priorities most relevant to them.",
+    "model": "solar-pro",
+    "prompt_chars": 25787,
+    "latency_sec": 1.92,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task37_User14_seed0",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User20",
+      "User8",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User14",
+      "User8"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document emphasizes cat-friendly design, open kitchen layouts, and aesthetic elements like Japandi style, which align with Candidate B's profile. B is a freelance illustrator with a cat named 'Mo Mo' who influences his work, shares a passion for design, and values artistic integration in living spaces. The document's focus on creative, visually appealing solutions (e.g., glass partitions, cat walks, and material choices) mirrors B's artistic sensibilities and his tendency to incorporate pets into his creative process. Candidates A and C, while also cat-friendly, lack B's deep artistic focus and design-oriented consumption habits, making B the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 28794,
+    "latency_sec": 2.01,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task37_User14_seed0",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User20",
+      "User8",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User14",
+      "User8"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document emphasizes a design language (Japandi/Warm Wood Cream) and spatial fluidity that aligns with Candidate B's artistic background and preference for design-oriented environments. The focus on integrating feline enrichment (e.g., 'Cat Architecture') matches B's close relationship with his cat, who inspires his illustration work. The document's detailed technical specifications (e.g., sintered stone countertops, pocket doors) reflect B's meticulous nature and willingness to invest in high-quality tools. Finally, the emphasis on natural lighting and organic aesthetics resonates with B's Suzhou upbringing, where Jiangnan gardens influenced his artistic style. Candidate A (copywriter) and C (investment manager) lack the same depth of design-focused priorities and feline-centric considerations.",
+    "model": "solar-pro",
+    "prompt_chars": 30805,
+    "latency_sec": 1.78,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

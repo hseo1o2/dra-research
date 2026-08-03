@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task47_User12_seed0",
+    "stage": "plan",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User17",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User12"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "Candidate C (Zhang Yu) is a 30-35-year-old AI entrepreneur with a 5-year-old daughter, aligning directly with the document's focus on creating a structured exercise plan for a 5-year-old. His profile emphasizes scientific rigor (master's in CS, AI research), family involvement (daily bedtime stories, weekend family time), and health-conscious habits (yoga, low-sugar diet). The document's emphasis on evidence-based guidelines, structured schedules, and family participation mirrors C's data-driven decision-making, tech-savvy approach to health, and active parenting style. Candidates A (focused on middle school son) and B (no mention of young children) lack the direct relevance to a 5-year-old's exercise needs.",
+    "model": "solar-pro",
+    "prompt_chars": 25324,
+    "latency_sec": 1.73,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task47_User12_seed0",
+    "stage": "search",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User17",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User16",
+      "User17"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on physical activity, screen time, and sleep guidelines for children under 5, with a strong emphasis on scientific research (e.g., WHO, AAP, ACSM) and technical terms like 'fundamental movement skills (FMS),' 'epiphyseal growth plates,' and 'locomotor skills.' Candidate A, an AI entrepreneur with a master's in computer science, aligns with this analytical, research-driven framing. His background in data analysis, logical reasoning, and interest in evidence-based practices (e.g., fitness tracking, tech products) reflect the document's prioritization of structured, data-backed recommendations. Candidates B and C, while family-oriented, lack A's technical/scientific focus and preference for rigorous, guideline-based content.",
+    "model": "solar-pro",
+    "prompt_chars": 26915,
+    "latency_sec": 2.15,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task47_User12_seed0",
+    "stage": "compress",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User17",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User12",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on physical activity, screen time, and sleep guidelines for children under 5 years old, with specific emphasis on a 5-year-old preschooler. Candidate B is a 30-35-year-old AI entrepreneur with a 5-year-old daughter, making this content directly relevant to his role as a parent. The document's framing aligns with his priorities: balancing work and family life, prioritizing his daughter's health, and integrating practical guidelines into daily routines. While Candidates A and C also have children, their profiles lack the specific focus on early childhood development and the intersection of health guidelines with a tech-savvy, entrepreneurial lifestyle evident in Candidate B's profile. The document's technical tone and structured data also resonate with his background in AI and data-driven decision-making.",
+    "model": "solar-pro",
+    "prompt_chars": 29408,
+    "latency_sec": 2.29,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task47_User12_seed0",
+    "stage": "write",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User17",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User12",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on a 5-year-old girl's physical activity and athletic development, aligning with Candidate B's role as a father to a 5-year-old daughter. The scientific, evidence-based tone matches his background in AI and data-driven decision-making, while the emphasis on holistic development (physical, mental, social) reflects his family-oriented values and interest in balancing work/tech with health. The document's structured, goal-oriented approach (e.g., FMS domains, safety considerations) mirrors his preference for systematic planning and investment in quality-of-life enhancements for his family. Candidates A (nurse, older children) and C (state-owned enterprise manager, son in middle school) lack the direct parental context and tech/evidence-based framing central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 31419,
+    "latency_sec": 1.76,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

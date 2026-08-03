@@ -1,0 +1,110 @@
+[
+  {
+    "run_id": "pilot_task43_User18_seed1",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on legal analysis of non-compete clauses for a data analyst under Chinese labor law, emphasizing technical legal requirements, compensation disputes, and judicial precedents. Candidate B is a data analyst with a background in statistics, currently working in the tech sector, and actively pursuing certifications in data science. The document\u2019s framing aligns with her professional context, immediate legal concerns post-resignation, and need for precise legal strategies to navigate employment restrictions. Candidate A, a marketing manager, lacks the direct relevance to data analysis, non-compete enforcement in tech, or the document\u2019s technical legal focus. The vocabulary (e.g., 'non-compete compensation calculation,' 'judicial interpretations') and priorities (e.g., invalidating restrictions, breach remedies) reflect Candidate B\u2019s role and situation.",
+    "model": "solar-pro",
+    "prompt_chars": 16613,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task43_User18_seed1",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on legal interpretations of non-compete clauses, trade secrets, and judicial precedents from Shanghai and national courts, reflecting a professional interest in labor law compliance and corporate governance. Candidate B, as a marketing manager in a foreign enterprise, would likely engage with such content due to his role in managing employee contracts, protecting trade secrets, and navigating legal frameworks for business operations. His MBA background, pragmatic decision-making style, and focus on cost-effectiveness align with the document's emphasis on enforceability, compensation, and judicial reasoning. Candidate A, a data analyst, would not prioritize this legal/HR-focused content, which lacks direct relevance to her technical or career development interests.",
+    "model": "solar-pro",
+    "prompt_chars": 17554,
+    "latency_sec": 1.71,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task43_User18_seed1",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document excerpt is empty (topic_001: []), providing no content to analyze for priorities, framing, vocabulary, or topic angles. Since no document content exists to match against either candidate's profile, the attribution cannot be determined based on the given data. However, per instructions, a label must be selected. Candidate A is chosen arbitrarily as the default, but this decision lacks substantive justification due to the absence of document content.",
+    "model": "solar-pro",
+    "prompt_chars": 14943,
+    "latency_sec": 1.52,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task43_User18_seed1",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on legal nuances of non-compete agreements specifically for data analysts in Shanghai's tech sector, detailing technical criteria (e.g., trade secret access, compensation calculations) and actionable steps for employees. Candidate B is a data analyst with technical expertise (Python, SQL, Tableau) and a career trajectory in the field, aligning with the document's audience. Candidate A, a marketing manager, lacks the technical background and daily relevance to the legal analysis of non-compete clauses for data roles. The document's framing\u2014emphasizing job-specific duties, compensation tracking, and legal remedies\u2014directly addresses Candidate B's professional needs and priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 22939,
+    "latency_sec": 1.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

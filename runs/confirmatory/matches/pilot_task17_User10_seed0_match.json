@@ -1,0 +1,90 @@
+[
+  {
+    "run_id": "pilot_task17_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate C (Liu Qiang) is the best match. The document outlines a multi-generational family vacation for a Shanghai-based family with an 8-year-old daughter (who loves painting) and a 5-year-old son (interested in building toys), mirroring Candidate C's own family composition and children's interests. The request for high-end accommodations, Jiangnan cuisine, and pet-friendly flexibility aligns with C's preferences for quality, cultural ties to Suzhou/Jiangnan, and ownership of a Labrador. Additionally, C's role as a marketing manager in Shanghai and his quarterly family trips match the document's origin (Shanghai) and travel frequency. Candidate A (Harbin-based, no mention of Jiangnan cuisine) and B (Beijing-based, cat-focused) lack these direct overlaps in location, culinary preferences, and family dynamics.",
+    "model": "solar-pro",
+    "prompt_chars": 23930,
+    "latency_sec": 1.93
+  },
+  {
+    "run_id": "pilot_task17_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on travel logistics (driving times, HSR routes, transfers) and luxury multi-generational resort planning, aligning with Candidate B's profile. B, a marketing manager in Shanghai, prioritizes family trips (twice yearly), values self-guided tours with detailed planning, and emphasizes cost-effectiveness in quality accommodations. The document's emphasis on elderly-friendly transit (e.g., 'elderly travel', 'seniors transit') and multi-generational luxury resorts (e.g., 'family luxury resort', 'seniors') matches B's family structure (married with two young children) and travel style (self-guided, budget-conscious yet quality-focused). Candidate A (state-owned enterprise manager) and C (nurse) lack the documented focus on luxury family travel or Shanghai-centric transit planning.",
+    "model": "solar-pro",
+    "prompt_chars": 25492,
+    "latency_sec": 2.37
+  },
+  {
+    "run_id": "pilot_task17_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on multi-generational family travel (elderly, children), accessibility (wheelchair-friendly, kids' clubs), and coastal resorts with amenities like LEGO play areas. Candidate A explicitly mentions a family with young children (8 and 5 years old) and elderly parents, prioritizes family vacations, and values accessible, child-friendly accommodations. His travel style (self-guided, family-focused) and consumption preferences (quality, cost-effectiveness for children's needs) align with the document's emphasis on logistics, beach safety, and resort amenities. Candidates B and C lack the same multi-generational focus and detailed child-centric priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 28006,
+    "latency_sec": 1.74
+  },
+  {
+    "run_id": "pilot_task17_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on a multi-generational family beach vacation tailored to an 8-year-old girl interested in painting, a 5-year-old boy fascinated by building toys, and elderly grandparents requiring accessibility. Candidate C, Liu Qiang, is a Shanghai-based father of two children (8 and 5) with similar interests (painting, building toys) and emphasizes family bonding through travel. His profile highlights quarterly family trips, prioritization of children's educational expenses, and a preference for self-guided tours that align with the document's detailed itinerary planning. Additionally, his residence in Shanghai matches the document's departure point, and his pragmatic, detail-oriented personality aligns with the report's structured analysis of transit, climate, and accessibility. Candidates A and B lack the specific family composition (children's ages/interests) and Shanghai-based travel context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30017,
+    "latency_sec": 2.29
+  }
+]

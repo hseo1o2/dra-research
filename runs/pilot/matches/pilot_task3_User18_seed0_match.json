@@ -1,0 +1,90 @@
+[
+  {
+    "run_id": "pilot_task3_User18_seed0",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document's focus on entrepreneurship education for a data-driven startup aligns with Candidate B's profile as a 25-30-year-old Data Analyst in Shanghai with a statistics background, certifications in data science, and career goals of transitioning to management or product roles. The request for a structured 1\u20132-year learning roadmap matches B's meticulous, goal-oriented personality and her use of tools like Notion/Trello for task management. The emphasis on technical/data background applicability, B2B SaaS/AI domains, and sources like LinkedIn/industry reports directly reflects B's professional interests, online behavior (LinkedIn/Zhihu activity), and rational decision-making style. Candidates A (marketing manager) and C (copywriter) lack the technical/data science focus central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 25615,
+    "latency_sec": 2.49
+  },
+  {
+    "run_id": "pilot_task3_User18_seed0",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User20"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate A, a marketing manager with an MBA background, aligns most closely with the document's focus on MBA program details (tuition, part-time options, rankings) and institutional comparisons (Tsinghua, PKU Guanghua). The document emphasizes practical, cost-related information and program logistics, reflecting A's pragmatic, career-oriented decision-making style and interest in management education. Candidate B (data analyst) and C (copywriter) lack A's direct professional connection to MBA programs or the document's financial/structural framing.",
+    "model": "solar-pro",
+    "prompt_chars": 26338,
+    "latency_sec": 1.79
+  },
+  {
+    "run_id": "pilot_task3_User18_seed0",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on MBA and executive education programs, emphasizing tuition fees, program formats, and entrepreneurship support\u2014key priorities for a career-oriented professional seeking advanced business education. Candidate B, an MBA graduate and marketing manager, aligns with this focus due to his background in marketing, interest in management concepts, and decision-making style that values data-driven analysis. His consumption of business case studies, LinkedIn activity, and preference for programs blending Eastern/Western thinking mirror the document's framing. Candidates A (data analyst) and C (copywriter) lack the direct MBA/professional development focus central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 28831,
+    "latency_sec": 1.81
+  },
+  {
+    "run_id": "pilot_task3_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on entrepreneurship education and execution roadmaps for technical/data professionals transitioning to venture creation. Candidate C is a data analyst with a background in statistics, technical skills (Python, R, SQL), and explicit goals to transition into management/product roles. The document's emphasis on quantitative validation (TAM sizing, LTV/CAC), technical commercialization, and phased execution aligns with C's data-driven mindset, certification pursuits, and pragmatic decision-making style. Candidates A (copywriter) and B (marketing manager) lack the technical/data professional context central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 30842,
+    "latency_sec": 1.91
+  }
+]

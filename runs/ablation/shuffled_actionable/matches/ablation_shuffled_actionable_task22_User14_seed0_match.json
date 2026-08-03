@@ -1,0 +1,118 @@
+[
+  {
+    "run_id": "ablation_shuffled_actionable_task22_User14_seed0",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User15",
+      "User14"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "Candidate C (Lin Nan) is a 28-32-year-old male freelance illustrator in Shanghai with variable income, aligning perfectly with the document's author profile. The document's focus on ESG principles, tax-advantaged retirement accounts for freelancers, and long-term care insurance mirrors Candidate C's risk-averse nature and need for stable returns. The emphasis on dynamic allocation strategies across economic cycles also matches his artistic profession's income variability. Content priorities like medical inflation shielding and eldercare integration reflect his age group's retirement planning needs, while the document's flexible budget tiers accommodate his freelance income patterns. No other candidate matches the occupation, demographic details, and financial priorities with such specificity.",
+    "model": "solar-pro",
+    "prompt_chars": 23003,
+    "latency_sec": 2.05,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4823,
+    "output_tokens": 159,
+    "total_tokens": 4982,
+    "api_response_id": "15a92dbb-d446-4054-9448-29667c6fc56c"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task22_User14_seed0",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User15",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on tax policies, insurance benefits, and financial planning for flexible employment in Shanghai, particularly emphasizing practical financial strategies, tax deductions, and insurance schemes. Candidate C, a data analyst with a background in statistics and a rational, detail-oriented personality, aligns most closely with this content. Her career in data analysis and her preference for cost-effective, research-driven decisions reflect the document's emphasis on financial optimization and policy details. Unlike Candidates A (freelance illustrator) and B (freelance writer), who prioritize artistic and cultural interests, Candidate C's practical, analytical mindset and focus on financial planning (e.g., quarterly travel budgeting, investment in durable products) directly match the document's framing. Additionally, her Shanghai residence and interest in tax-efficient consumption further solidify this alignment.",
+    "model": "solar-pro",
+    "prompt_chars": 23323,
+    "latency_sec": 1.91,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6318,
+    "output_tokens": 186,
+    "total_tokens": 6504,
+    "api_response_id": "648e731a-663f-4ecd-a043-0b9d6e5d5094"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task22_User14_seed0",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on tax policies, financial products, and regulatory frameworks for individual pensions, emphasizing data-driven analysis (e.g., tax savings calculations, product performance metrics) and structured comparisons (e.g., insurance account types, ESG investment options). Candidate B, a data analyst with a background in statistics and a preference for logical, evidence-based decision-making, aligns most closely with this analytical framing. Her interest in environmental protection and sustainability also resonates with the document's ESG-related content. Candidates A (freelance writer) and C (freelance illustrator) lack the financial/analytical focus central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 27367,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6394,
+    "output_tokens": 150,
+    "total_tokens": 6544,
+    "api_response_id": "b65f6325-cf02-48af-950c-6742d0769d41"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task22_User14_seed0",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User14",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document focuses on a 28\u201332-year-old freelance illustrator (Lin Nan) in Shanghai, emphasizing financial planning for freelancers with fluctuating income, conservative risk tolerance, and ESG priorities. Candidate B matches this profile exactly: same occupation, age, location, and risk preferences. The document's focus on art (illustration), pet ownership (cat 'Mo Mo'), and creative lifestyle aligns with Candidate B's profile. Candidates A (freelance writer) and C (data analyst) lack the artistic background and freelance illustrator specifics central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29378,
+    "latency_sec": 1.84,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 10364,
+    "output_tokens": 141,
+    "total_tokens": 10505,
+    "api_response_id": "8e10d499-208a-45a4-928c-917456f83996"
+  }
+]

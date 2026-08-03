@@ -1,0 +1,110 @@
+[
+  {
+    "run_id": "pilot_task38_User10_seed1",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate B's profile aligns more closely with the document's focus on family-centric home-buying priorities (school-aged children, pet-friendly neighborhoods, educational resources) and practical financial planning. The document emphasizes school district policies, budget allocation, and transaction logistics\u2014key concerns for a young family relocating for education and lifestyle, as reflected in B's status as a married parent with children aged 8 and 5. Candidate A, while family-oriented, has older, independent children and a less urgent need for elementary school districts, making the document's detailed focus on K-12 zoning and child-centric amenities less central to his profile.",
+    "model": "solar-pro",
+    "prompt_chars": 17538,
+    "latency_sec": 1.62,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task38_User10_seed1",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on Beijing real estate policies, housing prices, and school district regulations (e.g., '1911 policy' and '630 policy'), which align with Candidate B's priorities as a marketing manager in a foreign enterprise. B's family status (married with school-aged children) and frequent discussions about education policies (e.g., multi-school zoning) reflect the document's emphasis on housing and schooling. Candidate A, a technical director in manufacturing with no mention of family relocation or education concerns, lacks direct relevance to the document's content. B's urban lifestyle, budget-conscious yet quality-focused consumption, and interest in policy analysis further align with the document's framing of real estate decisions.",
+    "model": "solar-pro",
+    "prompt_chars": 17633,
+    "latency_sec": 1.83,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task38_User10_seed1",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User22",
+    "correct": false,
+    "reasoning": "The document focuses on Beijing real estate for a budget under \u00a56M, emphasizing practical factors like pricing, square footage, proximity to schools (Haidian's education resources), parks (dog-friendly green spaces), and transportation. Candidate A, a technical director with a German Shepherd, prioritizes practicality, cost-effectiveness, and quality of life (gardening, dog walks, family outings). His interest in mechanical engineering aligns with the document's technical details (unit prices, sqm calculations), while his preference for parks and dog-friendly environments matches the emphasis on green spaces. Candidate B, a marketing manager, focuses more on luxury and family-centric amenities (high-end hotels, photography equipment), which are less central to the document's pragmatic, budget-conscious framing.",
+    "model": "solar-pro",
+    "prompt_chars": 21562,
+    "latency_sec": 1.85,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task38_User10_seed1",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on balancing educational resources, living space, and quality-of-life factors (e.g., parks, pet-friendly areas) for a family with two school-aged children and a pet dog. Candidate B explicitly matches these priorities: he has two children (8 and 5) and a pet dog, prioritizes educational resources, and values modern living infrastructure, parks, and family-friendly amenities. The document\u2019s emphasis on trade-offs between districts (Haidian vs. Chaoyang) aligns with Candidate B\u2019s pragmatic, family-oriented decision-making style and his background in balancing multiple priorities (e.g., career, children\u2019s education, quality of life). Candidate A, while having a pet, focuses on a single son abroad and a daughter in university, with no mention of school-aged children or educational district concerns, making the document\u2019s framing less relevant to his profile.",
+    "model": "solar-pro",
+    "prompt_chars": 23573,
+    "latency_sec": 2.35,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

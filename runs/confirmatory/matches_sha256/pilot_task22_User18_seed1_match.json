@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task22_User18_seed1",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User15",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "Candidate A matches the document's focus on conservative financial planning, retirement security, and multi-pillar integration (annuity insurance, medical coverage, long-term care). The document's emphasis on systematic investment plans, low-risk products, and Shanghai-based market alignment aligns with A's profile as a debt-free data analyst with a statistics background, conservative risk tolerance, and existing mutual fund/stock experience. Unlike B (freelance writer with eco-focused consumption) and C (male illustrator prioritizing artistic investments), A's practical, data-driven decision-making and financial stability mirror the document's structured, long-term planning approach.",
+    "model": "solar-pro",
+    "prompt_chars": 23571,
+    "latency_sec": 1.52,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task22_User18_seed1",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User15",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "Candidate A, a data analyst in Shanghai, aligns most closely with the document's focus on retirement policy metrics (e.g., IRR benchmarks, replacement rates, retirement age reforms). The document emphasizes quantitative analysis, regulatory timelines (2024-2025), and structured policy frameworks\u2014mirroring A's statistical background, preference for data-driven decision-making, and interest in financial/economic topics. Unlike B (freelance writer focused on cultural/social content) and C (illustrator prioritizing artistic inspiration), A's profile reflects the document's technical tone, attention to numerical benchmarks (2.5%, 3.0%, 50-70% replacement rates), and systemic policy analysis. Her Shanghai residence also aligns with the document's Shanghai-specific retirement age references (female retirement age 55).",
+    "model": "solar-pro",
+    "prompt_chars": 23593,
+    "latency_sec": 1.88,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task22_User18_seed1",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User18",
+      "User15"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on financial, insurance, and retirement products tailored for a conservative 25\u201330-year-old female data analyst in Shanghai. Candidate B matches this profile exactly: she is a 25\u201330-year-old female data analyst in Shanghai with a conservative, research-driven approach to financial decisions. The document emphasizes tax-deferred pensions, risk-averse insurance products (e.g., fixed-rate annuities at 2.5%), and practical medical coverage\u2014aligning with her rational, detail-oriented personality and mid-to-high tech salary. References to Shanghai-specific policies (e.g., 'Shanghai Hujibao') and her urban residence further confirm the match. Candidates A (freelance illustrator) and C (freelance writer in Beijing) lack the occupational, geographic, and risk-profile alignment.",
+    "model": "solar-pro",
+    "prompt_chars": 27367,
+    "latency_sec": 2.52,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task22_User18_seed1",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User15",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document explicitly targets a 25\u201330-year-old female data analyst in Shanghai with a statistics background, conservative risk appetite, and strong financial foundation (debt-free, owning assets, mutual fund experience). These attributes directly align with Candidate C's profile: a 25\u201330-year-old female data analyst at an internet company in Shanghai, with a statistics degree, certifications in data science, and a rational, detail-oriented personality. The document's focus on structured financial planning, tax optimization, and risk-averse investment strategies (e.g., fixed-rate annuities, low-risk SIPs) matches C's practical, research-driven decision-making style and career goals in management/product roles. Candidates A (freelance illustrator) and B (freelance writer) lack the financial literacy, quantitative background, and conservative risk profile emphasized in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29378,
+    "latency_sec": 2.39,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

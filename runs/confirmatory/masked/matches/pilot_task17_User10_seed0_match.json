@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task17_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate C (Liu Qiang) is the best match. The document emphasizes a multi-generational family vacation with children (8-year-old daughter who loves painting, 5-year-old son interested in building toys) and elderly family members, aligning with C's family structure (wife, 8-year-old daughter, 5-year-old son). The request for high-end accommodations, diverse dining options, and age-appropriate activities reflects C's preference for quality, cost-effectiveness, and family bonding. C's travel style (self-guided tours, planning itineraries) matches the document's detailed planning focus. Additionally, C's pet-friendly family (yellow Labrador) aligns with the document's flexible pet-friendly option. Candidate A lacks the exact age-matched children, while Candidate B's focus on pet-friendly destinations and nursing background is less central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 23899,
+    "latency_sec": 1.81,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task17_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User17",
+    "correct": false,
+    "reasoning": "The document focuses on elderly travel logistics (driving time, HSR routes, transit challenges) and multi-generational resort preferences (family luxury resorts, beach safety, senior-friendly transfers). Candidate A, a head nurse with elderly parents and a focus on family harmony, aligns most closely. Her profile emphasizes caring for elderly relatives, prioritizing comfort in travel, and valuing pet-friendly destinations (relevant to multi-generational trips). Candidates B and C, while family-oriented, focus more on natural attractions/photography (B) and business/management (C), lacking the document's specific emphasis on elderly travel and intergenerational resort needs.",
+    "model": "solar-pro",
+    "prompt_chars": 25473,
+    "latency_sec": 1.56,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task17_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on multi-generational family travel (elderly, children), accessibility (wheelchair-friendly pathways, kids' clubs), and detailed logistical planning (driving vs. HSR routes, beach safety, dining preferences). Candidate A explicitly mentions a family with an 8-year-old daughter and 5-year-old son, elderly parents, and prioritizes family vacations, accessibility, and meticulous planning. His profile aligns with the document's emphasis on child-friendly amenities (art workshops, building blocks), senior-friendly infrastructure (shaded pavilions, barrier-free access), and quarterly family trips. Candidates B and C lack the same level of detail about multi-generational travel or children's specific interests (e.g., painting, sandcastle building).",
+    "model": "solar-pro",
+    "prompt_chars": 28006,
+    "latency_sec": 1.73,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task17_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on a multi-generational family beach vacation tailored for an 8-year-old girl interested in painting, a 5-year-old boy fascinated by building toys, and elderly grandparents requiring accessibility. Candidate C explicitly mentions a similar family structure (8-year-old daughter interested in painting, 5-year-old son interested in building toys) and prioritizes family-centric travel planning. The document's emphasis on detailed itineraries, cost-effectiveness, and balancing diverse needs aligns with C's pragmatic, family-oriented decision-making style. Additionally, C's residence in Shanghai (departure point in the document) and preference for self-guided tours with pre-planned itineraries match the document's framing. Candidates A and B lack the specific child interests or travel planning focus described in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30017,
+    "latency_sec": 2.23,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

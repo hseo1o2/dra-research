@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task48_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document's focus on structured, evidence-based art education for children (8-year-old daughter interested in painting/dancing, 5-year-old son interested in building/sports) aligns with Candidate A's profile as a pragmatic, family-oriented father with an MBA in marketing who values educational frameworks and cultural synthesis (Jiangnan/Western). His role as primary breadwinner with a teacher-wife emphasizes systematic planning, while his Jiangnan roots and Shanghai lifestyle mirror the document's blend of traditional Chinese and Western art elements. The detailed curriculum, material lists, and progress assessments reflect his data-driven, efficiency-focused personality. Candidate B (caf\u00e9 owner) and C (AI entrepreneur) lack the specific family structure, educational priorities, and cultural framing central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25654,
+    "latency_sec": 2.11,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task48_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User12",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on art disciplines (e.g., Reggio Emilia, Orff Schulwerk, process art) and their impact on child development, particularly for 5-8-year-olds, emphasizing emotional expression, self-confidence, and creative projects. Candidate A, a caf\u00e9 owner with a design background and a 5-year-old child, values art, education, and creative experiences. Her profile highlights her interest in art exhibitions, process-oriented activities, and fostering her child's creativity through art. The document\u2019s emphasis on art-based learning, mixed-age projects, and emotional growth aligns with her priorities as a mother and artist. Candidates B (AI entrepreneur) and C (marketing manager) lack the same depth of focus on art education or child-centered creative development.",
+    "model": "solar-pro",
+    "prompt_chars": 27680,
+    "latency_sec": 2.28,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task48_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User10",
+      "User12"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on arts education frameworks (Reggio Emilia, Orff Schulwerk, Laban) and their impact on child development (ages 5-8), emphasizing self-esteem, emotional expression, and parent engagement. Candidate B, a father of two children (5 and 8) with interests in arts (daughter paints/dances), aligns most closely. His profile highlights family-centered educational investments, extracurricular activities, and a pragmatic approach to child development. While Candidate A (caf\u00e9 owner with a 5-year-old) and Candidate C (AI entrepreneur) have children in the target age range, their professional and personal interests lack the explicit focus on arts pedagogy and child development frameworks that define the document's core themes. Candidate B's emphasis on quality education, cultural exposure, and structured family activities directly mirrors the document's priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 30173,
+    "latency_sec": 2.3,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task48_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User12",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document's focus on a 6-month art education plan for an 8-year-old girl (interested in painting/dance) and 5-year-old boy (interested in building/sports) aligns perfectly with Candidate C's family structure (married with two children of the same ages and matching interests). The plan's integration of Western art history with traditional Jiangnan Chinese elements reflects Candidate C's Jiangnan cultural background and emphasis on combining Eastern/Western approaches. Additionally, the document's pedagogical frameworks (Reggio Emilia, DBAE) emphasize holistic child development, which matches Candidate C's role as a pragmatic, family-oriented manager who prioritizes children's education and invests in extracurricular activities. Candidates A (single mother with one child) and B (father with one child) lack the family composition and cultural context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 32184,
+    "latency_sec": 2.42,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

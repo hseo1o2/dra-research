@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task4_User9_seed1",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document reflects an early-career professional (1-3 years of experience) at an internet company seeking to enhance career competitiveness through education, with low risk tolerance and a need to balance work/study. Candidate A (Zhao Li) is a 22-25-year-old Product Operations professional at an internet company with 1-3 years of experience, matching the document's demographic and career stage. The document's focus on program comparison (MBA, EMBA, etc.) aligns with her need for structured learning to boost competitiveness, while her minor in Psychology and interest in user behavior analysis resonate with the document's emphasis on balancing practicality and personal growth. Candidate B (28-32, algorithm engineer) and Candidate C (20-23, undergraduate) do not match the age/experience criteria or the document's framing around early-career advancement in non-technical roles.",
+    "model": "solar-pro",
+    "prompt_chars": 23786,
+    "latency_sec": 2.17,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed1",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User9",
+      "User6"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on MBA admission requirements (work experience, exams) and the ROI of MBAs in Chinese tech companies ('\u5927\u5382'), particularly for product managers. Candidate B, a product operations professional in an internet company, aligns with this focus. Her queries about salary increases, recognition of online MBAs/MSBAs in hiring, and comparisons with tech roles reflect her career-oriented perspective. Candidate A (algorithm engineer) and C (environmental student) lack the direct connection to product management or corporate MBA ROI discussions present in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24240,
+    "latency_sec": 1.99,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed1",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User6",
+      "User11",
+      "User9"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on a candidate with 1\u20133 years of work experience in internet product operations, an Advertising major with a Psychology minor, and a quantitative/technical skill gap. Candidate C (Zhao Li) matches these attributes exactly: she is 22\u201325, works in product operations, studied Advertising with a Psychology minor, and has a similar skill gap (no formal math/computer science background). The document\u2019s emphasis on balancing human-centric skills with technical limitations aligns with her profile, whereas Candidates A (environmental studies) and B (algorithm engineering) lack the core operational and academic background described.",
+    "model": "solar-pro",
+    "prompt_chars": 27819,
+    "latency_sec": 1.79,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed1",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User6",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on a 22\u201325-year-old internet company professional with an Advertising/Psychology background seeking to bridge quantitative skills via education (MBA/MSBA) while balancing low risk tolerance and a demanding schedule. Candidate A matches this profile exactly: same age, occupation, educational background (Advertising minor in Psychology), and risk aversion. The report's emphasis on data-driven Product Operations aligns with A's creative-communication strengths and need for quantitative skill-building, unlike B (Environmental Studies student) or C (28\u201332-year-old algorithm engineer with advanced technical credentials).",
+    "model": "solar-pro",
+    "prompt_chars": 29830,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

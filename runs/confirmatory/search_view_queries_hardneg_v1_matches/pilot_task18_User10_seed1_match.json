@@ -1,0 +1,31 @@
+[
+  {
+    "run_id": "pilot_task18_User10_seed1",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on flight schedules (Shanghai to Berlin) and local Berlin transit (BVG, FEX, etc.), along with a Chinese restaurant in Berlin. Candidate A, a Shanghai-based marketing manager with frequent international business trips (Shenzhen/Chengdu) and a preference for high-end hotels, aligns best. His role involves global coordination, and his family's interest in international exposure (e.g., daughter\u2019s extracurriculars) suggests cross-border travel needs. Candidates B (Harbin-based, limited travel) and C (Suzhou-based, regional focus) lack the Shanghai-Berlin connection and international mobility patterns evident in the queries.",
+    "model": "solar-pro",
+    "prompt_chars": 23779,
+    "latency_sec": 1.64,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "queries",
+    "input_tokens": 5071,
+    "output_tokens": 153,
+    "total_tokens": 5224,
+    "api_response_id": "dfc5eaf8-e9d0-41b1-bc98-1a2c9dbdff8b"
+  }
+]

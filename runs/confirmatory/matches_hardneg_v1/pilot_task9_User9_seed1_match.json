@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task9_User9_seed1",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User9",
+      "User11"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document is authored by Zhao Li, a Product Operations specialist transitioning to an AI Product Manager role. Candidate B shares identical personal details (name, occupation, educational background, and career goals) with the document's author. The content focuses on skill gaps, hands-on projects, job market strategies, and networking\u2014directly aligned with Candidate B's profile as a young professional seeking career advancement. Candidate A (AI entrepreneur) and Candidate C (algorithm engineer) have technical backgrounds and priorities mismatched with the document's product-management and career-transition focus.",
+    "model": "solar-pro",
+    "prompt_chars": 25720,
+    "latency_sec": 1.87,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task9_User9_seed1",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User11",
+      "User9"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": false,
+    "reasoning": "Candidate A, an AI entrepreneur in Beijing, aligns most closely with the document's focus on AI product management, PRD templates, hallucination mitigation, and Beijing's GenAI startup ecosystem. The document emphasizes technical skills (RAG, evaluation metrics), industry trends (Zhipu, Moonshot, ByteDance), and events like hackathons\u2014all directly relevant to A's role as a founder managing AI products. A's background in computer science, leadership experience, and active participation in Beijing's tech scene (e.g., WaytoAGI meetups) make him the most likely audience. Candidates B (algorithm engineer) and C (product operations) lack A's entrepreneurial focus and domain-specific expertise in AI product strategy.",
+    "model": "solar-pro",
+    "prompt_chars": 26954,
+    "latency_sec": 1.79,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task9_User9_seed1",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User12",
+      "User9"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": false,
+    "reasoning": "The document focuses on AI Product Management (AI PM) skill gaps, technical frameworks (RAG, prompt engineering, evaluation metrics), and transitioning from non-AI roles. Candidate B, an AI entrepreneur with a technical background (Tsinghua CS, AI papers, tech lead experience), aligns best. His profile emphasizes AI application cases, industry trends, and data-driven decision-making, matching the document's technical depth and entrepreneurial framing. Candidate A (algorithm engineer) lacks product/management focus, while Candidate C (product operations) lacks technical AI expertise. B's role as an AI founder and his content preferences (AI application cases, tech insights) directly reflect the document's priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 29504,
+    "latency_sec": 1.8,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task9_User9_seed1",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User11",
+      "User12"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User12",
+    "correct": false,
+    "reasoning": "The document focuses on AI Product Management (AI PM) transition strategies, emphasizing technical concepts like probabilistic thinking, RAG architecture, and model tuning. Candidate C, an AI entrepreneur with a Master's in Computer Science and experience in AI leadership, aligns with the document's technical depth, entrepreneurial framing, and focus on bridging skill gaps in AI product development. Candidates A (Product Operations) and B (Algorithm Engineer) lack the hybrid business-technical perspective and leadership focus central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 31515,
+    "latency_sec": 1.6,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

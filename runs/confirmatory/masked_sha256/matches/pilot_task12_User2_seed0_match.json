@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task12_User2_seed0",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User5",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "Candidate C is a graduate student in Clinical Psychology with a strong academic background in psychology, aligning with the document's focus on evidence-based modalities (ACT, emotion-focused approaches) and self-awareness. The request for primary sources, psychological publications, and structured routines matches C's habits of using psychology apps, academic resources, and time management tools. Unlike A (advertising background) and B (mechanical engineering), C's expertise, interest in emotional regulation, and daily practices (journaling, mindfulness) directly reflect the document's priorities. Her adoption of a cat and sharing pet care tips also subtly align with the document's emphasis on emotional support mechanisms.",
+    "model": "solar-pro",
+    "prompt_chars": 22518,
+    "latency_sec": 2.19,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task12_User2_seed0",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User9",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on therapeutic techniques (CBT, DBT, EFT) and practical tools (thought records, ACT protocols) central to clinical psychology. Candidate C, a graduate student in Clinical Psychology, has direct academic and professional alignment with these topics, as evidenced by her psychology-focused online behavior (Coursera, Zhihu Psychology), content preferences (psychology articles, screenshots of research materials), and consumption habits (purchasing psychology books). The document's technical framing and emphasis on therapeutic frameworks reflect Candidate C's specialized background, unlike Candidates A (mechanical engineering) or B (product operations/advertising), whose interests and expertise lie outside clinical psychology.",
+    "model": "solar-pro",
+    "prompt_chars": 24680,
+    "latency_sec": 2.04,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task12_User2_seed0",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User2",
+      "User9"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on therapeutic modalities (CBT, DBT, ACT, MBSR, EFT) and emphasizes academic resources, self-study materials, and online courses\u2014aligning with Candidate B's background as a Clinical Psychology graduate student. The content prioritizes clinical literature, structured interventions, and practical tools (e.g., worksheets, syllabi), reflecting B's educational focus, research habits, and interest in psychology. Candidate A (Mechanical Engineering) and C (Product Operations) lack the domain-specific expertise and academic focus on psychotherapy evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 27412,
+    "latency_sec": 1.9,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task12_User2_seed0",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User9",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document is a 6-month self-improvement framework tailored for clinical psychology trainees, integrating evidence-based therapies (CBT, DBT, ACT, MBSR, EFT) with academic and clinical pressures. Candidate C is explicitly a graduate student in clinical psychology, aligning perfectly with the document's target audience. The content's focus on mechanistic depth, emotional regulation, and clinical efficacy mirrors Candidate C's background in psychology, her interest in time management, and her consumption of psychology-related content. Candidates A (mechanical engineering) and B (product operations) lack the domain-specific expertise and personal relevance to the document's clinical psychology focus.",
+    "model": "solar-pro",
+    "prompt_chars": 29423,
+    "latency_sec": 1.57,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

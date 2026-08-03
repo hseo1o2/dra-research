@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task48_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document's focus on a structured 6-month art education plan for children (8-year-old daughter interested in painting/dancing, 5-year-old son interested in building toys/sports), integration of Jiangnan/Chinese cultural elements with Western art concepts, and emphasis on family interaction techniques aligns most closely with Candidate A. Liu Qiang's profile highlights his role as a father with similarly aged children (8 and 5) sharing the same interests, his Jiangnan cultural background, and his pragmatic, research-driven approach to family education (evidenced by his MBA, preference for reputable frameworks, and investment in children's educational expenses). The document's emphasis on evidence-based analysis and personalized adaptations also mirrors his data-driven decision-making style and collaborative family planning with his wife (a primary school teacher). Candidates B and C lack the specific cultural blend, child age/interests, and educational focus described in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 23487,
+    "latency_sec": 2.01,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task48_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on art education's impact on child development (ages 5-8), process art, and pedagogical approaches like Reggio Emilia. Candidate C, a marketing manager with two children (8 and 5) interested in painting/dancing and building toys, aligns most closely. His profile emphasizes children's education, extracurricular activities, and family bonding through creative projects. The document's focus on mixed-age sibling art projects, scaffolding encouragement, and Jiangnan cultural references (e.g., 'Jiangnan ink wash') also resonates with C's Jiangnan heritage and family-oriented lifestyle, unlike A (engineering background, son in middle school) or B (nursing focus, older children).",
+    "model": "solar-pro",
+    "prompt_chars": 25513,
+    "latency_sec": 2.2,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task48_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on arts education frameworks (Reggio Emilia, Orff Schulwerk, Laban) and their impact on child development (ages 5-8), emphasizing self-esteem, confidence, and parent feedback through portfolios. Candidate B, a marketing manager with an 8-year-old daughter interested in painting/dancing and a 5-year-old son, aligns most closely. His profile highlights investment in children's education, extracurricular activities, and family trips to cultural/natural sites. His consumption habits (e.g., educational expenses, quality purchases) and content preferences (case studies, management models) suggest an interest in structured, evidence-based approaches to child development, mirroring the document's pedagogical focus. Candidates A and C lack direct ties to early childhood arts education or the specific frameworks discussed.",
+    "model": "solar-pro",
+    "prompt_chars": 28006,
+    "latency_sec": 1.95,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task48_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document's focus on a 6-month art education plan for an 8-year-old girl (interested in painting/dance) and 5-year-old boy (interested in building/sports) aligns perfectly with Candidate C's family status. Candidate C explicitly mentions children of the same ages and matching interests. The integration of Western art history with Jiangnan Chinese cultural elements (e.g., Suzhou gardens, ink wash) reflects Candidate C's Jiangnan cultural background and his stated ability to blend Eastern/Western thinking. The document's emphasis on structured, cross-disciplinary learning and detailed planning mirrors Candidate C's pragmatic, detail-oriented personality and his role as a marketing manager who values cost-effectiveness and quality in children's education. Candidates A and B lack the specific family composition, cultural background, and educational priorities directly reflected in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30017,
+    "latency_sec": 1.92,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

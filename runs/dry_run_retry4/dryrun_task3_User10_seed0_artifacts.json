@@ -1,0 +1,345 @@
+{
+  "capture_completeness": {
+    "compressed_research_per_topic": false,
+    "final_report": false,
+    "four_required_artifacts": false,
+    "research_brief": true,
+    "research_topics_ordered": true,
+    "search_query_and_source": false
+  },
+  "compressed_research": [],
+  "execution_config": {
+    "generation_seed": 0,
+    "gt_userid": "User10",
+    "manifest_sha256": "8110d1b3656fa5ba021f7b1bd053a92a11922c4efecd8d43d552e80cda4ad2a9",
+    "manifest_version": "1.1",
+    "max_retries": 3,
+    "models": {
+      "compression_model": "google_genai:gemini-3.6-flash",
+      "final_report_model": "google_genai:gemini-3.6-flash",
+      "max_retries": 3,
+      "requests_per_minute": 4,
+      "research_model": "google_genai:gemini-3.6-flash",
+      "retry_initial_delay_sec": 15,
+      "service_tier": "flex",
+      "summarization_model": "google_genai:gemini-3.6-flash",
+      "timeout_sec": 900
+    },
+    "prompt_sha256": "269dec7e9d2d28f817fb149f7e41bdf57bbcf947c94297991ef37686c501e6d3",
+    "search": {
+      "global_hard_stop": 2400,
+      "provider": "serper_via_tavily_slot",
+      "report_query_cap": 7,
+      "unique_url_cap": 15
+    },
+    "service_tier": "flex",
+    "source_query_id": 12,
+    "split": "dev",
+    "taskid": 3,
+    "timeout_sec": 900
+  },
+  "execution_error": null,
+  "final_report": "Error generating final report: 429 Too Many Requests. {'message': '{\\n  \"error\": {\\n    \"code\": 429,\\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\\\nPlease retry in 19.263711051s.\",\\n    \"status\": \"RESOURCE_EXHAUSTED\",\\n    \"details\": [\\n      {\\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\\n        \"links\": [\\n          {\\n            \"description\": \"Learn more about Gemini API quotas\",\\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\\n          }\\n        ]\\n      },\\n      {\\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\\n        \"violations\": [\\n          {\\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\\n            \"quotaId\": \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\\n            \"quotaDimensions\": {\\n              \"model\": \"gemini-3.6-flash\",\\n              \"location\": \"global\"\\n            },\\n            \"quotaValue\": \"20\"\\n          }\\n        ]\\n      },\\n      {\\n        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",\\n        \"retryDelay\": \"19s\"\\n      }\\n    ]\\n  }\\n}\\n', 'status': 'Too Many Requests'}",
+  "research_brief": "I am a 30-35-year-old Marketing Manager at a foreign enterprise in Shanghai with an MBA from Shanghai Jiao Tong University, planning to systematically study entrepreneurship over the next 1–2 years while balancing my full-time job and family commitments, with the goal of launching my own startup in the future. I need a comprehensive research report and strategic guide comparing entrepreneurship education pathways and designing a tailored 1–2 year phased learning roadmap.\n\n1. Entrepreneurship Education Pathways Comparison:\nEvaluate and compare four primary pathways: domestic university programs (degree & executive/non-degree), international university programs, renowned startup accelerators (e.g., Y Combinator, MiraclePlus, etc.), and top online entrepreneurship courses/platforms (e.g., Dedao, Coursera, Executive Education certificates covering business model design, product development, and fundraising strategies).\nFor each pathway, analyze:\n- Advantages and distinct value proposition\n- Curriculum structure and core learning modules\n- Practical opportunities (e.g., incubation support, hackathons, pitch events)\n- Resource access methods (alumni network, VC connections, lab access)\n- Target audience applicability (e.g., part-time mid-career professionals vs. full-time founders)\n- Monetary cost, time commitment (hours/week and duration), and flexibility\n- Practical value and applicability in real-world business execution\n\n2. Core Competencies & Phased 1–2 Year Learning Plan:\nBased on key entrepreneurial competencies—business model innovation, fundraising & investment negotiation, market analysis, and team management—develop a pragmatic, phased action plan tailored to a busy Shanghai-based corporate manager. The plan must detail:\n- Phase-by-phase milestones over a 12–24 month timeline\n- Networking strategies (leveraging local Shanghai/East China ecosystems, MBA alumni, and industry events)\n- Mentor acquisition strategies (how to identify, approach, and engage startup mentors and VCs)\n- Hands-on practice tactics (e.g., side projects, advisory roles, accelerator applications)\n- Frameworks for bridging coursework/learning directly to real-world project incubation and launch\n\nPlease prioritize primary sources, official university/program websites, official accelerator pages, reputable learning platforms, and direct profiles (e.g., LinkedIn) where applicable, focusing on resources relevant to both the Chinese and global startup ecosystems.",
+  "research_topics": [
+    {
+      "topic_id": "topic_001",
+      "topic_text": "Research domestic and international university entrepreneurship programs suitable for mid-career professionals in China (specifically Shanghai). \n\nFor Domestic University Programs (Degree, Executive Education, Non-degree Certificates), investigate programs at top Chinese universities such as Shanghai Jiao Tong University (SJTU Antai/SJTU Venture/Entrepreneurship programs), Fudan University School of Management, Tsinghua University SEM (X-lab, Executive Education), and Peking University (Guanghua). Collect key details including:\n- Advantages and distinct value proposition\n- Curriculum structure and core modules (e.g. business model innovation, go-to-market, fundraising)\n- Practical opportunities (incubation support, hackathons, pitch events, lab access)\n- Resource access methods (alumni network, VC connections, university tech transfer)\n- Target audience applicability (part-time mid-career vs. full-time founders)\n- Monetary costs (in RMB), time commitment (hours/week, duration, schedule flexibility)\n- Practical value and applicability in real-world business execution\n\nFor International University Programs (Non-degree, Online, Executive Certificates), investigate programs like Stanford LEAD Executive Program, MIT Sloan Entrepreneurship Development Program / Bootcamps / Certificates, Harvard Business School Online (Entrepreneurship Essentials / Alternative Investments), INSEAD Executive Education (Entrepreneurship / Innovation), and Wharton Online. Collect key details including:\n- Advantages and distinct value proposition (global prestige, global alumni network, Silicon Valley / international ecosystem access)\n- Curriculum structure and core modules\n- Practical opportunities and resource access\n- Target audience applicability (suitability for full-time working corporate managers in Shanghai)\n- Monetary costs (in USD/RMB), time commitment (hours/week, duration, flexible online vs in-person modules)\n- Practical value and execution applicability for launching a startup in China/globally."
+    },
+    {
+      "topic_id": "topic_002",
+      "topic_text": "Research top startup accelerators and online entrepreneurship platforms suitable for a Shanghai-based corporate marketing manager preparing to launch a startup.\n\nFor Startup Accelerators, focus on:\n- Global and China-focused accelerators: Y Combinator (YC), MiraclePlus (奇绩创坛 - QiJi ChuangTan led by Lu Qi), Techstars, XNode Shanghai, Plug and Play China, and local Shanghai government/university-backed incubators (e.g., Yangpu Tech Innovation, Caohejing Hi-Tech Park incubators).\n- Detail: Value proposition, equity terms/investment deal (e.g. $125k-$500k for % equity), program structure/modules (batch schedule, office hours, Demo Day), mentor & VC network access, required time commitment (is full-time required or can pre-launch founders participate in early stages?), practical incubation/resource support, and applicability for part-time/transitioning founders.\n\nFor Online Entrepreneurship Courses & Platforms, focus on:\n- Platforms: Dedao (得到 - e.g. Liang Ning 梁宁, He Fan, Lu Rongde entrepreneurship/business courses), Coursera (Wharton Entrepreneurship Specialization, University of Maryland Entrepreneurship, etc.), edX, LinkedIn Learning, and top university Executive Education certificates (e.g., Stanford Online, MIT xPRO).\n- Detail: Value proposition, curriculum & key learning modules (business model design, Lean Startup methodology, unit economics, fundraising strategies, product-market fit), cost, time commitment (hours/week), networking opportunities (community forums, offline meetups), and practical execution utility for validating ideas while holding a full-time job."
+    },
+    {
+      "topic_id": "topic_003",
+      "topic_text": "Research the Shanghai/East China startup ecosystem, networking tactics for SJTU MBA alumni, mentor acquisition strategies, and practical 1-2 year phased learning/action roadmaps for mid-career corporate managers transitioning to entrepreneurship.\n\nFocus on:\n1. Shanghai / East China Startup Ecosystem Landscape:\n   - Key hubs/clusters in Shanghai (Zhangjiang Hi-Tech Park, Caohejing, Yangpu Knowledge Innovation Zone, Jing'an xode/co-working spaces, West Bund).\n   - Major active VCs in Shanghai/East China (e.g. HongShan/Sequoia China, Hillhouse, GGV Capital, ZhenFund, Source Code Capital, Qiming Venture Partners, Shunwei, Lightspeed China).\n   - Local startup events, pitch competitions, and communities (e.g., MiraclePlus Community meetups, TechNode, Startup Grind Shanghai, TechX, SJTU Alumni Entrepreneurship Club / 交大创业创业协会 / 创业创投联合会).\n\n2. Leveraging MBA Network & Mentor Acquisition:\n   - Specific strategies to leverage an SJTU MBA network (alumni directories, SJTU Antai entrepreneurship forums, industry clubs, angel investor networks).\n   - Practical, step-by-step mentor and VC acquisition strategies: How a corporate Marketing Manager can identify, approach (cold outreach, warm introductions, value exchange), and engage mentors/advisors (advisory board structures, equity vs. non-equity compensation).\n\n3. Side-Project & Validation Tactics:\n   - Low-risk, high-impact hands-on practice tactics while keeping a full-time job (side-projects, landing page MVP testing, advisory/consulting roles for early-stage startups, customer discovery interviewing).\n\n4. Phased 12-24 Month Roadmap Framework:\n   - Detailed milestone structure broken into 4 phases over 12-24 months (e.g. Phase 1: Foundation & Skill Building; Phase 2: Idea Generation & Validation/MVP; Phase 3: Ecosystem Integration & Mentorship/Advisory; Phase 4: Pitch Preparation, Pre-incubation & Launch Transition). Include weekly time allocation budgets (e.g., 10-15 hrs/week balancing full-time job and family)."
+    }
+  ],
+  "run_id": "dryrun_task3_User10_seed0",
+  "schema_version": "dra_trace_v2",
+  "search_trace": [
+    {
+      "attempted": true,
+      "failure_code": "empty_organic",
+      "query": "\"Stanford LEAD Executive Program\" tuition duration format curriculum",
+      "query_id": "topic_001_query_001",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "\"MIT Sloan Entrepreneurship Development Program\" tuition duration format",
+      "query_id": "topic_001_query_002",
+      "sources": [
+        {
+          "domain": "www.instagram.com",
+          "link": "https://www.instagram.com/mit_execed/?hl=en",
+          "query": "\"MIT Sloan Entrepreneurship Development Program\" tuition duration format",
+          "rank": 1,
+          "snippet": "Drawing on his LinkedIn Live conversation with Bill Aulet and participants in the MIT Sloan Entrepreneurship Development Program (EDP), Senior Associate ...",
+          "title": "MIT Sloan Executive Education (@mit_execed)"
+        },
+        {
+          "domain": "www.facebook.com",
+          "link": "https://www.facebook.com/PurdueBusiness/posts/purdue-alum-scott-massey-now-ceo-of-anu-says-successful-entrepreneurs-never-stop/1226386982832985/",
+          "query": "\"MIT Sloan Entrepreneurship Development Program\" tuition duration format",
+          "rank": 2,
+          "snippet": "Drawing on his LinkedIn Live conversation with Bill Aulet and participants in the MIT Sloan Entrepreneurship Development Program (EDP) ...",
+          "title": "Purdue University Daniels School of Business"
+        },
+        {
+          "domain": "www.facebook.com",
+          "link": "https://www.facebook.com/myMTU/posts/unlock-your-entrepreneurial-mindset-mtus-dr-breda-odwyer-presents-the-entreprene/1083937753740318/",
+          "query": "\"MIT Sloan Entrepreneurship Development Program\" tuition duration format",
+          "rank": 3,
+          "snippet": "Drawing on his LinkedIn Live conversation with Bill Aulet and participants in the MIT Sloan Entrepreneurship Development Program (EDP) ...",
+          "title": "Unlock your entrepreneurial mindset! MTU's Dr. Breda O' ..."
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "\"Harvard Business School Online\" \"Entrepreneurship Essentials\" tuition duration",
+      "query_id": "topic_001_query_003",
+      "sources": [
+        {
+          "domain": "online.hbs.edu",
+          "link": "https://online.hbs.edu/courses/entrepreneurship-essentials",
+          "query": "\"Harvard Business School Online\" \"Entrepreneurship Essentials\" tuition duration",
+          "rank": 1,
+          "snippet": "Entrepreneurship Essentials is a 100% online entrepreneurship course offered by Harvard Business School Online. Learn more and register today.",
+          "title": "Entrepreneurship Essentials"
+        },
+        {
+          "domain": "www.gmac.com",
+          "link": "https://www.gmac.com/resources/learners/business-programs/explore-programs/harvard-business-school-online-courses",
+          "query": "\"Harvard Business School Online\" \"Entrepreneurship Essentials\" tuition duration",
+          "rank": 2,
+          "snippet": "12 Harvard Business School online courses · 1. CORe (Credential of Readiness) · 2. Entrepreneurship Essentials · 3. Sustainable Business Strategy.",
+          "title": "12 Harvard Business School online courses | Explained"
+        },
+        {
+          "domain": "pll.harvard.edu",
+          "link": "https://pll.harvard.edu/course/credential-leadership-impact-and-management-business-climb",
+          "query": "\"Harvard Business School Online\" \"Entrepreneurship Essentials\" tuition duration",
+          "rank": 3,
+          "snippet": "Duration. 52 weeks long. Time ... Advanced. Credit. Credential of Leadership, Impact, and Management in Business. Platform. Harvard Business School Online.",
+          "title": "Credential of Leadership, Impact, and Management in ..."
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "SJTU Antai Executive Education entrepreneurship program tuition RMB",
+      "query_id": "topic_001_query_004",
+      "sources": [
+        {
+          "domain": "mba.sjtu.edu.cn",
+          "link": "https://mba.sjtu.edu.cn/en/admissions/fee-and-financial-aid.html",
+          "query": "SJTU Antai Executive Education entrepreneurship program tuition RMB",
+          "rank": 1,
+          "snippet": "The tuition fee for the 2023 IMBA program (2 years) is 368000 RMB. The application fee is 800 RMB, or 120 USD.",
+          "title": "Fees and Financial Aid"
+        },
+        {
+          "domain": "eec.sjtu.edu.cn",
+          "link": "https://eec.sjtu.edu.cn/en/course/ceocm.html",
+          "query": "SJTU Antai Executive Education entrepreneurship program tuition RMB",
+          "rank": 2,
+          "snippet": "Tuition fee: 168,000 RMB(including handouts and materials, lunch, training and teaching administration fees). program of Antai College of Economics",
+          "title": "Innovation and Management Program for China CEO"
+        },
+        {
+          "domain": "www.china-admissions.com",
+          "link": "https://www.china-admissions.com/blog/new-online-business-course-sjtu-global-executive-of-business-management-program/",
+          "query": "SJTU Antai Executive Education entrepreneurship program tuition RMB",
+          "rank": 3,
+          "snippet": "The program fee is 8,800 RMB ($1,220 USD). Individual sessions are also available at 499 RMB ($69 USD) per topic, though no certificate is ...",
+          "title": "SJTU Global Executive of Business Management Program"
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "MiraclePlus QiJi ChuangTan investment deal terms standard equity batch",
+      "query_id": "topic_002_query_001",
+      "sources": [
+        {
+          "domain": "www.miracleplus.com",
+          "link": "https://www.miracleplus.com/",
+          "query": "MiraclePlus QiJi ChuangTan investment deal terms standard equity batch",
+          "rank": 1,
+          "snippet": "Investment Model. Equity investment of $300,000 (or equivalent in RMB) in exchange for 7% equity in the company. This investment shows our commitment to ...",
+          "title": "MiraclePlus official website"
+        },
+        {
+          "domain": "www.crunchbase.com",
+          "link": "https://www.crunchbase.com/organization/miracleplus",
+          "query": "MiraclePlus QiJi ChuangTan investment deal terms standard equity batch",
+          "rank": 2,
+          "snippet": "MiraclePlus invests in and accelerates early-stage startups. MiraclePlus assists startups in developing products that are good enough to succeed in the market.",
+          "title": "MiraclePlus - Crunchbase Company Profile & Funding"
+        },
+        {
+          "domain": "en.wikipedia.org",
+          "link": "https://en.wikipedia.org/wiki/MiraclePlus",
+          "query": "MiraclePlus QiJi ChuangTan investment deal terms standard equity batch",
+          "rank": 3,
+          "snippet": "MiraclePlus is a Chinese venture capital firm headquartered in Beijing founded in 2018. It was spun off as an independent firm after Y Combinator China was ...",
+          "title": "MiraclePlus"
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "XNode Shanghai accelerator deal equity terms office program",
+      "query_id": "topic_002_query_002",
+      "sources": [
+        {
+          "domain": "thexnode.sg",
+          "link": "https://thexnode.sg/faqs",
+          "query": "XNode Shanghai accelerator deal equity terms office program",
+          "rank": 1,
+          "snippet": "The China-Singapore Innovation Launchpad programme is designed to help entrants, with limited business practice in China, to be better equipped with the ...",
+          "title": "XNode China-Singapore Innovation Launchpad Programme ..."
+        },
+        {
+          "domain": "www.enterprisesg.gov.sg",
+          "link": "https://www.enterprisesg.gov.sg/grow-your-business/innovate-with-us/market-access-and-networks/global-innovation-alliance/gia/gia-shanghai",
+          "query": "XNode Shanghai accelerator deal equity terms office program",
+          "rank": 2,
+          "snippet": "Organised by XNode, the GIA Shanghai Acceleration Programme is a curated four to six-week programme aimed at helping Singapore-based tech startups accelerate ...",
+          "title": "GIA Shanghai Acceleration Programme"
+        },
+        {
+          "domain": "www.sixthtone.com",
+          "link": "https://www.sixthtone.com/news/1004073/the-startup-accelerator-helping-foreign-businesses-take-on-china",
+          "query": "XNode Shanghai accelerator deal equity terms office program",
+          "rank": 3,
+          "snippet": "Shanghai's XNode is providing local insights to entrepreneurs looking to break into the valuable Chinese market.",
+          "title": "The Startup Accelerator Helping Foreign Businesses Take ..."
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": true,
+      "failure_code": "no_new_sources",
+      "query": "Plug and Play China accelerator startup program terms equity",
+      "query_id": "topic_002_query_003",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "Yangpu Tech Innovation Caohejing incubator Shanghai startup policy support",
+      "query_id": "topic_002_query_004",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "SJTU Antai MBA entrepreneurship club alumni network Shanghai",
+      "query_id": "topic_003_query_001",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_003"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "Shanghai startup ecosystem hubs Zhangjiang Caohejing Yangpu West Bund Jingan",
+      "query_id": "topic_003_query_002",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_003"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "MiraclePlus TechNode Startup Grind Shanghai entrepreneurship events",
+      "query_id": "topic_003_query_003",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_003"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "startup advisor equity compensation advisory board structures China startups",
+      "query_id": "topic_003_query_004",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_003"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "SJTU Antai MBA entrepreneurship alumni network",
+      "query_id": "topic_003_query_005",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_003"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "Shanghai startup ecosystem",
+      "query_id": "topic_003_query_006",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_003"
+    }
+  ],
+  "token_ledger": {
+    "elapsed_sec": 319.022,
+    "input_tokens": 17535,
+    "output_tokens": 5758,
+    "queries_attempted": 7,
+    "queries_failed": 2,
+    "queries_rejected": 7,
+    "queries_requested": 14,
+    "queries_successful": 5,
+    "query_ledger_consistent": true,
+    "search_adapter": {
+      "global_attempted_queries": 7,
+      "global_attempted_queries_at_start": 0,
+      "global_query_hard_stop": 2400,
+      "global_successful_queries": 5,
+      "global_successful_queries_at_start": 0,
+      "report_query_cap": 7,
+      "report_unique_url_cap": 15,
+      "run_id": "dryrun_task3_User10_seed0",
+      "run_queries_attempted": 7,
+      "run_queries_failed": 2,
+      "run_queries_requested": 14,
+      "run_queries_successful": 5,
+      "run_sources_selected": 15,
+      "run_unique_urls": 15
+    },
+    "source_ledger_consistent": true,
+    "sources_selected": 15,
+    "token_usage_events": 10,
+    "total_tokens": 23293,
+    "unique_sources": 15
+  }
+}

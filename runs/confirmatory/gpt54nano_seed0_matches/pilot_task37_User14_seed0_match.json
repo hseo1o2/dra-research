@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task37_User14_seed0",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User13",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "The brief emphasizes a warm, stylish, natural-wood/fabric aesthetic, a practical open-plan kitchen for frequent cooking, and a pet-cat-friendly home\u2014matching the lifestyle and consumption patterns of a young creative professional who enjoys Japanese bento cooking and design-forward mid-range products. The document\u2019s structured, budget-and-timeline planning tone also aligns with A\u2019s rational-but-aesthetic decision style and interest in creating comfortable personal spaces for partner-and-pet living.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 24150,
+    "latency_sec": 1.83,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task37_User14_seed0",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The queries mix detailed home-interior planning (80 sqm layout, open kitchen/LDK, range hood, glass partitions) with pet-focused apartment design (cat litter box enclosures, cat-proof window screens). Candidate A\u2019s profile strongly aligns with a Shanghai resident who actively curates lifestyle/design content and has multiple pets, making her more likely to search for both kitchen layout solutions and cat-friendly home modifications.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 26030,
+    "latency_sec": 1.8,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task37_User14_seed0",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User20"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The excerpt is highly specific to a cat-friendly, design-forward home renovation (built-in cat walks, litter box cabinet ventilation, scratch-resistant materials) alongside detailed kitchen/LDK layout specs and Japandi aesthetics. Candidate A is a male freelance illustrator in Shanghai with a cat and a strong interest in design styles, quality materials, and home/craft-like aesthetic planning, matching the document\u2019s blend of technical home design and pet integration.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 29044,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task37_User14_seed0",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User20"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The excerpt is written like a detailed, design-and-build technical brief with strong emphasis on spatial optimization, material specs, and budget discipline\u2014matching a design-minded, detail-oriented creative who also has a cat and cooks frequently. Candidate A\u2019s freelance illustration background and personal interest in Japandi/warm wood aesthetics, plus the pet-friendly layout and heavy-cooking kitchen engineering focus, align best with this home-renovation research framing.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 31055,
+    "latency_sec": 1.7,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

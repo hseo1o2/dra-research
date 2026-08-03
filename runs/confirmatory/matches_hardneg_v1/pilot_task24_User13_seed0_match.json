@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task24_User13_seed0",
+    "stage": "plan",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User20",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "Candidate C (Guo Yuan) is a caf\u00e9 owner in Shanghai with a seaside residence in Xiamen, aligning with the document's focus on coastal property insurance. Her profile emphasizes meticulous attention to detail, sustainability, and financial prudence (e.g., quarterly caf\u00e9 decoration updates, eco-friendly packaging focus), mirroring the document's budget-conscious yet comprehensive insurance analysis. Unlike Candidates A and B, who prioritize artistic or literary pursuits, Candidate C\u2019s entrepreneurial background and asset management (caf\u00e9, home, pets) directly correlate with the document\u2019s emphasis on property valuation, risk coverage (e.g., flood/typhoon for coastal homes), and claims efficiency\u2014key concerns for a business owner with physical assets. Her frequent domestic/international travel for industry research also aligns with the document\u2019s practical, risk-mitigation framing.",
+    "model": "solar-pro",
+    "prompt_chars": 24880,
+    "latency_sec": 1.93,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task24_User13_seed0",
+    "stage": "search",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User20",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on high-end home insurance (\u5bb6\u8d22\u9669) for villas, emphasizing coverage for natural disasters (typhoons, floods, earthquakes) and property protection. Candidate A, a caf\u00e9 owner in Shanghai with a villa-like residence and valuable assets (artworks, pets, caf\u00e9 equipment), aligns with the document's emphasis on comprehensive property coverage. Her status as a business owner with a 5-year-old child and multiple pets also reflects the document's focus on family-oriented, high-value insurance needs. Candidates B and C, while urban professionals, lack the documented emphasis on property ownership, high-value assets, or family responsibilities that directly match the insurance context.",
+    "model": "solar-pro",
+    "prompt_chars": 24940,
+    "latency_sec": 2.1,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task24_User13_seed0",
+    "stage": "compress",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User20",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User14",
+      "User20"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "The document focuses on high-end home insurance products (e.g., villa coverage, premium limits, and replacement cost coverage) from major insurers like Ping An and PICC. Candidate C, a copywriter in advertising, exhibits a strong interest in design, aesthetics, and practicality\u2014traits reflected in the document's emphasis on product structure, coverage details, and value-oriented framing. While Candidates A and B prioritize art and creativity, their profiles lack the document's financial and risk-mitigation focus. Candidate C's rational consumption habits, attention to design, and interest in stability align with the document's analytical tone and emphasis on insurance as a protective investment for high-value assets.",
+    "model": "solar-pro",
+    "prompt_chars": 29044,
+    "latency_sec": 1.93,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task24_User13_seed0",
+    "stage": "write",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User20",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User14",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on high-end home insurance for coastal properties in Xiamen, emphasizing financial protection, risk management, and premium service features. Candidate C, a caf\u00e9 owner with a background in business/design and a focus on quality, sustainability, and financial responsibility, aligns best. The document's emphasis on budgeting (\u00a53,000\u2013\u00a55,000/year), asset valuation (\u00a5300,000), and premium services (e.g., disaster prevention, temporary housing) reflects C's rational consumption habits, attention to practicality, and entrepreneurial mindset. Unlike Candidates A (creative copywriter) and B (freelance illustrator), who prioritize artistic expression and lack explicit financial or property management focus, Candidate C\u2019s profile as a business owner managing physical assets and valuing risk mitigation (e.g., eco-friendly packaging, health-conscious choices) directly mirrors the document\u2019s priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 30475,
+    "latency_sec": 2.69,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

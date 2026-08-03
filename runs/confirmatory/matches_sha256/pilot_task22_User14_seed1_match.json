@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task22_User14_seed1",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User15",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "Candidate A (Lin Nan) is a 28-32-year-old freelance illustrator in Shanghai with a variable income, matching the document's target profile. The document's focus on annuity insurance, medical coverage, and long-term care aligns with A's freelance challenges (fluctuating income, no employer benefits) and life-stage needs. A's artistic background, Shanghai residence, and moderate-to-conservative risk tolerance (implied by his rational consumption habits) further confirm the match. Candidates B (freelance writer in Beijing) and C (data analyst with stable employment) do not align with the document's freelance illustrator context or Shanghai-specific focus.",
+    "model": "solar-pro",
+    "prompt_chars": 24406,
+    "latency_sec": 1.61,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task22_User14_seed1",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User14",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on Shanghai's Huhuibao insurance program and social security rules for flexible workers, emphasizing pre-existing conditions, deductible reimbursement, and tax incentives for freelancers. Candidate C, a data analyst in Shanghai, aligns with this content due to her occupation (freelance-friendly data analyst), location (Shanghai), and practical interests in social security, tax policies, and cost-effective consumption. Her rational decision-making style and focus on durable, high-quality products also reflect the document's emphasis on structured financial planning. Candidates A (Beijing-based writer) and B (illustrator) lack the direct Shanghai context and professional relevance to insurance/social security topics.",
+    "model": "solar-pro",
+    "prompt_chars": 23643,
+    "latency_sec": 2.1,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task22_User14_seed1",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on Shanghai-specific pension, insurance, and medical systems for flexible workers, emphasizing tax rules, financial products, and eligibility criteria. Candidate B, a data analyst in Shanghai with a finance/economics background, aligns best: her occupation (data analyst) requires understanding structured systems, her location (Shanghai) matches the document's regional focus, and her rational, research-driven decision-making style aligns with the document's detailed analysis of financial mechanisms. Candidates A (freelance writer in Beijing) and C (freelance illustrator in Shanghai) lack the financial/analytical focus central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 27367,
+    "latency_sec": 1.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task22_User14_seed1",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User18",
+      "User15"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document focuses on a Shanghai-based freelance illustrator with variable income, tax optimization, and retirement planning tailored to freelance instability. Candidate A matches exactly: same occupation, location, age, and gender. The document's emphasis on cash flow smoothing, emergency reserves, and annuities aligns with A's freelance income volatility and need for financial stability. Candidate B (data analyst) and C (freelance writer) lack the illustrator-specific context (e.g., brand sponsorships, social media royalties) and Shanghai-based freelance financial challenges detailed in the report.",
+    "model": "solar-pro",
+    "prompt_chars": 29378,
+    "latency_sec": 1.57,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

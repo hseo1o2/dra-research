@@ -1,0 +1,90 @@
+[
+  {
+    "run_id": "pilot_task28_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User2",
+      "User7",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User10",
+      "User2"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate B (Liu Qiang) is a 30-35-year-old Marketing Department Manager at a foreign enterprise in Shanghai with an SJTU MBA background, matching the document's author profile exactly. The document's focus on cross-cultural management, high-efficiency branding for LinkedIn/WeChat/Zhihu, and time-constrained execution aligns with B's pragmatic, data-driven personality, leadership role, and interest in industry case studies (e.g., Harvard Business Review). Unlike Candidates A (graduate student) and C (clinical psychology student), B's professional background, family responsibilities, and digital habits (LinkedIn/WeChat usage) directly mirror the document's priorities and framing.",
+    "model": "solar-pro",
+    "prompt_chars": 24529,
+    "latency_sec": 1.58
+  },
+  {
+    "run_id": "pilot_task28_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User2",
+      "User7",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User10",
+      "User7"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on corporate personal branding, LinkedIn/WeChat strategies, and case studies for professionals (e.g., MNC marketing directors, SJTU MBA alumni). Candidate B, an MBA graduate and marketing manager, aligns perfectly: his occupation, LinkedIn/WeChat usage, interest in case studies, and focus on personal branding for career advancement match the document's priorities. Candidates A (psychology student) and C (new media researcher) lack the professional branding and executive marketing context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25580,
+    "latency_sec": 1.38
+  },
+  {
+    "run_id": "pilot_task28_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User2",
+      "User7",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User10",
+      "User2"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on personal branding for corporate executives (e.g., MNC marketing directors, cross-cultural leadership) and emphasizes platforms like LinkedIn, WeChat, and Zhihu for professional visibility. Candidate B, an MBA graduate and marketing manager at a foreign enterprise, aligns perfectly: his occupation, SJTU MBA background, and frequent use of LinkedIn/WeChat for career development mirror the document's themes. The queries about 'corporate executive personal branding' and 'MNC marketing leader frameworks' directly relate to his role, unlike Candidates A (graduate student) or C (clinical psychology student), whose academic interests and platform usage (e.g., Zhihu for psychology) do not match the document's executive focus.",
+    "model": "solar-pro",
+    "prompt_chars": 28527,
+    "latency_sec": 1.67
+  },
+  {
+    "run_id": "pilot_task28_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User2",
+      "User7",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User10",
+      "User2"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document's focus on cross-cultural MNC management, APAC brand strategy, and commercial growth aligns directly with Candidate B's role as a Marketing Manager at a foreign enterprise with an SJTU MBA. The content's emphasis on LinkedIn/WeChat/Zhihu platforms, corporate compliance, and high-efficiency workflows matches B's online habits (LinkedIn/WeChat usage) and pragmatic, data-driven decision-making style. The document's strategic framing (e.g., 'NICHE POSITIONING' matrix) reflects B's MBA background and managerial responsibilities, unlike Candidate A's academic focus or Candidate C's clinical psychology interests. The 90-day blueprint's time budgeting and KPIs also resonate with B's structured daily routine and career-oriented priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 30538,
+    "latency_sec": 1.71
+  }
+]

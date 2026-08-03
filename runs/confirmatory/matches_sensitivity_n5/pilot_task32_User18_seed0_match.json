@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task32_User18_seed0",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10",
+      "User11",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18",
+      "User10",
+      "User11",
+      "User7"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate C (Liu Qiang) is a married marketing manager with two children and a pet dog, living in a 3-bedroom home in Shanghai. The document's focus on a family-oriented soft furnishing plan (3 bedrooms, budget allocation for durable furniture/appliances, and smart home integration) aligns with his role as a pragmatic family decision-maker. His preference for high-quality, cost-effective items (e.g., durable materials, smart capabilities) and emphasis on children's needs (e.g., educational expenses) directly match the document's requirements. Unlike other candidates (single professionals or students), Candidate C's family responsibilities and budget-conscious yet quality-driven approach make him the most likely user for this detailed home planning guide.",
+    "model": "solar-pro",
+    "prompt_chars": 39160,
+    "latency_sec": 2.09,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task32_User18_seed0",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10",
+      "User11",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User11",
+      "User18",
+      "User7"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on high-end home appliances (e.g., zero-embedding refrigerators, washer-dryer combos) and interior design for an 89\u33a1 apartment, emphasizing premium brands (Haier, Xiaomi), cost-effectiveness for quality items, and family-oriented space optimization. Candidate A, a married marketing manager with two children, aligns best: he prioritizes durable, high-quality household goods, has a fixed monthly budget, and values family-centric living environments (e.g., choosing a high-end Shanghai community with schools and parks). His pragmatic, cost-effective decision-making and focus on family needs (e.g., children\u2019s education, home comfort) mirror the document\u2019s emphasis on balanced, quality-driven renovations and appliance selections. Other candidates (B, C, D, E) are single or childless, prioritize tech/finance over family-centric home design, or lack the documented focus on large-scale, family-oriented renovations.",
+    "model": "solar-pro",
+    "prompt_chars": 39927,
+    "latency_sec": 2.43,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task32_User18_seed0",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10",
+      "User11",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User8",
+      "User7",
+      "User11",
+      "User10"
+    ],
+    "predicted_label": "D",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "The document focuses on technical specifications, cost-performance analysis, and smart home integration of appliances (refrigerators, washing machines) for a compact urban apartment. Candidate D, an algorithm engineer, aligns with this content through his technical background, interest in smart home products, and rational consumption habits. His focus on cost-effectiveness, data-driven decision-making, and recent investments in smart home devices (e.g., smart speakers, lighting) directly mirror the document's emphasis on parameters, pricing, and ecosystem integration (e.g., Xiaomi, Midea apps). Other candidates prioritize lifestyle, travel, or non-technical consumption patterns, making D the most relevant match.",
+    "model": "solar-pro",
+    "prompt_chars": 43864,
+    "latency_sec": 2.21,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task32_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10",
+      "User11",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User8",
+      "User10",
+      "User18",
+      "User11"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document's focus on budget allocation, family-oriented space planning (3-bedroom layout), and emphasis on durable, high-quality furnishings aligns with Candidate C's profile as a married marketing manager with two children. The document's practical, cost-effective approach to interior design (e.g., balancing aesthetics with functionality, prioritizing children-friendly materials) matches C's rational spending habits and family-centric lifestyle. Additionally, the document's structured, data-driven format (budget tables, material specifications) reflects C's analytical background and managerial decision-making style, distinct from the other candidates' more individualistic or tech-focused priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 45875,
+    "latency_sec": 2.02,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

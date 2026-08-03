@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task22_User15_seed1",
+    "stage": "plan",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18",
+      "User14",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User20",
+      "User13",
+      "User15",
+      "User18"
+    ],
+    "predicted_label": "D",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "Candidate D (Qiu Wen) is the only profile that exactly matches the document's author by name, age (26-30), gender (female), occupation (freelance writer), and location (Beijing). The document's focus on retirement planning for a risk-averse freelancer with variable income, ESG interests, and specific insurance needs aligns perfectly with Candidate D's profile, which highlights her freelance writing career, financial risk aversion, and cultural/educational background. Other candidates differ in occupation, financial context, or demographic details.",
+    "model": "solar-pro",
+    "prompt_chars": 38272,
+    "latency_sec": 1.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task22_User15_seed1",
+    "stage": "search",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18",
+      "User14",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User15",
+      "User14",
+      "User13",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document focuses on tax optimization, flexible payment options, and insurance products tailored for freelancers (\u81ea\u7531\u804c\u4e1a\u8005), emphasizing financial planning and sustainability. Candidate B, a freelance writer, aligns with this content due to her self-employed status, interest in eco-friendly consumption, and rational approach to financial decisions. The document's emphasis on flexible payment structures (\u7075\u6d3b\u7f34\u8d39) and tax benefits (\u8282\u7a0e) directly addresses the needs of freelancers like B, who prioritizes cost-effectiveness and long-term financial stability. Other candidates (A, C, D, E) are either salaried, business owners, or data analysts, whose financial priorities and insurance needs differ from the freelance context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 38609,
+    "latency_sec": 2.14,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task22_User15_seed1",
+    "stage": "compress",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18",
+      "User14",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User13",
+      "User15",
+      "User14",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document focuses on tax-advantaged pension planning, flexible insurance products, and low-risk ESG investments tailored for freelancers. Candidate C, a freelance writer, aligns most closely with this content due to her occupation (freelance), financial planning needs (monthly book purchases, eco-friendly consumption), and interest in tax-efficient strategies (e.g., saving on royalties). The document's emphasis on flexible premium adjustments, tax deductions, and low-risk financial tools directly addresses the financial instability and long-term planning challenges typical of freelancers like Candidate C. Other candidates (A, B, D, E) are either salaried, business owners, or data professionals, whose financial priorities and risk profiles differ significantly.",
+    "model": "solar-pro",
+    "prompt_chars": 42729,
+    "latency_sec": 2.16,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task22_User15_seed1",
+    "stage": "write",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18",
+      "User14",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User13",
+      "User18",
+      "User15",
+      "User14"
+    ],
+    "predicted_label": "D",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document explicitly references 'Qiu Wen' (Candidate D) by name in the persona profile section, matching her age (26-30), occupation (freelance writer), location (Chaoyang District, Beijing), and financial context (variable income, ESG focus). The plan's emphasis on self-directed retirement security, healthcare, and long-term care aligns with her risk-averse profile and lack of corporate benefits. Vocabulary like 'freelance writer,' 'ESG,' and 'Beijing' directly mirrors her attributes, making D the only candidate with this exact overlap.",
+    "model": "solar-pro",
+    "prompt_chars": 44740,
+    "latency_sec": 2.13,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

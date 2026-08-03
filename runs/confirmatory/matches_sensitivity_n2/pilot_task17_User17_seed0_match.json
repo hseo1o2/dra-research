@@ -1,0 +1,110 @@
+[
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "plan",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User25"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User17",
+    "correct": true,
+    "reasoning": "Candidate A (Chen Fang) is a working mother in Beijing with a multi-generational family (teenagers, husband, elderly parents) and a pet, aligning with the document's focus on a family beach vacation for all ages. Her profile emphasizes comfort, cleanliness, and family-friendly accommodations, matching the request for high-quality, accessible lodging. She prioritizes health-conscious dining and cultural experiences, reflected in the document's emphasis on balanced meals and age-appropriate activities. While Candidate B also values family travel, her profile centers on retirement activities and grandparent-grandchild dynamics, whereas the document\u2019s framing (e.g., 'active teenagers/young adults' and 'elderly family members requiring rest') more closely mirrors Candidate A\u2019s immediate family structure and caregiving background as a nurse.",
+    "model": "solar-pro",
+    "prompt_chars": 15780,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "search",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25"
+    ],
+    "shuffled_order": [
+      "User25",
+      "User17"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The document focuses on July climate, travel logistics (trains/flights), and family-friendly destinations (Qingdao, Weihai, Dalian, Sanya) with mentions of accessibility and beach amenities. Candidate A, a retired grandmother in Beijing, prioritizes family travel (with her grandson), values cost-effective yet comfortable accommodations, and prefers destinations with natural scenery and local culture\u2014aligning with the document's emphasis on seasonal climate, transport options, and family-oriented planning. Candidate B, while also family-oriented, focuses on pet-friendly travel and professional interests, which are not reflected in the document's content.",
+    "model": "solar-pro",
+    "prompt_chars": 18003,
+    "latency_sec": 1.69,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "compress",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User25"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The document focuses on multi-generational travel planning (e.g., senior travel convenience, family vacation balance) and prioritizes transportation accessibility, climate safety, and activity options suitable for elderly family members. Candidate B (65-70, retired, with a grandson) aligns with this framing through her travel preferences for natural/historical sites, emphasis on comfort/safety, and family-oriented mobility patterns (e.g., traveling with her grandson, husband). Candidate A (45-50, nurse with teens) prioritizes pet-friendly destinations and self-guided cultural trips, which are less emphasized in the document's multi-generational focus on typhoon risks, train accessibility, and senior-friendly activities.",
+    "model": "solar-pro",
+    "prompt_chars": 20506,
+    "latency_sec": 1.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "write",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User25"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The document prioritizes multi-generational comfort, accessibility, and low-stress travel\u2014key concerns for Candidate B (65-70, retired, with elderly husband and young grandson). Its focus on barrier-free infrastructure, climate comfort for seniors, and family-friendly accommodations aligns with B's travel style (self-guided, safety-conscious, and prioritizing natural/historical sites). Candidate A (45-50, nurse with teens) would likely prioritize adventure and youth appeal more prominently, whereas the document emphasizes elderly accessibility and moderate activities, reflecting B's demographic and preferences.",
+    "model": "solar-pro",
+    "prompt_chars": 22517,
+    "latency_sec": 1.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

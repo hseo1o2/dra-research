@@ -1,0 +1,110 @@
+[
+  {
+    "run_id": "pilot_task22_User18_seed0",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document's focus on conservative risk appetite, fixed-income products, and modular retirement planning aligns with Candidate B's profile as a 25-30-year-old female data analyst with a statistics background. Key matches include her occupation (data analyst), educational background (statistics), and conservative financial preferences (evidenced by her practical consumption habits and focus on long-term value). Candidate A, an investment manager with a finance background, would likely prioritize higher-risk investments and dynamic strategies, which contradicts the document's emphasis on low-risk, fixed-income solutions. Candidate B's demographic details (age, gender, location) and professional background also directly mirror the document's stated user profile.",
+    "model": "solar-pro",
+    "prompt_chars": 16499,
+    "latency_sec": 1.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task22_User18_seed0",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User8",
+    "correct": false,
+    "reasoning": "The document focuses on insurance products (e.g., annuities, medical insurance) and retirement policies, aligning with Candidate A's role as an Investment Manager in finance. His background in financial analysis, preference for cost-effectiveness, and interest in retirement planning (evidenced by his parents' working-class status and his own investment habits) make him the more likely audience. Candidate B, while financially literate, prioritizes data analysis and sustainability, with no direct ties to insurance or retirement products. The document\u2019s emphasis on interest rates, tax implications, and long-term financial planning reflects A\u2019s professional and personal priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 16994,
+    "latency_sec": 2.18,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task22_User18_seed0",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User8",
+    "correct": false,
+    "reasoning": "The document focuses on complex financial topics like pension systems, insurance regulations, tax optimization, and fixed-income investments, requiring deep financial literacy. Candidate A, as an investment manager with a finance background, has the professional expertise to engage with these technical details. His content preferences (finance/economics articles, market analysis screenshots) and decision-making style (data-driven, risk-averse) align with the document's analytical framing. While Candidate B is also financially literate, her interests skew toward data science and sustainability, making the insurance/tax focus less central to her profile. The document's emphasis on regulatory rate changes (2.5%/2.0%) and tax brackets also matches A's role in securities, where such metrics directly impact portfolio strategies.",
+    "model": "solar-pro",
+    "prompt_chars": 20776,
+    "latency_sec": 2.03,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task22_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document explicitly references '\u5218\u9732\u5973\u58eb' (Ms. Liu Lu) as the '\u5178\u578b\u753b\u50cf' (typical profile) and aligns with Candidate B's attributes: 25-30\u5c81\u5973\u6027\u6570\u636e\u5206\u6790\u5e08 (25-30-year-old female data analyst), \u7edf\u8ba1\u5b66\u4e13\u4e1a\u80cc\u666f (statistics major), and \u4e0a\u6d77\u5c45\u4f4f (Shanghai residence). The content prioritizes low-risk financial products, tax optimization, and long-term care planning\u2014consistent with B's meticulous, data-driven personality and her parents' location in Hefei (mentioned in the document). Candidate A (male investment manager) does not match the document's focus on conservative risk preferences or demographic details.",
+    "model": "solar-pro",
+    "prompt_chars": 22787,
+    "latency_sec": 2.01,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

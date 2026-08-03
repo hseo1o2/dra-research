@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task14_User14_seed0",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User13",
+      "User14"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document is written from the perspective of a 28\u201332 freelance illustrator in Shanghai with yoga/Pilates experience, zero running background, and a need for a structured beginner marathon plan\u2014this aligns directly with Candidate C\u2019s identity, age range, occupation, and existing exercise routine. The emphasis on practical, adaptable progression and injury prevention also matches the rational, research-oriented approach described for Candidate C.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 24270,
+    "latency_sec": 1.4,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User14_seed0",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "The excerpt is a practical, beginner-focused training-planning search summary (run/walk ratios, 12-week progression, cross-training like Pilates/yoga) with an emphasis on structured schedules and actionable guidance. Candidate B is the only profile that explicitly runs/cycles and uses fitness tracking, and their content habits (Zhihu/Douban, saving analytical articles, experimenting with creative output) align with seeking methodical, plan-based recommendations rather than a caf\u00e9/coffee or purely artistic focus.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 25519,
+    "latency_sec": 1.52,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User14_seed0",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User14",
+      "User13"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "The excerpt is a highly structured beginner marathon training plan emphasizing run-walk ratios, weekly mileage progression, injury prevention, and detailed fueling guidance\u2014content framed like personal health/fitness coaching for an individual starting a marathon. Candidate A is the only profile that explicitly runs and has bought running shoes, a yoga mat, and a fitness tracker, aligning with the document\u2019s focus on integrating yoga/pilates and managing training load for a first marathon.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 29044,
+    "latency_sec": 1.38,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User14_seed0",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The excerpt is explicitly tailored to a beginner marathoner who is a freelancer in Shanghai with an 8:00 AM wake-up and evening peak creative hours, plus an existing yoga/Pilates foundation\u2014this aligns closely with Lin Nan\u2019s freelance illustrator schedule and his established yoga and Pilates practice. The document\u2019s emphasis on integrating training around creative work, using scientific/structured guidance, and attention to gear/fueling also matches the profile of a detail-oriented creative professional who invests in quality equipment and manages time around inspiration.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 31055,
+    "latency_sec": 1.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task47_User17_seed0",
+    "stage": "plan",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User13",
+      "User16",
+      "User10",
+      "User12"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User17",
+    "correct": true,
+    "reasoning": "The document emphasizes evidence-based exercise and lifestyle recommendations for a child, prioritizing guidelines from reputable health organizations (e.g., WHO, ACSM) and focusing on balanced nutrition, recovery, and family participation. Candidate A, a head nurse with a medical background, values scientific rigor, health-focused content, and family bonding. Her profile aligns with the document\u2019s emphasis on structured, health-oriented routines, low-oil/low-salt diets, and family activities. Other candidates (B, C, D, E) prioritize personal fitness, business, or tech interests, lacking the medical professional\u2019s focus on pediatric health guidelines and family-centric wellness strategies.",
+    "model": "solar-pro",
+    "prompt_chars": 40096,
+    "latency_sec": 2.45,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task47_User17_seed0",
+    "stage": "search",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User10",
+      "User12",
+      "User13",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on physical activity guidelines for children and adolescents, emphasizing evidence-based recommendations, exercise types (MVPA, muscle/bone strengthening), and injury prevention in youth sports. Candidate B, a marketing manager with two children (8 and 5 years old), aligns most closely with this content. His profile highlights family-oriented priorities, children's interests in sports (basketball), and a pragmatic approach to health and education. The document's framing\u2014balancing structured exercise, injury risks, and developmental benefits\u2014matches B's role as a parent seeking evidence-based guidance for his children's physical activity, unlike other candidates whose interests (e.g., pet care, AI, caf\u00e9 management) are less directly relevant.",
+    "model": "solar-pro",
+    "prompt_chars": 41737,
+    "latency_sec": 2.26,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task47_User17_seed0",
+    "stage": "compress",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User12",
+      "User17",
+      "User10",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User17",
+    "correct": true,
+    "reasoning": "The document focuses on physical activity guidelines for children and adolescents, emphasizing structured exercise, muscle/bone strengthening, and injury prevention. Candidate C, a head nurse with a 15-year-old child, aligns most closely due to her professional health background, family focus on youth (high school and college-aged children), and documented interest in health/nursing content. Her role managing a family with adolescents and her content preferences (health, family education) directly mirror the document's audience priorities. Other candidates either lack direct youth parenting responsibilities (A, D) or focus on adult fitness/tech (B, E).",
+    "model": "solar-pro",
+    "prompt_chars": 44230,
+    "latency_sec": 1.97,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task47_User17_seed0",
+    "stage": "write",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User12",
+      "User13",
+      "User17"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on creating a structured, evidence-based exercise and lifestyle plan for children and adolescents, emphasizing scientific guidelines from WHO, ACSM, and AAP. Candidate A, a marketing manager with two children (8 and 5), aligns most closely with this content. His profile highlights a strong emphasis on family health, education, and balanced development\u2014key themes in the document. He values quality of life, invests in children's extracurricular activities, and prioritizes family bonding through outdoor activities (e.g., park walks with their dog). The document\u2019s focus on age-specific exercise recommendations, psychological benefits, and parental involvement mirrors Candidate A\u2019s practical, family-oriented approach. Other candidates (B, C, D, E) either lack children in the target age range, focus on adult-centric health, or prioritize non-family-related interests, making them less aligned with the document\u2019s core audience.",
+    "model": "solar-pro",
+    "prompt_chars": 46241,
+    "latency_sec": 2.76,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

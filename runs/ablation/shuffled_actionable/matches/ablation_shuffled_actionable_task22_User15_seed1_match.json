@@ -1,0 +1,118 @@
+[
+  {
+    "run_id": "ablation_shuffled_actionable_task22_User15_seed1",
+    "stage": "plan",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User15",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "Candidate C (Liu Lu) is a 25-30-year-old female data analyst with a conservative risk profile, high savings rate, and zero debt\u2014mirroring the document's author. Both share a background in analytical fields (statistics/data analysis vs. data analysis/writing), prioritize long-term financial planning, and emphasize low-risk investments (e.g., fixed-income products, systematic plans). The document's focus on structured allocation, economic risk adjustment, and product recommendations aligns with Candidate C's meticulous, data-driven decision-making style and interest in capital preservation. Unlike Candidates A (freelance artist) and B (freelance writer), Candidate C's professional and financial behaviors directly reflect the document's conservative, goal-oriented framing.",
+    "model": "solar-pro",
+    "prompt_chars": 23394,
+    "latency_sec": 2.26,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4890,
+    "output_tokens": 174,
+    "total_tokens": 5064,
+    "api_response_id": "06ee0c54-ef88-4e9d-b721-a69645db1b29"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task22_User15_seed1",
+    "stage": "search",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on complex financial topics like SECURE 2.0, QLACs, GLWB riders, HDHPs, and LTC insurance comparisons\u2014subjects requiring analytical rigor, tax implications, and long-term planning. Candidate B, a data analyst with a statistics background, exhibits a meticulous, research-driven decision-making style and prioritizes cost-effectiveness, sustainability, and factual evidence. Her LinkedIn/Zhihu activity and interest in environmental protection/financial analysis align with the document's technical framing. Candidates A (freelance writer) and C (illustrator) lack the financial/analytical focus central to the document's content.",
+    "model": "solar-pro",
+    "prompt_chars": 24555,
+    "latency_sec": 1.79,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5337,
+    "output_tokens": 156,
+    "total_tokens": 5493,
+    "api_response_id": "1bfb7e6a-4f69-45fe-a4fe-40161ab92a43"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task22_User15_seed1",
+    "stage": "compress",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User14",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on structured financial planning, annuity mechanics, and risk management\u2014topics aligning with Candidate C's background as a data analyst. Her logical, detail-oriented personality and interest in long-term value (e.g., certifications, sustainable products) mirror the document's emphasis on phased, data-driven allocation strategies. Unlike Candidates A (freelance writer) and B (illustrator), who prioritize creativity and cultural interests, Candidate C's rational decision-making style, focus on efficiency, and interest in financial tools (e.g., budgeting, data analysis) directly align with the document's technical framing and retirement-planning focus.",
+    "model": "solar-pro",
+    "prompt_chars": 27367,
+    "latency_sec": 1.69,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6244,
+    "output_tokens": 150,
+    "total_tokens": 6394,
+    "api_response_id": "9f22731d-6e10-490b-887a-d445ae7ec072"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task22_User15_seed1",
+    "stage": "write",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User15",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document emphasizes a data-driven, risk-averse, and analytically rigorous approach to retirement planning, aligning with Candidate C's background as a data analyst with a statistics degree, certifications in data science, and a meticulous, research-based decision-making style. The focus on fixed-income preservation, liability-driven investing, and systematic asset allocation mirrors C's preference for structured, evidence-based strategies and her practical, long-term value-oriented consumption habits. Unlike Candidates A (artistic, intuitive) and B (literary, introspective), C's technical expertise and quantitative mindset directly resonate with the document's emphasis on financial frameworks, tax-advantaged accounts, and actuarial risk mitigation.",
+    "model": "solar-pro",
+    "prompt_chars": 29378,
+    "latency_sec": 2.22,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6562,
+    "output_tokens": 159,
+    "total_tokens": 6721,
+    "api_response_id": "1ab0fa35-2b60-4db3-967d-df0d9fd79043"
+  }
+]

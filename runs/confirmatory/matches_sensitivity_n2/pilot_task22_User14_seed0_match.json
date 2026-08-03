@@ -1,0 +1,110 @@
+[
+  {
+    "run_id": "pilot_task22_User14_seed0",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document explicitly identifies the author as 'Lin Nan,' a 28-32-year-old freelance illustrator in Shanghai, aligning perfectly with Candidate B's profile. The content focuses on retirement planning for a freelancer with variable income, conservative risk tolerance, and specific insurance needs\u2014mirroring Candidate B's occupation, financial situation, and life-stage concerns. Candidate A (Xu Ke, a copywriter) lacks the freelance illustrator background, age range, and retirement-planning priorities central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 17145,
+    "latency_sec": 1.5,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task22_User14_seed0",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User20"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document focuses on Shanghai's social insurance policies for flexible employment, including pension and medical insurance adjustments, base rates, and eligibility criteria. Candidate A, a freelance illustrator in Shanghai, directly aligns with this content as a self-employed individual needing to navigate social security contributions. The document's emphasis on freelance-specific parameters (e.g., payment ratios, base limits, and residency requirements) reflects Candidate A's occupational context, whereas Candidate B, a salaried copywriter, would not require this information. Candidate A's profile also highlights financial planning for creative work, consistent with the document's practical, budget-oriented framing.",
+    "model": "solar-pro",
+    "prompt_chars": 18161,
+    "latency_sec": 2.07,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task22_User14_seed0",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User20"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document focuses on Shanghai's social security, insurance, and long-term care systems, emphasizing financial planning, contribution rates, and benefit calculations. Candidate A, a freelance illustrator, is more likely to engage with this content due to their need for independent financial planning, social security contributions, and long-term care considerations as a self-employed individual. While Candidate B (a copywriter) may also benefit, the document's technical depth and focus on insurance specifics align more closely with Candidate A's practical needs as a freelancer managing personal finances and health security. The content's framing reflects priorities of someone in a non-corporate, self-managed career, which matches A's profile.",
+    "model": "solar-pro",
+    "prompt_chars": 21583,
+    "latency_sec": 1.77,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task22_User14_seed0",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User20"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document is explicitly tailored for Lin Nan (Candidate A), a 28-32-year-old freelance illustrator in Shanghai with moderate-conservative risk tolerance and fluctuating project-based income. It addresses his specific needs: liquidity elasticity, long-term retirement security, and integration of Shanghai's social insurance policies (e.g., flexible employment social security, Huhui Insurance, CCRC entry rights). Candidate B (Xu Ke), a copywriter with different risk preferences and income stability, is not mentioned or aligned with the document's granular focus on freelance illustrator financial planning, tax-advantaged tools, and commercial insurance strategies for creative professionals.",
+    "model": "solar-pro",
+    "prompt_chars": 23594,
+    "latency_sec": 1.83,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

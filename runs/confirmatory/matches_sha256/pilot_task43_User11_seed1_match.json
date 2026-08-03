@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task43_User11_seed1",
+    "stage": "plan",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User11",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User11",
+    "correct": true,
+    "reasoning": "The document is a legal research brief focused on non-compete clauses for algorithm engineers in Hangzhou, requiring deep technical and legal analysis. Candidate B is an algorithm engineer with a background in AI/recommendation systems (matching the document's technical focus), resides in Hangzhou (aligning with the local legal context), and has a pragmatic, data-driven decision-making style (reflecting the document's structured legal analysis). The content's emphasis on Chinese labor law, compensation obligations, and case references to tech companies in Zhejiang/Hangzhou directly aligns with Candidate B's professional identity and geographic location, making it the most relevant match. Candidates A (marketing manager) and C (data analyst) lack the technical and legal context specificity required.",
+    "model": "solar-pro",
+    "prompt_chars": 25492,
+    "latency_sec": 1.69,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task43_User11_seed1",
+    "stage": "search",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User11",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User11",
+    "correct": true,
+    "reasoning": "The document focuses on legal aspects of non-compete agreements (\u7ade\u4e1a\u9650\u5236) for algorithm engineers in Zhejiang Province, particularly Hangzhou, citing judicial precedents, compensation standards, and commercial secrets. Candidate B is an algorithm engineer in Hangzhou with a technical background (Zhejiang University, AI specialization) and direct relevance to the document's focus on algorithm engineers, non-compete clauses, and Hangzhou court cases. The document's technical and legal framing aligns with B's profession, location, and interests in technology law, unlike Candidate A (marketing manager) or Candidate C (data analyst).",
+    "model": "solar-pro",
+    "prompt_chars": 25535,
+    "latency_sec": 1.73,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task43_User11_seed1",
+    "stage": "compress",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User11",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User11",
+    "correct": true,
+    "reasoning": "The document focuses on legal and technical aspects of non-compete agreements for algorithm engineers, emphasizing trade secrets, compensation calculations, and judicial precedents in Zhejiang. Candidate B is an algorithm engineer with a background in AI and recommendation systems, working in Hangzhou (Zhejiang), and has a strong technical and legal interest in non-compete clauses. The document's framing aligns with his professional role, geographic location, and technical expertise, making him the most likely intended audience. Candidates A (data analyst) and C (marketing manager) lack the technical and legal context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29524,
+    "latency_sec": 1.62,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task43_User11_seed1",
+    "stage": "write",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User11"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User11",
+    "correct": true,
+    "reasoning": "The document focuses on legal analysis of non-compete obligations for algorithm engineers in Hangzhou, emphasizing technical trade secrets, statutory enforceability, and compensation rules. Candidate C is explicitly identified as an algorithm engineer with a background in AI and recommendation systems, currently working in Hangzhou. The document's technical depth, legal framing, and focus on trade secrets align with Candidate C's professional expertise, geographic location, and documented interest in AI applications. Candidates A (marketing manager) and B (data analyst) lack the domain-specific relevance to the document's content.",
+    "model": "solar-pro",
+    "prompt_chars": 31535,
+    "latency_sec": 1.52,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

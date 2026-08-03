@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task42_User1_seed1",
+    "stage": "plan",
+    "gt_userid": "User1",
+    "candidate_userids": [
+      "User1",
+      "User4",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User4",
+      "User22",
+      "User1"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User1",
+    "correct": true,
+    "reasoning": "The document focuses on global AI agent compliance, technical legal frameworks, and cross-border data management\u2014topics directly aligned with Candidate C's computer science background, AI/algorithm research interests, and technical vocabulary (e.g., 'LLM provider agreements,' 'data minimization'). Candidate A (law student) would lack the technical implementation focus, while Candidate B (manufacturing director) lacks AI-specific expertise. The document's emphasis on server architecture, data telemetry, and compliance audits matches C's hands-on tech habits (GitHub, programming tools) and rational, detail-oriented decision-making style for tech purchases.",
+    "model": "solar-pro",
+    "prompt_chars": 25636,
+    "latency_sec": 1.62,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task42_User1_seed1",
+    "stage": "search",
+    "gt_userid": "User1",
+    "candidate_userids": [
+      "User1",
+      "User4",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User4",
+      "User1",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User1",
+    "correct": true,
+    "reasoning": "The document focuses on data privacy regulations (PIPL, GDPR, EU AI Act) and AI compliance requirements, emphasizing technical and legal frameworks for sensitive data handling, incident reporting timelines, and algorithm filing. Candidate B, a computer science student specializing in AI and algorithms, aligns most closely with this content. His academic interests in AI, deep learning, and technical research, combined with his consumption of AI-related articles and code snippets, reflect the document's technical and regulatory focus. Candidates A (law student) and C (manufacturing director) lack the specific AI/algorithm expertise and daily engagement with technical compliance frameworks evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 26652,
+    "latency_sec": 1.6,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task42_User1_seed1",
+    "stage": "compress",
+    "gt_userid": "User1",
+    "candidate_userids": [
+      "User1",
+      "User4",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User4",
+      "User1"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User1",
+    "correct": true,
+    "reasoning": "The document focuses on technical aspects of data privacy laws (GDPR, CCPA, PIPL) with a strong emphasis on AI-related compliance (e.g., automated decision-making, machine unlearning, vector databases). Candidate C, a computer science student specializing in AI and algorithms, aligns most closely with this technical framing. Their interests in AI research, deep learning, and natural language processing directly correlate with the document's focus on AI-agent compliance, data minimization, and machine unlearning. The document's granularity on legal-tech intersections (e.g., 'precise geolocation' in PIPL) also matches Candidate C's tendency to save technical articles, code snippets, and screenshots for reference. Candidates A (manufacturing) and B (law student) lack the document's dual focus on both legal frameworks and technical implementation details.",
+    "model": "solar-pro",
+    "prompt_chars": 29145,
+    "latency_sec": 1.93,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task42_User1_seed1",
+    "stage": "write",
+    "gt_userid": "User1",
+    "candidate_userids": [
+      "User1",
+      "User4",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User1",
+      "User4",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User4",
+    "correct": false,
+    "reasoning": "The document focuses on global AI agent compliance with legal frameworks (GDPR, CCPA/CPRA, PIPL), emphasizing regulatory alignment, data classification, and breach reporting timelines. Candidate B, a law student with a focus on civil/criminal law and psychology, aligns most closely due to her academic background in legal systems, interest in judicial reforms, and content preferences for legal/political analyses. The document's technical-legal framing matches her expertise in law and attention to regulatory detail, unlike Candidate A (CS student focused on AI tech) or Candidate C (manufacturing director focused on Industry 4.0).",
+    "model": "solar-pro",
+    "prompt_chars": 31156,
+    "latency_sec": 1.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task48_User10_seed1",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document's focus on structured, age-appropriate art education for children (8-year-old daughter interested in painting/dancing, 5-year-old son interested in building/basketball) aligns with Candidate A's profile as a father with identical family dynamics. The request for a 6-month plan incorporating traditional cultural elements (e.g., Jiangnan/Suzhou influences) matches A's Jiangnan upbringing and emphasis on blending Eastern/Western values. The pragmatic, detail-oriented framing (e.g., evaluation frameworks, material lists) reflects A's managerial personality and preference for efficiency. Candidate B (caf\u00e9 owner) and C (AI entrepreneur) lack the specific family structure, cultural background, and pedagogical priorities described in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25364,
+    "latency_sec": 1.79,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task48_User10_seed1",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User12",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on children's art education, craft techniques (e.g., blue calico, clay figurines), and developmental stages in art (preschematic, schematic, gang stage), aligning with Candidate C's role as a father of two young children (5 and 8 years old) who prioritizes their education. His family-centered lifestyle, interest in extracurricular activities, and consumption habits (e.g., investing in children's educational resources) directly reflect the document's emphasis on age-appropriate art processes. Candidates A and B lack comparable familial or educational focus on child development, with A being a single mother with limited time for her child and B prioritizing tech entrepreneurship over child-centric creative activities.",
+    "model": "solar-pro",
+    "prompt_chars": 27440,
+    "latency_sec": 1.85,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task48_User10_seed1",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User10",
+      "User13"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on integrating Jiangnan cultural elements (e.g., Suzhou gardens, traditional crafts, ink wash painting) with Western art pedagogy for children. Candidate B, a marketing manager from Suzhou with a Jiangnan cultural background, has an 8-year-old daughter interested in painting and dancing. His profile emphasizes family-oriented educational activities, cultural heritage appreciation, and practical integration of Eastern/Western concepts\u2014aligning with the document's emphasis on cross-cultural art education. Candidates A (tech entrepreneur) and C (caf\u00e9 owner) lack the explicit focus on children's art pedagogy or Jiangnan cultural synthesis central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30173,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task48_User10_seed1",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User13",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document's focus on blending Western art concepts with Jiangnan regional culture (e.g., classical gardens, ink wash painting, and traditional handicrafts) aligns with Candidate C's background in Suzhou (Jiangnan) and his stated ability to combine Eastern and Western thinking. The curriculum's emphasis on developmental milestones for an 8-year-old girl (passionate about painting/dance) and 5-year-old boy (interested in building/basketball) directly mirrors Candidate C's family structure and children's interests. Additionally, the document's structured, multidisciplinary approach reflects Candidate C's pragmatic, detail-oriented personality and his prioritization of quality education for his children, as evidenced by his investment in extracurricular classes and learning resources.",
+    "model": "solar-pro",
+    "prompt_chars": 32184,
+    "latency_sec": 1.97,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

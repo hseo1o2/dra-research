@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task48_User12_seed0",
+    "stage": "plan",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User12",
+      "User13"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "Candidate B (Zhang Yu) is the best match. The document emphasizes a structured, research-backed 6-month art education plan for a 5-year-old, aligning with B's data-driven decision-making style and focus on logical reasoning. B's daily routine includes dedicated bedtime storytelling and prioritizes family time on weekends, reflecting the document's emphasis on parent-child engagement. Additionally, B's interest in technology and creative work in the morning mirrors the document's need for a methodical yet innovative approach to fostering creativity. While Candidate A values education, his focus on extracurricular classes and rigid budgeting contrasts with the document's open-ended, flexible art exploration. Candidate C, though artistic, lacks the structured planning and research orientation central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25236,
+    "latency_sec": 2.29,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task48_User12_seed0",
+    "stage": "search",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User10",
+      "User13"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on early childhood art education, developmental milestones, and process art for 5-year-olds. Candidate B, a marketing manager with an 8-year-old daughter interested in painting and a 5-year-old son, aligns with the document's emphasis on art activities, child development, and educational resources. His family's involvement in creative activities (e.g., painting, dancing) and his prioritization of children's education (e.g., extracurricular classes, learning resources) reflect the document's framing. Candidate A, an AI entrepreneur, and Candidate C, a caf\u00e9 owner, lack the same direct connection to early childhood art education as their profiles emphasize technology and coffee culture, respectively.",
+    "model": "solar-pro",
+    "prompt_chars": 27544,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task48_User12_seed0",
+    "stage": "compress",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User10",
+      "User12"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on early childhood development, art education, and creative expression\u2014topics directly tied to Candidate A's role as a single mother of a 5-year-old (Xiaoyu) and her emphasis on art, design, and quality time with her child. Her caf\u00e9's artistic environment, interest in art exhibitions, and prioritization of creative activities align with the document's themes of symbolic thinking, emotional regulation through art, and multisensory learning. Candidates B and C, while both parents of young children, focus more on career-driven or tech-oriented interests, lacking the document's artistic and developmental framing.",
+    "model": "solar-pro",
+    "prompt_chars": 30173,
+    "latency_sec": 1.56,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task48_User12_seed0",
+    "stage": "write",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User10",
+      "User12"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on a multi-disciplinary art education plan for 5-year-olds, emphasizing emotional regulation, symbolic thinking, and creative expression through visual arts, music, and movement. Candidate A, a caf\u00e9 owner with a design background and a 5-year-old child, values art, education, and emotional connections. Her profile highlights her interest in art exhibitions, creative content, and her efforts to engage her child in artistic activities. The document's emphasis on art as a tool for emotional expression and self-concept aligns with her background in design, her appreciation for art, and her desire to foster creativity in her child. Candidates B and C, while involved in their children's education, prioritize practical skills (marketing/management) and technology (AI), respectively, which are less directly relevant to the document's artistic and developmental focus.",
+    "model": "solar-pro",
+    "prompt_chars": 32184,
+    "latency_sec": 2.14,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

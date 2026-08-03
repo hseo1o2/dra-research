@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task22_User14_seed0",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User15",
+      "User14"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "Candidate C (Lin Nan) is a 28-32-year-old freelance illustrator in Shanghai, matching the document's author profile (freelance illustrator, 28-32, [MASKED] location). The document's focus on retirement planning for a freelancer with variable income aligns with C's occupation and financial habits (e.g., quarterly travel budgets, art-supply investments). C's creative, risk-averse yet quality-focused consumption mirrors the document's emphasis on balancing fluctuating income with long-term financial commitments. The other candidates (A: data analyst, B: freelance writer) lack the freelance illustrator identity and artistic lifestyle central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 22872,
+    "latency_sec": 1.64,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task22_User14_seed0",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User15",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document focuses on Shanghai-based social insurance policies for flexible employment, including pension and medical insurance adjustments, which aligns with Candidate A's status as a freelance illustrator in Shanghai. The content emphasizes practical financial planning (e.g., contribution calculations, base rates) and local policy details (e.g., residency requirements for non-local hukou holders), reflecting A's need for budget-conscious consumption and periodic mobility within Shanghai. Candidate B (Beijing-based writer) and C (data analyst) lack the direct relevance to Shanghai's freelance insurance framework or the artistic lifestyle that prioritizes local policy awareness for financial stability.",
+    "model": "solar-pro",
+    "prompt_chars": 23853,
+    "latency_sec": 2.07,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task22_User14_seed0",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document focuses on Shanghai-based social security, insurance, and long-term care systems, with detailed financial calculations and policy specifics. Candidate C, a Shanghai-based freelance illustrator, aligns best due to (1) his permanent residence in Shanghai, making local policy relevance essential for his freelance career stability, (2) his age (28-32) and occupation (freelance) matching the target demographic for flexible employment insurance schemes, and (3) his practical consumption habits (e.g., budgeting for art supplies, travel, and household essentials) reflecting the document's emphasis on cost-benefit analysis of insurance contributions. Candidates A (Beijing-based) and B (data analyst) lack the direct geographic and occupational ties to Shanghai's flexible employment policies.",
+    "model": "solar-pro",
+    "prompt_chars": 27367,
+    "latency_sec": 1.9,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task22_User14_seed0",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User14",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document is explicitly tailored for 'Lin Nan', a 28-32-year-old freelance illustrator in Shanghai, matching Candidate B's identity. The content focuses on financial planning for freelancers with income volatility, aligning with B's project-based work and cash flow management needs. The document's emphasis on Shanghai-specific policies, art-related income patterns, and lifestyle preferences (e.g., travel for inspiration, pet ownership) directly mirrors B's profile. Candidates A (freelance writer in Beijing) and C (data analyst in Shanghai) lack the occupation, location, and creative industry context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29378,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task37_User20_seed0",
+    "stage": "plan",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User20",
+      "User14",
+      "User13",
+      "User12",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User16",
+      "User13",
+      "User14",
+      "User12"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User20",
+    "correct": true,
+    "reasoning": "The document emphasizes a warm, pet-friendly interior design with natural wood textures and soft fabrics, aligning with Candidate A's creative, literature-influenced personality and his cat ownership. The focus on an open-plan kitchen and budget-conscious renovation (150,000 RMB) matches A's restrained spending habits and mid-range design preferences. The Shanghai-centric sourcing and artistic framing (e.g., photographing decor) reflect A's urban lifestyle and appreciation for aesthetics, distinguishing him from other candidates whose priorities (e.g., Candidate C's caf\u00e9-centric needs or Candidate E's tech-focused spending) do not align as closely with the document's domestic, creative, and pet-integrated renovation scope.",
+    "model": "solar-pro",
+    "prompt_chars": 41271,
+    "latency_sec": 2.51,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task37_User20_seed0",
+    "stage": "search",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User20",
+      "User14",
+      "User13",
+      "User12",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User13",
+      "User12",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on budget allocation for interior design (\u786c\u88c5) in a small apartment (80 sqm) in Shanghai, emphasizing cost-effectiveness, material quality (e.g., ENF-grade MDI glue board), and practicality. Candidate B, a caf\u00e9 owner in Shanghai, aligns with this focus: her profile highlights meticulous attention to design, sustainability, and cost-conscious decisions (e.g., eco-friendly packaging, supporting local brands). The document\u2019s emphasis on precise budgeting and material standards mirrors her entrepreneurial need to balance aesthetics with practical constraints. Other candidates (A, C, D, E) lack the direct connection to interior design, material specifications, or Shanghai-based budget-conscious renovation priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 42381,
+    "latency_sec": 2.29,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task37_User20_seed0",
+    "stage": "compress",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User20",
+      "User14",
+      "User13",
+      "User12",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User14",
+      "User12",
+      "User16",
+      "User13"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": false,
+    "reasoning": "The document focuses on detailed budget allocation and cost breakdowns for apartment renovation in Shanghai, emphasizing practicality, material quality, and cost-efficiency. Candidate B, a freelance illustrator, aligns with this content through his rational consumption habits, focus on quality tools, and interest in budgeting for art supplies and travel. While Candidate A (copywriter) and E (caf\u00e9 owner) share aesthetic sensibilities, they prioritize design and creativity over the technical, cost-driven framing of the document. Candidate C (AI entrepreneur) and D (state-owned manager) have financial acumen but lack the document's granular focus on renovation specifics. Candidate B\u2019s balance of artistic sensibility and practical budgeting makes him the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 45620,
+    "latency_sec": 2.43,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task37_User20_seed0",
+    "stage": "write",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User20",
+      "User14",
+      "User13",
+      "User12",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User20",
+      "User14",
+      "User12",
+      "User13"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User20",
+    "correct": true,
+    "reasoning": "The document focuses on a young couple with a cat renovating an 80m\u00b2 apartment in Shanghai, emphasizing pet-friendly design, spatial efficiency, and budget control. Candidate B (Xu Ke) is a 24-28-year-old copywriter in Shanghai who recently adopted a cat, prioritizes design aesthetics, and has a budget-conscious lifestyle. The document's emphasis on natural wood tones, open-plan living, and integrated pet features aligns with B's creative, design-oriented preferences and urban Shanghai context. Other candidates (A, C, D, E) either lack the pet-centric focus, are outside Shanghai, or represent different life stages (e.g., families with children, entrepreneurs) not reflected in the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 47631,
+    "latency_sec": 2.6,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

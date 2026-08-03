@@ -1,0 +1,90 @@
+[
+  {
+    "run_id": "pilot_task13_User19_seed0",
+    "stage": "plan",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User10",
+      "User19",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User19",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document explicitly mentions a 35-40-year-old male supply chain manager in Chengdu, aligning with Candidate B's occupation, age, and residence. The focus on adapting Sichuan cuisine (e.g., hotpot, boiled fish) matches B's preference for Sichuan food and recent shift to low-oil, low-salt cooking. The exercise routine (jogging, basketball, yoga, dog walks) and daily schedule (6 AM wake-up, 11 PM sleep) directly mirror B's habits. Additionally, B's emphasis on eco-friendly/organic options, tech solutions for health monitoring, and phased implementation align with the document's priorities. Candidate A (Shanghai-based marketer) and C (Harbin-based state-owned enterprise manager) lack these specific overlaps.",
+    "model": "solar-pro",
+    "prompt_chars": 25065,
+    "latency_sec": 1.74
+  },
+  {
+    "run_id": "pilot_task13_User19_seed0",
+    "stage": "search",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User10",
+      "User19",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User19"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "Candidate C, a supply chain manager in Chengdu, aligns most closely with the document's focus on diabetes guidelines (CDS/ADA), CGM systems (Sibionics/Freestyle Libre), and blood glucose targets. The document emphasizes technical comparisons (HbA1c vs. fasting/postprandial metrics), device specifications (MARD, wearing duration), and cost-effectiveness\u2014key priorities for a logistics-oriented professional managing health metrics. Candidate C's pragmatic, data-driven decision-making style, interest in eco-friendly/sustainable products (reflecting CDS's evidence-based guidelines), and focus on practicality (e.g., comparing device prices) mirror the document's framing. Unlike Candidates A (marketing focus) and B (photography/hobbies), Candidate C's supply chain expertise aligns with the document's structured, solution-oriented analysis of medical standards and technology.",
+    "model": "solar-pro",
+    "prompt_chars": 26974,
+    "latency_sec": 1.93
+  },
+  {
+    "run_id": "pilot_task13_User19_seed0",
+    "stage": "compress",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User10",
+      "User19",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on Chinese Diabetes Society (CDS) guidelines, Sichuan cuisine adaptations for diabetes management, and organic ingredient sourcing in Chengdu. Candidate A, a Chengdu-based supply chain manager, aligns with these themes: he has a strong connection to Sichuan cuisine (loves spicy hotpot, mapo tofu), prioritizes eco-friendly consumption (buys organic food), and resides in Chengdu (where the document references local markets). The document\u2019s emphasis on practical, localized diabetes management (e.g., 15-15 rule with Sichuan carb sources) matches his pragmatic, efficiency-focused personality and recent interest in healthy cooking. Candidates B (Shanghai-based, Jiangnan cuisine) and C (Harbin-based, Northeastern cuisine) lack the regional and dietary specificity central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29467,
+    "latency_sec": 2.07
+  },
+  {
+    "run_id": "pilot_task13_User19_seed0",
+    "stage": "write",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User10",
+      "User19",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User19"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on Type 2 Diabetes management tailored to Asian physiological traits, particularly emphasizing Sichuan culinary adaptations, CGM devices integrated with WeChat, and supply chain stress markers. Candidate C, a Supply Chain Manager in Chengdu with a background in Sichuan cuisine, aligns perfectly with these themes. His eco-friendly dietary preferences, use of WeChat for work/socializing, and interest in health tech (e.g., CGM integration) directly mirror the document's priorities. Additionally, his role in supply chain management explains the document's focus on 'supply chain stress markers,' a unique detail absent in other profiles.",
+    "model": "solar-pro",
+    "prompt_chars": 31478,
+    "latency_sec": 1.93
+  }
+]

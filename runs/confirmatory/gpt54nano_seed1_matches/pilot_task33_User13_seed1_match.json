@@ -1,0 +1,118 @@
+[
+  {
+    "run_id": "pilot_task33_User13_seed1",
+    "stage": "plan",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User14",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The brief is written from the perspective of someone with a multi-pet household (two cats and one corgi) and emphasizes cohesive, design-aware, sustainability-minded daily essentials\u2014matching the caf\u00e9 owner\u2019s lifestyle and aesthetic priorities. It also calls for detailed, practical comparisons across mainstream brands and maintenance costs, aligning with a business operator who must balance quality, customer experience, and operational efficiency.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 23810,
+    "latency_sec": 1.27,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4402,
+    "output_tokens": 101,
+    "total_tokens": 4503,
+    "api_response_id": "chatcmpl-E8plkbUd8d785QO9JA01dubAH3eHw"
+  },
+  {
+    "run_id": "pilot_task33_User13_seed1",
+    "stage": "search",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The excerpt is dominated by highly specific, technical comparison shopping for pet products (automatic litter box specs like chamber size, weight limits, odor control, long-hair suitability, and price/size), with a research-and-specs framing. That aligns best with a rational, detail-oriented buyer who conducts thorough comparisons before purchasing\u2014matching the data analyst profile (C) rather than a caf\u00e9 owner (B) or freelance illustrator (A).",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 25629,
+    "latency_sec": 1.34,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4946,
+    "output_tokens": 110,
+    "total_tokens": 5056,
+    "api_response_id": "chatcmpl-E8pllzS9WJWpXDtntKqTU0NksEso8"
+  },
+  {
+    "run_id": "pilot_task33_User13_seed1",
+    "stage": "compress",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User18",
+      "User13"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The excerpt reads like a systematic, criteria-based product comparison research log (multiple targeted spec/price queries, evaluation plan, and structured sections for litter boxes/feeders/fountains). That aligns with a logically meticulous, data-driven shopper who values detailed comparisons and evidence before purchasing\u2014more like the data analyst profile (B) than the more creative/brand-experience oriented caf\u00e9 owner (C) or illustrator (A).",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 28122,
+    "latency_sec": 1.58,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5808,
+    "output_tokens": 106,
+    "total_tokens": 5914,
+    "api_response_id": "chatcmpl-E8plmCTIwI2XIAoigwX5GkUW8K6sv"
+  },
+  {
+    "run_id": "pilot_task33_User13_seed1",
+    "stage": "write",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User18",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The excerpt is written as a practical, multi-pet household shopping and maintenance guide tailored to specific named pets (Doudou, Beibei, Coco) and emphasizes minimizing noise anxiety, hairball control, joint support, and floor-level monitoring\u2014matching a pet-owning household with those exact animals. Candidate A is the only profile that explicitly owns all three pets and has a design- and sustainability-minded, detail-oriented shopping style consistent with the report\u2019s structured comparison across cost, safety, durability, and ergonomics.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 30133,
+    "latency_sec": 2.61,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5922,
+    "output_tokens": 128,
+    "total_tokens": 6050,
+    "api_response_id": "chatcmpl-E8ploRTny6RpuYSDaDNzubSR1bZhy"
+  }
+]

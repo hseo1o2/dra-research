@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task22_User15_seed1",
+    "stage": "plan",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User15",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "Candidate B (Qiu Wen) is a freelance writer with variable income, no corporate pension, and a risk-averse profile\u2014mirroring the document's focus on low-risk, long-term retirement planning. The document's emphasis on annuity insurance, medical coverage, and care services aligns with B's practical, eco-conscious consumption habits and preference for stability. Unlike Candidate A (data analyst with corporate ties) or C (copywriter with less explicit financial caution), B's freelance status, independent decision-making, and interest in sustainable, low-risk strategies (e.g., intermittent fasting, eco-friendly purchases) directly reflect the document's priorities. The mention of [MASKED] funds and Chinese medical insurance also aligns with B's Beijing residence and cultural context.",
+    "model": "solar-pro",
+    "prompt_chars": 23721,
+    "latency_sec": 2.08,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task22_User15_seed1",
+    "stage": "search",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User20",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document focuses on tax-advantaged personal pension plans, insurance products for freelancers, and health insurance options\u2014topics directly relevant to Candidate A, a freelance writer in Beijing. Her profile highlights financial planning concerns (e.g., eco-friendly consumption, quarterly lifestyle purchases), freelance status, and interest in social/policy issues (aligned with tax/insurance content). The Beijing-specific health insurance details also match her residence. Candidates B (advertising copywriter) and C (data analyst) lack the freelance context and financial/policy focus central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 23974,
+    "latency_sec": 2.12,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task22_User15_seed1",
+    "stage": "compress",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User18",
+      "User20"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document focuses on freelance writers' pension planning, tax strategies for royalties (\u7a3f\u916c), and flexible insurance products tailored to irregular income streams. Candidate A is explicitly identified as a freelance writer with income from royalties (\u7a3f\u916c\u6240\u5f97) and labor remuneration (\u52b3\u52a1\u62a5\u916c), directly aligning with the document's tax-saving calculations and product recommendations. The document's emphasis on low-risk ESG funds and eco-friendly consumption also mirrors Candidate A's growing interest in sustainability. Candidates B (data analyst) and C (copywriter) lack the freelance writer context and specific tax considerations central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 28174,
+    "latency_sec": 2.22,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task22_User15_seed1",
+    "stage": "write",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User15",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document focuses on a freelance writer with variable income, risk-averse investment preferences, and a 30-year retirement plan emphasizing healthcare, long-term care, and low-risk ESG strategies. Candidate B is a freelance writer (26-30, female) with variable income, a risk-averse nature, and a focus on sustainable/eco-friendly consumption. The document's emphasis on annuities, medical insurance, and long-term care aligns with B's need for financial stability and healthcare security, given her freelance status and lack of employer-sponsored benefits. Candidate A (data analyst) and C (copywriter) have stable corporate roles or different priorities (e.g., travel, design), making B the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 30185,
+    "latency_sec": 1.96,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

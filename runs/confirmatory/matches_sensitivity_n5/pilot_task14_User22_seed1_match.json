@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task14_User22_seed1",
+    "stage": "plan",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16",
+      "User18",
+      "User23"
+    ],
+    "shuffled_order": [
+      "User23",
+      "User16",
+      "User22",
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "The document's focus on a 50-55-year-old male beginner runner with a history of lumbar strain, emphasis on gradual training, injury prevention, and practical gear aligns most closely with Candidate C. Candidate C (Ma Jianping) shares the same age range, gender, and occupation (technical director in manufacturing), and his exercise preferences include running three times weekly with a goal of improving endurance and stress relief. His pragmatic, detail-oriented personality and focus on practical solutions mirror the document's structured, safety-first approach. Unlike other candidates, C explicitly mentions running as a primary exercise and has invested in fitness equipment, reflecting the document's emphasis on adaptable, sustainable training within time constraints.",
+    "model": "solar-pro",
+    "prompt_chars": 39040,
+    "latency_sec": 2.07,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task14_User22_seed1",
+    "stage": "search",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16",
+      "User18",
+      "User23"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User16",
+      "User22",
+      "User23"
+    ],
+    "predicted_label": "E",
+    "predicted_userid": "User23",
+    "correct": false,
+    "reasoning": "The document focuses on beginner-friendly marathon training plans, dynamic warm-ups for lumbar strain, core stabilization exercises (McGill Big 3), and RPE scales\u2014topics emphasizing gradual progression, injury prevention, and low-intensity exercise. These align with Candidate E (60-65, retired civil servant) who prioritizes health, gentle exercise (yoga, walking), and practical, sustainable routines. Her age, interest in low-impact activities, and focus on vitality over performance match the document's framing. Other candidates (A-D) are younger, more career-focused, or emphasize higher-intensity workouts (e.g., boxing, golf, running), which contrast with the beginner-oriented, injury-conscious tone of the document.",
+    "model": "solar-pro",
+    "prompt_chars": 40786,
+    "latency_sec": 2.23,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task14_User22_seed1",
+    "stage": "compress",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16",
+      "User18",
+      "User23"
+    ],
+    "shuffled_order": [
+      "User23",
+      "User18",
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "E",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "The document focuses on marathon training plans for beginners aged 50\u201355, emphasizing physiological considerations, injury risks, and structured progression (e.g., 10% volume rules, cutback weeks). Candidate E (50\u201355, technical director) aligns best: he is within the target age range, prioritizes health (gardening, running, calligraphy), and values structured routines (early mornings, production-line inspections). His interest in gardening and physical activity reflects a balance of practicality and health awareness, mirroring the document's emphasis on safe, gradual training. Other candidates either fall outside the age range (A, B, C, D) or lack the document's focus on middle-aged physiological realities and structured progression.",
+    "model": "solar-pro",
+    "prompt_chars": 43543,
+    "latency_sec": 2.56,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task14_User22_seed1",
+    "stage": "write",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16",
+      "User18",
+      "User23"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User16",
+      "User10",
+      "User23",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "The document focuses on a 12-week marathon training plan tailored for beginners aged 50\u201355, emphasizing injury prevention, core stability, and gradual progression. Candidate A (Ma Jianping) is 50\u201355, has a history of lumbar strain, and explicitly mentions running three times weekly as part of his exercise routine. The guide\u2019s emphasis on structured, low-impact training (e.g., Galloway Run/Walk Method) aligns with his pragmatic, detail-oriented personality and his goal of improving endurance while protecting his back. Other candidates either fall outside the age range (C, E), have different injury profiles (B\u2019s neck issues), or prioritize different exercise types (C\u2019s golf/yoga, E\u2019s boxing/swimming). Candidate D, while retired and health-conscious, focuses on yoga and walking, not marathon training.",
+    "model": "solar-pro",
+    "prompt_chars": 45554,
+    "latency_sec": 2.3,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

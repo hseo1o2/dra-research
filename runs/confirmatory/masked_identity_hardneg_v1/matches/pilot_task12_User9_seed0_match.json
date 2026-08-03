@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User14",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on emotional regulation, self-awareness, and stress management within a product operations role. The document emphasizes a psychology minor, advertising background, and specific morning routines (7:00\u20139:00 AM) integrating meditation, journaling, and yoga\u2014all directly reflected in Candidate A's habits, interests, and stated challenges. Unlike Candidate B (freelance illustrator with evening creativity focus) or Candidate C (algorithm engineer prioritizing tech/logic), Candidate A's creative yet emotionally sensitive personality, social media behavior (sharing art/inspiration), and explicit mention of anxiety/emotional fluctuations make her the clear match. The request for books on MBSR/CBT and morning routines also aligns with her documented use of yoga, meditation, and interest in mental health content.",
+    "model": "solar-pro",
+    "prompt_chars": 23124,
+    "latency_sec": 1.97,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User9",
+      "User11"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on emotional well-being, mindfulness practices (MBSR), and emotion regulation tools\u2014topics aligning with Candidate B's interests in mental health, psychology, and creative self-expression. B's profile highlights her minor in psychology, interest in mental health articles, and use of emotion-tracking worksheets (DBT) for creative processes. Unlike A (art-focused) or C (tech-focused), B's behavioral traits (low stress tolerance, need for emotional support) and content preferences (mental health, sustainable living) directly mirror the document's emphasis on emotional regulation and mindfulness. Her recent shift to podcasts and long-form content also aligns with the document's structured, reflective tone.",
+    "model": "solar-pro",
+    "prompt_chars": 24917,
+    "latency_sec": 2.07,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User14",
+      "User9"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "The document focuses on emotional regulation, workplace stress management, and cognitive behavioral techniques\u2014topics aligned with Candidate A's profile as an algorithm engineer facing high-pressure, logic-driven environments. The document's emphasis on structured frameworks (e.g., RULER, DBT skills) and data-informed strategies mirrors A's preference for systematic problem-solving and rational decision-making. While Candidates B and C show interest in mental health, their profiles prioritize artistic expression (B) or fitness/creative pursuits (C), which lack the document's technical and workplace-oriented framing. A's background in AI and recommendation systems also aligns with the document's analytical tone, making it the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 27835,
+    "latency_sec": 2.15,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User14",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on emotional regulation, self-awareness, and stress management tailored for high-pressure corporate environments, particularly in product operations. Candidate A is explicitly described as a Product Operations professional at an internet company, directly aligning with the document's context. The document's emphasis on cross-functional alignment, rapid decision-making, and workplace stress mirrors Candidate A's role and challenges. Additionally, Candidate A's minor in psychology and interest in mental health articles further support their alignment with the document's evidence-based psychological frameworks. Candidates B (freelance illustrator) and C (algorithm engineer) lack the occupational and contextual relevance to the document's focus on product operations stress and emotional regulation in corporate settings.",
+    "model": "solar-pro",
+    "prompt_chars": 29846,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

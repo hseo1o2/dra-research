@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task33_User12_seed1",
+    "stage": "plan",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User12",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "Candidate B is the best match. The document focuses on a British Shorthair cat (explicitly mentioned in the research brief), which aligns with Candidate B's ownership of a blue British Shorthair named Doudou. The document emphasizes smart, tech-integrated pet products (e.g., app connectivity, automated systems), reflecting Candidate B's background as an AI entrepreneur with a preference for high-end tech and eco-friendly smart home devices. Additionally, the detailed evaluation criteria (price, safety, tech features, etc.) mirror B's data-driven decision-making style and rational consumption habits, prioritizing quality and cost-effectiveness for family needs. Candidates A (no current pet) and C (owns a dog) lack the direct pet-care context and tech-focused framing present in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25373,
+    "latency_sec": 2.24,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task33_User12_seed1",
+    "stage": "search",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User12",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on self-cleaning litter box specifications (height, capacity, waste management, price) for cat owners. Candidate B explicitly owns a cat (blue British Shorthair) and has a family-oriented context for pet care, making this content directly relevant to their needs. The technical framing (e.g., 'OmniSense detection,' 'waste bin capacity') aligns with B's AI entrepreneur background, valuing data-driven product features. Candidates A (considering a future cat) and C (owns a dog) lack the immediate, detailed pet-care focus evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 27184,
+    "latency_sec": 1.72,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task33_User12_seed1",
+    "stage": "compress",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User10",
+      "User12"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "Candidate C, an AI entrepreneur with a cat (Doudou), aligns most closely with the document's focus on smart litter box specifications, tech integration, and cost-effectiveness. The document emphasizes technical details like sensor systems, app connectivity, and waste capacity\u2014priorities matching C's background in AI and preference for high-end tech products. Unlike A (catless, finance-focused) and B (dog owner, marketing-oriented), C's pet ownership, tech-savvy nature, and interest in eco-friendly smart devices directly correlate with the document's framing. The analysis of product specs (e.g., Catlink's climate monitoring, Petkit's odor control) reflects C's likely need for data-driven, feature-rich solutions for pet care.",
+    "model": "solar-pro",
+    "prompt_chars": 29923,
+    "latency_sec": 2.69,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task33_User12_seed1",
+    "stage": "write",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User12",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on breed-specific care for a British Shorthair cat, detailing anatomical, physiological, and behavioral needs. Candidate B explicitly owns a British Shorthair cat (Doudou) and prioritizes high-quality, tech-integrated pet care products. The report's emphasis on smart devices (e.g., automated feeders, litter boxes) aligns with B's entrepreneurial background in AI and preference for eco-friendly smart home devices. Candidate A has no pets, and Candidate C owns a Labrador, making their profiles irrelevant to the cat-centric, breed-specific analysis in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 31934,
+    "latency_sec": 1.64,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

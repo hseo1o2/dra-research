@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task43_User10_seed1",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16",
+      "User18",
+      "User11"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User22",
+      "User16",
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "D",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on legal analysis of a non-compete clause for a former Marketing Department Manager in Shanghai, requiring expertise in PRC labor laws and Shanghai judicial practice. Candidate D is the only profile explicitly identifying as a 'Manager of Marketing Department in a Foreign Enterprise' with an MBA in marketing and business management. His background in Shanghai, familiarity with Western management concepts, and pragmatic decision-making style align with the document's focus on legal strategy for employment rights. Other candidates (A: algorithm engineer, B: manufacturing technical director, C: state-owned enterprise manager, E: data analyst) lack the direct occupational and contextual relevance to the document's legal and marketing management focus.",
+    "model": "solar-pro",
+    "prompt_chars": 40792,
+    "latency_sec": 2.1,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task43_User10_seed1",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16",
+      "User18",
+      "User11"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User11",
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on labor law, specifically non-compete clauses (\u7ade\u4e1a\u9650\u5236), commercial secrets, and judicial interpretations relevant to marketing managers in Shanghai. Candidate C, a marketing department manager in a foreign enterprise, has direct professional relevance to these topics. His role involves legal compliance, commercial strategy, and management of sensitive business information, aligning with the document's focus on non-compete agreements, judicial precedents (e.g., (2020)\u6caa02\u6c11\u7ec83126\u53f7), and protection of trade secrets. The document\u2019s framing\u2014legal analysis, case law, and practical implications for managers\u2014matches Candidate C\u2019s background in marketing leadership and operational responsibilities in Shanghai, where the cited cases are based. Other candidates lack this direct occupational or geographic connection.",
+    "model": "solar-pro",
+    "prompt_chars": 40939,
+    "latency_sec": 2.59,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task43_User10_seed1",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16",
+      "User18",
+      "User11"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10",
+      "User11",
+      "User16",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on legal aspects of non-compete clauses (\u7ade\u4e1a\u9650\u5236) under Chinese labor law, specifically targeting marketing department managers (\u5e02\u573a\u90e8\u7ecf\u7406) and their obligations regarding commercial secrets. Candidate B is explicitly identified as a 'Manager of Marketing Department in a Foreign Enterprise' with a background in marketing and business management. The document's emphasis on judicial interpretations, compensation standards, and invalidation scenarios aligns with the legal and operational concerns of a marketing manager in a corporate setting. Other candidates (A, C, D, E) are either in unrelated technical/engineering roles or lack the specific focus on labor law and marketing management that defines Candidate B's profile.",
+    "model": "solar-pro",
+    "prompt_chars": 44950,
+    "latency_sec": 2.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task43_User10_seed1",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16",
+      "User18",
+      "User11"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User18",
+      "User10",
+      "User16",
+      "User11"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on legal analysis of non-compete clauses for departing marketing department managers in foreign enterprises, emphasizing Shanghai-based judicial practices, compensation standards, and rights protection. Candidate C is explicitly identified as a 'Manager of Marketing Department in a Foreign Enterprise' with an MBA in marketing, aligning directly with the document's target audience. The content's focus on legal protections, compensation disputes, and Shanghai-specific cases matches Candidate C's occupation, location (Shanghai Pudong), and professional background in marketing management. Other candidates (A: technical director, B: data analyst, D: state-owned enterprise manager, E: algorithm engineer) lack the specific occupational and contextual relevance to the document's subject matter.",
+    "model": "solar-pro",
+    "prompt_chars": 46642,
+    "latency_sec": 2.3,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

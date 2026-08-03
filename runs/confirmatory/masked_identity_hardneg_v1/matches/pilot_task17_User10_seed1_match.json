@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task17_User10_seed1",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document's focus on a multi-generational family vacation (including an 8-year-old daughter who enjoys painting/dancing and a 5-year-old son who likes building toys/basketball, plus elderly parents needing gentle pacing) aligns with Candidate B's family structure (same-aged children with identical interests) and travel preferences (self-guided family trips emphasizing deep experiences). The request for Jiangnan-style dining and high-quality accommodations with private beach access matches B's Jiangnan cultural background, preference for cozy homestays, and emphasis on quality-of-life amenities. Additionally, B's detailed planning style and quarterly family trips mirror the document's need for a comprehensive, personalized 7-day itinerary. Candidates A and C lack the specific Jiangnan culinary focus and multi-generational activity balance described.",
+    "model": "solar-pro",
+    "prompt_chars": 25341,
+    "latency_sec": 1.86,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User10_seed1",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on family-oriented travel planning (multi-generational resort, July weather, flight times) and cost-effective luxury (high-end hotels, budget-friendly deals). Candidate A, a marketing manager with two young children, prioritizes family vacations (twice yearly, during school holidays) and values quality, cost-effectiveness, and self-guided tours. His preferences for natural attractions, historical sites, and detailed itineraries align with the document's emphasis on family-friendly destinations and practical travel logistics. Candidates B and C, while also family-oriented, lack A's specific focus on quarterly budgeting, high-end yet practical travel, and multi-generational planning.",
+    "model": "solar-pro",
+    "prompt_chars": 26658,
+    "latency_sec": 2.3,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User10_seed1",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on multi-generational family travel with children (8-year-old girl interested in painting/dancing, 5-year-old boy interested in building toys/water activities) and grandparents, emphasizing accessibility (strollers/wheelchairs), weather risks (typhoon season), and tailored activities. Candidate B explicitly mentions an 8-year-old daughter (painting/dancing) and 5-year-old son (building toys/basketball), aligns with frequent family trips (2x/year), and prioritizes destinations with natural attractions and cultural sites. His pragmatic, detail-oriented decision-making style matches the document's structured comparison of travel options. Candidate A's son is older (middle school) and less focused on the specific activities mentioned, while Candidate C's children are adults, making B the best fit.",
+    "model": "solar-pro",
+    "prompt_chars": 29375,
+    "latency_sec": 2.57,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User10_seed1",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on a multi-generational family vacation tailored to an 8-year-old girl (painting/dancing) and 5-year-old boy (building toys/basketball), elderly parents, and a pet (yellow Labrador). Candidate A explicitly matches these details: same-aged children with identical interests, a yellow Labrador named Xiao Huang, and elderly parents in Suzhou. The document's emphasis on luxury resorts, direct flights from Shanghai (Pudong), and cost-effective quality aligns with A's profile as a Shanghai-based marketing manager prioritizing family bonding, educational expenses, and high-end durable goods. Candidates B and C lack the specific child interests, pet details, or Shanghai residence critical to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 31386,
+    "latency_sec": 1.84,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "run_id": "pilot_task38_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on real estate search queries in Beijing (\u6d77\u6dc0, \u671d\u9633) with specific filters for price, size, and school districts. Candidate B, a marketing manager in Shanghai, aligns best due to his urban, family-oriented priorities (e.g., school district policies, budget-conscious home searches) and frequent business trips to cities like Shenzhen. His profile emphasizes cost-effectiveness, quality of life, and family needs (e.g., children\u2019s education), which mirror the document\u2019s focus on housing affordability, school zones, and neighborhood comparisons. Candidates A (manufacturing director in Suzhou) and C (state-owned enterprise manager in Harbin) lack the urban Beijing-centric context and family-driven housing priorities evident in the queries.",
+    "model": "solar-pro",
+    "prompt_chars": 23692,
+    "latency_sec": 1.84,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "queries",
+    "input_tokens": 5187,
+    "output_tokens": 173,
+    "total_tokens": 5360,
+    "api_response_id": "1cc96f24-8283-4864-8240-de82daac3072"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task18_User22_seed0",
+    "stage": "plan",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User19",
+      "User22"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "The document explicitly identifies the user as Ma Jianping, a 50-55-year-old Technical Director in Manufacturing from Suzhou, aligning perfectly with Candidate C's attributes. The research brief prioritizes business-class travel, manufacturing/technology-focused leisure activities (e.g., Deutsches Technikmuseum), and practical budgeting\u2014mirroring Candidate C's technical background, interest in Industry 4.0, and frugal yet quality-oriented consumption habits. Additionally, the mention of an eldest son in automotive engineering in Germany directly matches Candidate C's family status. Candidates A (marketing manager) and B (supply chain manager) lack the technical director role, manufacturing focus, and familial context present in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25408,
+    "latency_sec": 1.69,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task18_User22_seed0",
+    "stage": "search",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User22",
+      "User19"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on flight schedules (Hainan Airlines, Lufthansa) from Shanghai (PVG) to Berlin (BER) and local Berlin transportation (BVG tickets), aligning with Candidate A's Shanghai residence, frequent business trips, and premium economy preferences. It also includes queries about Berlin attractions (Deutsches Technikmuseum, Classic Remise), matching A's family-oriented travel style and interest in cultural sites. Candidate B (Suzhou-based, technical focus) and C (Chengdu-based, supply chain focus) lack the Shanghai-Berlin connection and prioritize different travel/leisure interests.",
+    "model": "solar-pro",
+    "prompt_chars": 26589,
+    "latency_sec": 1.98,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task18_User22_seed0",
+    "stage": "compress",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "The document focuses on travel logistics for Mr. Ma Jianping (name explicitly mentioned in the budget section), including flight options from Beijing/Shanghai to Berlin, budget constraints (30,000 RMB), and accommodation preferences for business hotels with gyms in Berlin Mitte. These align with Candidate A's profile: (1) his role as a Technical Director in manufacturing (requiring international travel for industry events), (2) his preference for practical, cost-effective travel planning (e.g., budget limits, direct flights), (3) his interest in business-class hotels with fitness facilities (explicitly listed in the document), and (4) his Suzhou residence (matching the Suzhou-to-Shanghai transit details). Candidates B and C lack the specific combination of technical background, budget-conscious travel style, and fitness-focused accommodation preferences evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29269,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task18_User22_seed0",
+    "stage": "write",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User22",
+      "User19"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "The document explicitly states it is tailored for 'Ma Jianping', Technical Director in Manufacturing, matching Candidate B's identity. The content focuses on automotive engineering, smart manufacturing, and technical exhibitions, aligning with B's background in mechanical engineering and Industry 4.0 interests. The budget-conscious yet quality-focused travel plan (e.g., gym-equipped hotels, technical exhibition fees) reflects B's pragmatic, cost-effective preferences. Additionally, the emphasis on self-guided tours and local culture mirrors B's travel style, while the Suzhou residence and German connection (son in Germany) align with the Berlin destination and family context.",
+    "model": "solar-pro",
+    "prompt_chars": 31280,
+    "latency_sec": 2.0,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

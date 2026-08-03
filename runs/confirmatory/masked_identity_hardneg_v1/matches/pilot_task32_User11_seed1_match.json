@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task32_User11_seed1",
+    "stage": "plan",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User11",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User8",
+    "correct": false,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on cost-effective, modern minimalist soft furnishings and smart appliances. The document emphasizes budget allocation, smart connectivity (e.g., [MASKED] compatibility), and a modern aesthetic\u2014key priorities for Candidate A, who values cost-effectiveness, tech products, and a minimalist lifestyle. Unlike Candidate B (tech-focused but less detail-oriented about decor) or Candidate C (family-centric with higher-end preferences), Candidate A\u2019s meticulous planning, frugal yet tech-savvy habits, and preference for white-and-gray interiors directly mirror the document\u2019s framing. His research-driven approach to purchases (e.g., comparing price-to-performance ratios) also matches the document\u2019s analytical tone.",
+    "model": "solar-pro",
+    "prompt_chars": 25072,
+    "latency_sec": 1.84,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task32_User11_seed1",
+    "stage": "search",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User11",
+      "User8"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on modern minimalist interior design, furniture brands, and budget-conscious home improvement for a family-oriented space (e.g., 89\u33a1 apartment, children's needs, pets). Candidate A, a married father of two with a Labrador, aligns with this context: his family status, emphasis on quality-of-life investments, and preference for high-end durable goods (e.g., furniture, home appliances) match the document's themes. The budget constraints (\u00a5100,000 for soft furnishings) and practicality (e.g., 'cost-effective' materials) also align with A's rational, family-focused consumption style. Candidates B and C, both single professionals prioritizing tech or finance, lack the document's familial and spatial planning focus.",
+    "model": "solar-pro",
+    "prompt_chars": 25600,
+    "latency_sec": 2.15,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task32_User11_seed1",
+    "stage": "compress",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User8",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on a detailed, cost-effective budget allocation for a modern minimalist home renovation, emphasizing practicality, family-oriented spaces (3-bedroom), and high-quality durable furnishings. Candidate C, a married marketing manager with two children, prioritizes quality-of-life investments, cost-effectiveness, and family-centric consumption (e.g., children's education, durable household items). His pragmatic decision-making, focus on budget planning, and interest in combining aesthetics with functionality align with the document's emphasis on structured spending, modern minimalist design, and long-term value. Candidates A (tech-focused, single) and B (investment-focused, single) lack the family-oriented spatial needs and consumption patterns evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29754,
+    "latency_sec": 2.25,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task32_User11_seed1",
+    "stage": "write",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User10",
+      "User11"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User11",
+    "correct": true,
+    "reasoning": "Candidate C (Li Zhuo) is an algorithm engineer with a strong focus on cost-effectiveness, smart home technology, and modern minimalist aesthetics, aligning with the document's emphasis on a 'clean, modern minimalist aesthetic' and 'fully connected smart home ecosystem'. The document's detailed budget allocation, material comparisons, and prioritization of high price-to-performance products mirror Candidate C's rational consumption habits and interest in smart home products. Unlike Candidate A (investment manager) who focuses on financial investments, or Candidate B (marketing manager) who prioritizes family-oriented and high-end durable goods, Candidate C's technical background and preference for data-driven decisions align most closely with the document's structured, analytical approach to furnishing a compact urban apartment.",
+    "model": "solar-pro",
+    "prompt_chars": 31765,
+    "latency_sec": 1.95,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task37_User8_seed1",
+    "stage": "plan",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User20",
+      "User8",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "Candidate B's profile aligns most closely with the document's focus on creating a warm, stylish environment with natural materials, optimizing high-frequency activity areas (living room and kitchen), and balancing cost-effectiveness with quality. B's creative background as a copywriter, appreciation for design elements, and interest in Japanese cuisine (evident in his bento-making hobby) mirror the document's emphasis on aesthetic atmosphere and functional kitchen design. Additionally, B's cat ownership and preference for mid-range, design-focused products align with the document's open-ended approach to material choices and lifestyle integration. While Candidate C shares some artistic sensibilities, the document's structured budgeting and phased execution style better match B's methodical yet creative decision-making, whereas Candidate A's finance-oriented profile lacks the document's lifestyle and design focus.",
+    "model": "solar-pro",
+    "prompt_chars": 24021,
+    "latency_sec": 1.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task37_User8_seed1",
+    "stage": "search",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User20",
+      "User8",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "The document focuses on interior design, budgeting, and lifestyle choices with a strong emphasis on aesthetics, practicality, and cultural influences (e.g., Japandi style, Japanese cuisine, and design-oriented shopping). Candidate B, a copywriter with a background in literature and marketing, aligns closely with these themes. His preferences for mid-range products with design elements, interest in Japanese bento, and appreciation for artistic destinations (e.g., Kyoto) reflect the document's framing. Additionally, his creative decision-making style and focus on cost-effective yet stylish solutions mirror the budget-conscious yet design-aware tone of the queries. Candidates A (investment manager) and C (freelance illustrator) lack the same balance of practicality and aesthetic sensibility evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24626,
+    "latency_sec": 1.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task37_User8_seed1",
+    "stage": "compress",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User20",
+      "User8",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User8",
+    "correct": true,
+    "reasoning": "The document focuses on detailed budgeting, spatial optimization, and regulatory compliance for a Shanghai apartment renovation, emphasizing cost-effectiveness, technical specifications, and data-driven planning. Candidate A, an investment manager with a finance background, aligns with this analytical, meticulous approach. His preference for rational spending, cost-benefit analysis, and interest in high-tech products (e.g., smart home appliances) mirror the document's emphasis on itemized budgets, efficiency, and compliance. Candidates B and C, while detail-oriented, prioritize creativity, aesthetics, and cultural experiences, which are less central to the document's technical and financial framing.",
+    "model": "solar-pro",
+    "prompt_chars": 28794,
+    "latency_sec": 1.55,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task37_User8_seed1",
+    "stage": "write",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User20",
+      "User8",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User8",
+      "User14"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User14",
+    "correct": false,
+    "reasoning": "The document emphasizes aesthetic design (Japandi/Warm Modern), spatial flow, and tactile contrasts, aligning with Candidate C's background as a freelance illustrator who values artistic expression, design-oriented environments, and creative inspiration. The focus on natural textures (wood, textiles) and layered lighting mirrors C's preference for artistic accommodations and his use of visual inspiration in his work. Additionally, the document's emphasis on a refined, personalized living space resonates with C's lifestyle of supporting local artists and investing in high-quality tools, contrasting with A's literary focus and B's financial pragmatism.",
+    "model": "solar-pro",
+    "prompt_chars": 30805,
+    "latency_sec": 1.54,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

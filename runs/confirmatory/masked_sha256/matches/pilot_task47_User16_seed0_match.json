@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task47_User16_seed0",
+    "stage": "plan",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User12",
+      "User17",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User12",
+      "User17"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document focuses on designing a family-oriented exercise and diet plan for a middle-school-aged son, emphasizing soccer, outdoor activities with a dog, and adherence to adolescent health guidelines. Candidate A's profile aligns most closely: he is a father of a middle-school-aged son who enjoys soccer, owns a dog (Wangcai), and prioritizes family activities like hiking and cycling. His practical, health-conscious approach (e.g., morning walks, interest in homemade dishes) and emphasis on family bonding through outdoor activities mirror the document's framing. Candidates B and C, while health-conscious, focus on different demographics (B: a 5-year-old daughter, tech-oriented lifestyle; C: adult fitness and pet care) and lack the specific focus on adolescent soccer and family-oriented outdoor routines.",
+    "model": "solar-pro",
+    "prompt_chars": 23792,
+    "latency_sec": 1.77,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task47_User16_seed0",
+    "stage": "search",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User12",
+      "User17",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User16",
+      "User17"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document focuses on physical activity and dietary guidelines for adolescents (11-14 years), with a strong emphasis on practical, family-oriented routines and regional climate considerations (e.g., winter/summer sports in [MASKED]). Candidate B, a state-owned enterprise manager in Harbin with a middle-school-aged son, aligns most closely. His profile highlights family-centric activities, interest in adolescent health (e.g., his son\u2019s football and academic balance), and regional relevance (Harbin\u2019s cold climate influencing outdoor/indoor sports). The document\u2019s framing\u2014prioritizing structured routines, family-friendly guidelines, and local environmental factors\u2014matches B\u2019s practical, family-oriented lifestyle and decision-making style. Candidates A (tech entrepreneur) and C (nurse) lack the same direct focus on adolescent sports/dietary guidelines or regional climate context.",
+    "model": "solar-pro",
+    "prompt_chars": 26915,
+    "latency_sec": 1.84,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task47_User16_seed0",
+    "stage": "compress",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User12",
+      "User17",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User12",
+      "User17"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document focuses on physical activity guidelines for children aged 11-14, emphasizing soccer training, injury prevention (FIFA 11+), and family-integrated outdoor activities. Candidate A, a father of a middle-school-aged son who enjoys football, aligns with this content. His interests in family activities, outdoor walks, and health-conscious habits (e.g., jogging, smart home devices for wellness) reflect the document's priorities. Candidate B (tech entrepreneur) and C (nurse with a cat) lack the direct familial and youth-sports context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29408,
+    "latency_sec": 1.74,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task47_User16_seed0",
+    "stage": "write",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User12",
+      "User17",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User12"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document focuses on a middle-school boy's fitness, nutrition, and seasonal adaptation in Harbin, emphasizing soccer, family activities (hiking, cycling, walks with a golden retriever), and Northeastern China's climate. Candidate A is a 40-45-year-old father in Harbin with a middle-school son who plays soccer, owns a golden retriever, and prioritizes family activities like hiking and cycling. The document's emphasis on practical, family-integrated health strategies aligns with A's rational, health-conscious, and family-oriented profile. Candidates B (a nurse in Beijing with a cat) and C (a tech entrepreneur in Beijing) lack the geographic, familial, and thematic connections to the document's focus on Harbin's climate, soccer, and golden retriever-centric family activities.",
+    "model": "solar-pro",
+    "prompt_chars": 31419,
+    "latency_sec": 2.43,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

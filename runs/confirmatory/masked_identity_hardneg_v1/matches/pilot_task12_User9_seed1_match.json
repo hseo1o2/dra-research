@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task12_User9_seed1",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "Candidate A (Zhao Li) is a 22-25-year-old female in product operations with a major in Advertising/New Media Communication and a minor in Psychology, aligning with the document's author profile. The document emphasizes emotional regulation, self-awareness, and morning routines (7:00\u20139:00 AM), which match Zhao Li's stated habits (waking at 7 AM, using mornings for meditation/exercise) and her low stress tolerance requiring emotional support. Her interest in mental health articles, creative short videos, and journaling (via social media sharing) further aligns with the request for actionable strategies like journaling protocols. Candidates B (algorithm engineer) and C (freelance illustrator) differ in occupation, educational focus, and time preferences (B prefers nighttime; C is evening-oriented), making A the best fit.",
+    "model": "solar-pro",
+    "prompt_chars": 23234,
+    "latency_sec": 1.92,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task12_User9_seed1",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on emotional regulation, cognitive behavioral therapy (CBT), podcasts, and mental health content in Chinese, with a strong emphasis on practical applications (e.g., '\u60c5\u7eea\u6025\u6551\u5305') and creative/artistic framing (e.g., social media sharing, aesthetic preferences). Candidate A, a Product Operations professional with a psychology minor, aligns best: her profile highlights emotional support needs, social media engagement (Weibo/Xiaohongshu), interest in mental health articles, and creative habits (sharing artwork). The document\u2019s blend of psychology, self-help, and lifestyle content matches her preferences for 'mental health articles' and 'creative short videos.' Candidates B (tech-focused) and C (illustrator) lack the document\u2019s operational/psychology hybrid focus and its emphasis on CBT/podcasts as tools for emotional management in daily life.",
+    "model": "solar-pro",
+    "prompt_chars": 24253,
+    "latency_sec": 2.3,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task12_User9_seed1",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User14",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document explicitly targets a 22\u201325yo Product Operations professional with a psychology minor and advertising/new media background. Candidate A matches all these attributes: same age, occupation, educational background (psychology minor + advertising/new media major), and behavioral traits (e.g., interest in mental health content, social media sharing). The document's focus on neuroscience-backed emotional regulation, CBT/ACT frameworks, and their application to product operations aligns with A's psychology minor and product ops role. Content preferences (mental health articles, meditation/yoga habits) and vocabulary (e.g., 'interoception,' 'habit loops') also resonate with A's documented interests. Candidates B (freelance illustrator) and C (algorithm engineer) lack the psychology minor and product ops context critical to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 27835,
+    "latency_sec": 2.06,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task12_User9_seed1",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User9",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document's focus on Product Operations, evidence-based psychology, and structured emotional management aligns with Candidate B's role in Product Operations and her educational background in Advertising/New Media Communication with a psychology minor. The document's emphasis on operationalizing psychological concepts (e.g., ACT, somatic regulation) mirrors B's pragmatic yet creative problem-solving style and her need for evidence-based tools to manage workplace stress. The morning routine (7:00\u20139:00 AM) and somatic regulation techniques also match B's stated preference for morning productivity and interest in mental health. Candidates A (algorithm engineer) and C (freelance illustrator) lack the operational context and psychological framing central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29846,
+    "latency_sec": 1.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

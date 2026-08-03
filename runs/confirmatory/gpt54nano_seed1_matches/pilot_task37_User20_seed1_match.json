@@ -1,0 +1,118 @@
+[
+  {
+    "run_id": "pilot_task37_User20_seed1",
+    "stage": "plan",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User20",
+      "User14",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User20"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User20",
+    "correct": true,
+    "reasoning": "The brief explicitly matches Candidate C\u2019s details: the orange cat named Jinju, the Japanese bento and Italian cooking interests, and a Shanghai downtown apartment context. The request\u2019s emphasis on warm, artistic, design-forward aesthetics and a structured research/proposal style aligns with a literature/creative professional who values inspiration and mid-range design products within a practical budget.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 25151,
+    "latency_sec": 1.42,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4628,
+    "output_tokens": 95,
+    "total_tokens": 4723,
+    "api_response_id": "chatcmpl-E8pm3Lx9QT7tgsHdl5j7PvD4BwHk6"
+  },
+  {
+    "run_id": "pilot_task37_User20_seed1",
+    "stage": "search",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User20",
+      "User14",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User20",
+    "correct": true,
+    "reasoning": "The excerpt is dominated by practical, rule-based and cost breakdown queries for Shanghai apartment renovation (budget per sqm, working-hour/noise regulations, property management/filing), with little emphasis on artistic aesthetics or personal creative lifestyle. This aligns best with a young professional planning a residential upgrade and needing actionable compliance and cost estimates, which fits Candidate B\u2019s pragmatic, information-seeking profile.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 25859,
+    "latency_sec": 1.51,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5211,
+    "output_tokens": 100,
+    "total_tokens": 5311,
+    "api_response_id": "chatcmpl-E8pm4r6tmGkSsrPvtweTAkty3YaZY"
+  },
+  {
+    "run_id": "pilot_task37_User20_seed1",
+    "stage": "compress",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User20",
+      "User14",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The excerpt is a highly practical, Shanghai-specific renovation cost and regulatory compliance guide (noise limits, working hours, property management) with an itemized RMB budget and even cat-proofing\u2014suggesting a homeowner planning a real-life apartment renovation. Candidate A is a Shanghai-based caf\u00e9 owner with pets and a meticulous, design-minded approach, making her more likely to commission/consume this kind of detailed, locally grounded home-improvement planning than the other profiles.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 29044,
+    "latency_sec": 1.58,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6021,
+    "output_tokens": 114,
+    "total_tokens": 6135,
+    "api_response_id": "chatcmpl-E8pm6uocwW9idSfxaOisAGPiqPhMh"
+  },
+  {
+    "run_id": "pilot_task37_User20_seed1",
+    "stage": "write",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User20",
+      "User14",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User20"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User20",
+    "correct": true,
+    "reasoning": "The excerpt reads like a practical, regulation-aware renovation brief with detailed workflow zoning (Japanese bento + Italian cooking), ergonomic measurements, and a structured 3-month schedule\u2014an analytical, planning-oriented mindset. Candidate C is a copywriter who consumes creative/advertising ideas and writes about creativity, and also has a strong interest in Japanese bento and Japanese/European cultural aesthetics, aligning with the document\u2019s culinary and design framing.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 31055,
+    "latency_sec": 1.46,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5885,
+    "output_tokens": 110,
+    "total_tokens": 5995,
+    "api_response_id": "chatcmpl-E8pm7PU0Da8KxgCgEu3lxfpL911w9"
+  }
+]

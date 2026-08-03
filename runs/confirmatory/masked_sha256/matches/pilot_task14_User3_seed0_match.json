@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task14_User3_seed0",
+    "stage": "plan",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User14",
+      "User3",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User3",
+      "User14",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User3",
+    "correct": true,
+    "reasoning": "Candidate A (Zhou Kai) is an undergraduate student with a tight academic schedule, limited budget, and a focus on practical, cost-effective solutions\u2014aligning perfectly with the document's emphasis on budget-friendly gear, flexible evening training, and campus-based running locations. The document's structured yet adaptable 3-month plan mirrors his pragmatic, goal-oriented personality (e.g., injury prevention, gradual progression), while his rural upbringing and frugal habits resonate with the request for no expensive supplements or equipment. Candidates B (freelance illustrator) and C (technical director) have different priorities (artistic inspiration, high-end tools) and lifestyles (flexible schedules, disposable income) that do not match the student-centric, resource-constrained framing of the query.",
+    "model": "solar-pro",
+    "prompt_chars": 23650,
+    "latency_sec": 2.18,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User3_seed0",
+    "stage": "search",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User14",
+      "User3",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User3",
+      "User22",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User3",
+    "correct": true,
+    "reasoning": "The document focuses on budget-friendly, practical marathon training and running routines (e.g., walk/run ratios, homemade electrolyte drinks), aligning with Candidate A's frugal, student-oriented lifestyle. A prioritizes cost-effectiveness, DIY solutions, and basic fitness (jogging with classmates), unlike B (tech-focused, higher-end gear) or C (artistic, travel-inspired). The content\u2019s emphasis on simplicity, affordability, and foundational exercise matches A\u2019s pragmatic personality and mechanical-engineering student background, where resourcefulness is key.",
+    "model": "solar-pro",
+    "prompt_chars": 24794,
+    "latency_sec": 1.46,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User3_seed0",
+    "stage": "compress",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User14",
+      "User3",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User3",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User3",
+    "correct": true,
+    "reasoning": "The document focuses on a 12-week beginner marathon training plan, emphasizing budget-friendly nutrition, injury prevention, and structured run/walk intervals. Candidate B, a 17-20-year-old mechanical engineering student, aligns with this content through his pragmatic, cost-conscious nature (e.g., budget-friendly running nutrition, DIY electrolyte recipes), interest in structured systems (reflected in his academic and technical focus), and physical activity habits (jogging, stress relief via exercise). Unlike Candidate A (a 50-55-year-old technical director with a focus on gardening and calligraphy) or Candidate C (a 28-32-year-old freelance illustrator prioritizing artistic inspiration), Candidate B\u2019s profile as a student balancing academic rigor with practical, budget-conscious fitness goals directly mirrors the document\u2019s tone and priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 28448,
+    "latency_sec": 2.0,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User3_seed0",
+    "stage": "write",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User14",
+      "User3",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User22",
+      "User3"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User3",
+    "correct": true,
+    "reasoning": "The document's framing\u2014balancing a 12-week marathon training program with an undergraduate schedule, emphasizing injury prevention, and referencing campus resources (e.g., botanical gardens, dorm rooms)\u2014aligns most closely with Candidate C, a mechanical engineering undergraduate. The focus on frugality (e.g., homemade electrolyte drinks, budget-conscious gear) and time management (e.g., lab commitments, dorm-room workouts) mirrors C's pragmatic, resource-conscious lifestyle. Additionally, the program's emphasis on structured yet conservative progression reflects C's methodical decision-making style and academic discipline. Candidates A (freelance artist) and B (manufacturing director) lack the document's student-centric context and urgency around academic constraints.",
+    "model": "solar-pro",
+    "prompt_chars": 30459,
+    "latency_sec": 1.81,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

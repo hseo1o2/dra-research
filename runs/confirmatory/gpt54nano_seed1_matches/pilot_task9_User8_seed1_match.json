@@ -1,0 +1,118 @@
+[
+  {
+    "run_id": "pilot_task9_User8_seed1",
+    "stage": "plan",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User8",
+    "correct": true,
+    "reasoning": "The document brief is written from the perspective of an Investment Manager in Shanghai with a Finance background, CFA Level 1, and a strong emphasis on data-driven, analytical planning for an AI Product Manager transition. Candidate B matches this closely in occupation (investment manager), finance education, Shanghai location, and similar analytical, data-centric habits and learning approach, whereas A is marketing-focused and C is a data analyst without the finance/CFA framing.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 23894,
+    "latency_sec": 1.59,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4456,
+    "output_tokens": 111,
+    "total_tokens": 4567,
+    "api_response_id": "chatcmpl-E8podJD336M6twbMHrAvEMQtGy8x9"
+  },
+  {
+    "run_id": "pilot_task9_User8_seed1",
+    "stage": "search",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The excerpt focuses on AI PM job-market demand, salary/role transition, and competency frameworks\u2014information that aligns with a data analyst aiming to move into product/management roles. The Shanghai-centric recruitment framing and emphasis on skills matrices and transition paths match a candidate who actively tracks tech/industry updates and plans career certification and role change.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 25354,
+    "latency_sec": 1.24,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4958,
+    "output_tokens": 90,
+    "total_tokens": 5048,
+    "api_response_id": "chatcmpl-E8pofxFlg7AecMs1MWlaAndC19tWW"
+  },
+  {
+    "run_id": "pilot_task9_User8_seed1",
+    "stage": "compress",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User8",
+    "correct": true,
+    "reasoning": "The excerpt is a Shanghai/China-focused AI Product Manager job-market and hiring demand analysis with heavy emphasis on financial institutions (securities, terminals, wealth management) and specific market players. Candidate C is an investment manager at a securities company who regularly uses financial apps and follows market dynamics, aligning with the document\u2019s finance-industry framing and interest in AI PM roles in financial contexts.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 28139,
+    "latency_sec": 1.58,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5698,
+    "output_tokens": 100,
+    "total_tokens": 5798,
+    "api_response_id": "chatcmpl-E8pog9U8ZnoW88qPcSGy9BCilMMmn"
+  },
+  {
+    "run_id": "pilot_task9_User8_seed1",
+    "stage": "write",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User8",
+    "correct": true,
+    "reasoning": "The excerpt is explicitly tailored to an \u201cInvestment Manager role at a Shanghai securities firm\u201d transitioning into an AI Product Manager within six months, including CFA Level 1 and quantitative finance-to-AI PM skill mapping. Candidate B matches this exact starting point (investment manager, Shanghai, finance background, CFA-like exam orientation) and the Shanghai career-transition framing, whereas A is marketing-focused and C is already a data analyst aiming for product roles.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 30150,
+    "latency_sec": 1.46,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5834,
+    "output_tokens": 111,
+    "total_tokens": 5945,
+    "api_response_id": "chatcmpl-E8poiL1NhMtwXqmoa12mO6WQsh4RM"
+  }
+]

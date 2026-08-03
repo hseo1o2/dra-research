@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task12_User9_seed1",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User20",
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "Candidate C (Zhao Li) is a 22-25-year-old female in product operations with a background in advertising/new media communication and a psychology minor\u2014directly matching the document's author profile. The document emphasizes morning routines (7:00\u20139:00 AM) for self-improvement, which aligns with Candidate C's stated preference for morning exercise, meditation, and reading. Her focus on emotional regulation, stress management, and integrating strategies into daily routines reflects her documented low stress tolerance and need for emotional support. Additionally, her interest in psychology, user behavior, and creative content (e.g., social media art sharing) matches the document's request for resources blending psychology, mindfulness, and actionable habits. Other candidates differ in age, gender, occupation, or lack the specific morning routine and psychological focus.",
+    "model": "solar-pro",
+    "prompt_chars": 38110,
+    "latency_sec": 2.0,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task12_User9_seed1",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User11",
+      "User20",
+      "User14",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on emotional regulation, cognitive behavioral therapy (CBT), and related psychological frameworks, with a strong emphasis on practical applications (e.g., podcasts, courses, and journal prompts). Candidate A, a Product Operations professional with a psychology minor, aligns best due to her interest in mental health, emotional support needs, and consumption of content on psychology (e.g., podcasts, courses). Her role in product operations also connects to the 'product operations' query in the document, suggesting an interest in applying psychological frameworks to user behavior. Other candidates (B, C, D, E) lack her direct focus on psychology or emotional regulation in their profiles.",
+    "model": "solar-pro",
+    "prompt_chars": 39227,
+    "latency_sec": 2.09,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task12_User9_seed1",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User14",
+      "User11",
+      "User18",
+      "User20"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document's content priorities (evidence-based emotional regulation, CBT/ACT frameworks, product ops applications) align precisely with Candidate A's profile: a 22-25yo female Product Operations professional with a psychology minor, advertising/new media background, and explicit need for neuroscience-backed resources to bridge behavioral science with product lifecycle management. The document's framing (e.g., 'user experience design as predictive modeling,' 'habit loops for anxiety') directly mirrors her role in product operations and her psychology minor. Other candidates lack this exact combination of technical product ops focus, psychological minor, and advertising/new media background that the document targets.",
+    "model": "solar-pro",
+    "prompt_chars": 42717,
+    "latency_sec": 2.16,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task12_User9_seed1",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User20",
+      "User11",
+      "User14",
+      "User9"
+    ],
+    "predicted_label": "E",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document's focus on Product Operations, psychology background, and evidence-based emotional regulation aligns with Candidate E's role in Product Operations, Advertising/New Media Communication major, and Psychology minor. The document's emphasis on systematic frameworks, academic literature, and operational mindset mirrors E's structured morning routine (7:00\u20139:00 AM), interest in psychology, and goal-oriented approach to self-improvement. Other candidates lack the direct combination of Product Operations experience, psychology training, and operational focus required to produce this document.",
+    "model": "solar-pro",
+    "prompt_chars": 44728,
+    "latency_sec": 2.29,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

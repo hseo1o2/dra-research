@@ -1,0 +1,118 @@
+[
+  {
+    "run_id": "ablation_shuffled_actionable_task2_User6_seed1",
+    "stage": "plan",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User6",
+      "User7",
+      "User2"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "The document explicitly identifies the author as 'Gao Yi', an Environmental Studies undergraduate from Zhejiang, aligning perfectly with Candidate A's identity. The research request prioritizes environmental science, frugal spending, and academic/career development\u2014mirroring Candidate A's eco-conscious consumption habits, scholarship background, and focus on sustainable urban development. The framing emphasizes environmental curriculum, fieldwork, and eco-friendly logistics, which resonate with Candidate A's documented interests in environmental protection, organic products, and low-carbon travel. Candidates B (new media graduate) and C (clinical psychology student) lack the environmental science focus and Hangzhou-specific cultural context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 23875,
+    "latency_sec": 2.39,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4954,
+    "output_tokens": 156,
+    "total_tokens": 5110,
+    "api_response_id": "16073c5a-b60b-4973-9fea-a5ecbe3c389f"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task2_User6_seed1",
+    "stage": "search",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User6"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "The document focuses on environmental science exchange programs, credit transfers, and language requirements for international studies in environmental fields. Candidate C is an undergraduate in Environmental Studies with a strong interest in sustainability, eco-friendly practices, and international environmental projects. Her academic background, content preferences (environmental articles/videos), and behavioral traits (eco-conscious consumption, participation in environmental volunteer activities) align directly with the document's emphasis on environmental science exchanges and cross-institutional academic collaborations. Candidates A (Clinical Psychology) and B (New Media) lack the domain-specific focus on environmental studies evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25751,
+    "latency_sec": 2.07,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5543,
+    "output_tokens": 138,
+    "total_tokens": 5681,
+    "api_response_id": "005ea48c-0783-44d2-8b3f-e6dba7a0c094"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task2_User6_seed1",
+    "stage": "compress",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User6",
+      "User2"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "The document focuses on environmental science exchange programs, tuition costs, and institutional partnerships between Zhejiang University and U.S. universities (UC Berkeley, UC Davis, Columbia). Candidate B is an undergraduate in Environmental Studies at a Zhejiang university, actively engaged in environmental protection, sustainability, and academic competitions. Her profile aligns with the document's emphasis on environmental science, international exchanges, and cost analysis. Candidates A (new media research) and C (clinical psychology) lack the environmental focus and institutional connection to Zhejiang University that make B the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 28244,
+    "latency_sec": 2.1,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6955,
+    "output_tokens": 134,
+    "total_tokens": 7089,
+    "api_response_id": "d89ccbfd-b80f-4b9e-a445-cca398dc3633"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task2_User6_seed1",
+    "stage": "write",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User6",
+      "User2"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "The document focuses on Environmental Studies undergraduate exchange programs, emphasizing academic design, financial logistics, research culture, and practical adaptation. Candidate B is an Environmental Studies undergraduate at a Zhejiang university, aligns with the document's regional focus (e.g., Singapore, Japan), and shares its priorities (sustainability, eco-friendly practices, and global academic pathways). Candidates A (new media graduate) and C (clinical psychology graduate) lack the direct academic and thematic relevance to the document's core focus on environmental studies and international exchange programs.",
+    "model": "solar-pro",
+    "prompt_chars": 30255,
+    "latency_sec": 2.16,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6903,
+    "output_tokens": 128,
+    "total_tokens": 7031,
+    "api_response_id": "7caa2361-5ea2-4e30-85d8-627f6bd18460"
+  }
+]

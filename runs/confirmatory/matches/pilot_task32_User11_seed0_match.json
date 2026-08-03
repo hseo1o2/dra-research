@@ -1,0 +1,90 @@
+[
+  {
+    "run_id": "pilot_task32_User11_seed0",
+    "stage": "plan",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User18",
+      "User13"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "Candidate B's profile aligns most closely with the document's focus on modern aesthetics, smart home integration, and cost-effective budgeting. The request emphasizes logical budget allocation, smart kitchen appliances, and data-driven comparisons\u2014mirroring B's analytical background (data analyst), rational consumption habits, and preference for high-quality, durable products. Unlike A (tech-focused but less detail-oriented in d\u00e9cor) and C (artistic but prioritizing sustainability over smart tech), B's meticulous research style and interest in smart home ecosystems directly match the document's technical and structured approach to interior planning.",
+    "model": "solar-pro",
+    "prompt_chars": 25120,
+    "latency_sec": 1.5
+  },
+  {
+    "run_id": "pilot_task32_User11_seed0",
+    "stage": "search",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User13",
+      "User11"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on interior design, furniture selection (e.g., 89\u33a1 modern minimalist style, gray tiles, sofa brands like \u987e\u5bb6 and \u829d\u534e\u4ed5), and budget-conscious yet aesthetically driven choices. Candidate B, a caf\u00e9 owner with a strong design sensibility, aligns perfectly: her profile emphasizes artistic meticulousness, preference for eco-friendly/sustainable products, and interest in boutique hotels/homestays with unique designs. The document\u2019s framing\u2014balancing cost, style, and practicality\u2014mirrors B\u2019s consumption characteristics (e.g., supporting local designers, prioritizing design and sustainability). Candidates A (data analyst) and C (algorithm engineer) lack the document\u2019s focus on aesthetics, spatial design, and lifestyle-oriented consumption.",
+    "model": "solar-pro",
+    "prompt_chars": 26033,
+    "latency_sec": 1.93
+  },
+  {
+    "run_id": "pilot_task32_User11_seed0",
+    "stage": "compress",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User13",
+      "User11"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on interior design, furniture selection, and budget allocation for a modern, minimalist apartment in Shanghai, emphasizing aesthetics, material quality, and brand preferences. Candidate B, a caf\u00e9 owner with a strong design sensibility and interest in art, sustainability, and high-quality local products, aligns most closely with the document's emphasis on style, practicality, and eco-conscious choices. Her background in design, her attention to detail in her caf\u00e9's decor, and her preference for supporting independent brands mirror the document's framing. Candidates A (data analyst) and C (algorithm engineer) lack the design-centric focus and spatial planning priorities evident in the text.",
+    "model": "solar-pro",
+    "prompt_chars": 29622,
+    "latency_sec": 1.63
+  },
+  {
+    "run_id": "pilot_task32_User11_seed0",
+    "stage": "write",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User13",
+      "User11"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User11",
+    "correct": true,
+    "reasoning": "The document focuses on algorithm engineers' needs, emphasizing high cost-effectiveness, precise sizing, minimalist aesthetics, and deep integration with the Mi Home smart ecosystem. Candidate C, an algorithm engineer, aligns perfectly with these priorities: his technical background (AI/recommendation systems), preference for smart home products, and rational consumption habits mirror the document's emphasis on budget optimization, smart device compatibility, and functional design. The document's framing (e.g., '\u9002\u5408\u957f\u671f\u7535\u8111\u5de5\u4f5c\u7684\u5de5\u7a0b\u5e08\u810a\u690e\u652f\u6491' and '\u7c73\u5bb6\u5168\u5c4b\u667a\u80fd\u751f\u6001') directly addresses his professional and lifestyle needs, unlike Candidates A (data analyst with broader interests) or B (caf\u00e9 owner focused on art/design).",
+    "model": "solar-pro",
+    "prompt_chars": 31633,
+    "latency_sec": 2.47
+  }
+]

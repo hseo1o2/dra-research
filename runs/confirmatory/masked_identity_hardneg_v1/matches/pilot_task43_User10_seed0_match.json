@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task43_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document is a legal research brief authored by a former Marketing Manager at a foreign enterprise facing a non-compete restriction. Candidate B is the only profile matching this occupation (Manager of Marketing Department in a Foreign Enterprise) and shares key attributes: (1) Western management education (MBA from Shanghai Jiao Tong University), (2) pragmatic decision-making style aligned with the document's actionable defense strategy focus, (3) frequent use of professional platforms (LinkedIn, Zhihu) for industry research mirroring the document's emphasis on authoritative legal sources, and (4) urban Shanghai residence consistent with the masked location context. The document's technical legal framing and strategic focus align with B's data-driven personality and marketing background, unlike A's state-owned enterprise engineering focus or C's manufacturing technical director role.",
+    "model": "solar-pro",
+    "prompt_chars": 25073,
+    "latency_sec": 2.03,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task43_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on non-compete clauses, trade secrets, and legal interpretations under the Labour Contract Law, particularly relevant to a Marketing Manager (explicitly mentioned in the queries). Candidate A is a Marketing Manager in a foreign enterprise, with an MBA in marketing and business management, making him directly concerned with legal frameworks affecting employee mobility and intellectual property. The document's emphasis on Article 23-24 of the Labour Contract Law aligns with Candidate A's role, which likely involves handling sensitive marketing strategies and trade secrets. Candidates B (state-owned enterprise manager) and C (technical director in manufacturing) have less direct relevance to the marketing-specific legal context and framing of the document.",
+    "model": "solar-pro",
+    "prompt_chars": 26095,
+    "latency_sec": 2.03,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task43_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on PRC non-compete laws, trade secrets, and marketing roles (Marketing Manager/Director), emphasizing legal compliance, compensation standards, and business scope analysis. Candidate B, a Marketing Department Manager in a foreign enterprise, aligns with this content due to his occupation, MBA in marketing, and frequent engagement with legal/industry topics (e.g., saving business management articles, using LinkedIn for professional networking). The document\u2019s framing\u2014prioritizing enforceability, compensation, and judicial practices\u2014matches B\u2019s pragmatic, data-driven decision-making style and his role\u2019s direct relevance to non-compete clauses. Candidates A (state-owned enterprise manager) and C (technical director) lack the marketing/legal focus central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29375,
+    "latency_sec": 2.05,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task43_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on legal analysis of non-compete obligations for a Marketing Manager in a foreign enterprise, emphasizing trade secrets, enforceability, and defense strategies. Candidate C is explicitly identified as a 'Manager of Marketing Department in a Foreign Enterprise' with an MBA in marketing, aligning directly with the document's subject matter. The document's technical framing (e.g., PRC Labor Contract Law, trade secret criteria) matches Candidate C's rational, detail-oriented personality and professional background in marketing management. Candidates A (state-owned enterprise manager) and B (technical director in manufacturing) lack the marketing-specific context and foreign enterprise perspective central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 31386,
+    "latency_sec": 2.16,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

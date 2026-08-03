@@ -1,0 +1,118 @@
+[
+  {
+    "run_id": "ablation_shuffled_actionable_task12_User5_seed1",
+    "stage": "plan",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User5",
+      "User9"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User5",
+    "correct": true,
+    "reasoning": "The document explicitly describes a 22-25-year-old male graduate student in mechanical automation seeking to improve self-awareness, stress tolerance, and emotional management. Candidate B matches this demographic and academic background (mechanical automation graduate student). The document's focus on structured self-study, evidence-based psychological frameworks, and integration into a busy academic schedule aligns with B's rational, detail-oriented personality and time-management habits. Unlike Candidate A (clinical psychology student) or C (internet company employee), B's mechanical engineering background and lack of prior psychology training make the request for foundational psychological resources more essential and contextually relevant to his needs.",
+    "model": "solar-pro",
+    "prompt_chars": 22646,
+    "latency_sec": 1.64,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4822,
+    "output_tokens": 152,
+    "total_tokens": 4974,
+    "api_response_id": "448a14b0-6c7c-48c6-92d1-6f6329b71e7e"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task12_User5_seed1",
+    "stage": "search",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User5",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "Candidate C, a graduate student in Clinical Psychology, aligns most closely with the document's focus on psychological therapies (CBT, ACT, DBT) and mental health strategies. The document's emphasis on analytical tracking, cognitive distortions, and structured therapeutic techniques mirrors C's academic background, content preferences (psychology articles, emotional communication), and behavioral traits (rational consumer of psychology resources, cloud-based study notes). Unlike A (advertising/psychology minor) and B (mechanical engineering), C's professional training and daily engagement with psychological frameworks make her the most likely audience for this research-oriented, methodical analysis of therapeutic mechanisms.",
+    "model": "solar-pro",
+    "prompt_chars": 24919,
+    "latency_sec": 1.62,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5439,
+    "output_tokens": 150,
+    "total_tokens": 5589,
+    "api_response_id": "8ae0b0a4-edd4-4ab2-9d39-d721039f408a"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task12_User5_seed1",
+    "stage": "compress",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User9",
+      "User5"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "The document focuses on structured cognitive behavioral therapy (CBT) and mindfulness frameworks, emphasizing systematic tracking, analytical tools, and evidence-based emotional regulation. Candidate A, a clinical psychology graduate student, aligns most closely with this content due to her academic background, interest in psychology, and documented habits of using structured tools (e.g., cloud-based study notes, time management systems) for analytical tracking. The document\u2019s engineering-like framing (e.g., 'deterministic logic debugger,' 'emotional delta measurement') matches her rational, methodical approach to learning and research. Candidates B and C, while interested in psychology or technology, lack the direct clinical focus and systematic analytical emphasis central to the document\u2019s CBT/ACT frameworks.",
+    "model": "solar-pro",
+    "prompt_chars": 27412,
+    "latency_sec": 1.81,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6030,
+    "output_tokens": 167,
+    "total_tokens": 6197,
+    "api_response_id": "e1dab5cc-5b3a-42fd-b528-f27514b7096f"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task12_User5_seed1",
+    "stage": "write",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User5",
+      "User2"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User5",
+    "correct": true,
+    "reasoning": "The document's focus on systematic emotional management for STEM graduate students, its engineering-centric framing (e.g., 'Systems Engineering Pipeline'), and its emphasis on evidence-based psychological frameworks like CBT and ACT align most closely with Candidate B's profile. As a Mechanical Automation graduate student with a strong analytical mindset, B's academic background, stress tolerance needs, and interest in structured problem-solving mirror the document's technical tone and methodological rigor. Unlike Candidate A (creative/artistic focus) or Candidate C (clinical psychology background), B's identity as a STEM student facing high cognitive demands directly matches the document's target audience and its integration of engineering logic with emotional regulation.",
+    "model": "solar-pro",
+    "prompt_chars": 29423,
+    "latency_sec": 1.71,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6286,
+    "output_tokens": 156,
+    "total_tokens": 6442,
+    "api_response_id": "744d71e8-271a-4138-879f-5f20aaaa8d32"
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "run_id": "pilot_task43_User11_seed0",
+    "stage": "plan",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User11"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User11",
+    "correct": true,
+    "reasoning": "Candidate C is an algorithm engineer with a background in computer science and AI, matching the document's focus on non-compete clauses for technical specialists. The document's legal analysis priorities (enforceability, compensation, case law) align with Candidate C's pragmatic, detail-oriented personality and his need to protect employment rights post-resignation. Unlike Candidates A (marketing manager) and B (data analyst), Candidate C's technical expertise, Hangzhou residence, and interest in Chinese labor law directly mirror the document's context and framing.",
+    "model": "solar-pro",
+    "prompt_chars": 25166,
+    "latency_sec": 1.43
+  },
+  {
+    "run_id": "pilot_task43_User11_seed0",
+    "stage": "search",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User11"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User11",
+    "correct": true,
+    "reasoning": "The document focuses on legal and regulatory aspects of non-compete clauses in Zhejiang Province, referencing specific articles from the Zhejiang Labor Contract Regulations and Supreme People's Court interpretations. Candidate C, an algorithm engineer based in Hangzhou (Zhejiang), has a technical background, attention to legal/regulatory details (evident in his rational decision-making style and interest in AI applications in social fields), and a direct connection to Zhejiang's legal environment. His profile emphasizes cost-effectiveness, logical analysis, and compliance\u2014key themes in the document. Candidates A (data analyst in Shanghai) and B (marketing manager) lack the regional and technical alignment with the document's focus on Zhejiang labor law and its precise legal framing.",
+    "model": "solar-pro",
+    "prompt_chars": 26074,
+    "latency_sec": 1.75
+  },
+  {
+    "run_id": "pilot_task43_User11_seed0",
+    "stage": "compress",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User11",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User11",
+    "correct": true,
+    "reasoning": "The document focuses on Chinese labor law, non-compete agreements, and court cases involving algorithm engineers and tech personnel. Candidate B is an algorithm engineer with a background in AI and recommendation systems, matching the document's technical and legal focus. The document's emphasis on trade secrets, proprietary algorithms, and judicial interpretations aligns with Candidate B's profession and interests in technology, law, and career-specific challenges. Candidates A (marketing manager) and C (data analyst) lack the direct technical and legal context relevant to the document's content.",
+    "model": "solar-pro",
+    "prompt_chars": 29524,
+    "latency_sec": 1.45
+  },
+  {
+    "run_id": "pilot_task43_User11_seed0",
+    "stage": "write",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User11"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User11",
+    "correct": true,
+    "reasoning": "The document is a legal analysis of non-compete obligations for algorithm engineers under PRC labor law, specifically tailored for an algorithm engineer in Hangzhou. Candidate C is the only algorithm engineer among the profiles, with a background in computer science and AI from Zhejiang University, and currently working in Hangzhou. The document's focus on technical legal nuances (e.g., trade secrets, senior technical personnel status) aligns with Candidate C's profession, location, and technical expertise. The other candidates (A: data analyst, B: marketing manager) lack the domain-specific relevance to this document's content and framing.",
+    "model": "solar-pro",
+    "prompt_chars": 31535,
+    "latency_sec": 1.54
+  }
+]

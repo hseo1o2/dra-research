@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task17_User16_seed0",
+    "stage": "plan",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on a multi-generational family vacation prioritizing nature photography, fishing, and a mix of activities for different ages. Key matches include: (1) Shared identity as a 40+ male from Harbin with a middle-school son and elderly parents, (2) Identical travel preferences for self-guided itineraries, cost-effective quality, and natural attractions, (3) Specific interests in photography, fishing, and Northeastern Chinese cuisine that mirror the document's content priorities. Candidate B's focus on pet-friendly travel and Candidate C's emphasis on high-end business travel/hobbies (golf, MBA-related content) lack direct relevance to the family-centric, multi-generational framing here.",
+    "model": "solar-pro",
+    "prompt_chars": 23645,
+    "latency_sec": 2.51,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task17_User16_seed0",
+    "stage": "search",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document focuses on family-friendly travel comparisons (topic_001) and luxury hotel options (topic_002) in northern coastal cities, emphasizing practical amenities (beach access, family suites) and scenic photography spots. Candidate A, a state-owned enterprise manager with a middle-school son, aligns best: his travel preferences prioritize family bonding, natural scenery, and photography (recently purchased a DSLR), while his rational, detail-oriented shopping style matches the document's comparative analysis of destinations and accommodations. Candidate B (nurse with a cat) and C (marketing manager with children) are less relevant\u2014B\u2019s focus on pet-friendly destinations and C\u2019s emphasis on high-end business travel/hobbies (golf, yoga) don\u2019t align with the family-centric, photography-focused framing of the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25513,
+    "latency_sec": 1.85,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task17_User16_seed0",
+    "stage": "compress",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document focuses on a multi-generational family (elderly, adults, and a middle-school teen) traveling from Harbin in July, evaluating transportation convenience, climate comfort, beach quality, and activity variety. Candidate C, Zhang Jianguo, is a Harbin resident with a middle-school son, matching the family composition. His travel preferences align with the document's emphasis on natural attractions, family bonding, and practical considerations (e.g., transportation, climate). Additionally, his interest in photography (e.g., DSLR camera, landscape photography) matches the document's detailed descriptions of scenic spots and shipwreck photography. Candidate A (Beijing-based nurse) and B (Shanghai-based marketer) lack the Harbin origin and the specific focus on family-oriented, nature-based travel described in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 28006,
+    "latency_sec": 2.31,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task17_User16_seed0",
+    "stage": "write",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document focuses on a multi-generational family vacation plan tailored to specific needs: nature photography (Father), meticulous planning (Mother), active sports (Son), and gentle pacing (Elderly Parents). Candidate B, Zhang Jianguo, aligns most closely with this framing. As a state-owned enterprise manager from Harbin, he shares the document's origin (Harbin-based family) and prioritizes family bonding through self-guided trips. His interests in landscape photography, fishing, and detailed itineraries mirror the Father's needs, while his practical, budget-conscious approach matches the Mother's meticulous planning. The document's emphasis on accessible facilities and restful environments also aligns with Candidate B's rural hometown background and preference for natural attractions. Candidates A and C, while family-oriented, focus more on urban cultural experiences and lack the specific photography/fishing interests central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30017,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

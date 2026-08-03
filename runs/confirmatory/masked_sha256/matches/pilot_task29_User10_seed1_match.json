@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task29_User10_seed1",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User18",
+      "User13",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User13",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on data-driven planning, budget constraints, and efficiency. As a data analyst with a background in statistics and a meticulous, research-oriented decision-making style, Candidate A would prioritize the structured, data-backed approach outlined in the business plan. The document's emphasis on market analysis, cost control, and financial projections mirrors A's practical, rational consumption habits and preference for detailed comparisons before purchasing. Additionally, A's interest in healthy eating and fitness aligns with the target audience of fitness enthusiasts, making the document's framing and priorities a natural fit for this candidate.",
+    "model": "solar-pro",
+    "prompt_chars": 24512,
+    "latency_sec": 1.71,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task29_User10_seed1",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User18",
+      "User13",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate C (Liu Qiang) is a marketing manager in a foreign enterprise with a focus on market trends, cost-effectiveness, and business analysis. The document emphasizes market size projections, cost structures, and competitive analysis of the 'light food' industry, aligning with C's professional background in marketing and data-driven decision-making. Unlike Candidate A (a caf\u00e9 owner focused on aesthetics and sustainability) or Candidate B (a data analyst with limited interest in food industry trends), C's priorities\u2014market analysis, investment costs, and supply chain efficiency\u2014directly mirror the document's framing. His role requires understanding industry reports, financial models, and competitive landscapes, making him the most likely audience for this content.",
+    "model": "solar-pro",
+    "prompt_chars": 24186,
+    "latency_sec": 1.81,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task29_User10_seed1",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User18",
+      "User13",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on market analysis, competitive positioning, and strategic entry into the light meal industry, emphasizing data-driven insights, pricing strategies, and consumer behavior in Tier-1 cities. Candidate B, a marketing manager in a foreign enterprise, aligns with this content due to his MBA background, interest in market trends, and preference for analytical case studies. His role involves strategic decision-making, cost-effectiveness, and balancing quality with market demands\u2014key themes in the document. While Candidate A (caf\u00e9 owner) and C (data analyst) have tangential interests, B\u2019s professional focus on marketing, business management, and data analysis directly matches the document\u2019s framing and priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 28389,
+    "latency_sec": 1.83,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task29_User10_seed1",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User18",
+      "User13",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User13"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on a commercial plan for a health-focused fast-casual brand targeting Shanghai's CBD white-collar workers and fitness enthusiasts. Candidate A, a marketing manager in a foreign enterprise, aligns most closely with the document's priorities: (1) **CBD-centric focus** (matches his Pudong residence and work in Shanghai's business districts), (2) **pragmatic, data-driven decision-making** (reflected in the document's financial projections and cost analysis), and (3) **preference for quality and cost-effectiveness** (evident in the brand's positioning as a mid-range alternative to high-end or low-quality options). While Candidate B shares some health-conscious traits, her data analyst role lacks the commercial and operational framing of the document. Candidate C, a caf\u00e9 owner, focuses on artisanal and cultural elements, which are absent in the document's efficiency-driven, market-research-heavy approach. The document\u2019s emphasis on scalability, cost control, and white-collar targeting strongly aligns with Candidate A\u2019s professional background and lifestyle.",
+    "model": "solar-pro",
+    "prompt_chars": 30400,
+    "latency_sec": 2.52,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

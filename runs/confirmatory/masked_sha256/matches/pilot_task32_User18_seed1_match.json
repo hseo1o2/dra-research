@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task32_User18_seed1",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User18",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document emphasizes modern design, pet-friendly materials (scratch-resistant, durable leather), and a focus on aesthetics aligning with Candidate A's artistic background, caf\u00e9 ownership, and preference for sustainable, high-quality local brands. The request for ergonomic seating and integration of art/design elements mirrors A's creative lifestyle and caf\u00e9's industrial-natural style. Additionally, the budget breakdown and attention to eco-friendly products align with A's values of sustainability and meticulous design standards, unlike B's practicality focus or C's tech-oriented preferences.",
+    "model": "solar-pro",
+    "prompt_chars": 25472,
+    "latency_sec": 1.42,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task32_User18_seed1",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on furniture (sofas, refrigerators, washers), soft furnishings, and budget allocation for a small living space (89\u33a1/100k budget), aligning with Candidate A's role as a caf\u00e9 owner who prioritizes design, aesthetics, and practicality. Her profile highlights her meticulous attention to detail, preference for eco-friendly/sustainable products, and interest in boutique hotels/guesthouses with strong design aesthetics. The queries about pet-friendly materials (e.g., 'cat-scratch fabric') also match her ownership of cats and their role in her caf\u00e9. Candidates B (tech-focused) and C (data-driven, minimalist) lack the design-centric, lifestyle-oriented framing evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25478,
+    "latency_sec": 1.78,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task32_User18_seed1",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User13",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on pet-friendly furniture (cat-scratch fabric), modern minimalist aesthetics, and space optimization for a small apartment\u2014aligning with Candidate B's status as a cat owner (two cats) and caf\u00e9 owner in Shanghai's old town, where design, functionality, and sustainability are prioritized. The emphasis on eco-friendly materials and durable, stylish furniture matches her preference for high-quality, sustainable products and her artistic, detail-oriented personality. Candidates A (tech-focused, no pets) and C (data analyst, minimalist but no pet-centric needs) lack the direct connection to pet-friendly design and aesthetic priorities evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29622,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task32_User18_seed1",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User11",
+      "User13"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document emphasizes a meticulous, budget-conscious approach to interior design for a small urban apartment, prioritizing functionality, pet-friendly materials, and ergonomic furniture. These align with Candidate A's profile as a data analyst who values rationality, cost-effectiveness, and practicality. The focus on a cat-friendly environment matches her recent adoption of a cat, while the structured budgeting and emphasis on durable, high-quality products reflect her independent, detail-oriented decision-making style. Candidate B (tech-focused) and C (caf\u00e9 owner with multiple pets) lack the specific combination of urban apartment constraints, cat ownership, and analytical consumption habits central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 31633,
+    "latency_sec": 1.61,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

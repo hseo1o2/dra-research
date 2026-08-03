@@ -1,0 +1,90 @@
+[
+  {
+    "run_id": "pilot_task32_User13_seed0",
+    "stage": "plan",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User11",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "Candidate C (Guo Yuan) is the best match. The document emphasizes child-friendly, pet-safe, eco-friendly, and artistic soft furnishings for a Shanghai apartment\u2014aligning with C's role as a caf\u00e9 owner with pets (two cats and a corgi) and a 5-year-old child. Her design-focused background, preference for sustainable/local brands, and artistic sensibilities directly mirror the document's aesthetic priorities. Unlike A (single, no children) and B (no pets, tech-focused), C's lifestyle and spatial needs (e.g., pet-resistant fabrics, eco-friendly materials) are explicitly addressed in the research brief. Her caf\u00e9 business also explains the emphasis on high-quality, designer, and cost-effective local brands.",
+    "model": "solar-pro",
+    "prompt_chars": 25385,
+    "latency_sec": 1.65
+  },
+  {
+    "run_id": "pilot_task32_User13_seed0",
+    "stage": "search",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User18",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on product details (dimensions, prices, materials) for home furnishings (refrigerators, sofas, curtains) that align with Candidate A's role as a caf\u00e9 owner and her emphasis on design, aesthetics, and sustainability. Her profile highlights her preference for high-quality, locally designed products and eco-friendly materials, which matches the document's emphasis on brands like Haier (with eco-friendly features) and cat-scratch-resistant fabrics (practical for her pets). The document's framing\u2014prioritizing size, integration with living spaces, and durability\u2014reflects her need for functional yet stylish furnishings for her caf\u00e9 and home, unlike Candidates B (data analyst, prioritizes practicality) or C (tech-focused, less emphasis on design).",
+    "model": "solar-pro",
+    "prompt_chars": 25658,
+    "latency_sec": 2.19
+  },
+  {
+    "run_id": "pilot_task32_User13_seed0",
+    "stage": "compress",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User11",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on a family with a 5-year-old child and three pets (2 cats, 1 Corgi) in an 89 sqm Shanghai apartment, emphasizing pet-friendly, child-safe, and hygienic appliances (e.g., pet-hair removal washers, anti-scratch furniture, pet air purifiers). Candidate C, a caf\u00e9 owner in Shanghai with a 5-year-old child, an orange tabby cat, a ragdoll cat, and a corgi, aligns perfectly with these priorities. The document's emphasis on pet-centric features (e.g., 'pet-friendly anti-microbial mattress', 'pet hair removal filter') and child-safe design mirrors Candidate C's lifestyle and needs. Candidates A and B lack the multi-pet household and childcare context central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 29622,
+    "latency_sec": 1.94
+  },
+  {
+    "run_id": "pilot_task32_User13_seed0",
+    "stage": "write",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User18",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on a single-parent household with a 5-year-old child and three pets, emphasizing child/pet safety, durability, and a 'Modern Natural' aesthetic. Candidate A is a single mother with a 5-year-old child and three pets (two cats and a Corgi), aligning perfectly with the document's target demographic. The report's emphasis on non-toxic materials, pet-resistant fabrics, and ergonomic safety reflects Candidate A's priorities as a caf\u00e9 owner who values sustainability, design, and a warm, natural environment. Candidate B (data analyst) and Candidate C (algorithm engineer) lack the specific family/pet context and design-oriented priorities central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 31633,
+    "latency_sec": 2.07
+  }
+]

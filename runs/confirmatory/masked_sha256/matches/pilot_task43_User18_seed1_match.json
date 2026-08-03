@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task43_User18_seed1",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on legal analysis of a non-compete clause for a data analyst, emphasizing enforceability, compensation obligations, and termination avenues under [MASKED] law. Candidate A is a data analyst with a background in statistics, currently working at an internet company, and seeking to transition to management or product roles. The document's technical focus on legal criteria, compensation standards, and judicial precedents aligns with her meticulous, research-driven personality and her need to navigate employment restrictions while protecting her career trajectory. Candidates B (marketing manager) and C (algorithm engineer) lack the direct occupational and content relevance to the document's core concerns.",
+    "model": "solar-pro",
+    "prompt_chars": 25168,
+    "latency_sec": 1.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task43_User18_seed1",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on non-compete clauses, labor law interpretations, and trade secrets\u2014topics directly relevant to a data analyst's (Candidate C) professional concerns. Candidate C's role involves handling sensitive data, aligning with the document's emphasis on confidentiality and legal protections. Her meticulous, research-driven personality (evident in her data analysis work and certification pursuits) matches the document's detailed legal analysis. Candidates A (algorithm engineer) and B (marketing manager) lack the same direct connection to data confidentiality or labor law specifics central to the text.",
+    "model": "solar-pro",
+    "prompt_chars": 25982,
+    "latency_sec": 1.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task43_User18_seed1",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User11",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document excerpt is empty (topic_001: []), providing no content to analyze for matching with any candidate profile. Since no essential information exists to determine priorities, framing, or vocabulary alignment, the attribution cannot be meaningfully made. However, per instructions, a default label (A) is submitted to fulfill the function call requirement despite the lack of actionable data.",
+    "model": "solar-pro",
+    "prompt_chars": 23539,
+    "latency_sec": 1.21,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task43_User18_seed1",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User11",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on legal analysis of non-compete agreements specifically for data analysts, detailing technical job roles, trade secret access, and legal procedures relevant to this profession. Candidate C is explicitly identified as a data analyst with technical skills (Python, R, SQL, Tableau) and professional concerns about trade secrets, certifications, and career mobility. The document's framing\u2014emphasizing statutory definitions of 'personnel with confidentiality obligations' and actionable steps for employment rights\u2014aligns with Candidate C's meticulous, data-driven personality and her goal to transition to management/product roles. Candidates A (marketing manager) and B (algorithm engineer) lack the document's specific focus on data analysis roles and legal nuances relevant to analysts.",
+    "model": "solar-pro",
+    "prompt_chars": 31535,
+    "latency_sec": 1.8,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

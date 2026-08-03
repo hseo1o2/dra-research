@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task33_User13_seed0",
+    "stage": "plan",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User18",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The brief emphasizes a multi-pet household (cats and a corgi) and requests cohesive, aesthetically balanced product recommendations across smart, cleaning, and enrichment categories\u2014framing that aligns with a lifestyle/business owner who values design, customer experience, and practical daily operations. Candidate C\u2019s caf\u00e9-owner background and strong focus on sustainability, eco-friendly materials, and time-saving efficiency for a busy household best match the document\u2019s \u201ccomprehensive research + product recommendation\u201d tone and priorities.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 23235,
+    "latency_sec": 1.73,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task33_User13_seed0",
+    "stage": "search",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The excerpt is a set of product-focused search queries emphasizing specifications, materials, safety, and price comparisons across multiple pet-tech items (litter boxes, feeders, grooming vacuums). This aligns with a rational, detail-oriented shopper who conducts thorough research before purchasing\u2014consistent with the data analyst profile (C) rather than the more lifestyle/creative framing of A or B.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 25597,
+    "latency_sec": 1.6,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task33_User13_seed0",
+    "stage": "compress",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User18",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The excerpt is a highly technical, comparison-style shopping research summary focused on product specifications, safety materials, smart features, and maintenance costs\u2014exactly the kind of rational, evidence-driven purchasing behavior attributed to the data analyst persona. It also emphasizes multi-pet household suitability and quantified specs (dimensions, sensor types, price ranges), aligning with the meticulous, data/fact-first framing of Candidate B rather than the more lifestyle/creative orientation of A or C.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 28122,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task33_User13_seed0",
+    "stage": "write",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User13",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The excerpt is framed as a practical, design-and-sustainability-conscious product recommendation for a specific multi-pet household (cat + corgi) with emphasis on aesthetics, eco-friendly materials, and daily convenience\u2014matching a caf\u00e9 owner who values independent brands and customer-facing presentation. Candidate B also has the exact pet mix (ragdoll, orange tabby, corgi) and would be motivated to optimize hygiene/automation to save time while maintaining a pleasant, low-maintenance home environment.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 30133,
+    "latency_sec": 1.6,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

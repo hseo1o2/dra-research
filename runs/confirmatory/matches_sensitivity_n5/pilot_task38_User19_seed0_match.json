@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task38_User19_seed0",
+    "stage": "plan",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16",
+      "User18",
+      "User11"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User11",
+      "User10",
+      "User16",
+      "User19"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate C (Liu Qiang) is a married marketing manager with two children (8 and 5 years old) and a dog, aligning with the document's focus on family residence needs (school districts, park access for a large dog). His profile emphasizes school district policies, budget constraints (\u00a56M), and location priorities (Chaoyang/Haidian) matching his role as a pragmatic decision-maker balancing family needs. Unlike other candidates (single, childless, or focused on different cities), Candidate C's detailed focus on education, family-friendly amenities, and financial planning directly mirrors the document's structure and priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 41245,
+    "latency_sec": 2.21,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task38_User19_seed0",
+    "stage": "search",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16",
+      "User18",
+      "User11"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User10",
+      "User11",
+      "User16",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on Beijing real estate policies, school district housing (\u6d77\u6dc0, \u671d\u9633), down payment ratios, and family-oriented housing needs (e.g., 80-100\u5e73\u7c73, \u4e24\u5c45/\u4e09\u5c45). Candidate B, a Shanghai-based marketing manager with two children and a spouse who is a teacher, aligns most closely with these priorities. His family\u2019s emphasis on education (wife as a teacher, children\u2019s schooling) and his focus on quality-of-life investments (e.g., high-end communities, educational expenses) mirror the document\u2019s themes of school district housing, family budgeting, and long-term residential planning. Unlike other candidates, B\u2019s urban residence, dual-child household, and interest in combining Eastern/Western practicality align with the Beijing-centric, education-driven, and financially strategic framing of the document.",
+    "model": "solar-pro",
+    "prompt_chars": 41385,
+    "latency_sec": 2.5,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task38_User19_seed0",
+    "stage": "compress",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16",
+      "User18",
+      "User11"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User16",
+      "User18",
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "D",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on real estate search criteria (budget, square footage, school districts, pet-friendly parks) and prioritizes family needs (schools, community facilities, commute). Candidate D, a married marketing manager with two children and a pet dog, aligns most closely: his profile emphasizes family-centric decision-making (schools, parks, community facilities), budget-conscious yet quality-focused consumption, and practical considerations (school districts, pet-friendly spaces). Unlike Candidates A (single, tech-focused) or C (single, career-driven), D\u2019s priorities for children\u2019s education, family-friendly neighborhoods, and pet ownership directly mirror the document\u2019s framing. Candidates B and E, while family-oriented, lack the specific urban real estate focus and detailed budget constraints matching the document\u2019s granularity.",
+    "model": "solar-pro",
+    "prompt_chars": 45042,
+    "latency_sec": 2.26,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task38_User19_seed0",
+    "stage": "write",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16",
+      "User18",
+      "User11"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User19",
+      "User10",
+      "User11",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on a family with a 6-year-old child preparing for primary school and a large dog (Alaskan Malamute), prioritizing educational resources, pet-friendly neighborhoods, and practical financial planning. Candidate B (Zhou Jun) is a 35-40-year-old supply chain manager with a 6-year-old daughter and an Alaskan Malamute, aligning perfectly with the document's target demographic. His priorities\u2014education, pet-friendly living, and rational consumption\u2014mirror the guide's emphasis on school district stability, park access for dog walking, and cost-effective property selection. Other candidates either lack the specific family composition (e.g., Candidate A is single with a cat) or do not emphasize education/pets as centrally (e.g., Candidates C, D, E focus on different priorities like career advancement or tech interests).",
+    "model": "solar-pro",
+    "prompt_chars": 47053,
+    "latency_sec": 2.47,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

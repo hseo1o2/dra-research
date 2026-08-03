@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task32_User13_seed0",
+    "stage": "plan",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User13",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "Candidate B (Guo Yuan) is the best match. The document emphasizes child-friendly, pet-safe, and eco-friendly soft furnishings for a family with a 5-year-old and multiple pets, aligning with B's role as a single mother with a 5-year-old and three pets (including a corgi and two cats). B's caf\u00e9 ownership and artistic background also match the request for an 'eco-friendly, artistic, and modern natural aesthetic,' while her focus on sustainability and local/niche brands aligns with the product recommendations. Candidate A (single, no children) and C (single, no children) lack the family/pet context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 23864,
+    "latency_sec": 1.84,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task32_User13_seed0",
+    "stage": "search",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User14",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "Candidate C, a caf\u00e9 owner with pets (including cats), aligns most closely with the document's focus on cat-friendly products (e.g., '\u732b\u6293\u5e03'/'cat-scratch fabric' in curtains, sofas) and design-conscious consumption. The document emphasizes product dimensions, prices, and aesthetic integration (e.g., '\u5e73\u5d4c'/'flush-mounted' refrigerators, '\u5b9e\u6728'/'solid wood' furniture), reflecting C's preference for high-quality, sustainable, and locally crafted items. Additionally, C's caf\u00e9 environment\u2014adorned with art and pet-friendly\u2014mirrors the document's blend of practicality (sizing, pricing) and lifestyle-oriented framing (e.g., '\u96f6\u8ddd\u79bb\u81ea\u7531\u5d4c\u5165\u5f0f'/'zero-distance embedded' design for seamless home integration).",
+    "model": "solar-pro",
+    "prompt_chars": 24018,
+    "latency_sec": 2.04,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task32_User13_seed0",
+    "stage": "compress",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User13",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on a family with pets (2 cats, 1 corgi) in an 89 sqm apartment, emphasizing pet-friendly appliances (e.g., pet-hair removal washing machines, anti-tangle robot vacuums, pet air purifiers) and child-safe furniture. Candidate B owns three pets (2 cats, 1 corgi) and has a 5-year-old child, aligning with the document's priorities. Additionally, the document's emphasis on budget allocation for high-performance hygienic appliances and eco-friendly products matches B's preference for sustainability and support of independent brands. Candidates A and C, while pet owners, lack the multi-pet household and childcare context central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 28122,
+    "latency_sec": 2.29,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task32_User13_seed0",
+    "stage": "write",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on a single-parent household with a 5-year-old child and three pets, emphasizing child safety, pet durability, and a 'Modern Natural' aesthetic. Candidate A is a single mother with a 5-year-old child and three pets (two cats and a corgi), aligning perfectly with the document's target audience. The report's emphasis on pet-resistant fabrics, child-safe ergonomics, and budget-conscious yet high-quality furnishings reflects Candidate A's lifestyle as a caf\u00e9 owner balancing a busy career with family responsibilities. Additionally, the document's focus on environmental purity and aesthetic warmth mirrors her artistic background and appreciation for design, which is not as strongly emphasized in Candidates B or C.",
+    "model": "solar-pro",
+    "prompt_chars": 30133,
+    "latency_sec": 1.81,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

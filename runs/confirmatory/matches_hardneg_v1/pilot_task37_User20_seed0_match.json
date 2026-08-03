@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task37_User20_seed0",
+    "stage": "plan",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User20",
+      "User14",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "Candidate A's profile aligns most closely with the document's emphasis on natural wood textures, pet-friendly design, and integration of art into living spaces. As a caf\u00e9 owner with a cat, her need for a warm, stylish, and functional renovation (prioritizing the living room and open kitchen) matches the document's focus. Her preference for eco-friendly materials, support for local designers, and Shanghai-based sourcing also directly align with the budget guidance and vendor requirements. Candidates B and C, while creative, lack the specific pet-centric and high-end material priorities central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24695,
+    "latency_sec": 1.57,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task37_User20_seed0",
+    "stage": "search",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User20",
+      "User14",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User20"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": false,
+    "reasoning": "Candidate A (Lin Nan) is the best match. The document focuses on budget allocation for a small apartment (80 sqm) in Shanghai, emphasizing cost-effective hardwood customization, cat-friendly layouts, and ENF-grade materials (low formaldehyde). These align with A's profile: he lives in an 80 sqm Shanghai apartment, has a cat, prioritizes quality art supplies/equipment, and values health-conscious materials (implied by his artistic sensitivity). The document's focus on precise budgeting and material standards mirrors A's rational consumption habits and investment in high-end tools. Candidates B (caf\u00e9 owner) and C (copywriter) lack the direct connection to small-space living, pet-friendly design, and material-grade specificity that defines A's needs.",
+    "model": "solar-pro",
+    "prompt_chars": 25805,
+    "latency_sec": 1.99,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task37_User20_seed0",
+    "stage": "compress",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User20",
+      "User14",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User14",
+      "User13"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": false,
+    "reasoning": "The document focuses on detailed budget allocation, cost breakdowns, and practical considerations for apartment renovation in Shanghai, reflecting a structured, analytical approach. Candidate B, a freelance illustrator with a background in design and a meticulous personality, aligns best with this content. His consumption characteristics (quality-focused, investment in tools/equipment) and interest in art/design (evident in his work and travel preferences) suggest he would prioritize aesthetic and functional details in renovation. Unlike Candidate A (creative but less detail-oriented) or Candidate C (business-focused caf\u00e9 owner), Candidate B\u2019s design background and attention to material/process details match the document\u2019s technical framing and emphasis on cost-efficiency within creative constraints.",
+    "model": "solar-pro",
+    "prompt_chars": 29044,
+    "latency_sec": 1.81,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task37_User20_seed0",
+    "stage": "write",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User20",
+      "User14",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User13",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User20",
+    "correct": true,
+    "reasoning": "The document emphasizes a young couple with a cat, natural wood aesthetics, pet-friendly durability, and strict budget control (150,000 RMB). Candidate A, a 24-28-year-old copywriter with a cat, aligns with the document's focus on balancing creativity (literature/art interests) with practicality (budget-conscious, pet-friendly design). The document's integration of functional zones (e.g., flexible second bedroom for work/leisure) mirrors A's need for a creative yet organized space. Candidate B (caf\u00e9 owner) and C (freelance illustrator) prioritize art/design in ways less directly tied to the document's domestic, budget-focused renovation scope.",
+    "model": "solar-pro",
+    "prompt_chars": 31055,
+    "latency_sec": 1.87,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

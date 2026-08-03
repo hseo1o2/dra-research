@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task17_User16_seed1",
+    "stage": "plan",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on a multi-generational family vacation tailored to a 40-45-year-old manager (Zhang Jianguo) with a middle-school son and elderly parents. The document emphasizes landscape photography, self-guided travel, Northeastern Chinese dietary preferences (stews, barbecue), and cost-effective yet comfortable accommodations\u2014all of which match Candidate A's interests, background, and stated preferences. Unlike Candidates B and C, Candidate A explicitly mentions a golden retriever (Wangcai), a rural hometown in Northeast China, and a preference for practical, value-driven spending, which resonates with the document's emphasis on family bonding, photography, and budget-conscious planning. The itinerary's balance of low-intensity activities for elders and active options for the teenager also mirrors Candidate A's family dynamics and travel style.",
+    "model": "solar-pro",
+    "prompt_chars": 25514,
+    "latency_sec": 2.36,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User16_seed1",
+    "stage": "search",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "Candidate C's profile aligns most closely with the document's focus on July weather, beach quality, elderly accessibility, and landscape photography. The document emphasizes practical travel considerations (e.g., water temperature, sand quality, hotel accessibility) and photography interests, which match Candidate C's hobby in landscape photography, interest in natural attractions, and family-oriented travel style. Unlike Candidates A (focused on luxury hotels and business trips) and B (interested in technology and gardening), Candidate C explicitly mentions photography tutorials, outdoor activities, and prioritizing family trips to scenic locations\u2014directly reflecting the document's themes.",
+    "model": "solar-pro",
+    "prompt_chars": 26882,
+    "latency_sec": 1.64,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User16_seed1",
+    "stage": "compress",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate C (Liu Qiang) best matches the document's focus on luxury accommodations, seafood cuisine, and family-friendly travel. The document emphasizes high-end hotels (e.g., Dusit Thani, Sheraton, Hilton), detailed dining options (mackerel dumplings, seafood markets), and accessible activities (photography spots, water sports) \u2014 aligning with C's preferences for quality, cost-effectiveness, and family-oriented travel. Unlike A (pragmatic, tech-focused) or B (budget-conscious, photography hobbyist), C's profile as a marketing manager with a focus on modern amenities, international cuisine, and curated experiences (e.g., golf, yoga) directly reflects the document's framing of Weihai/Yantai as a premium leisure destination.",
+    "model": "solar-pro",
+    "prompt_chars": 29375,
+    "latency_sec": 1.93,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User16_seed1",
+    "stage": "write",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document's focus on a multi-generational family vacation (including elderly parents, a middle-school teenager, and a landscape photographer) aligns with Candidate C's profile as a state-owned enterprise manager from Harbin (matching the document's origin point) with a middle-school son, elderly parents in Qiqihar, and a photography hobby. The emphasis on practicality, cost-effectiveness, and detailed itineraries reflects C's rational consumer habits and self-guided travel style. Additionally, the document's prioritization of Northeastern Chinese cuisine preferences (e.g., fresh seafood satisfying Northern palates) matches C's Northeastern background and dietary preferences for local specialties.",
+    "model": "solar-pro",
+    "prompt_chars": 31386,
+    "latency_sec": 1.78,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task14_User3_seed1",
+    "stage": "plan",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User14",
+      "User3",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User3",
+      "User14",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User3",
+    "correct": true,
+    "reasoning": "The document aligns most closely with Candidate A (Zhou Kai), an undergraduate student in mechanical engineering. Key matches include: (1) the student's schedule (7 AM\u201311 PM) and budget-consciousness mirroring Zhou Kai's frugal habits and academic routine; (2) the focus on injury prevention and adaptable training aligns with his pragmatic, hands-on problem-solving approach; (3) the emphasis on evidence-based methods reflects his preference for structured, reliable information (e.g., saving technical articles); (4) the local park/road running context matches his campus-based lifestyle. Candidates B (freelance illustrator) and C (manufacturing director) lack the student-specific constraints (time, budget, gear limitations) central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 23710,
+    "latency_sec": 2.13,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User3_seed1",
+    "stage": "search",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User14",
+      "User3",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User3",
+      "User14",
+      "User22"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User22",
+    "correct": false,
+    "reasoning": "The document focuses on structured marathon training plans, workload ratios, and exercise science\u2014topics aligning with Candidate C's background as a technical director in manufacturing with a mechanical engineering degree. His interest in data-driven approaches (e.g., ACWR ratios), practical exercise routines (5-day/week plans), and cost-effective, goal-oriented fitness habits mirror the document's emphasis on systematic training, injury prevention, and measurable progress. Unlike Candidates A (student with casual exercise habits) and B (artist prioritizing creativity over structured fitness), Candidate C's technical mindset, preference for evidence-based methods, and focus on endurance (running 3x/week) make him the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 25955,
+    "latency_sec": 1.64,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User3_seed1",
+    "stage": "compress",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User14",
+      "User3",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User22",
+      "User3"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User22",
+    "correct": false,
+    "reasoning": "The document focuses on a structured, evidence-based 12-week marathon training plan emphasizing physiological adaptation, injury prevention (ACWR ratio), and progressive overload\u2014key concepts in sports science and physical conditioning. Candidate B, a technical director in manufacturing with a mechanical engineering background, aligns with this analytical, methodical framing. His interest in technical articles, Industry 4.0, and practical problem-solving mirrors the document's reliance on guidelines (RRCA, ACSM) and data-driven training metrics. Unlike Candidate A (artistic, non-quantitative) or Candidate C (student-focused on mechanical theory), Candidate B\u2019s pragmatic, goal-oriented approach to fitness (running, gardening) and his habit of saving technical content (e.g., equipment guides) directly align with the document\u2019s tone and priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 28448,
+    "latency_sec": 2.28,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User3_seed1",
+    "stage": "write",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User14",
+      "User3",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User14",
+      "User3"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User3",
+    "correct": true,
+    "reasoning": "The document is tailored for a university student with limited training time (5 days/week, 1 hour/day), focusing on a 12-week marathon preparation plan that integrates with academic schedules (7:00 AM\u201311:00 PM). It emphasizes cost-effective, equipment-free training (RPE, Talk Test), dynamic adaptation to campus life, and injury prevention\u2014key concerns for a student with a mechanical engineering background (Candidate C). The content prioritizes practicality, frugality, and time management, aligning with Candidate C's traits: a 17\u201320-year-old mechanical engineering student from a rural background, who values cost-effectiveness, hands-on problem-solving, and balancing academics with physical goals. Candidate A (50\u201355, manufacturing director) and Candidate B (28\u201332, freelance illustrator) lack the student-specific constraints and priorities (e.g., dormitory life, exam pressures, budget limitations) central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30459,
+    "latency_sec": 2.14,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

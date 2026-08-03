@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task48_User12_seed1",
+    "stage": "plan",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "Candidate A is the best match due to the document's emphasis on a 5-year-old daughter, eco-friendly materials, and integration of family themes (e.g., pets like the cat 'Doudou'). The structured, research-driven approach aligns with A's background as an AI entrepreneur (data-driven, logical reasoning) and his habits of bedtime storytelling, yoga, and prioritizing family time. The focus on multidisciplinary arts and classical/modern artist introductions also fits A's interest in science fiction (Liu Cixin) and documentaries, suggesting a preference for blending creativity with intellectual depth. Candidate B (marketing manager with two children) and C (state-owned enterprise manager with a middle-school son) lack the specific focus on a 5-year-old\u2019s developmental needs and the tech/eco-conscious framing central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 26010,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task48_User12_seed1",
+    "stage": "search",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User12"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on early childhood art development, Reggio Emilia-inspired multidisciplinary curricula, and integrated creative approaches (e.g., Orff Schulwerk) for 5-year-olds. Candidate B, a marketing manager with an 8-year-old daughter interested in painting and a 5-year-old son, aligns most closely. His profile highlights investment in children's education, extracurricular activities, and a family-oriented approach to learning. The document\u2019s emphasis on art, music, and Reggio-inspired methods matches B\u2019s documented interest in quality educational resources and holistic development for his children, unlike A\u2019s engineering background or C\u2019s tech-entrepreneur focus.",
+    "model": "solar-pro",
+    "prompt_chars": 27980,
+    "latency_sec": 1.76,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task48_User12_seed1",
+    "stage": "compress",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on early childhood artistic development (ages 2\u20137), emphasizing multi-medium creative pedagogy (visual arts, 3D crafts, music, dance) and developmental benefits (emotional expression, attention, self-confidence). Candidate B, a marketing manager with an 8-year-old daughter interested in painting/dancing and a 5-year-old son who enjoys building toys, aligns with the document's focus on child development through art and structured creative activities. His family-oriented values, interest in educational expenses, and emphasis on quality-of-life investments (e.g., extracurricular classes) reflect the document's priorities. Candidate A (AI entrepreneur) and C (state-owned enterprise manager) lack explicit ties to early childhood education or creative pedagogy in their profiles.",
+    "model": "solar-pro",
+    "prompt_chars": 30525,
+    "latency_sec": 1.93,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task48_User12_seed1",
+    "stage": "write",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User12"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on a 6-month multidisciplinary arts program for a 5-year-old child, emphasizing creativity, emotional expression, and developmental milestones. Candidate C, an AI entrepreneur with a 5-year-old daughter, aligns most closely with this content. His profile highlights a strong emphasis on family, education, and quality-of-life investments, including extracurricular activities and learning resources for his child. Unlike Candidates A and B, who prioritize structured academic or practical skill development, Candidate C\u2019s entrepreneurial and tech-savvy background suggests an appreciation for innovative, multidisciplinary approaches to child development. His daily routine (reading bedtime stories) and consumption habits (high-end fitness/tech products, eco-friendly devices) reflect a values-driven, forward-thinking mindset that aligns with the document\u2019s holistic, creativity-focused framework. The document\u2019s integration of art, music, and developmental psychology also resonates with Candidate C\u2019s interest in interdisciplinary thinking and his daughter\u2019s age-specific needs.",
+    "model": "solar-pro",
+    "prompt_chars": 32536,
+    "latency_sec": 2.11,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

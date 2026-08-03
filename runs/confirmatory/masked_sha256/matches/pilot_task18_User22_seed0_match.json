@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task18_User22_seed0",
+    "stage": "plan",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User19",
+      "User22"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "The document explicitly describes a 50-55-year-old Technical Director in Manufacturing planning a business trip, aligning perfectly with Candidate C's occupation, age, and role. The request for automotive tech/exhibitions matches Candidate C's eldest son's automotive engineering research background. The focus on business-class flights, gym-equipped hotels, and structured itineraries reflects Candidate C's pragmatic, detail-oriented personality and preference for practical, quality accommodations. Candidates A (marketing manager) and B (supply chain manager) lack the manufacturing/technical director background and specific automotive interest highlighted in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25350,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task18_User22_seed0",
+    "stage": "search",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User22",
+      "User19"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User19",
+    "correct": false,
+    "reasoning": "The document focuses on flight schedules, ticket pricing, and museum/attraction details, reflecting practical travel planning and cost-consciousness. Candidate C, a supply chain manager, prioritizes efficiency, cost-effectiveness, and eco-friendly consumption, aligning with the document's emphasis on budget-friendly options (e.g., 7-day tickets, economy/premium economy flight comparisons). His domestic travel preferences (historical/cultural cities, self-guided tours) and frequent use of online platforms (JD.com, Tmall) for research and shopping mirror the document's structure and intent. Candidates A and B, while also pragmatic, focus more on international business travel (A) or technical/industrial interests (B), which are less relevant to the document's local and family-oriented travel context.",
+    "model": "solar-pro",
+    "prompt_chars": 26428,
+    "latency_sec": 1.93,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task18_User22_seed0",
+    "stage": "compress",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "The document focuses on detailed travel logistics (flights, public transport, budgeting) for a trip from Shanghai to Berlin, emphasizing cost-effectiveness, practical accommodations with fitness facilities, and a structured approach to planning. Candidate A, a technical director in manufacturing, aligns with this profile: he values practicality, cost-effectiveness, and has a preference for business hotels with gyms. His background in engineering and systematic problem-solving mirrors the document's methodical analysis of flight schedules, exchange rates, and budget constraints. Additionally, his interest in self-guided tours and local culture aligns with the document's focus on optimizing travel experiences within a fixed budget. Candidates B and C, while also pragmatic, prioritize family-centric travel or international business trips less relevant to the solo/business-oriented framing here.",
+    "model": "solar-pro",
+    "prompt_chars": 29269,
+    "latency_sec": 2.35,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task18_User22_seed0",
+    "stage": "write",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User22",
+      "User19"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "The document is explicitly tailored for 'Ma Jianping', a Technical Director in Manufacturing, matching Candidate B's occupation. The itinerary focuses on automotive engineering, smart manufacturing, and technical exhibitions, aligning with B's background in mechanical engineering and interest in Industry 4.0. The budget-conscious yet quality-focused travel plan (e.g., premium economy flights, business hotels with gyms) reflects B's pragmatic, cost-effective decision-making style and preference for practical, high-quality accommodations. Additionally, the emphasis on self-guided tours and cultural/technical site visits matches B's travel preferences for immersive experiences and local culture.",
+    "model": "solar-pro",
+    "prompt_chars": 31280,
+    "latency_sec": 2.05,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

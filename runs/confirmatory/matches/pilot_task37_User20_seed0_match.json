@@ -1,0 +1,90 @@
+[
+  {
+    "run_id": "pilot_task37_User20_seed0",
+    "stage": "plan",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User20",
+      "User8",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User14",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": false,
+    "reasoning": "Candidate B is the best match due to their explicit mention of a cat (pet-friendly requirement), focus on natural wood textures and soft fabrics in their artistic style, and emphasis on open-plan living spaces for creative workflow. The document's prioritization of the living room/kitchen aligns with B's need for a functional creative environment, while their preference for eco-friendly materials and Shanghai-based sourcing matches B's consumption habits. Candidate A lacks a pet and prioritizes frugality over design aesthetics, while Candidate C's focus on literary inspiration doesn't align as strongly with the document's practical renovation focus.",
+    "model": "solar-pro",
+    "prompt_chars": 24445,
+    "latency_sec": 1.52
+  },
+  {
+    "run_id": "pilot_task37_User20_seed0",
+    "stage": "search",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User20",
+      "User8",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User14",
+      "User8"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": false,
+    "reasoning": "Candidate B (Lin Nan) is the best match. The document focuses on interior design, budget allocation for 80\u33a1 spaces, and material specifications (e.g., ENF-grade MDI glue boards, PET foil finishes) that align with B's profession as a freelance illustrator and his design-oriented lifestyle. His interest in art, attention to material quality, and cat-friendly living preferences (shared with Candidate A but more deeply integrated into his creative process) reflect the document's emphasis on aesthetic and functional design details. Unlike Candidate C (an investment manager) or Candidate A (a copywriter), B's background in illustration design and frequent engagement with design standards (e.g., formaldehyde limits, cabinet finishes) directly correlate with the technical and creative framing of the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25555,
+    "latency_sec": 1.74
+  },
+  {
+    "run_id": "pilot_task37_User20_seed0",
+    "stage": "compress",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User20",
+      "User8",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User8",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User8",
+    "correct": false,
+    "reasoning": "The document focuses on detailed budget allocation, cost breakdowns, and practical financial planning for apartment renovation in Shanghai, emphasizing cost-effectiveness, material specifications, and labor costs. Candidate B, an investment manager with a meticulous, data-driven personality, aligns most closely with this content. His preferences for rational spending, cost-benefit analysis, and interest in financial planning (evident in his use of financial apps, research habits, and career) directly mirror the document's emphasis on budgeting, unit pricing, and contingency funds. While Candidate A (creative copywriter) and Candidate C (freelance illustrator) prioritize aesthetics and inspiration, the document's technical, numbers-focused framing is most essential to Candidate B's analytical and financially disciplined profile.",
+    "model": "solar-pro",
+    "prompt_chars": 28794,
+    "latency_sec": 2.15
+  },
+  {
+    "run_id": "pilot_task37_User20_seed0",
+    "stage": "write",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User20",
+      "User8",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User20",
+    "correct": true,
+    "reasoning": "The document emphasizes pet-friendly design (cat scratch-resistant materials, litter cabinet), spatial efficiency for a small apartment, and cost-conscious renovation within a strict budget. Candidate B explicitly mentions owning a cat ('Jinju') and prioritizes design aesthetics, practicality, and budget control\u2014aligning with the report's focus on balancing durability, functionality, and financial constraints. While Candidate C also has a cat, the document's structured, cost-optimized approach (e.g., budget traps, material cost tables) better matches Candidate B's meticulous planning and mid-range spending habits, whereas Candidate C leans toward high-end art tools and less emphasis on budget discipline. Candidate A, though considering a cat, lacks the document's design-centric framing and prioritizes financial investments over spatial creativity.",
+    "model": "solar-pro",
+    "prompt_chars": 30805,
+    "latency_sec": 1.84
+  }
+]

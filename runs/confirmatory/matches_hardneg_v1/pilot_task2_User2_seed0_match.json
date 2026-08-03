@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task2_User2_seed0",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User1",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "Candidate C is a graduate student in Clinical Psychology at a Beijing university, aligning perfectly with the document's focus on clinical psychology exchange programs. The document emphasizes academic competitiveness (e.g., PhD preparation, research skills), budget-conscious planning (e.g., cost breakdowns, scholarships), and practical adaptation strategies\u2014all priorities explicitly reflected in Candidate C's profile. Her behavioral traits (e.g., time management, rational spending) and interests (e.g., psychology resources, cultural immersion) directly mirror the document's systematic, goal-oriented tone. Candidates A (new media) and B (computer science) lack the clinical psychology focus and academic background central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 23950,
+    "latency_sec": 1.76,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User2_seed0",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on psychology-related topics (visiting graduate programs, scholarships, clinical practice licenses) and Japanese academic systems, aligning with Candidate A's background as a Clinical Psychology graduate student. Her interests in psychology, academic research, and cultural adaptability (e.g., interest in Southeast Asian cuisine) reflect the document's emphasis on cross-cultural psychology studies and licensing. Candidates B (new media) and C (computer science) lack direct relevance to the document's psychological and international academic focus.",
+    "model": "solar-pro",
+    "prompt_chars": 25474,
+    "latency_sec": 1.91,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User2_seed0",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on graduate-level psychology programs, clinical research restrictions, and international exchange logistics\u2014topics directly aligned with Candidate A's clinical psychology master's studies and research interests. Her profile emphasizes academic rigor, lab research, and clinical observation (e.g., IRB-approved protocols), mirroring the document's emphasis on permissible non-clinical activities. Candidate B (new media) and C (computer science) lack the document's clinical/psychology focus, making A the only essential match.",
+    "model": "solar-pro",
+    "prompt_chars": 27967,
+    "latency_sec": 2.1,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User2_seed0",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on clinical psychology exchange programs, detailing academic, research, and regulatory aspects relevant to graduate students in the field. Candidate B is explicitly a Clinical Psychology graduate student with matching priorities: research focus, regulatory awareness (e.g., IRB protocols), and practical constraints (e.g., visa logistics, cost calculations). The document's technical vocabulary (e.g., 'HIPAA,' 'fMRI/EEG data processing,' 'SCI/SSCI journals') aligns with Candidate B's academic background and behavioral traits (e.g., using psychology apps, sharing research materials). Candidate A (new media) and Candidate C (computer science) lack the domain-specific expertise and career alignment reflected in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29978,
+    "latency_sec": 1.84,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

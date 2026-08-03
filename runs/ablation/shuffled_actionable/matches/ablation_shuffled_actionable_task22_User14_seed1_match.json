@@ -1,0 +1,118 @@
+[
+  {
+    "run_id": "ablation_shuffled_actionable_task22_User14_seed1",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User15",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document focuses on a 28-32-year-old male freelance illustrator in Shanghai with a risk-averse investment profile, aligning perfectly with Candidate A's attributes (age, gender, occupation, location, and creative background). The emphasis on variable income, artistic lifestyle, and ESG-aligned investments mirrors A's freelance cash flow, artistic consumption habits, and values. Candidate B (female writer in Beijing) and C (data analyst in Shanghai) differ in occupation, gender, and financial/product preferences, making A the only direct match.",
+    "model": "solar-pro",
+    "prompt_chars": 22587,
+    "latency_sec": 2.06,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4749,
+    "output_tokens": 134,
+    "total_tokens": 4883,
+    "api_response_id": "1aba712f-1670-4499-adc2-c12a9c5c24d5"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task22_User14_seed1",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User14",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on tax policies, social insurance contributions, and financial planning\u2014topics directly relevant to Candidate C's role as a data analyst in a tech company. Her background in statistics, interest in cost-effectiveness, and rational consumption habits align with the document's emphasis on precise calculations (e.g., tax rates, insurance percentages) and policy analysis. Unlike Candidates A (freelance writer) and B (illustrator), who prioritize creative/artistic content, Candidate C's data-driven mindset and focus on financial sustainability match the document's technical framing and Shanghai-centric social security details.",
+    "model": "solar-pro",
+    "prompt_chars": 23264,
+    "latency_sec": 1.66,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6212,
+    "output_tokens": 141,
+    "total_tokens": 6353,
+    "api_response_id": "4e8aac03-1448-4bcd-bfab-7061639a7d49"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task22_User14_seed1",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on Shanghai-based financial regulations, insurance products, and long-term retirement planning\u2014topics aligning with Candidate B's profile as a data analyst in Shanghai with a finance/economics background. The technical depth on tax rates, insurance thresholds, and regulatory frameworks matches B's analytical mindset and interest in data-driven decision-making. While Candidates A and C show interest in culture/art and lifestyle, B's professional focus on statistics, certifications in data science, and rational consumption habits directly correlate with the document's emphasis on structured financial planning and policy analysis. The Shanghai-specific content further strengthens this match, as B resides and works in Shanghai.",
+    "model": "solar-pro",
+    "prompt_chars": 27367,
+    "latency_sec": 2.14,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6401,
+    "output_tokens": 151,
+    "total_tokens": 6552,
+    "api_response_id": "659baf27-599c-4c1f-8c9a-9416a8402974"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task22_User14_seed1",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User18",
+      "User15"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document focuses on a freelance illustrator in Shanghai with variable income, low risk tolerance, and ESG investment preferences. Candidate A is a 28\u201332-year-old freelance illustrator in Shanghai, matching the document's demographic and occupational context. The plan's emphasis on liquidity buffers, ESG investments, and long-term care aligns with Candidate A's creative lifestyle, variable income, and need for financial stability. Candidates B (data analyst) and C (freelance writer in Beijing) do not match the illustrator-specific framing, Shanghai location, or ESG focus as directly as Candidate A.",
+    "model": "solar-pro",
+    "prompt_chars": 29378,
+    "latency_sec": 2.31,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6554,
+    "output_tokens": 147,
+    "total_tokens": 6701,
+    "api_response_id": "9372a00b-af91-4dfd-a1c6-6ec09bdcb4c5"
+  }
+]

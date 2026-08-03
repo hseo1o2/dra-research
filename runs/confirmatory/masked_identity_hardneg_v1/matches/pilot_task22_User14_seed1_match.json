@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task22_User14_seed1",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User14",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document focuses on a freelance individual (commercial illustration, social media sponsorships, online courses) with a moderate-to-conservative risk appetite, aligning with Candidate B's freelance illustrator role and cautious financial habits. The emphasis on dynamic allocation strategies and economic adjustments mirrors B's structured consumption cycles (monthly art supplies, quarterly travel budgets) and rational decision-making style. The Yangtze River Delta region (Shanghai/Suzhou) mentioned in the document matches B's permanent residence in Shanghai and hometown in Suzhou, while the need for flexible annuity contributions resonates with B's freelance income variability. Candidates A (caf\u00e9 owner with family obligations) and C (employed copywriter) lack the freelance-specific financial challenges and regional specificity central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25803,
+    "latency_sec": 1.98,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task22_User14_seed1",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on medical insurance programs (Huhuibao) and social security rules for flexible workers in Shanghai, emphasizing coverage for pre-existing conditions, deductible reimbursement, and tax incentives for personal pensions. Candidate B, a caf\u00e9 owner in Shanghai, is a flexible worker who would prioritize health insurance and social security due to her self-employed status. Her profile highlights financial planning, quarterly consumption cycles, and interest in eco-friendly/sustainable products, aligning with the document's focus on insurance costs, reimbursement structures, and tax benefits. While Candidates A and C are also freelancers, B's business ownership and explicit focus on financial management (e.g., inventory, equipment costs, and caf\u00e9 operations) make her the most likely audience for this document, which addresses practical financial and health security needs for self-employed individuals.",
+    "model": "solar-pro",
+    "prompt_chars": 25166,
+    "latency_sec": 2.1,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task22_User14_seed1",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document focuses on flexible employment, freelance workers, and personalized pension/insurance solutions, aligning with Candidate A's profile as a freelance illustrator with irregular income and long-term financial planning needs. The content emphasizes tax rules, flexible funding options, and liquidity management\u2014key concerns for freelancers. While Candidates B and C also have urban, creative lifestyles, their profiles lack the explicit freelance status and financial volatility central to the document's framing. Candidate A's occupation, consumption habits (e.g., budgeting for creative projects), and periodic mobility (e.g., travel for inspiration) further reflect the document's emphasis on balancing variable income with structured savings.",
+    "model": "solar-pro",
+    "prompt_chars": 29044,
+    "latency_sec": 1.82,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task22_User14_seed1",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document focuses on a freelance illustrator with variable income, tax optimization, and cash flow smoothing\u2014directly aligning with Candidate C's occupation (freelance illustrator) and financial challenges. The emphasis on liquidity buffers, annuities, and risk management mirrors C's need for stable cash flow amid irregular earnings. Vocabulary like 'commercial illustration commissions' and 'studio/sole proprietorship' further confirms this match, while Candidates A (caf\u00e9 owner) and B (copywriter) lack the freelance art-specific context.",
+    "model": "solar-pro",
+    "prompt_chars": 31055,
+    "latency_sec": 1.55,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

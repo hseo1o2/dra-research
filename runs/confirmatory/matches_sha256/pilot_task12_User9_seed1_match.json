@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task12_User9_seed1",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "Candidate A matches the document's focus on emotional regulation, morning routines (7:00\u20139:00 AM), and integration of psychology with creative interests. The document emphasizes self-awareness, stress management, and actionable strategies for a product operations professional with a background in advertising/new media and psychology\u2014aligning with A's profile. Key overlaps include: (1) A's low stress tolerance and need for emotional support, (2) her morning routine (exercise, meditation, reading), (3) her psychology minor and interest in mental health content, and (4) her creative, social-media-oriented lifestyle. Candidate B (clinical psychology student) and C (male engineering student) lack the document's specific framing around product operations, advertising, and aesthetic sensibilities (e.g., vegetarianism, sustainable living, social media sharing).",
+    "model": "solar-pro",
+    "prompt_chars": 22805,
+    "latency_sec": 1.8,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task12_User9_seed1",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "Candidate B, a graduate student in Clinical Psychology, aligns most closely with the document's focus on emotional regulation, cognitive behavioral therapy (CBT), and psychological frameworks. The document includes queries about podcasts, courses, and books on topics like CBT, dialectical behavior therapy, and Lisa Feldman Barrett's emotion theory\u2014all directly relevant to B's academic background and interests. Candidate A (Product Operations) and C (Mechanical Engineering) lack the same depth of psychological engagement, with their interests skewed toward product efficiency or technical fields, respectively. B's frequent use of psychology apps, participation in psychology forums, and consumption of related content further confirm this match.",
+    "model": "solar-pro",
+    "prompt_chars": 23922,
+    "latency_sec": 1.99,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task12_User9_seed1",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User5",
+      "User2"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document emphasizes evidence-based emotional regulation, neuroscience, and practical frameworks for a Product Operations professional with a psychology minor and advertising/new media background. Candidate A (Zhao Li) matches this profile exactly: she is a 22\u201325yo female in Product Operations, holds a psychology minor, and has an advertising/new media background. The document's focus on applying behavioral science to product lifecycle management, user experience design, and high-pressure operational environments aligns with her role. Additionally, her interest in mental health articles, creative communities, and social media content about healthy living reflects the document's emphasis on integrating psychological principles into professional and personal contexts. Candidates B (Mechanical Engineering grad student) and C (Clinical Psychology grad student) lack the specific Product Operations + psychology minor + advertising/new media combination central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 27412,
+    "latency_sec": 1.82,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task12_User9_seed1",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User9",
+      "User5"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document's focus on Product Operations, evidence-based psychology (CBT/ACT), and operational mindset aligns with Candidate B's role in Product Operations, advertising/new media background, and psychology minor. The emphasis on structured routines (7:00\u20139:00 AM), somatic regulation, and workplace micro-interventions matches B's time preferences, exercise habits, and stress-management needs. Candidate A (Clinical Psychology student) and C (Mechanical Engineering grad) lack the operational context and hybrid psychology/operations background central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 29423,
+    "latency_sec": 1.45,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

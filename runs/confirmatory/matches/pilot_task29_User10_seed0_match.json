@@ -1,0 +1,90 @@
+[
+  {
+    "run_id": "pilot_task29_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User18",
+      "User13",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "Candidate A (Guo Yuan) is the best match. The document emphasizes healthy, organic ingredients, aesthetic design (e.g., caf\u00e9 interior with art), and sustainability\u2014aligning with her artistic sensibilities, caf\u00e9-ownership background, and focus on eco-friendly practices. Her interest in menu design, branding, and CBD/art district locations mirrors the report's priorities. While Candidate B (Liu Qiang) shares business acumen, his focus on cost-effectiveness and family-oriented consumption contrasts with the document's creative, health-centric framing. Candidate C (Liu Lu) lacks the culinary/design expertise central to the report's tone and scope.",
+    "model": "solar-pro",
+    "prompt_chars": 23998,
+    "latency_sec": 1.57
+  },
+  {
+    "run_id": "pilot_task29_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User18",
+      "User13",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User13",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on Shanghai's light meal market trends, brand competition, menu design (40-60 RMB bowls), and cost structures (gross margins, calorie/nutrient ratios). Candidate B, a caf\u00e9 owner with a design background, aligns most closely: her occupation requires understanding market trends, pricing strategies, and cost management. Her interest in menu design (e.g., caf\u00e9 offerings) and sustainability aligns with the document's emphasis on healthy, premium-priced meals. Additionally, her frequent international travel for industry insights mirrors the document's global market references. Candidates A (marketing manager) and C (data analyst) lack the direct operational focus on food product design and retail cost structures central to the text.",
+    "model": "solar-pro",
+    "prompt_chars": 25143,
+    "latency_sec": 1.7
+  },
+  {
+    "run_id": "pilot_task29_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User18",
+      "User13",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on market size, competitive landscape, and consumer trends in Shanghai's light meal sector, emphasizing data-driven analysis (e.g., market projections, brand rankings, pricing strategies). Candidate B, a marketing manager with an MBA and data-oriented decision-making style, aligns most closely with this framing. His preferences for market analysis, cost-effectiveness, and interest in industry trends (e.g., saving market reports, LinkedIn activity) directly mirror the document's priorities. Candidates A (caf\u00e9 owner) and C (data analyst) lack B's blend of business strategy focus and Shanghai-based commercial awareness, which is central to the report's context.",
+    "model": "solar-pro",
+    "prompt_chars": 28389,
+    "latency_sec": 1.84
+  },
+  {
+    "run_id": "pilot_task29_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User18",
+      "User13",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User13",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on launching a healthy fast-food brand in Shanghai's CBD, targeting white-collar professionals and fitness enthusiasts with data-driven market analysis, cost calculations, and operational strategies. Candidate A, a marketing manager with an MBA, aligns perfectly: his background in business management, data analysis, and focus on cost-effectiveness (e.g., budgeting, efficiency) mirror the report's emphasis on financial modeling, market segmentation, and scalable operations. His pragmatic decision-making style and interest in market trends (e.g., saving articles on HBR) further align with the document's strategic framing. Candidates B (caf\u00e9 owner) and C (data analyst) lack the managerial and operational focus central to this business plan.",
+    "model": "solar-pro",
+    "prompt_chars": 30400,
+    "latency_sec": 2.32
+  }
+]

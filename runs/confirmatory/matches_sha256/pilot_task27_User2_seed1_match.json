@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task27_User2_seed1",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User14",
+      "User13",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User2"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": false,
+    "reasoning": "The document focuses on independent music production, home recording, and low-budget DIY creativity\u2014aligning with Candidate A's profile as a freelance illustrator who values artistic autonomy, self-directed projects, and cost-effective tools. Both prioritize quality within budget constraints (A's art supplies, the document's \u00a520,000 gear budget) and share a preference for open-ended, self-taught skill development (A's drawing tutorials, the document's learning roadmap). The indie/folk aesthetic also resonates with A's artistic sensibilities and use of personal inspiration (e.g., his cat Mo Mo). Candidates B (caf\u00e9 owner) and C (psychology student) lack the document's focus on creative production workflows or equipment research.",
+    "model": "solar-pro",
+    "prompt_chars": 24492,
+    "latency_sec": 1.72,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task27_User2_seed1",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User14",
+      "User13",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User14",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on music promotion strategies (Xiaohongshu, Spotify), copyright management (NetEase, Tencent), and audio distribution\u2014topics directly tied to creative entrepreneurship and content creation. Candidate C, a caf\u00e9 owner with a design background and active social media presence (Instagram/Xiaohongshu), aligns best. Her interests in art, design, and entrepreneurship mirror the document's emphasis on branding, platform-specific strategies, and audience engagement. Unlike Candidate A (academic psychology focus) or B (illustrator with less emphasis on music/entrepreneurship), C\u2019s business-oriented creativity and use of platforms like Xiaohongshu for promotion make her the most relevant match.",
+    "model": "solar-pro",
+    "prompt_chars": 25998,
+    "latency_sec": 1.69,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task27_User2_seed1",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User14",
+      "User13",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User14",
+      "User13"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": false,
+    "reasoning": "The document focuses on audio equipment pricing and comparisons, with search queries targeting microphones, audio interfaces, and studio monitors. Candidate B, a freelance illustrator, has behavioral patterns (e.g., using Procreate/Photoshop, live-streaming creative processes) and interests (e.g., saving art/photography inspiration, attending art salons) that align with potential audio-visual content creation. While not explicitly stated, the technical focus on audio gear suggests a creator who might use such equipment for video production, tutorials, or live-streaming\u2014activities consistent with B's profile. Candidates A (psychology student) and C (caf\u00e9 owner) lack direct ties to audio engineering or content creation tools mentioned in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 28590,
+    "latency_sec": 1.84,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task27_User2_seed1",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User14",
+      "User13",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User14",
+      "User13"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": false,
+    "reasoning": "The document focuses on independent music production, budget-conscious equipment selection, and DIY album creation\u2014topics aligning with Candidate B's profile as a freelance illustrator with a creative, self-driven mindset. B's emphasis on artistic intuition, independent work, and use of digital tools (e.g., Procreate, Photoshop) mirrors the document's hands-on, resourceful approach to music creation. Additionally, B's interest in travel for inspiration and participation in art communities parallels the guide's emphasis on grassroots marketing and creative autonomy. Candidates A (psychology student) and C (caf\u00e9 owner) lack the document's technical focus on music production and indie artistry.",
+    "model": "solar-pro",
+    "prompt_chars": 30601,
+    "latency_sec": 1.92,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

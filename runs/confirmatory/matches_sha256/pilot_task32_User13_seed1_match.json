@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task32_User13_seed1",
+    "stage": "plan",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User11",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "Candidate C (Guo Yuan) is the best match. The document emphasizes pet-friendly/kid-friendly design (corgi + 3 cats + 5-year-old child), which aligns with C's three pets and young child. It prioritizes eco-friendly/sustainable materials and local designer brands, matching C's caf\u00e9 owner background and support for independent/niche brands. The focus on artistic minimalism with natural accents reflects C's artistic personality and caf\u00e9's industrial-natural aesthetic. Finally, the document's detailed budgeting and product specifications mirror C's meticulous consumption habits and caf\u00e9 management style, which requires balancing practicality with design quality.",
+    "model": "solar-pro",
+    "prompt_chars": 26111,
+    "latency_sec": 1.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task32_User13_seed1",
+    "stage": "search",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on cat-friendly furniture (e.g., '\u732b\u6293\u5e03' or 'cat-scratch fabric') and home decor items like sofas and curtains, emphasizing aesthetics, material quality, and space optimization. Candidate A, a caf\u00e9 owner with pets (cats and a dog), values design, sustainability, and products that blend functionality with artistic appeal. Her profile highlights her preference for eco-friendly, high-quality items and her role in curating a visually appealing caf\u00e9 environment, aligning with the document's emphasis on stylish, pet-friendly furniture. Candidates B and C, while rational consumers, lack the documented focus on pet-centric design or artistic home decor prioritized in the text.",
+    "model": "solar-pro",
+    "prompt_chars": 25617,
+    "latency_sec": 1.69,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task32_User13_seed1",
+    "stage": "compress",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User11",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on pet-friendly furniture (e.g., cat-claw fabric sofas), independent designer brands, and eco-friendly/sustainable products\u2014all aligning with Candidate C's profile. As a caf\u00e9 owner with pets (including an orange tabby cat), she prioritizes stylish, durable, and pet-friendly furnishings. Her support for local/niche brands, interest in eco-friendly packaging, and focus on design aesthetics match the report's emphasis on modern artistic minimalist homes and brands like \u9020\u4f5c (ZAOZUO) and \u5431\u97f3 (ziinlife). Candidates A and B lack the pet-centric and design-focused context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29622,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task32_User13_seed1",
+    "stage": "write",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User11",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User13",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document emphasizes eco-friendly materials, independent local designer brands, pet-friendly durability (cat-claw fabric, pet-safe finishes), and a warm aesthetic balancing modern functionality with artistic touches. These priorities align most closely with Candidate B, a caf\u00e9 owner in Shanghai who values sustainability, supports local designers, and has pets (cats and a corgi). The focus on child safety and smart home integration also resonates with her role as a single mother. Candidates A (tech-focused, no pets) and C (data analyst, minimal pet focus) lack the document's emphasis on artisanal design, pet-centric durability, and holistic family/pet safety.",
+    "model": "solar-pro",
+    "prompt_chars": 31633,
+    "latency_sec": 1.6,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

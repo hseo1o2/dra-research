@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task4_User19_seed0",
+    "stage": "plan",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User9",
+      "User19",
+      "User21"
+    ],
+    "shuffled_order": [
+      "User21",
+      "User19",
+      "User9"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on a 35-40-year-old supply chain/manufacturing manager seeking executive education (MBA/EMBA) to advance leadership and strategic capabilities while balancing family. Candidate B (Zhou Jun) is a 35-40-year-old supply chain manager with a bachelor's in logistics, married with a 6-year-old daughter, and explicitly mentions career growth in supply chain sectors. The document's emphasis on program ROI, employer recognition in manufacturing/tech, and balancing work/family aligns with B's pragmatic, efficiency-focused personality and career trajectory. Candidate A (entrepreneur) and C (young female operations role) lack the direct occupational and life-stage match.",
+    "model": "solar-pro",
+    "prompt_chars": 23462,
+    "latency_sec": 1.64,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task4_User19_seed0",
+    "stage": "search",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User9",
+      "User19",
+      "User21"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User9",
+      "User21"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User21",
+    "correct": false,
+    "reasoning": "The document focuses on MBA/EMBA tuition, formats, and admissions, particularly highlighting programs from institutions like CEIBS, Fudan, and collaborations with international universities (e.g., WashU, HKU). Candidate C, an entrepreneur with an MBA from Fudan, aligns with this content due to his background in business education, interest in global programs, and decision-making style that values data and market analysis. His frequent international travel for business and focus on high-end, value-driven consumption (e.g., art, sustainability) also reflect the document's emphasis on premium, cross-border educational investments. Candidates A (supply chain manager) and B (internet product operations) lack the direct educational and professional context tied to EMBA/MBA programs discussed.",
+    "model": "solar-pro",
+    "prompt_chars": 24105,
+    "latency_sec": 2.12,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task4_User19_seed0",
+    "stage": "compress",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User9",
+      "User19",
+      "User21"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User21",
+      "User9"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on MBA/EMBA programs in Sichuan Province (e.g., Sichuan University, Southwest Jiaotong University) with an emphasis on supply chain management, logistics, and tuition details. Candidate A is a Supply Chain Manager based in Chengdu, graduated from Southwest Jiaotong University in Logistics Management, and actively seeks supply chain-related education. His queries about EMBA/MBA programs, tuition formats, and logistics align directly with the document's content. Candidates B (Shanghai-based entrepreneur) and C (Beijing-based internet professional) lack the regional, educational, and occupational ties to Sichuan or supply chain management that make Candidate A the clear match.",
+    "model": "solar-pro",
+    "prompt_chars": 27238,
+    "latency_sec": 1.64,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task4_User19_seed0",
+    "stage": "write",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User9",
+      "User19",
+      "User21"
+    ],
+    "shuffled_order": [
+      "User21",
+      "User9",
+      "User19"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on supply chain executives in [MASKED] (likely Chengdu, given regional references) balancing full-time work, family (married with a 6-year-old), and education. Candidate C is a 35\u201340-year-old supply chain manager in Chengdu with identical demographics (married, 6-year-old daughter) and a logistics background from Southwest Jiaotong University. The report\u2019s emphasis on regional programs (e.g., Southwest Jiaotong University\u2019s logistics focus), time management for family, and practical ROI aligns with C\u2019s pragmatic, efficiency-driven personality and local Chengdu context. Candidates A (Shanghai-based entrepreneur) and B (Beijing-based young professional) lack the supply chain expertise, regional ties, and mid-career family constraints central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29249,
+    "latency_sec": 1.8,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

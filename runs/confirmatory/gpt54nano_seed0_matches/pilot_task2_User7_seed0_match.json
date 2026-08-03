@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task2_User7_seed0",
+    "stage": "plan",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The brief is written for a graduate student in Beijing focused on new media technology and public opinion research, with Python/data analysis capability and an academic/journalism background\u2014matching Candidate A\u2019s profile exactly. It also emphasizes research skill development, academic environment, and cross-cultural communication in media/public opinion, aligning with A\u2019s analytical, data-driven orientation rather than B\u2019s advertising/creative writing or C\u2019s industry data-analyst career focus.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 24414,
+    "latency_sec": 1.44,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User7_seed0",
+    "stage": "search",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User7",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The queries and retrieved sources focus on visiting/recognized student programs, J-1/tuition/fees, and computational social science/new media research\u2014framing that aligns with a graduate student doing research and tracking academic opportunities. Candidate B\u2019s profile (graduate student in new media and public opinion research, uses Python/Excel, follows academic and media trends) best matches the document\u2019s research-oriented, program-admissions angle.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 26106,
+    "latency_sec": 1.56,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User7_seed0",
+    "stage": "compress",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User18",
+      "User7"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The excerpt focuses on visiting graduate student/researcher pathways (VSR/VGS), J-1 visa requirements, tuition/fees, and computational social science labs\u2014information typically sought by a current graduate student planning academic research stays. The emphasis on communication/computational social science, methodology critique, and lab/seminar environments aligns most with Candidate C\u2019s new media and public opinion research background.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 28599,
+    "latency_sec": 1.34,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User7_seed0",
+    "stage": "write",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The excerpt is explicitly framed for a Beijing graduate student in new media technology and public opinion research with a journalism/communication foundation and Python data-analysis proficiency\u2014matching Candidate A\u2019s background and location. It also emphasizes academic/PhD and research-infrastructure considerations typical of a graduate student planning an overseas exchange, aligning more closely with A than the advertising-focused Candidate B or the industry data-analyst Candidate C.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 30610,
+    "latency_sec": 1.94,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

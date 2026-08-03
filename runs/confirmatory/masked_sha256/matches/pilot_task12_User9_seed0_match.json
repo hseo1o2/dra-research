@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User5",
+      "User2"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on emotional management, self-awareness, and integrating practices like meditation, journaling, and yoga into a morning routine (7:00\u20139:00 AM). The document emphasizes a background in advertising/psychology, work-related stress, and creative interests\u2014all reflected in Candidate A's traits (minor in psychology, product operations role, low stress tolerance, and creative social media habits). The request for resources on emotional regulation, MBSR, and CBT also matches her need for emotional support and self-reflection. Candidates B (mechanical engineering focus) and C (clinical psychology graduate student) lack the document's specific blend of professional stress, creative interests, and morning routine integration.",
+    "model": "solar-pro",
+    "prompt_chars": 22701,
+    "latency_sec": 1.76,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User9",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "The document focuses on emotional regulation, mental well-being, and mindfulness practices (e.g., MBSR courses, emotion tracking worksheets), aligning with Candidate C's background in Clinical Psychology and her interest in psychology-related content. Her academic focus, consumption of psychology articles, and use of emotion-tracking tools (like DBT worksheets) directly mirror the document's themes. Candidates A (engineering) and B (product operations) lack this psychological framing, making C the most relevant match.",
+    "model": "solar-pro",
+    "prompt_chars": 24494,
+    "latency_sec": 1.47,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User5",
+      "User9"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "The document focuses on emotional regulation, CBT, and workplace stress management\u2014topics directly aligned with Candidate A's clinical psychology studies and interest in emotional communication. The document's academic tone, emphasis on practical techniques (e.g., RULER Framework, cognitive reframing), and references to peer-reviewed authors/publishers match A's habits of saving psychology research materials, participating in psychology forums, and studying EQ/CBT concepts. Candidate B (mechanical engineering) and C (product operations) lack the same depth of psychological training or professional focus on emotion regulation frameworks, making A the most likely audience.",
+    "model": "solar-pro",
+    "prompt_chars": 27412,
+    "latency_sec": 1.76,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User5",
+      "User2"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on emotional regulation, self-awareness, and stress management tailored for high-pressure corporate environments, particularly in internet product operations. Candidate A is explicitly described as working in Product Operations at an internet company, aligning directly with the document's target audience. The content emphasizes practical tools (e.g., RULER Framework, DBT skills) for workplace stress, cross-functional alignment, and rapid decision-making\u2014priorities matching Candidate A's role. While Candidate C has a psychology background, the document's framing (e.g., product launches, matrix organizations) reflects operational rather than clinical or academic needs. Candidate B's mechanical engineering focus is irrelevant to the document's context.",
+    "model": "solar-pro",
+    "prompt_chars": 29423,
+    "latency_sec": 1.82,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

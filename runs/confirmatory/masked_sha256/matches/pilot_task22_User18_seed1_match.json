@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task22_User18_seed1",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User15",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "Candidate A (Liu Lu) is a 25-30-year-old female data analyst with a statistics background, conservative risk profile, and strong financial foundation\u2014directly mirroring the document's author. The document's focus on structured retirement planning, annuity/insurance allocation, and risk-averse strategies aligns with her meticulous, data-driven personality and financial habits (e.g., debt-free status, mutual fund experience). Unlike Candidates B (freelance writer) and C (illustrator), Candidate A's profession, age, and conservative investment preferences are explicitly echoed in the document's framing, vocabulary (e.g., 'systematic investment plans,' 'replacement rates'), and emphasis on long-term financial security. Her Shanghai residence and focus on market standards in [MASKED] also match the document's regional context.",
+    "model": "solar-pro",
+    "prompt_chars": 23488,
+    "latency_sec": 1.94,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task22_User18_seed1",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User15",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User15",
+    "correct": false,
+    "reasoning": "The document focuses on retirement policies, pension systems, and demographic changes (e.g., retirement age adjustments for women, pension replacement rates, and commercial annuity rates). Candidate B, a freelance writer with a journalism background, has a strong interest in social issues, policy analysis, and cultural observations\u2014aligning with the document\u2019s framing of retirement reforms and their societal impact. Her content preferences (saving articles on social observation, feminism, and environmental protection) and decision-making style (consulting media/creative peers) suggest she would engage deeply with such policy-oriented content. Candidates A (data analyst) and C (illustrator) lack the explicit focus on policy analysis or social commentary evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 23446,
+    "latency_sec": 1.83,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task22_User18_seed1",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User18",
+      "User15"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on financial planning, insurance products, and retirement strategies tailored for a conservative 25\u201330-year-old female data analyst in Shanghai. Candidate B matches this profile exactly: she is a 25\u201330-year-old female data analyst in Shanghai with a conservative, research-driven approach to financial decisions. The document\u2019s emphasis on tax-deferred pensions, medical insurance, and long-term savings aligns with her practical, goal-oriented personality and her parents' expectations for career success. Unlike Candidates A (freelance illustrator) and C (freelance writer), B\u2019s profession, location, and risk-averse financial behavior directly mirror the document\u2019s framing and priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 27367,
+    "latency_sec": 1.85,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task22_User18_seed1",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User15",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document is a 30-year retirement plan tailored for a 25\u201330-year-old female data analyst with a statistics background, conservative risk appetite, and financial discipline. Candidate C matches all these attributes: she is a 25\u201330-year-old female data analyst with a statistics degree, conservative financial habits (researching purchases, favoring durable products), and a focus on long-term planning (certifications, career advancement). The document's emphasis on tax-deferred pensions, guaranteed-rate annuities, and risk mitigation aligns with her logical, detail-oriented personality and preference for data-driven decisions. Candidates A (freelance illustrator) and B (freelance writer) lack the financial/statistical background and conservative risk profile central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 29378,
+    "latency_sec": 1.92,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

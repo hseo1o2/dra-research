@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task12_User2_seed1",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "Candidate A, a Clinical Psychology graduate student, aligns most closely with the document's focus on self-awareness, emotional regulation, and psychology-based frameworks. The request for academically rigorous books, online courses on platforms like Coursera, and practical strategies (e.g., emotional trigger logs, mindfulness) directly mirrors her psychology background, academic interests, and documented habits (e.g., using psychology apps, sharing emotional communication articles). The emphasis on cost-effective, high-utility resources and integration into a structured daily routine (morning study, evening reading) also matches her time management preferences and rational consumption habits. Candidates B and C, while interested in self-improvement, lack the clinical psychology focus and specific emotional regulation context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 23113,
+    "latency_sec": 1.79,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task12_User2_seed1",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on psychological therapies (DBT, ACT), skills training manuals, and thought records\u2014topics directly tied to clinical psychology. Candidate B is a graduate student in Clinical Psychology with a strong interest in psychology-related content, online courses, and practical tools like thought records. Their behavioral traits (e.g., using psychology apps, saving psychology articles, and studying ACT/DBT) align with the document's technical framing and therapeutic focus. Candidates A (new media research) and C (computer science) lack the domain-specific expertise and content priorities reflected in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25142,
+    "latency_sec": 1.56,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task12_User2_seed1",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on clinical psychology theories and therapeutic protocols (DBT, ACT, CBT, transdiagnostic treatments), which align with Candidate A's identity as a Clinical Psychology graduate student. Her academic background, frequent engagement with psychology resources, and interest in emotional communication directly match the document's technical depth and therapeutic focus. Candidates B (new media) and C (computer science) lack the clinical psychology specialization required to produce or prioritize such content.",
+    "model": "solar-pro",
+    "prompt_chars": 27967,
+    "latency_sec": 1.57,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task12_User2_seed1",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User1",
+      "User7",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document's focus on clinical psychology, emotional regulation, and integration of multiple therapeutic modalities (DBT, ACT, CBT, MBCT, mentalization) aligns directly with Candidate C's background as a Clinical Psychology graduate student. The document's academic rigor, use of primary clinical texts, and emphasis on self-study/self-application mirror C's psychology-focused learning habits, content preferences (psychology articles, academic resources), and behavioral patterns (online psychology courses, cloud-based study notes). Candidates A (CS student) and B (new media researcher) lack the clinical psychology specialization and depth of engagement with therapeutic frameworks evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29978,
+    "latency_sec": 1.69,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

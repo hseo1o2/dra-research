@@ -1,0 +1,118 @@
+[
+  {
+    "run_id": "ablation_shuffled_actionable_task12_User5_seed0",
+    "stage": "plan",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "Candidate B, a graduate student in Clinical Psychology, aligns most closely with the document's focus on self-awareness, emotional management, and scientific/psychological grounding. The request for resources on emotional regulation, mindfulness, and cognitive behavioral techniques directly matches B's academic background, interest in psychology, and habit of engaging with psychology-related content. Additionally, B's preference for morning study time (7:30 AM wake-up) and structured daily routines align with the document's emphasis on integrating strategies into a morning schedule. While Candidate A shares some lifestyle interests, her focus on advertising and social media differs from the document's clinical/psychological framing. Candidate C, though a graduate student, focuses on mechanical engineering and lacks the psychological focus central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 22633,
+    "latency_sec": 1.83,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4828,
+    "output_tokens": 174,
+    "total_tokens": 5002,
+    "api_response_id": "b0a22e94-d646-46e7-9691-3bb0e817ef67"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task12_User5_seed0",
+    "stage": "search",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "Candidate B, a Clinical Psychology graduate student, aligns most closely with the document's focus on psychology-related books (e.g., emotion therapy, ACT, self-compassion) and their high Douban ratings. The document emphasizes mental health, emotional well-being, and therapeutic techniques\u2014topics directly relevant to B's academic background, research interests, and content preferences (psychology articles, therapy methods). While Candidate A shows some interest in mental health, her focus on advertising and social media engagement is less central to the document's core themes. Candidate C, focused on mechanical engineering, lacks the psychological framing evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 23642,
+    "latency_sec": 1.61,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6088,
+    "output_tokens": 147,
+    "total_tokens": 6235,
+    "api_response_id": "4209d37a-4423-4fca-a464-285f8b441a6c"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task12_User5_seed0",
+    "stage": "compress",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User5",
+      "User9"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "The document focuses on evidence-based psychological frameworks (CBT, ACT, MSC, MBSR, DBT, NVC) tailored for graduate students managing academic pressures. Candidate A, a Clinical Psychology graduate student, aligns perfectly with the document's emphasis on cognitive restructuring, self-compassion, and stress reduction techniques. Her academic background, interest in psychology, and daily habits (e.g., using time management tools, reading psychology articles) directly mirror the document's target audience. Candidates B (Mechanical Engineering) and C (Product Operations) lack the same depth of psychological training or explicit focus on therapeutic frameworks, making A the most relevant match.",
+    "model": "solar-pro",
+    "prompt_chars": 27412,
+    "latency_sec": 2.08,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6531,
+    "output_tokens": 152,
+    "total_tokens": 6683,
+    "api_response_id": "3ffb6643-8356-4074-9c9e-3b4f31bd4c9d"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task12_User5_seed0",
+    "stage": "write",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User5",
+      "User9"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "The document focuses on psychological frameworks (CBT, ACT, MBSR) and self-awareness strategies tailored for graduate students, aligning with Candidate A's Clinical Psychology background, academic interests, and daily use of psychology learning apps. The emphasis on structured routines, emotional regulation, and stress management mirrors A's documented habits (morning study, time management tools, and interest in psychology resources). Candidate B (Mechanical Engineering) and C (Product Operations) lack the same depth of psychological focus, with B prioritizing technical literature and C emphasizing creative/health content. The document's academic tone and specific psychological references are most directly relevant to A's profile.",
+    "model": "solar-pro",
+    "prompt_chars": 29423,
+    "latency_sec": 1.76,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6600,
+    "output_tokens": 153,
+    "total_tokens": 6753,
+    "api_response_id": "83b10675-0b50-45f1-b63d-012bd9525955"
+  }
+]

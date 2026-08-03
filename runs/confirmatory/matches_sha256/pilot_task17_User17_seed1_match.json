@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task17_User17_seed1",
+    "stage": "plan",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User17",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User17",
+    "correct": true,
+    "reasoning": "Candidate B (Chen Fang) best matches the document's focus on a multi-generational family vacation requiring accessible, restful environments for seniors and active options for younger members. Her profile highlights a family with high school/college-aged children and elderly parents, a preference for destinations balancing cultural/nature experiences with comfort, and a focus on health-conscious dining (low-oil/salt options). Unlike Candidate A (younger children) or C (no explicit mention of elderly care), B\u2019s nursing background and emphasis on family harmony align with the document\u2019s priorities for accessibility, health-conscious meals, and inclusive activities. Her recent adoption of a pet and reduced travel for academic conferences further reflect prioritizing family time, mirroring the document\u2019s emphasis on quality family bonding.",
+    "model": "solar-pro",
+    "prompt_chars": 23162,
+    "latency_sec": 1.69,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task17_User17_seed1",
+    "stage": "search",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on flight queries (Beijing to Sanya, Okinawa, Da Nang) and luxury hotel details (Ritz-Carlton Sanya), reflecting a user interested in travel planning, premium accommodations, and cost-effective flight options. Candidate B, a marketing manager with a focus on quality, family trips, and self-guided tours, aligns best. His preferences for high-end hotels, quarterly family vacations, and destinations like Zhangjiajie/Huangshan match the document's emphasis on travel logistics and luxury. Candidates A (prioritizing practicality and rural retreats) and C (focused on pet-friendly domestic trips) lack the document's international travel scope and premium framing.",
+    "model": "solar-pro",
+    "prompt_chars": 25513,
+    "latency_sec": 1.66,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task17_User17_seed1",
+    "stage": "compress",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on flight logistics and hotel bookings for Okinawa and Da Nang, emphasizing cost-effectiveness, detailed itinerary planning, and family-friendly considerations. Candidate B, a marketing manager with a rational, detail-oriented personality, aligns best. He prioritizes self-guided tours, values cost-effectiveness, and plans family trips quarterly\u2014matching the document's emphasis on budget-conscious travel planning and structured itineraries. His interest in photography and cultural sites also resonates with the document's focus on destinations like Okinawa and Da Nang, which blend natural beauty with cultural attractions.",
+    "model": "solar-pro",
+    "prompt_chars": 28006,
+    "latency_sec": 1.49,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task17_User17_seed1",
+    "stage": "write",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User17",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document emphasizes multi-generational travel planning with a focus on luxury, accessibility, and health-conscious dining\u2014aligning with Candidate A's profile as a pragmatic, family-oriented manager. Candidate A prioritizes quality of life, values cost-effectiveness in durable goods, and plans structured family activities, mirroring the report's dual-track itineraries and emphasis on high-end, accessible resorts. While Candidate B and C also value family, the document's focus on international business-class travel (e.g., direct flights, luxury resorts) and detailed logistical planning (e.g., dietary requests, accessibility features) better matches Candidate A's MBA-driven efficiency, global career exposure, and preference for curated experiences (e.g., Zhangjiajie, Huangshan). Candidate B's nursing background and pet-centric interests, and Candidate C's rural nostalgia and photography hobby, are less central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 30017,
+    "latency_sec": 1.97,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

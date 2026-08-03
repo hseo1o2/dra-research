@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task2_User2_seed0",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User1",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The brief is explicitly for a master\u2019s student in Clinical Psychology seeking overseas exchange/visiting programs, with emphasis on clinical practice, lab access, credit transfer, and visa/scholarship logistics\u2014matching Candidate C\u2019s clinical psychology background and Beijing-based student life. The document\u2019s focus on psychological self-adjustment, coping strategies, and cross-cultural communication also aligns with Candidate C\u2019s empathetic, communication-oriented profile.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 23950,
+    "latency_sec": 1.73,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User2_seed0",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The queries and sources focus on psychology education/training pathways (visiting graduate/non-degree programs, clinical practice licensing, and psychology-related scholarships) with an international/Asia context. Candidate A is the only profile explicitly aligned with clinical psychology graduate study and would be most likely to search for psychology-specific visiting student options and licensing/regulatory information.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 25474,
+    "latency_sec": 1.42,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User2_seed0",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The excerpt is a practical guide for Beijing-based graduate students seeking visiting/non-degree psychology programs abroad, emphasizing clinical psychology constraints (no patient care), lab access, and visa/language/GPA requirements. Candidate A matches this clinical psychology background and likely need for detailed admissions and regulatory guidance, whereas B is new media/public opinion and C is computer science.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 27967,
+    "latency_sec": 1.56,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User2_seed0",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The excerpt is a clinical psychology\u2013specific guide emphasizing clinical restrictions, IRB/ethics, visa pathways for psychology research, and career alignment for a Master\u2019s in Clinical Psychology. Candidate B is explicitly a graduate student in Clinical Psychology and would be the most likely audience for detailed program comparisons across US/UK/Europe/Asia, including research-lab access and regulatory boundaries.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 29978,
+    "latency_sec": 2.07,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "plan",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User22",
+      "User25"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User17",
+    "correct": true,
+    "reasoning": "The brief emphasizes a multi-generational family beach trip with strong focus on comfort, accessibility for seniors, cleanliness, and service quality\u2014priorities that align with a healthcare professional who plans carefully and values health and practical standards. The document\u2019s domestic coastal destinations from Beijing and the request for detailed accommodation/dining/activity planning match the planning style and interests (healthy eating, family harmony, self-guided itineraries, and saving reputable guides) of Candidate A.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 23395,
+    "latency_sec": 1.61,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "search",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User25",
+      "User17"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The excerpt is travel-planning oriented (July climate/typhoon risk, city-to-city transport times, and hotel accessibility), matching a retiree who uses Xiaohongshu/WeChat for practical domestic travel advice and prioritizes safety, comfort, and cost-effectiveness. The focus on family-friendly logistics and accessible accommodations aligns better with the older, comfort-and-safety driven profile than with the technical director (A) or the nurse/pet-focused professional (C).",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 25618,
+    "latency_sec": 1.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "compress",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User22",
+      "User25"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The excerpt is framed around a multi-generational July vacation with strong emphasis on senior accessibility, comfort, and weather/typhoon risk\u2014typical of a retiree planning family travel. It also focuses on practical transport comparisons (HSR vs flight durations) and safety/comfort tradeoffs rather than technical or work-related interests, aligning best with the older, family-centered profile C.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 28121,
+    "latency_sec": 1.57,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "write",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User17",
+    "correct": true,
+    "reasoning": "The excerpt is written as a practical, comfort-and-accessibility-focused family travel plan from Beijing, emphasizing senior barrier-free needs, low-stress logistics, and dietary adjustments\u2014matching a health-professional caregiver who plans trips around elderly comfort and wellbeing. It also aligns with a middle-aged parent managing a teen/college-age child and valuing high-quality, service-oriented accommodations and detailed planning.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 30132,
+    "latency_sec": 2.52,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

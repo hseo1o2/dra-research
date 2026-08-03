@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task27_User13_seed1",
+    "stage": "plan",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User14",
+      "User13",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User14",
+      "User13"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": false,
+    "reasoning": "Candidate B (Lin Nan) is a freelance illustrator with a strong creative background, aligning with the indie pop/folk music project's artistic nature. His focus on self-guided creation, budget-conscious yet quality-driven purchases (e.g., art supplies), and use of platforms like Bilibili for sharing creative processes mirror the document's emphasis on DIY music production and digital promotion. His interest in psychology (via saved articles) and emotional depth in art also resonates with the introspective tone of indie folk music. Candidates A (psychology student) and C (caf\u00e9 owner) lack the direct creative/artistic framing and technical curiosity about music production tools that define the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24042,
+    "latency_sec": 1.72,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task27_User13_seed1",
+    "stage": "search",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User14",
+      "User13",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User13",
+      "User14"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User14",
+    "correct": false,
+    "reasoning": "The document focuses on audio equipment (mics, interfaces), indie music production, and recording techniques\u2014topics aligning with Candidate C's profile as a freelance illustrator with interests in art, photography, and creative tools. While Candidate B (caf\u00e9 owner) and A (psychology student) lack direct ties to music production or audio gear, Candidate C's behavior\u2014such as using drawing software, sharing creative processes online, and traveling for artistic inspiration\u2014reflects a creative, tool-focused mindset. The document's technical framing (e.g., mic specs, interface comparisons) matches C's likely need for high-quality audio tools for content creation, while his interest in indie music and recording techniques aligns with his artistic and travel-inspired work. Candidates A and B show no evidence of such technical or creative audio interests.",
+    "model": "solar-pro",
+    "prompt_chars": 25735,
+    "latency_sec": 1.96,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task27_User13_seed1",
+    "stage": "compress",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User14",
+      "User13",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User14",
+      "User13"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": false,
+    "reasoning": "The document focuses on budgeting and equipment selection for independent music production, emphasizing cost-effective yet high-quality gear (e.g., microphones, interfaces, MIDI controllers) for indie pop/folk artists. Candidate B, a freelance illustrator, shares key traits: (1) **Creative independence** (freelance work mirrors the document's indie artist focus), (2) **Budget-conscious quality** (B prioritizes high-end tools within planned budgets, aligning with the RMB 20,000 framework), and (3) **Technical research habits** (B\u2019s detailed product comparisons and tool calls match the document\u2019s structured price analysis). Candidate A (psychology student) and C (caf\u00e9 owner) lack the document\u2019s technical/audio-production framing, which is central to B\u2019s creative workflow and equipment needs.",
+    "model": "solar-pro",
+    "prompt_chars": 28590,
+    "latency_sec": 2.09,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task27_User13_seed1",
+    "stage": "write",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User14",
+      "User13",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User2"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": false,
+    "reasoning": "The document focuses on independent folk/pop music production, budgeting, and DIY recording techniques\u2014topics aligning with Candidate A's background as a freelance illustrator with a strong creative/artistic identity. The guide's emphasis on self-directed projects, meticulous planning, and integration of personal aesthetics (e.g., visual design, branding) mirrors A's behavior: sharing creative processes online, valuing high-quality tools, and blending art with practical execution. Candidate B (caf\u00e9 owner) and C (psychology student) lack the document's technical/artistic depth and DIY music-production focus. A's frequent use of Bilibili for creative content also aligns with the guide's recommended platforms for promotion.",
+    "model": "solar-pro",
+    "prompt_chars": 30601,
+    "latency_sec": 1.93,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

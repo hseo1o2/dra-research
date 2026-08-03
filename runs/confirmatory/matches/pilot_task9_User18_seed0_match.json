@@ -1,0 +1,90 @@
+[
+  {
+    "run_id": "pilot_task9_User18_seed0",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User9",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "Candidate C is a Data Analyst with a Statistics background from Shanghai University of Finance and Economics, mirroring the document's author. Both share identical technical proficiencies (Python, SQL, Tableau) and career goals (transitioning to product/management roles). The document's focus on skill gap analysis, portfolio projects, and market demand aligns with Candidate C's meticulous, data-driven decision-making style and her documented interest in transitioning to product roles. The emphasis on Shanghai-based tech ecosystems and platforms like LinkedIn/Zhihu also matches her active professional networking habits. Candidates A (creative operations role) and B (investment management) lack the document's technical depth and career trajectory focus.",
+    "model": "solar-pro",
+    "prompt_chars": 22037,
+    "latency_sec": 1.67
+  },
+  {
+    "run_id": "pilot_task9_User18_seed0",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User9",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User9",
+      "User8"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "Candidate A, a data analyst transitioning to product management, aligns most closely with the document's focus on AI product manager skills, career transitions, and Shanghai recruitment trends. The document emphasizes technical skills (e.g., data literacy, ML fundamentals), portfolio projects for career pivots, and Shanghai-specific salary data\u2014all directly relevant to Candidate A's goals, certifications (data science/project management), and Shanghai-based residence. Candidate B (creative operations role) and C (investment manager) lack the document's technical/product focus and transition context.",
+    "model": "solar-pro",
+    "prompt_chars": 23505,
+    "latency_sec": 1.46
+  },
+  {
+    "run_id": "pilot_task9_User18_seed0",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User9",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User9",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on transitioning to an AI Product Manager role, emphasizing technical frameworks (AI PRDs, token economics, model evaluation), portfolio projects (RAG agent analytics), and skill gaps for data analysts. Candidate C is a Data Analyst with a Statistics background from SUFE (Shanghai University of Finance and Economics), actively pursuing certifications in data science and project management, and aiming to transition to product roles. The document\u2019s technical depth, focus on model evaluation (RAGAS, G-Eval), and portfolio projects align with C\u2019s background, goals, and interests in data-driven decision-making and career advancement. Candidates A (Investment Manager) and B (Product Operations) lack the technical/data-analyst profile central to the document\u2019s framing.",
+    "model": "solar-pro",
+    "prompt_chars": 26335,
+    "latency_sec": 1.74
+  },
+  {
+    "run_id": "pilot_task9_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User9",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User9",
+      "User8"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "Candidate A's background (SUFE Statistics degree, PMP certification, data analyst role) directly aligns with the document's focus on transitioning from data analytics to AI product management. The report emphasizes technical skills (Python, SQL, RAG, LLM evaluation) and Shanghai's ecosystem, matching A's local residence and career goals. The document's structured, data-driven tone and emphasis on probabilistic UX, token economics, and PRD development reflect A's meticulous, goal-oriented personality and interest in management/product roles. Candidate B (advertising background) and C (finance/investment) lack the statistical and data-analytic foundation central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 28346,
+    "latency_sec": 1.9
+  }
+]

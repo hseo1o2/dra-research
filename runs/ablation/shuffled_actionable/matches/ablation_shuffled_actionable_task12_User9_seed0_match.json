@@ -1,0 +1,118 @@
+[
+  {
+    "run_id": "ablation_shuffled_actionable_task12_User9_seed0",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User5",
+      "User2"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "Candidate A (Zhao Li) is a 22-25-year-old Product Operations professional in Beijing with an Advertising major and Psychology minor, aligning with the document's author profile. The document emphasizes emotional regulation, decision-making, and interpersonal relationships\u2014topics that resonate with Candidate A's low stress tolerance and need for emotional support. Her creative, social-media-active lifestyle (sharing art, selling hand-drawn creations) and interest in mental health articles further match the document's focus on self-awareness and evidence-based psychology. Candidate C, while also in psychology, is a graduate student, and the document's framing (structured guide for a working professional) better suits Candidate A's practical, routine-integrated needs (e.g., morning/evening routines, digital note-taking). Candidate B's engineering background and academic focus make him less relevant.",
+    "model": "solar-pro",
+    "prompt_chars": 22621,
+    "latency_sec": 1.91,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4824,
+    "output_tokens": 198,
+    "total_tokens": 5022,
+    "api_response_id": "b070e7f8-7a2f-4728-b3c1-1930caab0777"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task12_User9_seed0",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User9",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "Candidate C, a graduate student in Clinical Psychology, aligns most closely with the document's focus on psychology resources (e.g., CBT manuals, Yale psychology courses, emotional management). The document includes queries about Judith Beck's CBT textbook, Marsha Linehan's DBT manual, and Yale's psychology courses (e.g., 'Managing Emotions in Times of Uncertainty and Stress'), all directly relevant to clinical psychology training. Candidate C's academic background, online habits (psychology forums, Coursera), and content preferences (psychology articles, emotional communication) match the document's technical vocabulary, therapeutic frameworks, and emphasis on mental health education. Candidates A (mechanical engineering) and B (product operations) lack this domain-specific alignment.",
+    "model": "solar-pro",
+    "prompt_chars": 24843,
+    "latency_sec": 2.2,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5449,
+    "output_tokens": 175,
+    "total_tokens": 5624,
+    "api_response_id": "1cf07bb9-c75a-41be-a745-b109821b5cc0"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task12_User9_seed0",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User5",
+      "User9"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "The document focuses on evidence-based psychological therapies (CBT, DBT, ACT, Emotion Regulation) with academic depth, practical applications, and structured frameworks\u2014aligning with Candidate A's identity as a Clinical Psychology graduate student. Her profile highlights psychology-focused learning habits, interest in emotion regulation, and consumption of academic resources. Candidates B (Mechanical Engineering) and C (Product Operations) lack the domain-specific focus on clinical psychology frameworks, theoretical integration, and pedagogical applications central to the document. The document's emphasis on therapeutic skill modules (e.g., DEAR MAN, TIPP) and cognitive restructuring also matches A's practical application needs for workplace/interpersonal conflicts, unlike B's engineering focus or C's general mental health interest.",
+    "model": "solar-pro",
+    "prompt_chars": 27412,
+    "latency_sec": 1.99,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6155,
+    "output_tokens": 170,
+    "total_tokens": 6325,
+    "api_response_id": "f667bc36-dca3-4e46-b70c-c75fbd432330"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task12_User9_seed0",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User5",
+      "User2"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document explicitly targets an 'Internet product operations professional in Beijing with a background in advertising and a minor in psychology,' aligning perfectly with Candidate A's profile. The content prioritizes clinical psychology frameworks (CBT, DBT, ACT) applied to high-pressure tech environments, mirroring A's role in product operations and her need for emotional regulation in cross-functional dynamics. Vocabulary like 'operational incidents,' 'product launch metrics,' and 'cross-functional pushback' reflects A's professional context. Candidate C, while psychology-focused, lacks the product operations angle, and Candidate B's mechanical engineering background is irrelevant to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 29423,
+    "latency_sec": 1.62,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6536,
+    "output_tokens": 148,
+    "total_tokens": 6684,
+    "api_response_id": "b4f92851-23f0-4706-a6e3-2ec2a6c9de13"
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task12_User5_seed0",
+    "stage": "plan",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2",
+      "User11",
+      "User3"
+    ],
+    "shuffled_order": [
+      "User4",
+      "User2",
+      "User3",
+      "User5",
+      "User11"
+    ],
+    "predicted_label": "D",
+    "predicted_userid": "User5",
+    "correct": true,
+    "reasoning": "The document explicitly states the author is a 'graduate student in mechanical automation' seeking a structured self-study plan for emotional management. Candidate D is the only profile matching this exact occupation (Graduate Student in Mechanical Automation) and shares the same technical background (Mechanical Engineering). The request for analytical, evidence-based resources aligns with D's detail-oriented personality and preference for cost-effective, practical solutions. While Candidate C is also in mechanical engineering, he is an undergraduate, whereas the document specifies a graduate student. Candidates A, B, and E do not match the mechanical automation focus or graduate student status.",
+    "model": "solar-pro",
+    "prompt_chars": 41252,
+    "latency_sec": 2.36,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task12_User5_seed0",
+    "stage": "search",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2",
+      "User11",
+      "User3"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User4",
+      "User3",
+      "User5",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "Candidate A, a graduate student in Clinical Psychology, aligns most closely with the document's focus on psychology, emotion regulation, and well-being. The document includes searches for psychology books (e.g., 'Feeling Good' by David Burns, 'Mind Over Mood'), academic courses on well-being (Coursera's 'Science of Well-Being'), and Gross's Process Model of Emotion Regulation\u2014all core topics in clinical psychology. Candidate A's profile highlights her psychology studies, interest in emotional communication, and frequent engagement with psychology-related content, making her the most likely audience for this document. Other candidates (B, C, D, E) focus on law, engineering, or technology, which are less relevant to the document's psychological framing.",
+    "model": "solar-pro",
+    "prompt_chars": 43077,
+    "latency_sec": 2.17,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task12_User5_seed0",
+    "stage": "compress",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2",
+      "User11",
+      "User3"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User11",
+      "User3",
+      "User5",
+      "User4"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "The document focuses on psychological therapies (CBT, DBT, MBCT, EQ) with structured, analytical framing (e.g., 'logical protocol,' 'engineering appeal,' 'systematic application'). Candidate A, a clinical psychology graduate student, aligns perfectly: her academic background, daily psychology learning (3 hours), and content preferences (psychology articles, books) directly match the document's technical focus. The document's emphasis on structured emotional regulation (e.g., 'daily mood logs,' 'step-by-step workbook') reflects her rational, methodical approach to psychology. Other candidates (B: engineer, C/D: mechanical students, E: law student) lack her specialized psychological training and content consumption habits, making A the only essential match.",
+    "model": "solar-pro",
+    "prompt_chars": 45743,
+    "latency_sec": 2.47,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task12_User5_seed0",
+    "stage": "write",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2",
+      "User11",
+      "User3"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User2",
+      "User11",
+      "User3",
+      "User4"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User5",
+    "correct": true,
+    "reasoning": "The document emphasizes an analytical, systematic approach to emotional regulation, framed as an 'information-processing system' with structured protocols, tabular logs, and empirical experimentation. This aligns with Candidate A's profile as a Mechanical Engineering graduate student with a background in robotics automation, who values structured methodologies, cost-effectiveness, and rational problem-solving. The document's focus on CBT, DBT, and neuroscience as deterministic processes mirrors A's preference for technical frameworks and logical analysis. Unlike Candidate B (Clinical Psychology student) or E (Law student with Psychology minor), A lacks formal psychology training, making the document's 'debugging manual' framing more essential for self-study. Candidates C (Algorithm Engineer) and D (Mechanical Engineering undergrad) are less precise matches due to C's focus on AI/tech and D's younger age/lower academic maturity.",
+    "model": "solar-pro",
+    "prompt_chars": 47754,
+    "latency_sec": 2.91,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

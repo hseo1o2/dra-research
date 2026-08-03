@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task4_User21_seed1",
+    "stage": "plan",
+    "gt_userid": "User21",
+    "candidate_userids": [
+      "User21",
+      "User10",
+      "User8",
+      "User19",
+      "User4"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User19",
+      "User4",
+      "User21",
+      "User8"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate A (Liu Qiang) is a marketing manager in a foreign enterprise with an MBA from Shanghai Jiao Tong University, seeking to enhance career competitiveness through advanced degrees (MBA, EMBA, Data Analytics). The document's focus on balancing work/study, brand influence, career impact in the Chinese market, and ROI aligns with his pragmatic, detail-oriented personality and goals. His preference for Western management concepts combined with Eastern thinking mirrors the document's emphasis on global vs. domestic programs. Unlike Candidates B (supply chain focus), C (law student), D (entrepreneur), or E (investment manager), Candidate A's marketing background, age (30-35), and interest in data analytics directly match the document's scope and priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 40601,
+    "latency_sec": 2.32,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task4_User21_seed1",
+    "stage": "search",
+    "gt_userid": "User21",
+    "candidate_userids": [
+      "User21",
+      "User10",
+      "User8",
+      "User19",
+      "User4"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User21",
+      "User10",
+      "User8",
+      "User4"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User21",
+    "correct": true,
+    "reasoning": "The document focuses on MBA/EMBA program details (tuition, admissions, rankings) from top Chinese business schools (CEIBS, Tsinghua, Peking University). Candidate B, an entrepreneur with an MBA from Fudan University, aligns best due to his professional background in business leadership, interest in market analysis, and frequent international travel for business. His consumption patterns (high-end products, art collections) and content preferences (business trends, corporate management) reflect the document's emphasis on premium MBA programs and their value for executives. Other candidates (A: supply chain manager, C: marketing manager, D: investment manager, E: law student) lack the entrepreneurial focus or MBA-specific relevance seen in Candidate B.",
+    "model": "solar-pro",
+    "prompt_chars": 41647,
+    "latency_sec": 2.13,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task4_User21_seed1",
+    "stage": "compress",
+    "gt_userid": "User21",
+    "candidate_userids": [
+      "User21",
+      "User10",
+      "User8",
+      "User19",
+      "User4"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User19",
+      "User8",
+      "User21",
+      "User4"
+    ],
+    "predicted_label": "D",
+    "predicted_userid": "User21",
+    "correct": true,
+    "reasoning": "The document focuses on MBA/EMBA program details, tuition fees, rankings, and specialized master's degrees (e.g., Finance, Business Analytics) at top Chinese institutions. Candidate D, an entrepreneur with an MBA from Fudan University, aligns best due to his background in economics, business acumen, and interest in high-end education. His decision-making style (data-driven, market analysis) and consumption preferences (long-term value, limited-edition items) reflect the document's emphasis on ROI, rankings, and elite programs. Other candidates (A: marketing manager, B: supply chain, C: investment, E: law student) lack the direct entrepreneurial/business school focus or advanced degree relevance seen in Candidate D.",
+    "model": "solar-pro",
+    "prompt_chars": 44394,
+    "latency_sec": 2.09,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task4_User21_seed1",
+    "stage": "write",
+    "gt_userid": "User21",
+    "candidate_userids": [
+      "User21",
+      "User10",
+      "User8",
+      "User19",
+      "User4"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User21",
+      "User8",
+      "User4",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User21",
+    "correct": true,
+    "reasoning": "The document focuses on advanced management education, career development, and strategic decision-making for senior professionals, emphasizing global business leadership, executive programs (EMBA), and cross-border business execution. Candidate B, an entrepreneur with 10+ years of experience, aligns most closely with this content. His background in economics and MBA from Fudan University, combined with his interest in business trends, leadership, and international travel for business, reflects the document's emphasis on executive education, strategic value, and global mobility. The document's focus on ROI, corporate sponsorship, and C-suite readiness also matches his pragmatic, data-driven decision-making style and entrepreneurial goals.",
+    "model": "solar-pro",
+    "prompt_chars": 46405,
+    "latency_sec": 2.01,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

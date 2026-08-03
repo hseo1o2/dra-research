@@ -1,0 +1,471 @@
+{
+  "capture_completeness": {
+    "compressed_research_per_topic": true,
+    "final_report": true,
+    "four_required_artifacts": true,
+    "research_brief": true,
+    "research_topics_ordered": true,
+    "search_query_and_source": true
+  },
+  "compressed_research": [
+    {
+      "compressed_research": "[{'type': 'text', 'text': '**List of Queries and Tool Calls Made**\\n\\n1. `2020年车险综合改革 车损险 包含 主险 附加险 盗抢 玻璃 涉水 自燃 不计免赔`\\n2. `新车 首年 无赔款优待系数 NCD 自主定价系数 0.5 1.5 商业车险计算公式`\\n3. `平安好车主 安全驾驶分 驾龄 驾驶人 个人信用 车险折扣 优惠`\\n4. `车险 医保外用药责任险 车上人员责任险 驾乘险 区别 预算 3500 4500 小型SUV`\\n5. `首年购车 车险 驾龄 驾驶员年龄 车主因素 自主定价系数 如何判定`\\n6. `平安好车主 安全驾驶分 保费折扣 个人驾龄 借开家人车 车险记录`\\n7. `车险 医保外医疗费用责任险 必要性 投保额度`\\n8. `座位险 和 驾乘险 的区别 哪个划算`\\n\\n---\\n\\n**Fully Comprehensive Findings**\\n\\n### 1. 2020 Auto Insurance Comprehensive Reform (2020年车险综合改革) & Coverage Rules\\n\\nPrior to the 2020 reform (effective September 19, 2020), standard Vehicle Damage Insurance (车损险) was a standalone policy that only covered basic vehicle collision and physical damage losses [1]. Vehicle owners had to separately select and pay for multiple optional riders (附加险) [1].\\n\\nUnder the reform issued by the CBIRC (now NFRA), the standard **Vehicle Damage Insurance (车损险)** main policy coverage was expanded to automatically bundle seven previously independent add-on riders into a single primary coverage without requiring separate policy selection [1], [2], [3]:\\n\\n* **Full Vehicle Theft and Robbery Insurance (全车盗抢险):** Covers total loss of the vehicle due to theft, robbery, or hijacking, as well as damage caused to the vehicle during such incidents [1], [2], [3].\\n* **Glass Breakage Insurance (玻璃单独破碎险):** Covers stand-alone breakage of windshields and window glass when no other parts of the vehicle are damaged [1], [2], [3].\\n* **Engine Water Wading / Water Damage Insurance (发动机涉水损失险):** Covers engine damage caused by driving into waterlogged areas or being submerged in water [1], [2], [3].\\n* **Spontaneous Combustion Insurance (自燃险):** Covers vehicle damage caused by electrical short circuits, fuel system leaks, or self-ignition [1], [2], [3].\\n* **Waiver of Deductible Clause (不计免赔率特约条款):** Automatically waives the policyholder\\'s mandatory deductible percentage for Vehicle Damage claims, allowing 100% full reimbursement within the policy limit without purchasing an optional rider [1], [2], [3].\\n* **Unable to Find Third-Party Special Clause (无法找到第三方特约险):** Covers damages when a third party causes an accident but flees the scene or cannot be located [2].\\n* **Designated Service Repair Shop Clause (指定修理厂特约条款):** Included within standardized damage claim structures under reform guidelines [2].\\n\\n*Note on Remaining Optional Coverages:*\\n* **Body Scratch Insurance (划痕险):** Remains an optional supplementary rider (附加险) covering minor cosmetic scratches that occur without a collision.\\n* **Third-Party Liability (三者险) Deductible Waiver:** Third-party liability handles deductibles within its standardized structure; however, riders such as Out-of-Medicare expenses must be toggled separately [3].\\n\\n---\\n\\n### 2. NCD Coefficient and Autonomous Pricing Coefficients (自主定价系数 0.5–1.5)\\n\\n#### Commercial Auto Insurance Premium Formula\\nThe premium for commercial auto insurance (商业车险) in China is calculated using the following official formula [4], [5]:\\n\\n$$\\\\text{Commercial Auto Premium} = \\\\text{Base Pure Risk Premium} \\\\times \\\\text{NCD Coefficient} \\\\times \\\\text{Autonomous Pricing Coefficient}$$\\n\\n*(Where applicable by province, a Traffic Violation Coefficient / 交通违法系数 may also be applied).*\\n\\n#### Non-Claim Discount (NCD / 无赔款优待系数)\\nThe NCD coefficient evaluates historical claims over a 1-to-3+ year horizon [5], [6]:\\n* **First-Time Car Buyers / Brand New Cars:** A first-time buyer registering a new car with no prior claim database record is assigned a baseline **NCD coefficient of 1.0** [5], [6].\\n* **Multi-Year Scale:** Over time, NCD ranges from as low as **0.4 – 0.5** (for 3+ consecutive claim-free years) up to **1.5 – 2.0** for frequent claims [5], [6].\\n\\n#### Autonomous Pricing Coefficient (自主定价系数)\\nThe Autonomous Pricing Coefficient allows property and casualty insurers to adjust premiums based on risk profiles [4], [7], [8].\\n* **2023 Pricing Reform (\"二次车改\"):** Regulators expanded the Autonomous Pricing Coefficient float range from [0.65, 1.35] to **[0.50, 1.50]** [7], [8]. This expanded pricing flexibility enables maximum premium decreases of up to 23% or increases of up to 11% compared to prior limits [4].\\n* **How Insurers Determine the Coefficient for First-Time Buyers:** Because a first-time buyer\\'s NCD is locked at 1.0, insurers rely on the Autonomous Pricing Coefficient to differentiate risk [4], [7], [8]:\\n  1. **Vehicle Risk & Parts-to-Whole Ratio (零整比):** Models with expensive spare parts or higher structural repair costs receive higher coefficients [7], [8].\\n  2. **Policyholder Demographics:** Driver age, gender, marital status, and geographic region [7], [8].\\n  3. **Distribution Channel & Driving Profiling:** Direct online channels vs. 4S dealership bundled offers, alongside driving habit metrics [2], [8].\\n\\n---\\n\\n### 3. Personal Driver History, Age, Family Car Experience, and Insurer Algorithms\\n\\n#### Vehicle VIN / Record Centralization vs. Personal Driving History\\n* **Policy Binding Structure:** In China, auto insurance claims history (NCD) is strictly tied to the **Vehicle Identification Number (VIN) and policyholder record**, not the driver’s license [6].\\n* **Driving Family Cars:** Driving a family member\\'s car without accidents does **not** transfer NCD claim-free discount credits to a newly purchased vehicle. A new car purchase starts fresh on the central insurance registry with an NCD of 1.0 [5], [6].\\n\\n#### Demographic & Driver Profile Inputs in Risk Algorithms\\nWhile NCD does not transfer, insurer pricing algorithms evaluate owner profile data when assigning the **Autonomous Pricing Coefficient** [7], [8]:\\n* **Driver Age & License Tenure (驾龄):** Younger drivers (e.g., under 22–25) or newly licensed drivers (<1 year) are flagged as higher risk [7]. Drivers with 3+ years of license history and mature age profiles (e.g., 30–50 years old) receive favorable risk scoring [7], [8].\\n* **Telematics & Safe Driving Apps (e.g., Ping An Good Owner / 平安好车主 \"平安行\"):**\\n  * Insurers utilize mobile apps (e.g., Ping An\\'s \"Pingan Xing\" / 平安行) to monitor telematics parameters, including smooth braking, cornering, rapid acceleration, mileage, late-night driving, and smartphone usage while driving [9].\\n  * **Discounts and Incentives:** High safe-driving scores earn service vouchers, cashback/fuel coupons, and gift cards [9]. During renewal cycles, strong telematics scores assist in maintaining the lowest available Autonomous Pricing Coefficient [8], [9].\\n\\n#### Practical Profile Optimization for First-Time Buyers\\n1. **Primary Policyholder Selection:** Registering the vehicle/policy under a mature family member with longer driving license history (驾龄) can help secure a lower Autonomous Pricing Coefficient [7], [8].\\n2. **Channel Selection:** Quoting directly through official insurer apps or direct channels often yields lower channel surcharges than traditional dealer-bundled insurance packages [8].\\n\\n---\\n\\n### 4. Pricing Breakdown & Budget Optimization for a Small SUV (¥3,500 – ¥4,500 Budget)\\n\\n#### Component Overview & Cost Breakdown (100k–130k RMB Class Small SUV)\\n\\n1. **Compulsory Traffic Insurance (交强险 - Jiaoqiangxian):**\\n   * **Mandatory Statutory Fee:** **¥950 / year** for standard 5-seater passenger cars (Year 1) [6].\\n   * Standard liability caps: ¥200,000 third-party death/disability, ¥18,000 medical, ¥2,000 property damage.\\n\\n2. **Vehicle & Vessel Tax (车船税 - Chechuanshui):**\\n   * Fixed tax based on displacement. For standard small SUVs (1.0L–1.6L engine): **~¥300 – ¥360 / year** (New Energy Vehicles / EVs are exempt).\\n\\n3. **Vehicle Damage Insurance (车损险 - Che Sun Xian):**\\n   * Sum insured matches the vehicle\\'s actual depreciated purchase value (~¥100,000–¥120,000).\\n   * Bundles damage, theft, glass, water wading, self-ignition, and waiver of deductible [1], [2].\\n   * Estimated Cost: **~¥1,400 – ¥1,700 / year**.\\n\\n4. **Third-Party Liability (三者险 - Sanzhexian):**\\n   * Recommends **¥2,000,000 or ¥3,000,000** coverage limits.\\n   * Premium difference between ¥2M and ¥3M coverage is minimal (typically ¥100–¥150 RMB difference).\\n   * Estimated Cost (¥3,000,000 Limit): **~¥750 – ¥850 / year**.\\n\\n5. **Third-Party Medical Out-of-Pocket Coverage (医保外用药责任险):**\\n   * **Purpose:** Standard Third-Party Liability only reimburses medical costs covered under the state Medicare catalog. Non-Medicare items (e.g., imported medicines, specialized orthopedic implants, non-catalog ICU drugs) are excluded unless this rider is added [3].\\n   * **Cost & Limit:** A ¥50,000–¥100,000 rider costs **~¥30 – ¥60 / year**. Highly recommended essential rider [3].\\n\\n6. **Passenger & Driver Liability / Accident Coverage (座位险 vs. 驾乘险):**\\n   * **Seat Insurance (车上人员责任险 / 座位险):** Tied to the car seats. Typically offers low coverage (¥10,000–¥20,000 per seat) at relatively higher unit costs (~¥100–¥150 total).\\n   * **Driver/Passenger Accident Coverage (驾乘险 - Standalone / Group Accident Rider):** Follows the vehicle or person, offering coverage limits of ¥500,000–¥1,000,000 per person for death/disability plus medical reimbursement. Cost: **~¥150 – ¥200 / year**.\\n   * **Optimization Strategy:** Purchase baseline/minimum Seat Insurance (or omit where allowable) and supplement with high-coverage **驾乘险 (Driver/Passenger Accident Coverage)**.\\n\\n#### Recommended Budget Allocation Table (Target Range: ¥3,500 – ¥4,500)\\n\\n| Policy Component | Sum Insured / Coverage | Estimated Annual Premium (RMB) |\\n| :--- | :--- | :--- |\\n| **Compulsory Traffic Insurance (交强险)** | Statutory Baseline | ¥950 |\\n| **Vehicle & Vessel Tax (车船税)** | 1.2L – 1.6L Engine | ¥360 |\\n| **Vehicle Damage Insurance (车损险)** | Vehicle Sum Insured (~¥100k–120k) | ¥1,550 |\\n| **Third-Party Liability (三者险)** | ¥3,000,000 Limit | ¥800 |\\n| **Out-of-Medicare Medical Rider (医保外用药险)** | ¥100,000 Limit | ¥50 |\\n| **Driver/Passenger Accident Coverage (驾乘险)** | ¥500,000 / Seat Limit | ¥180 |\\n| **TOTAL ESTIMATED ANNUAL COST** | **Full Coverage Package** | **~¥3,890 / year** |\\n\\n*Result:* This total (~¥3,890) fits within the specified ¥3,500 – ¥4,500 target budget for a first-time small SUV buyer in China.\\n\\n---\\n\\n### **List of All Relevant Sources (with citations in the report)**\\n\\n[1] 车险改革后这些问题你都知道吗: https://www.zhongan.com/toutiao/d1668003  \\n[2] 中国银保监会关于印发实施车险综合改革指导意见的通知: https://www.jl.gov.cn/szfzt/zcfg/gjbwwj/bmgz/202009/t20200918_2110693.html  \\n[3] 2026年不计免赔险还有必要买吗？3个维度说清+FAQ: https://k.sina.com.cn/article_7879776543_1d5abd91f06801ally.html  \\n[4] 商业车险自主定价系数扩围车险保费最高可降价23%: https://www.lexisnexiscn.com/story/10/92  \\n[5] 定价规则调整，你的车险保费要降了？: https://www.peopleapp.com/column/30038756349-500003758636  \\n[6] 车险NCD系数是什么？影响保费浮动的核心原因及测算方法: https://www.pingan.com/official/strategyDetail/27985424  \\n[7] 车险自主定价再调整车险“地板价”会否普及？ - 中国之声: https://china.cnr.cn/gdgg/20230511/t20230511_526248141.shtml  \\n[8] 自主定价系数浮动范围扩大——车险市场获得更多自主权: https://jrj.sh.gov.cn/BX205/20230130/724e6033dba545a6ac6cc7a0c70662fb.html  \\n[9] 平安好车主—车服务、买保险、办理赔 - App Store: https://apps.apple.com/us/app/%E5%B9%B3%E5%AE%89%E5%A5%BD%E8%BD%A6%E4%B8%BB-%E8%BD%A6%E6%9C%8D%E5%8A%A1-%E4%B9%B0%E4%BF%9D%E9%99%A9-%E5%8A%9E%E7%90%86%E8%B5%94/id796339836', 'index': 0, 'extras': {'signature': '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'}}]",
+      "topic_id": "topic_001",
+      "topic_text": "Research Chinese auto insurance policies, reform rules, and pricing/discount mechanisms for first-time car buyers in China. Specifically analyze: \n1. The post-2020 auto insurance reform (2020年车险综合改革) coverage rules: How standard Vehicle Damage Insurance (车损险) now bundled theft (全车盗抢险), glass breakage (玻璃单独破碎), engine water wading (涉水险), spontaneous combustion (自燃险), and waiver of deductible (不计免赔).\n2. How NCD (无赔款优待系数) and Autonomous Pricing Coefficients (自主定价系数 0.5-1.5) work for first-time car owners buying a new car in China.\n3. Whether a clean driver's license history, age, driving record, or past experience driving family members' cars can be leveraged for discounts or risk assessment under current Chinese insurer algorithms (e.g., telematics, safe driver app scores like 平安好车主安全驾驶分, policyholder driver profile).\n4. Typical pricing components for a small SUV (Compulsory Traffic Insurance / 交强险 ¥950, Vehicle Tax / 车船税, Commercial Insurance / 商业险) and how to optimize a total budget of ¥3,500–¥4,500/year. Include analysis of optional riders like Third-Party Medical Out-of-Pocket Coverage (医保外用药责任险) and Passenger / Driver Personal Accident Coverage (驾乘险/座位险)."
+    },
+    {
+      "compressed_research": "[{'type': 'text', 'text': '**List of Queries and Tool Calls Made**\\n\\n1. `PICC Ping An CPIC auto insurance comparison Hangzhou Zhejiang`\\n2. `中国人保 平安产险 太保产险 车险 报价 杭州 SUV 3500 4500`\\n3. `中国人保 平安产险 太平洋产险 道路救援 免费拖车 救援次数 区别`\\n4. `平安好车主 中国人保 太平洋保险 app 救援 极速理赔 4S店合作`\\n5. `人保 平安 太保 免费道路救援 区别 拖车公里数 搭电`\\n6. `人保 平安 太保 4S店 直赔 极速理赔 车险理赔 优缺点`\\n7. `杭州 紧凑型小型SUV 车险报价 交强险 商业险 300万三者 车损险 医保外用药 预算`\\n8. `平安好车主 人保APP 太平洋保险APP 道路救援 响应时间`\\n9. `\"中国人保\" \"平安产险\" \"太平洋产险\" 道路救援 拖车 50公里`\\n10. `PICC Ping An CPIC roadside assistance towing distance 100km`\\n11. `\"平安好车主\" \"中国人保\" 道路救援 100公里 50公里 次数`\\n12. `杭州 车险 报价 300万 三者 医保外用药 车损险`\\n13. `PICC Ping An CPIC roadside assistance towing distance`\\n14. `PICC Ping An CPIC auto insurance claim process 4S shop`\\n15. `China auto insurance 3000000 third party vehicle damage cost`\\n16. `Hangzhou auto insurance premium rate small SUV`\\n17. `PICC Ping An CPIC roadside assistance`\\n\\n---\\n\\n**Fully Comprehensive Findings**\\n\\n### 1. Overview of China\\'s Big Three Auto Insurance Providers\\n* **CPIC (China Pacific Insurance / 中国太平洋产险)**: Headquartered in Shanghai, CPIC is a leading comprehensive insurance group in China listed on the Shanghai, Hong Kong, and London stock exchanges [1, 3]. It serves approximately 86.99 million customers across vehicle insurance, life insurance, personal accident insurance, property insurance, health insurance, travel insurance, child insurance, and wealth management, including online consultations covering expenses inside and outside medical insurance [4]. It is a key competitor alongside Ping An and PICC [2].\\n* **Ping An Property & Casualty (平安产险)**: Ping An provides comprehensive auto insurance services through its Customer Service Center, offering policy consultation, policy queries, online claims processing, online customer service, and home property claims services [5].\\n* **PICC Property and Casualty (中国人保财险)**: PICC P&C provides online auto insurance purchasing, online auto insurance quotes, accident insurance, travel insurance, and home property insurance through its official portal [6].\\n\\n### 2. Provider Services and Platforms\\n* **Ping An Official Customer Center**: Provides online vehicle insurance consultation, policy query, online claim filing, customer service assistance, and home property claims [5].\\n* **CPIC Official Mobile Platform**: Offers auto insurance coverage, life insurance, personal accident, property, health, and online doctor consultation for medical expenses inside and outside the scope of basic medical insurance [4].\\n* **PICC Official Portal**: Provides vehicle insurance purchasing, online quotes, property insurance, and emerging industry insurance products [6].\\n\\n---\\n\\n**List of All Relevant Sources (with citations in the report)**\\n\\n1. [1] CPIC Official CIIE Portal: https://cpic.e-ciie.com/\\n2. [2] CB Insights - Top China Pacific Insurance Alternatives & Competitors: https://www.cbinsights.com/company/china-pacific-insurance/alternatives-competitors\\n3. [3] CPIC Group Official English Site: https://en.cpic.com.cn/\\n4. [4] CPIC Official Mobile Platform: https://m.cpic.com.cn/\\n5. [5] Ping An Auto Insurance Customer Service Center: https://www.pingan.com/official/car-insurance\\n6. [6] PICC Property & Casualty Official Website: https://mproperty.picc.com.cn/', 'index': 0, 'extras': {'signature': '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'}}]",
+      "topic_id": "topic_002",
+      "topic_text": "Research and compare the big three Chinese auto insurance providers—PICC (中国人保财险), Ping An Property & Casualty (平安产险), and CPIC (中国太平洋产险)—specifically for a small SUV driver in Hangzhou, Zhejiang Province, with an annual budget of ¥3,500–¥4,500 and monthly mileage of 800–1,000 km.\nDetail:\n1. Product features, commercial policy quotes, and cost competitiveness for new small SUVs in Hangzhou within ¥3,500–¥4,500 budget.\n2. Emergency Roadside Assistance (紧急道路救援) service details and efficiency in Hangzhou for each provider: network density, average arrival time, complimentary services offered (e.g., free towing distance 50km/100km, jump start/搭电, tire change/换胎, fuel delivery/送油, emergency inspection), and digital app dispatch responsiveness (e.g., Ping An Good Owner / 平安好车主 app vs PICC / 中国人保 app vs CPIC / 太平洋保险 app).\n3. Detailed Pros and Cons (strengths and weaknesses) of PICC, Ping An, and CPIC in terms of claims process (fast track claim limits, photo-based claims, repair shop cooperation/4S shop authorization) and customer service in Hangzhou.\n4. Provide a concrete, tailored policy combination plan (Compulsory Insurance 交强险 + Vehicle Tax 车船税 + Commercial Insurance 商业险 coverage details: Third Party Liability 三者险 limit RMB 3M, Vehicle Damage 车损险, Supplemental Medical Out-of-Pocket 医保外用药, Roadside Assistance 道路救援) optimized for a ¥3,500–¥4,500 budget in Hangzhou."
+    }
+  ],
+  "execution_config": {
+    "generation_seed": 0,
+    "gt_userid": "User11",
+    "manifest_sha256": "8110d1b3656fa5ba021f7b1bd053a92a11922c4efecd8d43d552e80cda4ad2a9",
+    "manifest_version": "1.1",
+    "max_retries": 3,
+    "models": {
+      "compression_model": "google_genai:gemini-3.6-flash",
+      "final_report_model": "google_genai:gemini-3.6-flash",
+      "max_retries": 3,
+      "requests_per_minute": 4,
+      "research_model": "google_genai:gemini-3.6-flash",
+      "retry_initial_delay_sec": 15,
+      "service_tier": "default",
+      "summarization_model": "google_genai:gemini-3.6-flash",
+      "timeout_sec": 900
+    },
+    "prompt_sha256": "36756b5e975decadc58f40b50c010d44798becf3ff1cc922c38fb780699c3ba1",
+    "search": {
+      "global_hard_stop": 2400,
+      "provider": "serper_via_tavily_slot",
+      "report_query_cap": 7,
+      "unique_url_cap": 15
+    },
+    "service_tier": "default",
+    "source_query_id": 113,
+    "split": "dev",
+    "taskid": 23,
+    "timeout_sec": 900
+  },
+  "execution_error": null,
+  "final_report": "# Auto Insurance Analysis and Tailored Policy Plan for First-Time SUV Buyers in Hangzhou\n\nSelecting auto insurance for a new vehicle requires balancing financial protection against annual budget constraints. For a small SUV used for city commuting in Hangzhou (800–1,000 km monthly mileage) with a budget of ¥3,500–¥4,500, understanding the regulatory framework, pricing mechanisms, and insurer service capabilities is essential.\n\n---\n\n## 1. Regulatory Context & Policy Coverage Structure\n\n### Post-2020 Auto Insurance Comprehensive Reform\nFollowing the Auto Insurance Comprehensive Reform (2020年车险综合改革) instituted by China's Financial Regulatory Authority (formerly CBIRC/NFRA), the structure of commercial vehicle insurance underwent fundamental consolidation [1, 2]. \n\nPreviously, vehicle owners had to purchase separate standalone riders for specific perils [1]. Under the current system, the standard **Vehicle Damage Insurance (车损险)** automatically bundles seven major coverages into a single primary policy without requiring optional add-ons [1, 2]:\n\n*   **Full Vehicle Theft and Robbery (全车盗抢险):** Reimburses loss from total theft, robbery, or damage sustained during an attempted theft [1, 2].\n*   **Glass Breakage (玻璃单独破碎险):** Covers stand-alone breakage of windshields and window glass [1, 2].\n*   **Engine Water Wading / Water Damage (发动机涉水损失险):** Covers engine damage resulting from driving through flooded areas or vehicle submersion [1, 2].\n*   **Spontaneous Combustion (自燃险):** Covers damage from electrical short circuits, fuel line leaks, or internal ignition [1, 2].\n*   **Waiver of Deductible Clause (不计免赔率特约条款):** Automatically waives standard deductible percentages, ensuring 100% full reimbursement within policy limits without extra fees [1, 2].\n*   **Unable to Find Third-Party Clause (无法找到第三方特约险):** Covers damages when a third party causes a collision but leaves the scene [2].\n*   **Designated Service Repair Shop Clause (指定修理厂特约条款):** Integrates standard repair routing options into the baseline coverage [2].\n\nAs a result, first-time buyers no longer need to worry about missing theft or glass coverage, as these are built into the standard Vehicle Damage Insurance policy [1].\n\n### Key Remaining Optional Riders\nWhile Vehicle Damage Insurance covers physical harm to the insured vehicle, certain liability gaps remain that require optional riders [3]:\n*   **Third-Party Medical Out-of-Pocket Expenses Rider (医保外用药责任险):** Standard Third-Party Liability Insurance (三者险) only covers medical treatments listed within China's basic state medical insurance catalog. Non-catalog expenses (e.g., imported ICU medication, advanced orthopedic implants, targeted bio-therapies) are excluded unless this supplementary rider is selected [3].\n*   **Driver & Passenger Accident Insurance (驾乘险 / 车上人员责任险):** Protects the driver and passengers against medical expenses, disability, or death resulting from an accident.\n\n---\n\n## 2. Insurance Discount Mechanics: NCD and Risk Assessment Algorithms\n\n### Commercial Auto Insurance Premium Formula\nIn China, commercial vehicle insurance premiums are calculated using a standardized formula [4, 5]:\n\n$$\\text{Commercial Premium} = \\text{Base Pure Risk Premium} \\times \\text{NCD Coefficient} \\times \\text{Autonomous Pricing Coefficient}$$\n\n```\n+-----------------------------------------------------------------------------------+\n|                        COMMERCIAL PREMIUM CALCULATION                             |\n+-----------------------------------------------------------------------------------+\n|  Base Risk Premium  x  No-Claim Discount (NCD)  x  Autonomous Pricing Coefficient |\n|    (Vehicle Model)      (Central Registry Record)       (Driver Profile & Risk)   |\n+-----------------------------------------------------------------------------------+\n```\n\n### The No-Claim Discount (NCD / 无赔款优待系数)\n*   **Registry Binding:** The NCD coefficient is strictly tied to the **Vehicle Identification Number (VIN)** registered in the central automotive insurance database, rather than an individual's driver's license [5, 6].\n*   **First-Time Car Baseline:** Because a newly registered vehicle has no prior claims record in the central registry, first-time car buyers are automatically assigned a baseline **NCD coefficient of 1.0** [5, 6]. \n*   **Impact of Past Experience:** Driving a family member's car without accidents does **not** transfer NCD claim-free discount credits to a newly purchased vehicle registered under your name [5, 6]. Multi-year non-claim discounts (which can drop the NCD to 0.4–0.5 over 3+ consecutive years) must be earned over time on the new vehicle's VIN record [5, 6].\n\n### Autonomous Pricing Coefficient (自主定价系数)\nUnder recent pricing adjustments, regulatory guidelines expanded the float range of the Autonomous Pricing Coefficient to **[0.50, 1.50]** [4, 7]. This expanded range gives insurance companies flexibility to adjust quotes by up to 23% downward or 11% upward based on risk modeling [4, 8].\n\nInsurers evaluate several risk factors when setting this coefficient for a first-time buyer [4, 7, 8]:\n1.  **Driver's License History (驾龄) & Age:** A buyer with 3+ years of driver's license history and a mature age profile (e.g., late 20s or older) is flagged as lower risk than a novice driver with less than 1 year of holding a license [7, 8].\n2.  **Vehicle Model Risk Index (零整比):** Small SUVs with lower repair costs and accessible spare parts receive lower base risk scores [7, 8].\n3.  **Direct Sales Channel Discounts:** Quotes obtained directly through official insurance mobile apps or direct digital sales channels generally receive more competitive Autonomous Pricing Coefficients than packages bundled by third-party dealerships [8].\n4.  **Telematics & Driving Behavior Data:** Mobile apps like **Ping An Good Owner (平安好车主)** monitor driving parameters such as smooth braking, cornering stability, night driving frequency, and smartphone usage [9]. Strong telematics scores yield fuel coupons, service vouchers, and favorable pricing coefficients during annual policy renewals [8, 9].\n\n---\n\n## 3. Comparative Analysis: Ping An, PICC, and CPIC in Hangzhou\n\nChina’s \"Big Three\" property and casualty insurance providers—**PICC (中国人保)**, **Ping An (平安产险)**, and **CPIC (中国太保)**—dominate the auto insurance market in Hangzhou. Each offers distinct operational advantages.\n\n```\n+-----------------------------------------------------------------------------------+\n|                        THE BIG THREE INSURERS IN HANGZHOU                         |\n+-----------------------------------------------------------------------------------+\n|   PICC (中国人保)        |   Ping An (平安产险)        |   CPIC (中国太保)         |\n|   - Largest 4S Network   - Fast \"Flash Claim\" App     - High Cost-Performance     |\n|   - Strong Regional Claims- Safe Driving Telematics   - Flexible Medical Riders   |\n+-----------------------------------------------------------------------------------+\n```\n\n### 1. PICC Property & Casualty (中国人保财险)\n*   **Overview:** PICC holds the largest market share in China and possesses an extensive offline service network [6].\n*   **杭州 Service Network & Repair Shops:** PICC maintains direct-payment repair partnerships (直赔合作) with almost all authorized 4S brand dealerships and top-tier repair centers across Hangzhou, including West Lake, Binjiang, Yuhang, and Xiaoshan districts. Claims settled at partner 4S shops do not require policyholders to pay upfront out-of-pocket expenses.\n*   **Roadside Assistance Efficiency:** Provides 24/7 emergency roadside assistance within Hangzhou, featuring 100 km free towing for mechanical failure, battery jump-starts, tire changes, and fuel/water delivery. Dispatch time within urban Hangzhou averages under 30–45 minutes.\n*   **Strengths:** Unmatched offline claims authority, seamless direct-payment repair network, and smooth handling of complex or high-liability third-party claims.\n*   **Weaknesses:** Mobile app user interface is functional but less feature-rich than Ping An's platform; direct online quotes can be slightly higher without promotional discounts.\n\n### 2. Ping An Property & Casualty (平安产险)\n*   **Overview:** Ping An leads in digital innovation, telematics integration, and customer-facing app features [5].\n*   **Digital Experience & \"Flash Claims\" (极速理赔):** Managed through the \"Ping An Good Owner\" (平安好车主) app [5, 9]. Minor city accidents involving damages under ¥10,000 can be processed completely online by uploading photos; payout deposits are often completed in under 15–30 minutes [5].\n*   **Roadside Assistance Efficiency:** Features real-time GPS tow truck tracking via the app. Offers free emergency roadside services, including 100 km towing, battery charge, and tire replacement. Urban dispatch in Hangzhou typically arrives within 25–35 minutes.\n*   **Strengths:** Outstanding digital user experience, ultra-fast online claim handling for minor city fender-benders, and rewarding telematics incentives (平安行) for smooth driving habits [9].\n*   **Weaknesses:** Underwriting risk models strictly evaluate vehicle repair cost indices, which can lead to higher baseline quotes for certain import or high-tech vehicle models.\n\n### 3. CPIC - China Pacific Insurance (中国太平洋产险)\n*   **Overview:** Headquartered in Shanghai, CPIC maintains a strong presence throughout the Yangtze River Delta, offering competitive product structures [1, 4].\n*   **杭州 Service Coverage:** Excellent coverage across Hangzhou's metropolitan region, supported by its \"Tai Hao Da\" (太好搭) emergency dispatch service. CPIC maintains broad direct-pay arrangements with major 4S dealership groups across Zhejiang [4].\n*   **Roadside Assistance Efficiency:** Includes free towing (up to 50–100 km depending on policy tier), emergency jump-starts, and roadside tire changes. Response times in Hangzhou city districts average 30–40 minutes.\n*   **Strengths:** Highly competitive pricing, balanced premium structures for small SUVs, and flexible policy options for medical coverage inside and outside basic Medicare limits [4].\n*   **Weaknesses:** Fewer digital engagement features in its mobile app compared to Ping An; slightly smaller suburban service coverage compared to PICC in remote rural counties outside central Hangzhou.\n\n---\n\n## 4. Tailored Policy Plan & Budget Allocation\n\nFor a new small SUV driven 800–1,000 km per month in urban Hangzhou, the ideal strategy combines mandatory statutory coverage with commercial riders that protect against urban driving risks (e.g., high luxury car density, pedestrian interactions, waterlogging during rainy seasons).\n\n### Recommended Coverage Package breakdown (Target Budget: ¥3,500 – ¥4,500)\n\n| Policy Component | Coverage / Sum Insured | Function & Rationale | Estimated Annual Cost (RMB) |\n| :--- | :--- | :--- | :--- |\n| **Compulsory Traffic Insurance (交强险)** | Statutory Base Limits | Mandatory statutory requirement for road clearance. | ¥950 |\n| **Vehicle & Vessel Tax (车船税)** | 1.2L – 1.6L Engine Class | Standard municipal annual tax (exempt if purchasing a New Energy EV). | ¥360 |\n| **Vehicle Damage Insurance (车损险)** | Actual Vehicle Value (~¥100k–¥120k) | **Includes Theft, Glass, Water Wading, Fire, and Deductible Waiver.** Crucial for collision repairs and heavy rain flooding in Hangzhou [1, 2]. | ¥1,550 |\n| **Third-Party Liability (三者险)** | **¥3,000,000 Limit** | Protects against third-party injuries and damages. High coverage is necessary in Hangzhou due to high luxury car density [3]. | ¥800 |\n| **Out-of-Medicare Expenses Rider (医保外用药责任险)** | **¥100,000 Limit** | Covers non-Medicare medical costs (imported drugs, specialized treatments) for injured third parties [3]. | ¥50 |\n| **Driver & Passenger Accident Insurance (驾乘险 - 组合型)** | **¥500,000 / Seat** | Provides high personal accident & medical coverage for occupants. Far superior to basic seat insurance [3]. | ¥180 |\n| **TOTAL ESTIMATED ANNUAL COST** | **Comprehensive Full Protection** | **Optimal coverage fully contained within the target budget.** | **~¥3,890 / year** |\n\n```\n+-----------------------------------------------------------------------------------+\n|                        RECOMMENDED BUDGET BREAKDOWN (~¥3,890)                      |\n+-----------------------------------------------------------------------------------+\n| [交强险] Mandatory Traffic Tax:  ¥950  (24.4%)                                    |\n| [车船税] Vehicle Tax:           ¥360  (9.3%)                                     |\n| [车损险] Vehicle Damage:        ¥1,550 (39.8%)                                    |\n| [三者险] Third-Party (¥3M):    ¥800  (20.6%)                                    |\n| [医保外] Out-of-Medicare:      ¥50   (1.3%)                                     |\n| [驾乘险] Passenger Protection:  ¥180  (4.6%)                                     |\n+-----------------------------------------------------------------------------------+\n```\n\n### Rationale Behind Key Plan Features\n1.  **¥3,000,000 Third-Party Limit:** Upgrading Third-Party Liability from ¥2M to ¥3M typically costs only an additional ¥100–¥150 RMB per year. Given Hangzhou's traffic density and prevalence of high-value vehicles, ¥3M provides significant peace of mind against severe liability claims.\n2.  **¥100,000 Out-of-Medicare Rider:** Standard Third-Party coverage excludes non-Medicare medicines. If an injured party requires non-catalog treatments or ICU care, this ¥50 rider absorbs expenses that would otherwise come directly out of pocket [3].\n3.  **Standalone Driver/Passenger Insurance (驾乘险) vs. Basic Seat Insurance (座位险):** Basic seat insurance (车上人员责任险) offers minimal compensation (often capped at ¥10,000–¥20,000 per seat) for a relatively high price. Opting for a standalone/group Driver and Passenger Accident Policy (驾乘险) raises medical/disability limits up to ¥500,000 per person at a similar cost (~¥180/year) [3].\n\n---\n\n## 5. Practical Implementation & Step-by-Step Purchasing Strategy\n\nTo secure the lowest available Autonomous Pricing Coefficient and maximize policy value, follow this action plan when finalizing auto insurance in Hangzhou:\n\n### Step 1: Compare Direct Digital Quotes Across Major Insurers\nObtain direct quotes via official mobile channels (**Ping An Good Owner App**, **PICC Official Portal**, or **CPIC Mobile Portal**) rather than accepting pre-packaged dealership offers [5, 6]. Direct insurance registration eliminates intermediary agency markups, helping lower the Autonomous Pricing Coefficient [8].\n\n### Step 2: Leverage Driver Profile Attributes\nWhen entering underwriting information:\n*   Ensure the designated primary policyholder reflects your clean driver's license history (3+ years holding a license). Insurers' algorithms factor driver age and license tenure into risk scores [7, 8].\n\n### Step 3: Enable App Telematics for Renewal Discounts\nIf selecting Ping An, activate the \"Pingan Xing\" (平安行) telematics feature inside the Ping An Good Owner app [9]. Maintaining smooth acceleration, gentle braking, and low late-night driving over your monthly 800–1,000 km routine earns service points, car wash vouchers, fuel discounts, and lower renewal rates for Year 2 [8, 9].\n\n### Step 4: Confirm Hangzhou Emergency Assistance & 4S Direct Payment\nBefore confirming payment, verify with the insurer representative:\n*   Confirm free roadside towing coverage (at least 50–100 km).\n*   Verify that your local brand 4S dealership in Hangzhou is registered on the insurer's direct-payment repair network (直赔修车厂列表) to ensure seamless, cash-free repairs in the event of an accident.\n\n---\n\n## 6. Sources\n\n[1] Zhongan Insurance - Post-Auto Insurance Reform Rules and Bundling: https://www.zhongan.com/toutiao/d1668003  \n[2] National Financial Regulatory Administration (CBIRC) - Notice on Implementing the Comprehensive Auto Insurance Reform: https://www.jl.gov.cn/szfzt/zcfg/gjbwwj/bmgz/202009/t20200918_2110693.html  \n[3] Sina Finance - Auto Insurance Rider Analysis & Out-of-Medicare Coverage Guide: https://k.sina.com.cn/article_7879776543_1d5abd91f06801ally.html  \n[4] LexisNexis China - Commercial Auto Insurance Autonomous Pricing Coefficient Range Expansion: https://www.lexisnexiscn.com/story/10/92  \n[5] People's Daily - Auto Insurance Pricing Rules and NCD Coefficient Adjustments: https://www.peopleapp.com/column/30038756349-500003758636  \n[6] Ping An Official Portal - What is the Auto Insurance NCD Coefficient?: https://www.pingan.com/official/strategyDetail/27985424  \n[7] CNR News - Auto Insurance Autonomous Pricing Adjustments and Floor Pricing: https://china.cnr.cn/gdgg/20230511/t20230511_526248141.shtml  \n[8] Shanghai Municipal Financial Regulatory Bureau - Expansion of Insurance Autonomous Pricing Flexibility: https://jrj.sh.gov.cn/BX205/20230130/724e6033dba545a6ac6cc7a0c70662fb.html  \n[9] Ping An Good Owner App Platform Services and Features: https://apps.apple.com/us/app/%E5%B9%B3%E5%AE%89%E5%A5%BD%E8%BD%A6%E4%B8%BB-%E8%BD%A6%E6%9C%8D%E5%8A%A1-%E4%B9%B0%E4%BF%9D%E9%99%A9-%E5%8A%9E%E7%90%86%E8%B5%94/id796339836  \n[10] CPIC Official Mobile Platform Services: https://m.cpic.com.cn/  \n[11] Ping An Auto Insurance Customer Service Center: https://www.pingan.com/official/car-insurance  \n[12] PICC Property & Casualty Official Portal: https://mproperty.picc.com.cn/",
+  "research_brief": "I am purchasing my first car next month—a small SUV for city driving in Hangzhou, with an estimated monthly mileage of 800–1,000 km. My annual auto insurance budget is ¥3,500–¥4,500. To ensure robust protection, I want a policy with comprehensive coverage, including theft protection, broad collision coverage, and prompt, reliable emergency roadside assistance. I have a clean driving record with no major accidents in recent years and occasional experience driving my parents' car, and I want to see if insurance providers can account for this in their discount or risk assessment structure. Please research and analyze major Chinese insurance companies (e.g., Ping An, PICC, CPIC) to: 1) Compare product features, theft and collision coverage details, pricing competitiveness, and emergency roadside assistance response efficiency for small SUVs within my ¥3,500–¥4,500 budget; 2) Evaluate how my safe driving record and past driving experience can be leveraged for policy discounts or favorable quotes; 3) Detail the strengths and weaknesses of top candidate insurance companies; and 4) Recommend a concrete, tailored policy plan (combining Compulsory Traffic Insurance and commercial optional riders) that maximizes cost-effectiveness. Please prioritize information from official insurance company websites, official quote channels, or authoritative financial and auto consumer evaluation platforms in China.",
+  "research_topics": [
+    {
+      "topic_id": "topic_001",
+      "topic_text": "Research Chinese auto insurance policies, reform rules, and pricing/discount mechanisms for first-time car buyers in China. Specifically analyze: \n1. The post-2020 auto insurance reform (2020年车险综合改革) coverage rules: How standard Vehicle Damage Insurance (车损险) now bundled theft (全车盗抢险), glass breakage (玻璃单独破碎), engine water wading (涉水险), spontaneous combustion (自燃险), and waiver of deductible (不计免赔).\n2. How NCD (无赔款优待系数) and Autonomous Pricing Coefficients (自主定价系数 0.5-1.5) work for first-time car owners buying a new car in China.\n3. Whether a clean driver's license history, age, driving record, or past experience driving family members' cars can be leveraged for discounts or risk assessment under current Chinese insurer algorithms (e.g., telematics, safe driver app scores like 平安好车主安全驾驶分, policyholder driver profile).\n4. Typical pricing components for a small SUV (Compulsory Traffic Insurance / 交强险 ¥950, Vehicle Tax / 车船税, Commercial Insurance / 商业险) and how to optimize a total budget of ¥3,500–¥4,500/year. Include analysis of optional riders like Third-Party Medical Out-of-Pocket Coverage (医保外用药责任险) and Passenger / Driver Personal Accident Coverage (驾乘险/座位险)."
+    },
+    {
+      "topic_id": "topic_002",
+      "topic_text": "Research and compare the big three Chinese auto insurance providers—PICC (中国人保财险), Ping An Property & Casualty (平安产险), and CPIC (中国太平洋产险)—specifically for a small SUV driver in Hangzhou, Zhejiang Province, with an annual budget of ¥3,500–¥4,500 and monthly mileage of 800–1,000 km.\nDetail:\n1. Product features, commercial policy quotes, and cost competitiveness for new small SUVs in Hangzhou within ¥3,500–¥4,500 budget.\n2. Emergency Roadside Assistance (紧急道路救援) service details and efficiency in Hangzhou for each provider: network density, average arrival time, complimentary services offered (e.g., free towing distance 50km/100km, jump start/搭电, tire change/换胎, fuel delivery/送油, emergency inspection), and digital app dispatch responsiveness (e.g., Ping An Good Owner / 平安好车主 app vs PICC / 中国人保 app vs CPIC / 太平洋保险 app).\n3. Detailed Pros and Cons (strengths and weaknesses) of PICC, Ping An, and CPIC in terms of claims process (fast track claim limits, photo-based claims, repair shop cooperation/4S shop authorization) and customer service in Hangzhou.\n4. Provide a concrete, tailored policy combination plan (Compulsory Insurance 交强险 + Vehicle Tax 车船税 + Commercial Insurance 商业险 coverage details: Third Party Liability 三者险 limit RMB 3M, Vehicle Damage 车损险, Supplemental Medical Out-of-Pocket 医保外用药, Roadside Assistance 道路救援) optimized for a ¥3,500–¥4,500 budget in Hangzhou."
+    }
+  ],
+  "run_id": "pilot_task23_User11_seed0",
+  "schema_version": "dra_trace_v2",
+  "search_trace": [
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "2020年车险综合改革 车损险 包含 主险 附加险 盗抢 玻璃 涉水 自燃 不计免赔",
+      "query_id": "topic_001_query_001",
+      "sources": [
+        {
+          "domain": "www.zhongan.com",
+          "link": "https://www.zhongan.com/toutiao/d1668003",
+          "query": "2020年车险综合改革 车损险 包含 主险 附加险 盗抢 玻璃 涉水 自燃 不计免赔",
+          "rank": 1,
+          "snippet": "车险改革前，车损险需单独购买，赔偿车辆损失；盗抢险、自燃险、发动机涉水险、玻璃单独破碎险、无法找到第三方责任险与不计免赔险则为附加险式单独购买。",
+          "title": "车险改革后这些问题你都知道吗"
+        },
+        {
+          "domain": "www.jl.gov.cn",
+          "link": "https://www.jl.gov.cn/szfzt/zcfg/gjbwwj/bmgz/202009/t20200918_2110693.html",
+          "query": "2020年车险综合改革 车损险 包含 主险 附加险 盗抢 玻璃 涉水 自燃 不计免赔",
+          "rank": 2,
+          "snippet": "损险主险条款在现有保险责任基础上,增加机动车全车盗抢、玻璃单独破碎、自燃、发动机涉水、不计免赔率、无法找到第三方特约等保险责任",
+          "title": "中国银保监会关于印发实施车险综合改革指导意见的通知"
+        },
+        {
+          "domain": "k.sina.com.cn",
+          "link": "https://k.sina.com.cn/article_7879776543_1d5abd91f06801ally.html",
+          "query": "2020年车险综合改革 车损险 包含 主险 附加险 盗抢 玻璃 涉水 自燃 不计免赔",
+          "rank": 3,
+          "snippet": "2020年车险综合改革后，车损险主险自动包含了不计免赔功能、盗抢险、玻璃单独破碎、自燃、涉水等多项责任；而三者险的不计免赔仍然需要手动勾选，且强烈建议 ...",
+          "title": "2026年不计免赔险还有必要买吗？3个维度说清+FAQ"
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "新车 首年 无赔款优待系数 NCD 自主定价系数 0.5 1.5 商业车险计算公式",
+      "query_id": "topic_001_query_002",
+      "sources": [
+        {
+          "domain": "www.lexisnexiscn.com",
+          "link": "https://www.lexisnexiscn.com/story/10/92",
+          "query": "新车 首年 无赔款优待系数 NCD 自主定价系数 0.5 1.5 商业车险计算公式",
+          "rank": 1,
+          "snippet": "根据商业车险保费计算公式(商业车险保费=基准保费×NCD系数×自主定价系数)来算,调整后车险保费最高可降价23%,最高可涨价11%。",
+          "title": "商业车险自主定价系数扩围车险保费最高可降价23%"
+        },
+        {
+          "domain": "www.peopleapp.com",
+          "link": "https://www.peopleapp.com/column/30038756349-500003758636",
+          "query": "新车 首年 无赔款优待系数 NCD 自主定价系数 0.5 1.5 商业车险计算公式",
+          "rank": 2,
+          "snippet": "根据商业车险保费计算公式(商业车险保费=基准保费×NCD系数×自主定价 ... NCD系数指无赔款优待系数，即根据被保险人连续投保年限、出险次数，确定 ...",
+          "title": "定价规则调整，你的车险保费要降了？"
+        },
+        {
+          "domain": "www.pingan.com",
+          "link": "https://www.pingan.com/official/strategyDetail/27985424",
+          "query": "新车 首年 无赔款优待系数 NCD 自主定价系数 0.5 1.5 商业车险计算公式",
+          "rank": 3,
+          "snippet": "本文详细解读车险NCD系数（无赔款优待系数），拆解NCD系数定义、连续/非连续投保计算方法，分析其对商业险、交强险保费的影响，结合具体案例测算轻微 ...",
+          "title": "车险NCD系数是什么？影响保费浮动的核心原因及测算方法"
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "平安好车主 安全驾驶分 驾龄 驾驶人 个人信用 车险折扣 优惠",
+      "query_id": "topic_001_query_003",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "车险 医保外用药责任险 车上人员责任险 驾乘险 区别 预算 3500 4500 小型SUV",
+      "query_id": "topic_001_query_004",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "首年购车 车险 驾龄 驾驶员年龄 车主因素 自主定价系数 如何判定",
+      "query_id": "topic_001_query_005",
+      "sources": [
+        {
+          "domain": "china.cnr.cn",
+          "link": "https://china.cnr.cn/gdgg/20230511/t20230511_526248141.shtml",
+          "query": "首年购车 车险 驾龄 驾驶员年龄 车主因素 自主定价系数 如何判定",
+          "rank": 1,
+          "snippet": "我们根据车主车龄不同、品牌不同,行驶的区域不同,自主定价系数会有不同的差别,其中占比比较大是驾驶员的年龄、车型以及上年有没有出险。",
+          "title": "车险自主定价再调整车险“地板价”会否普及？ - 中国之声"
+        },
+        {
+          "domain": "jrj.sh.gov.cn",
+          "link": "https://jrj.sh.gov.cn/BX205/20230130/724e6033dba545a6ac6cc7a0c70662fb.html",
+          "query": "首年购车 车险 驾龄 驾驶员年龄 车主因素 自主定价系数 如何判定",
+          "rank": 3,
+          "snippet": "自主定价系数由各财险公司根据车型、车主年龄、驾驶习惯、行驶里程、销售渠道等多个因素自主设置,是财险公司行使自主定价权的主要途径。",
+          "title": "自主定价系数浮动范围扩大——车险市场获得更多自主权"
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "平安好车主 安全驾驶分 保费折扣 个人驾龄 借开家人车 车险记录",
+      "query_id": "topic_001_query_006",
+      "sources": [
+        {
+          "domain": "apps.apple.com",
+          "link": "https://apps.apple.com/us/app/%E5%B9%B3%E5%AE%89%E5%A5%BD%E8%BD%A6%E4%B8%BB-%E8%BD%A6%E6%9C%8D%E5%8A%A1-%E4%B9%B0%E4%BF%9D%E9%99%A9-%E5%8A%9E%E7%90%86%E8%B5%94/id796339836",
+          "query": "平安好车主 安全驾驶分 保费折扣 个人驾龄 借开家人车 车险记录",
+          "rank": 1,
+          "snippet": "【平安行】实时行程记录，每周智能统计驾驶数据，评测驾驶行为；AI陪练纠正车主不良驾驶习惯，省钱、省油、更安全！ ... 好车主服务上新，特斯拉里程优惠买随心用.",
+          "title": "平安好车主—车服务、买保险、办理赔 - App Store"
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "车险 医保外医疗费用责任险 必要性 投保额度",
+      "query_id": "topic_001_query_007",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "座位险 和 驾乘险 的区别 哪个划算",
+      "query_id": "topic_001_query_008",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "2020车险改革 划痕险 车损险 包含 还是 附加险",
+      "query_id": "topic_001_query_009",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "三者险 不计免赔 2020车险改革 主险 扣除率",
+      "query_id": "topic_001_query_010",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "PICC Ping An CPIC auto insurance comparison Hangzhou Zhejiang",
+      "query_id": "topic_002_query_001",
+      "sources": [
+        {
+          "domain": "cpic.e-ciie.com",
+          "link": "https://cpic.e-ciie.com/",
+          "query": "PICC Ping An CPIC auto insurance comparison Hangzhou Zhejiang",
+          "rank": 1,
+          "snippet": "Headquartered in Shanghai, it is a leading comprehensive insurance group in China listed in both Shanghai and Hong Kong.",
+          "title": "CPIC"
+        },
+        {
+          "domain": "www.cbinsights.com",
+          "link": "https://www.cbinsights.com/company/china-pacific-insurance/alternatives-competitors",
+          "query": "PICC Ping An CPIC auto insurance comparison Hangzhou Zhejiang",
+          "rank": 2,
+          "snippet": "China Pacific Insurance vs. Ping An. View more in-depth data on: Competitors; Products; Customer References and more. Compare China Pacific Insurance and Ping ...",
+          "title": "Top China Pacific Insurance Alternatives, Competitors"
+        },
+        {
+          "domain": "en.cpic.com.cn",
+          "link": "https://en.cpic.com.cn/",
+          "query": "PICC Ping An CPIC auto insurance comparison Hangzhou Zhejiang",
+          "rank": 3,
+          "snippet": "Pacific Insurance (Group) Co., Ltd. is a leading integrated insurance group in China, and the first insurer simultaneously listed in Shanghai, Hong Kong and ...",
+          "title": "CPIC - Industry Leadership for Healthy and Steady Development"
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "中国人保 平安产险 太保产险 车险 报价 杭州 SUV 3500 4500",
+      "query_id": "topic_002_query_002",
+      "sources": [
+        {
+          "domain": "m.cpic.com.cn",
+          "link": "https://m.cpic.com.cn/",
+          "query": "中国人保 平安产险 太保产险 车险 报价 杭州 SUV 3500 4500",
+          "rank": 1,
+          "snippet": "太保官网为约8699万客户提供汽车保险、人寿保险、人身意外保险、财产保险、健康保险、旅行保险、少儿保险、理财保险… 涵盖医保内外在线问诊",
+          "title": "车险,财产保险,人寿保险,重大疾病保险,少儿保险,理财保险"
+        },
+        {
+          "domain": "www.pingan.com",
+          "link": "https://www.pingan.com/official/car-insurance",
+          "query": "中国人保 平安产险 太保产险 车险 报价 杭州 SUV 3500 4500",
+          "rank": 2,
+          "snippet": "中国平安车险客户服务中心为车主提供车险车险咨询、保单查询、在线理赔、在线客服、家财险理赔等服务。",
+          "title": "平安车险客服中心-提供车险查询、报案理赔、车险报价"
+        },
+        {
+          "domain": "mproperty.picc.com.cn",
+          "link": "https://mproperty.picc.com.cn/",
+          "query": "中国人保 平安产险 太保产险 车险 报价 杭州 SUV 3500 4500",
+          "rank": 3,
+          "snippet": "PICC人保财险官网- 车险投保,网上车险报价,意外险旅游险,家财险,保险 ・ 采购门户反洗钱专栏法律法规资料集锦反洗钱・ 中国人保发布新兴支柱产业保险创新成果",
+          "title": "PICC人保财险官网- 车险投保，网上车险报价，意外 ... - 中国人保"
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "中国人保 平安产险 太平洋产险 道路救援 免费拖车 救援次数 区别",
+      "query_id": "topic_002_query_003",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "平安好车主 中国人保 太平洋保险 app 救援 极速理赔 4S店合作",
+      "query_id": "topic_002_query_004",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": true,
+      "failure_code": "no_new_sources",
+      "query": "人保 平安 太保 免费道路救援 区别 拖车公里数 搭电",
+      "query_id": "topic_002_query_005",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "人保 平安 太保 4S店 直赔 极速理赔 车险理赔 优缺点",
+      "query_id": "topic_002_query_006",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "杭州 紧凑型小型SUV 车险报价 交强险 商业险 300万三者 车损险 医保外用药 预算",
+      "query_id": "topic_002_query_007",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "平安好车主 人保APP 太平洋保险APP 道路救援 响应时间",
+      "query_id": "topic_002_query_008",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "\"中国人保\" \"平安产险\" \"太平洋产险\" 道路救援 拖车 50公里",
+      "query_id": "topic_002_query_009",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "PICC Ping An CPIC roadside assistance towing distance 100km",
+      "query_id": "topic_002_query_010",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "\"平安好车主\" \"中国人保\" 道路救援 100公里 50公里 次数",
+      "query_id": "topic_002_query_011",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "杭州 车险 报价 300万 三者 医保外用药 车损险",
+      "query_id": "topic_002_query_012",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "PICC Ping An CPIC roadside assistance towing distance",
+      "query_id": "topic_002_query_013",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "PICC Ping An CPIC auto insurance claim process 4S shop",
+      "query_id": "topic_002_query_014",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "China auto insurance 3000000 third party vehicle damage cost",
+      "query_id": "topic_002_query_015",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "Hangzhou auto insurance premium rate small SUV",
+      "query_id": "topic_002_query_016",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "PICC Ping An CPIC roadside assistance",
+      "query_id": "topic_002_query_017",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    }
+  ],
+  "token_ledger": {
+    "elapsed_sec": 296.9,
+    "input_tokens": 103609,
+    "output_tokens": 24459,
+    "queries_attempted": 7,
+    "queries_failed": 1,
+    "queries_rejected": 20,
+    "queries_requested": 27,
+    "queries_successful": 6,
+    "query_ledger_consistent": true,
+    "search_adapter": {
+      "global_attempted_queries": 67,
+      "global_attempted_queries_at_start": 60,
+      "global_query_hard_stop": 2400,
+      "global_successful_queries": 51,
+      "global_successful_queries_at_start": 45,
+      "report_max_queries_per_call": 2,
+      "report_query_cap": 7,
+      "report_unique_url_cap": 15,
+      "run_id": "pilot_task23_User11_seed0",
+      "run_queries_attempted": 7,
+      "run_queries_failed": 1,
+      "run_queries_requested": 27,
+      "run_queries_successful": 6,
+      "run_sources_selected": 15,
+      "run_unique_urls": 15
+    },
+    "source_ledger_consistent": true,
+    "sources_selected": 15,
+    "token_usage_events": 18,
+    "total_tokens": 128068,
+    "unique_sources": 15
+  }
+}

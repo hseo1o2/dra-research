@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task33_User7_seed0",
+    "stage": "plan",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User18",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User18",
+      "User2"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on a white Pomeranian dog (Xiaobai) owned by Candidate A's family, aligning with the pet detail in Profile A. The research priorities\u2014material safety, cost-effectiveness, and efficiency\u2014match Candidate A's rational spending habits, budget tracking, and preference for eco-friendly/sustainable products. The emphasis on data-driven comparisons (e.g., verified reviews, spec analysis) aligns with A's analytical background in journalism/research and decision-making style valuing factual support. Profiles B (cat owner) and C (cat owner) are mismatched due to pet type, while B's focus on certifications/management and C's psychology focus lack direct ties to the pet-care efficiency theme.",
+    "model": "solar-pro",
+    "prompt_chars": 24421,
+    "latency_sec": 1.92,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task33_User7_seed0",
+    "stage": "search",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User18",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User7",
+      "User2"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on queries about dog food for Pomeranians (specifically tear stains, kibble size, and brands like Royal Canin) and pet care products (automated feeders, cameras, grooming vacuums). Candidate B owns a white Pomeranian named Xiaobai, making pet-related content directly relevant to their daily life and priorities. The queries align with B's practical, research-driven approach to pet care, as evidenced by their rational spending habits and interest in cost-effective, high-quality products. Candidates A (cat owner) and C (cat owner) lack the direct connection to Pomeranian-specific concerns, making B the most likely audience for this document.",
+    "model": "solar-pro",
+    "prompt_chars": 25400,
+    "latency_sec": 1.81,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task33_User7_seed0",
+    "stage": "compress",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User18",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User18",
+      "User2"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on pet care for a white Pomeranian (Xiaobai), specifically addressing tear-stain prevention, food comparisons, and smart feeder/fountain recommendations. Candidate A explicitly mentions owning a white Pomeranian named Xiaobai, making this the only profile directly tied to the document's subject. While Candidates B and C have pets, their focus (cat care) and interests (data analysis, psychology) do not align with the document's detailed focus on Pomeranian-specific nutrition and equipment. The document's framing (practical, research-driven comparisons) also matches Candidate A's analytical background and rational consumer habits.",
+    "model": "solar-pro",
+    "prompt_chars": 28145,
+    "latency_sec": 1.72,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task33_User7_seed0",
+    "stage": "write",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User18",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on specialized care for a white Pomeranian, emphasizing product safety, cost-effectiveness, and breed-specific needs. Candidate B explicitly mentions owning a white Pomeranian named 'Xiaobai,' indicating direct relevance. Their profile highlights rational consumption, attention to product reviews, and interest in cost-effective solutions\u2014aligning with the report's emphasis on price ranges, annual costs, and material safety. Additionally, Candidate B's background in new media and public opinion research suggests an analytical approach to product evaluation, mirroring the report's structured comparison of pet products. Candidates A (cat owner) and C (cat owner, data analyst with no mention of pets) lack the direct connection to Pomeranian care that defines the document's purpose.",
+    "model": "solar-pro",
+    "prompt_chars": 30156,
+    "latency_sec": 2.12,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

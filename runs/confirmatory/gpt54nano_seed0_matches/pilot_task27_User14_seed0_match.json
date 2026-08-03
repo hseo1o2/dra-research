@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task27_User14_seed0",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User13",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User15",
+      "User13"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The brief is written from the perspective of a freelance illustrator who plays guitar, composes/lyrics, and wants to leverage visual illustration for album cover and marketing\u2014matching Candidate A\u2019s identity and creative workflow. It also emphasizes home-studio building, DAW learning, and indie pop/folk release planning on Chinese and international music platforms, aligning with A\u2019s tech-forward, tool-investing, social-media-active habits.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 24271,
+    "latency_sec": 1.72,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task27_User14_seed0",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User13",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User15"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User15",
+    "correct": false,
+    "reasoning": "The excerpt is dominated by music-platform monetization/artist exclusivity rules (NetEase/Tencent music \u201c\u72ec\u5bb6/\u975e\u72ec\u5bb6\u201d\u201c\u6fc0\u52b1\u8ba1\u5212\u201d\u201c\u8d39\u7528\u6d41\u7a0b\u201d) and editorial playlist pitching guidelines, which aligns with a freelance writer researching and synthesizing industry processes for publication. The document\u2019s structured, informational query style and focus on platforms and submission timelines fits a journalism/communication background (Candidate C) more than a caf\u00e9 owner or illustrator.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 24675,
+    "latency_sec": 1.82,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task27_User14_seed0",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User13",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User15",
+      "User14"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The excerpt is a tool-and-query driven home-studio gear research summary focused on microphones, audio interfaces, MIDI keyboards, and Bilibili recording/mixing tutorials\u2014an equipment-investigation mindset typical of a creative practitioner buying tools. Candidate C (freelance illustrator) matches the \u201cresearch before purchasing,\u201d interest in creative process videos on Bilibili, and willingness to invest in high-quality equipment, whereas A is centered on coffee/caf\u00e9 operations and B on writing/books rather than audio production gear.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 27847,
+    "latency_sec": 1.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task27_User14_seed0",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User13",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User15",
+      "User13"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The excerpt is written as a practical, step-by-step production and marketing plan explicitly addressed to \u201can established illustrator,\u201d emphasizing visual storytelling, track-by-track artwork, and speedpaint/Spotify Canvas\u2014matching a freelance illustrator\u2019s skillset and social-media behavior. Candidate A\u2019s profile (freelance illustrator, active on Bilibili with drawing process videos, Procreate/Photoshop use, and interest in indie creative promotion) aligns closely with the document\u2019s framing and platform strategy.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 29858,
+    "latency_sec": 1.99,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

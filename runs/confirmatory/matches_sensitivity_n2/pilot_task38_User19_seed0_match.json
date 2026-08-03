@@ -1,0 +1,110 @@
+[
+  {
+    "run_id": "pilot_task38_User19_seed0",
+    "stage": "plan",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate A's profile aligns more closely with the document's focus on Beijing's Chaoyang and Haidian districts, school district policies, and family-oriented living amenities. As a Shanghai-based marketing manager with a wife who is a primary school teacher and children aged 5 and 8, Candidate A's priorities for education, suburban living (parks for their dog), and budget-conscious yet quality-driven decision-making mirror the document's emphasis on school zoning, community amenities, and financial planning. Candidate B, while also family-oriented, resides in Chengdu, focuses on domestic eco-tourism, and lacks the explicit connection to Beijing's real estate market or the detailed educational priorities (e.g., multi-school zoning, 1911 policy) central to the document. The document\u2019s framing reflects Candidate A\u2019s pragmatic, data-driven approach to relocation and family planning.",
+    "model": "solar-pro",
+    "prompt_chars": 17857,
+    "latency_sec": 2.22,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task38_User19_seed0",
+    "stage": "search",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on Beijing real estate prices, school district policies, and mortgage regulations\u2014topics directly relevant to family-oriented housing decisions. Candidate A, a married supply chain manager in Chengdu with a six-year-old daughter, aligns with this content through his family status (prioritizing education, home environment, and budget-conscious purchases) and spatial characteristics (seeking communities with schools/parks). While Candidate B also has children, his Shanghai-based profile and focus on high-end urban amenities (e.g., golf courses, photography) lack the specific emphasis on suburban housing costs, school district rules, and eco-friendly consumption patterns evident in the document. The document\u2019s framing of budget ranges (550\u2013600\u4e07), school enrollment policies (1911/630), and down payment ratios reflects Candidate A\u2019s pragmatic, family-centric priorities and recent interest in sustainable living.",
+    "model": "solar-pro",
+    "prompt_chars": 17997,
+    "latency_sec": 2.19,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task38_User19_seed0",
+    "stage": "compress",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on Beijing real estate search criteria (budget 5.5M\u20136M RMB, 80\u2013100 sqm, schools, dog-friendly parks) that align with Candidate A's profile. As a Shanghai-based foreign enterprise manager with two children and a pet Labrador, Candidate A prioritizes family-friendly communities with schools (e.g., Yuxin School, Yayuncun Kindergarten) and parks (e.g., Olympic Forest Park). The document's emphasis on unit prices (~60k RMB/sqm), specific districts (Haidian/Chaoyang), and suburban vs. urban trade-offs matches Candidate A's pragmatic, data-driven decision-making style and budget-consciousness. Candidate B, based in Chengdu with less emphasis on Beijing relocation, lacks the document's specific urban/suburban Beijing focus and family-school-pet priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 21654,
+    "latency_sec": 2.58,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task38_User19_seed0",
+    "stage": "write",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document prioritizes educational stability (e.g., 9-year integrated schools), pet-friendly neighborhoods (e.g., parks for large dogs), and budget-conscious property selection (\u2264\u00a56M) for a family with a 6-year-old child and a large dog. Candidate A explicitly matches these needs: his daughter is entering primary school, he owns an Alaskan Malamute, and his pragmatic, family-focused decision-making style aligns with the report's structured, risk-mitigated approach. Candidate B, while also family-oriented, emphasizes high-end consumption and international travel, which are not reflected in the document's focus on affordability and local school policies.",
+    "model": "solar-pro",
+    "prompt_chars": 23665,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

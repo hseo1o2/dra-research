@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task37_User14_seed0",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13",
+      "User16",
+      "User23"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User20",
+      "User16",
+      "User23",
+      "User14"
+    ],
+    "predicted_label": "E",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "Candidate E (Lin Nan) is a freelance illustrator with a strong focus on design, aesthetics, and natural materials, aligning with the document's emphasis on a 'warm, comfortable, and stylish atmosphere using natural wood and fabric materials.' His background in art and design, along with his preference for boutique accommodations and support for local/handmade crafts, matches the document's priorities. Additionally, his pet cat (Mo Mo) and lifestyle as a single creative professional living in Shanghai with a partner (implied by the document's 'living with my partner') further align with the document's context. Other candidates either lack the design focus (A, C, D) or prioritize different aesthetics (B).",
+    "model": "solar-pro",
+    "prompt_chars": 39150,
+    "latency_sec": 2.07,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task37_User14_seed0",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13",
+      "User16",
+      "User23"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User13",
+      "User23",
+      "User16",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on apartment design for heavy cooking, pet-friendly features (cat-centric), and budget allocation for renovations. Candidate B, a caf\u00e9 owner with pets (including cats), aligns with the emphasis on open kitchens, pet-friendly design, and aesthetic/functional renovation priorities. Her background in design, caf\u00e9 management, and interest in sustainable/local products matches the document's framing of practical yet stylish living spaces. Other candidates (A, C, D, E) lack the combination of culinary focus, pet ownership, and design-oriented renovation priorities evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 41030,
+    "latency_sec": 2.28,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task37_User14_seed0",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13",
+      "User16",
+      "User23"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User20",
+      "User23",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document focuses on an 80 sqm apartment renovation integrating an open LDK kitchen (tailored for heavy cooking), pet-friendly design (cat-centric features), and Japandi aesthetics. Candidate A (Lin Nan) aligns perfectly: he is a freelance illustrator with a cat, lives in a small Shanghai apartment, and values design quality. His queries match the document's emphasis on cat-friendly materials (scratch-resistant fabrics), kitchen ventilation for cooking, and Japandi style. Other candidates (B, C, D, E) either lack the cat-centric focus, prioritize different design styles, or have unrelated professions (caf\u00e9 owner, copywriter, retiree, engineer).",
+    "model": "solar-pro",
+    "prompt_chars": 44044,
+    "latency_sec": 2.53,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task37_User14_seed0",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13",
+      "User16",
+      "User23"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User23",
+      "User14",
+      "User13",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "The document emphasizes a pet-friendly (cat), creative, and design-conscious lifestyle within a compact urban apartment, aligning with Candidate A's profile. Key matches include: (1) A's role as a copywriter with a focus on creativity and design, mirroring the document's emphasis on aesthetic choices (Japandi/Warm Wood Cream design). (2) A's ownership of a cat (Jinju) and the document's integration of feline enrichment (cat walk, durable materials). (3) A's preference for mid-range, design-forward products and the document's budget-conscious yet stylish approach (\u00a5150,000 RMB for custom cabinetry, textiles). (4) A's urban Shanghai residence and the document's focus on optimizing small-space living. Other candidates (B, C, D, E) either lack the creative/design focus, prioritize different spatial needs (e.g., gardening, caf\u00e9 operations), or have unrelated pet preferences (dogs, multiple pets).",
+    "model": "solar-pro",
+    "prompt_chars": 46055,
+    "latency_sec": 2.51,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

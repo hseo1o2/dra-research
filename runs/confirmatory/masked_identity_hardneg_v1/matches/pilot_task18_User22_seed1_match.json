@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task18_User22_seed1",
+    "stage": "plan",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "Candidate C, a Technical Director in Manufacturing, aligns most closely with the document's focus on business efficiency, technical interests (smart manufacturing/industrial exhibitions), and practical travel planning. The request for a detailed budget-optimized itinerary with gym access, business-meeting buffers, and cultural/technical attractions mirrors C's pragmatic, detail-oriented personality and professional background in engineering/manufacturing. Unlike A (marketing focus) or B (state-owned enterprise/photography), C's explicit interest in Industry 4.0, technical exhibitions, and cost-effective planning directly matches the document's emphasis on industrial content and structured value optimization.",
+    "model": "solar-pro",
+    "prompt_chars": 25319,
+    "latency_sec": 2.12,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task18_User22_seed1",
+    "stage": "search",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on flight schedules, numbers, and operational details (e.g., HU7989, LH728, PEK-BER routes) with a business-oriented framing, emphasizing efficiency, timing, and logistics. Candidate A, as a marketing manager in a foreign enterprise, aligns with this focus: his role requires frequent business travel (e.g., Shenzhen/Chengdu trips), attention to schedules, and cost-effective decision-making. His MBA background and interest in data-driven analysis (e.g., saving market reports) further match the document's structured, practical tone. Candidates B and C, while also rational consumers, prioritize family travel and leisure activities, which are less central to the document's logistical focus.",
+    "model": "solar-pro",
+    "prompt_chars": 26682,
+    "latency_sec": 1.96,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task18_User22_seed1",
+    "stage": "compress",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on detailed Berlin transit logistics, ticket pricing, and cost comparisons (e.g., RMB conversions, zone-based pricing), reflecting a pragmatic, cost-conscious traveler prioritizing efficiency and family budgeting. Candidate A, a marketing manager with a rational decision-making style, fixed monthly budgeting, and preference for cost-effective quality aligns best. His family-oriented travel style (self-guided tours, itinerary planning) and frequent business trips mirror the document's emphasis on transit optimization for both business and family contexts. Candidates B and C, while also pragmatic, lack A's explicit focus on international travel logistics (RMB pricing) and high-frequency business mobility.",
+    "model": "solar-pro",
+    "prompt_chars": 29375,
+    "latency_sec": 1.76,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task18_User22_seed1",
+    "stage": "write",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "The document emphasizes technical research, manufacturing (e.g., BMW factory visits), Industry 4.0, and cost-efficient executive travel with a focus on engineering leadership. Candidate C, a Technical Director in Manufacturing with expertise in mechanical engineering and Industry 4.0, aligns perfectly with these priorities. His background in production optimization, interest in smart manufacturing, and preference for technical content (e.g., saving articles on mechanical engineering) directly mirror the document's framing. Candidates A (state-owned enterprise manager) and B (marketing manager) lack the technical depth and manufacturing focus evident in the itinerary.",
+    "model": "solar-pro",
+    "prompt_chars": 31386,
+    "latency_sec": 2.36,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

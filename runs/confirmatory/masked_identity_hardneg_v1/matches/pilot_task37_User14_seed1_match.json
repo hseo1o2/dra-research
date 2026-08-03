@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task37_User14_seed1",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "Candidate A's profile aligns most closely with the document's emphasis on natural materials (wood/fabric), functional kitchen optimization, and budget-conscious design. As a caf\u00e9 owner with a design background, she prioritizes aesthetics, sustainability, and practicality\u2014mirroring the request for a warm, functional home that balances hard renovation costs with quality furnishings. Her focus on high-frequency areas (living room/kitchen) and attention to natural lighting aligns with her caf\u00e9's design ethos. Additionally, her budget-conscious yet quality-driven approach (supporting local designers, eco-friendly products) matches the document's detailed budget allocation requirement. Candidates B and C, while creative, lack the same emphasis on holistic home renovation planning and material specificity tied to functional spaces.",
+    "model": "solar-pro",
+    "prompt_chars": 24256,
+    "latency_sec": 1.85,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task37_User14_seed1",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User13",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on detailed budget allocation for interior design (hard/soft furnishings, appliances) with an emphasis on aesthetics, practicality, and cost-efficiency. Candidate B, a caf\u00e9 owner with a design background, aligns most closely: her profile highlights meticulous attention to design details, sustainability, and balancing creativity with budget constraints. The document's framing (e.g., '\u5976\u5496\u8272' wood tones, '\u539f\u6728\u5976\u6cb9\u98a8' aesthetics) mirrors her artistic sensibilities and preference for spaces that blend functionality with visual appeal. Candidates A (copywriter) and C (illustrator) lack the document's practical, budget-conscious design focus, which is central to B's professional identity and lifestyle.",
+    "model": "solar-pro",
+    "prompt_chars": 24388,
+    "latency_sec": 1.73,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task37_User14_seed1",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "The document focuses on budget allocation for an 80sqm apartment renovation with a 'Japandi' aesthetic, emphasizing minimalist design, natural materials (e.g., wood-grain tiles, warm neutral paint), and functional spaces (e.g., open kitchen, custom storage). Candidate B aligns most closely: his profile highlights a preference for aesthetically designed spaces, mid-range products with strong design elements, and a fascination with art and creativity. He also values natural landscapes and cultural sites, mirroring the document's emphasis on organic textures (e.g., wood, linen) and cultural-inspired design. Unlike Candidate A (focused on art supplies and travel) or Candidate C (prioritizing coffee culture and sustainability), Candidate B\u2019s interest in interior design, literature, and creative expression directly aligns with the document\u2019s framing of a thoughtful, budget-conscious renovation that balances practicality and artistic sensibility.",
+    "model": "solar-pro",
+    "prompt_chars": 29044,
+    "latency_sec": 2.06,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task37_User14_seed1",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User14",
+      "User13"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document emphasizes JAPANDI design principles (combining Japanese minimalism and Scandinavian functionality), natural materials, warm minimalist aesthetics, and tactile textures\u2014all aligning with Candidate B's artistic background, design-focused consumption habits, and preference for quality art supplies/equipment. The focus on eco-friendly materials, matte finishes, and organic textures mirrors B's sensitivity to artistic environments and his own illustration work influenced by nature (Jiangnan gardens). Unlike Candidate A (a copywriter prioritizing literary inspiration) or Candidate C (a caf\u00e9 owner focused on commercial aesthetics), B's freelance illustration career and personal creative process directly align with the document's emphasis on craftsmanship, material authenticity, and spatial design that fosters creativity. The document's detailed specifications for finishes, textures, and lighting also reflect B's meticulous approach to art tools and studio environments.",
+    "model": "solar-pro",
+    "prompt_chars": 31055,
+    "latency_sec": 2.03,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

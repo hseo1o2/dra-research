@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task48_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document's focus on structured, evidence-based art education for children (8-year-old daughter interested in painting/dancing, 5-year-old son interested in building/sports) aligns with Candidate A's profile as a pragmatic, family-oriented father with an MBA in marketing. His background in combining Eastern/Western thinking, emphasis on educational frameworks, and detailed planning (e.g., quarterly family trips, budgeting for extracurriculars) mirror the document's demand for a 6-month curriculum with progress assessments. Candidate A's wife being a teacher and his family's harmonious atmosphere further support his need for collaborative, research-backed activities. Candidates B (caf\u00e9 owner focused on art/coffee culture) and C (AI entrepreneur prioritizing tech) lack the document's specific emphasis on child psychology, age-tailored pedagogy, and family interaction techniques.",
+    "model": "solar-pro",
+    "prompt_chars": 25647,
+    "latency_sec": 1.91,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task48_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User12",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on art disciplines' impact on child development (ages 5-8), emphasizing emotional expression, self-confidence, and process art\u2014aligning with Candidate A's background. As a caf\u00e9 owner with a design education and a 5-year-old child, she values art, creativity, and child-centered activities. Her profile highlights art exhibitions, process-oriented projects, and aesthetic sensitivity, mirroring the document's themes. Candidates B (AI entrepreneur) and C (marketing manager) lack the same direct focus on art education or child development through creative expression, making A the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 27631,
+    "latency_sec": 1.52,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task48_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User10",
+      "User12"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on arts education, child development, and pedagogical frameworks like Reggio Emilia, which align with Candidate B's role as a father of two young children (8 and 5 years old) interested in arts (painting, dancing). His consumption characteristics emphasize educational expenses and extracurricular activities, while his family atmosphere prioritizes mutual growth and communication. The document's emphasis on confidence-building through art and qualitative feedback resonates with B's values, unlike A (caf\u00e9 owner focused on aesthetics) or C (tech entrepreneur with minimal arts/education focus).",
+    "model": "solar-pro",
+    "prompt_chars": 30173,
+    "latency_sec": 1.74,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task48_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User12",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on a 6-month art education and family interaction plan tailored for an 8-year-old girl (interested in painting/dance) and a 5-year-old boy (interested in building/sports). Candidate C explicitly mentions having children of the same ages (8-year-old daughter who paints/dances, 5-year-old son who builds/likes basketball) and prioritizes their educational development through extracurricular activities. The document's emphasis on cross-disciplinary art frameworks (e.g., DBAE, Laban Movement Analysis) aligns with Candidate C's rational, family-oriented decision-making style and investment in children's education. Candidate A (single mother with a 5-year-old) and Candidate B (AI entrepreneur with a 5-year-old daughter) lack the specific family structure and documented focus on dual-child art education that matches the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 32184,
+    "latency_sec": 2.15,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

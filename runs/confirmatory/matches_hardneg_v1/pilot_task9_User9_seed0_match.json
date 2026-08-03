@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task9_User9_seed0",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User11",
+      "User12"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on Zhao Li's transition to an AI PM role, emphasizing her background in Advertising/New Media Communication, Psychology, and current Product Operations role. Candidate A matches exactly in name, age, occupation, educational background, and career goals. The document's framing\u2014skill gap analysis, project recommendations, Beijing-focused job mapping, and networking strategies\u2014aligns with Candidate A's creative, social-media-active, and psychology-informed profile. Candidates B (Algorithm Engineer) and C (AI Entrepreneur) have technical/leadership backgrounds inconsistent with the document's user-centric, career-transition focus.",
+    "model": "solar-pro",
+    "prompt_chars": 24967,
+    "latency_sec": 2.15,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task9_User9_seed0",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User9",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": false,
+    "reasoning": "The document focuses on AI Product Management frameworks, PRD templates, skill transitions, portfolio projects, and salary data\u2014topics directly aligned with Candidate A's role as an AI Company Entrepreneur. His technical background (Master's in CS, ex-technical lead), entrepreneurial focus, and interest in AI evaluation frameworks match the document's emphasis on probabilistic AI product requirements, low-code/no-code tools for prototyping, and salary trends in Beijing. Candidate B (Product Operations) and C (Algorithm Engineer) lack the document's entrepreneurial and product-management-specific focus, which prioritizes PRD frameworks, portfolio projects for AI PM roles, and Beijing-based salary data.",
+    "model": "solar-pro",
+    "prompt_chars": 26934,
+    "latency_sec": 2.15,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task9_User9_seed0",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User12",
+      "User11"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": false,
+    "reasoning": "The document focuses on transitioning to an AI Product Manager role, emphasizing technical concepts like LLM evaluation, prompt engineering, and skill gaps in probabilistic systems. Candidate B, an AI entrepreneur with a computer science background and experience in AI product development, aligns most closely with the document's technical depth, entrepreneurial framing, and emphasis on bridging gaps between traditional operations and AI systems. Candidates A (Product Operations with Advertising/Psychology background) and C (Algorithm Engineer) lack B's direct AI leadership experience and holistic focus on productizing AI systems.",
+    "model": "solar-pro",
+    "prompt_chars": 29504,
+    "latency_sec": 1.54,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task9_User9_seed0",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User12",
+      "User9"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on transitioning from Product Operations (with a background in Advertising, New Media Communication, and Psychology) to AI Product Management, emphasizing user psychology, operational analytics, and content strategy. Candidate C is the only one currently in a Product Operations role with an identical educational background (Advertising/New Media Communication/Psychology) and shares the document's focus on user behavior, qualitative analysis, and content strategy. The document's framing aligns with her need to bridge psychological foundations to AI PM, whereas Candidates A (Algorithm Engineer) and B (AI Entrepreneur) already possess technical/AI expertise the document aims to build.",
+    "model": "solar-pro",
+    "prompt_chars": 31515,
+    "latency_sec": 1.74,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

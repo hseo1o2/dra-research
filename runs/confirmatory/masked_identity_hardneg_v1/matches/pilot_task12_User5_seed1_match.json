@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task12_User5_seed1",
+    "stage": "plan",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User4",
+      "User2",
+      "User5"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "Candidate B (Wang Xue) is a Clinical Psychology graduate student with a strong focus on emotional regulation, self-awareness, and evidence-based practices. The document emphasizes cognitive behavioral principles, emotional intelligence, and structured daily strategies\u2014aligning with B's academic background, interest in psychology, and habits (e.g., using digital tools for time management, reading psychology books, and tracking emotional triggers via screenshots). Unlike Candidate A (law student with a psychology minor) or C (engineering student), B's daily routines, consumption habits (e.g., psychology books, cloud notes), and content preferences (psychology articles, emotional communication) directly mirror the document's analytical, self-improvement framework. Her rational, cost-effective approach to learning and use of platforms like Coursera also match the request for structured, research-backed recommendations.",
+    "model": "solar-pro",
+    "prompt_chars": 25294,
+    "latency_sec": 1.98,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task12_User5_seed1",
+    "stage": "search",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User2",
+      "User4"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "The document focuses on cognitive behavioral therapy, emotion regulation, neurobiology, and psychological frameworks, aligning with Candidate B's background in Clinical Psychology. Her academic interests, online behavior (psychology forums, Coursera courses), and content preferences (psychology articles, emotion-related books) directly match the document's themes. Candidate A (Mechanical Engineering) and C (Law with Psychology minor) lack the same depth of engagement with emotion science and therapeutic models, making B the most relevant match.",
+    "model": "solar-pro",
+    "prompt_chars": 27503,
+    "latency_sec": 1.56,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task12_User5_seed1",
+    "stage": "compress",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User4",
+      "User5",
+      "User2"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User5",
+    "correct": true,
+    "reasoning": "The document emphasizes analytical, engineering, and systems-thinking approaches to psychology, prioritizing mechanistic models, empirical evidence, and structured frameworks. Candidate B, a mechanical engineering graduate student in robotics automation, aligns with this mindset through his focus on intelligent manufacturing, systematic problem-solving, and preference for cost-effective, evidence-based tools. His interest in sci-fi novels (e.g., 'The Three-Body Problem') and technical literature reflects a preference for logical, algorithmic explanations over abstract or mystical concepts. Unlike Candidate A (law student with a psychology minor) or Candidate C (clinical psychology graduate student), Candidate B\u2019s background in engineering and his documented affinity for structured, analytical frameworks directly mirror the document\u2019s emphasis on cognitive-behavioral models, neurobiological emotion regulation, and predictive processing as 'systems' to be debugged and optimized.",
+    "model": "solar-pro",
+    "prompt_chars": 29996,
+    "latency_sec": 2.0,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task12_User5_seed1",
+    "stage": "write",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User2",
+      "User4"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User5",
+    "correct": true,
+    "reasoning": "The document's framing of emotion regulation as an 'open-loop feedback control system' and its emphasis on control theory, cognitive science, and neurobiology align with Candidate A's background in mechanical automation and robotics. The structured, systematic approach mirrors A's analytical mindset, evidenced by his use of time management tools, preference for quantitative problem-solving, and interest in robotics automation. The document's focus on debugging cognitive processes and integrating digital tools (e.g., MOOCs, SRS decks) also resonates with A's habits of supplementing knowledge via Coursera/edX and organizing literature with PDF tools. Candidate B (clinical psychology) and C (law) lack the document's engineering-centric vocabulary and prioritize different domains (psychology/legal analysis).",
+    "model": "solar-pro",
+    "prompt_chars": 32007,
+    "latency_sec": 2.41,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

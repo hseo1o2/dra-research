@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task2_User6_seed1",
+    "stage": "plan",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User6",
+      "User18",
+      "User2",
+      "User9",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User7",
+      "User2",
+      "User6",
+      "User18"
+    ],
+    "predicted_label": "D",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "Candidate D is an undergraduate student in Environmental Studies at a top Zhejiang university, aligning perfectly with the document's author profile. The document's focus on sustainable urban development, circular economy, and climate change mirrors D's academic background, cultural influence (Hangzhou's ecological heritage), and behavioral traits (eco-friendly consumption, environmental volunteerism). Unlike other candidates (e.g., A in advertising, B in journalism, C in psychology, E in data analysis), D's priorities, vocabulary (e.g., 'eco-certified hotels,' 'low-carbon trips'), and practical interests (fieldwork, credit transfer for environmental courses) directly match the document's framing. Her independent decision-making style and mentorship-seeking for environmental accuracy also align with the request for actionable guidance on academic networking and research preparation.",
+    "model": "solar-pro",
+    "prompt_chars": 36857,
+    "latency_sec": 1.97,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task2_User6_seed1",
+    "stage": "search",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User6",
+      "User18",
+      "User2",
+      "User9",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User6",
+      "User7",
+      "User18",
+      "User2",
+      "User9"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "The document focuses on study abroad programs, credit transfers, and administrative requirements for environmental studies at institutions like UC Berkeley and Zhejiang University. Candidate A, an Environmental Studies undergraduate at a Zhejiang university, aligns perfectly with this content. Her academic background, interest in sustainability, and frequent engagement with environmental topics (e.g., saving articles on climate change, participating in eco-lectures) directly reflect the document's emphasis on environmental studies and cross-institutional academic processes. Other candidates (B, C, D, E) are either in unrelated fields (e.g., data analysis, psychology) or lack the specific focus on environmental studies and Zhejiang University's credit-transfer policies that make Candidate A the clear match.",
+    "model": "solar-pro",
+    "prompt_chars": 38011,
+    "latency_sec": 2.52,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task2_User6_seed1",
+    "stage": "compress",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User6",
+      "User18",
+      "User2",
+      "User9",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User18",
+      "User7",
+      "User9",
+      "User6"
+    ],
+    "predicted_label": "E",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "The document focuses on environmental studies, sustainability, and international exchange programs in natural resources, climate science, and forestry. Candidate E is an undergraduate in Environmental Studies with a strong interest in sustainability, eco-friendly practices, and international environmental projects. The document's emphasis on credit transfer, tuition requirements, and partnerships with Chinese universities (e.g., Zhejiang University) aligns with Candidate E's background as a Zhejiang-based student actively engaged in environmental advocacy and academic exchanges. Other candidates lack this specific focus on environmental science or international sustainability programs.",
+    "model": "solar-pro",
+    "prompt_chars": 40782,
+    "latency_sec": 2.0,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task2_User6_seed1",
+    "stage": "write",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User6",
+      "User18",
+      "User2",
+      "User9",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User18",
+      "User7",
+      "User9",
+      "User6"
+    ],
+    "predicted_label": "E",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "The document is a comprehensive guide for Environmental Studies undergraduates from top Chinese institutions (e.g., Zhejiang University) planning overseas exchanges. It focuses on academic alignment (climate dynamics, circular economy), financial planning, and regional program comparisons. Candidate E is the only undergraduate in Environmental Studies with a strong academic background in the field, scholarships, and awards in environmental competitions. Her priorities (sustainability, eco-friendly consumption, and low-carbon travel) align with the document's emphasis on ecological civilization and sustainable infrastructure. Additionally, her hometown (Hangzhou) and university location (Zhejiang Province) match the document's reference to Zhejiang University, making her the most direct match.",
+    "model": "solar-pro",
+    "prompt_chars": 42793,
+    "latency_sec": 2.4,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

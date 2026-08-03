@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task2_User2_seed0",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User6",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "Candidate C is a graduate student in Clinical Psychology at a Beijing university, directly aligning with the document's focus on a Clinical Psychology master's student seeking overseas exchange programs. The document emphasizes academic goals (research capabilities, PhD applications), budget-conscious planning, and practical adaptation strategies\u2014all mirrored in Candidate C's profile (e.g., her focus on cost-effective learning tools, psychology-related online activity, and interest in international academic networks). Candidates A (new media) and B (environmental studies) lack the clinical psychology specialization and academic priorities central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24227,
+    "latency_sec": 2.24,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task2_User2_seed0",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User6"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User7",
+    "correct": false,
+    "reasoning": "The document focuses on visiting graduate student programs (VISPO, BISP, VSPA) and scholarships (JASSO) in psychology, with a strong emphasis on Japan and Singapore's psychology licensure systems. Candidate B, a graduate student in new media/public opinion research with a background in journalism, aligns best due to their academic focus on structured systems (e.g., psychology licensure acts) and international comparisons (e.g., Japan/Singapore frameworks). Their interest in social issues, data analysis, and policy-related content (evident in their article-saving habits and Zhihu/Weibo activity) matches the document's framing of institutional and regulatory psychology systems. Candidates A (clinical psychology) and C (environmental studies) lack the document's systemic, cross-cultural focus.",
+    "model": "solar-pro",
+    "prompt_chars": 25751,
+    "latency_sec": 1.83,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task2_User2_seed0",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User6"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on graduate-level psychology programs, visiting research opportunities, and clinical psychology restrictions in the U.S. and UK, aligning with Candidate A's background as a Clinical Psychology master's student. Her interests in psychology research, academic rigor, and practical learning (e.g., lab access, coursework) match the document's emphasis on non-degree study, research affiliations, and clinical observation policies. Candidates B (new media) and C (environmental studies) lack the direct academic and professional alignment with psychology research and clinical training described in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 28244,
+    "latency_sec": 1.93,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task2_User2_seed0",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User6"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on clinical psychology exchange programs, detailing academic requirements, research opportunities, visa logistics, and cost analyses\u2014all critical for a graduate student in clinical psychology. Candidate B is explicitly described as a graduate student in clinical psychology with a strong academic focus, aligning perfectly with the document's technical depth, regulatory discussions (e.g., HIPAA, IRB), and emphasis on research output. Candidates A (new media) and C (environmental studies) lack the domain-specific expertise and career goals reflected in the report's framing, which prioritizes clinical psychology methodologies, lab access, and cross-cultural training in mental health research.",
+    "model": "solar-pro",
+    "prompt_chars": 30255,
+    "latency_sec": 1.61,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

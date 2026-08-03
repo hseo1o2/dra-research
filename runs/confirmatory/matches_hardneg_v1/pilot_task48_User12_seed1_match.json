@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task48_User12_seed1",
+    "stage": "plan",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "Candidate A is the best match due to the document's focus on a 5-year-old daughter, eco-friendly materials, and integration of family themes (e.g., pets like the cat 'Doudou'). The structured, research-driven approach aligns with A's AI entrepreneur background (data analysis, logical reasoning) and his emphasis on quality-of-life investments (eco-friendly products, tech integration). Unlike B (who has an 8-year-old daughter and prioritizes cost-effectiveness) or C (focused on older son and practicality), A's profile directly reflects the document's priorities: creativity, emotional expression, and personalized adaptation for a young child, with a family-centric, high-efficiency framing.",
+    "model": "solar-pro",
+    "prompt_chars": 26033,
+    "latency_sec": 2.1,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task48_User12_seed1",
+    "stage": "search",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User12"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on early childhood art education, particularly for 5-year-olds, emphasizing multidisciplinary approaches (art, music, movement) and Reggio Emilia-inspired methods. Candidate B, a marketing manager with a 5-year-old son, prioritizes his children's education, enrolls them in extracurricular classes, and values quality learning resources. His content preferences include family-oriented activities and educational content, aligning with the document's emphasis on holistic, child-centered art curricula. Candidates A and C lack comparable focus on early childhood education or Reggio Emilia principles.",
+    "model": "solar-pro",
+    "prompt_chars": 28032,
+    "latency_sec": 1.55,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task48_User12_seed1",
+    "stage": "compress",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on developmental art, music, and movement pedagogy for 5-year-olds, emphasizing emotional expression, concentration, and self-confidence. Candidate B, a marketing manager with an 8-year-old daughter and a 5-year-old son, prioritizes children's education (e.g., extracurricular classes, educational expenses) and has a family-oriented lifestyle. His content preferences include educational resources, and his wife is a primary school teacher, aligning with the document's focus on child development. Candidates A (AI entrepreneur) and C (state-owned enterprise manager) lack the same direct emphasis on early childhood education or family dynamics centered on young children's creative growth.",
+    "model": "solar-pro",
+    "prompt_chars": 30525,
+    "latency_sec": 2.05,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task48_User12_seed1",
+    "stage": "write",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User12"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on a 6-month multidisciplinary art education plan for a 5-year-old, emphasizing creativity, emotional expression, and developmental psychology. Candidate C, an AI entrepreneur with a 5-year-old daughter, aligns most closely due to his high investment in education (e.g., bedtime stories, tech/eco-friendly purchases), family-centric values (wife as freelancer, parents helping with childcare), and interest in structured, research-backed activities (reflected in his data-driven decision-making and tech/entrepreneurship focus). The document\u2019s pedagogical depth and integration of art with cognitive development mirror his likely priorities for his daughter\u2019s holistic growth, unlike Candidates A (marketing manager with older children) or B (state-owned enterprise manager with a middle-schooler).",
+    "model": "solar-pro",
+    "prompt_chars": 32536,
+    "latency_sec": 2.35,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

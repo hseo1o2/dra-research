@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task33_User12_seed1",
+    "stage": "plan",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User7",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User7",
+      "User13"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on high-end, eco-friendly smart home devices for pet care. As an AI entrepreneur with a British Shorthair cat, his preferences for tech integration, cost-effectiveness, and eco-friendliness match the document's emphasis on smart features, material safety, and operational efficiency. His family-oriented lifestyle and willingness to invest in quality-of-life improvements for his pet further support this alignment. Candidate B's budget-conscious habits and Candidate C's focus on art/coffee culture lack the document's technical and premium product priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 25391,
+    "latency_sec": 1.93,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task33_User12_seed1",
+    "stage": "search",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User7",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User7",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on self-cleaning litter box specifications (height, waste capacity, price) and cat-friendly features, aligning with Candidate C's role as a caf\u00e9 owner with multiple pets (including cats) and her emphasis on eco-friendly, high-quality products. Her interest in sustainability and pet-centric design (e.g., caf\u00e9 as a pet-friendly space) reflects the document's framing. Candidates A (tech entrepreneur) and B (student) lack the direct pet-care focus and consumption patterns for premium pet products evident in C's profile.",
+    "model": "solar-pro",
+    "prompt_chars": 27202,
+    "latency_sec": 1.45,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task33_User12_seed1",
+    "stage": "compress",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User7",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User13",
+      "User7"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on technical specifications, cost-effectiveness, and eco-friendly features of smart litter boxes, aligning with Candidate A's profile as an AI entrepreneur who values high-end tech products, cost-effectiveness, and eco-friendly smart home devices. The detailed analysis of dimensions like price, material safety, and tech integration reflects A's data-driven decision-making style and interest in AI applications. Candidate B's focus on art and sustainability, while partially relevant, lacks the technical depth emphasized in the document. Candidate C's student profile and interest in social issues do not match the document's technical and product-centric framing.",
+    "model": "solar-pro",
+    "prompt_chars": 29941,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task33_User12_seed1",
+    "stage": "write",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User7",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User7",
+      "User13"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on high-end, tech-integrated pet care products tailored for a British Shorthair cat, emphasizing medical needs (HCM risk), ergonomic design (wide jaw morphology), and smart features (Wi-Fi connectivity, app integration). Candidate A, an AI entrepreneur with a high-income background, prioritizes premium tech products, values cost-effectiveness, and has a family-oriented approach to pet care. The document's framing aligns with his preferences for eco-friendly smart home devices, data-driven decision-making, and investment in quality-of-life enhancements for his family (including pets). Candidate B (student) and C (caf\u00e9 owner) lack the financial capacity, tech focus, and specific breed-aware priorities evident in the report.",
+    "model": "solar-pro",
+    "prompt_chars": 31952,
+    "latency_sec": 1.88,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

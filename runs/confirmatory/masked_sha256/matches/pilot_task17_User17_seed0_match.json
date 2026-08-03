@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "plan",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on a multi-generational family vacation emphasizing comfort, accessibility, and practicality. As a state-owned enterprise manager with a meticulous, family-oriented personality, A prioritizes cleanliness, service quality, and balanced activities for all ages\u2014mirroring the document's emphasis on senior-friendly accommodations, diverse dining, and age-appropriate itineraries. His preference for self-guided tours, detailed planning, and Northeastern Chinese roots (suggesting a domestic travel focus) further aligns with the request for domestic coastal destinations and structured, family-centric planning. Candidates B and C, while also family-focused, emphasize pet-friendly or high-end experiences (B) and business-oriented travel (C), which are less central to the document's core priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 23292,
+    "latency_sec": 1.85,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "search",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on travel logistics (high-speed trains, flights, typhoon risks) and family-friendly destinations (accessibility, family suites, beaches) in coastal Chinese cities like Qingdao and Weihai. Candidate B, a marketing manager with two children, prioritizes family vacations (twice yearly), values accessibility, and prefers destinations combining natural/cultural attractions. His consumption patterns emphasize quality and cost-effectiveness for family needs, aligning with the document's emphasis on practical travel planning and family-oriented amenities. Candidates A and C, while also family-oriented, lack B's explicit focus on structured, cost-effective travel planning and destination accessibility for children.",
+    "model": "solar-pro",
+    "prompt_chars": 25483,
+    "latency_sec": 2.17,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "compress",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document focuses on multi-generational travel planning for a July vacation, emphasizing senior-friendly transportation (HSR over flights), temperate coastal climates (avoiding typhoon risks), and accessible activities (gentle walks vs. active watersports). Candidate A, a 40-45-year-old state-owned enterprise manager from Harbin, aligns with these priorities: he plans annual family trips, prioritizes practicality (e.g., comparing travel durations), and values low-stress options for elderly parents (his parents live in Qiqihar). The document's emphasis on HSR convenience, moderate climates, and balanced activities (e.g., coastal promenades for seniors, watersports for youth) mirrors A's family structure (middle-school son, elderly parents) and travel style (self-guided, detailed planning). Candidates B and C, while family-oriented, prioritize pet-friendly destinations (B) or high-end cultural/historical sites (C), which are not central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 28006,
+    "latency_sec": 2.18,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "write",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document prioritizes multi-generational comfort, accessibility, and practicality\u2014key concerns for Candidate A, a state-owned enterprise manager in his 40s with elderly parents, a middle-school son, and a focus on rational, family-oriented planning. The emphasis on barrier-free infrastructure, climate comfort for seniors, and cost-effective luxury aligns with A's budget-conscious yet quality-focused preferences. Unlike Candidate B (a younger, high-end urban professional) or C (a nurse prioritizing pet-friendly travel), A's background in engineering and management mirrors the document's structured, data-driven approach to balancing diverse family needs.",
+    "model": "solar-pro",
+    "prompt_chars": 30017,
+    "latency_sec": 2.02,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

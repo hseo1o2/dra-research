@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task27_User2_seed0",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User7",
+    "correct": false,
+    "reasoning": "The brief is written in a practical, research-planning style with emphasis on structured execution, budgeting, and cost-effective equipment\u2014matching a profile that values data, rational spending, and independent planning. It also targets distribution/marketing across major platforms and calls for \u201cofficial product pages and manufacturer specifications,\u201d aligning with an analytical, new-media/communication research background like Candidate A.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 23902,
+    "latency_sec": 1.61,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task27_User2_seed0",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User1",
+      "User2"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User1",
+    "correct": false,
+    "reasoning": "The excerpt is dominated by hardware shopping and technical comparison queries for audio interfaces (Scarlett 2i2 4th Gen, MOTU M2, Audient iD4 MKII) with price searches on JD/Taobao and detailed spec/codec considerations. This aligns with a computer-science student who actively buys electronics online, researches product details, and compares alternatives for practical use.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 24661,
+    "latency_sec": 1.53,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task27_User2_seed0",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User1",
+      "User2"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User1",
+    "correct": false,
+    "reasoning": "The excerpt is dominated by shopping/price research for audio gear (Scarlett 2i2, MOTU, Audient, microphones/headphones) with heavy use of JD/Taobao and technical comparison points (DAC/ADC, headphone amp, MIDI connectivity). Candidate B is a tech-focused CS student who frequently buys electronics on JD/Taobao and is comfortable with detailed technical specifications and product comparisons, matching the document\u2019s practical, spec-driven market research framing.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 27967,
+    "latency_sec": 1.87,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task27_User2_seed0",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User1",
+      "User2"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User1",
+    "correct": false,
+    "reasoning": "The excerpt is a highly technical, budget- and specification-driven execution plan (interfaces, mic specs, DAW/plugin choices, latency, dynamic range, cost ranges) with structured workflows and quantified time allocation. Candidate B\u2019s computer-science background and preference for detailed technical specifics, cost-effective hardware, and methodical planning for projects aligns best with this engineering-style framing, more than the journalism/new-media (A) or clinical psychology/music/pet emphasis (C).",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 29978,
+    "latency_sec": 1.49,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

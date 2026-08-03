@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task2_User7_seed1",
+    "stage": "plan",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "Candidate C is a graduate student specializing in new media technology and public opinion research, directly aligning with the document's focus on new media, communication studies, and computational social science. The document's emphasis on interdisciplinary coursework, international academic development, and research capability enhancement mirrors Candidate C's background in Journalism and Communication, his interest in social issues, and his analytical decision-making style. Additionally, his preferences for cost-effective homestays, cultural experiences, and self-guided travel align with the document's practical strategies for cultural integration and risk management. Candidates A (Clinical Psychology) and B (Environmental Studies) lack the direct academic and thematic relevance to the document's core focus.",
+    "model": "solar-pro",
+    "prompt_chars": 23891,
+    "latency_sec": 1.71,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User7_seed1",
+    "stage": "search",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User6",
+      "User2"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on graduate-level exchange programs, visiting scholar requirements, and academic credits in media/communications fields. Candidate A is a graduate student in Journalism and Communication with a focus on new media and public opinion research, directly aligning with the document's emphasis on graduate-level academic programs, non-degree studies, and media-related coursework. The document's framing around tuition, credits, and program logistics reflects Candidate A's academic priorities and research interests, unlike Candidates B (Environmental Studies) or C (Clinical Psychology), whose fields and search behaviors do not match the document's content.",
+    "model": "solar-pro",
+    "prompt_chars": 25376,
+    "latency_sec": 1.66,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User7_seed1",
+    "stage": "compress",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User6"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on journalism, visiting scholar programs, tuition, visa requirements, and computational social science\u2014topics directly aligned with Candidate B's graduate studies in new media and public opinion research. The document's emphasis on non-degree programs, project-based evaluation, and interdisciplinary seminars (combining journalism, media technology, and computational methods) mirrors B's academic interests and tool proficiencies (Python, data analysis). Unlike A (clinical psychology) or C (environmental studies), B's background in journalism, frequent engagement with academic resources, and interest in social issues make the document's framing and priorities most relevant to their needs as a graduate student seeking program details for research or professional development.",
+    "model": "solar-pro",
+    "prompt_chars": 28244,
+    "latency_sec": 2.15,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User7_seed1",
+    "stage": "write",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User6",
+      "User7",
+      "User2"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on graduate-level research in new media technology, public opinion analysis, and computational social science, aligning with Candidate B's specialization in 'new media and public opinion research' and his academic background in Journalism and Communication. The report's emphasis on technical skills (Python, data analysis), institutional frameworks (credit transfers, visa regulations), and research-intensive programs matches B's proficiencies in Python, data tools, and interest in academic rigor. Candidates A (Environmental Studies) and C (Clinical Psychology) lack the direct disciplinary and methodological overlap with the document's technical and social science focus.",
+    "model": "solar-pro",
+    "prompt_chars": 30255,
+    "latency_sec": 1.54,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

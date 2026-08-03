@@ -1,0 +1,118 @@
+[
+  {
+    "run_id": "pilot_task43_User18_seed1",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The brief is written from the standpoint of a recently resigned data analyst in Shanghai seeking detailed, legally grounded guidance on non-compete enforceability, compensation, and Shanghai/tech-sector judicial precedents. Candidate C matches the data-analyst role, Shanghai location, and the preference for meticulous, evidence-based research and case analysis, aligning with the document\u2019s technical legal research framing.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 24426,
+    "latency_sec": 1.4,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4540,
+    "output_tokens": 99,
+    "total_tokens": 4639,
+    "api_response_id": "chatcmpl-E8pn9zvj2xtdQ6GPvysqUgAX1kECB"
+  },
+  {
+    "run_id": "pilot_task43_User18_seed1",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The excerpt is legal research focused on PRC Labor Contract Law and SPC/Shanghai High People\u2019s Court interpretations of non-compete clauses and compensation\u2014information a Shanghai-based data analyst would likely seek for workplace compliance or risk assessment. Candidate A\u2019s Shanghai location, analytical mindset, and habit of saving case studies and legal/technical references align with the document\u2019s citation-heavy, evidence-driven framing.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 25367,
+    "latency_sec": 1.44,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5111,
+    "output_tokens": 101,
+    "total_tokens": 5212,
+    "api_response_id": "chatcmpl-E8pnAGJai8J25kWv32FDWdhCq394q"
+  },
+  {
+    "run_id": "pilot_task43_User18_seed1",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The provided document excerpt contains no content (empty topic_001 array), so matching must rely on default likelihood. Among the candidates, Profile A is the most broadly aligned with typical marketing/management research framing and professional report consumption patterns.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 22756,
+    "latency_sec": 1.07,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4224,
+    "output_tokens": 70,
+    "total_tokens": 4294,
+    "api_response_id": "chatcmpl-E8pnCzujlWMMwJ6PJAeSUDfVfQwXp"
+  },
+  {
+    "run_id": "pilot_task43_User18_seed1",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The excerpt is a legal guide specifically for a Data Analyst in Shanghai\u2019s tech sector, emphasizing enforceability, compensation, and practical steps\u2014matching the profile of Liu Lu, a Shanghai-based data analyst focused on evidence-based research and career planning. The document\u2019s technical/legal framing and focus on job duties/access to trade secrets aligns with her data/analytics background and likely need to assess a non-compete before changing roles.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 30752,
+    "latency_sec": 1.51,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5845,
+    "output_tokens": 107,
+    "total_tokens": 5952,
+    "api_response_id": "chatcmpl-E8pnDLjINPphcO5mKm9MbnhfBtV9u"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task22_User18_seed0",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate A (Liu Qiang) is a 30-35-year-old marketing manager with a conservative risk appetite, a family (wife and two children), and a focus on long-term financial planning\u2014aligning with the document's emphasis on a 30-year retirement plan integrating annuity, medical, and long-term care insurance. The document's modular, life-stage-specific approach matches his pragmatic, family-oriented decision-making style (e.g., joint decisions with his wife, prioritizing children's education). Candidate B (investment manager) and C (data analyst) lack the family responsibilities and conservative risk profile central to the document's framing. Additionally, the document's focus on tiered models and regulatory disclosures aligns with Candidate A's background in business management and preference for structured, cost-effective planning.",
+    "model": "solar-pro",
+    "prompt_chars": 23865,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task22_User18_seed0",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate A (Liu Qiang) is a 30-35-year-old marketing manager in Shanghai with family responsibilities, aligning with the document's focus on insurance products (e.g.,\u517b\u8001\u5e74\u91d1,\u589e\u989d\u7ec8\u8eab\u5bff\u9669) and tax-saving strategies for middle-class households. The document emphasizes pre-defined interest rates, tax benefits (12000\u5143/year), and long-term financial planning\u2014key concerns for a pragmatic, family-oriented professional like A, who prioritizes cost-effectiveness, children's education, and durable household investments. Candidate B (investment manager) and C (data analyst) focus more on individual financial growth or tech-driven efficiency, which is less central to the document's family-centric, insurance-heavy framing.",
+    "model": "solar-pro",
+    "prompt_chars": 24339,
+    "latency_sec": 1.93,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task22_User18_seed0",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User8",
+    "correct": false,
+    "reasoning": "The document focuses on tax-deferred pension systems, insurance product regulations, and fixed-income yield trends\u2014topics requiring deep financial expertise. Candidate A, an investment manager with a finance background, aligns perfectly: his daily use of financial apps (Xueqiu, Tonghuashun), preference for cost-effectiveness in investments, and interest in tax optimization (evident in his research habits) match the document's technical framing. Unlike Candidate B (marketing focus) or C (data analysis), A's role and documented behavior (e.g., analyzing market dynamics, saving financial data) directly correlate with the document's regulatory and yield-comparison focus. The content's granularity (e.g., marginal tax rates, insurance rate caps) reflects a professional investor's perspective, not general consumers or data analysts.",
+    "model": "solar-pro",
+    "prompt_chars": 28139,
+    "latency_sec": 1.96,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task22_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document explicitly references a 25-30-year-old female data analyst named Liu Lu in Shanghai with a statistics background, conservative risk preferences, and specific financial/retirement planning needs. Candidate C matches all these attributes: same occupation (data analyst), age range (25-30), gender (female), educational background (statistics), location (Shanghai), and lifestyle (single, parents in Hefei). The document's focus on low-risk financial products, tax optimization, and long-term retirement planning aligns with Candidate C's meticulous, data-driven personality and career goals. Candidates A (male marketing manager) and B (male investment manager) do not match the demographic or professional profile described in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30150,
+    "latency_sec": 2.23,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

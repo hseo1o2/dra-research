@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task18_User22_seed1",
+    "stage": "plan",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on technical manufacturing, budget-conscious planning, and integration of business with cultural/technical interests. The document emphasizes optimizing practicality, comfort, and value within a strict budget (\u00a530,000 RMB), which matches A's pragmatic, cost-effective decision-making style. The request for modern technology, smart manufacturing, and industrial exhibition centers reflects A's background as a Technical Director in Manufacturing and his interest in Industry 4.0. Additionally, the inclusion of classical music (e.g., Tan Dun) and historical landmarks aligns with A's preferences for symphonic works and cultural sites. Candidate B (Supply Chain Manager) and C (Marketing Manager) lack the same depth of technical/industrial focus and budget-conscious framing.",
+    "model": "solar-pro",
+    "prompt_chars": 25204,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task18_User22_seed1",
+    "stage": "search",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User19",
+    "correct": false,
+    "reasoning": "The document focuses on flight schedules, numbers, and real-time data for routes like PVG-PEK-BER and LH729/LH728, indicating a user with frequent travel needs for work. Candidate B, a supply chain manager, aligns best due to his role requiring logistics coordination, periodic mobility for industry conferences, and preference for efficiency in travel planning. Unlike Candidate A (manufacturing director with local focus) or Candidate C (marketing manager with less frequent business trips), B\u2019s emphasis on supply chain optimization, domestic travel for work, and interest in eco-friendly/sustainable practices (relevant to modern logistics) directly connect to the document\u2019s framing. His use of apps like WeChat for industry trends and LinkedIn for professional networking also matches the document\u2019s technical, data-driven tone.",
+    "model": "solar-pro",
+    "prompt_chars": 26577,
+    "latency_sec": 2.34,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task18_User22_seed1",
+    "stage": "compress",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User19",
+    "correct": false,
+    "reasoning": "The document focuses on detailed public transit logistics, ticket pricing, and cost-efficient travel options in Berlin, reflecting a pragmatic, efficiency-oriented mindset. Candidate B, a supply chain manager with a strong emphasis on cost-effectiveness, practicality, and eco-friendly consumption, aligns most closely with this content. His interest in logistics, data-driven decision-making, and preference for sustainable options mirror the document's granular analysis of transit costs, zone coverage, and budget-conscious recommendations. Candidates A and C, while rational consumers, prioritize technical/engineering or marketing perspectives, respectively, which are less directly relevant to the transit-focused framing of the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29269,
+    "latency_sec": 2.24,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task18_User22_seed1",
+    "stage": "write",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User22",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document reflects the priorities of a high-end business traveler focused on efficiency, comfort, and connectivity, with a strong emphasis on executive and engineering leadership. Candidate C, a marketing manager in a foreign enterprise, aligns best with this profile. His preferences for high-end accommodations, self-planned itineraries, and focus on practicality and cost-effectiveness mirror the document's framing. Additionally, his international exposure, frequent business trips, and interest in modern urban environments (e.g., Pudong New Area) align with the document's emphasis on global connectivity and executive-level travel. Candidates A (supply chain manager) and B (technical director) prioritize domestic travel and practicality over the international, high-end, and culturally immersive framing seen in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 31280,
+    "latency_sec": 2.33,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

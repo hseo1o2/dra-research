@@ -1,0 +1,90 @@
+[
+  {
+    "run_id": "pilot_task37_User8_seed0",
+    "stage": "plan",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User20",
+      "User8",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User14",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": false,
+    "reasoning": "Candidate B (Lin Nan) is the best match. The document emphasizes optimizing an open-plan kitchen for cooking, prioritizing natural materials (wood/fabrics), and creating a stylish, warm environment\u2014aligning with B's artistic sensibilities and focus on aesthetics. B's role as a freelance illustrator and his appreciation for design-oriented spaces (e.g., boutique guesthouses) reflect the document's emphasis on visual harmony and functional creativity. Additionally, B's cat ownership and interest in integrating personal inspiration into living spaces mirror the document's holistic approach to home design. Candidates A and C, while cost-conscious or creatively inclined, lack B's explicit focus on design integration and material aesthetics central to the request.",
+    "model": "solar-pro",
+    "prompt_chars": 24203,
+    "latency_sec": 1.95
+  },
+  {
+    "run_id": "pilot_task37_User8_seed0",
+    "stage": "search",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User20",
+      "User8",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "The document focuses on open-kitchen layouts, ventilation systems, and space optimization\u2014topics aligning with Candidate B's interests in design, aesthetics, and practical living solutions. B's background in literature and marketing, combined with his creative and detail-oriented personality, resonates with the document's emphasis on functional yet visually appealing kitchen designs. Additionally, B's recent adoption of a cat and interest in home decor (e.g., Japanese bento, aesthetic accommodations) suggest a lifestyle that values both practicality and artistic expression, mirroring the document's blend of technical specifications (e.g., wind volume, storage ratios) and lifestyle considerations (e.g., 'ceremonial feel,' 'happiness index'). Candidates A (finance-focused) and C (artistic but less detail-oriented on technical specs) lack this direct overlap.",
+    "model": "solar-pro",
+    "prompt_chars": 25005,
+    "latency_sec": 1.92
+  },
+  {
+    "run_id": "pilot_task37_User8_seed0",
+    "stage": "compress",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User20",
+      "User8",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User8",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User8",
+    "correct": true,
+    "reasoning": "The document focuses on technical specifications, spatial planning, and compliance standards for kitchen layouts and air management systems in 80 sqm apartments. Candidate B, an investment manager with a finance and analytical background, aligns with the document's data-driven, structured, and compliance-oriented framing. His meticulous personality, preference for cost-effective solutions, and interest in technical details (e.g., airflow metrics, material comparisons) mirror the document's emphasis on precise measurements, regulatory adherence, and optimization strategies. Candidates A (creative copywriter) and C (freelance illustrator) prioritize aesthetics and inspiration, which are less central to the document's functional and technical focus.",
+    "model": "solar-pro",
+    "prompt_chars": 28794,
+    "latency_sec": 1.75
+  },
+  {
+    "run_id": "pilot_task37_User8_seed0",
+    "stage": "write",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User20",
+      "User8",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "The document emphasizes an open-plan LDK layout, natural wood aesthetics, and budget optimization tailored to a couple's lifestyle. Candidate B, a copywriter with a creative background, aligns with the document's focus on aesthetics, spatial flow, and practicality. His interest in Japanese cuisine (e.g., bento-making) and preference for mid-range, design-oriented products mirror the document's emphasis on a warm, functional, and visually appealing home environment. Additionally, his meticulous planning and appreciation for art/design resonate with the document's structured yet creative approach to renovation. Candidates A (investment manager) and C (freelance illustrator) lack the document's specific focus on balancing lifestyle needs with budget-conscious design choices.",
+    "model": "solar-pro",
+    "prompt_chars": 30805,
+    "latency_sec": 1.74
+  }
+]

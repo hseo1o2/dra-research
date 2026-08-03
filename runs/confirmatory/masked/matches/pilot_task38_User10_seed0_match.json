@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task38_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User19",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User12",
+      "User19"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on family-centric priorities (educational quality, park accessibility, and living convenience for a family of four plus a dog), budget constraints (\u00a56 million RMB), and location preferences (Chaoyang District and [MASKED] with subway access). The document's emphasis on school admission policies, cost breakdowns, and transaction risk control reflects Candidate A's role as a pragmatic, detail-oriented manager (Liu Qiang) who prioritizes cost-effectiveness, family education, and structured planning. Unlike Candidate B (an AI entrepreneur focused on tech investments) or Candidate C (a supply chain manager in Chengdu), Candidate A's background in Shanghai (a high-cost urban environment) and his family's needs (children's education, pet-friendly housing) directly mirror the document's scope and priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 27246,
+    "latency_sec": 2.35,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task38_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User19",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User10",
+      "User12"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User12",
+    "correct": false,
+    "reasoning": "Candidate C, an AI entrepreneur in Haidian District, Beijing, aligns most closely with the document's focus on real estate queries in Haidian and Chaoyang. The document emphasizes high-end housing prices, specific neighborhoods (e.g., Xisanqiao, Qinghe), and school district policies (1911/630 policies), which reflect C's status as a property-owning tech professional in Haidian. His profile highlights a high-income lifestyle, family needs (5-year-old daughter), and proximity to tech hubs, making him the most likely target for such detailed real estate and education policy analysis. Candidates A (Chengdu-based) and B (Shanghai-based) lack the geographic and socioeconomic relevance to Beijing's housing market.",
+    "model": "solar-pro",
+    "prompt_chars": 26551,
+    "latency_sec": 2.13,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task38_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User19",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User10",
+      "User12"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User12",
+    "correct": false,
+    "reasoning": "The document focuses on real estate in Haidian District, Beijing, with detailed analysis of property prices, layouts, and amenities (e.g., subway access, parks, dog-friendly areas). Candidate C, an AI entrepreneur based in Haidian, aligns most closely: (1) His permanent residence is in Haidian, making local real estate data directly relevant. (2) The document emphasizes practicality, layout efficiency (\u5f97\u623f\u7387), and proximity to amenities\u2014key concerns for an entrepreneur balancing work and family. (3) His family includes a pet (cat), and the document highlights dog-friendly parks, suggesting pet ownership is a consideration. (4) The budget (\u00a56M) and property size (80\u2013100 sqm) match his financial status (owns Beijing property, high-quality lifestyle investments). Candidates A (Chengdu-based) and B (Shanghai-based) lack geographic or contextual ties to Beijing's real estate market.",
+    "model": "solar-pro",
+    "prompt_chars": 30419,
+    "latency_sec": 2.03,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task38_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User19",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on a family of four (with two children and a pet dog) seeking a home in Beijing within a strict budget, emphasizing education policies, park access for the dog, and practical financial planning. Candidate B matches these priorities most closely: he has an 8-year-old daughter and 5-year-old son, owns a Labrador, and his wife is a primary school teacher\u2014mirroring the document's focus on education and family needs. The document's detailed analysis of Beijing's housing market (Haidian vs. Chaoyang) aligns with Candidate B's current residence in Shanghai and his likely interest in relocating to Beijing for career or family reasons. Candidate A (AI entrepreneur) and Candidate C (supply chain manager in Chengdu) lack the specific family structure, pet ownership, and educational focus central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 32430,
+    "latency_sec": 2.55,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

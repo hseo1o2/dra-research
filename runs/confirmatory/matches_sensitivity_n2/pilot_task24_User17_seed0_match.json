@@ -1,0 +1,110 @@
+[
+  {
+    "run_id": "pilot_task24_User17_seed0",
+    "stage": "plan",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate B (Liu Qiang) aligns more closely with the document's focus on detailed comparative analysis, budget-conscious decision-making, and prioritization of family and property protection. As a marketing manager with an MBA, he exhibits a data-driven, analytical mindset (evident in his LinkedIn activity, market trend analysis, and cost-benefit evaluations) that matches the report's structured evaluation of insurance products. His pragmatic approach to consumption (e.g., investing in durable household items, comparing electronics) reflects the document's emphasis on coverage limits, sub-limits, and valuation criteria. Additionally, his role as a family breadwinner in a high-end Shanghai community mirrors the document's focus on safeguarding a seaside property and household belongings (\u00a5300,000 valuation), while his quarterly family trips and pet ownership (Labrador) align with the need for comprehensive disaster coverage (typhoons, floods) in a coastal area. Candidate A, while family-oriented, lacks the analytical rigor and property-focused priorities evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 16223,
+    "latency_sec": 2.22,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task24_User17_seed0",
+    "stage": "search",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User17"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on high-end home insurance (\u5bb6\u8d22\u9669) with detailed comparisons of premiums (3000-5000 yuan), coverage (indoor property, depreciation, deductibles), and disaster-specific policies (typhoons, earthquakes). Candidate A, as a pragmatic marketing manager in Shanghai, prioritizes cost-effectiveness, quality, and long-term financial planning for his family. His profile highlights rational consumption, investment in durable household items, and attention to insurance-like financial products (e.g., children\u2019s education expenses, family budgeting). The document\u2019s emphasis on precise coverage calculations, premium optimization, and disaster resilience aligns with A\u2019s data-driven decision-making and focus on protecting high-value assets. Candidate B, while detail-oriented, focuses more on pet care, health, and family convenience, which are less central to the document\u2019s insurance-specific technical framing.",
+    "model": "solar-pro",
+    "prompt_chars": 16008,
+    "latency_sec": 2.04,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task24_User17_seed0",
+    "stage": "compress",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User17"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on high-end household insurance (\u5bb6\u8d22\u9669) with detailed comparisons of premiums, coverage limits, and valuation strategies, emphasizing cost-effectiveness and practicality. Candidate A, as a marketing manager with an MBA, exhibits a pragmatic, data-driven decision-making style and prioritizes quality, cost-effectiveness, and long-term planning for household investments. His profile aligns with the document's technical framing, emphasis on financial optimization, and categorization of coverage (e.g., depreciation, sub-limits), which reflect his background in business management and rational consumption habits. Candidate B, while also rational, focuses more on health, family, and pet care, with less emphasis on financial or insurance analytics, making the document less central to her documented priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 20193,
+    "latency_sec": 1.84,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task24_User17_seed0",
+    "stage": "write",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User17"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on high-end home insurance for coastal properties in Xiamen, emphasizing technical details like premium budgets, risk assessments, and product comparisons. Candidate A, a marketing manager with an MBA, aligns with this analytical, detail-oriented framing. His background in business management and preference for cost-effectiveness, quality, and structured decision-making match the report's emphasis on optimizing insurance coverage, evaluating financial trade-offs, and prioritizing durable, high-value assets. Candidate B, while rational, focuses more on health, family, and pet care, with less emphasis on financial optimization or technical product analysis, making her less aligned with the document's professional, data-driven tone.",
+    "model": "solar-pro",
+    "prompt_chars": 21289,
+    "latency_sec": 1.87,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

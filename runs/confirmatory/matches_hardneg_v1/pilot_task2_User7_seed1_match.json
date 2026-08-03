@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task2_User7_seed1",
+    "stage": "plan",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "Candidate A is a graduate student in new media technology and public opinion research with a journalism background, directly aligning with the document's focus on academic exchange programs in new media, communication studies, and computational social science. The document's emphasis on curriculum design, credit transfer, and research culture mirrors A's academic goals and interdisciplinary interests. Additionally, A's practical focus on cost management, visa requirements, and cultural integration strategies aligns with the document's actionable strategies for international study. Candidates B (advertising copywriter) and C (data analyst) lack the specific academic and research-oriented context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24269,
+    "latency_sec": 1.97,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User7_seed1",
+    "stage": "search",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User20",
+      "User7"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on graduate-level academic programs, exchange requirements, tuition fees, and ECTS credits across institutions like USC, Columbia, LSE, and the University of Amsterdam. Candidate C, a graduate student in new media and public opinion research, aligns most closely with this content due to their academic background, interest in communication studies, and frequent engagement with research-related queries (e.g., ECTS, non-degree modules, tuition). Their focus on institutional requirements, fees, and program structures matches the document\u2019s framing, unlike Candidates A (data analyst) or B (copywriter), whose priorities and vocabulary are unrelated to graduate academic exchanges.",
+    "model": "solar-pro",
+    "prompt_chars": 26106,
+    "latency_sec": 1.58,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User7_seed1",
+    "stage": "compress",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User18",
+      "User20"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on graduate exchange programs, visiting scholar requirements, and non-degree journalism/communication courses\u2014topics directly aligned with Candidate A's identity as a graduate student in new media/public opinion research. The content emphasizes academic prerequisites (transcripts, language waivers), funding logistics (proof of funds, insurance), and program structures (project-based evaluation, computational seminars), which reflect Candidate A's academic background, research interests, and practical concerns (e.g., budgeting, visa requirements). Candidate B (data analyst) and C (copywriter) lack the document's academic/program-specific focus, which prioritizes institutional parameters over professional or creative applications.",
+    "model": "solar-pro",
+    "prompt_chars": 28599,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User7_seed1",
+    "stage": "write",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User18",
+      "User7"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on graduate-level research in new media, public opinion, and computational social science, detailing academic programs, credit systems, and technical skills like Python and data analysis. Candidate C is explicitly described as a graduate student in new media and public opinion research, with technical proficiencies (Python, data analysis) and academic interests (public opinion monitoring, computational methods) that directly align with the document's technical framing, regional program comparisons, and emphasis on research culture. Candidates A (copywriter) and B (data analyst) lack the document's specific academic focus and technical vocabulary.",
+    "model": "solar-pro",
+    "prompt_chars": 30610,
+    "latency_sec": 1.53,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

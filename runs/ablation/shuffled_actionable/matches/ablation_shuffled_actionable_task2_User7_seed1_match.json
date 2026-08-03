@@ -1,0 +1,118 @@
+[
+  {
+    "run_id": "ablation_shuffled_actionable_task2_User7_seed1",
+    "stage": "plan",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "Candidate C is a graduate student specializing in new media technology and public opinion research, directly aligning with the document's focus on new media, public opinion, computational communication, and interdisciplinary media psychology. The document's emphasis on academic design, credit transfer, and international exchange programs matches C's background in Journalism and Communication, Beijing-based academic environment, and interest in enhancing research capabilities. Unlike Candidates A (Clinical Psychology) and B (Environmental Studies), C's priorities, vocabulary (e.g., 'computational communication,' 'media psychology'), and goals (e.g., global academic networks, career competitiveness in media/tech) are explicitly reflected in the document's framing and requirements.",
+    "model": "solar-pro",
+    "prompt_chars": 24281,
+    "latency_sec": 2.43,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5032,
+    "output_tokens": 159,
+    "total_tokens": 5191,
+    "api_response_id": "092e2711-c93e-43fe-a38e-4fcc4552d28f"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task2_User7_seed1",
+    "stage": "search",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User6",
+      "User2"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on graduate-level communication, journalism, and international exchange programs (USC Annenberg, UPenn Annenberg, LSE, Oxford OII, NUS). Candidate A is a graduate student in new media/public opinion research with academic interests in communication studies, frequent engagement with media professionals, and a focus on social issues\u2014directly aligning with the document's emphasis on communication/journalism programs. Candidates B (environmental studies) and C (clinical psychology) lack the disciplinary relevance to the document's core themes.",
+    "model": "solar-pro",
+    "prompt_chars": 25751,
+    "latency_sec": 2.11,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5393,
+    "output_tokens": 129,
+    "total_tokens": 5522,
+    "api_response_id": "a17822f2-a6ff-4cb6-b838-f93a337d7fc3"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task2_User7_seed1",
+    "stage": "compress",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User6"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on visiting scholar/researcher programs at prestigious communication and journalism schools (USC, UPenn, Stanford, Columbia), emphasizing academic research, visa logistics, and institutional requirements. Candidate B, a graduate student in new media/public opinion research with a background in journalism and communication, aligns most closely with this academic focus. Their interest in social issues, data analysis, and communication studies matches the document's framing. Candidates A (clinical psychology) and C (environmental studies) lack the direct disciplinary connection to communication/journalism that defines the document's scope.",
+    "model": "solar-pro",
+    "prompt_chars": 28244,
+    "latency_sec": 2.23,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 7053,
+    "output_tokens": 136,
+    "total_tokens": 7189,
+    "api_response_id": "f0e9c1c9-37d0-4a7c-b6d3-8f62c4b00a27"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task2_User7_seed1",
+    "stage": "write",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User6",
+      "User7",
+      "User2"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on graduate-level research in new media technology, public opinion analysis, computational communication, and media psychology\u2014directly aligning with Candidate B's graduate specialization in new media and public opinion research. The report's emphasis on methodological innovation, lab immersion, and cross-cultural academic programs reflects B's data-driven decision-making style, proficiency in Python and research tools, and interest in global communication trends. Unlike Candidate A (environmental studies) or C (clinical psychology), B's academic background, online engagement with communication studies, and consumption of social-issue content mirror the document's technical framing and audience of advanced communication scholars.",
+    "model": "solar-pro",
+    "prompt_chars": 30255,
+    "latency_sec": 2.73,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6242,
+    "output_tokens": 145,
+    "total_tokens": 6387,
+    "api_response_id": "aa3ee907-d24f-4de3-ad11-f82d00c35b62"
+  }
+]

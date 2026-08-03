@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task14_User3_seed0",
+    "stage": "plan",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User3",
+      "User1",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User1",
+      "User3",
+      "User5"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User3",
+    "correct": true,
+    "reasoning": "The document emphasizes a beginner runner's need for a budget-friendly, flexible, and injury-preventive marathon training plan tailored to a student's schedule in Chengdu. Candidate B, a mechanical engineering student in Chengdu with a tight academic schedule, aligns perfectly: he prioritizes frugality (matches the budget-friendly gear/nutrition advice), values structured yet adaptable routines (reflects his time management and lab/study balance), and exercises in nearby campus locations (consistent with his ping-pong/jogging habits). Unlike Candidate A (tech-focused, Suzhou-based) or C (cycling-focused, Jinan-based), B\u2019s rural upbringing and pragmatic personality resonate with the document\u2019s emphasis on simplicity, safety, and local training environments (parks, roads). His recent interest in jogging and stress-relief through exercise further supports this match.",
+    "model": "solar-pro",
+    "prompt_chars": 23561,
+    "latency_sec": 2.21,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User3_seed0",
+    "stage": "search",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User3",
+      "User1",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User1",
+      "User5",
+      "User3"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User3",
+    "correct": true,
+    "reasoning": "The document focuses on beginner-friendly marathon training plans, dynamic warm-up routines, run/walk ratios, and budget-friendly electrolyte recipes\u2014topics aligned with Candidate C's pragmatic, cost-conscious, and hands-on personality. Unlike Candidates A (tech-focused) and B (cycling/academic), Candidate C prioritizes practical, low-cost solutions (e.g., DIY electrolyte drinks, budget accommodations) and enjoys physical activities like jogging and ping-pong. The document\u2019s emphasis on accessibility, affordability, and gradual progression mirrors C\u2019s frugal habits, mechanical engineering interest in practical applications, and exercise goals for stress relief and fitness.",
+    "model": "solar-pro",
+    "prompt_chars": 24779,
+    "latency_sec": 2.34,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User3_seed0",
+    "stage": "compress",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User3",
+      "User1",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User1",
+      "User3"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User3",
+    "correct": true,
+    "reasoning": "The document focuses on a budget-friendly, 12-week beginner marathon training plan emphasizing cost-effective nutrition, injury prevention, and structured progression. Candidate C, a rural upbringing mechanical engineering student from a modest background, aligns with this frugal, practical approach. His preferences for cost-effectiveness, DIY solutions (e.g., homemade electrolyte drinks), and focus on foundational health mirror the document's emphasis on affordability and injury prevention. Unlike Candidates A (cycling-focused, tech-oriented) and B (tech/AI-focused, less budget-conscious), Candidate C's rural pragmatism, hands-on problem-solving, and interest in mechanical tools (e.g., DIY recipes) directly align with the document's tone and priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 28360,
+    "latency_sec": 1.8,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User3_seed0",
+    "stage": "write",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User3",
+      "User1",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User3",
+      "User5",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User3",
+    "correct": true,
+    "reasoning": "The document emphasizes a 12-week marathon training program tailored for an undergraduate student in Chengdu, balancing academic commitments with injury prevention. Candidate A is a 17-20-year-old mechanical engineering student at a Chengdu university, with a focus on frugality, time management, and stress relief through exercise. The program's budget-friendly nutrition tips (e.g., homemade electrolyte drinks, chocolate milk) align with A's cost-conscious habits. The mention of campus resources (botanical garden, ping-pong hall) and structured weekly schedules (5-day commitment) directly match A's routine and environment. Candidate B (cycling focus, graduate student) and C (basketball/yoga, computer science) lack the specific context of Chengdu, undergraduate time constraints, or the pragmatic, injury-prevention framing central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30371,
+    "latency_sec": 1.99,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

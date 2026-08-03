@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User19",
+      "User21"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User21",
+      "User19"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document aligns most closely with Candidate A, a 22-25-year-old female in Product Operations with a Psychology minor, seeking post-graduate options to boost career competitiveness. The focus on balancing work/study, ROI timelines, and program suitability for early-career professionals mirrors her age, experience level, and goals. Content priorities (e.g., domestic/international program comparisons, application requirements, skill gaps) reflect her practical needs as an emerging professional. Candidate B (entrepreneur) and C (supply chain manager) are older, have more experience, and prioritize different career trajectories (e.g., B's focus on art/innovation, C's supply chain expertise), making them less relevant to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 23332,
+    "latency_sec": 2.12,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User19",
+      "User21"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User9",
+      "User21"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on MBA program details (tuition, work experience, dual degrees) and product operations roles at tech companies like ByteDance, aligning with Candidate B's profile as a Product Operations professional. The queries about Beijing-based tech companies, certifications, and Hukou policies for international students reflect B's urban, tech-oriented lifestyle in Beijing and her interest in career advancement. Candidate A (Supply Chain Manager in Chengdu) and C (Entrepreneur in Shanghai) lack the direct connection to Beijing's tech sector and dual-degree MBA programs highlighted in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24745,
+    "latency_sec": 1.54,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User19",
+      "User21"
+    ],
+    "shuffled_order": [
+      "User21",
+      "User19",
+      "User9"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User21",
+    "correct": false,
+    "reasoning": "The document focuses on MBA program details (tuition, work experience requirements, dual-degree options) for top Chinese institutions like Tsinghua, PKU, and CEIBS. Candidate A, an entrepreneur with an MBA from Fudan University, aligns best: his background in economics/business, interest in leadership/management content, and frequent international travel for business mirror the document's emphasis on elite MBA programs and global professional development. Candidate B (supply chain manager) and C (internet product operations) lack the entrepreneurial and high-level business focus evident in the document's framing of dual-degree MBAs and executive education.",
+    "model": "solar-pro",
+    "prompt_chars": 27238,
+    "latency_sec": 1.6,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User19",
+      "User21"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User21",
+      "User9"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on early-career Product Operations professionals (22\u201325 years old, 1\u20133 years of experience) in internet sectors, emphasizing quantitative skills, strategic frameworks, and career advancement into roles like Data Product Manager. Candidate C matches this profile exactly: she is 22\u201325, works in Product Operations at an internet company, has a relevant educational background (Advertising with a Psychology minor), and aligns with the document's focus on bridging qualitative analysis with quantitative rigor. The document's framing (e.g., ROI of programs, job market value in Beijing) also aligns with Candidate C's location (Beijing) and career stage, unlike Candidates A (supply chain manager, Chengdu) and B (entrepreneur, Shanghai), who are older and in unrelated fields.",
+    "model": "solar-pro",
+    "prompt_chars": 29249,
+    "latency_sec": 2.25,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

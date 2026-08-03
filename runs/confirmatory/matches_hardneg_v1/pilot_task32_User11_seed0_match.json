@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task32_User11_seed0",
+    "stage": "plan",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User10",
+      "User8"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User11",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on modern aesthetics, smart home integration, and cost-effective tech-oriented solutions. The request emphasizes logical budget allocation, smart appliances with ecosystem connectivity, and a minimalist modern style\u2014all reflecting Candidate A's background as an algorithm engineer who values rationality, data-driven decisions, and smart home products. Unlike Candidate B (family-oriented, high-end durable goods) and Candidate C (investment-focused, frugal with second-hand preferences), Candidate A's tech-savvy nature, interest in smart devices, and preference for efficient, modern design directly match the document's priorities. The absence of family-related needs (e.g., child-friendly furniture) further supports this attribution.",
+    "model": "solar-pro",
+    "prompt_chars": 25252,
+    "latency_sec": 1.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task32_User11_seed0",
+    "stage": "search",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User11",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate C, a marketing manager with a family, aligns most closely with the document's focus on home furnishings, budgeting for family spaces (89\u33a1), and practical, cost-effective furniture choices (e.g., \u987e\u5bb6, \u829d\u534e\u4ed5). The document emphasizes modern minimalist aesthetics, durable materials, and space optimization\u2014key priorities for a family-oriented professional balancing quality and affordability. Candidate C\u2019s role, family responsibilities, and preference for mid-to-high-end durable goods (e.g., furniture, home appliances) match the document\u2019s framing, which contrasts with Candidates A (single, finance-focused) and B (tech-oriented, single).",
+    "model": "solar-pro",
+    "prompt_chars": 26165,
+    "latency_sec": 2.11,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task32_User11_seed0",
+    "stage": "compress",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User11",
+      "User8"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on a comprehensive, family-oriented interior design and furniture budget plan for an 89m\u00b2 apartment, emphasizing practicality, cost-effectiveness, and quality for a harmonious living environment. Candidate A, as a married father with two children, prioritizes family-centric spaces, values durable high-end furnishings, and allocates budgets for children's needs (e.g., educational expenses). The document's emphasis on room-by-room functionality, brand recommendations (e.g., KUKA, CHEERS), and attention to material suitability (e.g., gray tiles, white walls) aligns with A's pragmatic, quality-focused consumption style and his role as the primary breadwinner managing household budgets. Candidates B and C, while rational consumers, lack the family-oriented spatial needs and budget priorities (e.g., children's rooms, pet-friendly considerations) central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29754,
+    "latency_sec": 2.03,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task32_User11_seed0",
+    "stage": "write",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User10",
+      "User8"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User11",
+    "correct": true,
+    "reasoning": "The document emphasizes algorithm engineering priorities: high cost-effectiveness, precise spatial planning for small apartments (89\u33a1), and deep integration with Xiaomi's smart home ecosystem (Mi Home). Candidate A is an algorithm engineer with a focus on rational consumption, smart home adoption (e.g., smart speakers/lighting), and technical content consumption (Bilibili/Zhihu). The document's technical specifications (e.g., 3000K-4000K lighting, FAS-grade wood, mattress spine support) align with A's health-conscious, data-driven lifestyle. Candidate B (marketing manager) and C (investment manager) lack the document's engineering focus and Xiaomi ecosystem emphasis.",
+    "model": "solar-pro",
+    "prompt_chars": 31765,
+    "latency_sec": 2.54,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task29_User10_seed1",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User19",
+      "User4",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User4",
+      "User10",
+      "User18",
+      "User19",
+      "User12"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate B (Liu Qiang) is a marketing manager in a foreign enterprise with an MBA in marketing and business management. The document's focus on data-backed business planning, market analysis, and strategic positioning aligns with B's professional background and decision-making style, which emphasizes data analysis, cost-effectiveness, and practicality. B's interest in market trends, business management, and preference for quality-of-life investments (e.g., healthy eating, family-focused consumption) also match the document's emphasis on healthy fast-food targeting white-collar workers and fitness enthusiasts. While other candidates (e.g., E) have entrepreneurial experience, B's marketing expertise and focus on balancing family/career needs make him the most direct match for the document's framing and priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 41719,
+    "latency_sec": 2.57,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task29_User10_seed1",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User19",
+      "User4",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User18",
+      "User4",
+      "User12",
+      "User10"
+    ],
+    "predicted_label": "E",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on market trends, cost structures, and strategic considerations for light-food entrepreneurship in Shanghai, particularly within a 500,000 RMB budget. Candidate E, a marketing manager in a foreign enterprise based in Shanghai, aligns most closely with this content. His background in business management, emphasis on cost-effectiveness, and interest in market trends (e.g., saving market analysis reports, reading Harvard Business Review) reflect the document's framing. Additionally, his frequent business trips to cities like Shenzhen and Chengdu, along with his focus on family-friendly consumption (e.g., children's education expenses), resonate with the Shanghai-centric, budget-conscious, and family-oriented themes in the document. Other candidates (A, B, C, D) lack the same combination of Shanghai residency, marketing/business focus, and practical entrepreneurial considerations.",
+    "model": "solar-pro",
+    "prompt_chars": 41445,
+    "latency_sec": 2.6,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task29_User10_seed1",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User19",
+      "User4",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User10",
+      "User4",
+      "User12",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on the Chinese light meal market, emphasizing premium positioning (\u00a540\u2013\u00a560 price band), consumer behavior in Tier-1 cities (Shanghai, Beijing), and competitive analysis of brands like Wagas and Salu. Candidate B, a marketing manager in Shanghai, aligns with this focus: he resides in Pudong, a Tier-1 city, prioritizes cost-effectiveness and quality in consumption, and has a professional background in marketing and market analysis. His interest in market trends, premium dining experiences, and data-driven decision-making directly aligns with the document's emphasis on market growth, consumer segmentation, and competitive strategy. Other candidates either lack the geographic or professional relevance (A, C, E) or focus on unrelated industries (D).",
+    "model": "solar-pro",
+    "prompt_chars": 45541,
+    "latency_sec": 2.47,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task29_User10_seed1",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User19",
+      "User4",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User18",
+      "User19",
+      "User10",
+      "User4"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on a health-focused fast-casual business plan targeting white-collar workers and fitness enthusiasts in Shanghai's CBD, emphasizing low-calorie, high-protein meals, efficient operations, and cost-effectiveness. Candidate B, a data analyst in Shanghai, aligns closely with this profile: she is health-conscious (low-calorie, high-protein diet), values cost-effectiveness, and frequents CBD areas. Her consumption habits (food delivery, eco-friendly products) and lifestyle (fitness, self-guided trips) mirror the document's target audience. Other candidates either lack the urban CBD context (A, C, E) or focus on different priorities (D's marketing role and family-centric spending).",
+    "model": "solar-pro",
+    "prompt_chars": 47552,
+    "latency_sec": 2.23,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

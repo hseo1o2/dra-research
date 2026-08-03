@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task18_User22_seed1",
+    "stage": "plan",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on technical manufacturing, Industry 4.0, and Berlin's industrial/museum exhibits. The request for a detailed business-leisure trip to Berlin (with emphasis on smart manufacturing, automotive exhibitions, and classical music) mirrors A's background as a Technical Director in Manufacturing, his interest in modern technology centers, and his appreciation for symphonic works (e.g., Tan Dun). The budget constraint (\u00a530,000) and preference for practical, value-optimized planning also match A's frugal yet quality-focused consumption style. Candidate B (Supply Chain Manager) and C (Marketing Manager) lack the same technical/industrial focus and cultural interests (e.g., classical music) explicitly mentioned in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25262,
+    "latency_sec": 1.77,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task18_User22_seed1",
+    "stage": "search",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User19",
+    "correct": false,
+    "reasoning": "The document focuses on flight schedules, numbers, and operational details for Hainan Airlines and Lufthansa, reflecting a logistical and supply chain-oriented perspective. Candidate B, a supply chain manager, aligns most closely with this content due to his professional focus on efficiency, scheduling, and practical data analysis. His frequent use of apps like WeChat and DingTalk for work communication, interest in industry trends, and preference for eco-friendly/sustainable practices (evident in his recent focus on resource optimization) mirror the document's emphasis on structured, solution-driven information. Candidates A (manufacturing) and C (marketing) lack the direct logistical focus evident in the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 26687,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task18_User22_seed1",
+    "stage": "compress",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User19",
+    "correct": false,
+    "reasoning": "The document focuses on detailed transportation logistics, ticket pricing, and cost-benefit analysis for Berlin travel, reflecting a supply chain manager's (Candidate B) priorities. Its structured, data-driven framing (e.g., fare comparisons, zone coverage, penalty risks) aligns with B's pragmatic, efficiency-oriented personality and his professional focus on optimizing systems. Unlike Candidate A (manufacturing) or C (marketing), B's background in logistics management and interest in cost-effective, sustainable solutions directly mirror the document's emphasis on transit efficiency, budgeting, and practical travel planning.",
+    "model": "solar-pro",
+    "prompt_chars": 29269,
+    "latency_sec": 1.57,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task18_User22_seed1",
+    "stage": "write",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User22",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document emphasizes a combined business and technical research trip with a focus on efficiency, comfort, and practical value for executive leadership. Candidate C, a marketing manager in a foreign enterprise, aligns best with this framing. His profile highlights a preference for high-end accommodations, self-planned itineraries, and a balance of business and cultural experiences\u2014mirrored in the document's detailed budget breakdown, emphasis on central Berlin hotels with fitness facilities, and inclusion of both technical tours (e.g., BMW manufacturing) and cultural landmarks. Additionally, Candidate C's background in Shanghai (proximity to PVG airport) and frequent business trips to cities like Shenzhen/Chengdu align with the Suzhou/Shanghai-to-Berlin travel context. Candidates A (supply chain manager) and B (technical director) lack the document's blend of executive-level travel planning, marketing-oriented cultural immersion, and emphasis on premium yet practical logistics.",
+    "model": "solar-pro",
+    "prompt_chars": 31280,
+    "latency_sec": 1.99,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

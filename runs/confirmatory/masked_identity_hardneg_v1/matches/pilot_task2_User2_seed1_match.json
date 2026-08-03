@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task2_User2_seed1",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User1",
+      "User7",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on a graduate student in psychology seeking an overseas exchange program with emphasis on clinical psychology, credit transfer, cost structure, and cultural adaptation. Candidate C is a graduate student in Clinical Psychology, aligning perfectly with the document's academic focus. Her priorities (cost-effectiveness, psychological self-care, and cultural integration) match the document's emphasis on budget-conscious planning, mental well-being, and cross-cultural communication. Additionally, her interest in psychology-specific seminars, research labs, and international collaboration mirrors the document's requirements. Candidates A (Computer Science) and B (New Media) lack the domain-specific alignment with psychology and clinical research.",
+    "model": "solar-pro",
+    "prompt_chars": 24776,
+    "latency_sec": 2.05,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User2_seed1",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on clinical psychology practicum restrictions, tuition fees, and credit transfer rules for international graduate students\u2014topics directly relevant to Candidate A, a Clinical Psychology master's student. Her profile highlights her academic focus on psychology, interest in international exchange (e.g., language of instruction queries), and practical concerns about costs (tuition, living expenses). Candidate B (new media) and C (computer science) lack the clinical psychology specialization and document-specific priorities (e.g., HIPAA, J-1 visa clinical restrictions).",
+    "model": "solar-pro",
+    "prompt_chars": 25313,
+    "latency_sec": 1.69,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User2_seed1",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User1",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on clinical psychology restrictions, visa regulations, and academic logistics for international graduate students in psychology. Candidate C is explicitly a graduate student in Clinical Psychology with a research focus, aligning directly with the document's technical emphasis on clinical practicum limitations, HIPAA compliance, and country-specific academic integration. The document's framing around non-degree research roles, lab rotations, and observational research mirrors Candidate C's academic background and interests in psychology research. Candidates A (new media/public opinion) and B (computer science/AI) lack the domain-specific relevance to the clinical psychology and international student visa context.",
+    "model": "solar-pro",
+    "prompt_chars": 27967,
+    "latency_sec": 1.96,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User2_seed1",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on clinical psychology graduate students' international exchange opportunities, emphasizing empirical methodologies, research lab rotations, and clinical practice restrictions. Candidate A is explicitly a graduate student in Clinical Psychology, aligning with the document's academic focus. The document's emphasis on credit conversion, visa regulations (e.g., J-1 restrictions on clinical practice), and mental well-being during transitions mirrors Candidate A's background (Beijing-based clinical psychology student) and behavioral traits (e.g., interest in psychology forums, stress management). Candidate B (new media research) and Candidate C (computer science) lack the clinical psychology specialization and research-oriented priorities central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29978,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

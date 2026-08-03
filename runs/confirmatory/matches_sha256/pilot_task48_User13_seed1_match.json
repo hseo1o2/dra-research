@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task48_User13_seed1",
+    "stage": "plan",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User13",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document explicitly identifies the author as a single mother in Shanghai with a design/art background seeking a 6-month art education plan for her 5-year-old daughter Xiaoyu. This directly matches Candidate B's profile: a divorced single mother in Shanghai with a design background, a 5-year-old daughter named Xiaoyu, and a focus on art education. The request's emphasis on creative development, eco-friendly materials, and parent-child interaction aligns with B's artistic personality, caf\u00e9 owner role (involving design aesthetics), and documented interest in art exhibitions. Candidates A (tech entrepreneur) and C (marketing manager with two children) lack the specific personal context and priorities described in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 26116,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task48_User13_seed1",
+    "stage": "search",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User13",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on child art development (Lowenfeld's stages, Reggio Emilia's 'hundred languages'), Shanghai art institutions, and non-toxic art supplies\u2014topics aligning with Candidate B's profile as a caf\u00e9 owner with a design background, artistic sensibilities, and a 5-year-old child. B's emphasis on art, eco-friendly products, and engagement with creative spaces (e.g., art exhibitions, local designer markets) directly mirrors the document's themes. Candidates A (tech entrepreneur) and C (marketing manager) lack B's explicit focus on art education, Reggio-inspired practices, or sustainability in creative materials.",
+    "model": "solar-pro",
+    "prompt_chars": 27680,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task48_User13_seed1",
+    "stage": "compress",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User12",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on early childhood artistic development (Viktor Lowenfeld's stages), Reggio Emilia's creative ateliers, and art therapy for 5-year-olds\u2014topics deeply tied to art education, creativity, and child development. Candidate C, a caf\u00e9 owner with a design background and passion for art, aligns best. Her profile highlights artistic sensibilities, interest in creative processes, and engagement with child-friendly spaces (e.g., her caf\u00e9's design, pets as attractions, and taking her child to art exhibitions). Unlike Candidates A (marketing focus) and B (tech/AI focus), C\u2019s priorities in design, aesthetics, and nurturing creativity directly resonate with the document\u2019s emphasis on artistic expression and child-centered learning environments.",
+    "model": "solar-pro",
+    "prompt_chars": 30173,
+    "latency_sec": 1.72,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task48_User13_seed1",
+    "stage": "write",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User10",
+      "User12"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document's focus on art education, emotional expression, and integrative creative processes aligns most closely with Candidate A's profile. As a caf\u00e9 owner with a design background, artistic values, and a 5-year-old child, Candidate A prioritizes creative development, emotional connections, and holistic learning\u2014mirrored in the plan's emphasis on Reggio Emilia, art therapy, and nature-based art. References to Shanghai's art districts (West Bund Museum, Power Station of Art) and Candidate A's frequent visits to cultural spaces further confirm this match. Candidates B and C, while family-oriented, prioritize practicality, tech, or business\u2014unrelated to the document's artistic framing.",
+    "model": "solar-pro",
+    "prompt_chars": 32184,
+    "latency_sec": 1.67,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task17_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The brief is written from the perspective of a Shanghai-based couple planning a high-quality, family-centered beach trip with emphasis on convenient travel, child-safe activities, and senior comfort\u2014matching Candidate A\u2019s Jiangnan background, Shanghai residence, and preference for high-end, service-oriented accommodations and Jiangnan/seafood dining. Candidate A also has a pet (Labrador) and values planned, efficient self-guided itineraries with detailed recommendations, aligning with the structured research request.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 25299,
+    "latency_sec": 1.58,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The queries emphasize practical, route-planning travel logistics (driving time/HSR/flight time, elderly transit, best way to get from A to B) and family-friendly considerations. Candidate B is a Shanghai-based manager who plans self-guided family trips around school holidays and focuses on efficient, quality, cost-effective travel arrangements\u2014matching the document\u2019s utilitarian travel-time framing.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 26861,
+    "latency_sec": 1.33,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The excerpt is a family travel planning brief emphasizing multi-generational logistics, kids club accessibility, and detailed route/time comparisons from Shanghai to Zhejiang coastal destinations\u2014typical of a parent planning vacations during school holidays. Candidate B\u2019s profile (30\u201335, marketing manager, two children, uses WeChat/LinkedIn, prefers high-end chain hotels and self-guided family trips with practical, quality-focused research) aligns closely with the document\u2019s family-and-accessibility framing.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 29375,
+    "latency_sec": 1.64,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The excerpt is a detailed, family-focused travel plan from Shanghai that explicitly balances needs of an 8-year-old girl, a 5-year-old boy, and elderly grandparents\u2014matching a young professional couple with two children and frequent family trips. The pragmatic, quality-and-comfort oriented framing (accessibility, low strain logistics, high-quality dining, structured itinerary) aligns best with Candidate A\u2019s rational planning style and preference for high-end yet efficient travel.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 31386,
+    "latency_sec": 1.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

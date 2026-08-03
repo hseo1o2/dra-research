@@ -1,0 +1,90 @@
+[
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User9",
+      "User2"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document explicitly describes a young professional in product operations with an advertising background and psychology minor seeking emotional management strategies. Candidate B matches this profile exactly: she works in product operations, studied advertising with a psychology minor, and faces work-related stress. The request for morning routines (7:00-9:00 AM), meditation/journaling/yoga integration, and CBT/MBSR resources aligns with her time preferences, exercise habits (morning yoga/jogging), and interest in mental health content. Candidate A (mechanical engineering grad student) and C (clinical psychology grad student) lack the professional background and specific stress triggers described in the query.",
+    "model": "solar-pro",
+    "prompt_chars": 22722,
+    "latency_sec": 1.55
+  },
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User9",
+      "User5"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "The document focuses on psychological well-being, emotion regulation, and mindfulness-based interventions (e.g., MBSR, DBT), aligning with Candidate A's background as a Clinical Psychology graduate student. Her interests in psychology, emotional communication, and recent engagement with pet behavior (mirroring DBT's focus on emotional triggers) directly reflect the document's themes. Candidates B and C, while interested in mental health or technology, lack A's specialized academic focus and content preferences (e.g., B emphasizes creative/vegetarianism, C focuses on engineering/robotics). A's frequent use of psychology apps, article-saving habits, and coursework in Clinical Psychology make her the most likely audience for this material.",
+    "model": "solar-pro",
+    "prompt_chars": 24735,
+    "latency_sec": 2.07
+  },
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "Candidate B, a Clinical Psychology graduate student, aligns most closely with the document's focus on emotional regulation and CBT techniques. The document emphasizes academic rigor, practical exercises (e.g., RULER Framework, DBT skills), and psychological frameworks\u2014mirroring B's psychology background, research habits, and interest in sharing mental health content. Unlike A (advertising/psychology minor) or C (mechanical engineering), B's professional training and daily engagement with psychological tools (e.g., time management, emotional communication) directly correlate with the document's technical depth and therapeutic applications. Her consumption of psychology articles, participation in forums, and recent interest in pet care (linked to stress relief) further reinforce this match.",
+    "model": "solar-pro",
+    "prompt_chars": 27412,
+    "latency_sec": 1.75
+  },
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User5",
+      "User2"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on emotional regulation, self-awareness, and stress management tailored for high-pressure corporate environments, particularly in product operations. Candidate A is explicitly described as a Product Operations professional at an internet company, with a psychology minor and stated challenges in stress tolerance. The document's emphasis on frameworks like RULER, DBT, and CBT aligns with her need for emotional support in her role. Candidate B (mechanical engineering student) and Candidate C (clinical psychology graduate student) lack the direct occupational context of product operations under pressure, making A the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 29423,
+    "latency_sec": 1.48
+  }
+]

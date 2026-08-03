@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task24_User17_seed1",
+    "stage": "plan",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User13",
+      "User17",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User12",
+      "User17"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": false,
+    "reasoning": "The document focuses on a highly structured, data-driven analysis of home insurance options, emphasizing cost-effectiveness, coverage details, and risk assessment\u2014aligning with Candidate B's profile as an AI entrepreneur with a background in technical analysis, logical decision-making, and a preference for rational, detail-oriented consumption. Unlike Candidate A (artistic, design-focused) or Candidate C (healthcare-oriented, family-centric), Candidate B's traits\u2014such as valuing cost-effectiveness, prioritizing data analysis, and having a moderate risk appetite\u2014directly mirror the document's emphasis on comparative analysis, budget constraints, and risk evaluation for geographical hazards. The formal, matrix-based structure also aligns with his professional use of tools like Notion and GitHub for systematic planning.",
+    "model": "solar-pro",
+    "prompt_chars": 25283,
+    "latency_sec": 1.71,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task24_User17_seed1",
+    "stage": "search",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User13",
+      "User17",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User17",
+      "User12"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User17",
+    "correct": true,
+    "reasoning": "The document focuses on household property insurance (\u5bb6\u8d22\u9669) details, including coverage limits (3000/5000 yuan), indoor property protection, and claims processing (depreciation, compensation limits). Candidate B, a nurse with a family in Beijing, aligns best due to her practical, family-oriented priorities (e.g., pet care, household management, and rational consumption). Her interest in health, safety, and financial stability (evident in her pet insurance app usage and savings habits) matches the document's emphasis on protecting family assets. Candidates A (caf\u00e9 owner) and C (tech entrepreneur) lack the document's domestic focus, prioritizing business/tech investments over household risk management.",
+    "model": "solar-pro",
+    "prompt_chars": 24873,
+    "latency_sec": 1.74,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task24_User17_seed1",
+    "stage": "compress",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User13",
+      "User17",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User13",
+      "User12"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User12",
+    "correct": false,
+    "reasoning": "The document focuses on high-end home insurance products with detailed coverage options (e.g., building structure, indoor property, disaster protection) and financial comparisons (premiums, coverage limits). Candidate C, an AI entrepreneur, aligns best due to his high-income status, asset ownership (Beijing property, Tesla), and rational consumption habits prioritizing cost-effectiveness and quality. His financial literacy (investment experience, mortgage management) and need for comprehensive risk coverage (family, property) directly match the document's emphasis on premium tiers, coverage limits, and financial protection. Candidates A (nurse) and B (caf\u00e9 owner) lack the same scale of assets or financial sophistication reflected in the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 29056,
+    "latency_sec": 1.88,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task24_User17_seed1",
+    "stage": "write",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User13",
+      "User17",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User17",
+      "User12"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User12",
+    "correct": false,
+    "reasoning": "The document focuses on high-value property insurance for a coastal residence in Xiamen, emphasizing technical risk analysis, cost-benefit evaluations of insurance riders, and detailed comparisons of premium structures. Candidate C, an AI entrepreneur with a technical background (Tsinghua CS master's, published papers), aligns with the document's analytical depth, data-driven framing, and focus on optimizing financial protection for high-value assets. His profile highlights rational consumption, interest in cost-effectiveness, and investments in quality-of-life improvements (e.g., smart home devices), mirroring the report's emphasis on maximizing coverage within a budget. Unlike Candidate A (caf\u00e9 owner with artistic focus) or B (nurse prioritizing family/pet needs), Candidate C's technical rigor and asset-management mindset directly match the document's insurance evaluation methodology and financial prioritization.",
+    "model": "solar-pro",
+    "prompt_chars": 31067,
+    "latency_sec": 2.32,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

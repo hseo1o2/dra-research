@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task17_User17_seed1",
+    "stage": "plan",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User17",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User17",
+    "correct": true,
+    "reasoning": "Candidate B (Chen Fang) best matches the document's focus on a multi-generational family vacation requiring accessible, restful environments for seniors and active options for younger members. Her profile emphasizes health-conscious dining (low-oil, low-salt), pet-friendly considerations (relevant to family inclusivity), and self-guided planning with cultural/nature experiences. Unlike Candidate A (focused on business-oriented travel) or C (prioritizing natural attractions without explicit senior accessibility), B\u2019s nursing background, family structure (high school/college-aged children + elderly care), and documented preference for destinations balancing relaxation and cultural engagement align most closely with the document's priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 23163,
+    "latency_sec": 1.98,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed1",
+    "stage": "search",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on flight schedules, airlines, and travel logistics, reflecting a user interested in efficient, data-driven travel planning. Candidate B, a marketing manager with an MBA, aligns best: his decision-making style (data-driven, cost-effective), travel preferences (self-guided tours, itinerary planning), and consumption characteristics (quality-focused, research-intensive) mirror the document's emphasis on flight durations, airline comparisons, and route details. Unlike Candidate A (practical but less research-oriented) or C (health/pet-focused), B\u2019s professional background and interest in market analysis make him the most likely to prioritize structured, detail-oriented travel information.",
+    "model": "solar-pro",
+    "prompt_chars": 25513,
+    "latency_sec": 2.04,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed1",
+    "stage": "compress",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on flight logistics, accommodation options, and official website URLs for destinations like Okinawa and Da Nang, reflecting a travel-planning context. Candidate B, a marketing manager with a preference for self-guided tours, quarterly family trips, and detailed itineraries, aligns most closely with this content. His interest in high-end accommodations, cost-effectiveness, and combining business with leisure (e.g., exploring local markets during trips) matches the document's emphasis on flight schedules, budget-friendly options, and official resources. Candidates A and C, while also interested in travel, prioritize different aspects (e.g., natural scenery for A, pet-friendly destinations for C) and lack B's structured, research-driven approach to travel planning.",
+    "model": "solar-pro",
+    "prompt_chars": 28006,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed1",
+    "stage": "write",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User17",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document emphasizes multi-generational travel planning, luxury accommodations, health-conscious dining (low-oil/low-salt), and destinations with barrier-free access\u2014aligning with Candidate A's profile. As a pragmatic, detail-oriented manager with a family (including elderly parents and young children), Candidate A prioritizes quality, cost-effectiveness, and family bonding. The focus on high-end resorts, structured itineraries, and health-conscious meals mirrors his preference for self-guided tours, natural/cultural destinations, and investment in family well-being. Candidates B and C, while family-oriented, lack the same emphasis on luxury infrastructure, multi-generational balancing, and corporate-level planning evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30017,
+    "latency_sec": 1.98,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

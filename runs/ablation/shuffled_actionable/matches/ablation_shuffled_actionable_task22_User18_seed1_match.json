@@ -1,0 +1,118 @@
+[
+  {
+    "run_id": "ablation_shuffled_actionable_task22_User18_seed1",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User15",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "Candidate A (Liu Lu) is a 25-30-year-old female in Shanghai with a statistics background, moderate risk tolerance, and ownership of an apartment/car\u2014directly aligning with the document's target demographic. The document's focus on structured, data-driven retirement planning (e.g., dynamic allocation ratios, inflation risk modeling) mirrors her meticulous, research-oriented personality and career in data analysis. Her practical consumption habits and preference for scenario-based financial models (unstated parameters treated as flexible) further match the document's emphasis on adaptable, long-term planning. Candidates B (Beijing-based freelance writer) and C (male illustrator) lack the statistical background, Shanghai location, and risk-tolerant asset ownership described in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 22568,
+    "latency_sec": 1.85,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4740,
+    "output_tokens": 174,
+    "total_tokens": 4914,
+    "api_response_id": "25853d39-1a71-49ab-b531-46d8d77e8939"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task22_User18_seed1",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User15",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "Candidate A, a data analyst in Shanghai, aligns most closely with the document's focus on Shanghai's social insurance systems (\u6caa\u60e0\u4fdd, long-term care insurance, pension replacement rates) and financial products (\u589e\u989d\u7ec8\u8eab\u5bff\u9669). The document emphasizes data-driven policy details, eligibility criteria, and actuarial projections\u2014topics prioritized by professionals in quantitative fields. Candidate A's background in statistics, data analysis, and career in a tech company make her likely to engage with such technical, policy-oriented content. Candidates B (freelance writer) and C (illustrator) focus on cultural, artistic, or lifestyle topics, which are less relevant to the document's insurance/finance focus.",
+    "model": "solar-pro",
+    "prompt_chars": 23979,
+    "latency_sec": 1.86,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6034,
+    "output_tokens": 168,
+    "total_tokens": 6202,
+    "api_response_id": "8f08f10b-1595-4a9c-b1e7-dd20b1b5166c"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task22_User18_seed1",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User18",
+      "User15"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on Shanghai-based insurance products (e.g., Shanghai Huihuibao, Shanghai long-term care insurance) and financial planning tools (e.g., personal pension systems, annuity linkage for senior care communities). Candidate B, a data analyst in Shanghai, aligns with this content through her financial literacy, urban residence, and practical consumption habits. Her rational decision-making style and interest in tax-efficient savings (e.g., personal pension accounts) match the document's emphasis on structured financial planning. Unlike Candidates A (freelance artist) and C (freelance writer), B\u2019s professional background and data-driven mindset make her the most likely audience for detailed insurance/annuity analysis.",
+    "model": "solar-pro",
+    "prompt_chars": 27367,
+    "latency_sec": 2.36,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6335,
+    "output_tokens": 161,
+    "total_tokens": 6496,
+    "api_response_id": "1425acdf-8106-44f6-8229-829544069e6d"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task22_User18_seed1",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User15",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document explicitly names 'Liu Lu' (a 28-year-old female data analyst in Shanghai) as the persona, matching Candidate C's identity. The content focuses on statistical modeling, risk tolerance (C3/C4), and multi-pillar retirement strategies\u2014aligning with C's background in statistics, data analysis, and rational decision-making. The Shanghai-centric focus, emphasis on tax optimization, and integration of commercial annuities reflect C's practical, research-driven consumption habits and career in finance/data analysis. Candidates A (illustrator) and B (writer) lack the quantitative background and Shanghai-specific financial context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29378,
+    "latency_sec": 1.67,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6401,
+    "output_tokens": 151,
+    "total_tokens": 6552,
+    "api_response_id": "7738d274-2557-4576-8987-e70332562767"
+  }
+]

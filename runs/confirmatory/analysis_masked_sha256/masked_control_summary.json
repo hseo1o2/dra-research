@@ -1,0 +1,251 @@
+{
+  "analysis_role": "identifier-masked shortcut control",
+  "claim_status": {
+    "not_supported_yet": "That the remaining signal is exclusively content-intent alignment rather than another non-identifier shortcut.",
+    "supported": "The point-estimate dip-and-recovery trajectory remains after identifier masking; paired condition differences are identified under matching candidate orders."
+  },
+  "comparability": {
+    "candidate_order_match_rate": 1.0,
+    "candidate_order_matches": 480,
+    "candidate_order_matches_by_stage": {
+      "compress": 120,
+      "plan": 120,
+      "search": 120,
+      "write": 120
+    },
+    "candidate_set_mismatches": 0,
+    "confound": null,
+    "direct_condition_effect_is_identified": true,
+    "gt_mismatches": 0,
+    "primary_valid_estimand": "paired original-versus-masked condition effect",
+    "reports": 120,
+    "reports_with_all_stage_orders_matching": 120,
+    "run_stage_pairs": 480
+  },
+  "condition_stage_accuracy": [
+    {
+      "accuracy": 0.733333,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_seed": 20260802,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.866667,
+      "ci95_low": 0.591667,
+      "condition": "original",
+      "n_reports": 120,
+      "n_tasks": 20,
+      "stage": "plan"
+    },
+    {
+      "accuracy": 0.541667,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_seed": 20260803,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.65,
+      "ci95_low": 0.433333,
+      "condition": "original",
+      "n_reports": 120,
+      "n_tasks": 20,
+      "stage": "search"
+    },
+    {
+      "accuracy": 0.608333,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_seed": 20260804,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.708333,
+      "ci95_low": 0.508333,
+      "condition": "original",
+      "n_reports": 120,
+      "n_tasks": 20,
+      "stage": "compress"
+    },
+    {
+      "accuracy": 0.708333,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_seed": 20260805,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.833333,
+      "ci95_low": 0.575,
+      "condition": "original",
+      "n_reports": 120,
+      "n_tasks": 20,
+      "stage": "write"
+    },
+    {
+      "accuracy": 0.725,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_seed": 20260812,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.858333,
+      "ci95_low": 0.591458,
+      "condition": "masked",
+      "n_reports": 120,
+      "n_tasks": 20,
+      "stage": "plan"
+    },
+    {
+      "accuracy": 0.55,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_seed": 20260813,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.658333,
+      "ci95_low": 0.45,
+      "condition": "masked",
+      "n_reports": 120,
+      "n_tasks": 20,
+      "stage": "search"
+    },
+    {
+      "accuracy": 0.608333,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_seed": 20260814,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.716667,
+      "ci95_low": 0.5,
+      "condition": "masked",
+      "n_reports": 120,
+      "n_tasks": 20,
+      "stage": "compress"
+    },
+    {
+      "accuracy": 0.725,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_seed": 20260815,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.841667,
+      "ci95_low": 0.6,
+      "condition": "masked",
+      "n_reports": 120,
+      "n_tasks": 20,
+      "stage": "write"
+    }
+  ],
+  "external_api_calls": 0,
+  "masked_trajectory_retention": {
+    "bootstrap_repetitions": 5000,
+    "bootstrap_unit": "taskid",
+    "cluster_bootstrap_joint_retention_probability": 0.9972,
+    "definition": "search < plan and write > search",
+    "observed": true,
+    "plan_accuracy": 0.725,
+    "planning_to_search_ci95_pp": [
+      -28.33,
+      -7.5
+    ],
+    "planning_to_search_pp": -17.5,
+    "search_accuracy": 0.55,
+    "search_to_write_ci95_pp": [
+      5.83,
+      29.17
+    ],
+    "search_to_write_pp": 17.5,
+    "write_accuracy": 0.725
+  },
+  "masked_within_condition_stage_comparisons": [
+    {
+      "a_correct_b_wrong": 28,
+      "a_wrong_b_correct": 7,
+      "accuracy_difference_b_minus_a": -0.175,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_unit": "taskid",
+      "ci95_high": -0.075,
+      "ci95_low": -0.275,
+      "mcnemar_exact_p_unclustered": 0.00050826,
+      "n_paired_reports": 120,
+      "stage_a": "plan",
+      "stage_b": "search"
+    },
+    {
+      "a_correct_b_wrong": 11,
+      "a_wrong_b_correct": 18,
+      "accuracy_difference_b_minus_a": 0.058333,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.133333,
+      "ci95_low": -0.016667,
+      "mcnemar_exact_p_unclustered": 0.2649309,
+      "n_paired_reports": 120,
+      "stage_a": "search",
+      "stage_b": "compress"
+    },
+    {
+      "a_correct_b_wrong": 4,
+      "a_wrong_b_correct": 18,
+      "accuracy_difference_b_minus_a": 0.116667,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.191667,
+      "ci95_low": 0.041667,
+      "mcnemar_exact_p_unclustered": 0.00434351,
+      "n_paired_reports": 120,
+      "stage_a": "compress",
+      "stage_b": "write"
+    },
+    {
+      "a_correct_b_wrong": 9,
+      "a_wrong_b_correct": 30,
+      "accuracy_difference_b_minus_a": 0.175,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.283333,
+      "ci95_low": 0.066667,
+      "mcnemar_exact_p_unclustered": 0.00106502,
+      "n_paired_reports": 120,
+      "stage_a": "search",
+      "stage_b": "write"
+    }
+  ],
+  "original_vs_masked_deltas": [
+    {
+      "ci95_high": 0.016667,
+      "ci95_low": -0.033333,
+      "effect_identified": true,
+      "interpretation": "paired condition effect",
+      "masked_minus_original": -0.008333,
+      "mcnemar_exact_p_unclustered": 1.0,
+      "n_paired_reports": 120,
+      "original_correct_masked_wrong": 2,
+      "original_wrong_masked_correct": 1,
+      "stage": "plan"
+    },
+    {
+      "ci95_high": 0.066667,
+      "ci95_low": -0.041667,
+      "effect_identified": true,
+      "interpretation": "paired condition effect",
+      "masked_minus_original": 0.008333,
+      "mcnemar_exact_p_unclustered": 1.0,
+      "n_paired_reports": 120,
+      "original_correct_masked_wrong": 5,
+      "original_wrong_masked_correct": 6,
+      "stage": "search"
+    },
+    {
+      "ci95_high": 0.041667,
+      "ci95_low": -0.041667,
+      "effect_identified": true,
+      "interpretation": "paired condition effect",
+      "masked_minus_original": 0.0,
+      "mcnemar_exact_p_unclustered": 1.0,
+      "n_paired_reports": 120,
+      "original_correct_masked_wrong": 4,
+      "original_wrong_masked_correct": 4,
+      "stage": "compress"
+    },
+    {
+      "ci95_high": 0.05,
+      "ci95_low": -0.016667,
+      "effect_identified": true,
+      "interpretation": "paired condition effect",
+      "masked_minus_original": 0.016667,
+      "mcnemar_exact_p_unclustered": 0.6875,
+      "n_paired_reports": 120,
+      "original_correct_masked_wrong": 2,
+      "original_wrong_masked_correct": 4,
+      "stage": "write"
+    }
+  ],
+  "schema_version": 1,
+  "source_masked_dir": "runs/confirmatory/masked_sha256/matches",
+  "source_original_dir": "runs/confirmatory/matches_sha256"
+}

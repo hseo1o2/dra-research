@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "plan",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User22",
+      "User25"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User17",
+    "correct": true,
+    "reasoning": "Candidate A (Chen Fang) is a 45-50-year-old head nurse in Beijing with a multi-generational family (teenagers, husband, elderly parents, and a pet cat). The document\u2019s focus on high-comfort, accessible coastal destinations (e.g., Qingdao, Sanya) aligns with her preference for domestic, family-friendly travel that balances relaxation (for seniors) and engaging activities (for youth). Her emphasis on cleanliness, service quality, and family-friendly accommodations matches the document\u2019s criteria. Additionally, her interest in local culinary specialties, healthy dining, and pet-friendly destinations (recently adopted a cat) reflects the document\u2019s focus on diverse, age-appropriate dining and activities. Candidate B (technical director) and C (retired, 65-70) prioritize cultural/historical sites and self-guided tours but lack the document\u2019s multi-generational, comfort-driven framing.",
+    "model": "solar-pro",
+    "prompt_chars": 23395,
+    "latency_sec": 2.37,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "search",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User25",
+      "User17"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The document focuses on summer travel in China, emphasizing climate, transportation (HSR/flights), and family-friendly destinations (e.g., Qingdao, Sanya). Candidate B, a retired 65-70-year-old woman, aligns best: she travels 2-3 times/year with her husband and grandson, prioritizes natural/historical sites, and values comfort/safety. Her recent interest in hot springs and eco-tourism matches the document\u2019s focus on seasonal climate (typhoon risks, temperature ranges). Unlike Candidate A (tech-focused, urban trips) or C (pet-centric, domestic focus), B\u2019s travel style (self-guided, family-oriented) and content preferences (travel guides, health tips) directly align with the document\u2019s framing of accessible, family-friendly summer destinations.",
+    "model": "solar-pro",
+    "prompt_chars": 25618,
+    "latency_sec": 2.94,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "compress",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User22",
+      "User25"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The document focuses on multi-generational travel planning for July, emphasizing senior-friendly transportation (HSR over flights), climate considerations (typhoon risks, humidity), and balanced activities for all ages. Candidate C (Li Xiuying) is a 65-70-year-old retiree in Beijing with a multi-generational family (husband, son, grandson, and pet) who prioritizes family travel, senior-friendly destinations, and health-conscious choices. Her profile aligns with the document's emphasis on accessibility (HSR convenience), climate safety (typhoon avoidance), and intergenerational activities (e.g., gentle walks for seniors, watersports for younger family members). Unlike Candidates A (focused on pet-friendly urban trips) and B (tech-oriented, less emphasis on senior mobility), Candidate C\u2019s travel preferences, frugal yet quality-conscious spending, and interest in natural/historical sites directly match the document's framing for a comfortable, inclusive family vacation.",
+    "model": "solar-pro",
+    "prompt_chars": 28121,
+    "latency_sec": 2.13,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "write",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The document focuses on multi-generational travel planning prioritizing senior accessibility, comfort, and low-stress logistics (e.g., high-speed rail, barrier-free infrastructure, climate considerations). Candidate B (Li Xiuying) aligns most closely: she is a retired senior (65-70) with a grandson, values family travel, prioritizes health/wellness, and explicitly seeks destinations with natural/historical appeal and comfort. Her Shandong hometown connection and preference for self-guided, flexible travel mirror the report's emphasis on Shandong coastal destinations and family-centric planning. Candidates A (45-50, nurse) and C (50-55, engineer) lack the same senior-centric focus and multi-generational family dynamics.",
+    "model": "solar-pro",
+    "prompt_chars": 30132,
+    "latency_sec": 2.06,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

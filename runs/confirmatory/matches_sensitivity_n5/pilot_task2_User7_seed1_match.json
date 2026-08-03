@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task2_User7_seed1",
+    "stage": "plan",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User20",
+      "User18",
+      "User2",
+      "User4"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User7",
+      "User4",
+      "User20",
+      "User2"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document is authored by a graduate student in new media technology and public opinion research, seeking international exchange opportunities with a focus on interdisciplinary curriculum design, computational social science, and cross-cultural communication. Candidate B is the only graduate student in this exact field (new media and public opinion research) with a journalism/communication background, matching the document's academic focus. The document's emphasis on research capability enhancement, international networking, and practical integration strategies aligns with Candidate B's behavioral traits (independent research habits, critical thinking, and interest in social issues). Other candidates (A: data analyst, C: law student, D: copywriter, E: clinical psychology student) lack the direct academic and professional alignment with the document's core themes.",
+    "model": "solar-pro",
+    "prompt_chars": 39859,
+    "latency_sec": 2.2,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task2_User7_seed1",
+    "stage": "search",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User20",
+      "User18",
+      "User2",
+      "User4"
+    ],
+    "shuffled_order": [
+      "User4",
+      "User2",
+      "User7",
+      "User18",
+      "User20"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on graduate-level exchange programs, tuition fees, and academic requirements for media/communication studies at institutions like USC, Columbia, LSE, and the University of Amsterdam. Candidate C, a graduate student in new media and public opinion research, aligns most closely with this content. His academic background, interest in communication studies, and frequent engagement with topics like social issues, technology, and public opinion mirror the document's framing. Other candidates (A: law, B: psychology, D: data analysis, E: copywriting) lack the direct academic and professional connection to media/communication exchange programs that defines Candidate C.",
+    "model": "solar-pro",
+    "prompt_chars": 41696,
+    "latency_sec": 2.4,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task2_User7_seed1",
+    "stage": "compress",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User20",
+      "User18",
+      "User2",
+      "User4"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User20",
+      "User4",
+      "User18",
+      "User2"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on graduate exchange programs, visiting scholar requirements, and non-degree journalism/communication programs at top US universities. Candidate A is a graduate student specializing in new media and public opinion research, directly aligning with the document's academic focus on communication studies, computational social science, and journalism programs. The document's emphasis on TOEFL waivers, visa funding requirements, and project-based evaluation (e.g., Columbia's Lede Program) matches A's background as a Chinese graduate student seeking international research opportunities. Other candidates (B, C, D, E) are either undergraduates, law students, data analysts, or clinical psychology students, with no direct connection to the document's communication/journalism program details.",
+    "model": "solar-pro",
+    "prompt_chars": 44189,
+    "latency_sec": 2.57,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task2_User7_seed1",
+    "stage": "write",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User20",
+      "User18",
+      "User2",
+      "User4"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User20",
+      "User18",
+      "User4",
+      "User7"
+    ],
+    "predicted_label": "E",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on graduate-level research in new media technology, public opinion analysis, and computational social science, with detailed technical and institutional analysis of overseas programs. Candidate E is the only graduate student specializing in new media and public opinion research, with a background in journalism/communication and technical skills (Python) directly aligning with the document's emphasis on data journalism, algorithmic literacy, and empirical public opinion analysis. Their research-oriented priorities, interest in computational methods, and focus on academic program evaluation match the document's framing and vocabulary. Other candidates (A: clinical psychology, B: copywriting, C: data analysis, D: law) lack the domain-specific alignment with the document's technical and disciplinary focus.",
+    "model": "solar-pro",
+    "prompt_chars": 46200,
+    "latency_sec": 2.56,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

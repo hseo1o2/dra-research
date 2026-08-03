@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task33_User13_seed0",
+    "stage": "plan",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User18",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "Candidate C is the best match because the document explicitly mentions a multi-pet home with two cats (including an orange tabby and ragdoll) and a corgi\u2014mirroring Candidate C's pets. The request for cohesive product recommendations balancing aesthetics, safety, and efficiency aligns with C's role as a caf\u00e9 owner who values design, sustainability, and customer appeal. The focus on smart, eco-friendly, and visually appealing products reflects C's preferences for supporting local/niche brands, eco-conscious consumption, and integrating beauty into daily life. Candidates A and B lack the multi-pet context and prioritize individual artistic or analytical needs over the holistic, design-driven, and pet-centric framing of the document.",
+    "model": "solar-pro",
+    "prompt_chars": 23235,
+    "latency_sec": 2.2,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task33_User13_seed0",
+    "stage": "search",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on pet products (litter boxes, feeders, grooming vacuums) with emphasis on design, safety, and multi-pet compatibility. Candidate A owns multiple pets (two cats and a corgi) that are integral to her caf\u00e9 business, aligning with the document's focus on pet-related products. Her profile highlights attention to design, sustainability, and practicality\u2014key themes in the document (e.g., 'braided cord for enhanced cat safety,' 'compact streamlined version,' 'eco-friendly packaging'). Candidates B and C, while pet owners, lack the same depth of integration between pets and their professional/creative lives, nor do their profiles emphasize pet product specifications as centrally as A's does.",
+    "model": "solar-pro",
+    "prompt_chars": 25301,
+    "latency_sec": 1.81,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task33_User13_seed0",
+    "stage": "compress",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User18",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on multi-pet household solutions, emphasizing features like dog-proofing, safety mechanisms, and spacious designs for large cats (Ragdoll) and active tabbies. Candidate A explicitly owns all three pets mentioned (Ragdoll, Tabby, Corgi) and prioritizes eco-friendly, sustainable products, aligning with the document's emphasis on biodegradable liners and non-toxic materials. Additionally, A's caf\u00e9-centric lifestyle and attention to design aesthetics match the document's detailed framing of product dimensions, modularity, and user experience. Candidates B and C, while pet owners, lack the multi-pet context and specific focus on pet-proofing and large-breed accommodations central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 28122,
+    "latency_sec": 2.03,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task33_User13_seed0",
+    "stage": "write",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User13",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on a multi-pet household with specific needs for a Ragdoll cat, an orange tabby cat, and a Pembroke Welsh Corgi, emphasizing design aesthetics, material safety, and low-maintenance solutions. Candidate B owns all three pets (Doudou, Beibei, and Coco) and operates a caf\u00e9 where pets are a key attraction, aligning with the document's emphasis on pet-friendly, durable, and visually appealing products. Additionally, B's preferences for eco-friendly, sustainable, and high-quality items match the report's criteria for material safety and long-term value. Candidates A and C only have one pet each, making their profiles less relevant to the multi-pet context of the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30133,
+    "latency_sec": 2.32,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

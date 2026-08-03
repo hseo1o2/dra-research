@@ -1,0 +1,31 @@
+[
+  {
+    "run_id": "pilot_task18_User19_seed0",
+    "stage": "search",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on flight queries (Chengdu to Berlin), currency exchange (EUR/CNY), and Berlin public transport (BVG, BER airport). Candidate B, based in Chengdu, frequently travels domestically and internationally, prioritizes efficiency in travel planning, and has a strong interest in logistics (as a supply chain manager). The queries align with his need to plan international trips (e.g., Chengdu to Berlin flights, currency conversion) and research local transport (BVG zones, airport express trains). Candidates A (Harbin-based, family-focused trips) and C (Shanghai-based, business trips to Shenzhen/Chengdu) lack the direct connection to Chengdu-Berlin travel and Berlin-specific transport research.",
+    "model": "solar-pro",
+    "prompt_chars": 23826,
+    "latency_sec": 1.71,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "queries",
+    "input_tokens": 5076,
+    "output_tokens": 169,
+    "total_tokens": 5245,
+    "api_response_id": "3adb61f4-b447-47fb-91a2-c2ad71edcc4b"
+  }
+]

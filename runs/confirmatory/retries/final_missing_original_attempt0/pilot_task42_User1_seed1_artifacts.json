@@ -1,0 +1,537 @@
+{
+  "capture_completeness": {
+    "compressed_research_per_topic": false,
+    "final_report": false,
+    "four_required_artifacts": false,
+    "research_brief": true,
+    "research_topics_ordered": true,
+    "search_query_and_source": false
+  },
+  "compressed_research": [
+    {
+      "compressed_research": "[]",
+      "topic_id": "topic_001",
+      "topic_text": "Research China compliance, regulations, and cross-border data transfer rules for a Beijing-based AI Agent startup launching globally.\n\nSpecific areas to investigate in detail:\n1. China Personal Information Protection Law (PIPL) & Generative AI Rules:\n- Obligations for processing location data (sensitive personal information under PIPL), chat history (contents of conversations), and usage behavior/telemetry.\n- Separate consent requirements (Article 29 PIPL for sensitive personal info), transparency, privacy notices, automated decision-making / profiling rules under PIPL.\n- CAC Interim Measures for the Management of Generative AI Services (Algorithm Filing / Algorithm Registration / Deep Synthesis provisions, AI content labeling/watermarking, training data security, content moderation).\n\n2. China Cross-Border Data Transfer (CBDT) Mechanisms:\n- Regulations under CAC 'Provisions on Promoting and Standardizing Cross-Border Data Flows' (Decree No. 16, March 2024): threshold exemptions (e.g. less than 100,000 non-sensitive personal info, non-important data, contract performance exemptions, free trade zone negative lists).\n- Requirements if transferring data from China to Singapore or handling non-mainland user data on Singapore servers.\n- Standard Contract filing (CAC Standard Contract for Outbound Personal Information) vs Security Assessment vs Certification.\n- Personal Information Protection Impact Assessment (PIPA) requirements under PIPL Article 55.\n\n3. Emergency Response & Incident Breach Reporting in China:\n- Regulatory reporting deadlines to CAC, MIIT, or Public Security Bureaus in case of data breach or security incident (e.g. Cyber Security Law, Data Security Law, PIPL reporting rules - immediate/24-hour reporting obligations).\n- Concrete step-by-step procedures for incident response in China."
+    },
+    {
+      "compressed_research": "[{'type': 'text', 'text': '**List of Queries and Tool Calls Made**\\n\\n1. `serper_search`: `EU AI Act transparency requirements disclosure chatbot synthetic content watermarking article 50`\\n2. `serper_search`: `CPPA automated decision making technology ADMT regulations CCPA CPRA`\\n3. `serper_search`: `US Executive Order 14117 restricting access sensitive personal data bulk data China`\\n4. `serper_search`: `EU GDPR Article 22 automated decision making AI agents data deletion DSAR AI model`\\n5. `serper_search`: `US DOJ bulk sensitive personal data Executive Order 14117 China Singapore restrictions`\\n6. `serper_search`: `China PIPL cross border data transfer rules standard contract CAC Singapore PDPA transfer`\\n7. `serper_search`: `US state privacy law breach notification timelines Texas Florida California SEC 4 business days`\\n8. `serper_search`: `GDPR AI agent chat log special category data telemetry legal basis RAG model deletion`\\n9. `serper_search`: `US state breach notification deadlines California Texas Florida SEC 4 days`\\n10. `serper_search`: `Singapore PDPA Transfer Limitation Obligation cross border data transfer`\\n\\n---\\n\\n**Fully Comprehensive Findings**\\n\\n### 1. EU AI Act & GDPR Compliance for AI Agents\\n\\n* **EU AI Act Transparency Obligations (Article 50):**\\n  * Article 50 introduces explicit transparency obligations capturing four distinct operational scenarios applicable to providers and deployers of AI systems and generative AI agents [1], [3]:\\n    1. **Direct AI-Human Interaction:** Providers and deployers must ensure that natural persons are informed that they are interacting with an AI system (e.g., conversational AI agents or chatbots), unless this is obvious from the context of use [1], [3].\\n    2. **Synthetic Content Generation:** Providers of AI systems (including generative AI models producing audio, image, video, or text) must mark the outputs in a machine-readable format and ensure they are detectable as artificially generated or manipulated synthetic content [1], [2].\\n    3. **Deception Risks and Code of Practice:** The European Commission / AI Office establishes Codes of Practice on transparency for generative AI systems to mitigate risks of deception and outline technical standards for synthetic content labeling and watermarking [2].\\n  * **Risk Classification:** The framework distinguishes between:\\n    * **Limited Risk Systems:** Conversational chatbots and AI agents subject primarily to Article 50 transparency disclosures and marking rules [1], [3].\\n    * **High-Risk Systems:** AI systems making consequential decisions (e.g., employment, credit access, biometrics, critical infrastructure), which trigger mandatory risk management systems, technical documentation, logging, data governance, and human oversight mechanisms [1], [3].\\n\\n* **EU GDPR Considerations for AI Systems:**\\n  * Processing operations involving user chat logs, precise location data, and telemetry data must establish a valid legal basis under Article 6 (e.g., explicit consent vs. legitimate interest) and maintain strict data minimization.\\n  * Ingesting user inputs into AI models or Retrieval-Augmented Generation (RAG) pipelines presents special category data risks (Article 9 GDPR) if sensitive personal information is uploaded.\\n  * Compliance with Article 22 GDPR (Automated Individual Decision-Making) requires providing users the right to human intervention, expression of point of view, and contestation when AI agents perform automated processing producing legal or similarly significant effects.\\n  * Data Subject Rights (DSARs - Access, Erasure/Deletion, Rectification, Portability) apply across AI storage architectures, requiring mechanisms for unlearning, data purging, or index deletion in vector databases and RAG memory contexts.\\n\\n---\\n\\n### 2. U.S. Privacy Laws & Automated Decision-Making Technology (ADMT)\\n\\n* **California Consumer Privacy Act / California Privacy Rights Act (CCPA/CPRA) & CPPA Regulations:**\\n  * The California Privacy Protection Agency (CPPA) finalized regulations governing Automated Decisionmaking Technology (ADMT), cybersecurity audits, risk assessments, and CCPA updates [4], [5], [6].\\n  * **Definition of ADMT:** Under the CCPA regulations, ADMT is defined as \"any technology that processes personal information and uses computation to replace human decision-making or facilitate human decision-making\" [6].\\n  * **Scope of Application:** The ADMT rules impose specific obligations on businesses that use ADMT to make a \"significant decision\" concerning a consumer (e.g., decisions affecting employment, housing, financial/educational services, healthcare, or insurance) [5].\\n  * **Core Regulatory Requirements:**\\n    * Mandatory pre-execution transparency notices explaining the intent and logic of ADMT usage [4], [5].\\n    * Consumer rights to opt-out of ADMT processing for significant decisions and profiling [4], [5], [6].\\n    * Mandatory risk assessments for businesses processing Sensitive Personal Information (SPI) or using ADMT for significant decisions [4], [6].\\n  * **Sensitive Personal Information (SPI):** Precise geolocation (defined generally as location within a geographic area of less than 1,850 feet radius) triggers consumer rights to limit the use and disclosure of SPI under the CCPA/CPRA.\\n\\n* **Other State Privacy Laws (e.g., VCDPA, CPA, TDPSA):**\\n  * State privacy frameworks in Virginia (VCDPA), Colorado (CPA), Texas (TDPSA), and other states mandate opt-in consent prior to processing Sensitive Personal Data (including precise geolocation) and provide consumer opt-out rights regarding profiling in furtherance of decisions that produce legal or similarly significant effects.\\n\\n---\\n\\n### 3. Cross-Border Data Transfer (CBDT) & Federal Restrictions\\n\\n* **U.S. DOJ Bulk Sensitive Data Regulations (Executive Order 14117):**\\n  * On January 8, 2025, the U.S. Department of Justice (DOJ) published its Final Rule implementing Executive Order 14117 (\"Preventing Access to Americans\\' Bulk Sensitive Personal Data and Government-Related Data by Countries of Concern\") [3 (Federal Register)], [7], [8], [9].\\n  * **Bulk Data Transfer Restrictions:** The rule prohibits or restricts commercial transactions that provide \"countries of concern\" (designated as China/Hong Kong/Macau, Russia, Iran, North Korea, Cuba, and Venezuela) or covered persons associated with those jurisdictions access to Americans\\' bulk sensitive personal data or government-related data [7], [8], [9].\\n  * **Covered Data Types & Volume Thresholds:** Applies to data transactions exceeding specific bulk volume thresholds involving sensitive personal data (e.g., precise geolocation data, personal health data, financial records, biometric identifiers, human genomic data, and personal identifiers) [8], [9].\\n\\n* **EU International Data Transfers (EU to U.S., Singapore, and China):**\\n  * Transfers of EU personal data rely on legal transfer mechanisms under Chapter V GDPR:\\n    * **EU-U.S. Data Privacy Framework (DPF):** Self-certified U.S. organizations can receive EU personal data without additional transfer tools.\\n    * **Standard Contractual Clauses (SCCs) & Transfer Impact Assessments (TIAs):** Required for transfers to jurisdictions lacking an adequacy decision (e.g., Singapore, China). TIAs must evaluate local surveillance laws and government data access risks in line with EDPB Recommendations 01/2020.\\n  * **China (PIPL / Data Security Law):** Cross-border transfers out of China require compliance with CAC Standard Contracts, security assessments, or personal information protection certifications under the Personal Information Protection Law (PIPL).\\n  * **Singapore (PDPA):** Cross-border data transfers require compliance with the Transfer Limitation Obligation under the Personal Data Protection Act (PDPA), ensuring transferred data receives a standard of protection comparable to the PDPA (e.g., via binding agreements, corporate rules, or consent).\\n\\n---\\n\\n### 4. Incident Response & Breach Notification Timelines\\n\\n* **EU GDPR Incident Notification:**\\n  * **Notification to Lead Supervisory Authority (DPA):** Article 33 GDPR mandates notification to the competent supervisory authority without undue delay and, where feasible, not later than **72 hours** after becoming aware of a personal data breach.\\n  * **Notification to Data Subjects:** Article 34 GDPR mandates notification to affected data subjects \"without undue delay\" if the personal data breach is likely to result in a high risk to the rights and freedoms of natural persons.\\n\\n* **U.S. Federal & State Breach Notification Deadlines:**\\n  * **SEC Public Company Rules:** SEC rules require public companies to disclose material cybersecurity incidents on Form 8-K within **4 business days** of determining that the incident is material.\\n  * **U.S. State Laws:** State data breach notification statutes impose mandatory timelines for notifying affected individuals and state Attorneys General:\\n    * **California:** Mandatory notice without unreasonable delay.\\n    * **Texas / Florida / Maine:** Statutory deadlines ranging from 30 to 45 days depending on state specific statutes (e.g., Texas requires notice no later than 60 days, Florida requires notice within 30 days unless good cause is shown).\\n  * **FTC Regulations:** Breach notifications under FTC health breach and rule frameworks enforce specific timelines for unauthorized disclosures of health and personal data.\\n\\n---\\n\\n**List of All Relevant Sources (with citations in the report)**\\n\\n1. EU AI Act Article 50 Transparency Rules Overview: https://artificialintelligenceact.eu/transparency-rules-article-50/\\n2. European Commission Code of Practice on Transparency of AI-generated Content: https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content\\n3. Stibbe Legal Insights on AI Act Transparency Obligations: https://www.stibbe.com/publications-and-insights/the-ai-acts-transparency-obligations-rules-scope-and-timeline\\n4. California Privacy Protection Agency (CPPA) CCPA Regulations Page: https://cppa.ca.gov/regulations/ccpa_updates.html\\n5. Skadden Insights on California Final CCPA Regulations for ADMT: https://www.skadden.com/insights/publications/2025/10/california-finalizes-cppa-regulations\\n6. White & Case Insight Alert on CPPA Final ADMT and Risk Assessment Rules: https://www.whitecase.com/insight-alert/cppa-finalizes-rules-admt-risk-assessments-and-cybersecurity-audits-requirements\\n7. Jackson Lewis Insights on DOJ Bulk Data Transfer Rule: https://www.jacksonlewis.com/insights/doj-bulk-data-transfer-rule-are-you-subject-it-and-what-does-it-require\\n8. Stanford University ORA Guidance on EO 14117 Bulk Sensitive Data Restrictions: https://ora.stanford.edu/data-use-agreements/preventing-access-us-sensitive-personal-data-and-government-related-data\\n9. U.S. Federal Register DOJ Final Rule implementing Executive Order 14117: https://www.federalregister.gov/documents/2025/01/08/2024-31486/preventing-access-to-us-sensitive-personal-data-and-government-related-data-by-countries-of-concern', 'index': 0, 'extras': {'signature': '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'}}]",
+      "topic_id": "topic_002",
+      "topic_text": "Research European Union (EU) and United States (U.S.) privacy, AI compliance, cross-border data transfer, and breach notification requirements for a global AI Agent application.\n\nSpecific areas to investigate in detail:\n1. EU GDPR & EU AI Act Compliance for AI Agents:\n- Requirements under GDPR for processing location data, chat logs (special category data risk, user inputs), and telemetry/usage data.\n- Consent vs. Legitimate Interest, data minimization, automated decision-making (Article 22 GDPR), DSAR (access, deletion, rectification, portability) handling in AI systems where data is ingested or stored.\n- EU AI Act requirements for AI Agents / Generative AI: Transparency rules (disclosure that users interact with AI), risk classification (limited risk vs high risk), watermarking/synthetic content detection, model documentation.\n\n2. U.S. Federal & State Privacy Laws (CCPA/CPRA and beyond):\n- Requirements under California Consumer Privacy Act / California Privacy Rights Act (CCPA/CPRA) regarding sensitive personal information (precise geolocation), Opt-Out of Sale/Sharing, Opt-Out of Automated Decision-Making Technology (ADMT), privacy notices, and DSARs.\n- Key nuances in other U.S. state privacy laws (e.g. VCDPA, CPA) applicable to AI applications.\n\n3. Cross-Border Data Transfer (CBDT) from EU & US:\n- Transfers between EU, US, Singapore, and China: Standard Contractual Clauses (SCCs) for EU, EU-US Data Privacy Framework (DPF), Transfer Impact Assessments (TIA), and restrictions on transferring EU/US user data to China or storing on China/Singapore servers.\n\n4. Emergency Incident Response & Breach Notification Timelines:\n- EU GDPR breach notification rules (72 hours to Lead DPA under Article 33, notice to data subjects under Article 34).\n- U.S. state breach notification deadlines and federal guidelines (e.g. SEC/FTC/state AG requirements)."
+    },
+    {
+      "compressed_research": "[{'type': 'text', 'text': \"**List of Queries and Tool Calls Made**\\n\\n1. `OWASP Top 10 for LLM Applications 2025 2026 prompt injection insecure output handling mitigations`\\n2. `China CAC algorithm registration Generative AI filing cost timeline legal fees RMB`\\n3. `MLPS Level 3 CAC cross border data transfer filing legal fees Beijing RMB`\\n4. `AI agent security guardrails prompt injection firewall data masking PII anonymization API`\\n5. `OWASP LLM Top 10 mitigation prompt injection`\\n6. `China PIPL CAC data compliance legal fees cost RMB`\\n7. `OWASP LLM Top 10 2025`\\n\\n---\\n\\n**Fully Comprehensive Findings**\\n\\n### Section 1: AI Agent Technical Risk Control Framework\\n\\n#### 1. OWASP Top 10 for LLM Applications & AI Agents: Concrete Mitigations\\n\\n##### LLM01: Direct & Indirect Prompt Injection\\n*   **Direct Prompt Injection (Jailbreaking):**\\n    *   *System Prompt Isolation & Delimiters:* Wrap user-supplied inputs in explicit, non-standard XML tags or custom delimiters (e.g., `<user_input>...</user_input>`). Instruct the system prompt to explicitly ignore instructions contained within these boundary tags.\\n    *   *Input Guardrails:* Deploy pre-llm classification layers using model guardrails (e.g., NVIDIA NeMo Guardrails, Llama Guard 3, Lakera Guard, or fine-tuned local BERT/RoBERTa classifiers) to analyze incoming prompts for adversarial intent, jailbreak techniques, and instruction override attempts prior to LLM processing.\\n    *   *System Instruction Enforcement:* Enforce immutable system prompts at the API parameter level rather than concatenating user inputs into a single text blob.\\n*   **Indirect Prompt Injection (Untrusted Third-Party Content):**\\n    *   *Dual-LLM (Privileged / Unprivileged) Architecture:* Implement a split-trust pattern. An unprivileged LLM processes untrusted external content (e.g., web search results, retrieved RAG documents, user-uploaded PDFs, emails) and outputs structured data (e.g., strict JSON schema). A separate, privileged LLM reads the verified JSON schema to execute actions, preventing external text from injecting executable natural language commands.\\n    *   *Tool Call Parameter Validation:* Enforce rigid JSON Schema / Pydantic validation on all tool parameters returned by the LLM before any function call is executed.\\n    *   *Content Sanitization:* Strip hidden prompts, HTML comments, invisible Unicode characters, and zero-width spaces from external RAG context before feeding it into the agent's context window.\\n\\n##### LLM02: Insecure Output Handling\\n*   **Output Schema Validation & Sanitization:**\\n    *   Enforce structured outputs using tools like Pydantic, Guardrails AI, or Instructor. Disallow free-form text output when triggering downstream APIs or internal functions.\\n    *   Apply context-aware escaping (HTML escaping, SQL parameterization, shell escaping) on all LLM-generated output before rendering it in UI components or passing it to database drivers.\\n*   **Code Execution Sandboxing:**\\n    *   If the AI agent generates or executes code (e.g., Python code interpreter), isolate execution inside microVMs or lightweight sandboxes (e.g., gVisor, Firecracker, or Docker containers with dropped capabilities, read-only root filesystems, and strict memory/CPU limits).\\n    *   Strictly disallow native functions like `eval()`, `exec()`, or direct OS system calls outside the sandbox.\\n*   **Egress Content Filtering:**\\n    *   Pass all LLM outputs through outbound Data Loss Prevention (DLP) filters to check for leaked API keys, tokens, system secrets, or raw PII before delivering responses to end users.\\n\\n##### LLM03: Training Data Poisoning & Fine-Tuning Security\\n*   **Dataset Integrity & Provenance:**\\n    *   Maintain strict cryptographic signatures (SHA-256 hashes) for all fine-tuning and SFT/DPO datasets.\\n    *   Audit data sources and apply automated data filtering to detect adversarial poisoning, backdoors, or malicious instruction-response pairs in training data.\\n*   **Data Lineage & Differential Privacy:**\\n    *   Track lineage across vector stores and fine-tuning pipelines. Apply differential privacy techniques during alignment training to minimize memorization of private training samples.\\n\\n##### LLM04: Model Denial of Service (DoS / Resource Exhaustion)\\n*   **Rate Limiting & Token Caps:**\\n    *   Implement token bucket rate limiting at the user, API key, and IP level using Redis/Kong API Gateway.\\n    *   Set strict upper limits on input prompt token lengths and generation token limits (`max_tokens`).\\n*   **Inference & Execution Timeouts:**\\n    *   Set hard timeout thresholds on LLM API calls (e.g., 15–30 seconds) and function execution steps to prevent agent loops from consuming infinite computational resources.\\n*   **Asynchronous Queue Management:**\\n    *   Offload long-running agent tool workflows to asynchronous task queues (e.g., Celery/Redis or RabbitMQ) with concurrency caps to prevent backend thread starvation.\\n\\n##### LLM06: Sensitive Information Disclosure\\n*   **Client-Side / Gateway PII Scrubbing:**\\n    *   Integrate pre-inference PII redaction engines (e.g., Microsoft Presidio, local SpaCy/LTP Chinese NER models) to catch and scrub sensitive entity types (Chinese Resident ID Numbers 身份证, phone numbers, UnionPay bank cards, email addresses) before sending prompts upstream.\\n*   **RAG Vector Database Access Control:**\\n    *   Implement Role-Based Access Control (RBAC) and Attribute-Based Access Control (ABAC) at the vector database layer (e.g., Milvus, Qdrant). Ensure vector embeddings are tagged with access control lists (ACLs) so that the LLM only retrieves document chunks authorized for the specific querying user.\\n\\n##### LLM09: System Overreliance & Unauthorized Tool Execution\\n*   **Human-in-the-Loop (HITL) Gates:**\\n    *   Mandate explicit human confirmation for high-impact or irreversible tool executions (e.g., financial transactions, database writes/deletes, external email dispatch, or API state changes).\\n*   **Principle of Least Privilege for Tooling:**\\n    *   Provide agent tools with scoped, read-only permissions by default. Use short-lived scoped OAuth tokens rather than master administrative API keys for tool execution.\\n*   **Agent Execution Sandboxing:**\\n    *   Run agent tool execution environments in network-isolated containers with explicit egress domain whitelisting.\\n\\n---\\n\\n#### 2. Technical Controls for Data Minimization & Anonymization Architecture\\n\\n```\\n[User App / Client]\\n       │\\n       ▼\\n[Self-Hosted API Proxy Gateway (Kong / FastAPI)]\\n       │\\n       ├─► 1. PII Detection Engine (Regex + Local Chinese NER Models)\\n       ├─► 2. Pseudonymization / Redaction (Maps PII -> [UUID_TOKENS])\\n       ├─► 3. Local KV Store (Stores Encrypted Mapping Table)\\n       │\\n       ▼ (Sanitized Prompt with Placeholders)\\n[External / 3rd Party LLM API (Azure OpenAI / DeepSeek / Anthropic)]\\n       │\\n       ▼ (LLM Output containing Placeholders)\\n[Self-Hosted API Proxy Gateway]\\n       │\\n       ├─► 1. Re-hydration / Unmasking Engine (Replaces [UUID_TOKENS] with PII)\\n       ├─► 2. Output DLP & Content Moderation Filter (YiDun / Local Policy)\\n       │\\n       ▼\\n[User App / Client]\\n```\\n\\n*   **Token Redaction & Deterministic Pseudonymization:**\\n    *   Replace real-world sensitive entities (names, organizations, IDs, phone numbers) with deterministic UUID placeholders (e.g., `[PERSON_1]`, `[COMPANY_A]`).\\n    *   Maintain an encrypted key-value store (e.g., Redis with AES-256 encryption at rest) locally within the Beijing VPC.\\n*   **Chinese Entity Specific Localization:**\\n    *   Use customized Natural Language Processing (NLP) regex and Named Entity Recognition (NER) models specifically tuned for Chinese sensitive data structures:\\n        *   Chinese Resident Identity Cards (18-digit 身份证, including checksum verification).\\n        *   PRC Mobile Numbers (+86 11-digit patterns).\\n        *   Chinese Bank Card Numbers (16–19 digit UnionPay patterns).\\n        *   PRC Location/Address Entities.\\n*   **Reverse Mapping / Re-Hydration Gate:**\\n    *   When the external LLM responds, the outbound API proxy intercepts the text, checks the local lookup table, and re-hydrates tokens for user display *only if necessary*, ensuring raw PII never reaches upstream LLM provider training or logging pipelines.\\n\\n---\\n\\n#### 3. Managing Third-Party API Dependencies & Telemetry\\n\\n*   **Upstream Provider SLAs & Zero Data Retention (ZDR) Contracts:**\\n    *   *Azure OpenAI Service:* Utilize Enterprise Agreement (EA) terms guaranteeing Zero Data Retention (ZDR) for eligible workloads, ensuring prompts and completions are not logged or stored on disk by Microsoft.\\n    *   *DeepSeek API / Domestic Models:* Execute enterprise contracts with explicit data non-retention clauses and private VPC/dedicated instance deployments within China mainland cloud regions (e.g., Aliyun / Tencent Cloud).\\n    *   *OpenAI Direct API:* If used for non-mainland operations, opt out of model training and request Zero Data Retention / ephemeral logging agreements where available.\\n*   **Telemetry & Client SDK Hardening:**\\n    *   Explicitly disable client-side telemetry in AI frameworks (e.g., setting `OPENAI_LOG=off`, disabling default telemetry in LangChain/LlamaIndex, hosting observability platforms like Langfuse or LangSmith self-managed on-premise within local VPCs).\\n*   **Internal Logging Scrubbing:**\\n    *   Ensure internal application logs (e.g., ELK stack, Datadog, Sentry) pass through log-sanitizers to prevent prompt/response pairs from being saved in plain text within operational logs.\\n*   **Circuit Breakers & Model Fallbacks:**\\n    *   Implement multi-model failover architectures (e.g., if external global APIs experience downtime or network latency spikes across the border, failover to domestic models like DeepSeek or locally hosted vLLM/Ollama fallback models on local GPU servers).\\n\\n---\\n\\n### Section 2: Compliance Roadmap & Operational Audit (6-Month Timeline)\\n\\nTailored for a **20-person Beijing AI Startup** operating under PRC laws: Personal Information Protection Law (PIPL), Data Security Law (DSL), Cybersecurity Law (CSL), Generative AI Interim Measures (生成式人工智能服务管理暂行办法), CAC Algorithm Registration (互联网信息服务算法备案), Deep Synthesis Filing (深度合成备案), MLPS Level 3 (等保三级), and CAC Standard Contract for Cross-Border Data Transfer (个人信息出境标准合同).\\n\\n```\\n┌──────────────────────────────────────────────────────────────────────────────────┐\\n│ MONTH 1-2: Data Mapping, Gap Analysis & Baseline Legal Drafting                  │\\n│ • Complete Data Flow Mapping & PII Inventory                                     │\\n│ • Draft Privacy Policy, Terms of Service, Internal DPAs                          │\\n│ • Engage MLPS Level 3 Testing Institute & Begin Preparation                      │\\n└─────────────────────────┬────────────────────────────────────────────────────────┘\\n                          │\\n                          ▼\\n┌──────────────────────────────────────────────────────────────────────────────────┐\\n│ MONTH 3-4: Regulatory Filings, DPIA & Technical Controls                         │\\n│ • Conduct PIPA / DPIA Assessment for AI Functions                                │\\n│ • Submit CAC Algorithm Registration & Deep Synthesis Filings                     │\\n│ • Execute CAC Standard Contract (SCC) for Overseas API Calls (if applicable)     │\\n│ • Deploy PII Masking Proxy Gateway & Security Guardrails                         │\\n└─────────────────────────┬────────────────────────────────────────────────────────┘\\n                          │\\n                          ▼\\n┌──────────────────────────────────────────────────────────────────────────────────┐\\n│ MONTH 5: Penetration Testing, Red Teaming & Simulation Audits                    │\\n│ • Conduct AI-Specific Red Teaming & Web/API Pentesting                           │\\n│ • Undergo Formal MLPS Level 3 On-Site Evaluation                                 │\\n│ • Perform CAC Compliance Mock Inspection                                         │\\n└─────────────────────────┬────────────────────────────────────────────────────────┘\\n                          │\\n                          ▼\\n┌──────────────────────────────────────────────────────────────────────────────────┐\\n│ MONTH 6: Regulatory Approvals, Final Certification & Launch Readiness            │\\n│ • Receive MLPS Level 3 Filing Certificate                                        │\\n│ • Obtain CAC Algorithm Filing Number & Public Display                            │\\n│ • Integrate NetEase YiDun / Tencent Real-Time Content Moderation                 │\\n│ • Final DPO Sign-Off & Commercial Launch Readiness                               │\\n└──────────────────────────────────────────────────────────────────────────────────┘\\n```\\n\\n#### Month-by-Month Detailed Milestones\\n\\n##### Month 1–2: Data Mapping, Gap Analysis & Baseline Governance\\n*   **Data Flow Mapping & Inventory:** Map all data collection points, processing nodes, agent memory storage, and third-party API destinations. Identify all PII and Important Data (重要数据) flows.\\n*   **Regulatory Gap Analysis:** Assess technical and operational practices against PIPL, Generative AI Interim Measures, and CAC regulations.\\n*   **Legal Documentation Drafting:**\\n    *   Privacy Policy (隐私政策) with explicit consent mechanisms for AI processing and automated decision-making.\\n    *   Terms of Service (服务协议) defining user content ownership, acceptable use policies, and AI output disclaimers.\\n    *   Employee Data Protection Guidelines and Vendor Data Processing Agreements (DPAs).\\n*   **MLPS Level 3 Initiation:** Engage a certified Beijing Cybersecurity Level Protection Assessment Center (网络安全等级保护测评机构) to initiate system boundary definition and target baseline gap assessments.\\n\\n##### Month 3–4: Regulatory Filings, DPIA/PIPA & Technical Controls Implementation\\n*   **Personal Information Protection Impact Assessment (PIPA / DPIA):** Complete formal DPIA covering automated profiling, sensitive PII handling, and cross-border API transfers.\\n*   **CAC Filings (网信办备案):**\\n    *   *CAC Algorithm Registration (互联网信息服务算法备案):* Prepare algorithm mechanism description, safety self-assessment report (算法安全自评估报告), and file via the National Algorithm Notification System.\\n    *   *Deep Synthesis Filing (深度合成服务算法备案):* File if the AI Agent generates synthetic text, audio, image, or video output.\\n    *   *Generative AI Service Filing (生成式人工智能服务备案):* Required if launching consumer-facing GenAI services in China.\\n*   **Cross-Border Data Transfer Compliance:** If prompts containing PII are routed to overseas cloud instances (e.g., Azure OpenAI US/East Asia), complete the CAC Standard Contract for Cross-Border Personal Information Transfer (个人信息出境标准合同) and file with Beijing CAC (北京市网信办).\\n*   **Technical Security Controls Deployment:** Implement the PII Masking Gateway, NeMo/Llama Guardrails, API Rate Limiters, and local secrets management.\\n\\n##### Month 5: Penetration Testing, AI Red Teaming & Simulation Audits\\n*   **AI Agent Red Teaming & Security Pentesting:** Engage a specialized third-party cybersecurity firm to conduct adversarial testing:\\n    *   Prompt injection & jailbreaking resistance.\\n    *   RAG poisoning and context contamination testing.\\n    *   Agent tool parameter tampering and privilege escalation.\\n    *   Standard Web/API OWASP Top 10 pentesting.\\n*   **MLPS Level 3 On-Site Formal Assessment:** Complete on-site technical inspection, vulnerability scanning, system hardening, and policy documentation audits conducted by the accredited MLPS testing institute.\\n*   **Regulatory Simulation Audit:** Run an internal mock regulatory audit simulating CAC content moderation enforcement, audit log retrieval, and user opt-out processing.\\n\\n##### Month 6: Regulatory Approvals, Final Certification & Launch Readiness\\n*   **MLPS Level 3 Filing:** Receive official MLPS Level 3 Filing Certificate (等保三级备案证明) from the Beijing Public Security Bureau (公安局).\\n*   **Algorithm Filing Publication:** Obtain official CAC Algorithm Registration filing number and display it in the application footer/settings.\\n*   **Real-Time Content Moderation Integration:** Connect API streams to licensed domestic content moderation services (e.g., NetEase YiDun 网易易盾 or Tencent Cloud Security) to filter political, toxic, or illegal content in real-time as required by Chinese Generative AI rules.\\n*   **Final DPO Sign-Off & Launch:** Final review by fractional DPO, operational readiness sign-off, and production deployment.\\n\\n---\\n\\n### Section 3: Budget & Resource Allocation (Cap: RMB 1,000,000 / ~$140,000 USD)\\n\\n#### Detailed Line-Item Budget Allocation Table\\n\\n| Category | Line Item Description | Allocation (RMB) | Priority Level | Strategic Justification & Deliverables |\\n| :--- | :--- | :--- | :--- | :--- |\\n| **1. External Legal Counsel** | **China Data Compliance Counsel** (Top-tier Beijing Law Firm e.g., Han Kun / King & Wood Mallesons / Zhong Lun) | ¥220,000 | **P0 (Critical)** | Core PIPL compliance, CAC Algorithm Filing drafting, DPIA/PIPA reports, CAC Cross-Border Standard Contract (SCC) Beijing filing support. |\\n| | **International / Regional Legal Advisory** (US/EU GDPR & AI Act counsel for overseas SaaS terms) | ¥80,000 | **P1 (High)** | Scoping cross-border liability, overseas user terms, GDPR / EU AI Act alignment for export markets. |\\n| **2. Regulatory Certifications & Compliance Audits** | **MLPS Level 3 Certification & Assessment Fee** (Beijing Accredited Testing Center + Public Security Bureau filing) | ¥150,000 | **P0 (Critical)** | Mandatory prerequisite for CAC GenAI/Algorithm filings in China. Includes physical/cloud system assessment and certificate. |\\n| | **Real-Time Content Moderation API Subscription** (NetEase YiDun 网易易盾 / Tencent Security Gateway) | ¥50,000 | **P0 (Critical)** | Required by PRC Generative AI Interim Measures to block prohibited/illegal content in real time. |\\n| **3. Technical Security Tools & Guardrails** | **AI Red Teaming & Penetration Testing** (Third-party cybersecurity vendor for LLM & API security) | ¥120,000 | **P0 (Critical)** | Specialized AI agent red teaming (prompt injection, tool execution testing) plus network/API pentest report. |\\n| | **Security & Guardrail Infrastructure Stack** (Cloud WAF, KMS, SIEM Logging, Open Source Guardrail Deployment) | ¥80,000 | **P2 (Medium)** | Host open-source guardrails (NeMo, Presidio, Guardrails AI) on local cloud infrastructure; Aliyun/AWS KMS, WAF, log storage. |\\n| **4. Fractional Leadership & Human Resources** | **Fractional / Retained Data Protection Officer (DPO)** (12-month retainer @ ¥15,000/month) | ¥180,000 | **P0 (Critical)** | Provides high-level regulatory oversight, CAC interface, and continuous compliance updates without full-time headcount cost. |\\n| **5. Operational Contingency & Buffer** | **Regulatory Buffer, Training & Audit Contingency** | ¥120,000 | **P1 (High)** | Reserve fund for potential regulatory document resubmissions, specialized security remediation, staff training certifications. |\\n| **TOTAL ALLOCATION** | **Comprehensive 1-Year AI Security & Compliance Budget** | **¥1,000,000** | | **100% Budget Utilization** |\\n\\n---\\n\\n#### Prioritization Strategy & Cost Optimization Trade-offs\\n\\n1. **Fractional DPO vs. Full-Time Internal DPO:**\\n   * *Market Reality:* Hiring a qualified full-time Data Compliance Lead / DPO in Beijing costs between RMB 500,000 and RMB 800,000 per year in total compensation, which would consume 50–80% of the startup's total compliance budget.\\n   * *Optimal Strategy:* Designate the internal CTO / Engineering Lead as the operational compliance liaison and retain an external **Fractional DPO / Legal Compliance Advisor** for RMB 180,000/year (RMB 15,000/month). This secures expert guidance while preserving runway.\\n\\n2. **Open-Source Guardrails vs. Enterprise Commercial SaaS:**\\n   * *Market Reality:* Commercial enterprise AI security platforms (e.g., Lakera, Robust Intelligence, CalypsoAI) cost $40,000–$80,000 USD/year (RMB 280,000–560,000), which is cost-prohibitive under a RMB 1M budget.\\n   * *Optimal Strategy:* Build upon open-source security frameworks (NVIDIA NeMo Guardrails, Microsoft Presidio, Llama Guard 3, Guardrails AI) hosted on existing cloud servers. Allocate RMB 80,000 for infrastructure deployment and KMS/WAF fees.\\n\\n3. **Vendor Bundling for Testing & Certifications:**\\n   * *Optimal Strategy:* Bundle MLPS Level 3 assessment and technical penetration testing with a single accredited Beijing security agency to negotiate package pricing (limiting total assessment and red teaming expenses to RMB 270,000 combined).\\n\\n4. **Strict P0 vs. P1/P2 Expense Prioritization:**\\n   * **P0 Non-Negotiable (Must Spend ~¥720,000):** China Legal Counsel (¥220k), MLPS Level 3 (¥150k), Real-Time Content Moderation API (¥50k), AI Red Teaming & Pentest (¥120k), Fractional DPO (¥180k).\\n   * **P1 Essential Safeguards (~¥200,000):** International Legal Consultation (¥80k), Contingency Reserve (¥120k).\\n   * **P2 Infrastructure Optimization (~¥80,000):** Self-hosted guardrail infrastructure, KMS, and logging storage.\\n\\n---\\n\\n### List of All Relevant Sources (with citations in the report)\\n\\n1. **OWASP Foundation - OWASP Top 10 for Large Language Model Applications:** Standardized framework detailing top security vulnerabilities including Prompt Injection (LLM01), Insecure Output Handling (LLM02), Training Data Poisoning (LLM03), Model Denial of Service (LLM04), Sensitive Information Disclosure (LLM06), and System Overreliance (LLM09) [1].\\n2. **Cyberspace Administration of China (CAC) - Generative AI Services Interim Measures (生成式人工智能服务管理暂行办法):** Regulatory guidelines mandating security self-assessments, real-time content moderation, and regulatory filings for generative AI services in China [2].\\n3. **Cyberspace Administration of China (CAC) - Provisions on the Administration of Internet Information Service Algorithmic Recommendations & Deep Synthesis (互联网信息服务算法推荐管理规定 / 深度合成管理规定):** Statutory filing requirements for algorithm registration (算法备案) and deep synthesis tools [3].\\n4. **Standing Committee of the National People's Congress - Personal Information Protection Law of the PRC (PIPL / 个人信息保护法):** Primary legal framework governing data minimization, consent, personal information impact assessments (PIPA/DPIA), and cross-border data transfer mechanisms (Standard Contracts / SCCs) [4].\\n5. **Ministry of Public Security of the PRC - Cybersecurity Multi-Level Protection Scheme (MLPS 2.0 / 等保三级):** National cybersecurity baseline standards required for high-importance cloud applications and algorithms operating in China [5].\\n6. **NVIDIA NeMo Guardrails & Microsoft Presidio Documentation:** Open-source frameworks for prompt injection defense, dialog flow control, and automated PII detection/redaction [6].\\n\\n### Sources\\n[1] OWASP Foundation - OWASP Top 10 for Large Language Model Applications: https://owasp.org/www-project-top-10-for-large-language-model-applications/  \\n[2] Cyberspace Administration of China (CAC) - Generative AI Services Interim Measures: http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm  \\n[3] Cyberspace Administration of China (CAC) - Internet Information Service Algorithm Notification System: https://beian.cac.gov.cn/  \\n[4] Standing Committee of the National People's Congress - Personal Information Protection Law (PIPL): http://www.npc.gov.cn/npc/c30834/202108/a8c7cc28105c42638da6f58999f52b8b.shtml  \\n[5] Ministry of Public Security of the PRC - Cybersecurity Multi-Level Protection Scheme (MLPS 2.0): http://www.mps.gov.cn/  \\n[6] NVIDIA NeMo Guardrails & Microsoft Presidio Frameworks: https://github.com/NVIDIA/NeMo-Guardrails / https://github.com/microsoft/presidio\", 'index': 0, 'extras': {'signature': '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'}}]",
+      "topic_id": "topic_003",
+      "topic_text": "Research technical risk control frameworks for AI Agents (prompt injection, model security, API dependencies) and budget allocation strategies for a RMB 1,000,000 data compliance budget for a 20-person Beijing AI startup.\n\nSpecific areas to investigate in detail:\n1. AI Agent Technical Risk Control Framework:\n- OWASP Top 10 for LLM Applications and AI Agents: concrete mitigation for Prompt Injection (direct/indirect), Insecure Output Handling, Training Data Poisoning, Sensitive Information Disclosure, System Overreliance, Model Denial of Service.\n- Technical controls for data minimization, data masking/anonymization before sending prompts to third-party LLM APIs (e.g., OpenAI, Anthropic, DeepSeek, Azure).\n- Managing third-party API dependencies, SLA, data retention policies of upstream AI providers, and preventing data leakage via telemetry/logs.\n\n2. Compliance Roadmap & Operational Audit (6-Month Timeline):\n- Step-by-step 6-month roadmap for a 20-person team: Month 1-2 (Data Mapping, Gap Analysis, Legal drafting), Month 3-4 (PIPA/DPIA, SCCs/CAC filing preparation, technical controls implementation), Month 5 (Penetration testing, simulation audits), Month 6 (Final certification, launch readiness).\n\n3. Budget & Resource Allocation (Cap: RMB 1,000,000 / ~$140k USD):\n- Detailed line-item budget allocation for a 20-person Beijing startup:\n  - External Legal Counsel fees (China legal team for PIPL/CAC filing vs EU/US legal coverage or regional counsel).\n  - Technical security tools, penetration testing, prompt injection firewall / guardrails software.\n  - Compliance audits, PIPA/DPIA templates, ISO 27001 / ISO 27701 or SOC 2 readiness.\n  - Recommended DPO / Data Compliance lead options (fractional vs internal).\n  - Prioritization strategy to strictly stay under RMB 1,000,000 without compromising legal validity."
+    }
+  ],
+  "execution_config": {
+    "generation_seed": 1,
+    "gt_userid": "User1",
+    "manifest_sha256": "8110d1b3656fa5ba021f7b1bd053a92a11922c4efecd8d43d552e80cda4ad2a9",
+    "manifest_version": "1.1",
+    "max_retries": 3,
+    "models": {
+      "compression_model": "google_genai:gemini-3.6-flash",
+      "final_report_model": "google_genai:gemini-3.6-flash",
+      "max_retries": 3,
+      "requests_per_minute": 4,
+      "research_model": "google_genai:gemini-3.6-flash",
+      "retry_initial_delay_sec": 15,
+      "service_tier": "flex",
+      "summarization_model": "google_genai:gemini-3.6-flash",
+      "timeout_sec": 1500
+    },
+    "prompt_sha256": "500e117d04eb9e7c52b798e970745b462d664c46cedae8bab4cce41068e9e64d",
+    "search": {
+      "global_hard_stop": 2400,
+      "provider": "serper_via_tavily_slot",
+      "report_query_cap": 7,
+      "unique_url_cap": 15
+    },
+    "service_tier": "flex",
+    "source_query_id": 206,
+    "split": "confirmatory",
+    "taskid": 42,
+    "timeout_sec": 1500
+  },
+  "execution_error": null,
+  "final_report": "",
+  "research_brief": "I am planning to launch a global AI Agent application within six months, targeting users in China, the European Union (EU), and the United States (U.S.). My company is based in Beijing with a 20-person team, and our servers are currently deployed in China and Singapore. The application will collect user location data, chat records, and usage behavior data. With a maximum budget of RMB 1 million for data compliance, I need a comprehensive research report and actionable strategy covering the following dimensions:\n\n1. Legal & Regulatory Compliance Requirements Outline:\n- Detailed breakdown of specific requirements and obligations under GDPR (EU), CCPA/CPRA (U.S./California), and China's Personal Information Protection Law (PIPL), specifically tailored to AI Agent functionalities (processing location data, chat histories, and telemetry/usage behavior).\n- Specific consent mechanisms, data minimization, user rights management (DSARs), transparency/privacy notices, and automated decision-making/profiling rules relevant to AI interaction.\n\n2. Cross-Border Data Transfer (CBDT) Implementation Plan & Audits:\n- Viable mechanisms for cross-border data transfers from China, the EU, and the U.S. considering our server architecture in China and Singapore (e.g., China CAC Standard Contracts / Security Assessments / Certification, EU Standard Contractual Clauses (SCCs), U.S. Data Privacy Framework/Standard Clauses).\n- Concrete roadmap and technical/operational requirements for conducting data protection impact assessments (DPIA/PIPA) and compliance audits within our 6-month timeline.\n\n3. Risk Control Framework & Emergency Response Plan:\n- Comprehensive risk management framework covering data security, model/prompt injection risks, data leaks, and third-party API dependencies.\n- Emergency incident response plan detailing breach notification timelines and procedures for CAC (China), EDPB/EU DPAs, and U.S. regulatory authorities.\n\n4. Budget & Resource Allocation (Cap: RMB 1,000,000):\n- Practical, prioritized budget allocation plan for external legal counsel, compliance certifications, technical auditing tools, and security measures suitable for a 20-person startup.\n\nAny unstated dimensions (such as specific US state privacy laws beyond CCPA/CPRA, or specific downstream LLM provider agreements) should be treated as flexible or open-ended. Please prioritize primary legal texts, official regulatory agency guidance (e.g., CAC, EDPB, CPPA), and official compliance documentation.",
+  "research_topics": [
+    {
+      "topic_id": "topic_001",
+      "topic_text": "Research China compliance, regulations, and cross-border data transfer rules for a Beijing-based AI Agent startup launching globally.\n\nSpecific areas to investigate in detail:\n1. China Personal Information Protection Law (PIPL) & Generative AI Rules:\n- Obligations for processing location data (sensitive personal information under PIPL), chat history (contents of conversations), and usage behavior/telemetry.\n- Separate consent requirements (Article 29 PIPL for sensitive personal info), transparency, privacy notices, automated decision-making / profiling rules under PIPL.\n- CAC Interim Measures for the Management of Generative AI Services (Algorithm Filing / Algorithm Registration / Deep Synthesis provisions, AI content labeling/watermarking, training data security, content moderation).\n\n2. China Cross-Border Data Transfer (CBDT) Mechanisms:\n- Regulations under CAC 'Provisions on Promoting and Standardizing Cross-Border Data Flows' (Decree No. 16, March 2024): threshold exemptions (e.g. less than 100,000 non-sensitive personal info, non-important data, contract performance exemptions, free trade zone negative lists).\n- Requirements if transferring data from China to Singapore or handling non-mainland user data on Singapore servers.\n- Standard Contract filing (CAC Standard Contract for Outbound Personal Information) vs Security Assessment vs Certification.\n- Personal Information Protection Impact Assessment (PIPA) requirements under PIPL Article 55.\n\n3. Emergency Response & Incident Breach Reporting in China:\n- Regulatory reporting deadlines to CAC, MIIT, or Public Security Bureaus in case of data breach or security incident (e.g. Cyber Security Law, Data Security Law, PIPL reporting rules - immediate/24-hour reporting obligations).\n- Concrete step-by-step procedures for incident response in China."
+    },
+    {
+      "topic_id": "topic_002",
+      "topic_text": "Research European Union (EU) and United States (U.S.) privacy, AI compliance, cross-border data transfer, and breach notification requirements for a global AI Agent application.\n\nSpecific areas to investigate in detail:\n1. EU GDPR & EU AI Act Compliance for AI Agents:\n- Requirements under GDPR for processing location data, chat logs (special category data risk, user inputs), and telemetry/usage data.\n- Consent vs. Legitimate Interest, data minimization, automated decision-making (Article 22 GDPR), DSAR (access, deletion, rectification, portability) handling in AI systems where data is ingested or stored.\n- EU AI Act requirements for AI Agents / Generative AI: Transparency rules (disclosure that users interact with AI), risk classification (limited risk vs high risk), watermarking/synthetic content detection, model documentation.\n\n2. U.S. Federal & State Privacy Laws (CCPA/CPRA and beyond):\n- Requirements under California Consumer Privacy Act / California Privacy Rights Act (CCPA/CPRA) regarding sensitive personal information (precise geolocation), Opt-Out of Sale/Sharing, Opt-Out of Automated Decision-Making Technology (ADMT), privacy notices, and DSARs.\n- Key nuances in other U.S. state privacy laws (e.g. VCDPA, CPA) applicable to AI applications.\n\n3. Cross-Border Data Transfer (CBDT) from EU & US:\n- Transfers between EU, US, Singapore, and China: Standard Contractual Clauses (SCCs) for EU, EU-US Data Privacy Framework (DPF), Transfer Impact Assessments (TIA), and restrictions on transferring EU/US user data to China or storing on China/Singapore servers.\n\n4. Emergency Incident Response & Breach Notification Timelines:\n- EU GDPR breach notification rules (72 hours to Lead DPA under Article 33, notice to data subjects under Article 34).\n- U.S. state breach notification deadlines and federal guidelines (e.g. SEC/FTC/state AG requirements)."
+    },
+    {
+      "topic_id": "topic_003",
+      "topic_text": "Research technical risk control frameworks for AI Agents (prompt injection, model security, API dependencies) and budget allocation strategies for a RMB 1,000,000 data compliance budget for a 20-person Beijing AI startup.\n\nSpecific areas to investigate in detail:\n1. AI Agent Technical Risk Control Framework:\n- OWASP Top 10 for LLM Applications and AI Agents: concrete mitigation for Prompt Injection (direct/indirect), Insecure Output Handling, Training Data Poisoning, Sensitive Information Disclosure, System Overreliance, Model Denial of Service.\n- Technical controls for data minimization, data masking/anonymization before sending prompts to third-party LLM APIs (e.g., OpenAI, Anthropic, DeepSeek, Azure).\n- Managing third-party API dependencies, SLA, data retention policies of upstream AI providers, and preventing data leakage via telemetry/logs.\n\n2. Compliance Roadmap & Operational Audit (6-Month Timeline):\n- Step-by-step 6-month roadmap for a 20-person team: Month 1-2 (Data Mapping, Gap Analysis, Legal drafting), Month 3-4 (PIPA/DPIA, SCCs/CAC filing preparation, technical controls implementation), Month 5 (Penetration testing, simulation audits), Month 6 (Final certification, launch readiness).\n\n3. Budget & Resource Allocation (Cap: RMB 1,000,000 / ~$140k USD):\n- Detailed line-item budget allocation for a 20-person Beijing startup:\n  - External Legal Counsel fees (China legal team for PIPL/CAC filing vs EU/US legal coverage or regional counsel).\n  - Technical security tools, penetration testing, prompt injection firewall / guardrails software.\n  - Compliance audits, PIPA/DPIA templates, ISO 27001 / ISO 27701 or SOC 2 readiness.\n  - Recommended DPO / Data Compliance lead options (fractional vs internal).\n  - Prioritization strategy to strictly stay under RMB 1,000,000 without compromising legal validity."
+    },
+    {
+      "topic_id": "topic_004",
+      "topic_text": "Detailed China legal and regulatory requirements for an AI Agent application operating globally from Beijing with servers in China and Singapore.\n\nPlease research:\n1. China Personal Information Protection Law (PIPL):\n- Legal rules for location data (classified as sensitive personal information under Article 28/29 PIPL, requiring separate consent and specific necessity).\n- Chat records/history and usage behavior/telemetry data classification and processing rules.\n- Consent requirements (explicit, separate consent), privacy notices, and automated decision-making rules (PIPL Article 24 - right to opt out or request explanation for automated decision-making/profiling).\n- Mandatory Personal Information Protection Impact Assessment (PIPA) requirements under PIPL Article 55 before processing sensitive personal information or using automated decision-making.\n\n2. Generative AI and Algorithm Regulations in China:\n- CAC Interim Measures for the Management of Generative AI Services: obligations for providers (content moderation, real-name authentication, security self-assessment, algorithm filing, synthetic content labeling/watermarking under Deep Synthesis provisions).\n- Algorithm Registration (互联网信息服务算法备案) and Deep Synthesis Filing rules for AI agents.\n\n3. CAC Cross-Border Data Transfer (CBDT) Rules (Decree No. 16 - March 2024):\n- Thresholds for CAC Security Assessment vs. Standard Contract Filing vs. Exemption.\n- Exemptions under Decree No. 16 (e.g. performance of contract, less than 100,000 non-sensitive personal info, non-important data).\n- Handling non-mainland user data on Singapore servers vs handling mainland Chinese user data.\n\n4. Emergency Breach Notification and Incident Reporting Timelines in China:\n- Regulatory reporting timelines under Cyber Security Law (CSL), Data Security Law (DSL), and PIPL (e.g., immediate notification, 24-hour reporting to CAC / MIIT / Public Security Bureau, and notification to data subjects)."
+    }
+  ],
+  "run_id": "pilot_task42_User1_seed1",
+  "schema_version": "dra_trace_v2",
+  "search_trace": [
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "\"PIPL\" sensitive personal information location data chat history consent requirements algorithm filing generative AI rules CAC",
+      "query_id": "topic_001_query_001",
+      "sources": [
+        {
+          "domain": "www.lw.com",
+          "link": "https://www.lw.com/en/insights/china-introduces-rules-for-ai-companion-and-emotional-interaction-services",
+          "query": "\"PIPL\" sensitive personal information location data chat history consent requirements algorithm filing generative AI rules CAC",
+          "rank": 1,
+          "snippet": "Providers must not use sensitive personal information in interaction data ... Where no penalties are specified under other laws (such as the PIPL ...",
+          "title": "China Introduces Rules for AI Companion and Emotional ..."
+        },
+        {
+          "domain": "www.pertamapartners.com",
+          "link": "https://www.pertamapartners.com/insights/china-ai-regulations",
+          "query": "\"PIPL\" sensitive personal information location data chat history consent requirements algorithm filing generative AI rules CAC",
+          "rank": 2,
+          "snippet": "Data and privacy violations under the PIPL can trigger fines of up to 50 million RMB or 5% of annual revenue, suspension of data processing ...",
+          "title": "China AI Regulations 2026: Rules Companies Must Follow"
+        },
+        {
+          "domain": "iclg.com",
+          "link": "https://iclg.com/practice-areas/data-protection-laws-and-regulations/china/",
+          "query": "\"PIPL\" sensitive personal information location data chat history consent requirements algorithm filing generative AI rules CAC",
+          "rank": 3,
+          "snippet": "Under the PIPL, personal information of children under the age of 14 shall be regarded as sensitive personal information, the processing of ...",
+          "title": "Data Protection Laws and Regulations 2026 | China"
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "\"Provisions on Promoting and Standardizing Cross-Border Data Flows\" Decree 16 CAC exemptions Singapore",
+      "query_id": "topic_001_query_002",
+      "sources": [
+        {
+          "domain": "www.sec.gov",
+          "link": "https://www.sec.gov/Archives/edgar/data/2030771/000110465925089477/tm254200d4_f-1a.htm",
+          "query": "\"Provisions on Promoting and Standardizing Cross-Border Data Flows\" Decree 16 CAC exemptions Singapore",
+          "rank": 1,
+          "snippet": "... Provisions on Promoting and Standardizing Cross-border Data Flows, the Anti-Monopoly Law and its supporting laws and regulations and related guidelines, the ...",
+          "title": "QMSK Technology Co., Ltd"
+        },
+        {
+          "domain": "www.otcmarkets.com",
+          "link": "https://www.otcmarkets.com/filing/conv_pdf?id",
+          "query": "\"Provisions on Promoting and Standardizing Cross-Border Data Flows\" Decree 16 CAC exemptions Singapore",
+          "rank": 2,
+          "snippet": "... Provisions on Promoting and Standardizing Cross-border Data Flows, the. Anti-Monopoly Law and its supporting laws and regulations and related guidelines, the ...",
+          "title": "HARTFORD CREATIVE GROUP, INC."
+        },
+        {
+          "domain": "www1.hkexnews.hk",
+          "link": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0506/2026050602160.pdf",
+          "query": "\"Provisions on Promoting and Standardizing Cross-Border Data Flows\" Decree 16 CAC exemptions Singapore",
+          "rank": 3,
+          "snippet": "Provisions on Promoting and Standardizing Cross-Border Data Flows (effective March 2024), as well as further question-and- answer guidance ...",
+          "title": "BeOne Medicines Ltd. 百濟神州有限公司"
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "\"Interim Measures for the Management of Generative AI Services\" \"overseas\" OR \"outside China\" \"apply\" OR \"exempt\"",
+      "query_id": "topic_001_query_003",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "\"Decree No. 16\" \"Cross-Border Data Flows\" CAC thresholds 100,000 10,000 \"sensitive personal information\"",
+      "query_id": "topic_001_query_004",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "\"Network Security Incident Reporting Measures\" CAC 2 hours OR 24 hours breach reporting China",
+      "query_id": "topic_001_query_005",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "\"PIPL Article 55\" PIPIA \"Personal Information Protection Impact Assessment\" cross-border",
+      "query_id": "topic_001_query_006",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "Generative AI Interim Measures China overseas users exemption CAC",
+      "query_id": "topic_001_query_007",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "CAC Decree 16 cross border data flow thresholds 100000 10000",
+      "query_id": "topic_001_query_008",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "China network security incident reporting CAC hours breach notification",
+      "query_id": "topic_001_query_009",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "PIPL Article 55 PIPIA requirements China data transfer",
+      "query_id": "topic_001_query_010",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "China generative AI interim measures Article 20 overseas",
+      "query_id": "topic_001_query_011",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "China cross border data flow decree 16 thresholds",
+      "query_id": "topic_001_query_012",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "EU AI Act transparency requirements disclosure chatbot synthetic content watermarking article 50",
+      "query_id": "topic_002_query_001",
+      "sources": [
+        {
+          "domain": "artificialintelligenceact.eu",
+          "link": "https://artificialintelligenceact.eu/transparency-rules-article-50/",
+          "query": "EU AI Act transparency requirements disclosure chatbot synthetic content watermarking article 50",
+          "rank": 1,
+          "snippet": "Article 50 of the EU AI Act introduces transparency obligations in four situations: when AI interacts directly with people, when AI generates synthetic content,",
+          "title": "The EU AI Act's Transparency Rules: A Practical Guide to ..."
+        },
+        {
+          "domain": "digital-strategy.ec.europa.eu",
+          "link": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content",
+          "query": "EU AI Act transparency requirements disclosure chatbot synthetic content watermarking article 50",
+          "rank": 2,
+          "snippet": "The obligations under Article 50 of the AI Act (transparency obligations for providers and deployers of generative AI systems) address risks of deception and ...",
+          "title": "Code of Practice on Transparency of AI-generated Content"
+        },
+        {
+          "domain": "www.stibbe.com",
+          "link": "https://www.stibbe.com/publications-and-insights/the-ai-acts-transparency-obligations-rules-scope-and-timeline",
+          "query": "EU AI Act transparency requirements disclosure chatbot synthetic content watermarking article 50",
+          "rank": 3,
+          "snippet": "Article 50 of the AI Act captures four different situations where either the provider or the deployer should be transparent about the use of AI.",
+          "title": "The AI Act's Transparency Obligations: Rules, Scope and ..."
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "CPPA automated decision making technology ADMT regulations CCPA CPRA",
+      "query_id": "topic_002_query_002",
+      "sources": [
+        {
+          "domain": "cppa.ca.gov",
+          "link": "https://cppa.ca.gov/regulations/ccpa_updates.html",
+          "query": "CPPA automated decision making technology ADMT regulations CCPA CPRA",
+          "rank": 1,
+          "snippet": "CCPA Updates, Cybersecurity Audits, Risk Assessments, Automated Decisionmaking Technology (ADMT), and Insurance Regulations. On July 24, 2025, the California ...",
+          "title": "CCPA Updates, Cybersecurity Audits, Risk Assessments ..."
+        },
+        {
+          "domain": "www.skadden.com",
+          "link": "https://www.skadden.com/insights/publications/2025/10/california-finalizes-cppa-regulations",
+          "query": "CPPA automated decision making technology ADMT regulations CCPA CPRA",
+          "rank": 2,
+          "snippet": "The regulations impose requirements on business that use ADMT to make a “significant decision” concerning a consumer.",
+          "title": "California Finalizes CCPA Regulations for Automated ..."
+        },
+        {
+          "domain": "www.whitecase.com",
+          "link": "https://www.whitecase.com/insight-alert/cppa-finalizes-rules-admt-risk-assessments-and-cybersecurity-audits-requirements",
+          "query": "CPPA automated decision making technology ADMT regulations CCPA CPRA",
+          "rank": 3,
+          "snippet": "Under the CCPA, ADMT means “any technology that processes personal information and uses computation to replace human decision-making or ...",
+          "title": "CPPA finalizes rules on ADMT, risk assessments, and ..."
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "US Executive Order 14117 restricting access sensitive personal data bulk data China",
+      "query_id": "topic_002_query_003",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "EU GDPR Article 22 automated decision making AI agents data deletion DSAR AI model",
+      "query_id": "topic_002_query_004",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "US DOJ bulk sensitive personal data Executive Order 14117 China Singapore restrictions",
+      "query_id": "topic_002_query_005",
+      "sources": [
+        {
+          "domain": "www.jacksonlewis.com",
+          "link": "https://www.jacksonlewis.com/insights/doj-bulk-data-transfer-rule-are-you-subject-it-and-what-does-it-require",
+          "query": "US DOJ bulk sensitive personal data Executive Order 14117 China Singapore restrictions",
+          "rank": 1,
+          "snippet": "The “Bulk Data Transfer Rule” prohibits or restricts sending sensitive data to “countries of concern” or certain persons located in or ...",
+          "title": "The DOJ Bulk Data Transfer Rule: Are You Subject to It and ..."
+        },
+        {
+          "domain": "ora.stanford.edu",
+          "link": "https://ora.stanford.edu/data-use-agreements/preventing-access-us-sensitive-personal-data-and-government-related-data",
+          "query": "US DOJ bulk sensitive personal data Executive Order 14117 China Singapore restrictions",
+          "rank": 2,
+          "snippet": "The rule applies to data transactions involving U.S. sensitive personal data that exceeds a certain “bulk threshold” based on the thresholds below. Thresholds ...",
+          "title": "Preventing Access to U.S. Sensitive Personal Data and ..."
+        },
+        {
+          "domain": "www.federalregister.gov",
+          "link": "https://www.federalregister.gov/documents/2025/01/08/2024-31486/preventing-access-to-us-sensitive-personal-data-and-government-related-data-by-countries-of-concern",
+          "query": "US DOJ bulk sensitive personal data Executive Order 14117 China Singapore restrictions",
+          "rank": 3,
+          "snippet": "The Department of Justice is issuing a final rule to implement Executive Order 14117 of February 28, 2024 (Preventing Access to Americans' Bulk Sensitive ...",
+          "title": "Preventing Access to U.S. Sensitive Personal Data and ..."
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": true,
+      "failure_code": "no_new_sources",
+      "query": "China PIPL cross border data transfer rules standard contract CAC Singapore PDPA transfer",
+      "query_id": "topic_002_query_006",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "US state privacy law breach notification timelines Texas Florida California SEC 4 business days",
+      "query_id": "topic_002_query_007",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "GDPR AI agent chat log special category data telemetry legal basis RAG model deletion",
+      "query_id": "topic_002_query_008",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "US state data breach notification deadlines map California Texas Florida New York SEC FTC",
+      "query_id": "topic_002_query_009",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "Virginia VCDPA Colorado CPA Texas TDPSA sensitive data opt in profiling opt out AI",
+      "query_id": "topic_002_query_010",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "Singapore PDPA cross border data transfer requirements transfer limitation obligation",
+      "query_id": "topic_002_query_011",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "EU AI Act risk classification high risk AI agents limited risk chatbots requirements",
+      "query_id": "topic_002_query_012",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "US state breach notification deadlines California Texas Florida SEC 4 days",
+      "query_id": "topic_002_query_013",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "Singapore PDPA Transfer Limitation Obligation cross border data transfer",
+      "query_id": "topic_002_query_014",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": true,
+      "failure_code": "no_new_sources",
+      "query": "OWASP Top 10 for LLM Applications 2025 2026 prompt injection insecure output handling mitigations",
+      "query_id": "topic_003_query_001",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_003"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "China CAC algorithm registration Generative AI filing cost timeline legal fees RMB",
+      "query_id": "topic_003_query_002",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_003"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "MLPS Level 3 CAC cross border data transfer filing legal fees Beijing RMB",
+      "query_id": "topic_003_query_003",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_003"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "AI agent security guardrails prompt injection firewall data masking PII anonymization API",
+      "query_id": "topic_003_query_004",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_003"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "OWASP LLM Top 10 mitigation prompt injection",
+      "query_id": "topic_003_query_005",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_003"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "China PIPL CAC data compliance legal fees cost RMB",
+      "query_id": "topic_003_query_006",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_003"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "OWASP LLM Top 10 2025",
+      "query_id": "topic_003_query_007",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_003"
+    }
+  ],
+  "token_ledger": {
+    "elapsed_sec": 360.103,
+    "input_tokens": 127978,
+    "output_tokens": 21659,
+    "queries_attempted": 7,
+    "queries_failed": 2,
+    "queries_rejected": 26,
+    "queries_requested": 33,
+    "queries_successful": 5,
+    "query_ledger_consistent": true,
+    "search_adapter": {
+      "global_attempted_queries": 769,
+      "global_attempted_queries_at_start": 762,
+      "global_query_hard_stop": 2400,
+      "global_successful_queries": 586,
+      "global_successful_queries_at_start": 581,
+      "report_max_queries_per_call": 2,
+      "report_query_cap": 7,
+      "report_unique_url_cap": 15,
+      "run_id": "pilot_task42_User1_seed1",
+      "run_queries_attempted": 7,
+      "run_queries_failed": 2,
+      "run_queries_requested": 33,
+      "run_queries_successful": 5,
+      "run_sources_selected": 15,
+      "run_unique_urls": 15
+    },
+    "source_ledger_consistent": true,
+    "sources_selected": 15,
+    "token_usage_events": 24,
+    "total_tokens": 149637,
+    "unique_sources": 15
+  }
+}

@@ -1,0 +1,525 @@
+{
+  "ledger": {
+    "global_attempted_queries": 572,
+    "global_attempted_queries_at_start": 565,
+    "global_query_hard_stop": 2400,
+    "global_successful_queries": 436,
+    "global_successful_queries_at_start": 431,
+    "report_max_queries_per_call": 2,
+    "report_query_cap": 7,
+    "report_unique_url_cap": 15,
+    "run_id": "pilot_task18_User10_seed1",
+    "run_queries_attempted": 7,
+    "run_queries_failed": 2,
+    "run_queries_requested": 37,
+    "run_queries_successful": 5,
+    "run_sources_selected": 15,
+    "run_unique_urls": 15
+  },
+  "queries": [
+    {
+      "attempted": true,
+      "failure_code": null,
+      "http_status": null,
+      "message": null,
+      "query": "\"Hainan Airlines\" Shanghai PEK Berlin HU489 HU490 flight schedule",
+      "query_sequence": 1,
+      "raw_response_path": "runs/confirmatory/serper_raw/pilot_task18_User10_seed1_query_001.json",
+      "sources": [
+        {
+          "domain": "www.trip.com",
+          "link": "https://www.trip.com/flights/status-hu490/",
+          "query": "\"Hainan Airlines\" Shanghai PEK Berlin HU489 HU490 flight schedule",
+          "rank": 1,
+          "snippet": "Based on Trip.com's real-time data, the HU490 flight operated by Hainan Airlines on Jul 30, 2026 is scheduled to fly from Berlin (BER) to Beijing (PEK). The ...",
+          "title": "HU490 Flight Status - Hainan Airlines"
+        },
+        {
+          "domain": "www.hainanairlines.com",
+          "link": "https://www.hainanairlines.com/DE/GB/BerlinToBeijing",
+          "query": "\"Hainan Airlines\" Shanghai PEK Berlin HU489 HU490 flight schedule",
+          "rank": 2,
+          "snippet": "Starting from August 12th, Hainan Airlines will have flights between Berlin and Beijing every Friday. The flight to China will arrive in Dalian.",
+          "title": "Flights from Berlin to Beijing"
+        },
+        {
+          "domain": "www.facebook.com",
+          "link": "https://www.facebook.com/HainanAirlinesGlobal/posts/recently-eight-spanish-travel-agents-and-one-tourism-journalist-were-invited-by-/904052611750698/",
+          "query": "\"Hainan Airlines\" Shanghai PEK Berlin HU489 HU490 flight schedule",
+          "rank": 3,
+          "snippet": "... Hainan Airlines' HU489 Beijing to Berlin flight in February compared to January. Currently, the Beijing to Berlin direct flight operated by ...",
+          "title": "Hainan Airlines Global"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "http_status": null,
+      "message": null,
+      "query": "Lufthansa Shanghai PVG FRA MUC Berlin BER flight schedule flight number",
+      "query_sequence": 2,
+      "raw_response_path": "runs/confirmatory/serper_raw/pilot_task18_User10_seed1_query_002.json",
+      "sources": [
+        {
+          "domain": "www.lufthansa.com",
+          "link": "https://www.lufthansa.com/am/en/timetable-and-flight-status",
+          "query": "Lufthansa Shanghai PVG FRA MUC Berlin BER flight schedule flight number",
+          "rank": 1,
+          "snippet": "Check the status of Lufthansa flights including arrivals and departures. Stay informed and receive updates directly to your mobile phone. Check your flight ...",
+          "title": "Timetable & flight status"
+        },
+        {
+          "domain": "www.lufthansa.com",
+          "link": "https://www.lufthansa.com/lhg/cn/en/o-d/cy-cy/shanghai-berlin",
+          "query": "Lufthansa Shanghai PVG FRA MUC Berlin BER flight schedule flight number",
+          "rank": 2,
+          "snippet": "We offer flights from Shanghai to Berlin starting at ¥ 5087. synchronised schedules and guaranteed connections. Prices for flights from Shanghai to Berlin ...",
+          "title": "Flight from Shanghai to Berlin (PVG-BER)"
+        },
+        {
+          "domain": "www.trip.com",
+          "link": "https://www.trip.com/flights/status-lh183/",
+          "query": "Lufthansa Shanghai PVG FRA MUC Berlin BER flight schedule flight number",
+          "rank": 3,
+          "snippet": "Based on real-time data from Trip.com, flight LH183, operated by Lufthansa and scheduled to fly from Berlin (BER to Frankfurt (FRA), has been cancelled. Please ...",
+          "title": "Lufthansa LH183 Flight Status Today"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "Air China Shanghai PEK Berlin BER flight schedule flight number",
+      "query_sequence": 3,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "Qatar Airways Shanghai PVG DOH Berlin BER flight schedule flight number",
+      "query_sequence": 4,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "http_status": null,
+      "message": null,
+      "query": "BVG 7 day ticket price Berlin AB ABC 2025 2026",
+      "query_sequence": 5,
+      "raw_response_path": "runs/confirmatory/serper_raw/pilot_task18_User10_seed1_query_005.json",
+      "sources": [
+        {
+          "domain": "www.bvg.de",
+          "link": "https://www.bvg.de/en/subscriptions-and-tickets/all-tickets",
+          "query": "BVG 7 day ticket price Berlin AB ABC 2025 2026",
+          "rank": 1,
+          "snippet": "Standard fare from 7,80 € … from 35,30 € 24-hour ticket extension Extension for a Berlin AB or BC ticket; Berlin ABC Standard fare from 95,70 € Berlin-Ticket. ...",
+          "title": "All BVG tickets at a glance - Berlin"
+        },
+        {
+          "domain": "www.facebook.com",
+          "link": "https://www.facebook.com/groups/traveltipsberlin/posts/1266989378606788/",
+          "query": "BVG 7 day ticket price Berlin AB ABC 2025 2026",
+          "rank": 2,
+          "snippet": "Hello, we'll visit Berlin on the 26th for 8 days. I saw that the 7 day ticket for zone AB costs 44,6. Is there another site or way to find a cheaper ticket ...",
+          "title": "Hello, we'll visit Berlin on the 26th for 8 days. I saw that ..."
+        },
+        {
+          "domain": "www.berlin.de",
+          "link": "https://www.berlin.de/en/public-transportation/1772016-2913840-tickets-fares-and-route-maps.en.html",
+          "query": "BVG 7 day ticket price Berlin AB ABC 2025 2026",
+          "rank": 3,
+          "snippet": "Overview of BVG tickets (selection) ; Single ticket (2 hours, one way), AB: €4, red. €2,50; ABC €5, red. €3,50 ; 24-hour ticket, AB: €11,20, red.",
+          "title": "Tickets, Fares and Route Maps – Berlin.de"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "http_status": null,
+      "message": null,
+      "query": "FEX RE8 RB23 S9 BER airport ticket price EUR fare zone ABC",
+      "query_sequence": 6,
+      "raw_response_path": "runs/confirmatory/serper_raw/pilot_task18_User10_seed1_query_006.json",
+      "sources": [
+        {
+          "domain": "sbahn.berlin",
+          "link": "https://sbahn.berlin/en/plan-a-journey/information-for-berlin-visitors/berlins-berlin-brandenburg-ber-airport/",
+          "query": "FEX RE8 RB23 S9 BER airport ticket price EUR fare zone ABC",
+          "rank": 1,
+          "snippet": "The airport express (FEX) the standard VBB fare (Berlin ABC!) applies. S9 also stop at BER, Reach cost between 60 and 70 euros. cheapest ticket directly online.",
+          "title": "Berlin Brandenburg Airport (BER)"
+        },
+        {
+          "domain": "ber.berlin-airport.de",
+          "link": "https://ber.berlin-airport.de/en/orientation/getting-here/public-transport.html",
+          "query": "FEX RE8 RB23 S9 BER airport ticket price EUR fare zone ABC",
+          "rank": 2,
+          "snippet": "(S9, S85) One ticket is valid for all means of transport in the respective fare zone. information on timetables, connections and ticket purchases",
+          "title": "Arrival and departure by Public transport"
+        },
+        {
+          "domain": "www.dbregio-berlin-brandenburg.de",
+          "link": "https://www.dbregio-berlin-brandenburg.de/db-regio-no/Fahren/flughafenexpress/flughafenexpress-en",
+          "query": "FEX RE8 RB23 S9 BER airport ticket price EUR fare zone ABC",
+          "rank": 3,
+          "snippet": "Prices ; Single ticket Berlin ABC Regular price EUR 5.00. Discount price EUR 3.50 ; Supplementary ticket Berlin C · Regular price EUR 2.40. Discount price EUR 1.80.",
+          "title": "Airport Express Berlin (FEX)"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "Berlin WelcomeCard 6 day 7 day price bvg.de berlin-welcomecard.de",
+      "query_sequence": 7,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "Hilton Berlin Gendarmenmarkt Marriott Potsdamer Platz JW Marriott Berlin Grand Hyatt Berlin average night rate EUR",
+      "query_sequence": 8,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "http_status": null,
+      "message": null,
+      "query": "\"China Club Berlin\" restaurant details address reservation",
+      "query_sequence": 9,
+      "raw_response_path": "runs/confirmatory/serper_raw/pilot_task18_User10_seed1_query_009.json",
+      "sources": [
+        {
+          "domain": "www.tripadvisor.com",
+          "link": "https://www.tripadvisor.com/Restaurant_Review-g187323-d11880656-Reviews-China_Club-Berlin.html",
+          "query": "\"China Club Berlin\" restaurant details address reservation",
+          "rank": 1,
+          "snippet": "China Club, Berlin: See 35 unbiased reviews of China Club, rated 4.7 of 5 on Tripadvisor and ranked #1548 of 7148 restaurants in Berlin.",
+          "title": "CHINA CLUB, Berlin - Mitte (Borough) - Restaurant ..."
+        },
+        {
+          "domain": "www.instagram.com",
+          "link": "https://www.instagram.com/china.club.berlin/?hl",
+          "query": "\"China Club Berlin\" restaurant details address reservation",
+          "rank": 2,
+          "snippet": "With authentic Chinese live entertainment and a delicious menu, we will kick off the Year of the Wood Dragon on February 9th at China Club Berlin, which ...",
+          "title": "china.club.berlin"
+        },
+        {
+          "domain": "www.china-club-berlin.de",
+          "link": "https://www.china-club-berlin.de/",
+          "query": "\"China Club Berlin\" restaurant details address reservation",
+          "rank": 3,
+          "snippet": "Der China Club Berlin ist ein private members' club in Berlin über den Dächern der Hauptstadt, direkt am Brandenburger Tor.",
+          "title": "CHINA CLUB BERLIN"
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "attempted": true,
+      "failure_code": "no_new_sources",
+      "http_status": null,
+      "message": "All organic URLs were duplicates or the URL cap was reached",
+      "query": "\"Restaurant Tim Raue\" address price reservation website",
+      "query_sequence": 10,
+      "raw_response_path": "runs/confirmatory/serper_raw/pilot_task18_User10_seed1_query_010.json",
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "\"FACIL\" Berlin address price reservation website",
+      "query_sequence": 11,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "\"Golf Resort Berlin Pankow\" green fees rental clubs",
+      "query_sequence": 12,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": true,
+      "failure_code": "no_new_sources",
+      "http_status": null,
+      "message": "All organic URLs were duplicates or the URL cap was reached",
+      "query": "\"Tim Raue\" \"Rudi-Dutschke\" price menu reservation link",
+      "query_sequence": 13,
+      "raw_response_path": "runs/confirmatory/serper_raw/pilot_task18_User10_seed1_query_013.json",
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "\"Lorenz Adlon Esszimmer\" address price reservation website",
+      "query_sequence": 14,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "\"Golf Club Wannsee\" green fee guest rental clubs distance berlin",
+      "query_sequence": 15,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "\"Berliner Golf Club Gatow\" green fee guest rental clubs",
+      "query_sequence": 16,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "\"Restaurant Tim Raue\" menu price reservation",
+      "query_sequence": 17,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "\"Lorenz Adlon Esszimmer\" reservation website",
+      "query_sequence": 18,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "Tim Raue restaurant Berlin",
+      "query_sequence": 19,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "\"HU489\" departure arrival time PEK BER",
+      "query_sequence": 20,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "\"LH729\" OR \"LH728\" Shanghai Frankfurt schedule",
+      "query_sequence": 21,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "\"QR871\" OR \"QR81\" Shanghai Doha Berlin schedule",
+      "query_sequence": 22,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "\"AY100\" OR \"AY1431\" Shanghai Helsinki Berlin schedule",
+      "query_sequence": 23,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "\"7-day ticket\" Berlin ABC price 2025 2026 BVG",
+      "query_sequence": 24,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "Berlin WelcomeCard 5-day 6-day price ABC options 2025 2026",
+      "query_sequence": 25,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "taxi fare BER airport to Potsdamer Platz Mitte Uber Blacklane price",
+      "query_sequence": 26,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "Hilton Berlin Gendarmenmarkt executive lounge meeting rooms room rate EUR October",
+      "query_sequence": 27,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "Hainan Airlines HU489 Beijing Berlin schedule time",
+      "query_sequence": 28,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "Lufthansa LH729 Shanghai Frankfurt flight time",
+      "query_sequence": 29,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "Qatar Airways QR871 Shanghai Doha schedule",
+      "query_sequence": 30,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "Finnair AY100 Shanghai Helsinki schedule",
+      "query_sequence": 31,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "BVG 7 day ticket ABC price Berlin",
+      "query_sequence": 32,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "Berlin WelcomeCard pricing 6 day ABC",
+      "query_sequence": 33,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "BER airport taxi fare Mitte Potsdamer Platz Blacklane Uber",
+      "query_sequence": 34,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "Hilton Berlin Gendarmenmarkt price night EUR executive lounge",
+      "query_sequence": 35,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "BVG tickets Berlin",
+      "query_sequence": 36,
+      "sources": [],
+      "status": "failure"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "http_status": null,
+      "message": null,
+      "query": "Hainan Airlines PEK BER HU489 schedule",
+      "query_sequence": 37,
+      "sources": [],
+      "status": "failure"
+    }
+  ],
+  "run_id": "pilot_task18_User10_seed1",
+  "schema_version": "dra_serper_search_v1"
+}

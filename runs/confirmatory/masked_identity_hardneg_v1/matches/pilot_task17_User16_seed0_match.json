@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task17_User16_seed0",
+    "stage": "plan",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on a multi-generational family vacation (40+ parent, middle-school child, elderly parents), nature photography, fishing, and a self-guided, cost-effective itinerary. His background as a state-owned enterprise manager in Harbin (Northeast China) matches the document's emphasis on practical, family-oriented travel planning, clean accommodations, and diverse dining options. The document's prioritization of accessible beaches, photography opportunities, and low-fatigue activities for elderly family members reflects Candidate A's interests in landscape photography, outdoor activities, and family bonding. Additionally, his preference for detailed itineraries and rational spending aligns with the document's structured, research-driven approach.",
+    "model": "solar-pro",
+    "prompt_chars": 24971,
+    "latency_sec": 1.79,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User16_seed0",
+    "stage": "search",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document focuses on family-friendly travel planning (e.g., 'relaxed family trip', '67-year-old mum') and emphasizes practical comparisons of coastal destinations, aligning with Candidate A's role as a family-oriented state-owned enterprise manager who prioritizes self-guided, budget-conscious trips. The queries about shipwreck photography and 5-star hotels with family suites match A's recent interest in photography and preference for comfortable, clean accommodations. Unlike B (focused on luxury business travel) or C (technical/industrial interests), A's emphasis on Northeastern cuisine, outdoor activities (fishing/hiking), and detailed itineraries directly reflects the document's framing of accessible, family-centric coastal exploration.",
+    "model": "solar-pro",
+    "prompt_chars": 26803,
+    "latency_sec": 2.1,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User16_seed0",
+    "stage": "compress",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document focuses on a multi-generational family (elderly, adults, and a middle-school teen) prioritizing transportation convenience, climate comfort, beach quality, and activity variety for a July trip. Candidate C, a 40-45-year-old state-owned enterprise manager from Harbin with a middle-school son, aligns best. His travel preferences emphasize natural attractions, self-guided tours, and family bonding, matching the document's emphasis on beaches, photography spots, and activities for all ages. Unlike Candidates A and B, who prioritize cultural/historical sites or tech-focused destinations, Candidate C's recent interest in photography and outdoor activities (fishing, hiking) directly aligns with the document's framing of coastal exploration, shipwrecks, and ocean ranching. His practical, family-oriented decision-making style also mirrors the document's focus on accessibility for elderly family members and varied activities for teens.",
+    "model": "solar-pro",
+    "prompt_chars": 29375,
+    "latency_sec": 2.36,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task17_User16_seed0",
+    "stage": "write",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document emphasizes a multi-generational family vacation with specific needs: nature photography (Father), meticulous planning (Mother), active sports (Son), and low-exertion accessibility (Elderly Parents). Candidate B, a 40-45 state-owned enterprise manager, aligns most closely: his profile highlights photography (landscape/DSLR hobby), family-centric travel (summer trips with middle-school son and elderly parents), and practical planning (detailed itineraries, cost-effectiveness). Unlike Candidate A (focused on urban cultural sites) or Candidate C (technical/Industry 4.0 interests), B\u2019s Northeastern background, interest in natural attractions, and emphasis on family bonding mirror the document\u2019s coastal, multi-generational focus and accessibility considerations.",
+    "model": "solar-pro",
+    "prompt_chars": 31386,
+    "latency_sec": 1.97,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task37_User20_seed1",
+    "stage": "plan",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User20",
+      "User14",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User20"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User20",
+    "correct": true,
+    "reasoning": "The document emphasizes an open-plan kitchen optimized for cooking (particularly bentos and Japanese/Italian dishes), pet-friendly materials (durable, scratch-resistant), and a warm artistic aesthetic with natural wood and soft fabrics. Candidate C, a copywriter who enjoys making Japanese bentos, lives with an orange cat (matching the document's 'orange cat named [MASKED]'), and prioritizes design-oriented, mid-range products aligns most closely. While Candidate A also has a cat and artistic interests, the document's focus on bentos, mid-range budget, and practical renovation details (vs. high-end art tools) better matches C's profile as a rational consumer balancing creativity with everyday functionality. Candidate B, though a cat owner, focuses on caf\u00e9 operations and sustainability, which are less central to the document's residential renovation scope.",
+    "model": "solar-pro",
+    "prompt_chars": 25020,
+    "latency_sec": 1.84,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task37_User20_seed1",
+    "stage": "search",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User20",
+      "User14",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on apartment renovation costs, regulations, and layout optimization in Shanghai, particularly for an 80m\u00b2 space. Candidate A, a caf\u00e9 owner in Shanghai, is renovating her apartment and would prioritize budget breakdowns (e.g., 150,000 RMB for 80\u33a1), noise regulations (critical for her caf\u00e9's neighborhood relations), and layout efficiency (to balance her work-life needs as a single mother). Her profile emphasizes practicality, sustainability, and local design aesthetics, aligning with the document's focus on cost details, legal compliance, and space optimization. Candidates B and C, while interested in design, lack the direct context of managing a renovation project or the specific Shanghai residential constraints highlighted in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25815,
+    "latency_sec": 1.94,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task37_User20_seed1",
+    "stage": "compress",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User20",
+      "User14",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on a highly detailed, budget-conscious renovation plan for an 80 sqm apartment in Shanghai, emphasizing cost optimization, practicality, and specific features like cat-proofing. Candidate A, a caf\u00e9 owner in Shanghai with pets (including cats), aligns with this content through her need for a functional, aesthetically pleasing, and pet-friendly living space. Her meticulous nature, attention to design, and budget-conscious approach (evident in her caf\u00e9 management) mirror the document's priorities. Additionally, her Shanghai residence and frequent engagement with local design markets further support this match. Candidates B and C, while creative, lack the specific context of pet-centric renovations and budget-focused spatial planning that defines the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29044,
+    "latency_sec": 1.95,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task37_User20_seed1",
+    "stage": "write",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User20",
+      "User14",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User20"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User20",
+    "correct": true,
+    "reasoning": "The document emphasizes bento preparation, Japanese cuisine, and kitchen ergonomics tailored for small-dish assembly\u2014aligning with Candidate C's recent interest in making Japanese bentos. The focus on pet safety (cat-friendly features) matches C's calm-natured cat 'Jinju' and his urban Shanghai apartment. The design's artistic yet functional aesthetic (e.g., layered lighting, quartz countertops) resonates with C's literary/creative background and preference for design-oriented spaces. Candidate A (illustrator) lacks culinary focus, while Candidate B (caf\u00e9 owner) prioritizes coffee culture and sustainability, which are absent in the text. The document's framing as a 'renovation plan' for a freelancer's home studio aligns with C's copywriter lifestyle and evening creativity habits.",
+    "model": "solar-pro",
+    "prompt_chars": 31055,
+    "latency_sec": 2.45,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

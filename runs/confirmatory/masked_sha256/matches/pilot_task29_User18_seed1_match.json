@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task29_User18_seed1",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User13",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User13",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on data-driven planning, budget constraints, and health-conscious fast-food entrepreneurship. As a data analyst with a meticulous, research-oriented mindset (evidenced by her use of Python, R, and Notion for task management), she prioritizes detailed financial breakdowns, market research, and efficiency\u2014key elements in the research brief. Her lifestyle preferences (low-calorie, high-protein meals; fitness habits) directly mirror the target audience and menu focus described. Unlike Candidate B (a caf\u00e9 owner focused on art/design) or Candidate C (a family-oriented marketer prioritizing leisure travel), Candidate A\u2019s independent, data-centric decision-making style and practical consumption habits make her the most likely author of this structured, financially granular business plan.",
+    "model": "solar-pro",
+    "prompt_chars": 24784,
+    "latency_sec": 1.87,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task29_User18_seed1",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User13",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User13",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on market analysis of light meal chains (e.g., Wagas, \u6c99\u91ce\u8f7b\u98df), unit economics, pricing strategies (40-60 yuan), and supply chain logistics\u2014topics directly relevant to a caf\u00e9 owner (Candidate B) evaluating competitive positioning, cost structures, and consumer trends. Candidate B's role as a caf\u00e9 owner, her interest in sustainable sourcing, and her frequent analysis of market competitors align with the document's granular focus on pricing, store economics, and B2B supply chains. Candidate A (marketing manager) and C (data analyst) lack the document's specific emphasis on food service operations and retail unit economics.",
+    "model": "solar-pro",
+    "prompt_chars": 25254,
+    "latency_sec": 1.79,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task29_User18_seed1",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User13",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User13",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on the light meal market in Shanghai, emphasizing health-conscious, warm bowl meals, and consumer trends among white-collar workers. Candidate B, a caf\u00e9 owner with a strong interest in health, sustainability, and local food culture, aligns most closely with the document's framing. Her preferences for organic ingredients, eco-friendly products, and her role in the food industry (coffee and caf\u00e9 culture) reflect the document's emphasis on market positioning, consumer insights, and quality-focused dining. While Candidate A (data analyst) and Candidate C (marketing manager) may engage with such data professionally, the document's content\u2014detailing menu concepts, store footprints, and consumer behavior\u2014is most directly relevant to someone in the food service industry like Candidate B.",
+    "model": "solar-pro",
+    "prompt_chars": 28389,
+    "latency_sec": 1.8,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task29_User18_seed1",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User13",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User13",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on a business plan for a healthy fast-food chain targeting urban professionals in Shanghai, emphasizing nutritional transparency, functional meal replacement, and cost-effective premium offerings. Candidate A, a marketing manager in a foreign enterprise, aligns most closely with this content. His background in business management, data-driven decision-making, and focus on cost-effectiveness for urban professionals mirror the document's emphasis on market segmentation, unit economics, and targeting office workers. While Candidate B (caf\u00e9 owner) and C (data analyst) share some interests, neither directly aligns with the document's core themes of business strategy, market positioning, and operational efficiency for a fast-casual dining concept.",
+    "model": "solar-pro",
+    "prompt_chars": 30400,
+    "latency_sec": 1.94,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

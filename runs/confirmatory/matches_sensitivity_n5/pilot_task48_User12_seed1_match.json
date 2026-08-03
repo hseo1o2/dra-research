@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task48_User12_seed1",
+    "stage": "plan",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16",
+      "User13",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User12",
+      "User10",
+      "User13",
+      "User17"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "Candidate B (Zhang Yu) is the best match. The document focuses on a 6-month art education plan for a 5-year-old daughter, emphasizing creativity, emotional expression, and family interaction. Candidate B is a 30-35-year-old AI entrepreneur with a 5-year-old daughter, aligning with the document's target age and parental context. His profile highlights family-centric values, a structured daily routine (including bedtime stories), and interest in multidisciplinary activities (e.g., tech, art, and nature). Unlike other candidates, B explicitly mentions balancing work and family, prioritizing his daughter's development, and engaging in creative hobbies (photography, tech innovation) that could inform an arts-integrated education plan. His eco-friendly and tech-savvy preferences also align with the document's emphasis on safe, non-toxic materials and modern artistic tools. Other candidates either lack a 5-year-old child (A, C, E) or focus less on child-centric creative development (D prioritizes caf\u00e9 business).",
+    "model": "solar-pro",
+    "prompt_chars": 39738,
+    "latency_sec": 2.56,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task48_User12_seed1",
+    "stage": "search",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16",
+      "User13",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User16",
+      "User17",
+      "User13",
+      "User10"
+    ],
+    "predicted_label": "D",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "Candidate D (Guo Yuan) is a caf\u00e9 owner with a strong background in art and design, aligning with the document's focus on multidisciplinary art education (e.g., Reggio Emilia, Orff Schulwerk, and integrated art-music-movement curricula). Her profile emphasizes creativity, aesthetic sensibility, and a passion for blending art with daily life\u2014mirrored in the document's emphasis on holistic, child-centered artistic development. Unlike other candidates, her interests in art exhibitions, design, and cultural spaces directly connect to the document's framing of art as a foundational, integrative discipline for young children. The document\u2019s Reggio Emilia and Orff Schulwerk references also resonate with her artistic and experiential approach to education and business.",
+    "model": "solar-pro",
+    "prompt_chars": 41737,
+    "latency_sec": 2.13,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task48_User12_seed1",
+    "stage": "compress",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16",
+      "User13",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User17",
+      "User10",
+      "User16",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on developmental benefits of multi-artistic mediums (Visual Arts, 3D Crafts, Music, Dance) for 5-year-olds, aligning with Candidate C's role as a marketing manager with a 5-year-old son interested in building toys and basketball. The content emphasizes structured creative development, which matches C's interest in children's educational expenses and extracurricular activities. Unlike other candidates (e.g., A's tech focus, B's nursing background, D's engineering focus, E's caf\u00e9/art focus), C's profile directly ties to family-oriented creative development and practical application of artistic skills for early childhood, making it the most relevant match.",
+    "model": "solar-pro",
+    "prompt_chars": 44230,
+    "latency_sec": 2.03,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task48_User12_seed1",
+    "stage": "write",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16",
+      "User13",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User13",
+      "User16",
+      "User10",
+      "User12"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on a 6-month multidisciplinary art education plan for a 5-year-old, emphasizing creativity, emotional expression, and developmental benefits through visual arts, crafts, music, and dance. Candidate B, a caf\u00e9 owner and single mother of a 5-year-old, aligns most closely with this content. Her profile highlights her interest in art, her efforts to engage her child in creative activities (e.g., art exhibitions), and her integration of art into her caf\u00e9's design. The document\u2019s emphasis on child development, artistic expression, and multidisciplinary approaches mirrors her priorities and lifestyle, making her the most likely intended audience.",
+    "model": "solar-pro",
+    "prompt_chars": 46241,
+    "latency_sec": 1.98,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

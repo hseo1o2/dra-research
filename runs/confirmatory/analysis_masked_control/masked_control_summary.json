@@ -1,0 +1,251 @@
+{
+  "analysis_role": "identifier-masked shortcut control",
+  "claim_status": {
+    "not_supported_yet": "That the remaining signal is exclusively content-intent alignment rather than another non-identifier shortcut.",
+    "supported": "The point-estimate dip-and-recovery trajectory remains after identifier masking; paired condition differences are identified under matching candidate orders."
+  },
+  "comparability": {
+    "candidate_order_match_rate": 1.0,
+    "candidate_order_matches": 240,
+    "candidate_order_matches_by_stage": {
+      "compress": 60,
+      "plan": 60,
+      "search": 60,
+      "write": 60
+    },
+    "candidate_set_mismatches": 0,
+    "confound": null,
+    "direct_condition_effect_is_identified": true,
+    "gt_mismatches": 0,
+    "primary_valid_estimand": "paired original-versus-masked condition effect",
+    "reports": 60,
+    "reports_with_all_stage_orders_matching": 60,
+    "run_stage_pairs": 240
+  },
+  "condition_stage_accuracy": [
+    {
+      "accuracy": 0.733333,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_seed": 20260802,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.866667,
+      "ci95_low": 0.6,
+      "condition": "original",
+      "n_reports": 60,
+      "n_tasks": 20,
+      "stage": "plan"
+    },
+    {
+      "accuracy": 0.566667,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_seed": 20260803,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.7,
+      "ci95_low": 0.45,
+      "condition": "original",
+      "n_reports": 60,
+      "n_tasks": 20,
+      "stage": "search"
+    },
+    {
+      "accuracy": 0.616667,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_seed": 20260804,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.75,
+      "ci95_low": 0.466667,
+      "condition": "original",
+      "n_reports": 60,
+      "n_tasks": 20,
+      "stage": "compress"
+    },
+    {
+      "accuracy": 0.766667,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_seed": 20260805,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.883333,
+      "ci95_low": 0.633333,
+      "condition": "original",
+      "n_reports": 60,
+      "n_tasks": 20,
+      "stage": "write"
+    },
+    {
+      "accuracy": 0.75,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_seed": 20260812,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.883333,
+      "ci95_low": 0.61625,
+      "condition": "masked",
+      "n_reports": 60,
+      "n_tasks": 20,
+      "stage": "plan"
+    },
+    {
+      "accuracy": 0.6,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_seed": 20260813,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.733333,
+      "ci95_low": 0.466667,
+      "condition": "masked",
+      "n_reports": 60,
+      "n_tasks": 20,
+      "stage": "search"
+    },
+    {
+      "accuracy": 0.616667,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_seed": 20260814,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.766667,
+      "ci95_low": 0.466667,
+      "condition": "masked",
+      "n_reports": 60,
+      "n_tasks": 20,
+      "stage": "compress"
+    },
+    {
+      "accuracy": 0.733333,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_seed": 20260815,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.866667,
+      "ci95_low": 0.6,
+      "condition": "masked",
+      "n_reports": 60,
+      "n_tasks": 20,
+      "stage": "write"
+    }
+  ],
+  "external_api_calls": 0,
+  "masked_trajectory_retention": {
+    "bootstrap_repetitions": 5000,
+    "bootstrap_unit": "taskid",
+    "cluster_bootstrap_joint_retention_probability": 0.9844,
+    "definition": "search < plan and write > search",
+    "observed": true,
+    "plan_accuracy": 0.75,
+    "planning_to_search_ci95_pp": [
+      -26.67,
+      -5.0
+    ],
+    "planning_to_search_pp": -15.0,
+    "search_accuracy": 0.6,
+    "search_to_write_ci95_pp": [
+      1.67,
+      25.0
+    ],
+    "search_to_write_pp": 13.33,
+    "write_accuracy": 0.733333
+  },
+  "masked_within_condition_stage_comparisons": [
+    {
+      "a_correct_b_wrong": 12,
+      "a_wrong_b_correct": 3,
+      "accuracy_difference_b_minus_a": -0.15,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_unit": "taskid",
+      "ci95_high": -0.05,
+      "ci95_low": -0.266667,
+      "mcnemar_exact_p_unclustered": 0.03515625,
+      "n_paired_reports": 60,
+      "stage_a": "plan",
+      "stage_b": "search"
+    },
+    {
+      "a_correct_b_wrong": 5,
+      "a_wrong_b_correct": 6,
+      "accuracy_difference_b_minus_a": 0.016667,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.083333,
+      "ci95_low": -0.05,
+      "mcnemar_exact_p_unclustered": 1.0,
+      "n_paired_reports": 60,
+      "stage_a": "search",
+      "stage_b": "compress"
+    },
+    {
+      "a_correct_b_wrong": 1,
+      "a_wrong_b_correct": 8,
+      "accuracy_difference_b_minus_a": 0.116667,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.216667,
+      "ci95_low": 0.016667,
+      "mcnemar_exact_p_unclustered": 0.0390625,
+      "n_paired_reports": 60,
+      "stage_a": "compress",
+      "stage_b": "write"
+    },
+    {
+      "a_correct_b_wrong": 4,
+      "a_wrong_b_correct": 12,
+      "accuracy_difference_b_minus_a": 0.133333,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_unit": "taskid",
+      "ci95_high": 0.25,
+      "ci95_low": 0.016667,
+      "mcnemar_exact_p_unclustered": 0.07681274,
+      "n_paired_reports": 60,
+      "stage_a": "search",
+      "stage_b": "write"
+    }
+  ],
+  "original_vs_masked_deltas": [
+    {
+      "ci95_high": 0.05,
+      "ci95_low": 0.0,
+      "effect_identified": true,
+      "interpretation": "paired condition effect",
+      "masked_minus_original": 0.016667,
+      "mcnemar_exact_p_unclustered": 1.0,
+      "n_paired_reports": 60,
+      "original_correct_masked_wrong": 0,
+      "original_wrong_masked_correct": 1,
+      "stage": "plan"
+    },
+    {
+      "ci95_high": 0.083333,
+      "ci95_low": 0.0,
+      "effect_identified": true,
+      "interpretation": "paired condition effect",
+      "masked_minus_original": 0.033333,
+      "mcnemar_exact_p_unclustered": 0.5,
+      "n_paired_reports": 60,
+      "original_correct_masked_wrong": 0,
+      "original_wrong_masked_correct": 2,
+      "stage": "search"
+    },
+    {
+      "ci95_high": 0.066667,
+      "ci95_low": -0.083333,
+      "effect_identified": true,
+      "interpretation": "paired condition effect",
+      "masked_minus_original": 0.0,
+      "mcnemar_exact_p_unclustered": 1.0,
+      "n_paired_reports": 60,
+      "original_correct_masked_wrong": 2,
+      "original_wrong_masked_correct": 2,
+      "stage": "compress"
+    },
+    {
+      "ci95_high": 0.0,
+      "ci95_low": -0.083333,
+      "effect_identified": true,
+      "interpretation": "paired condition effect",
+      "masked_minus_original": -0.033333,
+      "mcnemar_exact_p_unclustered": 0.5,
+      "n_paired_reports": 60,
+      "original_correct_masked_wrong": 2,
+      "original_wrong_masked_correct": 0,
+      "stage": "write"
+    }
+  ],
+  "schema_version": 1,
+  "source_masked_dir": "/Users/janghyeonseo/Desktop/DRA/runs/confirmatory/masked/matches",
+  "source_original_dir": "/Users/janghyeonseo/Desktop/DRA/runs/confirmatory/matches_sha256"
+}

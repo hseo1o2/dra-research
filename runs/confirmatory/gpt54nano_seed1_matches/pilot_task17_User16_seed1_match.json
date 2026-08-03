@@ -1,0 +1,118 @@
+[
+  {
+    "run_id": "pilot_task17_User16_seed1",
+    "stage": "plan",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The brief is explicitly for a 40\u201345-year-old male manager in Northern China who prefers self-guided travel, values practical cost-effectiveness, and is interested in landscape photography and Northeastern cuisine\u2014matching Candidate A\u2019s profile closely. It also emphasizes family logistics for elderly parents and a middle-school sports-focused son, aligning with Candidate A\u2019s family structure and travel style.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 25514,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4717,
+    "output_tokens": 99,
+    "total_tokens": 4816,
+    "api_response_id": "chatcmpl-E8pioZid4efz00GqzTmHt4olDkb5H"
+  },
+  {
+    "run_id": "pilot_task17_User16_seed1",
+    "stage": "search",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The excerpt is a travel-planning style search set focused on beach conditions (sea temperature, sand quality, algae), plus landscape photography and elderly accessibility\u2014suggesting a personal trip itinerary and experiential concerns rather than business/technical interests. Candidate C matches this photography hobby, self-guided family travel pattern, and attention to practical comfort details like hotel breakfast and cleanliness.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 26882,
+    "latency_sec": 1.72,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5170,
+    "output_tokens": 96,
+    "total_tokens": 5266,
+    "api_response_id": "chatcmpl-E8pipSUZChA1LMJ5NfGwlpRytDwxq"
+  },
+  {
+    "run_id": "pilot_task17_User16_seed1",
+    "stage": "compress",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The excerpt is a practical, itinerary-style travel research summary focused on July weather, beach quality, accessible hotel features (step-free access, elevators, breakfast), and specific local food items\u2014suggesting a family-oriented traveler planning a summer trip. Candidate B matches this framing with emphasis on family trips, self-guided planning, and particular attention to hotel cleanliness and breakfast quality, whereas A and C skew more toward work/industry or higher-end business/marketing analysis rather than detailed accessibility-and-beach planning.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 29375,
+    "latency_sec": 1.67,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5796,
+    "output_tokens": 124,
+    "total_tokens": 5920,
+    "api_response_id": "chatcmpl-E8pirVyViAr6ao97aYjeXy3KQNngK"
+  },
+  {
+    "run_id": "pilot_task17_User16_seed1",
+    "stage": "write",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The excerpt is explicitly tailored to a Harbin-origin family planning a July multi-generational beach trip, with strong emphasis on landscape photography, practical self-guided itinerary planning, and step-free accessibility for elderly parents. Candidate C matches these angles closely (Harbin resident, photography hobby with DSLR, self-guided family travel, rational cost-effective planning, and health/comfort priorities), whereas A and B are more Shanghai/Suzhou-centric and less aligned with the photography-and-accessibility framing.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 31386,
+    "latency_sec": 1.59,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6190,
+    "output_tokens": 121,
+    "total_tokens": 6311,
+    "api_response_id": "chatcmpl-E8pitiLD09m4dy14CjiPNbaPUC1BV"
+  }
+]

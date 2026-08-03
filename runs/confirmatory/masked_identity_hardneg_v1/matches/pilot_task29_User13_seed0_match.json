@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task29_User13_seed0",
+    "stage": "plan",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User15",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "Candidate A (Guo Yuan) is a caf\u00e9 owner in Shanghai with a strong focus on health-conscious, design-oriented, and sustainable business practices. The document emphasizes a healthy fast-food concept targeting white-collar workers and fitness enthusiasts, aligning with her recent interest in healthy eating, eco-friendly packaging, and her caf\u00e9's location in a high-density commercial area. Her background in business/design, attention to ingredient quality, and experience in managing a food business (with dual dine-in/delivery models) make her the most likely author. The document's emphasis on budget-conscious planning, menu innovation, and marketing strategies (e.g., partnerships with fitness communities) mirrors her entrepreneurial mindset and operational priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 23667,
+    "latency_sec": 1.83,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task29_User13_seed0",
+    "stage": "search",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User14",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "Candidate C, a caf\u00e9 owner in Shanghai, aligns most closely with the document's focus on the light meal market, market size, rental costs, and regulatory changes. The document emphasizes Shanghai's food industry (e.g., '\u4e0a\u6d77 \u8f7b\u98df \u5e02\u573a\u89c4\u6a21', '\u4e0a\u6d77 \u9910\u996e \u79df\u91d1'), which directly relates to C's occupation and location. Additionally, C's interest in healthy organic food, caf\u00e9 management, and market trends mirrors the document's themes of market growth, consumer preferences, and operational logistics. Candidates A (freelance writer in Beijing) and B (freelance illustrator in Shanghai) lack the same professional and geographic relevance to the document's content.",
+    "model": "solar-pro",
+    "prompt_chars": 24386,
+    "latency_sec": 2.16,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task29_User13_seed0",
+    "stage": "compress",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User15",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on Shanghai's light meal market, competitor analysis, and consumer trends (e.g., office workers, CBD demographics, pricing segments). Candidate A, a Shanghai-based caf\u00e9 owner, aligns most closely: her occupation involves food service, her location matches the document's geographic focus, and her interests in healthy eating, market trends, and local consumer behavior (e.g., office workers, budget-conscious choices) directly intersect with the report's content. Candidates B (Beijing-based writer) and C (illustrator) lack the same operational and geographic relevance to the market analysis.",
+    "model": "solar-pro",
+    "prompt_chars": 27847,
+    "latency_sec": 2.05,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task29_User13_seed0",
+    "stage": "write",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User15",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on a Shanghai-based light meal business plan targeting white-collar workers, fitness enthusiasts, and health-conscious consumers. It emphasizes cost control, menu differentiation (e.g., warm bowls, low-calorie burgers), and strategic marketing (e.g., partnerships with gyms, social media campaigns). Candidate C, a caf\u00e9 owner with a background in design and business, aligns best: her entrepreneurial focus, attention to quality/design, and interest in health-conscious consumption mirror the document's priorities. Her caf\u00e9's location in Shanghai's cultural district and her engagement with local art/design communities also align with the report's emphasis on urban, health-oriented branding. Candidates A (illustrator) and B (freelance writer) lack the business/operational focus central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29858,
+    "latency_sec": 2.06,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

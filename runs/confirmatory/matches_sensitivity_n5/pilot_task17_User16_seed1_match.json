@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task17_User16_seed1",
+    "stage": "plan",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User22",
+      "User10",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User18",
+      "User16",
+      "User14",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document outlines a multi-generational family beach vacation tailored to a 40-45-year-old manager (with photography interests), a middle-school son (active/sports), and elderly parents (low-intensity). Candidate C (Zhang Jianguo) is a 40-45-year-old state-owned enterprise manager with a middle-school son (who enjoys football) and elderly parents. His profile emphasizes family bonding, self-guided travel, and photography (a recently developed hobby). The document's focus on cost-effectiveness, practical accommodations, and a mix of relaxing/active activities aligns with C's rational consumption habits, preference for natural attractions, and interest in landscape photography. Other candidates (A, B, D, E) either lack the multi-generational family structure, age mismatch, or do not emphasize photography as a key travel interest.",
+    "model": "solar-pro",
+    "prompt_chars": 39589,
+    "latency_sec": 2.19,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task17_User16_seed1",
+    "stage": "search",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User22",
+      "User10",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User22",
+      "User14",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "E",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document focuses on July weather, water temperatures, beach quality, and elderly accessibility in coastal areas like Weihai, Yantai, Qinhuangdao, and Qingdao. It also emphasizes landscape photography, hotel amenities, and practical travel considerations. Candidate E, a 40-45-year-old state-owned enterprise manager, aligns best due to his interest in natural attractions, photography, family-oriented travel, and preference for detailed planning. His recent hobby in landscape photography, family trips, and focus on practical yet high-quality accommodations (e.g., cleanliness, breakfast) match the document's framing. Other candidates prioritize urban exploration (A, C), business hotels (D), or technical interests (B), which are less central to the document's focus on scenic beaches, elderly-friendly accessibility, and photography.",
+    "model": "solar-pro",
+    "prompt_chars": 40957,
+    "latency_sec": 2.28,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task17_User16_seed1",
+    "stage": "compress",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User22",
+      "User10",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User18",
+      "User22",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document focuses on travel planning for coastal destinations (Weihai/Yantai) with detailed emphasis on weather, beach quality, photography spots, accessible accommodations, and seafood cuisine. Candidate B's profile aligns most closely: he is a state-owned enterprise manager (40-45) who values family trips, prioritizes natural attractions (mountains/lakes), and has a strong interest in landscape photography. The document's focus on practical details (water temperatures, hotel accessibility, meal options) matches his rational, cost-effective decision-making style and preference for self-guided tours with detailed itineraries. Unlike other candidates, B explicitly mentions photography as a hobby and prioritizes family-friendly travel, which aligns with the document's emphasis on child-friendly beaches (e.g., Yangma Island's shallow tidal flats) and multi-generational hotel features (e.g., barrier-free access).",
+    "model": "solar-pro",
+    "prompt_chars": 43450,
+    "latency_sec": 2.38,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task17_User16_seed1",
+    "stage": "write",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User22",
+      "User10",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User14",
+      "User18",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document is tailored for a multi-generational family (photographer, teenager, elderly parents) originating from Northern China (Harbin), emphasizing practicality, accessibility, and Northern Chinese cuisine preferences. Candidate A (Zhang Jianguo) matches these attributes: he is a 40-45-year-old state-owned enterprise manager from Harbin with a middle-school son, elderly parents, and a photography hobby. The document's focus on budget-conscious planning, step-free accessibility, and Northern Chinese dietary preferences aligns with his rational, family-oriented decision-making style and interest in landscape photography. Other candidates (B, C, D, E) either lack the multi-generational family structure, Northern Chinese origin, or the specific balance of interests (photography, teenage adventure, elderly accessibility) central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 45461,
+    "latency_sec": 2.31,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

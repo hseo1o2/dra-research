@@ -1,0 +1,90 @@
+[
+  {
+    "run_id": "pilot_task3_User20_seed0",
+    "stage": "plan",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User20",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User20",
+    "correct": true,
+    "reasoning": "The document's author is a 24-28-year-old copywriter in Shanghai with a literature background and minor in marketing, planning to study entrepreneurship part-time. Candidate B (Xu Ke) matches this profile exactly in age, occupation, educational background, and creative/non-technical orientation. The document's focus on creative entrepreneurship pathways, emphasis on practical project incubation, and preference for part-time learning align with B's risk-averse, creative personality and his documented interest in bridging coursework to real-world projects. The request for Chinese-language sources also matches B's Shanghai-based context, unlike Candidate A (older, risk-averse manager) or Candidate C (data analyst with technical focus).",
+    "model": "solar-pro",
+    "prompt_chars": 25243,
+    "latency_sec": 1.63
+  },
+  {
+    "run_id": "pilot_task3_User20_seed0",
+    "stage": "search",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on executive education programs (Stanford LEAD, YC Startup School, Reforge) and MBA options, emphasizing cost, structure, and career advancement\u2014key priorities for Candidate B, a data analyst aiming for management/transition to product roles. Unlike Candidate A (marketing manager with family-centric priorities) or Candidate C (creative copywriter), B's profile aligns with the document's technical, career-oriented framing, data-driven decision-making style, and interest in certifications/professional growth. The document\u2019s focus on program fees, curricula, and skill-building directly supports B\u2019s goal of enhancing her professional trajectory.",
+    "model": "solar-pro",
+    "prompt_chars": 26170,
+    "latency_sec": 1.94
+  },
+  {
+    "run_id": "pilot_task3_User20_seed0",
+    "stage": "compress",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on MBA programs (Fudan, Antai CLMBA, CEIBS FMBA), startup incubators (InnoSpace, Plug and Play), and equity investment terms (MiraclePlus). These topics align with Candidate B's profile as a marketing manager with an MBA background, interest in business management, and career-oriented decision-making. Candidate B's preferences for market trends, case studies, and practical education (evident in his LinkedIn activity, book choices like *Good to Great*, and business trip research) directly match the document's emphasis on structured programs, investment frameworks, and professional development. Candidates A (data analyst) and C (copywriter) lack the MBA focus, entrepreneurial ecosystem interest, and managerial perspective central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 28831,
+    "latency_sec": 2.0
+  },
+  {
+    "run_id": "pilot_task3_User20_seed0",
+    "stage": "write",
+    "gt_userid": "User20",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User20"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User20",
+    "correct": true,
+    "reasoning": "The document focuses on entrepreneurship education for a Shanghai-based advertising copywriter with a literature degree and marketing minor, emphasizing creative founders' needs. Candidate C matches this profile exactly: he is a 24-28-year-old copywriter with a literature major/minor in marketing, risk-averse, and seeking structured yet part-time entrepreneurship education. The report's emphasis on bridging creative skills with operational discipline aligns with C's creative background, anxiety under pressure, and interest in practical frameworks (e.g., no-code prototyping). Candidates A (MBA manager) and B (data analyst) lack the creative/non-technical founder profile central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30842,
+    "latency_sec": 2.02
+  }
+]

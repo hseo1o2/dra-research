@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task22_User15_seed0",
+    "stage": "plan",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18",
+      "User14",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User15",
+      "User18",
+      "User14",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document outlines a retirement plan for a 26-30-year-old freelance writer in Beijing with variable income, low risk tolerance, and interest in sustainable investments. Candidate B is a 26-30-year-old freelance writer in Beijing with similar attributes: variable income (royalties/writing projects), low risk tolerance, and interest in sustainable/ESG themes. The document\u2019s focus on annuities, medical insurance, and care services aligns with Candidate B\u2019s practical, rational consumption style and her need for financial stability as a self-employed individual. Other candidates (A, C, D, E) are either caf\u00e9 owners, data analysts, illustrators, or copywriters, with distinct priorities (e.g., business management, tech certifications, art markets) that do not match the document\u2019s freelance-writing context or financial planning focus.",
+    "model": "solar-pro",
+    "prompt_chars": 38333,
+    "latency_sec": 2.82,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task22_User15_seed0",
+    "stage": "search",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18",
+      "User14",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User14",
+      "User13",
+      "User15",
+      "User18"
+    ],
+    "predicted_label": "D",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document focuses on social insurance (\u517b\u8001\u4fdd\u9669, \u533b\u7597\u4fdd\u9669) and tax-deferred personal pension systems (\u4e2a\u4eba\u517b\u8001\u91d1), with detailed technical content about contribution bases, tax deductions, and procedural guidelines. Candidate D, a freelance writer with a journalism background, exhibits a strong interest in social observation, policy analysis, and cultural content. Her consumption habits (eco-friendly focus, sustainable brands) and content preferences (in-depth articles on culture, social issues, psychology) align with the document's framing of systemic social welfare and fiscal policies. Unlike candidates A, B, and C, who prioritize creative/artistic or entrepreneurial content, or Candidate E, who focuses on data-driven topics, Candidate D\u2019s analytical writing style and interest in societal structures make her the most likely audience for this technical yet socially oriented document.",
+    "model": "solar-pro",
+    "prompt_chars": 38732,
+    "latency_sec": 2.27,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task22_User15_seed0",
+    "stage": "compress",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18",
+      "User14",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User14",
+      "User18",
+      "User15",
+      "User20"
+    ],
+    "predicted_label": "D",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document focuses on Beijing-based social security, pension systems, tax incentives, and insurance schemes, reflecting a strong interest in financial planning, retirement benefits, and policy details. Candidate D, a freelance writer in Beijing, aligns best due to her permanent residence in Beijing, her focus on financial prudence (eco-friendly consumption, cost-effectiveness), and her interest in social issues (feminism, environmental protection). While other candidates (A, B, C, E) have distinct professional and lifestyle focuses (caf\u00e9 owner, illustrator, data analyst, copywriter), none match the document's Beijing-centric, policy-heavy, and retirement-planning themes as closely as Candidate D, who lives in Beijing and engages with cultural/social content that could intersect with such research.",
+    "model": "solar-pro",
+    "prompt_chars": 42729,
+    "latency_sec": 2.27,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task22_User15_seed0",
+    "stage": "write",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18",
+      "User14",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User14",
+      "User18",
+      "User20",
+      "User15"
+    ],
+    "predicted_label": "E",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document is a 30-year retirement plan for a self-employed freelance writer in Beijing with variable income, low risk tolerance, and a preference for ESG investments. Candidate E is the only freelance writer (26-30, Beijing-based) with identical demographics and occupation. The document's focus on dynamic liquidity management, ESG investments, and Beijing-specific social security systems aligns with E's introverted, detail-oriented personality, independent decision-making style, and interest in sustainable consumption. Unlike other candidates (caf\u00e9 owner, illustrator, data analyst, copywriter), E's profile matches the document's framing as a freelance writer prioritizing financial resilience and long-term security.",
+    "model": "solar-pro",
+    "prompt_chars": 44740,
+    "latency_sec": 2.19,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

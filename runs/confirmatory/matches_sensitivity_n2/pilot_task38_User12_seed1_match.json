@@ -1,0 +1,110 @@
+[
+  {
+    "run_id": "pilot_task38_User12_seed1",
+    "stage": "plan",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User12"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "Candidate B's profile aligns closely with the document's focus on purchasing a second-hand home in Beijing for a family with a 5-year-old daughter (matching his own family structure), prioritizing school districts, subway proximity, and budget constraints. As an AI entrepreneur in Haidian District, he has direct relevance to the geographic focus (Haidian/Chaoyang) and would require detailed financial planning (tax breakdowns, mortgage calculations) given his business background. The document's emphasis on systematic evaluation criteria and policy research reflects his data-driven decision-making style and entrepreneurial need for actionable, authoritative data. Candidate A, while family-oriented, lacks the Beijing-specific context and tech-sector pragmatism evident in the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 19476,
+    "latency_sec": 2.25,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task38_User12_seed1",
+    "stage": "search",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on real estate queries in Haidian District, Beijing, emphasizing school districts, property prices (600\u4e07), and specific neighborhoods like \u6e05\u6cb3 and \u5c0f\u5b66\u5b66\u533a. Candidate A resides in Haidian, has a 5-year-old daughter (relevant to school district concerns), and prioritizes family-centric housing needs. Candidate B, based in Suzhou, lacks direct ties to Beijing's real estate market or immediate school district priorities. The document's framing aligns with Candidate A's context as a parent in Haidian seeking quality education and property investments.",
+    "model": "solar-pro",
+    "prompt_chars": 18985,
+    "latency_sec": 1.67,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task38_User12_seed1",
+    "stage": "compress",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on Beijing's Haidian District real estate, emphasizing school districts (e.g., Haidian Experimental Primary School No. 2), family-friendly layouts (2-3 bedrooms), and proximity to tech hubs (e.g., Qinghe Railway Station). Candidate A, a Beijing-based AI entrepreneur with a 5-year-old daughter, aligns perfectly: his family needs (school catchment, 3-bedroom apartment), location (Haidian District), and budget (\u00a56M) match the document's priorities. Candidate B, a Suzhou-based manufacturing director with no mention of Beijing or school district concerns, does not fit the context. The document\u2019s framing reflects urban family planning in Beijing\u2019s competitive education market, which Candidate A\u2019s profile directly addresses.",
+    "model": "solar-pro",
+    "prompt_chars": 22964,
+    "latency_sec": 2.28,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task38_User12_seed1",
+    "stage": "write",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User12"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on Beijing's real estate market, specifically targeting families with school-age children and elderly dependents, emphasizing education policies, housing size, and location convenience. Candidate B, a Beijing-based AI entrepreneur with a 5-year-old daughter and parents living together, aligns perfectly with the document's audience. His profile highlights family needs (5-person household), education concerns (school-age child), and financial capacity (Beijing property ownership, tech-entrepreneur income). In contrast, Candidate A, a Suzhou-based engineer with adult children, lacks the immediate educational and spatial needs central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 24975,
+    "latency_sec": 1.8,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

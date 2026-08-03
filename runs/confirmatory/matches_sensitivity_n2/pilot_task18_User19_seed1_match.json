@@ -1,0 +1,110 @@
+[
+  {
+    "run_id": "pilot_task18_User19_seed1",
+    "stage": "plan",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns more closely with the document's focus on pragmatic, budget-conscious travel planning for a business trip. The document emphasizes efficiency (e.g., 'structured framework,' 'buffer times,' 'cost within budget'), eco-friendly practices, and mid-to-high-end accommodations\u2014all of which match A's traits as a supply chain manager who values practicality, sustainability, and cost-effectiveness. A's preference for self-planned itineraries, cultural immersion, and light travel (reducing carbon footprint) also directly mirrors the document's criteria. While Candidate B shares some traits (e.g., rational decision-making), the document's emphasis on domestic travel preferences, Sichuan cuisine, and family-oriented sustainability (e.g., eco-friendly products for his daughter) aligns more distinctly with A's background and priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 17436,
+    "latency_sec": 1.92,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task18_User19_seed1",
+    "stage": "search",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on flight routes, baggage allowances, and hotel amenities between Chengdu (TFU) and Berlin (BER), with repeated mentions of airlines like Air China, Lufthansa, and Qatar Airways. Candidate B, based in Chengdu and working in supply chain management, frequently travels domestically and prioritizes efficiency, practicality, and cost-effectiveness in travel. His profile aligns with the document\u2019s emphasis on flight logistics, baggage policies, and mid-to-high-end hotel amenities. Candidate A, while a frequent traveler, focuses on international family vacations and cultural destinations, which are not reflected in the document\u2019s business-oriented, route-specific content.",
+    "model": "solar-pro",
+    "prompt_chars": 19161,
+    "latency_sec": 1.73,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task18_User19_seed1",
+    "stage": "compress",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on flight routes, baggage allowances, and hotel amenities between Chengdu (TFU/CTU) and Berlin (BER), emphasizing practical logistics, cost comparisons, and sustainable certifications (e.g., Nordic Swan Ecolabel, Green Key). Candidate B, a Chengdu-based supply chain manager, aligns with this content due to his professional focus on efficiency, cost-effectiveness, and recent interest in sustainability. His domestic travel preferences, eco-friendly consumption habits, and attention to practical details (e.g., baggage policies, hotel certifications) mirror the document's framing. Candidate A, while detail-oriented, prioritizes international family travel and luxury accommodations, which are less central to the document's logistical focus.",
+    "model": "solar-pro",
+    "prompt_chars": 21654,
+    "latency_sec": 2.21,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task18_User19_seed1",
+    "stage": "write",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document emphasizes budget-conscious international business travel (\u00a530,000 RMB cap), eco-friendly practices, and pragmatic efficiency\u2014aligning with Candidate A's profile as a supply chain manager who prioritizes cost-effectiveness, sustainability, and self-planned itineraries. Candidate A's focus on domestic travel and carbon footprint reduction contrasts with Candidate B's preference for high-end accommodations and frequent international business trips. The document's detailed budget breakdown, mid-tier flight recommendations, and emphasis on cultural immersion (e.g., historical landmarks) also mirror Candidate A's interest in practicality, local culture, and eco-friendly consumption, whereas Candidate B's preferences lean toward luxury and broader travel destinations.",
+    "model": "solar-pro",
+    "prompt_chars": 23665,
+    "latency_sec": 1.73,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

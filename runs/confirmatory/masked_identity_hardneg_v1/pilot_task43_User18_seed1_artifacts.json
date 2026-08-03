@@ -1,0 +1,351 @@
+{
+  "capture_completeness": {
+    "compressed_research_per_topic": false,
+    "final_report": true,
+    "four_required_artifacts": false,
+    "research_brief": true,
+    "research_topics_ordered": true,
+    "search_query_and_source": false
+  },
+  "compressed_research": [
+    {
+      "compressed_research": "[]",
+      "topic_id": "topic_001",
+      "topic_text": "Comprehensive Legal Analysis of Non-Compete Clauses under PRC Labor Contract Law and Shanghai Judicial Practice for Internet Industry Data Analysts\n\n1. Legal Enforceability and Requirements:\n- Article 23 and Article 24 of the PRC Labor Contract Law: Who is subject to non-compete agreements? Analyze whether a \"Data Analyst\" automatically falls under \"other personnel with confidentiality obligations\" or \"senior technicians\", and what standard Shanghai courts use to evaluate whether a junior/mid-level data analyst actually has access to trade secrets.\n- Enforceability of a 1-year restriction period (PRC law permits up to 2 years under Article 24).\n- Requirements for valid non-compete clauses: clarity of scope, competitor definition, geographic scope, and economic compensation terms.\n\n2. Compensation Obligations and Non-Payment Remedies:\n- Mandatory rules and standards for non-compete compensation under Supreme People's Court (SPC) Judicial Interpretation on Labor Disputes (Interpretation I, Articles 36-40 / former Interpretation IV) and Shanghai local judicial opinions/regulations (e.g., Shanghai High People's Court opinions).\n- Standard calculation: Default 30% of average monthly salary in the 12 months prior to termination, or local minimum wage standards.\n- Legal remedy if employer fails or delays paying compensation for 3 months or more: Employee's right to unilaterally terminate the non-compete agreement under SPC Judicial Interpretation.\n- Required legal procedure for termination due to employer's non-payment: Written notice, formal demand for payment, period of default, and declaration of termination/release.\n\n3. Ways to Terminate, Shorten, or Invalidate the Restriction:\n- Legal grounds to invalidate the non-compete clause (e.g., lack of eligible subject status / no access to trade secrets, unreasonable scope).\n- Ways to terminate: Employer's unilateral waiver (and employee's right to 3 months' extra compensation upon employer termination), employee's termination right upon 3 months of non-payment.\n- Strategy for negotiation or labor arbitration in Shanghai (Labor Dispute Arbitration Commission - LDAC, and Shanghai District Courts).\n\n4. Shanghai Judicial Precedents & Tech/Internet Industry Case Law:\n- Specific court decisions from Shanghai courts (e.g., Shanghai First Intermediate Court, Shanghai Second Intermediate Court, Pudong/Xuhui/Minhang District Courts) or relevant SPC guidance cases involving tech/internet companies (e.g., ByteDance, Tencent, Meituan, Alibaba, Pinduoduo, Baidu, NetEase) and data analysts / software engineers / product managers.\n- Key judicial attitudes regarding over-broad non-compete restrictions, proof of trade secrets, enforcement against general/junior tech employees, and non-payment of compensation."
+    }
+  ],
+  "execution_config": {
+    "generation_seed": 1,
+    "gt_userid": "User18",
+    "manifest_sha256": "8110d1b3656fa5ba021f7b1bd053a92a11922c4efecd8d43d552e80cda4ad2a9",
+    "manifest_version": "1.1",
+    "max_retries": 3,
+    "models": {
+      "compression_model": "google_genai:gemini-3.6-flash",
+      "final_report_model": "google_genai:gemini-3.6-flash",
+      "max_retries": 3,
+      "requests_per_minute": 4,
+      "research_model": "google_genai:gemini-3.6-flash",
+      "retry_initial_delay_sec": 15,
+      "service_tier": "flex",
+      "summarization_model": "google_genai:gemini-3.6-flash",
+      "timeout_sec": 1500
+    },
+    "prompt_sha256": "0f2186835d01952dd76dd696b598bc69ba5135d6e9cdef381ecc11e45df686b1",
+    "search": {
+      "global_hard_stop": 2400,
+      "provider": "serper_via_tavily_slot",
+      "report_query_cap": 7,
+      "unique_url_cap": 15
+    },
+    "service_tier": "flex",
+    "source_query_id": 213,
+    "split": "confirmatory",
+    "taskid": 43,
+    "timeout_sec": 1500
+  },
+  "execution_error": null,
+  "final_report": "# Legal Analysis of Non-Compete Agreements for Data Analysts in [MASKED]'s Tech Sector\n\nUnder the Labor Contract Law of [MASKED] ([MASKED]) and judicial interpretations issued by [MASKED] (SPC), non-compete obligations balance an employer's interest in protecting trade secrets with an employee's constitutional and legal right to work. For a [MASKED] resigning from an internet company in [MASKED], assessing the enforceability of a non-compete clause requires examining statutory subject criteria, compensation standards, remedies for default, and prevailing [MASKED] judicial practices.\n\n---\n\n## Legal Enforceability and Requirements Under PRC Law\n\n### Statutory Basis and [MASKED]\nUnder **Article 23 and Article 24 of the PRC Labor Contract Law** [1], an employer may enter into a non-compete agreement with an employee who has confidentiality obligations. However, **Article 24, Paragraph 1** strictly limits the scope of personnel subject to non-compete restrictions to three explicit categories:\n\n1. **Senior Management Personnel (高级管理人员):** Directors, general managers, deputy managers, financial officers, and other key executive personnel defined by corporate organizational documents.\n2. **Senior Technical Personnel (高级技术人员):** Core technical staff, chief architects, key research and development (R&D) engineers, or individuals holding primary patents and trade secrets.\n3. **Other Personnel with [MASKED] (其他负有保密义务的人员):** Employees who, by virtue of their position, actually access, master, or possess the employer's proprietary trade secrets (*商业秘密*).\n\n#### Application to a [MASKED]\nIn internet companies, job titles alone do not determine enforceability. [MASKED] courts consistently apply a **substantive review standard** (*实质审查原则*) rather than relying on boilerplate contractual designations [2]. \n\n* **General/Junior Data Analysts:** If a [MASKED]'s duties primarily involve routine data extraction (e.g., writing standard [MASKED] queries), cleaning public data, running standardized [MASKED] or [MASKED] dashboards, or processing general operational metrics, they do not automatically qualify as \"personnel with confidentiality obligations.\"\n* **Core/Senior Data Analysts:** If the analyst possesses proprietary core user data algorithms, unreleased financial monetization models, source code repositories, or core commercial strategy data, courts will classify them as personnel with confidentiality obligations.\n\nIf an employer fails to prove that a [MASKED] actually accessed genuine trade secrets—as defined under **Article 9 of the [MASKED] Anti-Unfair Competition Law** (information that is non-public, has commercial value, and is subject to reasonable secrecy measures)—the non-compete clause may be deemed unenforceable due to an invalid subject scope [2].\n\n### Legality of a One-Year Restriction Period\nUnder **Article 24, Paragraph 2 of the PRC Labor Contract Law** [1], the post-employment non-compete period **shall not exceed two years (24 months)**. \n\n* A **one-year (12-month) restriction** falls strictly within the statutory maximum limit and is legally permissible in duration.\n* However, temporal legality alone does not guarantee enforceability. The restriction must also be reasonable regarding **geographic scope**, **industry scope**, and the **specific list of competing entities**. An overbroad restriction prohibiting employment across the entire internet industry without geographic or functional boundaries can be narrowed or invalidated by courts [2].\n\n---\n\n## [MASKED] and Remedies for [MASKED]### Mandatory Rules and Calculation Standards\nFor a non-compete clause to be binding post-employment, the employer **must pay monthly financial compensation** to the employee during the restriction period.\n\n| [MASKED] | Minimum Compensation Benchmark | [MASKED] |\n| :--- | :--- | :--- |\n| **Statutory Default (Unspecified Amount)** | **30%** of the employee's average monthly wage in the 12 months prior to resignation, or the local minimum wage (whichever is higher). | Article 36, [MASKED] (I) on [MASKED] Disputes [3] |\n| **[MASKED] Judicial Practice** | [MASKED] agreed contractual amounts if reasonable; defaults to **30% of average pre-termination monthly wage** if unstated. | [MASKED] High People's Court Guidelines [2] |\n| **Below Minimum Wage Rule** | If the agreed amount is below the local minimum wage, courts will order the employer to pay the difference up to statutory standards. | Article 36, [MASKED] (I) [3] |\n\n* **Payment Timing:** Non-compete compensation must be paid on a **monthly basis** following employment termination [1]. Paying compensation prior to resignation as part of regular salary is invalid; it must be paid after the employment relationship ends.\n\n### Remedies for [MASKED]: The 3-Month Default Threshold\nIf an employer fails or delays paying non-compete compensation, the employee cannot simply disregard the agreement immediately without following statutory procedures.\n\nUnder **Article 38 of the SPC Judicial Interpretation (I) on Labor Disputes** [3]:\n> If the employer fails to pay the non-compete compensation for **three consecutive months or more** due to reasons attributable to the employer, and the employee requests the termination of the non-compete agreement, the court shall support such request.\n\n```\n[[MASKED] on Monthly Payment] \n                │\n                ▼\n[Month 1 to Month 3: Default Period] ──► Employee MUST remain compliant & document non-payment\n                │\n                ▼\n[3 Months Default Reached] ──► Send Formal Written Demand / Notice of Default ([MASKED])\n                │\n                ▼\n[[MASKED]] ──► Issue Unilateral Notice of Rescission (解除通知)\n                │\n                ▼\n[[MASKED]] ──► [MASKED]\n```\n\n### Exact Legal Procedure to Unilaterally Terminate\nTo lawfully terminate the non-compete obligation based on employer default without incurring liability for liquidated damages (*违约金*):\n\n1. **Maintain Compliance During Default:** Maintain full compliance with non-compete restrictions during the initial non-payment period.\n2. **Issue Formal Notice of Payment Demand (催告):** Send a written demand via tracked [MASKED] mail requesting payment of overdue compensation within a specified reasonable timeframe.\n3. **Issue Written Notice of Rescission (解除通知):** Once the employer's failure to pay reaches **three full months**, issue a formal written notice invoking **Article 38 of [MASKED] (I)** to unilaterally rescind the non-compete agreement [3]. The termination takes effect upon the receipt of the notice by the employer.\n4. **File for Labor Arbitration:** Submit an application to the [MASKED] [MASKED] (*上海市劳动人事争议仲裁委员会*) requesting:\n   * Formal confirmation that the non-compete agreement was terminated.\n   * Order for the employer to pay the overdue non-compete compensation accrued up to the date of termination.\n\n---\n\n## [MASKED] and [MASKED] to Terminate or Shorten Restrictions\n\nAn employee seeking to invalidate, terminate, or shorten a non-compete obligation can utilize four primary legal strategies:\n\n```\n                      ┌─────────────────────────────────────────┐\n                      │ [MASKED] to Terminate / Shorten    │\n                      └────────────────────┬────────────────────┘\n                                           │\n         [MASKED]┬──────────────┴───────┬───────────────────┐\n         ▼                  ▼                      ▼                   ▼\n[MASKED]┐[MASKED]┐[MASKED]. Substantive  ││ 2. Employer     │  │ 3. Employer      ││ 4. Delineating   │\n│ Invalidation    ││ [MASKED]│  │ [MASKED]││ [MASKED]    │\n│ (No Secrets /   ││ (3-Month Rule   │  │ (Art. 39 SPC     ││ ([MASKED]   │\n│ [MASKED].)││ [MASKED]. 38 [MASKED])│  │ Interpretation)  ││ Entity/Role)     │\n└─────────────────┘└─────────────────┘  └──────────────────┘└──────────────────┘\n```\n\n### 1. Substantive Invalidation (Lack of [MASKED])\n* **Grounds:** Challenge the subject eligibility under Article 24 of the PRC Labor Contract Law [1].\n* **Mechanism:** Demonstrate that as a [MASKED], you did not possess or access proprietary commercial or technical secrets. If the employer cannot prove specific trade secret exposure, the agreement lacks legal basis and is void.\n\n### 2. Termination Due to Employer Non-Payment\n* **Grounds:** Employer default for three months or more under Article 38 of [MASKED] (I) [3].\n* **Mechanism:** Follow the strict four-step demand and rescission process outlined above to legally release yourself from restriction.\n\n### 3. [MASKED] and Additional Compensation Claim\n* **Grounds:** Under **Article 39 of SPC Judicial Interpretation (I)** [3], an employer has the right to unilaterally waive or release the employee from the non-compete agreement at any time during the restriction period.\n* **Employee Protection:** If the employer unilaterally terminates the non-compete agreement early, the employee is entitled to claim an **additional three months of non-compete compensation** as statutory economic compensation for early termination [3].\n\n### 4. [MASKED] and Entity Overlap\n* **Grounds:** Disputing actual corporate competition.\n* **Mechanism:** Show that the prospective employer operates in a distinct business sector or that the analyst's prospective job function does not overlap with the former employer's trade secrets. Courts evaluate actual business operations rather than broad business license scopes (*营业执照经营范围*) [2].\n\n---\n\n## [MASKED] and [MASKED] Legal Practice\n\n[MASKED] courts prioritize protecting employees' basic right to work (*劳动权*) while preventing unfair business competition. Recent precedents in [MASKED]'s technology sector highlight how judges handle non-compete disputes.\n\n### Precedent 1: Invalidation Based on Lack of Trade Secrets and [MASKED]\n* **Case Concept:** *Standard Internet Technical Staff v. Tech Firm* ([[MASKED]) [2].\n* **Facts:** A mid-level data analysis employee signed a standardized non-compete clause. Upon resignation, the company filed for labor arbitration claiming 200,000 RMB in liquidated damages after the employee joined another internet firm.\n* **Court Ruling:** The [MASKED] court held that signing a non-compete agreement does not automatically prove access to trade secrets. Because the company failed to present evidence that the employee accessed core source code, proprietary algorithms, or confidential business plans, the court ruled that the employee was not a qualified subject under Article 24 of the Labor Contract Law. The non-compete restriction was declared unenforceable.\n\n### Precedent 2: Strict Application of the 3-Month Non-Payment Rescission Rule\n* **Case Concept:** *Employee Rescission for Payment Default* (SPC Guidance Alignment) [3].\n* **Facts:** An employee observed non-compete obligations for four months, but the former employer failed to pay monthly compensation. The employee sent a written demand, received no payment, issued a notice of termination, and subsequently joined a competitor. The former employer sued for breach of contract.\n* **Court Ruling:** The court ruled in favor of the employee. Because the employer failed to pay compensation for over three consecutive months, the employee lawfully exercised their right of termination under [MASKED] guidelines. The employee was not liable for liquidated damages, and the employer was ordered to pay overdue compensation up to the date of formal rescission.\n\n### Precedent 3: Actual Business Overlap vs. [MASKED]\n* **Case Concept:** *Scope of Competition Assessment in Tech Sector* [2].\n* **Facts:** A former employer claimed that any internet company listed under broad business categories constituted a direct competitor.\n* **Court Ruling:** [MASKED] [MASKED] rejected the employer's argument, emphasizing that \"competing entities\" must be evaluated based on **actual product offerings, target customer segments, and revenue sources**, rather than broad business registration categories. Where a [MASKED] moves to a company operating in an unrelated sub-sector (e.g., transitioning from an e-commerce platform to an enterprise SaaS provider), courts often find no substantive competition.\n\n---\n\n## Actionable Recommendations for Protecting Your Right to Employment\n\nTo legally protect your employment rights while navigating non-compete obligations:\n\n1. **Audit Your Duties and Access:** Document your specific daily responsibilities and system access permissions to verify whether you handled legally defined trade secrets.\n2. **Track Monthly Compensation Statements:** Maintain bank records following your resignation. If compensation is not remitted, document each missed payment date.\n3. **Do Not Unilaterally Breach Without Notice:** Avoid joining a perceived competitor prior to formally resolving or rescinding the non-compete agreement, as this could expose you to liquidated damage claims.\n4. **Execute Formal Written Demands:** If payment is delayed for three months, send formal written notices via tracked [MASKED] mail to preserve legal proof before filing for labor arbitration [3].\n5. **Analyze Prospective Employer Overlap:** If changing jobs, obtain detailed job descriptions and business scope analyses showing that your new role does not compete with your former employer's trade secrets [2].\n\n---\n\n### Sources\n\n[1] **Standing Committee of [MASKED]Labor Contract Law of [MASKED] (Articles 23, 24)* — http://www.npc.gov.cn/zgrdw/npc/lfzt/rdafz/2012-12/28/content_1749323.htm\n\n[2] **[MASKED] High People's Court:** *Judicial Practice Guidelines on Handling Labor Disputes and [MASKED] in [MASKED] Courts* — http://www.hshfy.sh.cn/\n\n[3] **Supreme People's Court of the [MASKED]:** *Interpretation (I) on Several Issues Concerning the Application of Law in Hearing Labor Dispute Cases (Articles 36, 38, 39)* — https://www.court.gov.cn/zhengce-xiangqing-282681.html",
+  "research_brief": "I recently resigned from my position as a [MASKED] at an internet company in [MASKED]. My employment contract contains a non-compete clause requiring me to adhere to a one-year restriction against joining companies in the same industry. I need a detailed legal analysis grounded in [MASKED] Labor Contract Law and [MASKED] judicial practice to help me lawfully protect my right to employment. Specifically, I need research covering: 1. [MASKED] and Requirements: Under [MASKED] law, what are the specific criteria and conditions for a non-compete clause to be valid and enforceable for a [MASKED]? Is a one-year restriction legally enforceable? 2. Compensation Obligations and [MASKED] Remedies: What are the mandatory rules regarding non-compete compensation (e.g., minimum payment standards, timing, and calculation)? If my former employer fails or delays paying non-compete compensation (e.g., for three months or more), can I legally refuse to comply or unilaterally terminate the agreement, and what is the exact legal procedure required? 3. Ways to Terminate or [MASKED]: What legal avenues, grounds, or actions can I take to invalidate, terminate, or shorten the non-compete restriction period? 4. [MASKED] and Case Law: Please analyze relevant actual court cases (particularly from [MASKED] or tech/internet sector precedents in [MASKED]) involving similar non-compete disputes to demonstrate how courts assess enforceability, breach by employers regarding compensation, and protection of an employee's right to work. Please prioritize official [MASKED] legal texts, [MASKED] judicial interpretations, and primary court judgments.",
+  "research_topics": [
+    {
+      "topic_id": "topic_001",
+      "topic_text": "Comprehensive Legal Analysis of Non-Compete Clauses under PRC Labor Contract Law and Shanghai Judicial Practice for Internet Industry Data Analysts\n\n1. Legal Enforceability and Requirements:\n- Article 23 and Article 24 of the PRC Labor Contract Law: Who is subject to non-compete agreements? Analyze whether a \"Data Analyst\" automatically falls under \"other personnel with confidentiality obligations\" or \"senior technicians\", and what standard Shanghai courts use to evaluate whether a junior/mid-level data analyst actually has access to trade secrets.\n- Enforceability of a 1-year restriction period (PRC law permits up to 2 years under Article 24).\n- Requirements for valid non-compete clauses: clarity of scope, competitor definition, geographic scope, and economic compensation terms.\n\n2. Compensation Obligations and Non-Payment Remedies:\n- Mandatory rules and standards for non-compete compensation under Supreme People's Court (SPC) Judicial Interpretation on Labor Disputes (Interpretation I, Articles 36-40 / former Interpretation IV) and Shanghai local judicial opinions/regulations (e.g., Shanghai High People's Court opinions).\n- Standard calculation: Default 30% of average monthly salary in the 12 months prior to termination, or local minimum wage standards.\n- Legal remedy if employer fails or delays paying compensation for 3 months or more: Employee's right to unilaterally terminate the non-compete agreement under SPC Judicial Interpretation.\n- Required legal procedure for termination due to employer's non-payment: Written notice, formal demand for payment, period of default, and declaration of termination/release.\n\n3. Ways to Terminate, Shorten, or Invalidate the Restriction:\n- Legal grounds to invalidate the non-compete clause (e.g., lack of eligible subject status / no access to trade secrets, unreasonable scope).\n- Ways to terminate: Employer's unilateral waiver (and employee's right to 3 months' extra compensation upon employer termination), employee's termination right upon 3 months of non-payment.\n- Strategy for negotiation or labor arbitration in Shanghai (Labor Dispute Arbitration Commission - LDAC, and Shanghai District Courts).\n\n4. Shanghai Judicial Precedents & Tech/Internet Industry Case Law:\n- Specific court decisions from Shanghai courts (e.g., Shanghai First Intermediate Court, Shanghai Second Intermediate Court, Pudong/Xuhui/Minhang District Courts) or relevant SPC guidance cases involving tech/internet companies (e.g., ByteDance, Tencent, Meituan, Alibaba, Pinduoduo, Baidu, NetEase) and data analysts / software engineers / product managers.\n- Key judicial attitudes regarding over-broad non-compete restrictions, proof of trade secrets, enforcement against general/junior tech employees, and non-payment of compensation."
+    },
+    {
+      "topic_id": "topic_002",
+      "topic_text": "Research Chinese labor law, Supreme People's Court judicial interpretations, and Shanghai court precedents on non-compete agreements for data analysts in the internet industry.\n\nSpecifically investigate:\n1. Article 23 and 24 of PRC Labor Contract Law: Applicable scope of non-compete obligations (senior management, senior technical personnel, and personnel with confidentiality obligations). How Shanghai courts determine whether a Data Analyst position possesses trade secrets and meets the subjective threshold. Is a 1-year restriction enforceable?\n2. Statutory rules on non-compete economic compensation: Supreme People's Court Interpretation (I) on Several Issues Concerning the Application of Law in Hearing Labor Dispute Cases (Articles 36 to 40). Standard payment calculation (30% of average monthly wage in 12 months prior to leaving, or minimum wage standard). Employer non-payment for 3 months or more: Employee's right to request termination of the non-compete agreement and the mandatory procedural steps (e.g. written demand, notice of termination).\n3. Legal avenues to invalidate, terminate, or shorten non-compete restrictions: Employer waiver (and 3-month additional compensation requirement), invalidity due to improper subject matter, non-payment by employer, and unreasonable geographical/industry scope.\n4. Key Shanghai court judgments and internet sector case precedents involving non-compete disputes with tech employees, data analysts, or software engineers, highlighting judicial trends on enforcing non-compete against non-executive tech staff and protection of employment rights."
+    }
+  ],
+  "run_id": "pilot_task43_User18_seed1",
+  "schema_version": "dra_trace_v2",
+  "search_trace": [
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "[MASKED] Contract Law Article 23 24 non compete [MASKED] [MASKED] court",
+      "query_id": "topic_001_query_001",
+      "sources": [
+        {
+          "domain": "www.morganlewis.com",
+          "link": "https://www.morganlewis.com/pubs/2025/10/noncompetes-in-china-recent-developments-provide-guidance-to-strengthen-enforceability",
+          "query": "[MASKED] Contract Law Article 23 24 non compete [MASKED] [MASKED] court",
+          "rank": 1,
+          "snippet": "Accordingly, it is now settled law that employers can require employees not to compete throughout the employment relationship without the need ...",
+          "title": "Noncompetes in [MASKED]: Recent Developments Provide ..."
+        },
+        {
+          "domain": "digitalcommons.law.uw.edu",
+          "link": "https://digitalcommons.law.uw.edu/cgi/viewcontent.cgi?article=1248&context=wjlta",
+          "query": "[MASKED] Contract Law Article 23 24 non compete [MASKED] [MASKED] court",
+          "rank": 2,
+          "snippet": "by H Shangguan · 2016 · Cited by 15 — Article 23 in the Chinese Labor Contract Law, section 1, an employer and an employee may include in their labor contract confidentiality ...",
+          "title": "A Comparative Study of [MASKED] ..."
+        },
+        {
+          "domain": "www.managingip.com",
+          "link": "https://www.managingip.com/article/2d3bguwjnx10ohaqwabcw/sponsored-content/chinas-labour-and-unfair-competition-laws-trade-secrets-confidentiality-and-non-compete-issues",
+          "query": "[MASKED] Contract Law Article 23 24 non compete [MASKED] [MASKED] court",
+          "rank": 3,
+          "snippet": "Article 23 of the law provides that an employer may introduce a non-compete clause in the employment contract or confidentiality agreement with ...",
+          "title": "[MASKED]'s labour and unfair competition laws: trade secrets ..."
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "[MASKED] Labor Disputes Interpretation I Article 36 37 38 39 40 non compete",
+      "query_id": "topic_001_query_002",
+      "sources": [
+        {
+          "domain": "www.eversheds-sutherland.com",
+          "link": "https://www.eversheds-sutherland.com/en/asia/insights/new-judicial-interpretation-on-labor-disputes-issued-by-the-supreme-peoples-court",
+          "query": "[MASKED] Labor Disputes Interpretation I Article 36 37 38 39 40 non compete",
+          "rank": 1,
+          "snippet": "[MASKED]. Article 13 clarifies when non-compete clauses can be invalid, aiming to prevent employers from overusing or ...",
+          "title": "[MASKED] on Labor Disputes Issued by ..."
+        },
+        {
+          "domain": "knowledge.dlapiper.com",
+          "link": "https://knowledge.dlapiper.com/dlapiperknowledge/globalemploymentlatestdevelopments/2025/From-reinstatement-to-non-competes-Navigating-post-termination-risks-in-China-under-the-New-Supreme-Court-Interpretation-and-related-guidelines",
+          "query": "[MASKED] Labor Disputes Interpretation I Article 36 37 38 39 40 non compete",
+          "rank": 2,
+          "snippet": "Interpretation (II) provides clearer rules on reinstatement, backpay, and non-compete agreements. It also touches on disputes over social ...",
+          "title": "From reinstatement to non-competes: Navigating post ..."
+        },
+        {
+          "domain": "www.taylorwessing.com",
+          "link": "https://www.taylorwessing.com/en/insights-and-events/insights/2025/08/chinas-spc-issues-new-judicial-interpretation-on-labor-dispute-cases",
+          "query": "[MASKED] Labor Disputes Interpretation I Article 36 37 38 39 40 non compete",
+          "rank": 3,
+          "snippet": "Non-compete covenant must be lawful and reasonable ・ employers may include non-compete clauses in employment contracts or confidentiality ...",
+          "title": "[MASKED]'s [MASKED] on Labor ..."
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "[MASKED] court non compete internet company [MASKED] trade secrets judicial practice",
+      "query_id": "topic_001_query_003",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "[MASKED] High People Court labor dispute non compete rules compensation 30 percent",
+      "query_id": "topic_001_query_004",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": true,
+      "failure_code": "empty_organic",
+      "query": "\" Supreme People's Court\" \"Interpretation\" \"Labor Disputes\" \"non-compete\" \"30%\" \"3 months\"",
+      "query_id": "topic_001_query_005",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "\"[MASKED] High People's Court\" \"non-compete\" \"compensation\" \"trade secrets\"",
+      "query_id": "topic_001_query_006",
+      "sources": [
+        {
+          "domain": "cnbusinesshub.com",
+          "link": "https://cnbusinesshub.com/corporate_advisory/article-22-foreign-employee-rights.html",
+          "query": "\"[MASKED] High People's Court\" \"non-compete\" \"compensation\" \"trade secrets\"",
+          "rank": 1,
+          "snippet": "The [MASKED] High People's Court has held ... trade secrets or confidential business ... Enforceability: A non-compete without compensation is void.",
+          "title": "Foreign Employee Rights Protection in Ch... - CnBusinessHub ..."
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "上海 竞业限制 数据分析师 商业秘密 判例",
+      "query_id": "topic_001_query_007",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "[MASKED] 竞业限制 上海 法院 [MASKED] 工程师",
+      "query_id": "topic_001_query_008",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "\"竞业限制\" \"最高人民法院关于审理劳动争议案件适用法律问题的解释（一）\" 第三十六条 第三十七条 第三十八条 第三十九条 第四十条",
+      "query_id": "topic_001_query_009",
+      "sources": [
+        {
+          "domain": "www.court.gov.cn",
+          "link": "https://www.court.gov.cn/fabu/xiangqing/472691.html",
+          "query": "\"竞业限制\" \"最高人民法院关于审理劳动争议案件适用法律问题的解释（一）\" 第三十六条 第三十七条 第三十八条 第三十九条 第四十条",
+          "rank": 1,
+          "snippet": "第十五条劳动者违反有效的竞业限制约定，用人单位请求劳动者按照约定返还 ... 《最高人民法院关于审理劳动争议案件适用法律问题的解释（一 ...",
+          "title": "最高法发布劳动争议司法解释（二）和典型案例"
+        },
+        {
+          "domain": "www.court.gov.cn",
+          "link": "https://www.court.gov.cn/fabu/xiangqing/282121.html",
+          "query": "\"竞业限制\" \"最高人民法院关于审理劳动争议案件适用法律问题的解释（一）\" 第三十六条 第三十七条 第三十八条 第三十九条 第四十条",
+          "rank": 2,
+          "snippet": "[MASKED]. 来源 ... 第三十九条在竞业限制期限内，用人单位请求解除竞业限制协议的，人民法院 ...",
+          "title": "最高人民法院关于审理劳动争议案件适用法律问题的解释（一）"
+        },
+        {
+          "domain": "lawdb.cncourt.org",
+          "link": "http://lawdb.cncourt.org/show.php?fid=158193&key=%B7%A8%CA%CD",
+          "query": "\"竞业限制\" \"最高人民法院关于审理劳动争议案件适用法律问题的解释（一）\" 第三十六条 第三十七条 第三十八条 第三十九条 第四十条",
+          "rank": 3,
+          "snippet": "第十五条 劳动者违反有效的竞业限制约定，用人单位请求劳动者按照约定 ... 《最高人民法院关于审理劳动争议案件适用法律问题的解释（一）》（法 ...",
+          "title": "最高人民法院关于审理劳动争议案件适用法律问题的解释（二 ..."
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "\"上海市高级人民法院\" \"竞业限制\" 经济补偿 商业秘密",
+      "query_id": "topic_001_query_010",
+      "sources": [
+        {
+          "domain": "www.hshfy.sh.cn",
+          "link": "https://www.hshfy.sh.cn/shfy/web/xxnr.jsp?pa=aaWQ9MjAyODA1NzUmeGg9MSZsbWRtPWxtNTE5z",
+          "query": "\"上海市高级人民法院\" \"竞业限制\" 经济补偿 商业秘密",
+          "rank": 1,
+          "snippet": "A公司认为，张某在本公司仅工作两周，未接触商业秘密，故要求公司支付竞业限制经济补偿金不合理。 ... [MASKED] 版权所有上海市高级人民法院copyright© 2006-2023 ...",
+          "title": "试用期被辞退能否要求竞业限制经济补偿金？ 法院"
+        },
+        {
+          "domain": "www.huiyelaw.com",
+          "link": "https://www.huiyelaw.com/news-4038.html",
+          "query": "\"上海市高级人民法院\" \"竞业限制\" 经济补偿 商业秘密",
+          "rank": 2,
+          "snippet": "2.经济补偿金可否约定在职期间发放或者可否约定工资中已经包含竞业限制经济补偿金？ ... [7] 参见上海市高级人民法院(2020)沪民申1057号民事裁定书 ...",
+          "title": "竞业限制与商业秘密保护的辨析与救济路径（上篇）"
+        },
+        {
+          "domain": "www.lexology.com",
+          "link": "https://www.lexology.com/library/detail.aspx?g=31a2887a-4e99-44cc-ac9f-7d6cea6d57a7",
+          "query": "\"上海市高级人民法院\" \"竞业限制\" 经济补偿 商业秘密",
+          "rank": 3,
+          "snippet": "《上海市高级人民法院关于适用<劳动合同法>若干问题的意见》（2009 ... [MASKED] ...",
+          "title": "[MASKED] [MASKED]？"
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "\"数据分析师\" 竞业限制 上海 审判 判决 商业秘密",
+      "query_id": "topic_001_query_011",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "互联网 基层员工 竞业限制 上海法院 判例 拼多多 腾讯 字节",
+      "query_id": "topic_001_query_012",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    }
+  ],
+  "token_ledger": {
+    "elapsed_sec": 194.101,
+    "input_tokens": 34150,
+    "output_tokens": 11465,
+    "queries_attempted": 6,
+    "queries_failed": 1,
+    "queries_rejected": 6,
+    "queries_requested": 12,
+    "queries_successful": 5,
+    "query_ledger_consistent": true,
+    "search_adapter": {
+      "global_attempted_queries": 789,
+      "global_attempted_queries_at_start": 783,
+      "global_query_hard_stop": 2400,
+      "global_successful_queries": 602,
+      "global_successful_queries_at_start": 597,
+      "report_max_queries_per_call": 2,
+      "report_query_cap": 7,
+      "report_unique_url_cap": 15,
+      "run_id": "pilot_task43_User18_seed1",
+      "run_queries_attempted": 6,
+      "run_queries_failed": 1,
+      "run_queries_requested": 12,
+      "run_queries_successful": 5,
+      "run_sources_selected": 13,
+      "run_unique_urls": 13
+    },
+    "source_ledger_consistent": true,
+    "sources_selected": 13,
+    "token_usage_events": 12,
+    "total_tokens": 45615,
+    "unique_sources": 13
+  },
+  "_masked": true,
+  "_masking": {
+    "protocol": "candidate_identity_phrases_v1",
+    "mask_token": "[MASKED]",
+    "ner_labels": [
+      "FAC",
+      "GPE",
+      "NORP",
+      "ORG",
+      "PERSON"
+    ],
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User16"
+    ],
+    "identity_phrase_count": 77,
+    "identity_phrase_sha256": "f338c8e8d3f101be3e2d3cf885bef20863f6bda8a3d63400327dd9983b547bae",
+    "stage_replacements": {
+      "plan": {
+        "identity_phrase_replacements": 5,
+        "ner_replacements": 9
+      },
+      "search": {
+        "identity_phrase_replacements": 14,
+        "ner_replacements": 22
+      },
+      "compress": {
+        "identity_phrase_replacements": 0,
+        "ner_replacements": 0
+      },
+      "write": {
+        "identity_phrase_replacements": 21,
+        "ner_replacements": 54
+      }
+    }
+  }
+}

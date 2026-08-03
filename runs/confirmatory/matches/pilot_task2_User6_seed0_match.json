@@ -1,0 +1,90 @@
+[
+  {
+    "run_id": "pilot_task2_User6_seed0",
+    "stage": "plan",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "Candidate B is an undergraduate in Environmental Studies at a Zhejiang university, aligning perfectly with the document's focus on environmental science, sustainable urban development, and circular economy. The document's emphasis on interdisciplinary courses, field-oriented learning, and sustainability research mirrors B's academic background, cultural influence (Hangzhou's ecological preservation), and behavioral traits (eco-friendly consumption, environmental volunteerism). Unlike Candidate A (Clinical Psychology) or C (New Media), B's priorities\u2014evident in her consumption habits, travel preferences, and content interests\u2014directly reflect the document's framing around environmental sustainability and cross-cultural academic opportunities. Her proactive engagement with eco-certified services, low-carbon travel, and scholarship-seeking behavior further validate her as the intended audience.",
+    "model": "solar-pro",
+    "prompt_chars": 24122,
+    "latency_sec": 1.64
+  },
+  {
+    "run_id": "pilot_task2_User6_seed0",
+    "stage": "search",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User6",
+      "User2",
+      "User7"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "The document focuses on environmental science study-abroad opportunities at institutions like NUS, NTU, UC Berkeley, Oxford, and Tokyo University, aligning with Candidate A's major in Environmental Studies and her interest in sustainability. Her profile emphasizes eco-friendly habits, participation in environmental competitions, and a focus on balancing urban development with nature\u2014mirrored in the document's emphasis on environmental programs. Candidates B (Clinical Psychology) and C (New Media) lack the direct environmental focus and academic background that make A the clear match.",
+    "model": "solar-pro",
+    "prompt_chars": 25751,
+    "latency_sec": 1.85
+  },
+  {
+    "run_id": "pilot_task2_User6_seed0",
+    "stage": "compress",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User6"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "The document focuses on environmental science study-abroad programs, curriculum design, and sustainability topics, aligning with Candidate C's background as an Environmental Studies undergraduate with a strong interest in sustainable development, circular economy, and eco-friendly practices. The document's emphasis on interdisciplinary environmental science, urban sustainability, and research opportunities directly mirrors C's academic focus, volunteer activities, and consumption preferences for sustainability. Candidates A (new media research) and B (clinical psychology) lack the environmental science focus central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 28244,
+    "latency_sec": 1.71
+  },
+  {
+    "run_id": "pilot_task2_User6_seed0",
+    "stage": "write",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User6"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "The document focuses on environmental studies, exchange programs, and sustainability topics (e.g., circular economy, eco-governance, and international academic mobility). Candidate C is an undergraduate in Environmental Studies with a strong academic background in sustainability, eco-certifications, and environmental activism. The document's emphasis on technical methodologies (e.g., Life Cycle Assessment, GIS modeling) and global hubs (US, Europe, Singapore, Japan) aligns with Candidate C's interests in environmental competitions, eco-friendly consumption, and low-carbon travel. Candidates A (Clinical Psychology) and B (New Media) lack the direct academic and professional focus on environmental studies that defines the document's purpose and audience.",
+    "model": "solar-pro",
+    "prompt_chars": 30255,
+    "latency_sec": 1.63
+  }
+]

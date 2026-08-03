@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task24_User17_seed0",
+    "stage": "plan",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16",
+      "User19",
+      "User24"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User24",
+      "User19",
+      "User17",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate A (Liu Qiang) is a pragmatic, detail-oriented marketing manager with a high-end seaside property in Xiamen, aligning with the document's focus on comprehensive home insurance for a coastal residence. His budget (\u00a53,000\u2013\u00a55,000) matches the report's premium range, and his emphasis on cost-effectiveness, quality, and risk mitigation (e.g., disaster coverage for typhoons/floods) reflects the document's analytical, data-driven approach. Unlike other candidates, A's urban, modern lifestyle and family responsibilities (wife, two children, pet) directly correlate with the report's priorities: household belongings valuation, special clauses (theft, fire), and claims efficiency. His Western management background also aligns with the structured, comparative analysis required for insurance research.",
+    "model": "solar-pro",
+    "prompt_chars": 38619,
+    "latency_sec": 2.18,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task24_User17_seed0",
+    "stage": "search",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16",
+      "User19",
+      "User24"
+    ],
+    "shuffled_order": [
+      "User24",
+      "User16",
+      "User19",
+      "User17",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User19",
+    "correct": false,
+    "reasoning": "The document focuses on high-end home insurance (\u5bb6\u8d22\u9669) with detailed comparisons of coverage, premiums, and claims processes from major insurers (\u4eba\u4fdd, \u5e73\u5b89, \u592a\u4fdd). Candidate C, a supply chain manager in Chengdu, aligns best due to his pragmatic, efficiency-oriented personality and focus on cost-effectiveness, durability, and practicality in consumption. His interest in eco-friendly/sustainable products and rational decision-making mirrors the document\u2019s emphasis on calculating appropriate coverage, avoiding overpayment, and balancing premiums with actual needs. Unlike other candidates (e.g., A\u2019s cultural focus, B\u2019s Northeastern lifestyle, D\u2019s pet-centric priorities, or E\u2019s luxury preferences), Candidate C\u2019s professional background in logistics and his family\u2019s urban, middle-class lifestyle make him the most likely to prioritize structured, data-driven insurance planning for household assets.",
+    "model": "solar-pro",
+    "prompt_chars": 38404,
+    "latency_sec": 2.57,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task24_User17_seed0",
+    "stage": "compress",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16",
+      "User19",
+      "User24"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User19",
+      "User16",
+      "User24",
+      "User17"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on high-end household insurance (\u5bb6\u8d22\u9669) with detailed comparisons of premiums (\u4fdd\u8d39), coverage amounts (\u4fdd\u989d), and depreciation considerations (\u6298\u65e7) across major insurers like Ping An, PICC, and CPIC. Candidate A, a marketing manager in Shanghai, aligns best due to his emphasis on cost-effectiveness, quality, and family-centric financial planning. His profile highlights rational consumption, high-end durable purchases, and meticulous budgeting\u2014traits reflected in the document's analysis of insurance valuation principles and sub-limits for household items. Additionally, his urban, modern lifestyle in a high-end community matches the document's focus on comprehensive coverage for property and liability, unlike other candidates whose priorities (e.g., eco-friendly products, cultural interests, or pet care) are tangential to the insurance-specific framing.",
+    "model": "solar-pro",
+    "prompt_chars": 42589,
+    "latency_sec": 2.46,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task24_User17_seed0",
+    "stage": "write",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16",
+      "User19",
+      "User24"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User17",
+      "User16",
+      "User24",
+      "User10"
+    ],
+    "predicted_label": "E",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on high-end home insurance for coastal properties in Xiamen, emphasizing premium budgets (\u00a53,000\u2013\u00a55,000/year), detailed risk assessments (typhoons, earthquakes), and tailored coverage for high-value indoor assets (\u00a5300,000). Candidate E, a marketing manager in Shanghai, aligns best due to his high-income status, focus on cost-effectiveness, and preference for quality products (e.g., high-end home goods, premium services). His urban, modern lifestyle in Pudong and emphasis on family safety (e.g., children\u2019s education, pet care) mirror the document\u2019s audience: affluent homeowners prioritizing comprehensive, high-value insurance. Other candidates (A, B, C, D) lack the financial capacity, urban coastal context, or focus on premium asset protection central to the report.",
+    "model": "solar-pro",
+    "prompt_chars": 43685,
+    "latency_sec": 2.58,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

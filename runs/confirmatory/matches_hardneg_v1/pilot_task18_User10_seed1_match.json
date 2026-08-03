@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task18_User10_seed1",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate B (Liu Qiang) best matches the document's focus on a structured, business-oriented itinerary with high-end accommodations, efficient transportation, and cultural/leisure recommendations. The request emphasizes direct booking links, official websites, and a balance of professional and family-friendly activities (e.g., dining, historical sites), aligning with B's pragmatic, detail-oriented personality and preference for quality service. Unlike A (technical director with gardening/running interests) or C (state-owned manager focused on family trips), B\u2019s role in marketing, frequent business travel, and interest in modern urban environments (e.g., tech exhibitions) directly reflect the document\u2019s emphasis on business meetings, time management, and blending professionalism with cultural exploration. Additionally, B\u2019s preference for high-end chain hotels and cost-effective yet quality-conscious spending aligns with the budget and lodging requirements.",
+    "model": "solar-pro",
+    "prompt_chars": 25053,
+    "latency_sec": 2.01,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task18_User10_seed1",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on flight schedules (Hainan Airlines, Lufthansa) between Shanghai and Berlin, BVG public transport tickets in Berlin, and details about a Chinese restaurant in Berlin. Candidate A, based in Shanghai, has a background in marketing, frequent business trips, and a preference for international travel (Shanghai-Berlin flights). His family vacations and business trips align with the document's emphasis on flight schedules and international destinations. Additionally, his interest in high-end restaurants matches the inclusion of 'China Club Berlin' details. Candidates B (Harbin-based, state-owned enterprise) and C (Suzhou-based, manufacturing) lack the Shanghai-Berlin travel context and international business focus central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 26683,
+    "latency_sec": 1.81,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task18_User10_seed1",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate C (Liu Qiang) is a marketing manager in Shanghai with a focus on family travel, self-guided tours, and detailed itineraries, aligning with the document's emphasis on Shanghai-to-Berlin flight schedules, family-friendly travel durations (7-8 days), and structured trip planning. The document's technical focus on flight numbers, layovers, and timing matches C's data-driven decision-making style and preference for cost-effective, high-quality travel. Unlike A (state-owned enterprise manager with rural roots) and B (manufacturing director with local gardening interests), C's urban Shanghai residence, frequent business trips, and interest in international destinations (e.g., Shenzhen, Chengdu) directly correlate with the global travel scope and logistical precision of the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29375,
+    "latency_sec": 2.24,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task18_User10_seed1",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document reflects a high-end business traveler prioritizing premium experiences, efficiency, and cost-effectiveness within a strict budget. Candidate A, as a marketing manager in a foreign enterprise, aligns with the document's focus on strategic planning, high-efficiency meetings, and upscale dining (e.g., Jiangnan cuisine preferences). The itinerary's emphasis on Berlin-Mitte (government affairs/tech) and City West (retail/commercial) matches A's background in marketing and international business. Additionally, A's MBA from Shanghai Jiao Tong University and experience balancing Eastern/Western thinking align with the document's structured, data-driven approach. Candidates B (state-owned enterprise manager) and C (technical director) lack the marketing focus and international business orientation evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 31386,
+    "latency_sec": 1.86,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

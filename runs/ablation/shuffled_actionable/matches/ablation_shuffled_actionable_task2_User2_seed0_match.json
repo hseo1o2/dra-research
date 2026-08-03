@@ -1,0 +1,118 @@
+[
+  {
+    "run_id": "ablation_shuffled_actionable_task2_User2_seed0",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User6",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "Candidate C is a graduate student in Clinical Psychology, directly aligning with the document's focus on psychology-related exchange programs. The document emphasizes academic research, cross-cultural communication, and career competitiveness in clinical psychology\u2014mirroring C's background, goals, and interests. Unlike A (new media) and B (environmental studies), C's persona reflects the document's priorities: psychology curriculum analysis, visa/financial planning for academic mobility, and adaptation strategies relevant to clinical training. Her behavioral traits (e.g., saving psychology articles, using academic tools) and preferences (e.g., homestays for cultural immersion) further confirm this match.",
+    "model": "solar-pro",
+    "prompt_chars": 24062,
+    "latency_sec": 2.09,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4972,
+    "output_tokens": 150,
+    "total_tokens": 5122,
+    "api_response_id": "736b9553-4719-42d8-bc48-11ae1b491d0d"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task2_User2_seed0",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User6"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on clinical psychology exchange programs, visa requirements, HIPAA compliance, and practicum restrictions\u2014topics directly relevant to Candidate A, a clinical psychology graduate student. Her academic background, interest in patient contact hours, and search for international exchange opportunities align with the document's emphasis on clinical training, licensing, and cross-institutional collaborations. Candidates B (new media) and C (environmental studies) lack the clinical psychology focus and practical training context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25751,
+    "latency_sec": 1.9,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5407,
+    "output_tokens": 119,
+    "total_tokens": 5526,
+    "api_response_id": "4b07b768-1750-4ff3-89a2-4a9c7e6dcd67"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task2_User2_seed0",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User6"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on clinical psychology exchange programs, visa requirements, practicum restrictions, and academic logistics\u2014topics directly aligned with Candidate A's identity as a Clinical Psychology graduate student. The document's emphasis on HIPAA, HCPC regulations, and clinical training mirrors her academic background and goals. Candidate B (new media) and C (environmental studies) lack the domain-specific focus on clinical psychology that defines the document's framing and priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 28244,
+    "latency_sec": 1.82,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5975,
+    "output_tokens": 110,
+    "total_tokens": 6085,
+    "api_response_id": "9409b36e-76fb-4101-b690-2daa6fe05884"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task2_User2_seed0",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User6"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on clinical psychology graduate programs, international exchange regulations, and clinical practicum limitations\u2014topics directly aligned with Candidate B's identity as a Clinical Psychology graduate student. The report's emphasis on curriculum structures, licensing laws, and cross-cultural adaptation reflects B's academic background, professional goals, and interest in psychology-related content (e.g., her online behavior, article collections, and decision-making style). Candidates A (new media research) and C (environmental studies) lack the domain-specific expertise and personal relevance to the document's clinical psychology focus.",
+    "model": "solar-pro",
+    "prompt_chars": 30255,
+    "latency_sec": 1.58,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6287,
+    "output_tokens": 132,
+    "total_tokens": 6419,
+    "api_response_id": "1a4a511f-73b2-4711-b82b-6eef53d8fc35"
+  }
+]

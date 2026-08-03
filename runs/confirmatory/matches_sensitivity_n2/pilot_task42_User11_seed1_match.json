@@ -1,0 +1,110 @@
+[
+  {
+    "run_id": "pilot_task42_User11_seed1",
+    "stage": "plan",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User11"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User11",
+    "correct": true,
+    "reasoning": "The document is a technical compliance brief authored by an Algorithm Engineer (matching Candidate B's occupation) detailing cross-border data transfers, legal frameworks (PIPL/GDPR/CCPA), and risk controls for a global AI application. The framing prioritizes technical implementation, budget constraints, and infrastructure adaptability\u2014aligning with B's engineering background, data-driven decision-making, and focus on cost-effective tech solutions. Candidate A, a marketing manager, would prioritize user engagement or market positioning rather than granular compliance mechanics. B's expertise in AI systems, publication history, and interest in tech-related content (e.g., code snippets, algorithm papers) directly correlate with the document's technical depth and regulatory focus.",
+    "model": "solar-pro",
+    "prompt_chars": 17966,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task42_User11_seed1",
+    "stage": "search",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on cross-border data transfer regulations (PIPL, CPRA, CAC exemptions) and compliance requirements, emphasizing thresholds, exemptions, and reporting timelines. Candidate A, as a marketing manager in a foreign enterprise, would prioritize understanding these regulations for operational compliance, risk mitigation, and cross-border business strategy. The document\u2019s framing aligns with A\u2019s role in managing data flows, legal adherence, and balancing practical business needs\u2014reflected in A\u2019s pragmatic decision-making, focus on cost-effectiveness, and responsibility for international operations. Candidate B, an algorithm engineer, would likely prioritize technical implementation over regulatory thresholds and exemptions, making the document less central to their role.",
+    "model": "solar-pro",
+    "prompt_chars": 20050,
+    "latency_sec": 1.78,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task42_User11_seed1",
+    "stage": "compress",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User11",
+    "correct": true,
+    "reasoning": "The document focuses on legal frameworks (PIPL, GDPR, CPRA) governing generative AI, emphasizing technical compliance requirements for data classification, processing bases, and consent mechanisms. Candidate A, an algorithm engineer with a strong technical background in AI and recommendation systems, aligns with this content's focus on data handling, legal compliance, and technical implementation. Candidate B, a marketing manager, would prioritize business applications and market trends over granular legal/technical details, making the document less relevant to their role. The document's vocabulary (e.g., 'explicit consent,' 'special category data,' 'watermarking') reflects Candidate A's technical expertise and professional needs.",
+    "model": "solar-pro",
+    "prompt_chars": 22543,
+    "latency_sec": 1.77,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task42_User11_seed1",
+    "stage": "write",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User11",
+    "correct": true,
+    "reasoning": "The document focuses on technical compliance for AI agents across jurisdictions, emphasizing data classification, legal frameworks (PIPL, GDPR, CCPA), and technical solutions (vector databases, model fine-tuning, differential privacy). Candidate A, an algorithm engineer with a background in AI and recommendation systems, aligns with the document's technical depth, vocabulary (e.g., 'LoRA weights,' 'HNSW graph indexes'), and priorities (data compliance, algorithmic transparency). Candidate B, a marketing manager, lacks the technical expertise and focus on infrastructure/legal compliance evident in the text. The document\u2019s framing reflects a developer\u2019s perspective, not a business-oriented user.",
+    "model": "solar-pro",
+    "prompt_chars": 24554,
+    "latency_sec": 1.69,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

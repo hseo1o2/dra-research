@@ -1,0 +1,90 @@
+[
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User19",
+      "User21"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User21",
+      "User9"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "Candidate C (Zhao Li) is a 22-25-year-old female in Product Operations at an internet company in Beijing, with an Advertising (New Media Communication) background and a Psychology minor\u2014directly matching the document's author profile. The document's focus on post-graduate options (MBA, Data Analytics, etc.) aligns with her early-career stage, while its emphasis on balancing work/study, ROI, and Beijing-based tech industry relevance reflects her urban, career-driven lifestyle. Candidate A (supply chain manager, Chengdu) and B (entrepreneur, Shanghai) differ significantly in age, occupation, and geographic focus, making C the only suitable match.",
+    "model": "solar-pro",
+    "prompt_chars": 23462,
+    "latency_sec": 1.73
+  },
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User19",
+      "User21"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User21",
+      "User9"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on MBA program requirements (work experience, tuition, language), dual degrees (Tsinghua-Columbia, Georgia Tech), and certifications (SQL, PMP, NPDP) relevant to tech/product operations roles. Candidate C, a 22-25-year-old Product Operations professional in Beijing, aligns best: (1) Her role in an internet company matches the document's emphasis on tech certifications (SQL, PMP) and Beijing-based job contexts (ByteDance, TikTok). (2) Her age and early-career stage fit the MBA program requirements (2+ years work experience). (3) Her interest in sustainable living and eco-friendly consumption mirrors the document's non-STEM program mentions (MSBA, OMS Analytics) and her focus on certifications aligns with the document's emphasis on professional credentials. Candidates A (supply chain manager) and B (entrepreneur) lack the direct tech/product operations focus and younger profile relevant to the document's MBA/analytics program context.",
+    "model": "solar-pro",
+    "prompt_chars": 24745,
+    "latency_sec": 2.15
+  },
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User19",
+      "User21"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User21",
+      "User19"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User21",
+    "correct": false,
+    "reasoning": "The document focuses on MBA program details (work experience requirements, tuition fees, dual-degree options) with a strong emphasis on Chinese institutions (Tsinghua, PKU, CEIBS) and international collaborations (Cornell-Tsinghua). Candidate B, an entrepreneur with an MBA from Fudan University, aligns best: his background in economics, business acumen, and interest in leadership/sustainability match the document's framing. His quarterly international travel for business and focus on high-end education/tuition align with the MBA program specifics. Candidate A (young creative professional) and C (supply chain manager) lack the executive-level educational focus and international business context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 27238,
+    "latency_sec": 1.72
+  },
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User19",
+      "User21"
+    ],
+    "shuffled_order": [
+      "User21",
+      "User19",
+      "User9"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on post-graduate education strategies for an early-career (22\u201325 years old) Product Operations professional in Beijing with an Advertising/Psychology background, aligning perfectly with Candidate C's profile. The content emphasizes bridging qualitative skills with quantitative rigor (SQL, Python) and strategic frameworks\u2014mirroring C's educational background and career stage. The document's framing (e.g., CSCSE eligibility, Beijing Hukou considerations, and recommendations for MSBA/MBA certifications) directly addresses the needs of a young professional seeking rapid advancement in Beijing's tech sector, as described in C's profile. Candidates A (40\u201345, entrepreneur) and B (35\u201340, supply chain manager) are mismatched due to age, experience, and industry focus.",
+    "model": "solar-pro",
+    "prompt_chars": 29249,
+    "latency_sec": 2.07
+  }
+]

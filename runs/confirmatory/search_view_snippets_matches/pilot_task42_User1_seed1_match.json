@@ -1,0 +1,27 @@
+[
+  {
+    "run_id": "pilot_task42_User1_seed1",
+    "stage": "search",
+    "gt_userid": "User1",
+    "candidate_userids": [
+      "User11",
+      "User18",
+      "User1"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User11",
+      "User1"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "The document focuses on legal and regulatory aspects of data privacy (PIPL, cybersecurity reporting, AI regulations) with technical framing (e.g., 'granular consent,' 'algorithm filing,' 'incident reporting timelines'). Candidate B, an algorithm engineer with AI/legal compliance relevance, aligns best: his technical background (AI/algorithms), professional focus on data systems, and interest in regulatory applications (evident in his article preferences about AI in social fields) match the document's priorities. Candidate A (data analyst) lacks the AI/legal angle, while Candidate C (student) lacks professional regulatory context.",
+    "model": "solar-pro",
+    "prompt_chars": 26223,
+    "latency_sec": 1.53,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "snippets"
+  }
+]

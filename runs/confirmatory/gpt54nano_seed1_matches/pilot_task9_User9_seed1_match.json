@@ -1,0 +1,118 @@
+[
+  {
+    "run_id": "pilot_task9_User9_seed1",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User9",
+      "User11"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The brief is written in a first-person, career-transition planning style and emphasizes user behavior analysis, psychology, and actionable, structured research deliverables (skill gap analysis, hands-on portfolio projects, networking strategy). That framing aligns closely with Zhao Li\u2019s background in New Media Communication + Psychology and her product-operations orientation, rather than a purely technical algorithm engineer (C) or an AI entrepreneur with a CS/AI-heavy profile (A).",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 25720,
+    "latency_sec": 1.49,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4749,
+    "output_tokens": 111,
+    "total_tokens": 4860,
+    "api_response_id": "chatcmpl-E8pojwRZeZnsAlMANugOR4HyIPDDG"
+  },
+  {
+    "run_id": "pilot_task9_User9_seed1",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User11",
+      "User9"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": false,
+    "reasoning": "The excerpt is framed around AI product management deliverables (PRD templates, hallucination/mitigation, evaluation metrics, RAG) and references Beijing hiring/startup ecosystems\u2014topics that align with an AI entrepreneur/technical lead who actively tracks AI industry trends and productization. Candidate A\u2019s background (CS/AI papers, startup founder, high-frequency AI/PM content consumption, Beijing location) best matches the document\u2019s practical, product-focused GenAI framing.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 26954,
+    "latency_sec": 1.35,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5136,
+    "output_tokens": 116,
+    "total_tokens": 5252,
+    "api_response_id": "chatcmpl-E8poln9424pVm1y6jlYjwve6cU0oa"
+  },
+  {
+    "run_id": "pilot_task9_User9_seed1",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User12",
+      "User9"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "The excerpt is a highly technical, engineering-oriented AI Product Manager skill-gap and portfolio blueprint, emphasizing LLM fundamentals, RAG architecture, evaluation metrics (RAGAS/DeepEval/G-Eval), and prompt/model failure modes. This aligns best with Candidate A\u2019s algorithm-engineer background, deep interest in AI/tech forums and code-centric learning, and preference for logical, data-driven skill mapping rather than entrepreneurship or creative/ops framing.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 29504,
+    "latency_sec": 1.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5737,
+    "output_tokens": 112,
+    "total_tokens": 5849,
+    "api_response_id": "chatcmpl-E8pombjhiEuvjQjGboKB8gAfq3FdC"
+  },
+  {
+    "run_id": "pilot_task9_User9_seed1",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User11",
+      "User12"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "The excerpt is written like a technical career-transition guide for someone moving into AI product management, emphasizing LLM fundamentals, RAG architectures, evaluation pipelines, and quantitative thresholds (e.g., similarity score cutoffs, HITL workflows). That framing aligns best with Candidate B\u2019s background as an algorithm engineer and his preference for logical, data-driven learning and technical forums, rather than Candidate A\u2019s more communication/psychology-leaning profile or Candidate C\u2019s entrepreneur/leadership angle.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 31515,
+    "latency_sec": 1.92,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5885,
+    "output_tokens": 120,
+    "total_tokens": 6005,
+    "api_response_id": "chatcmpl-E8pooBGopMmzCb0RlrnkjbnmY1CB1"
+  }
+]

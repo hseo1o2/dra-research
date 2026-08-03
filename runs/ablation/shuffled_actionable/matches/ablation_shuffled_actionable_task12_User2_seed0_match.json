@@ -1,0 +1,118 @@
+[
+  {
+    "run_id": "ablation_shuffled_actionable_task12_User2_seed0",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User5",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "Candidate C is a graduate student in Clinical Psychology (matching the document's author profile), with an academic background in psychology, a focus on evidence-based emotional regulation (e.g., DBT, ACT), and habits like structured journaling, time management tools (Trello), and mindfulness. The document's emphasis on scientific rigor, depth over pop psychology, and practical strategies aligns with C's psychology-focused learning apps, cloud-stored study notes, and rational consumption of academic resources. Candidates A (advertising/psychology minor) and B (mechanical engineering) lack the clinical psychology specialization and depth required for the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 23120,
+    "latency_sec": 2.28,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 4906,
+    "output_tokens": 151,
+    "total_tokens": 5057,
+    "api_response_id": "eb473974-7274-4d1d-a7d1-0c90b2704889"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task12_User2_seed0",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User9",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on evidence-based emotional regulation techniques (Unified Protocol, ACT, DBT), academic courses (Coursera/edX), and clinical psychology tools (thought records, emotional tracking apps). Candidate C, a Clinical Psychology graduate student, aligns perfectly with this content: her education, online habits (Coursera/Zhihu Psychology), consumption of psychology articles, and use of emotional tracking tools (e.g., How We Feel app) directly match the document's focus. Candidates A (Mechanical Engineering) and B (Product Operations) lack the clinical psychology background and specific interest in therapeutic protocols evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24919,
+    "latency_sec": 1.64,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5405,
+    "output_tokens": 152,
+    "total_tokens": 5557,
+    "api_response_id": "f1c1a901-c96b-477c-b561-035f712a7f15"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task12_User2_seed0",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User2",
+      "User9"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on evidence-based psychological workbooks (e.g., Unified Protocol, ACT, DBT, MBCT, CBT, MSC) with academic and clinical relevance, reflecting a graduate-level psychology student's needs. Candidate B is a Clinical Psychology graduate student who actively engages with psychology resources, shares psychological content online, and prioritizes academic rigor. Her interests in emotional communication, time management, and self-compassion align with the document's emphasis on therapeutic frameworks. Candidates A (Mechanical Engineering) and C (Product Operations) lack the domain-specific focus on clinical psychology modalities central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 27412,
+    "latency_sec": 1.72,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6161,
+    "output_tokens": 142,
+    "total_tokens": 6303,
+    "api_response_id": "e776ca0f-b6fb-491c-bf0a-71dae6118b81"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task12_User2_seed0",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User9",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document is a 6-month guide for Clinical Psychology Graduate Students, focusing on evidence-based emotional regulation and self-awareness through clinical methodologies (CBT, ACT, DBT, etc.). Candidate C is explicitly a Clinical Psychology graduate student with a background in psychology, aligning perfectly with the document's academic and clinical focus. The guide's emphasis on theoretical fidelity, empirical grounding, and self-practice tools directly matches Candidate C's educational goals, research habits (e.g., using Coursera/Zhihu for psychology), and interest in emotional communication. Candidates A (Mechanical Engineering) and B (Product Operations) lack the clinical psychology context and depth required to engage with the document's specialized content.",
+    "model": "solar-pro",
+    "prompt_chars": 29423,
+    "latency_sec": 1.84,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6464,
+    "output_tokens": 163,
+    "total_tokens": 6627,
+    "api_response_id": "0a349033-74df-41a8-a366-bb9f94665236"
+  }
+]

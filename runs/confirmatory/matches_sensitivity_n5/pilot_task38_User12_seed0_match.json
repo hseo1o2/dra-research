@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task38_User12_seed0",
+    "stage": "plan",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User22",
+      "User10",
+      "User20",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User8",
+      "User10",
+      "User20",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on purchasing a second-hand home in Beijing for a 5-person multi-generational family, emphasizing school districts, subway proximity, and financial planning. Candidate A (Zhang Yu) is a 30-35-year-old AI entrepreneur in Haidian District, Beijing, living with his wife, 5-year-old daughter, and parents. His profile aligns with the document's priorities: (1) Haidian/Chaoyang districts, (2) multi-generational family needs (5-person household), (3) school district urgency (daughter entering primary school), (4) data-driven decision-making (AI background), and (5) financial planning expertise (tech entrepreneur with investment experience). Other candidates lack the specific Beijing residency, family structure, or urgency around school districts.",
+    "model": "solar-pro",
+    "prompt_chars": 41041,
+    "latency_sec": 2.12,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task38_User12_seed0",
+    "stage": "search",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User22",
+      "User10",
+      "User20",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User12",
+      "User22",
+      "User20",
+      "User8"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on real estate queries in Haidian District, Beijing, emphasizing factors like school districts, property prices, and proximity to subways\u2014key priorities for a family-oriented professional living in Haidian. Candidate B, an AI entrepreneur based in Haidian with a 5-year-old daughter, aligns perfectly. His profile highlights family needs (school districts), tech-savvy preferences (smart home devices), and practical considerations (cost-effectiveness, eco-friendly products) that match the document's framing. Other candidates either reside outside Beijing (A, C, D, E) or lack the specific family and location context (e.g., Candidate A in Shanghai, Candidate C in Suzhou).",
+    "model": "solar-pro",
+    "prompt_chars": 41263,
+    "latency_sec": 2.13,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task38_User12_seed0",
+    "stage": "compress",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User22",
+      "User10",
+      "User20",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User22",
+      "User8",
+      "User10",
+      "User20"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on real estate queries and detailed property analyses in Beijing's Haidian and Chaoyang districts, emphasizing school districts, pricing, and family-friendly amenities. Candidate A, a Haidian-based AI entrepreneur with a 5-year-old daughter, aligns perfectly: his family needs (school districts, 3-bedroom apartments), financial capacity (600\u4e07 budget), and location preference (Haidian) match the document's focus. The report's emphasis on educational facilities (e.g., Yuxin School) and suburban mobility (e.g., metro access) reflects his priorities as a parent balancing work and family. Other candidates (B, C, D, E) either reside outside Beijing, lack children requiring school districts, or have different financial/occupational contexts that don't prioritize Beijing's real estate market as directly.",
+    "model": "solar-pro",
+    "prompt_chars": 45439,
+    "latency_sec": 2.3,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task38_User12_seed0",
+    "stage": "write",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User22",
+      "User10",
+      "User20",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User8",
+      "User12",
+      "User10",
+      "User20"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on Beijing's real estate market, specifically targeting families (5-person households) seeking homes within a 6 million CNY budget, prioritizing school districts, multi-generational living, and practical financial planning. Candidate C, a 30-35-year-old AI entrepreneur in Haidian District, Beijing, with a 5-year-old daughter and parents living together, aligns perfectly. His profile emphasizes family needs (multi-generational living, education), financial stability (tech entrepreneur with assets), and Beijing-specific context (Haidian residence, school district awareness). The document's technical depth on housing metrics, tax policies, and school zoning matches his pragmatic, data-driven decision-making style and focus on quality-of-life investments for his family.",
+    "model": "solar-pro",
+    "prompt_chars": 47450,
+    "latency_sec": 2.51,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task4_User19_seed0",
+    "stage": "plan",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The brief is explicitly tailored to a 35\u201340-year-old Supply Chain Manager in Chengdu with a bachelor\u2019s in Logistics Management from Southwest Jiaotong University, married with a 6-year-old daughter\u2014matching Candidate C\u2019s profile exactly. The requested topics (MBA/EMBA vs specialized supply chain/data analytics programs, ROI, balancing work and family, and supply-chain employer recognition) align with Candidate C\u2019s career domain and practical, efficiency-focused framing.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 25006,
+    "latency_sec": 1.54,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task4_User19_seed0",
+    "stage": "search",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User19",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The queries focus on MBA/EMBA tuition and admissions details for specific programs in Chengdu (Sichuan University, UESTC) and include supply-chain/operations framing. Candidate B is a supply chain manager based in Chengdu, making him the most likely audience for program cost/admissions comparisons in that region and domain.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 25999,
+    "latency_sec": 1.28,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task4_User19_seed0",
+    "stage": "compress",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The excerpt focuses on MBA/EMBA tuition and program structure for universities in Southwest China (Chengdu), with repeated emphasis on supply chain/logistics themes (e.g., UESTC-Webster supply chain focus, SWJTU logistics). Candidate C is a Chengdu-based supply chain manager whose background and interests align with logistics/supply-chain framing and practical decision-making about education options and costs.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 28635,
+    "latency_sec": 1.37,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task4_User19_seed0",
+    "stage": "write",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The excerpt is explicitly tailored to a 35\u201340-year-old Chengdu-based supply chain manager with an undergraduate degree in Logistics Management from Southwest Jiaotong University, married with a 6-year-old child entering primary school\u2014matching Candidate B\u2019s profile almost point-for-point. The report\u2019s focus on supply chain/SCM education options, ROI, employer recognition, and weekend/bi-weekly time-blocking aligns with B\u2019s pragmatic, work-and-family constrained decision style and Chengdu residence.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 30646,
+    "latency_sec": 1.5,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

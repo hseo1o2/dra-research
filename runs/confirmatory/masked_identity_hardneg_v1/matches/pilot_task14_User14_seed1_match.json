@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User13",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "The document emphasizes a beginner's marathon training plan with a focus on adaptability, injury prevention, and integration with existing habits (yoga, hiking). Candidate A's profile aligns most closely: they are a creative professional (copywriter) with a structured but flexible routine, existing exercise habits (running, cycling, yoga), and a preference for gradual, sustainable progress. The document's emphasis on balancing training with creative interests (e.g., time management, stress relief) mirrors Candidate A's traits\u2014cheerful, creative, and prone to anxiety under pressure. Additionally, the mention of city parks and residential roads as training locations aligns with Candidate A's frequent visits to Shanghai's botanical gardens and parks for inspiration. Candidates B and C, while also health-conscious, prioritize business/artistic commitments over personal fitness adaptation, making them less central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 24005,
+    "latency_sec": 2.47,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "The document focuses on marathon training strategies, run/walk ratios, air quality considerations, and route planning\u2014topics aligning with Candidate B's exercise habits (running, cycling) and goals (stress relief, endurance). Unlike Candidate A (yoga/walking) or C (yoga/Pilates), B explicitly mentions running and cycling as primary exercises, with a recent interest in marathon-related activities. The document's practical, goal-oriented tone (e.g., pacing, AQI thresholds) matches B's structured approach to fitness and creative problem-solving, while the emphasis on urban routes (e.g., West Bund) aligns with B's Shanghai-based lifestyle and exploration of cityscapes during exercise.",
+    "model": "solar-pro",
+    "prompt_chars": 25589,
+    "latency_sec": 1.8,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User20"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "The document focuses on a 12-week beginner marathon training plan emphasizing structured progression, injury prevention, and balanced exercise routines (yoga/Pilates). Candidate C, a copywriter with a strong interest in creative writing and literature, aligns best due to his recent adoption of structured routines (early rising, meditation, and exercise) and his exercise preferences (running, cycling, yoga) that mirror the document's emphasis on balanced fitness. Unlike Candidates A (illustrator focused on art) and B (caf\u00e9 owner focused on coffee culture), Candidate C's documented interest in endurance activities, stress relief through exercise, and time-management aligns with the training plan's practical, goal-oriented framing. His adoption of morning routines and use of fitness trackers also reflect the plan's methodical approach.",
+    "model": "solar-pro",
+    "prompt_chars": 29044,
+    "latency_sec": 2.01,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document emphasizes a 12-week beginner marathon training plan tailored for someone in Shanghai, integrating yoga, Pilates, and hiking while prioritizing injury prevention. Candidate A, a caf\u00e9 owner in Shanghai, practices yoga 2-3 times weekly, hikes, and values health and sustainability. The plan's focus on balancing physical adaptation with creative energy aligns with her artistic, meticulous personality and her need to maintain a healthy physique. Additionally, the mention of pets (e.g., 'Cat companionship' in the Monday routine) matches her ownership of cats, which are central to her caf\u00e9's appeal. Candidates B and C, while active, lack the specific urban Shanghai context, family/pet integration, and holistic lifestyle balance highlighted in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 31055,
+    "latency_sec": 1.79,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

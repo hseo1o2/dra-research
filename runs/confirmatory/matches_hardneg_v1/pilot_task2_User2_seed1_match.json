@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task2_User2_seed1",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User1",
+      "User7",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document is authored by a Clinical Psychology graduate student in Beijing seeking a cost-effective overseas exchange program. Candidate C is the only Clinical Psychology graduate student (matching the academic focus), shares the same Beijing location, and emphasizes budget-conscious planning (aligning with her rational consumption habits). The document's focus on credit transfer, clinical research opportunities, and cultural adaptation directly reflects Candidate C's academic background, interest in psychology resources, and documented preference for practical value in expenses. Candidates A (Computer Science) and B (New Media) lack the clinical psychology specialization and specific priorities outlined in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24940,
+    "latency_sec": 1.49,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User2_seed1",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on clinical psychology, graduate student visas (J-1), tuition fees, and credit transfers\u2014topics directly relevant to Candidate A, a clinical psychology master's student in Beijing. Her profile emphasizes academic rigor, international exchange interests (e.g., Peking University proximity), and practical concerns like costs and visa restrictions. Candidate B (new media) and C (computer science) lack the clinical psychology focus and institutional context (e.g., Beijing-based psychology programs) central to the document. Candidate A\u2019s research-oriented background and geographic ties to institutions mentioned (e.g., Peking University) make her the most likely audience.",
+    "model": "solar-pro",
+    "prompt_chars": 25474,
+    "latency_sec": 2.05,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User2_seed1",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User1",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on clinical psychology restrictions, visa regulations, and academic logistics for international graduate students in psychology. Candidate C is a graduate student in Clinical Psychology with a strong academic background in psychology, aligning directly with the document's technical focus on clinical practice limitations (e.g., HIPAA, NHS, BIG Approbation) and research logistics. The document's framing\u2014detailing visa categories, tuition structures, and institutional barriers\u2014reflects the practical concerns of a psychology graduate student seeking international research opportunities, matching Candidate C's profile. Candidates A (new media research) and B (computer science) lack the domain-specific relevance to clinical psychology and international academic mobility discussed in the text.",
+    "model": "solar-pro",
+    "prompt_chars": 27967,
+    "latency_sec": 1.64,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task2_User2_seed1",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on clinical psychology graduate students in China seeking overseas exchange opportunities, emphasizing academic integration, clinical research limitations, and practical logistics. Candidate A is a clinical psychology graduate student with a strong academic focus, interest in psychology resources, and alignment with the document's emphasis on structured learning, credit transfer, and cultural adaptation. Candidates B (new media) and C (computer science) lack the direct academic and professional relevance to clinical psychology exchanges described in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29978,
+    "latency_sec": 1.36,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

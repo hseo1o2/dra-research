@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User19",
+      "User21"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User21",
+      "User19"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document's focus on post-graduate education options for a 22-25-year-old female in Product Operations with an Advertising/Psychology background aligns perfectly with Candidate A's profile. The emphasis on balancing work/study, career competitiveness in tech, and domestic/international program comparisons reflects her early-career stage, Beijing location, and interest in data analytics/management. Candidate B (40-45, entrepreneur) and C (35-40, supply chain manager) have different career stages, educational needs, and industry focuses (entrepreneurship/logistics) that don't match the document's framing for a young professional in internet product operations.",
+    "model": "solar-pro",
+    "prompt_chars": 23462,
+    "latency_sec": 1.72,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User19",
+      "User21"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User9",
+      "User21"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on MBA program requirements (work experience, tuition, dual degrees) and certifications relevant to tech/product roles, particularly in Beijing. Candidate B, a Product Operations professional in Beijing, aligns with the document's emphasis on non-STEM programs (e.g., MSBA), work experience requirements (2+ years), and certifications (SQL, PMP) mentioned in queries. Her role in an internet company and interest in certifications (e.g., SQL) directly connect to the document's focus on tech-sector credentials. Candidates A (supply chain) and C (entrepreneur) lack the document's specific focus on Beijing-based tech/product operations or dual-degree MBA programs.",
+    "model": "solar-pro",
+    "prompt_chars": 24745,
+    "latency_sec": 2.19,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User19",
+      "User21"
+    ],
+    "shuffled_order": [
+      "User21",
+      "User19",
+      "User9"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User21",
+    "correct": false,
+    "reasoning": "The document focuses on MBA program details (tuition, work experience requirements, dual-degree options) for top Chinese and international institutions, reflecting the priorities of a seasoned professional seeking advanced business education. Candidate A, an entrepreneur with an existing MBA, aligns best: his background in economics, business acumen, and interest in leadership/management content match the document's framing. His frequent business travel, high-end consumption habits, and focus on sustainability also align with the international and premium MBA programs described. Candidates B (supply chain manager) and C (young operations professional) lack A's entrepreneurial experience and established career stage, making the document less relevant to their immediate needs.",
+    "model": "solar-pro",
+    "prompt_chars": 27238,
+    "latency_sec": 121.42,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User19",
+      "User21"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User21",
+      "User9"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on post-graduate education and career advancement for an early-career (22\u201325 years old) internet product operations professional in Beijing with an Advertising (New Media Communication) background and a Psychology minor. Candidate C matches this profile exactly: she is 22\u201325, works in Product Operations at an internet company in Beijing, and has the same educational background (Advertising with a Psychology minor). The document\u2019s emphasis on transitioning to roles like Data Product Manager aligns with Candidate C\u2019s career stage and goals, while Candidates A (Supply Chain Manager in Chengdu) and B (Entrepreneur in Shanghai) are mismatched in age, occupation, location, and educational background.",
+    "model": "solar-pro",
+    "prompt_chars": 29249,
+    "latency_sec": 2.2,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task48_User12_seed0",
+    "stage": "plan",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "Candidate A (Zhang Yu) is the best match. The document emphasizes a highly structured, research-driven 6-month art education plan for a 5-year-old, aligning with A's background as an AI entrepreneur with a master's in computer science who values data analysis, logical reasoning, and efficiency. The request for child development principles and flexible yet detailed activity plans mirrors A's systematic approach to work and family life. Additionally, the focus on Beijing-based parent-child engagement fits A's residence in Haidian District, Beijing, and his habit of reading bedtime stories to his daughter. Unlike B (state-owned enterprise manager) and C (marketing manager), A's tech-oriented, goal-driven personality and emphasis on quality-of-life investments for his family make him the most likely author of this comprehensive, research-oriented request.",
+    "model": "solar-pro",
+    "prompt_chars": 25587,
+    "latency_sec": 2.15,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task48_User12_seed0",
+    "stage": "search",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User12",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on early childhood art education, developmental milestones, and multidisciplinary art programs for 5-year-olds. Candidate B, an AI entrepreneur with a 5-year-old daughter, aligns most closely due to his family-centric interests, emphasis on holistic child development (evident in his bedtime stories, pet care, and eco-friendly lifestyle), and engagement with creative content (e.g., Bilibili videos, science fiction). His tech-savvy background also resonates with the document's research-oriented framing, while his role as a father prioritizes educational and artistic growth for his daughter. Candidates A and C, though family-oriented, lack the direct focus on early childhood art or the same level of integration between professional and parenting interests.",
+    "model": "solar-pro",
+    "prompt_chars": 28032,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task48_User12_seed0",
+    "stage": "compress",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User12",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on early childhood development, art education, and cognitive/motor skill enhancement for 5-year-olds, aligning with Candidate B's role as an AI entrepreneur with a 5-year-old daughter. His tech-oriented background and interest in education (evidenced by reading bedtime stories, saving tech/education articles, and prioritizing family time) make him the most likely audience. The document's emphasis on structured yet creative learning (e.g., Orff Schulwerk, Laban analysis) matches his data-driven, solution-oriented mindset, while his family-centric values and recent interest in eco-friendly smart home devices suggest an appreciation for holistic child development. Candidates A (marketing manager) and C (state-owned enterprise manager) lack the same direct connection to early childhood education or tech-integrated learning frameworks.",
+    "model": "solar-pro",
+    "prompt_chars": 30525,
+    "latency_sec": 1.99,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task48_User12_seed0",
+    "stage": "write",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User12",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on a 6-month art education plan for 5-year-olds, emphasizing developmental psychology, multi-disciplinary art forms, and family involvement. Candidate A, a marketing manager with a 5-year-old son, prioritizes children's education, enrolls his children in extracurricular classes, and collaborates with his wife (a primary school teacher) on family matters. The document's emphasis on structured, research-backed activities aligns with A's pragmatic, goal-oriented personality and investment in quality education. Candidates B (AI entrepreneur) and C (state-owned enterprise manager) lack the same direct focus on early childhood education or the documented family dynamics centered around a 5-year-old's developmental needs.",
+    "model": "solar-pro",
+    "prompt_chars": 32536,
+    "latency_sec": 1.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

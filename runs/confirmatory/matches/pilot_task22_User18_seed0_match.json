@@ -1,0 +1,90 @@
+[
+  {
+    "run_id": "pilot_task22_User18_seed0",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User18",
+      "User15"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document explicitly describes a 25-30-year-old female data analyst in Shanghai with a statistics background, conservative risk appetite, and specific retirement planning needs. Candidate B (Liu Lu) matches all these attributes: same age, gender, occupation, educational background (statistics), and location. The document's focus on structured financial planning, risk mitigation, and data-driven strategies aligns with Candidate B's meticulous, logical personality and her career in data analysis. Candidates A (male illustrator) and C (freelance writer in Beijing) do not match the core demographic or professional context of the document.",
+    "model": "solar-pro",
+    "prompt_chars": 23090,
+    "latency_sec": 1.97
+  },
+  {
+    "run_id": "pilot_task22_User18_seed0",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User14",
+      "User15"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "Candidate A, a data analyst in Shanghai, aligns most closely with the document's focus on financial products (e.g., insurance, pensions, tax calculations) and regulatory changes. The document emphasizes quantitative analysis (e.g., interest rate adjustments, tax savings calculations), which matches A's statistical background and data-driven decision-making style. Additionally, A's practical consumption habits and interest in long-term value align with the document's focus on financial planning and cost-effectiveness. Candidates B (illustrator) and C (freelance writer) lack the financial/analytical focus central to the document's content.",
+    "model": "solar-pro",
+    "prompt_chars": 23585,
+    "latency_sec": 1.56
+  },
+  {
+    "run_id": "pilot_task22_User18_seed0",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User14",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on technical financial analysis (tax brackets, insurance regulations, yield comparisons) with a data-driven framing (e.g., net savings rate calculations, regulatory rate adjustments). Candidate C, a data analyst, aligns best: her profile emphasizes analytical rigor, quantitative decision-making, and interest in financial/technical content (saves articles on business analysis, uses data tools daily). Candidates A (writer) and B (illustrator) prioritize cultural/creative content, lacking the document's regulatory/taxation focus. C's rational consumption style and interest in sustainability also subtly align with the pension system's long-term planning aspects.",
+    "model": "solar-pro",
+    "prompt_chars": 27367,
+    "latency_sec": 1.6
+  },
+  {
+    "run_id": "pilot_task22_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User14",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document's content, vocabulary, and framing align precisely with Candidate C (Liu Lu), a 25-30-year-old female data analyst in Shanghai with a statistics background. The report emphasizes conservative risk preferences (low-risk fixed-income products, tax optimization), Shanghai-specific policies (delayed retirement, local medical resources), and quantitative modeling\u2014all directly matching Liu Lu's profile. The document's focus on structured financial planning, actuarial formulas, and lifecycle asset allocation reflects her logical, detail-oriented personality and career in data analysis. Candidates A (freelance writer) and B (freelance illustrator) lack the statistical background, risk-averse financial framing, and Shanghai-centric policy focus central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29378,
+    "latency_sec": 2.03
+  }
+]

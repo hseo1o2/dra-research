@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task2_User7_seed0",
+    "stage": "plan",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "Candidate C is a graduate student in new media technology and public opinion research with a journalism and communication background, directly aligning with the document's focus on interdisciplinary computational social science and new media. The document emphasizes data analysis tools, international exchange for research skill development, and academic networking\u2014all priorities reflected in Candidate C's profile. Vocabulary like 'public opinion research,' 'computational social science,' and 'credit transfer mechanisms' matches C's academic focus and practical goals, unlike A (clinical psychology) or B (environmental studies), whose interests and disciplinary framing are tangential to the document's core themes.",
+    "model": "solar-pro",
+    "prompt_chars": 23955,
+    "latency_sec": 1.5,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task2_User7_seed0",
+    "stage": "search",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User6",
+      "User2",
+      "User7"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on computational social science programs, visiting student opportunities, and academic collaborations at institutions like Annenberg, Columbia, UvA, and Oxford. Candidate C, a graduate student in new media and public opinion research, aligns most closely with this content due to their academic background in communication, interest in social issues, and engagement with computational tools (e.g., Python for research). Unlike Candidate A (environmental studies) or B (clinical psychology), Candidate C\u2019s focus on data analysis, social science, and institutional affiliations matches the document\u2019s emphasis on computational social science programs and academic mobility. Their preferences for cost-effective, sustainable products and interest in social issues further reflect the document\u2019s framing of research-oriented, interdisciplinary opportunities.",
+    "model": "solar-pro",
+    "prompt_chars": 25751,
+    "latency_sec": 1.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task2_User7_seed0",
+    "stage": "compress",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User6",
+      "User7",
+      "User2"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on computational social science, media analytics, and visiting graduate student/researcher programs in communication and journalism. Candidate B, a graduate student specializing in new media and public opinion research, aligns most closely with these themes. His academic background, interest in data analysis (Python), and content preferences (social issues, communication studies) directly match the document's technical framing and institutional focus. Candidates A (environmental studies) and C (clinical psychology) lack the disciplinary relevance to the document's computational social science and media analytics orientation.",
+    "model": "solar-pro",
+    "prompt_chars": 28244,
+    "latency_sec": 1.45,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task2_User7_seed0",
+    "stage": "write",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on computational communication research, digital media studies, and technical proficiency in data analysis\u2014aligning with Candidate C's background in Journalism/Communication and Python skills. The emphasis on academic tracks (e.g., PhD admissions, lab networks) and technical methods (e.g., Python pipelines, network analysis) matches C's graduate specialization in new media and public opinion research. Candidate A (Clinical Psychology) and B (Environmental Studies) lack the domain-specific alignment with the document's computational communication focus, vocabulary, and career framing (e.g., academia vs. tech track).",
+    "model": "solar-pro",
+    "prompt_chars": 30255,
+    "latency_sec": 1.93,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

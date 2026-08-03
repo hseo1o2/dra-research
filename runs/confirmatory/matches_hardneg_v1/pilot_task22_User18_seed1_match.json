@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task22_User18_seed1",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document aligns most closely with Candidate B (Liu Lu), a 25-30-year-old female data analyst in Shanghai with a statistics background, conservative risk profile, and strong financial foundation. Key matches include: (1) Shared demographics (age, gender, occupation, location) and financial status (debt-free, conservative investments); (2) Document's focus on multi-pillar retirement planning (annuity, medical, care) mirrors B's meticulous, data-driven decision-making style and long-term planning habits; (3) Emphasis on Chinese/Shanghai market products aligns with B's local residence and preference for cost-effective, high-quality solutions; (4) Health considerations (e.g., lumbar discomfort from sitting) match B's exercise routines and health-conscious lifestyle. Candidate A (male investment manager) and C (married marketing manager with family focus) lack the document's specific risk profile and single-person retirement planning angle.",
+    "model": "solar-pro",
+    "prompt_chars": 24343,
+    "latency_sec": 2.59,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task22_User18_seed1",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User8",
+    "correct": false,
+    "reasoning": "Candidate A, an investment manager with a finance background, aligns most closely with the document's focus on Chinese pension policy, commercial annuity rates (2.5%), and retirement age reforms. The document emphasizes financial metrics (IRR benchmarks, pre-defined interest rates) and regulatory changes\u2014key concerns for investment professionals. Candidate A's frequent use of financial apps, interest in cost-effective investments, and habit of analyzing market data mirror the document's analytical tone and prioritization of financial planning. Candidates B (data analyst) and C (marketing manager) lack the same direct focus on pension policy or insurance product metrics, which are central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 24365,
+    "latency_sec": 2.17,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task22_User18_seed1",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on conservative financial planning, insurance products, and retirement strategies tailored for a young professional in Shanghai. Candidate C, a 25\u201330-year-old female data analyst, aligns perfectly with this content. Her profile highlights her practical, data-driven decision-making style, interest in long-term financial planning (e.g., certifications, career advancement), and preference for cost-effective, high-quality products. The document\u2019s emphasis on tax-deferred pensions, low-risk insurance products (e.g., 2.5% guaranteed rates), and health-focused coverage (e.g., outpatient care) mirrors her rational, detail-oriented approach to personal and professional growth. Candidates A and B, while financially aware, prioritize family-oriented spending (A) or high-risk investment trends (B), which are less central to the document\u2019s conservative, retirement-focused framing.",
+    "model": "solar-pro",
+    "prompt_chars": 28139,
+    "latency_sec": 2.0,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task22_User18_seed1",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document explicitly targets a 25\u201330-year-old female data analyst in Shanghai with a conservative risk appetite, statistical background, and specific financial profile (debt-free, owning assets, mutual fund experience). Candidate B matches all these attributes: female data analyst (25-30), Shanghai-based, statistics graduate, conservative (evidenced by her meticulous, data-driven personality), and financially disciplined (rational consumer, high savings habits). The document's focus on tax-deferred pensions, low-risk annuities, and long-term care aligns with her independent, future-oriented mindset and preference for structured planning. Candidates A (male marketing manager) and C (male investment manager) do not match the gender, occupation, or risk profile described.",
+    "model": "solar-pro",
+    "prompt_chars": 30150,
+    "latency_sec": 1.96,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

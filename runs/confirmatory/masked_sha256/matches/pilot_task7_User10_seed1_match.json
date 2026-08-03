@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task7_User10_seed1",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User19",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "Candidate C (Liu Lu) is a data analyst with a background in statistics and a focus on AI/education startups. The document emphasizes quantitative research, AI-powered tools, and data-driven strategies (e.g., 'step-by-step methodology combining quantitative/qualitative approaches,' 'platform functional architecture,' 'monetization models'). Candidate C\u2019s expertise in data analysis, tech stacks, and iterative product development aligns directly with the document\u2019s technical and analytical framing. Unlike Candidates A (supply chain) and B (marketing), C\u2019s profile reflects the document\u2019s focus on AI, user data, and scalable tech solutions for education.",
+    "model": "solar-pro",
+    "prompt_chars": 24876,
+    "latency_sec": 1.54,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task7_User10_seed1",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User19",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on EdTech metrics (CAC, unit economics, pricing models), AI tutor architectures, and campus ambassador programs\u2014topics aligned with Candidate C's role as a marketing manager in a foreign enterprise. Candidate C's MBA background, interest in market trends, and focus on cost-effectiveness and quality (evident in his consumption habits and decision-making style) directly align with the document's emphasis on benchmarks, pricing strategies, and scalable EdTech solutions. Unlike Candidates A (data analyst) and B (supply chain manager), Candidate C's marketing expertise and strategic focus on business growth make him the most likely audience for this document, which targets EdTech product positioning and investor priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 25918,
+    "latency_sec": 1.62,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task7_User10_seed1",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User19",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on EdTech market research, pricing sensitivity analysis, and higher education AI tools\u2014topics directly relevant to a data analyst (Candidate B) in an internet company. The technical depth (e.g., Van Westendorp/Gabor-Granger methods, sample size calculations, survey design) aligns with B's statistical background and data-driven decision-making style. Candidate A (supply chain) and C (marketing) lack the analytical focus on EdTech user behavior, pricing models, and quantitative research methods central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 28635,
+    "latency_sec": 1.46,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task7_User10_seed1",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User19",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on launching an AI-powered higher education startup, emphasizing rigorous research methodologies (quantitative surveys, qualitative workflow analysis), technical execution (model tuning, LMS integrations), and academic compliance. Candidate B, a data analyst with a statistics background, aligns most closely: her expertise in data analysis tools (Python, R, SQL), methodological rigor (survey design, statistical validation), and interest in pedagogical integrity (evident in her content preferences for data-driven case studies) directly mirror the document's technical and analytical framing. Unlike Candidates A (supply chain) and C (marketing), B's background in statistical research and data-driven decision-making is essential for interpreting the document's emphasis on price elasticity, sample size calculations, and workflow observation\u2014core elements of the strategic blueprint.",
+    "model": "solar-pro",
+    "prompt_chars": 30646,
+    "latency_sec": 1.91,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

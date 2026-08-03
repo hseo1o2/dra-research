@@ -1,0 +1,130 @@
+  ERROR: 
+/opt/anaconda3/lib/python3.13/asyncio/base_events.py:823: RuntimeWarning: coroutine 'ClientResponse.json' was never awaited
+  def call_soon(self, callback, *args, context=None):
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+  ERROR: 
+split=confirmatory  seed=1  model=google_genai:gemini-3.6-flash
+flex=yes  experiments=60
+output=runs/confirmatory
+
+[1/60] pilot_task2_User2_seed1  task=2 Education  gt=User2
+  OK  tokens=158069  elapsed=415.044s
+[2/60] pilot_task2_User6_seed1  task=2 Education  gt=User6
+  OK  tokens=198367  elapsed=521.309s
+[3/60] pilot_task2_User7_seed1  task=2 Education  gt=User7
+  OK  tokens=160294  elapsed=518.72s
+[4/60] pilot_task4_User9_seed1  task=4 Education  gt=User9
+  OK  tokens=166863  elapsed=358.47s
+[5/60] pilot_task4_User19_seed1  task=4 Education  gt=User19
+  OK  tokens=158332  elapsed=505.857s
+[6/60] pilot_task4_User21_seed1  task=4 Education  gt=User21
+  OK completeness_errors=['no successful search source for topics: topic_002, topic_003']  tokens=158710  elapsed=412.172s
+[7/60] pilot_task7_User19_seed1  task=7 Career  gt=User19
+  OK  tokens=157409  elapsed=398.031s
+[8/60] pilot_task7_User18_seed1  task=7 Career  gt=User18
+  OK completeness_errors=['no successful search source for topics: topic_003']  tokens=183418  elapsed=474.993s
+[9/60] pilot_task7_User10_seed1  task=7 Career  gt=User10
+  OK  tokens=169586  elapsed=397.157s
+[10/60] pilot_task9_User18_seed1  task=9 Career  gt=User18
+  OK  tokens=168225  elapsed=397.112s
+[11/60] pilot_task9_User9_seed1  task=9 Career  gt=User9
+  OK  tokens=171046  elapsed=394.362s
+[12/60] pilot_task9_User8_seed1  task=9 Career  gt=User8
+  OK  tokens=114900  elapsed=313.842s
+[13/60] pilot_task12_User9_seed1  task=12 Health  gt=User9
+  OK  tokens=136811  elapsed=325.23s
+[14/60] pilot_task12_User2_seed1  task=12 Health  gt=User2
+  OK  tokens=146923  elapsed=385.81s
+[15/60] pilot_task12_User5_seed1  task=12 Health  gt=User5
+  OK completeness_errors=['no successful search source for topics: topic_003']  tokens=139814  elapsed=378.861s
+[16/60] pilot_task14_User14_seed1  task=14 Health  gt=User14
+  OK  tokens=80120  elapsed=220.04s
+[17/60] pilot_task14_User3_seed1  task=14 Health  gt=User3
+  OK  tokens=128911  elapsed=309.769s
+[18/60] pilot_task14_User22_seed1  task=14 Health  gt=User22
+  OK  tokens=139953  elapsed=390.394s
+[19/60] pilot_task17_User16_seed1  task=17 Travel  gt=User16
+  OK  tokens=149389  elapsed=332.617s
+[20/60] pilot_task17_User10_seed1  task=17 Travel  gt=User10
+  OK completeness_errors=['no successful search source for topics: topic_002, topic_003']  tokens=164512  elapsed=385.401s
+[21/60] pilot_task17_User17_seed1  task=17 Travel  gt=User17
+  OK completeness_errors=['no successful search source for topics: topic_003, topic_004', 'compressed_research is not one-to-one with topics']  tokens=88606  elapsed=296.519s
+[22/60] pilot_task18_User10_seed1  task=18 Travel  gt=User10
+  OK  tokens=183299  elapsed=388.138s
+[23/60] pilot_task18_User22_seed1  task=18 Travel  gt=User22
+  OK completeness_errors=['no successful search source for topics: topic_002, topic_003, topic_004', 'compressed_research is not one-to-one with topics']  tokens=186445  elapsed=416.679s
+[24/60] pilot_task18_User19_seed1  task=18 Travel  gt=User19
+  OK completeness_errors=['no successful search source for topics: topic_002']  tokens=142043  elapsed=311.647s
+[25/60] pilot_task22_User15_seed1  task=22 Finance  gt=User15
+  OK  tokens=136468  elapsed=329.064s
+[26/60] pilot_task22_User18_seed1  task=22 Finance  gt=User18
+  OK  tokens=137981  elapsed=337.826s
+[27/60] pilot_task22_User14_seed1  task=22 Finance  gt=User14
+  OK  tokens=176870  elapsed=332.493s
+[28/60] pilot_task24_User13_seed1  task=24 Finance  gt=User13
+  OK completeness_errors=['no successful search source for topics: topic_003', 'final_report not captured successfully']  tokens=106416  elapsed=503.12s
+[29/60] pilot_task24_User17_seed1  task=24 Finance  gt=User17
+  OK  tokens=157670  elapsed=738.351s
+[30/60] pilot_task24_User12_seed1  task=24 Finance  gt=User12
+[31/60] pilot_task27_User14_seed1  task=27 Creative  gt=User14
+  OK completeness_errors=['no successful search source for topics: topic_003']  tokens=213832  elapsed=358.213s
+[32/60] pilot_task27_User13_seed1  task=27 Creative  gt=User13
+  OK  tokens=146185  elapsed=385.966s
+[33/60] pilot_task27_User2_seed1  task=27 Creative  gt=User2
+  OK  tokens=206434  elapsed=393.834s
+[34/60] pilot_task29_User18_seed1  task=29 Creative  gt=User18
+  OK  tokens=134394  elapsed=378.009s
+[35/60] pilot_task29_User13_seed1  task=29 Creative  gt=User13
+  OK  tokens=168873  elapsed=393.276s
+[36/60] pilot_task29_User10_seed1  task=29 Creative  gt=User10
+  OK  tokens=154417  elapsed=397.085s
+[37/60] pilot_task32_User13_seed1  task=32 Shopping  gt=User13
+  OK  tokens=192650  elapsed=410.442s
+[38/60] pilot_task32_User11_seed1  task=32 Shopping  gt=User11
+  OK  tokens=156073  elapsed=323.896s
+[39/60] pilot_task32_User18_seed1  task=32 Shopping  gt=User18
+  OK  tokens=176751  elapsed=387.88s
+[40/60] pilot_task33_User7_seed1  task=33 Shopping  gt=User7
+  OK  tokens=137540  elapsed=366.99s
+[41/60] pilot_task33_User13_seed1  task=33 Shopping  gt=User13
+  OK  tokens=180750  elapsed=373.445s
+[42/60] pilot_task33_User12_seed1  task=33 Shopping  gt=User12
+  OK completeness_errors=['no successful search source for topics: topic_002, topic_003']  tokens=201597  elapsed=381.341s
+[43/60] pilot_task37_User20_seed1  task=37 Real Estate  gt=User20
+  OK completeness_errors=['no successful search source for topics: topic_003']  tokens=164496  elapsed=403.267s
+[44/60] pilot_task37_User8_seed1  task=37 Real Estate  gt=User8
+  OK  tokens=124536  elapsed=287.011s
+[45/60] pilot_task37_User14_seed1  task=37 Real Estate  gt=User14
+  OK  tokens=92734  elapsed=226.53s
+[46/60] pilot_task38_User10_seed1  task=38 Real Estate  gt=User10
+  OK  tokens=143905  elapsed=280.56s
+[47/60] pilot_task38_User19_seed1  task=38 Real Estate  gt=User19
+  OK  tokens=196194  elapsed=316.726s
+[48/60] pilot_task38_User12_seed1  task=38 Real Estate  gt=User12
+  OK completeness_errors=['no successful search source for topics: topic_002, topic_003']  tokens=204897  elapsed=396.557s
+[49/60] pilot_task42_User11_seed1  task=42 Law  gt=User11
+  OK  tokens=250992  elapsed=404.729s
+[50/60] pilot_task42_User18_seed1  task=42 Law  gt=User18
+  OK  tokens=188746  elapsed=394.338s
+[51/60] pilot_task42_User1_seed1  task=42 Law  gt=User1
+  OK completeness_errors=['no successful search source for topics: topic_003, topic_004', 'compressed_research is not one-to-one with topics', 'final_report not captured successfully']  tokens=149637  elapsed=360.103s
+[52/60] pilot_task43_User11_seed1  task=43 Law  gt=User11
+  OK  tokens=133388  elapsed=310.42s
+[53/60] pilot_task43_User10_seed1  task=43 Law  gt=User10
+  OK  tokens=147136  elapsed=336.466s
+[54/60] pilot_task43_User18_seed1  task=43 Law  gt=User18
+  OK completeness_errors=['no successful search source for topics: topic_002', 'compressed_research is not one-to-one with topics']  tokens=45615  elapsed=194.101s
+[55/60] pilot_task47_User12_seed1  task=47 Parenting  gt=User12
+  OK  tokens=167006  elapsed=398.442s
+[56/60] pilot_task47_User17_seed1  task=47 Parenting  gt=User17
+  OK  tokens=123877  elapsed=290.474s
+[57/60] pilot_task47_User16_seed1  task=47 Parenting  gt=User16
+  OK  tokens=107470  elapsed=302.08s
+[58/60] pilot_task48_User10_seed1  task=48 Parenting  gt=User10
+[59/60] pilot_task48_User13_seed1  task=48 Parenting  gt=User13
+  OK  tokens=161469  elapsed=389.83s
+[60/60] pilot_task48_User12_seed1  task=48 Parenting  gt=User12
+  OK  tokens=132040  elapsed=305.189s
+
+Batch summary → runs/confirmatory/batch_confirmatory_seed1_summary.json
+schema_valid=58  skipped=0  failed=2

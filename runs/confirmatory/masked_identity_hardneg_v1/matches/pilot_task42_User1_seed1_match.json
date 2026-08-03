@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task42_User1_seed1",
+    "stage": "plan",
+    "gt_userid": "User1",
+    "candidate_userids": [
+      "User1",
+      "User4",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User4",
+      "User22",
+      "User1"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User1",
+    "correct": true,
+    "reasoning": "The document focuses on global AI agent compliance, data privacy laws (PIPL, CCPA/CPRA), and technical/legal strategies for a startup\u2014topics directly aligned with Candidate C's computer science background, AI research interests, and practical focus on compliance tools. Candidate C's technical vocabulary (e.g., 'data minimization,' 'DSARs') and prioritization of cost-effective solutions (budget constraints) mirror the document's framing. Candidate A (law student) lacks technical implementation focus, while Candidate B (manufacturing director) lacks AI-specific expertise. The document's emphasis on LLM provider agreements and server architecture also aligns with C's tech-oriented profile.",
+    "model": "solar-pro",
+    "prompt_chars": 25506,
+    "latency_sec": 1.98,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task42_User1_seed1",
+    "stage": "search",
+    "gt_userid": "User1",
+    "candidate_userids": [
+      "User1",
+      "User4",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User4",
+      "User1",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User1",
+    "correct": true,
+    "reasoning": "The document focuses on data privacy regulations (PIPL, GDPR, CCPA, EU AI Act) and technical compliance requirements (algorithm filing, incident reporting timelines). Candidate B, a computer science student specializing in AI and algorithms, aligns most closely with this content. His academic interests in AI, algorithm research, and technical compliance (evident in his article collection on AI technology and screenshots of code snippets) directly match the document's focus. Candidates A (law student) and C (manufacturing director) lack the specific technical and regulatory AI/algorithm context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 26596,
+    "latency_sec": 1.54,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task42_User1_seed1",
+    "stage": "compress",
+    "gt_userid": "User1",
+    "candidate_userids": [
+      "User1",
+      "User4",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User4",
+      "User1"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User4",
+    "correct": false,
+    "reasoning": "The document focuses on privacy regulations (GDPR, CCPA/CPRA, PIPL) and legal requirements for handling sensitive personal data, including consent mechanisms and automated decision-making. Candidate B, a law student specializing in civil/criminal law with a minor in psychology, aligns most closely with this content. Her academic focus, interest in legal systems, and documented behavior of collecting legal articles, case analyses, and screenshots of legal provisions directly mirror the document's legal and regulatory framing. Candidates A (manufacturing director) and C (computer science student) lack the legal expertise and content preferences central to the document's focus on privacy law compliance.",
+    "model": "solar-pro",
+    "prompt_chars": 29145,
+    "latency_sec": 2.1,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task42_User1_seed1",
+    "stage": "write",
+    "gt_userid": "User1",
+    "candidate_userids": [
+      "User1",
+      "User4",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User1",
+      "User4",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User4",
+    "correct": false,
+    "reasoning": "The document focuses on global privacy regulations (GDPR, CCPA/CPRA, PIPL) and their implications for AI agent data processing, emphasizing legal compliance, consent models, and breach notification timelines. Candidate B, a law student with a focus on civil/criminal law and minors in psychology, aligns most closely with this content. Her academic background, interest in legal systems, and behavioral traits (e.g., saving legal provisions, analyzing judicial reforms) reflect the document's regulatory and compliance-oriented framing. Candidates A (CS student) and C (manufacturing director) lack the legal expertise and regulatory focus central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 31156,
+    "latency_sec": 1.74,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

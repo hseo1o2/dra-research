@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task38_User19_seed1",
+    "stage": "plan",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User10",
+      "User19",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User12",
+      "User19"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": false,
+    "reasoning": "Candidate B (Zhang Yu) best matches the document's focus on Beijing's Chaoyang and Haidian districts, school district policies, and family-friendly amenities. As a Beijing-based AI entrepreneur with a 5-year-old daughter, his priorities align with the document's emphasis on school enrollment, property location near subway stations, and family/pet-friendly environments. His current residence in Haidian and familiarity with Beijing's real estate market further support this match. The document's detailed budgeting and transaction process also resonate with his financial acumen and tech-savvy background, which would value structured planning and risk prevention.",
+    "model": "solar-pro",
+    "prompt_chars": 26680,
+    "latency_sec": 1.5,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task38_User19_seed1",
+    "stage": "search",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User10",
+      "User19",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": false,
+    "reasoning": "The document focuses on Beijing-specific education policies (Haidian and Chaoyang districts) and housing-related financial regulations, which align with Candidate A's permanent residence in Haidian District, Beijing, and his family's direct relevance to these policies (5-year-old daughter). The content's technical framing (e.g., '1911' policy, mortgage ratios, green building incentives) matches A's background in data analysis, logical reasoning, and high engagement with Beijing's urban environment. Candidates B (Shanghai-based) and C (Chengdu-based) lack the geographic and familial context to prioritize these Beijing-centric policies.",
+    "model": "solar-pro",
+    "prompt_chars": 26329,
+    "latency_sec": 1.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task38_User19_seed1",
+    "stage": "compress",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User10",
+      "User19",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": false,
+    "reasoning": "The document focuses on Beijing's Haidian and Chaoyang districts, detailing school district policies (1911/630), property ownership requirements, and admission priorities for families with school-age children. Candidate A, a Haidian resident with a 5-year-old daughter, aligns perfectly with the document's emphasis on Beijing's education policies, property ownership (\u623f\u4ea7\u8bc1), and multi-school zoning (\u591a\u6821\u5212\u7247) concerns. His family structure (married with a young child, living with parents) and financial status (6M RMB budget for housing) directly mirror the document's target audience. Candidates B (Shanghai-based) and C (Chengdu-based) lack the geographic and demographic relevance to Beijing's specific policies discussed.",
+    "model": "solar-pro",
+    "prompt_chars": 30419,
+    "latency_sec": 1.88,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task38_User19_seed1",
+    "stage": "write",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User10",
+      "User19",
+      "User12"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User10",
+      "User12"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User12",
+    "correct": false,
+    "reasoning": "Candidate C, an AI entrepreneur in Beijing's Haidian District, aligns most closely with the document's focus on Haidian's school policies, tech-adjacent business districts (Zhongguancun), and family needs (pet-friendly green spaces, 5-year-old child). The document's technical framing (e.g., tax calculations, policy cutoffs) matches C's data-driven decision-making style, while its emphasis on Beijing-specific logistics reflects C's permanent residence and local expertise. Candidates A (Chengdu-based) and B (Shanghai-based) lack the Beijing-centric spatial and policy context critical to the report.",
+    "model": "solar-pro",
+    "prompt_chars": 32430,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

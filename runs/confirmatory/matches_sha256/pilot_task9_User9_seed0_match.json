@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task9_User9_seed0",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User18",
+      "User9",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User9",
+      "User8"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document is authored by Zhao Li, a 22-25-year-old Product Operations specialist transitioning to an AI PM role, with a background in Advertising/New Media Communication and Psychology. Candidate B matches this identity exactly, including age, occupation, educational background, and career goals. The document's focus on skill gaps (e.g., LLM fundamentals, AI UX design), hands-on projects (e.g., AI-assisted content tools), and Beijing-based networking aligns with Candidate B's creative, user-centric profile, social media habits, and interest in technology/fashion. The framing reflects her personality traits (creative, outgoing) and preferences (vegetarianism, sustainable living, detailed itineraries), which are absent in Candidates A (data analyst) and C (investment manager).",
+    "model": "solar-pro",
+    "prompt_chars": 21798,
+    "latency_sec": 2.06,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task9_User9_seed0",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User18",
+      "User9",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18",
+      "User9"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on AI Product Management (PM) skills, PRD templates, portfolio projects, and salary trends\u2014topics directly relevant to Candidate B, a data analyst transitioning to product/management roles. Candidate B's background in statistics, certifications in data science/project management, and interest in transitioning to product roles align with the document's emphasis on skill mapping, portfolio-building (e.g., no-code AI apps), and career roadmaps. Unlike Candidate A (an investment manager) or Candidate C (a product operations specialist), Candidate B's technical expertise, data-driven decision-making, and proactive career planning mirror the document's framing for aspiring AI PMs. The document's focus on probabilistic evaluation, low-code tools (Dify/Coze), and portfolio projects also resonates with her practical, research-oriented approach to skill development.",
+    "model": "solar-pro",
+    "prompt_chars": 23765,
+    "latency_sec": 1.87,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task9_User9_seed0",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User18",
+      "User9",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User8",
+      "User9"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on transitioning to an AI Product Manager role from backgrounds in Product Operations, Advertising, New Media, and Psychology\u2014directly aligning with Candidate C's current occupation (Product Operations) and educational background (Advertising/New Media + Psychology minor). The content emphasizes skill gaps in probabilistic systems, prompt engineering, and human-AI collaboration, which resonate with C's creative and user-centric tendencies (evident in her social media activity, design sensitivity, and interest in UX/UI topics). Candidates A (Data Analyst) and B (Investment Manager) lack the foundational overlap in content strategy, user psychology, and operational workflows central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 26335,
+    "latency_sec": 2.18,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task9_User9_seed0",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User18",
+      "User9",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on transitioning from Product Operations (with Advertising, New Media Communication, and Psychology backgrounds) to AI Product Management, emphasizing user psychology, qualitative analysis, and content strategy. Candidate A shares this exact background (Advertising/New Media/Psychology) and current role (Product Operations), aligning with the document's skill-mapping framework. The excerpt's emphasis on dynamic interaction design, habit loops, and creative content strategy also mirrors Candidate A's creative, social-media-oriented behavior and interest in aesthetics\u2014traits absent in the finance-focused Candidate B or data-centric Candidate C.",
+    "model": "solar-pro",
+    "prompt_chars": 28346,
+    "latency_sec": 1.57,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

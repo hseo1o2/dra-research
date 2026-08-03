@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task9_User8_seed1",
+    "stage": "plan",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User8",
+    "correct": true,
+    "reasoning": "Candidate B (Chen Hao) is a 26-30-year-old Investment Manager at a securities firm in Shanghai with a Finance background (211 university, CFA Level 1), mirroring the document's author profile. The document's focus on skill gaps (e.g., transitioning from finance to AI PM), project ideas (FinTech/AI), and networking strategies aligns with B's data-driven decision-making, CFA knowledge, and interest in AI/tech (e.g., using Keep, researching cat care online, and exploring second-hand platforms for tech goods). Candidate A (marketing manager) and C (data analyst) lack the financial-securities background and CFA credentials central to the document's framing. B's pragmatic, goal-oriented personality and focus on cost-effective skill development (e.g., self-learning, certifications) also match the document's actionable, research-backed tone.",
+    "model": "solar-pro",
+    "prompt_chars": 23894,
+    "latency_sec": 2.41,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task9_User8_seed1",
+    "stage": "search",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User8",
+    "correct": true,
+    "reasoning": "Candidate A, an investment manager transitioning to AI PM, aligns most closely with the document's focus on Shanghai's AI job market growth, salary trends, and skill requirements for AI PM roles. The document emphasizes financial analysis, market demand, and competency frameworks\u2014key priorities for Candidate A's career shift. Candidate B (data analyst) and C (marketing manager) lack A's direct financial background and explicit interest in AI PM transition pathways, making A the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 25354,
+    "latency_sec": 1.85,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task9_User8_seed1",
+    "stage": "compress",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User8",
+    "correct": true,
+    "reasoning": "The document focuses on the Shanghai AI Product Manager (AI PM) job market, emphasizing technical roles, salary trends, and specific companies in FinTech and AI startups. Candidate C, an Investment Manager at a securities company with a finance background, aligns most closely with the document's focus on financial institutions (e.g., Guotai Junan, Eastmoney) and AI/FinTech integration. His frequent use of financial apps (Xueqiu, Tonghuashun), interest in market analysis, and preference for data-driven decision-making mirror the document's emphasis on AI PM roles in finance. Candidates A (marketing manager) and B (data analyst) lack the direct financial industry and investment focus central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 28139,
+    "latency_sec": 2.19,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task9_User8_seed1",
+    "stage": "write",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User8",
+    "correct": true,
+    "reasoning": "The document focuses on transitioning from an Investment Manager role in finance to an AI Product Manager position, emphasizing quantitative analysis, CFA credentials, and Shanghai's tech/financial ecosystem. Candidate B is an Investment Manager at a securities firm in Shanghai with a finance background, CFA-relevant skills (quantitative modeling, financial analysis), and aligns with the document's target audience. Candidate A (marketing manager) and Candidate C (data analyst) lack the direct finance-to-AI PM transition context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30150,
+    "latency_sec": 1.53,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

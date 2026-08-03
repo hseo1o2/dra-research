@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task12_User5_seed0",
+    "stage": "plan",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User5",
+    "correct": true,
+    "reasoning": "The document explicitly states the author is a 'graduate student in mechanical automation' seeking a structured self-study plan for emotional management. Candidate C is the only profile matching this exact identity (Occupation: Graduate Student in Mechanical Automation). The document's analytical tone, focus on evidence-based strategies, and prioritization of cost-effectiveness align with C's detail-oriented, rational personality and mechanical engineering background. Additionally, the request for Chinese-language resources matches C's Shandong cultural context, while the emphasis on systematic planning reflects C's use of time management tools like Trello. Candidates A (advertising) and B (clinical psychology) lack the mechanical automation focus and analytical framing central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 22921,
+    "latency_sec": 1.77,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task12_User5_seed0",
+    "stage": "search",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "Candidate B, a Clinical Psychology graduate student, aligns most closely with the document's focus on psychology resources (e.g., 'Feeling Good', 'Mind Over Mood', emotion regulation models, and Coursera courses on well-being and positive psychology). The document's emphasis on mental health, emotional regulation, and academic/research-oriented content mirrors B's psychology background, coursework (Coursera/edX), and interest in sharing psychology-related content. Candidates A (advertising/psychology minor) and C (mechanical engineering) lack B's specialized focus on clinical psychology and emotion regulation theories, making B the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 24746,
+    "latency_sec": 1.66,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task12_User5_seed0",
+    "stage": "compress",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User5",
+      "User9"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "The document focuses on psychological therapies (CBT, DBT, MBCT, EQ) with structured, analytical frameworks\u2014mirroring Candidate A's background as a Clinical Psychology graduate student. Her profile emphasizes systematic learning (time management tools, academic resource downloads), rational consumption of psychology books, and interest in emotional communication. The document's engineering-like appeal (e.g., 'logical protocol,' 'systematic exercises,' 'algorithmic action rules') aligns with her analytical approach to mood regulation. Candidates B (Mechanical Engineering) and C (Product Operations) lack the same depth in psychological theory or therapeutic methodologies, making A the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 27412,
+    "latency_sec": 1.66,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task12_User5_seed0",
+    "stage": "write",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User5",
+      "User9"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User5",
+    "correct": true,
+    "reasoning": "The document emphasizes an analytical, systematic approach to emotional regulation, framed as an 'information-processing system' with structured protocols, worksheets, and scientific grounding. Candidate B, a mechanical engineering graduate student, aligns with this technical framing\u2014his background in engineering, preference for logical problem-solving, and interest in structured learning (evidenced by his use of Coursera/edX, PDF tools for literature, and Trello for time management) mirror the document's emphasis on deterministic cognitive processes and operationalized routines. Unlike Candidate A (a clinical psychology student, who would likely prioritize clinical over technical framing) or Candidate C (a creative professional focused on aesthetics and spontaneity), Candidate B's detail-oriented, risk-sensitive, and cost-effective decision-making style resonates with the document's focus on efficiency, empirical validation, and long-term habit stabilization. The document's references to affective neuroscience and system troubleshooting also align with his interest in robotics automation and scientific problem-solving.",
+    "model": "solar-pro",
+    "prompt_chars": 29423,
+    "latency_sec": 2.32,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

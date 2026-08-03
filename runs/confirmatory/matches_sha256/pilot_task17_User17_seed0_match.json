@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "plan",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on a multi-generational family beach vacation. As a state-owned enterprise manager with a family including a middle-school son and elderly parents, his priorities for practicality, comfort, and accessibility (e.g., senior-friendly facilities, family-friendly suites) mirror the document's emphasis on balancing activities for teenagers and seniors. His preference for self-guided tours, detailed planning, and Northeastern Chinese roots (aligning with Qingdao/Weihai recommendations) further supports this match. Candidates B and C, while family-oriented, prioritize pet-friendly or culturally focused travel, which is less central to the document's scope.",
+    "model": "solar-pro",
+    "prompt_chars": 23280,
+    "latency_sec": 2.05,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "search",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on July travel logistics (HSR/flights, climate, typhoon risks) and family-friendly destinations (Qingdao, Weihai, Dalian, Xiamen, Sanya). Candidate B, a Shanghai-based marketing manager with two children, prioritizes family vacations (2x/year), values self-guided tours with cultural/nature experiences, and emphasizes cost-effectiveness in travel. His family's Labrador and interest in pet-friendly destinations align with the document's focus on accessibility and family-oriented planning. Candidates A (pet cat, nursing background) and C (dog, Northeast-based) lack the same emphasis on coastal summer destinations and structured family travel logistics.",
+    "model": "solar-pro",
+    "prompt_chars": 25503,
+    "latency_sec": 2.1,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "compress",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User17",
+    "correct": true,
+    "reasoning": "The document focuses on multi-generational travel considerations, emphasizing senior-friendly transportation (e.g., high-speed rail convenience for elderly), climate risks (typhoons/monsoons), and balanced activities for mixed-age groups. Candidate B, a nurse in Beijing with two children and a pet, prioritizes family harmony, health, and pet-friendly destinations. Her profile aligns with the document's emphasis on accessibility (e.g., avoiding flight delays during typhoon season), comfort for all ages, and practical planning\u2014mirrored in her rational consumption habits, health-consciousness, and preference for self-guided trips with cultural experiences. Candidates A and C, while family-oriented, lack B's explicit focus on senior/pet accessibility and multi-generational climate considerations.",
+    "model": "solar-pro",
+    "prompt_chars": 28006,
+    "latency_sec": 2.11,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "write",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document prioritizes multi-generational comfort, accessibility, and practicality\u2014key concerns for Candidate A, a state-owned enterprise manager in his 40s with elderly parents, a middle-school son, and a focus on rational, family-oriented planning. The emphasis on barrier-free infrastructure, climate comfort for seniors, and structured itineraries aligns with A's decision-making style (independent but family-inclusive) and travel preferences (self-guided, detailed planning). Unlike Candidate B (marketing manager prioritizing cultural/historical sites) or Candidate C (nurse focused on pet-friendly destinations), the document\u2019s focus on Shandong\u2019s rail accessibility from Beijing, senior-friendly accommodations, and Northeastern climate preferences directly mirror A\u2019s background (Harbin residence, rural hometown in Heilongjiang) and family dynamics (elderly parents, active teenager).",
+    "model": "solar-pro",
+    "prompt_chars": 30017,
+    "latency_sec": 1.88,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

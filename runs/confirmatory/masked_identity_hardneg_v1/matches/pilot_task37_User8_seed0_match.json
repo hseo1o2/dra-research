@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task37_User8_seed0",
+    "stage": "plan",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "Candidate B (Liu Lu) aligns most closely with the document's focus on optimizing an open-plan kitchen for cooking, eco-friendly materials, and cost-effective, high-quality furniture/appliances. The document emphasizes natural wood/fabrics, a warm aesthetic, and budget-conscious planning\u2014mirroring B's preferences for sustainable products, home cooking, and rational spending. Unlike A (single, prioritizing tech/finance) or C (family-oriented with children/pet needs), B's lifestyle as a single data analyst with a cat and interest in independent, stylish living directly matches the document's emphasis on a cohabiting couple optimizing their living/kitchen space without child/pet-specific requirements. B's meticulous research habits and focus on cost-effectiveness also align with the data-backed, budget-constrained approach described.",
+    "model": "solar-pro",
+    "prompt_chars": 23548,
+    "latency_sec": 2.3,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task37_User8_seed0",
+    "stage": "search",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on open-kitchen layouts, storage ratios, and technical specifications for range hoods\u2014topics aligned with Candidate C's role as a marketing manager in a foreign enterprise. C's profile highlights a family-oriented, practical approach to home design (e.g., prioritizing functional spaces for family life) and a preference for high-end, durable household items. The document's emphasis on optimizing kitchen workflows, ventilation systems, and space efficiency reflects C's pragmatic decision-making style and interest in cost-effective, quality-of-life improvements. Candidates A and B, while detail-oriented, lack the family-centric and home-investment focus evident in the document's framing of kitchen design as a holistic living environment.",
+    "model": "solar-pro",
+    "prompt_chars": 24235,
+    "latency_sec": 1.72,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task37_User8_seed0",
+    "stage": "compress",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User8"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on detailed spatial planning, technical specifications for kitchen design, and compliance with building regulations\u2014priorities aligning with Candidate B's role as a marketing manager in a foreign enterprise. His pragmatic, detail-oriented personality and emphasis on quality-of-life improvements (e.g., family-oriented storage solutions, anti-backflow systems) mirror the document's technical depth and practical framing. Unlike Candidates A (data analyst) and C (investment manager), whose interests skew toward technology/data or finance, Candidate B's background in managing household logistics, budgeting, and cultural blending (Jiangnan tradition + Western efficiency) directly resonates with the document's focus on optimizing living spaces for functionality and family needs.",
+    "model": "solar-pro",
+    "prompt_chars": 28139,
+    "latency_sec": 1.72,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task37_User8_seed0",
+    "stage": "write",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on a family-oriented renovation plan for an 80\u33a1 apartment, emphasizing shared spaces (LDK), storage solutions for multiple users, and a 'Japandi' aesthetic that balances functionality with warmth. Candidate C, a married father of two, prioritizes family harmony, quality of life, and practical design\u2014aligning with the document's emphasis on communal living areas, storage for children's items, and durable, high-end materials. The budgeting and phased timeline also reflect a family's need for structured planning, unlike Candidates A (single, career-focused) or B (single, investment-oriented).",
+    "model": "solar-pro",
+    "prompt_chars": 30150,
+    "latency_sec": 1.66,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

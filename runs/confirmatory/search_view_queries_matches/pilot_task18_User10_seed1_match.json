@@ -1,0 +1,27 @@
+[
+  {
+    "run_id": "pilot_task18_User10_seed1",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User19",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on flight schedules (Hainan Airlines, Lufthansa) and public transport (BVG, FEX, RE8, RB23, S9) between Shanghai and Berlin, as well as a restaurant in Berlin. Candidate A, based in Shanghai and working in a foreign enterprise, has frequent international business trips (Shenzhen, Chengdu) and family vacations (Zhangjiajie, Huangshan). His role requires global coordination, and his travel preferences align with the document's emphasis on international flights and urban mobility. Candidates B (Chengdu-based, domestic focus) and C (Suzhou-based, regional trips) lack the Shanghai-Berlin connection and international travel patterns evident in the queries.",
+    "model": "solar-pro",
+    "prompt_chars": 23673,
+    "latency_sec": 1.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "queries"
+  }
+]

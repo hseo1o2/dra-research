@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task37_User8_seed1",
+    "stage": "plan",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate C is the best match due to the document's emphasis on a family-oriented renovation (two-bedroom apartment with partner), budget-conscious yet high-quality material preferences (natural wood/fabrics), and detailed planning requirements (layout, phased schedule). Unlike A (single, cat-owner) and B (single, investment-focused), C's profile as a married father with children aligns with the need for optimized high-frequency areas (living room/kitchen) and practical, cost-effective solutions. His managerial background and family responsibilities mirror the document's structured, goal-oriented tone and focus on balancing aesthetics with functionality.",
+    "model": "solar-pro",
+    "prompt_chars": 23357,
+    "latency_sec": 1.64,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task37_User8_seed1",
+    "stage": "search",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on budgeting, interior design (open kitchen regulations, 80\u33a1 renovation costs), and practical appliance choices (e.g., Haier washer-dryer). Candidate A, a data analyst in Shanghai, aligns with this content through her rational, detail-oriented personality, focus on cost-effectiveness, and interest in modern, space-efficient living (e.g., foldable doors, compact renovation plans). Her practical consumption habits, preference for high-quality durable products, and recent apartment setup in Shanghai match the document\u2019s emphasis on budget-conscious yet stylish renovations. Candidates B and C, while financially savvy, prioritize investments (B) or family-centric luxury (C), which diverge from the document\u2019s singular focus on individual, budget-driven interior design and appliance decisions.",
+    "model": "solar-pro",
+    "prompt_chars": 23954,
+    "latency_sec": 1.8,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task37_User8_seed1",
+    "stage": "compress",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on detailed budgeting, spatial efficiency, and practical renovation strategies for a compact urban apartment, aligning with Candidate A's meticulous, data-driven personality and her preference for cost-effective, high-quality solutions. Her role as a data analyst and her emphasis on research and efficiency mirror the document's structured, itemized approach. Unlike Candidates B (investment-focused) and C (family-oriented, high-end preferences), A's single, practical lifestyle and interest in modern, minimalist design (evident in her Shanghai apartment) directly match the document's emphasis on optimizing limited space and budget for a personal, functional living environment.",
+    "model": "solar-pro",
+    "prompt_chars": 28139,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task37_User8_seed1",
+    "stage": "write",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on a comprehensive renovation plan for a couple's 80m\u00b2 apartment, emphasizing a warm, family-oriented Japandi aesthetic, budget-conscious yet high-quality finishes, and functional spatial design. Candidate C, a married father of two, aligns best with this profile. His priorities include family harmony, cost-effective yet durable household investments, and a blend of practicality with refined taste (evident in his preference for high-end durable goods and cozy homestays). The document's emphasis on a unified LDK space, child-friendly layout (e.g., open study/bedroom), and budget allocation for long-term durability reflect Candidate C's role as a pragmatic family-oriented manager who values quality of life and efficient space utilization. Candidates A and B, both single professionals, lack the document's family-centric framing and focus on multi-functional spaces for children.",
+    "model": "solar-pro",
+    "prompt_chars": 30150,
+    "latency_sec": 2.29,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task43_User18_seed1",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "Candidate C is a Data Analyst in Shanghai with a background in Statistics, directly aligning with the document's focus on non-compete clauses for data analysts under Chinese law. The document's technical legal analysis, emphasis on PRC labor law, and Shanghai judicial precedents match Candidate C's profession, location, and need to navigate employment restrictions. Candidates A (state-owned enterprise manager) and B (marketing manager) lack the document's specific industry, legal, and geographic relevance. Candidate C's proactive approach to certifications and career transitions further reflects the document's strategic focus on lawful employment rights.",
+    "model": "solar-pro",
+    "prompt_chars": 24426,
+    "latency_sec": 1.61,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task43_User18_seed1",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on PRC labor laws, non-compete clauses, judicial interpretations, and court rulings\u2014topics central to corporate legal compliance and employee management. Candidate B, a marketing manager in a foreign enterprise, operates in a context where non-compete agreements and trade secret protections are critical for business operations. His MBA background, managerial role, and interest in market trends and legal frameworks align with the document's emphasis on legal interpretations (e.g., SPC rulings) and practical enforcement of non-compete clauses. Candidate A (data analyst) and C (state-owned enterprise manager) lack the direct professional and content alignment with the document's focus on labor law nuances and corporate compliance strategies.",
+    "model": "solar-pro",
+    "prompt_chars": 25367,
+    "latency_sec": 1.71,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task43_User18_seed1",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document excerpt is empty (topic_001: []), providing no content to analyze for matching with any candidate profile. Since no substantive information exists to determine priorities, framing, or vocabulary alignment, the attribution cannot be meaningfully determined. However, per instructions, a default label (A) is submitted to fulfill the function call requirement despite the lack of actionable data.",
+    "model": "solar-pro",
+    "prompt_chars": 22756,
+    "latency_sec": 1.24,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task43_User18_seed1",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on the legal analysis of non-compete agreements specifically for data analysts in Shanghai's tech sector, detailing enforceability criteria, compensation standards, and actionable recommendations. Candidate B is a data analyst at an internet company, actively engaged in data analysis tools (Python, SQL, Tableau), and has a career goal to transition to management or product roles. The document's technical vocabulary (e.g., 'trade secrets,' 'statutory subject criteria,' 'non-compete compensation') aligns with B's professional background and interests in data analysis, legal compliance, and career advancement. Candidates A (marketing manager) and C (state-owned enterprise manager) lack the direct relevance to data analysis or Shanghai's tech sector, making B the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 30752,
+    "latency_sec": 1.79,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task9_User8_seed0",
+    "stage": "plan",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User18",
+      "User9",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User18",
+      "User8"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User8",
+    "correct": true,
+    "reasoning": "Candidate C (Chen Hao) is a 26-30-year-old Investment Manager at a securities firm with a finance background, aligning perfectly with the document's author profile. The document's focus on transitioning to an AI PM role, bridging technical gaps (e.g., LLMs, product architecture), and leveraging finance expertise mirrors Chen Hao's career goals, meticulous decision-making style, and interest in combining finance with emerging tech. His preferences for data-driven analysis, rational spending on tech/books, and evening focus on financial content further align with the document's framing. Candidates A and B lack the finance domain expertise and career transition context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 21999,
+    "latency_sec": 2.06,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task9_User8_seed0",
+    "stage": "search",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User18",
+      "User9",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User9",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User8",
+    "correct": true,
+    "reasoning": "The document focuses on AI Product Manager salaries, skill gaps for finance-to-PM transitions, and AI applications in financial research\u2014topics directly aligned with Candidate A's background as an Investment Manager with a finance degree and interest in AI-driven financial tools. The content emphasizes salary data, technical skill gaps, and AI automation in finance, reflecting A's priorities in cost-effectiveness, data-driven decision-making, and financial analysis. Candidates B and C, while interested in tech and data, lack A's finance-centric focus and professional context in securities/investment management.",
+    "model": "solar-pro",
+    "prompt_chars": 23504,
+    "latency_sec": 1.45,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task9_User8_seed0",
+    "stage": "compress",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User18",
+      "User9",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User8",
+      "User9"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User8",
+    "correct": true,
+    "reasoning": "The document focuses on AI Product Manager roles in finance, quant, and investment domains, emphasizing financial modeling, LLM applications in financial research, and compensation trends for professionals with 3\u20135 years in quant/finance. Candidate B, an Investment Manager with a Finance background, aligns perfectly: his expertise in financial analysis, quantitative skills, and interest in LLM applications (e.g., financial copilots) match the document's technical and domain-specific framing. Candidate A (Data Analyst) and C (Product Operations) lack the financial/quant depth central to the document's focus on FinTech AI PM roles.",
+    "model": "solar-pro",
+    "prompt_chars": 26335,
+    "latency_sec": 1.56,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task9_User8_seed0",
+    "stage": "write",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User18",
+      "User9",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User9",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User8",
+    "correct": true,
+    "reasoning": "The document focuses on transitioning from an investment management role to an AI Product Manager position, emphasizing financial domain expertise, quantitative analysis, and technical AI/ML concepts like LLMs, RAG, and vector databases. Candidate A is an Investment Manager with a finance background, quantitative skills, and interest in AI applications for finance (e.g., ChatBI, automated valuation workflows). The document's framing aligns with A's professional background, technical interests, and career goals. Candidates B (advertising/creative) and C (data analyst) lack the financial domain depth and specific transition narrative central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 28346,
+    "latency_sec": 2.01,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

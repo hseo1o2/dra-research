@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User6",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The brief is written from the standpoint of a 22\u201325-year-old female in Product Operations at a Beijing internet company with an Advertising/New Media Communication background and a Psychology minor\u2014matching Candidate A\u2019s exact profile. The document\u2019s emphasis on product/ops career competitiveness, user behavior analysis, and practical ROI/timeline planning aligns with A\u2019s interests and early-career context.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 24043,
+    "latency_sec": 1.73,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User9",
+      "User6"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "The queries focus on Chinese MBA/finance MBA admissions requirements\u2014especially work-experience thresholds and tuition\u2014suggesting a prospective applicant with a technical/working background. Candidate A is an algorithm engineer in the typical age range for MBA applications and would likely research program-specific requirements (e.g., PKU/THU/dual-degree) and eligibility details.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 25326,
+    "latency_sec": 1.38,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User6",
+      "User11",
+      "User9"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "The excerpt is a highly practical, admissions-focused research summary centered on MBA eligibility/work-experience requirements and tuition details for specific top Chinese and dual-degree programs. That aligns with a 28\u201332-year-old working professional doing structured, data-driven planning for graduate study, which matches Candidate B\u2019s algorithm-engineer background and rational decision-making. The other profiles skew toward environmental interests (A) or creative/health lifestyle content (C), which is less consistent with the document\u2019s targeted MBA procurement-style queries.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 27819,
+    "latency_sec": 1.62,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User6",
+      "User9"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The excerpt is explicitly framed for an early-career Beijing \u201cProduct Operations (\u4ea7\u54c1\u8fd0\u8425)\u201d professional (22\u201325, 1\u20133 years) aiming to pivot into data/growth/strategy product roles, and it emphasizes an Advertising/New Media Communication + Psychology background\u2014matching Candidate C\u2019s education and occupation. The document\u2019s focus on structured career repositioning, ROI of MSBA/MBA vs certifications, and Beijing hukou/CSCSE eligibility aligns with Candidate C\u2019s Beijing location and career-stability priorities.",
+    "model": "gpt-5.4-nano-2026-03-17",
+    "prompt_chars": 29830,
+    "latency_sec": 1.67,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task14_User22_seed0",
+    "stage": "plan",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "Candidate A (Ma Jianping) is a 50-55-year-old male with a daily routine (6 AM wake-up, 10 PM sleep) matching the document's schedule. His exercise habits (running 3x/week, brisk walking, cycling) align with the marathon training focus. His pragmatic, detail-oriented personality and preference for practical, adaptable solutions mirror the document's emphasis on a sustainable, injury-avoidant plan. Additionally, his lumbar strain history (implied by his mechanical engineering background and gardening) and local park running habits directly correlate with the document's need for gradual mileage progression and lumbar strain precautions. Candidates B and C differ in age, exercise preferences (photography/hiking vs. golf/yoga), and lifestyle priorities (family trips vs. professional development).",
+    "model": "solar-pro",
+    "prompt_chars": 24457,
+    "latency_sec": 1.88,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User22_seed0",
+    "stage": "search",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "Candidate C (50-55, technical director in manufacturing) aligns most closely with the document's focus on marathon training for masters runners (50-55), biomechanics, core stability, and low back pain management. The document emphasizes structured training plans, biomechanical adjustments, and exercises like bird dog/dead bug\u2014topics directly relevant to a midlife runner with technical/analytical tendencies. Candidate C's age, running habits (3x/week), and interest in practical solutions (e.g., fitness equipment purchases) match the document's pragmatic, goal-oriented tone. Candidates A (30-35, golfer/yoga practitioner) and B (40-45, casual jogger) lack the document's specific focus on masters running challenges or biomechanical depth.",
+    "model": "solar-pro",
+    "prompt_chars": 26822,
+    "latency_sec": 1.9,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User22_seed0",
+    "stage": "compress",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "The document focuses on marathon training principles for masters runners aged 50\u201355, emphasizing physiological adaptations, recovery strategies, and the Galloway run-walk method. Candidate B (50\u201355, technical director) aligns with this content through his age, exercise habits (running 3x/week), and goals (improving physical strength/endurance). Unlike Candidate A (40\u201345, less focused on structured running) and Candidate C (30\u201335, prioritizing golf/yoga), Candidate B\u2019s detailed interest in technical, data-driven approaches (e.g., Industry 4.0, Zhihu engineering discussions) mirrors the document\u2019s evidence-based training guidelines. His recent investments in fitness equipment and outdoor cycling also align with the document\u2019s emphasis on practical, age-adapted exercise strategies.",
+    "model": "solar-pro",
+    "prompt_chars": 29375,
+    "latency_sec": 1.99,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task14_User22_seed0",
+    "stage": "write",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "The document focuses on a 12-week marathon training plan for beginner masters runners aged 50\u201355 with a history of lumbar strain. Candidate C (Ma Jianping, 50-55) is the only profile matching this age group and shares key priorities: injury prevention (lumbar strain), structured low-intensity training, and core stability. The document's emphasis on biomechanics, spinal hygiene, and age-related physiological changes aligns with Candidate C's exercise habits (running 3x/week, stress relief through physical activity) and his practical, detail-oriented personality. Candidates A (30-35) and B (40-45) are younger and lack the document's specific focus on masters runners' physiological challenges or lumbar strain mitigation.",
+    "model": "solar-pro",
+    "prompt_chars": 31386,
+    "latency_sec": 2.33,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

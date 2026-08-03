@@ -1,0 +1,49 @@
+{
+  "candidate_only_prior": {
+    "accuracy": 0.45,
+    "artifact_text_used": false,
+    "bootstrap_repetitions": 5000,
+    "bootstrap_seed": 20260803,
+    "candidate_sets": 60,
+    "chance": 0.333333,
+    "correct": 27,
+    "heuristic": "highest mean pairwise actionable-token Jaccard",
+    "mean_top_score_margin": 0.004833,
+    "task_cluster_bootstrap_ci95": [
+      0.333333,
+      0.566667
+    ],
+    "task_clusters": 20
+  },
+  "external_api_calls": 0,
+  "interpretation_boundary": "A candidate-only prior can affect absolute Acc@1. Because each report keeps the same candidate set at all four stages, it cannot alone generate a within-report stage transition. The task-shared protocol is a symmetric secondary sensitivity, not a replacement for the frozen primary protocol.",
+  "protocol_sensitivity": [
+    {
+      "match_dir": "/Users/janghyeonseo/Desktop/DRA/runs/confirmatory/matches_hardneg_v1",
+      "planning_to_search": -0.258333,
+      "protocol": "per_gt_actionable_hard_negative",
+      "reports": 120,
+      "search_to_writing": 0.25,
+      "stage_accuracy": {
+        "compress": 0.591667,
+        "plan": 0.808333,
+        "search": 0.55,
+        "write": 0.8
+      }
+    },
+    {
+      "match_dir": "/Users/janghyeonseo/Desktop/DRA/runs/confirmatory/matches_sha256",
+      "planning_to_search": -0.191666,
+      "protocol": "task_shared_candidate_cohort",
+      "reports": 120,
+      "search_to_writing": 0.166666,
+      "stage_accuracy": {
+        "compress": 0.608333,
+        "plan": 0.733333,
+        "search": 0.541667,
+        "write": 0.708333
+      }
+    }
+  ],
+  "schema_version": 1
+}

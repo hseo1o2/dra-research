@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task29_User18_seed0",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User15",
+      "User7",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User15",
+      "User7",
+      "User10",
+      "User13"
+    ],
+    "predicted_label": "D",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate D (Liu Qiang) is a marketing manager in Shanghai with an MBA, aligning with the document's focus on a structured, data-driven business plan for a fast-casual healthy food venture. His background in marketing, budget management, and preference for cost-effective yet high-quality solutions directly mirror the document's emphasis on financial planning, competitor analysis, and strategic site selection. Unlike other candidates, Liu Qiang's pragmatic decision-making style, family-oriented yet career-focused lifestyle, and interest in combining Eastern/Western business practices make him the most likely author seeking a comprehensive, actionable roadmap for a scalable food business targeting professionals and fitness enthusiasts in Shanghai's CBD.",
+    "model": "solar-pro",
+    "prompt_chars": 38327,
+    "latency_sec": 1.87,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task29_User18_seed0",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User15",
+      "User7",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User13",
+      "User15",
+      "User7",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on Shanghai's light meal market, emphasizing consumer behavior, market trends, and operational strategies (e.g., cost analysis, location rentals, menu pricing). Candidate B, a caf\u00e9 owner in Shanghai's old town, aligns closely with this content. Her profile highlights her interest in market trends, sustainability, and customer preferences\u2014key themes in the document. Additionally, her frequent engagement with coffee/light meal culture, social media for business insights, and attention to eco-friendly practices mirror the document's framing. Other candidates (A, C, D, E) lack the direct entrepreneurial and market-oriented focus on food trends that defines the text.",
+    "model": "solar-pro",
+    "prompt_chars": 38164,
+    "latency_sec": 2.22,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task29_User18_seed0",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User15",
+      "User7",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User13",
+      "User18",
+      "User7",
+      "User15"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on the Shanghai light meal market, competitor analysis (e.g., Shaye Light Meal, Wagas), consumer trends, and industry challenges. Candidate B, a caf\u00e9 owner in Shanghai's old town, aligns most closely with this content. Her background in coffee culture, interest in sustainable and creative consumption, and focus on market trends (evident in her caf\u00e9 management and international coffee studies) mirror the document's emphasis on regional market dynamics, brand strategies, and consumer preferences. Her frequent engagement with industry forums and design aesthetics also aligns with the document's framing of light meal brands as lifestyle-oriented businesses. Other candidates (A, C, D, E) lack the direct connection to food/beverage entrepreneurship or Shanghai's culinary market.",
+    "model": "solar-pro",
+    "prompt_chars": 42224,
+    "latency_sec": 2.16,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task29_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User15",
+      "User7",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User7",
+      "User18",
+      "User13",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on launching a healthy fast-food business targeting corporate workers and fitness enthusiasts in Shanghai, emphasizing data-driven financial planning, cost containment, and operational efficiency. Candidate C, a data analyst with a background in statistics and a focus on rational, detail-oriented decision-making, aligns most closely with the document's analytical tone and priorities. The report's emphasis on metrics (e.g., AOV, break-even analysis, CapEx breakdown) and lean operational strategies mirrors Candidate C's professional skills in data analysis and preference for cost-effective, high-quality solutions. Unlike other candidates, who prioritize creative, social, or lifestyle-oriented content, Candidate C's focus on efficiency, sustainability, and practical consumption aligns with the document's business-centric framing.",
+    "model": "solar-pro",
+    "prompt_chars": 44235,
+    "latency_sec": 2.15,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

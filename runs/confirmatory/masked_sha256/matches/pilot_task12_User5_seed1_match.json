@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task12_User5_seed1",
+    "stage": "plan",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User5",
+      "User9"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User5",
+    "correct": true,
+    "reasoning": "The document explicitly describes a 22-25-year-old male graduate student in mechanical automation seeking structured, analytical self-improvement strategies. Candidate B matches all key attributes: same age, gender, occupation (mechanical automation), and analytical mindset. The request for evidence-based, cost-effective frameworks aligns with B's rational spending habits, use of digital tools (Trello, Coursera/edX), and preference for independent, multi-angle decision-making. The focus on emotional regulation to improve decision-making also resonates with B's stress-relief goals through cycling and his recent consideration of pet adoption for stress relief. Candidates A (clinical psychology student) and C (product operations professional) lack the mechanical engineering background and structured analytical focus central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 22736,
+    "latency_sec": 1.85,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task12_User5_seed1",
+    "stage": "search",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User5",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "Candidate C, a graduate student in Clinical Psychology, aligns most closely with the document's focus on emotion regulation, cognitive behavioral therapy, and neurobiological approaches to emotions. The document emphasizes academic and scientific perspectives on emotion regulation (e.g., 'Process Model of Emotion Regulation,' 'neurobiology of emotion-cognition interactions'), which matches C's psychology background and interest in academic resources. Additionally, C's frequent engagement with psychology forums, online courses (Coursera), and research materials mirrors the document's scholarly tone and references to peer-reviewed studies. While Candidate B (engineering student) shows analytical tendencies, the document's emphasis on emotion science rather than engineering or technical applications makes C the stronger match. Candidate A's focus on creative/artistic content and social media does not align with the document's academic framing.",
+    "model": "solar-pro",
+    "prompt_chars": 24919,
+    "latency_sec": 1.94,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task12_User5_seed1",
+    "stage": "compress",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User9",
+      "User5"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User5",
+    "correct": true,
+    "reasoning": "The document emphasizes analytical, engineering, and systems-thinking approaches to psychology, prioritizing mechanistic models, empirical evidence, and structured frameworks. Candidate C, a mechanical engineering graduate student in robotics automation, aligns with this mindset through his focus on intelligent manufacturing, systems analysis, and preference for cost-effective, evidence-based solutions. Unlike Candidates A (clinical psychology student) and B (creative operations role), Candidate C's background in engineering, interest in structured problem-solving, and consumption of technical literature (e.g., IEEE, robotics) directly mirror the document's emphasis on algorithmic, reductionist, and systems-based emotional regulation models. His decision-making style (risk-sensitive, multi-angle analysis) and content preferences (sci-fi, technology articles) further reinforce this match.",
+    "model": "solar-pro",
+    "prompt_chars": 27412,
+    "latency_sec": 2.4,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task12_User5_seed1",
+    "stage": "write",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User9",
+      "User2",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User5",
+      "User2"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User5",
+    "correct": true,
+    "reasoning": "The document's technical framing of emotion regulation as a 'feedback control system' and its emphasis on control theory, cognitive science, and neurobiology align with Candidate B's background in mechanical automation and robotics. The structured, 6-month plan with digital tools, MOOCs, and engineering analogies (e.g., 'cognitive software errors,' 'debugging') reflects B's analytical mindset and graduate studies in a technical field. Candidate A (advertising/psychology minor) and C (clinical psychology) lack the document's engineering-centric perspective, which prioritizes systematic execution over therapeutic or creative approaches.",
+    "model": "solar-pro",
+    "prompt_chars": 29423,
+    "latency_sec": 1.59,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task22_User15_seed1",
+    "stage": "plan",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User15",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document explicitly introduces Qiu Wen, a 26-30-year-old freelance writer in Beijing seeking a risk-averse retirement plan with ESG investments. Candidate B matches this identity, age, occupation, and location. The document's focus on low-risk financial strategies, medical insurance, and long-term care aligns with Candidate B's practical, rational consumption habits, eco-friendly preferences, and introverted yet detail-oriented personality. The mention of a cat named 'Mo Mo' and minimalist Beijing studio apartment further confirms the match. Candidates A (illustrator) and C (data analyst) differ in profession, financial risk tolerance, and lifestyle details.",
+    "model": "solar-pro",
+    "prompt_chars": 22910,
+    "latency_sec": 1.58,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task22_User15_seed1",
+    "stage": "search",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document focuses on tax optimization, flexible payment options, and insurance products tailored for freelancers, aligning with Candidate A's profile as a freelance writer in Beijing. The content emphasizes practical financial planning (e.g., 12,000 yuan tax deductions, flexible premiums) and eco-conscious consumption, mirroring A's rational, cost-effective shopping preferences and interest in sustainable brands. Additionally, the document\u2019s focus on Beijing-specific health insurance (e.g., 'Beijing Universal Health Insurance') directly matches A's residence in Chaoyang District, while the emphasis on freelance-friendly policies aligns with A's occupation and financial needs as a self-employed individual.",
+    "model": "solar-pro",
+    "prompt_chars": 23247,
+    "latency_sec": 1.66,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task22_User15_seed1",
+    "stage": "compress",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User14",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document focuses on tax-advantaged personal pension planning, flexible commercial insurance products, and ESG-aligned low-risk investments\u2014all tailored for freelancers. Candidate A (Qiu Wen) is a freelance writer with a 26-30 age range, matching the document's emphasis on freelance tax strategies (e.g., \u7a3f\u916c\u6240\u5f97 deductions) and flexible pension contributions. Her eco-friendly consumption habits align with the ESG investment section, and her independent, detail-oriented personality reflects the document's structured financial planning approach. Candidates B (illustrator) and C (data analyst) lack the freelance writer-specific tax context and eco-conscious framing central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 27367,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task22_User15_seed1",
+    "stage": "write",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User18",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User15",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document explicitly references Qiu Wen (Candidate B) by name in the 'Persona Profile & Financial Context' section, detailing her age, occupation, location, and financial priorities. The plan's focus on freelance income volatility, ESG preferences, and Beijing-based healthcare solutions aligns precisely with Candidate B's profile as a 26\u201330-year-old freelance writer in Chaoyang District. Candidates A (illustrator) and C (data analyst) lack the document's specific financial context and ESG emphasis.",
+    "model": "solar-pro",
+    "prompt_chars": 29378,
+    "latency_sec": 1.84,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

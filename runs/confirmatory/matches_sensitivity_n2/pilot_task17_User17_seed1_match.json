@@ -1,0 +1,110 @@
+[
+  {
+    "run_id": "pilot_task17_User17_seed1",
+    "stage": "plan",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25"
+    ],
+    "shuffled_order": [
+      "User25",
+      "User17"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User17",
+    "correct": true,
+    "reasoning": "Candidate B (Chen Fang) aligns more closely with the document's focus on a multi-generational family vacation. As a head nurse with high school and college-aged children, her profile matches the family composition described. Her emphasis on health-conscious dining (low-oil, low-salt options) and preference for comfortable, clean accommodations with cultural/nature experiences reflect the document's priorities. Additionally, her recent interest in pet-friendly destinations subtly supports the need for inclusive planning, while her self-guided travel style and focus on balancing active/cultural activities for all ages directly mirror the request's requirements. Candidate A's retirement status and focus on senior-centric activities (e.g., Tai Chi) make her less central to this family's dynamic.",
+    "model": "solar-pro",
+    "prompt_chars": 15662,
+    "latency_sec": 2.14,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task17_User17_seed1",
+    "stage": "search",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User25"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The document focuses on flight schedules, travel durations, and hotel information (e.g., Ritz-Carlton Sanya), aligning with Candidate B's travel preferences for domestic and international trips (2-3 times/year), interest in natural/historical destinations, and emphasis on comfort. Candidate A travels less frequently (1-2 times/year) and prioritizes pet-friendly destinations, which are not mentioned in the document. Additionally, Candidate B\u2019s detailed interest in travel planning, cost-effectiveness, and hotel preferences (e.g., local characteristics) matches the document\u2019s framing of flight options and accommodation details.",
+    "model": "solar-pro",
+    "prompt_chars": 18013,
+    "latency_sec": 1.54,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task17_User17_seed1",
+    "stage": "compress",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User25"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The document focuses on flight logistics, accommodation, and tourism for Okinawa and Da Nang, reflecting a travel planning context. Candidate B (Li Xiuying) has a higher travel frequency (2-3 times/year) and explicitly mentions interests in natural scenery, cultural sites, and eco-tourism, aligning with the destinations' profiles. Her recent interest in hot spring vacations and self-guided tours matches the document's emphasis on itinerary details. While Candidate A also travels, her focus is on domestic trips and pet-friendly destinations, which are less central to the document's international travel scope. Candidate B\u2019s age, retirement status, and preference for cost-effective yet comfortable travel further align with the document\u2019s practical, research-heavy tone.",
+    "model": "solar-pro",
+    "prompt_chars": 20506,
+    "latency_sec": 1.79,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task17_User17_seed1",
+    "stage": "write",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25"
+    ],
+    "shuffled_order": [
+      "User25",
+      "User17"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The document emphasizes multi-generational travel planning with a focus on elderly accessibility, health-conscious dining, and domestic destinations (e.g., Sanya, Okinawa, Da Nang). Candidate A, a retired 65-70-year-old woman, aligns with these priorities: her family includes elderly members, grandchildren, and she values health-conscious meals (low-salt/low-oil), domestic travel, and comfort. The document\u2019s emphasis on barrier-free resorts, step-free access, and gentle activities mirrors her need for safety and accessibility. Candidate B, while health-conscious, focuses on pet-friendly and professional travel, which is not central to the document\u2019s framing. The document\u2019s domestic focus (Sanya) also better suits Candidate A\u2019s preference for local cultural sites and frugal yet comfortable travel.",
+    "model": "solar-pro",
+    "prompt_chars": 22517,
+    "latency_sec": 1.9,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

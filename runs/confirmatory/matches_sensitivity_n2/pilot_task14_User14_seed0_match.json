@@ -1,0 +1,110 @@
+[
+  {
+    "run_id": "pilot_task14_User14_seed0",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document describes a 28-32-year-old freelance illustrator in Shanghai with no running experience, aligning perfectly with Candidate B's occupation, age, and location. The focus on integrating yoga/Pilates, evening creative work, and urban running in Shanghai matches B's exercise habits, routine, and environment. Candidate A, a copywriter with different exercise preferences (running/cycling) and a Hangzhou hometown, does not match the document's framing or priorities as closely.",
+    "model": "solar-pro",
+    "prompt_chars": 16809,
+    "latency_sec": 1.83,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task14_User14_seed0",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "The document focuses on marathon training plans, run/walk ratios, and cross-training (Pilates/yoga) for beginners. Candidate B explicitly mentions running once a week, cycling, and starting Pilates for stress relief and fitness, aligning with the document's emphasis on structured training and cross-training. While Candidate A practices yoga and Pilates, their exercise goals are primarily for relaxation and creativity, not endurance or marathon preparation. The document's focus on pacing, long runs, and core stability for runners matches Candidate B's stated exercise habits and goals more directly.",
+    "model": "solar-pro",
+    "prompt_chars": 18058,
+    "latency_sec": 1.61,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task14_User14_seed0",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "The document focuses on a structured 12-week beginner marathon training plan incorporating the Galloway run-walk method, cross-training (yoga/Pilates), and safety adaptations for urban runners in Shanghai. Candidate A explicitly mentions running once a week, cycling, and using yoga mats for home practice, aligning with the document's emphasis on accessible, time-capped training for stress relief. While Candidate B practices yoga/Pilates, their exercise habits are less frequent (2-3x/week) and more focused on artistic inspiration, whereas the document prioritizes systematic, injury-preventive training for marathon completion. Candidate A's urban Shanghai context (pavement running, air quality concerns) and time management (evening creativity, morning routine) also mirror the document's framing for a beginner balancing fitness with a creative career.",
+    "model": "solar-pro",
+    "prompt_chars": 21583,
+    "latency_sec": 1.97,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task14_User14_seed0",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User20"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document emphasizes a freelance illustrator's schedule in Shanghai, aligning with Candidate A's profession (freelance illustrator) and location. It prioritizes morning runs to preserve evening creative hours, matching A's stated peak productivity in the evening (7 PM\u2013Midnight). The guide integrates yoga/Pilates, reflecting A's established exercise habits (2-3x/week yoga, recent Pilates). Finally, the focus on low-impact training and injury prevention aligns with A's goal of stress relief and health maintenance, whereas Candidate B's exercise goals include explicit endurance improvement, which the document does not prioritize.",
+    "model": "solar-pro",
+    "prompt_chars": 23594,
+    "latency_sec": 2.17,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

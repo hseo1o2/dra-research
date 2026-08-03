@@ -1,0 +1,134 @@
+[
+  {
+    "run_id": "pilot_task43_User18_seed0",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User16",
+      "User22",
+      "User11"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User22",
+      "User16",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "D",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document is a legal analysis request focused on PRC non-compete clauses, specifically for a Data Analyst in Shanghai. Candidate D is the only Data Analyst among the profiles, shares the same occupation as the document author, and has a background in statistics/data analysis. The document's technical focus on legal enforceability, compensation, and case law aligns with D's data-driven decision-making style, attention to detail, and professional context in Shanghai's internet industry. Other candidates (A: Algorithm Engineer, B: Manufacturing Director, C: SOE Manager, E: Marketing Manager) lack the direct occupational and content relevance to the document's legal-technical framing.",
+    "model": "solar-pro",
+    "prompt_chars": 41509,
+    "latency_sec": 2.14,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task43_User18_seed0",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User16",
+      "User22",
+      "User11"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User18",
+      "User22",
+      "User10",
+      "User11"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on legal disputes involving data analysts (e.g., '\u738b\u67d0' at '\u4e07\u5f97') and their obligations under non-compete agreements (\u7ade\u4e1a\u9650\u5236) in Shanghai, referencing specific court cases (e.g., '\u4e0a\u6d77\u4e00\u4e2d\u9662'). Candidate B is a data analyst in Shanghai with direct professional relevance to the document's subject matter. The content's legal and industry-specific framing aligns with her role, location, and interests in data analysis, workplace rights, and Shanghai-based legal precedents. Other candidates lack this direct occupational or geographic connection.",
+    "model": "solar-pro",
+    "prompt_chars": 40915,
+    "latency_sec": 2.07,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task43_User18_seed0",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User16",
+      "User22",
+      "User11"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User16",
+      "User10",
+      "User11",
+      "User18"
+    ],
+    "predicted_label": "E",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on legal aspects of non-compete clauses for data analysts under PRC law, emphasizing judicial standards for trade secrets, confidentiality obligations, and enforceability. Candidate E is explicitly identified as a Data Analyst with relevant technical skills (Python, R, SQL, Tableau) and professional concerns about legal protections for her role. The document's framing aligns with her need to understand enforceability of non-compete agreements in her field, as evidenced by her LinkedIn/Zhihu activity sharing industry insights and her career trajectory toward management/product roles where such legal knowledge is critical. Other candidates (A-D) lack the direct occupational relevance or technical background central to the document's focus.",
+    "model": "solar-pro",
+    "prompt_chars": 44950,
+    "latency_sec": 2.27,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  },
+  {
+    "run_id": "pilot_task43_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User16",
+      "User22",
+      "User11"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User11",
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on the legal enforceability of non-compete clauses for a Data Analyst in Shanghai, emphasizing statutory requirements, judicial precedents, and practical implications for employees in this role. Candidate A is a Data Analyst at an internet company in Shanghai, aligning directly with the document's subject matter. The document's technical legal analysis, focus on trade secrets vs. general skills, and Shanghai-specific judicial practices reflect the priorities of an individual in Candidate A's position, who would need to understand these nuances for career mobility and legal protection. Other candidates (B, C, D, E) are in roles (Algorithm Engineer, State-owned enterprise manager, Technical Director, Marketing Manager) that do not match the document's specific focus on Data Analyst non-compete issues.",
+    "model": "solar-pro",
+    "prompt_chars": 46961,
+    "latency_sec": 2.62,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "api_response_id": null
+  }
+]

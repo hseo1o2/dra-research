@@ -1,0 +1,118 @@
+[
+  {
+    "run_id": "ablation_shuffled_actionable_task2_User7_seed0",
+    "stage": "plan",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "Candidate C is a graduate student specializing in new media technology and public opinion research, aligning directly with the document's focus on media, communication, and interdisciplinary technology studies. The document emphasizes academic features like interdisciplinary courses (communication, data/tech, psychology), computational methods, and media psychology\u2014mirroring Candidate C's background in Journalism and Communication and interest in new media. Additionally, the document's emphasis on career growth in academic/industry opportunities, international networking, and cross-cultural communication skills aligns with Candidate C's rational, data-driven decision-making style and focus on social responsibility. Candidates A (Clinical Psychology) and B (Environmental Studies) lack the document's core focus on media technology and computational methods.",
+    "model": "solar-pro",
+    "prompt_chars": 24231,
+    "latency_sec": 1.97,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5015,
+    "output_tokens": 166,
+    "total_tokens": 5181,
+    "api_response_id": "3476cea2-edea-4e8b-8b1b-6d8884a3dac3"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task2_User7_seed0",
+    "stage": "search",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User6",
+      "User2",
+      "User7"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on academic exchange programs, visiting scholar/student opportunities, and institutional details from Stanford, Penn, NUS, and NTU\u2014topics directly relevant to a graduate student in new media and public opinion research (Candidate C). The content's framing around eligibility, fees, and research affiliations aligns with C's academic background, interest in communication studies, and behavioral traits (e.g., using digital tools for research, prioritizing cost-effective learning opportunities). Candidates A (environmental studies) and B (clinical psychology) lack the disciplinary and practical connection to the document's institutional and research-oriented focus.",
+    "model": "solar-pro",
+    "prompt_chars": 25751,
+    "latency_sec": 1.74,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 5541,
+    "output_tokens": 144,
+    "total_tokens": 5685,
+    "api_response_id": "014bfe0b-7fd4-4489-a9c8-65bc5ddbf5c9"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task2_User7_seed0",
+    "stage": "compress",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User6",
+      "User7",
+      "User2"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on visiting scholar/researcher programs in communication-related fields (e.g., Stanford's Social Media Lab, LSE Media Communications) and includes technical details about application fees, visa protocols, and institutional pathways. Candidate B, a graduate student in new media and public opinion research, aligns with this academic focus, research-oriented behavior (e.g., Python/data analysis, saving communication studies articles), and interest in short-term mobility for academic purposes. Candidates A (environmental studies) and C (clinical psychology) lack the direct disciplinary and professional relevance to the document's communication/media research context.",
+    "model": "solar-pro",
+    "prompt_chars": 28244,
+    "latency_sec": 1.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6074,
+    "output_tokens": 141,
+    "total_tokens": 6215,
+    "api_response_id": "ef3c5482-574a-4ca0-a369-8cc4c2d5d996"
+  },
+  {
+    "run_id": "ablation_shuffled_actionable_task2_User7_seed0",
+    "stage": "write",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "Candidate C is a graduate student specializing in new media and public opinion research, directly aligning with the document's focus on 'new media technology, public opinion, computational methods, and media psychology.' The report's emphasis on computational social science, lab-driven research, and global academic opportunities mirrors Candidate C's academic background in Journalism and Communication, proficiency in data analysis tools (Python), and interest in social issues/technology trends. Unlike Candidates A (Clinical Psychology) and B (Environmental Studies), Candidate C's online behavior (engaging with academic experts on Weibo/Zhihu, sharing original articles) and content preferences (social issues, communication studies) reflect the document's scholarly and methodological framing. The document's technical vocabulary (e.g., 'computational communication,' 'empirical media psychology') also aligns with Candidate C's analytical personality and decision-making style, which values data and factual support.",
+    "model": "solar-pro",
+    "prompt_chars": 30255,
+    "latency_sec": 2.42,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6346,
+    "output_tokens": 205,
+    "total_tokens": 6551,
+    "api_response_id": "8a5fc023-d98f-4a0e-9680-c85273f4448b"
+  }
+]

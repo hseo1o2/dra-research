@@ -1,0 +1,98 @@
+[
+  {
+    "run_id": "pilot_task2_User2_seed1",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User6",
+      "User7",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "Candidate C is a graduate student in Clinical Psychology (matching the document's author profile), seeking academic enhancement and international exposure. The document's focus on credit transfer, clinical research opportunities, and cost-effective planning aligns with C's pragmatic consumption habits, academic rigor, and interest in psychology-specific resources. Unlike A (Environmental Studies) and B (New Media), C's behavioral patterns (e.g., psychology forums, academic resource management) and preferences (e.g., time management, budget-consciousness) directly mirror the document's priorities. The emphasis on mental well-being and cultural adaptation also resonates with C's empathetic personality and interest in emotional communication.",
+    "model": "solar-pro",
+    "prompt_chars": 25217,
+    "latency_sec": 1.56,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task2_User2_seed1",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User6"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on clinical psychology graduate programs, visa restrictions (J-1), tuition fees, and credit transfers\u2014topics directly relevant to Candidate A, a clinical psychology master's student in Beijing. Her profile emphasizes academic rigor, international exchange interests (e.g., Peking University proximity), and practical concerns like costs and credit systems. Candidate B (new media) and C (environmental studies) lack the clinical psychology focus and institutional context (e.g., Peking University, Beijing Normal University) central to the document. The document\u2019s framing aligns with Candidate A\u2019s goals, location, and field-specific priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 25751,
+    "latency_sec": 1.51,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task2_User2_seed1",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User6",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on clinical psychology restrictions, visa regulations, and academic logistics for international graduate students in psychology. Candidate C is explicitly a graduate student in Clinical Psychology with a research focus, aligning directly with the document's technical emphasis on HIPAA, clinical practicum limitations, and cross-border academic mobility. The document's framing (e.g., 'visiting PhD student', 'clinical psychology restrictions') matches Candidate C's background, goals, and academic needs, while Candidates A (new media) and B (environmental studies) lack relevance to the clinical/psychology-specific content.",
+    "model": "solar-pro",
+    "prompt_chars": 28244,
+    "latency_sec": 1.49,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  },
+  {
+    "run_id": "pilot_task2_User2_seed1",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User6",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User6"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on clinical psychology graduate students in China seeking overseas exchange opportunities, emphasizing academic integration, clinical research limitations, and practical logistics. Candidate A is a clinical psychology graduate student in Beijing, aligning directly with the document's target audience. Her educational background, interest in psychology, and focus on academic rigor match the document's emphasis on empirical methodologies, credit transfer, and research networks. Candidates B (new media) and C (environmental studies) lack the clinical psychology specialization central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 30255,
+    "latency_sec": 1.66,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42
+  }
+]

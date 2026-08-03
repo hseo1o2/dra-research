@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "pilot_task43_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User11",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document is a legal analysis request focused on non-compete agreements, compensation obligations, and defense strategies, framed for a former Marketing Manager at a foreign enterprise. Candidate C is the only profile explicitly identifying as a Marketing Manager in a foreign enterprise, with an MBA in marketing and business management. The document's emphasis on legal authority, judicial interpretations, and actionable defense strategies aligns with Candidate C's pragmatic, detail-oriented personality and professional background. Candidates A (data analyst) and B (algorithm engineer) lack the occupational and contextual relevance to the document's focus on corporate law and non-compete agreements.",
+    "model": "solar-pro",
+    "prompt_chars": 25222,
+    "latency_sec": 2.09,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task43_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on non-compete clauses, trade secrets, and labor contract law\u2014topics directly relevant to a Marketing Manager/Director (explicitly mentioned in the search queries). Candidate C is a Marketing Department Manager in a foreign enterprise, making legal and contractual issues like non-competes central to his role. The document's emphasis on court interpretations, compliance, and confidentiality obligations aligns with C's need to navigate employment law, protect trade secrets, and manage contractual obligations for his department. Candidates A (Algorithm Engineer) and B (Data Analyst) lack the managerial and legal context implied by the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 26244,
+    "latency_sec": 1.64,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task43_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User11",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on PRC non-compete laws, trade secrets, and legal standards for marketing managers/directors. Candidate C is a Marketing Department Manager in a foreign enterprise, directly aligning with the document's focus on non-compete obligations for marketing roles. The document's legal and business-oriented framing matches C's MBA background, managerial role, and interest in business management content. Candidates A (data analyst) and B (algorithm engineer) lack the marketing/management context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29524,
+    "latency_sec": 1.84,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  },
+  {
+    "run_id": "pilot_task43_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User11"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on legal analysis of non-compete obligations for a Marketing Manager in a foreign enterprise, emphasizing judicial trends, enforceability criteria, and defense strategies. Candidate B is explicitly identified as a Marketing Manager in a foreign enterprise, with an MBA in marketing and a pragmatic, detail-oriented personality aligned with the document's analytical and strategic framing. The content's focus on trade secrets, compensation standards, and geographic restrictions directly addresses the professional concerns of a marketing manager navigating post-employment restrictions, making Candidate B the most relevant audience. Candidates A (data analyst) and C (algorithm engineer) lack the occupational and contextual alignment with the document's subject matter.",
+    "model": "solar-pro",
+    "prompt_chars": 31535,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full"
+  }
+]
