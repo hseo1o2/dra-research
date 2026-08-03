@@ -309,6 +309,75 @@ def plot_stage_trajectory(
     return outputs
 
 
+def plot_domain_heatmap(
+    analysis_dir: Path,
+    output_dir: Path,
+    stem: str = "domain_stage_heatmap",
+) -> list[Path]:
+    """Plot domain × stage accuracy heatmap."""
+    rows = _read_csv(analysis_dir / "domain_stage_accuracy.csv")
+    domains = [r["domain"] for r in rows]
+    stage_keys = [("plan_acc", "Planning"), ("search_acc", "Search"),
+                  ("compress_acc", "Compression"), ("write_acc", "Writing")]
+
+    data = [[float(r[k]) for k, _ in stage_keys] for r in rows]
+    col_labels = [label for _, label in stage_keys]
+
+    _configure_style()
+    fig, ax = plt.subplots(figsize=(3.35, 2.60))
+    fig.patch.set_facecolor("white")
+    ax.set_facecolor("white")
+
+    import numpy as np
+    arr = np.array(data)
+    chance = 1 / 3
+    # Colormap: white = chance (0.333), dark blue = 1.0, light red below chance
+    import matplotlib.colors as mcolors
+    cmap = plt.cm.Blues
+    norm = mcolors.Normalize(vmin=chance, vmax=1.0)
+    im = ax.imshow(arr, cmap=cmap, norm=norm, aspect="auto")
+
+    ax.set_xticks(range(len(col_labels)))
+    ax.set_xticklabels(col_labels, fontsize=6.8)
+    ax.set_yticks(range(len(domains)))
+    ax.set_yticklabels(domains, fontsize=6.5)
+
+    for i, row_vals in enumerate(data):
+        for j, val in enumerate(row_vals):
+            color = "white" if val >= 0.70 else INK
+            ax.text(j, i, f"{val:.2f}", ha="center", va="center",
+                    fontsize=5.8, color=color, fontweight="bold")
+
+    ax.axhline(2.5, color=GRID, linewidth=0.8)
+
+    cbar = fig.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
+    cbar.ax.tick_params(labelsize=5.8)
+    cbar.set_label("Acc@1", fontsize=6.5)
+    cbar.ax.axhline(chance, color=MUTED, linewidth=0.9, linestyle="--")
+
+    ax.set_title("Domain × stage attribution accuracy", loc="left",
+                 pad=6, fontweight="bold", fontsize=8.5)
+    ax.text(0, 1.02, f"Solar Pro · both seeds · $n=12$ per cell · chance = 0.333",
+            transform=ax.transAxes, color=MUTED, fontsize=5.8, ha="left", va="bottom")
+
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+    ax.tick_params(length=0)
+
+    fig.subplots_adjust(left=0.20, right=0.90, bottom=0.08, top=0.88)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    outputs = [
+        output_dir / f"{stem}.pdf",
+        output_dir / f"{stem}.svg",
+        output_dir / f"{stem}.png",
+    ]
+    fig.savefig(outputs[0], format="pdf", facecolor="white")
+    fig.savefig(outputs[1], format="svg", facecolor="white")
+    fig.savefig(outputs[2], format="png", dpi=300, facecolor="white")
+    plt.close(fig)
+    return outputs
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--analysis-dir", type=Path, required=True)
@@ -326,6 +395,13 @@ def main() -> int:
     )
     for path in outputs:
         print(f"Figure → {path}")
+
+    domain_csv = args.analysis_dir / "domain_stage_accuracy.csv"
+    if domain_csv.exists():
+        heatmap_outputs = plot_domain_heatmap(args.analysis_dir, args.output_dir)
+        for path in heatmap_outputs:
+            print(f"Heatmap → {path}")
+
     return 0
 
 

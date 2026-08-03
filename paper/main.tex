@@ -321,6 +321,12 @@ Planning-to-Search dip: BM25 drops from 0.633 to 0.567, and Embedding
 from 0.442 to 0.292. Because these baselines involve no LLM reasoning,
 the dip pattern reflects artifact-level properties rather than an
 evaluator-specific bias.
+The both-evaluator-wrong rate provides a further evaluator-agnostic
+measure: at Search (seed~0), Solar and GPT-5.4-nano both err
+simultaneously on 40\% of decisions (24 of 60), versus 12\% at Writing
+(7 of 60). This 3.3-fold difference in concurrent evaluator failure
+confirms that Search artifacts contain less recoverable persona evidence
+regardless of the evaluator's reasoning capacity.
 
 \paragraph{Candidate-construction sensitivity.}
 Because per-ground-truth hard negatives are selected around the target
@@ -575,7 +581,7 @@ Because the research brief is itself persona-conditioned, this creates an
 architectural path by which the persona signal suppressed at Search reappears
 in Writing: the Writing model reads the persona-aligned planning scope again
 before synthesising retrieved evidence.
-This hypothesis is consistent with three observations.
+This hypothesis is consistent with four observations.
 First, Writing accuracy (0.800) closely matches Planning (0.808), as expected
 if the same source of signal is active at both stages.
 Second, Writing accuracy under identity masking remains 0.783, only 0.017
@@ -585,6 +591,12 @@ signal surviving as semantic content rather than surface identity phrases.
 Third, BM25 also recovers slightly at Writing (0.575) relative to Search and
 Compression (both 0.567), consistent with lexical persona content being
 re-emphasised via the research brief.
+Fourth, domain-level recovery rates corroborate the interpretation: Finance
+and Health show zero non-recovery among the 32 planning-correct, search-wrong
+reports (4/4 each recovered), whereas Creative has the highest non-recovery
+rate (2 of 3), consistent with technical personas explicitly re-expressing
+actionable content at Writing while generic creative outputs may dilute it
+(Table~\ref{tab:recovery_char}).
 We cannot rule out that additional mechanisms, such as the model's
 conditioning temperature or the length of the Writing artifact, contribute
 to the recovery; disentangling these factors is a direction for future work.
@@ -802,7 +814,9 @@ expected.
 \bottomrule
 \end{tabular}
 \caption{Non-LLM baseline Acc@1 by generation seed ($n=60$ per seed;
-  per-GT hard-negative candidates). BM25 leads at Search in both seeds.}
+  per-GT hard-negative candidates). BM25 leads Solar at Search in seed~0
+  (0.600 vs.\ 0.533) but not seed~1 (0.533 vs.\ 0.567), so the combined
+  BM25 advantage at Search (+0.017) is seed-0 driven and does not replicate.}
 \label{tab:baselines_seed}
 \end{table}
 
@@ -875,6 +889,22 @@ User9  & User12 & Search      & 2 \\
 % ---------------------------------------------------------------------------
 \section{Stage Accuracy by Domain}
 \label{app:domain}
+
+Figure~\ref{fig:domain_heatmap} visualises the full domain~$\times$~stage
+accuracy matrix. Table~\ref{tab:domain_accuracy} gives the same data
+numerically.
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.62\textwidth]{figures/domain_stage_heatmap.pdf}
+  \caption{Domain $\times$ stage attribution accuracy (Solar Pro, both seeds,
+    $n=12$ per cell). Colour intensity encodes Acc@1 above the 0.333 chance
+    level (dashed line on colour bar). Education is the only domain where
+    Search reaches ceiling (1.000); Career, Finance, and Real~Estate show
+    Search at chance (0.333). Creative is the only domain where Writing
+    (0.500) does not exceed Search.}
+  \label{fig:domain_heatmap}
+\end{figure}
 
 Table~\ref{tab:domain_accuracy} shows Solar Acc@1 across the ten PDR-Bench
 domains (both seeds, $n=12$ per domain per stage). The dip-and-recovery
