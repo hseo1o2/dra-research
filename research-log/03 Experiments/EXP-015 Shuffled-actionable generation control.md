@@ -78,8 +78,10 @@ actionable preference donor does not determine what the evaluator recovers as th
 
 - Evidence supports §6.3 claim: persona recoverability is driven by identity shell, not
   actionable preferences.
-- No further ablation seed required given clear Planning/Writing signal.
-- Strict-quality sensitivity direction is unchanged; imprecise due to n=8.
+- Seed-1 extension approved (reviewer weakness W5: n=15 too small) to increase n to 30
+  and narrow CIs. Gemini generation started 2026-08-04 00:00 KST.
+- Once seed-1 generation + Solar matching complete, combined n=30 results will update
+  §6.3, Table tab:shuffled_actionable, and Limitations section.
 
 ## Artifacts
 

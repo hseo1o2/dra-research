@@ -63,8 +63,10 @@ Notion은 frozen design, `RESEARCH_PLAN.md`는 repository evidence를 반영한
 - [x] backbone pilot
 - [x] PDR confirmatory seed 0 generation
 - [x] PDR confirmatory seed 1 generation
-- [ ] per-GT hard-negative candidate로 Solar two-seed primary result 재동결
-- [ ] corrected candidate의 identifier-masked shortcut control
-- [ ] generation-time shortcut ablations: seed-0 gate failed, design review
-  필요; cross-dataset replication 미실행
+- [x] per-GT hard-negative candidate로 Solar two-seed primary result 재동결
+- [x] corrected candidate의 identifier-masked shortcut control (EXP-010)
+- [x] N=2/N=5 candidate-set-size sensitivity (EXP-016, seeds 0+1, n=120)
+- [x] shuffled-actionable generation-time intervention seed 0 (EXP-015)
+- [ ] shuffled-actionable seed 1 in progress → n=30
+- [ ] generation-time shortcut ablation (EXP-011): design review 필요
 - [ ] off-device backup 검증
