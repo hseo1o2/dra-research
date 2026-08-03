@@ -54,13 +54,15 @@ We provide tracing, deterministic candidate ordering, non-LLM baselines, and ana
 % ---------------------------------------------------------------------------
 \section{Introduction}
 \label{sec:intro}
-Persona conditioning is often evaluated only at the final answer, obscuring
-whether a research pipeline preserved the conditioning signal throughout its
-intermediate decisions. This matters for multi-stage agents: a final report
-may appear personalized even when planning or retrieval ignored the user, or
-it may recover information that was weakly expressed in an earlier artifact.
-We therefore treat stage artifacts as observable traces and ask how well an
-independent evaluator can recover the conditioning persona at each stage.
+A deep research agent can produce a persona-aligned final report even when
+its retrieval stage ignored the conditioning signal entirely: the planning
+brief is re-injected at the writing step, allowing persona evidence
+suppressed during search to reappear in the output.
+Standard end-to-end personalization metrics cannot detect this pattern
+because they observe only the final answer.
+We therefore treat each pipeline stage's intermediate artifact as an
+observable trace and ask how well an independent evaluator can recover
+the conditioning persona at each stage independently.
 
 Our contributions are:
 \begin{itemize}
@@ -405,9 +407,11 @@ All         & 0.679 & 0.671 & 0.783 & 0.763 \\
 \begin{figure}[t]
   \centering
   \includegraphics[width=\columnwidth]{figures/stage_attribution_trajectory.pdf}
-  \caption{Two-seed stage-wise attribution trajectory ($n=120$). Thick
-  line: combined estimate; thin lines: individual seeds; error bars:
-  95\% task-cluster bootstrap intervals.}
+  \caption{Stage-wise attribution trajectory. Blue (solid): Solar Pro
+  combined ($n=120$, two seeds) with 95\% task-cluster bootstrap intervals;
+  thin grey lines: individual Solar seeds.
+  Orange (dashed): GPT-5.4-nano seed-0 and seed-1 with combined mean.
+  Both evaluators show the same dip-and-recovery shape.}
   \label{fig:stage_trajectory}
 \end{figure}
 
@@ -457,6 +461,16 @@ Lost denotes correct$\rightarrow$wrong; Gained denotes
 wrong$\rightarrow$correct.}
 \label{tab:transition_flows}
 \end{table}
+
+\paragraph{Domain variation.}
+The dip-and-recovery trajectory holds in nine of ten PDR-Bench domains
+(Appendix~\ref{app:domain}). The exception is Creative, where Writing
+accuracy (0.500) does not rise above Search (0.500), consistent with
+open-ended tasks diluting the planning brief's topic framing during
+retrieval. At the other extreme, Education reaches near-ceiling accuracy
+(0.917/1.000/0.917/1.000). Career and Real~Estate show the lowest
+macro-average (0.500 and 0.458), with Search dropping to chance (0.333)
+in both.
 
 \paragraph{Quality sensitivity.}
 Restricting analysis to the 90 reports satisfying all pre-defined success

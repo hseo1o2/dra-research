@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import json
 import os
 from pathlib import Path
 from typing import Any
@@ -40,6 +41,8 @@ GRID = "#DDE2E6"
 BLUE = "#2865A8"
 BLUE_DARK = "#184A7A"
 SEED_GREYS = ("#8B949D", "#B0B7BE")
+ORANGE = "#C0540A"
+ORANGE_LIGHT = "#E07A3A"
 
 
 def _read_csv(path: Path) -> list[dict[str, str]]:
@@ -75,10 +78,19 @@ def _configure_style() -> None:
     )
 
 
+def _load_gpt_values(summary_path: Path) -> list[float]:
+    """Return [plan, search, compress, write] accuracy from a GPT summary JSON."""
+    data = json.loads(summary_path.read_text(encoding="utf-8"))
+    acc = data["accuracy"]
+    return [acc["plan"], acc["search"], acc["compress"], acc["write"]]
+
+
 def plot_stage_trajectory(
     analysis_dir: Path,
     output_dir: Path,
     stem: str = "stage_attribution_trajectory",
+    gpt_seed0_summary: Path | None = None,
+    gpt_seed1_summary: Path | None = None,
 ) -> list[Path]:
     """Plot stage-wise Acc@1 with task-cluster bootstrap uncertainty."""
     accuracy_rows = _read_csv(analysis_dir / "stage_accuracy.csv")
@@ -164,6 +176,39 @@ def plot_stage_trajectory(
         zorder=4,
     )
 
+    # GPT overlay — individual seeds as thin orange lines, combined as medium dashed.
+    gpt_summaries = [
+        (p, label)
+        for p, label in [
+            (gpt_seed0_summary, "GPT seed 0"),
+            (gpt_seed1_summary, "GPT seed 1"),
+        ]
+        if p is not None
+    ]
+    if gpt_summaries:
+        gpt_seed_styles = [
+            dict(linestyle="--", linewidth=0.85, color=ORANGE_LIGHT, marker="^",
+                 markersize=2.8, markerfacecolor="white", markeredgewidth=0.6, zorder=3),
+            dict(linestyle=":", linewidth=0.85, color=ORANGE_LIGHT, marker="v",
+                 markersize=2.8, markerfacecolor="white", markeredgewidth=0.6, zorder=3),
+        ]
+        all_gpt = []
+        for (path, label), style in zip(gpt_summaries, gpt_seed_styles):
+            gpt_vals = _load_gpt_values(path)
+            all_gpt.append(gpt_vals)
+            axis.plot(x, gpt_vals, label=label, **style)
+        # Combined GPT mean
+        combined_gpt = [
+            sum(v[i] for v in all_gpt) / len(all_gpt) for i in range(len(STAGES))
+        ]
+        axis.plot(
+            x, combined_gpt,
+            color=ORANGE, linewidth=1.35, linestyle=(0, (5, 2)),
+            marker="D", markersize=3.6,
+            markerfacecolor="white", markeredgecolor=ORANGE, markeredgewidth=1.0,
+            label="GPT-nano (combined)", zorder=4,
+        )
+
     chance = 1 / 3
     axis.axhline(
         chance,
@@ -239,14 +284,15 @@ def plot_stage_trajectory(
     axis.spines["top"].set_visible(False)
     axis.spines["right"].set_visible(False)
 
-    if len(seed_labels) >= 2:
+    if len(seed_labels) >= 2 or gpt_summaries:
         axis.legend(
             loc="lower right",
             frameon=False,
             ncol=3,
             handlelength=1.7,
-            columnspacing=0.9,
+            columnspacing=0.8,
             borderaxespad=0.2,
+            labelspacing=0.3,
         )
 
     figure.subplots_adjust(left=0.17, right=0.98, bottom=0.19, top=0.80)
@@ -267,9 +313,17 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--analysis-dir", type=Path, required=True)
     parser.add_argument("--output-dir", type=Path, required=True)
+    parser.add_argument("--gpt-seed0-summary", type=Path, default=None,
+                        help="GPT seed-0 match_accuracy_summary.json")
+    parser.add_argument("--gpt-seed1-summary", type=Path, default=None,
+                        help="GPT seed-1 match_accuracy_summary.json")
     args = parser.parse_args()
 
-    outputs = plot_stage_trajectory(args.analysis_dir, args.output_dir)
+    outputs = plot_stage_trajectory(
+        args.analysis_dir, args.output_dir,
+        gpt_seed0_summary=args.gpt_seed0_summary,
+        gpt_seed1_summary=args.gpt_seed1_summary,
+    )
     for path in outputs:
         print(f"Figure → {path}")
     return 0
