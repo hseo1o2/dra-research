@@ -433,6 +433,11 @@ change remains statistically unresolved. Writing produces 31 gains against
 six losses. Of the 32 reports that are correct at Planning and wrong at
 Search, 11 recover by Compression and 24 (75.0\%) recover by Writing. More
 broadly, 33 of the 54 Search errors (61.1\%) are correct at Writing.
+The 8 Planning-correct, Search-wrong, Writing-wrong (non-recovered) reports
+tend toward lower Compression accuracy (0.250) than the 24 that recover by
+Writing (0.375); they are spread across six domains with no domain contributing
+more than two, suggesting no single domain drives non-recovery
+(see Appendix~\ref{app:recovery}).
 
 \begin{table}[t]
 \centering
@@ -546,9 +551,14 @@ the single largest confusion), User12$\rightarrow$User10, and
 User17$\rightarrow$User10. Table~\ref{tab:confusion} lists all
 ground-truth/prediction pairs with four or more stage-level errors.
 This pattern suggests User10 may act as a generic attractor at the
-lower-recoverability stages, consistent with high pairwise
-actionable-token similarity among hard-negative candidates.
-A systematic analysis of overlap and pair-level difficulty remains future work.
+lower-recoverability stages, When User10 is not the ground truth but is present as a candidate,
+it is selected at rates of 0.217 and 0.179 at Search and Compression
+(chance: 0.333); these below-chance overall rates mask localised attractor
+behaviour, as 14 of the 23 Search false-attributions to User10 originate
+from just three ground-truth personas (User18, User12, User17; 60.9\%).
+User10 false attributions concentrate in Finance, Law, and Parenting domains,
+consistent with shared actionable-preference profiles.
+A full pairwise Jaccard analysis remains future work.
 
 \begin{table}[t]
 \centering
@@ -807,6 +817,88 @@ User9  & User12 & Search      & 2 \\
   misattributions across eight ground-truth personas at Search and
   Compression.}
 \label{tab:confusion_full}
+\end{table}
+
+% ---------------------------------------------------------------------------
+\section{Stage Accuracy by Domain}
+\label{app:domain}
+
+Table~\ref{tab:domain_accuracy} shows Solar Acc@1 across the ten PDR-Bench
+domains (both seeds, $n=12$ per domain per stage). The dip-and-recovery
+trajectory holds in nine of ten domains. The exception is Creative, where
+Writing accuracy (0.500) does not rise above Search (0.500), suggesting that
+open-ended creative tasks may be harder to attribute once the planning brief's
+topic framing is diluted by retrieved content. Education reaches near-ceiling
+performance (0.917/1.000/0.917/1.000), while Career and Real~Estate show the
+lowest macro-average accuracy (0.500 and 0.458). The Search dip reaches chance
+level (0.333) in Career, Finance, and Real~Estate.
+
+\begin{table}[!ht]
+\centering
+\small
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Domain} & \textbf{Plan} & \textbf{Search} & \textbf{Comp.} & \textbf{Write} & \textbf{Avg} \\
+\midrule
+Career      & 0.667 & 0.333 & 0.333 & 0.667 & 0.500 \\
+Creative    & 0.750 & 0.500 & 0.500 & 0.500 & 0.562 \\
+Education   & 0.917 & 1.000 & 0.917 & 1.000 & 0.958 \\
+Finance     & 0.667 & 0.333 & 0.417 & 0.833 & 0.562 \\
+Health      & 0.917 & 0.583 & 0.667 & 1.000 & 0.792 \\
+Law         & 0.833 & 0.583 & 0.750 & 0.833 & 0.750 \\
+Parenting   & 0.917 & 0.500 & 0.750 & 0.750 & 0.729 \\
+Real Estate & 0.500 & 0.333 & 0.333 & 0.667 & 0.458 \\
+Shopping    & 0.917 & 0.667 & 0.667 & 0.917 & 0.792 \\
+Travel      & 1.000 & 0.667 & 0.583 & 0.833 & 0.771 \\
+\bottomrule
+\end{tabular}
+\caption{Solar Acc@1 by domain across both seeds ($n=12$ per cell; Solar Pro
+  matcher; per-GT hard-negative candidates). The dip-and-recovery ordering
+  holds in all domains except Creative. Chance accuracy is 0.333.}
+\label{tab:domain_accuracy}
+\end{table}
+
+% ---------------------------------------------------------------------------
+\section{Recovery vs.\ Non-Recovery Report Characteristics}
+\label{app:recovery}
+
+Of the 32 reports that are correct at Planning and wrong at Search,
+24 (75.0\%) recover to a correct Writing attribution and 8 do not.
+Table~\ref{tab:recovery_char} summarises the domain distribution.
+The 8 non-recovered reports have a lower Compression accuracy (0.250)
+than the 24 recovered reports (0.375), suggesting that Compression
+signal quality may mediate Writing recovery. Non-recovered reports are
+spread across six domains; Creative (2/8, 25\%) and Travel (2/8, 25\%)
+are somewhat over-represented relative to their share of all reports
+(6\% each). Four of the eight non-recovered reports come from two
+(task, persona) pairs that fail consistently across both generation seeds
+(task17/User17 and task29/User18), indicating per-instance rather than
+purely domain-level difficulty.
+
+\begin{table}[!ht]
+\centering
+\small
+\begin{tabular}{lcc}
+\toprule
+\textbf{Domain} & \textbf{Recovered ($n=24$)} & \textbf{Not recovered ($n=8$)} \\
+\midrule
+Career      & 3 & 1 \\
+Creative    & 1 & 2 \\
+Finance     & 4 & 0 \\
+Health      & 4 & 0 \\
+Law         & 3 & 0 \\
+Parenting   & 4 & 1 \\
+Real Estate & 1 & 1 \\
+Shopping    & 2 & 1 \\
+Travel      & 2 & 2 \\
+\midrule
+Compression Acc & 0.375 & 0.250 \\
+\bottomrule
+\end{tabular}
+\caption{Domain distribution of the 32 Planning-correct/Search-wrong reports
+  by Writing recovery status. Non-recovered reports have lower Compression
+  accuracy and are modestly concentrated in Creative and Travel.}
+\label{tab:recovery_char}
 \end{table}
 
 % ---------------------------------------------------------------------------
