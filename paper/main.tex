@@ -466,17 +466,18 @@ dip-and-recovery ordering as the all-report analysis.
 
 \paragraph{Candidate-set-size sensitivity.}
 To test whether the dip-and-recovery pattern depends on the three-way choice
-structure, we re-ran the Solar matcher on the same seed-0 artifacts with $N=2$
+structure, we re-ran the Solar matcher on seeds-0-and-1 artifacts with $N=2$
 (GT plus one hard negative; chance 0.500) and $N=5$ (GT plus four hard
 negatives; chance 0.200) candidate sets frozen by the same Jaccard-ranked
 protocol. Table~\ref{tab:sensitivity} reports the trajectories. The
 dip-and-recovery ordering is preserved at all three candidate-set sizes:
-$N=2$ yields 0.817/0.683/0.600/0.800 (chance 0.500), $N=3$ yields
-0.800/0.533/0.567/0.817 (chance 0.333), and $N=5$ yields
-0.750/0.483/0.517/0.733 (chance 0.200). The Planning-to-Search drop
-($\Delta = -0.267$ at both $N=3$ and $N=5$; $-0.134$ at $N=2$) and
-Writing recovery are consistent across all three settings, confirming the
-trajectory is not an artefact of the three-way choice structure.
+$N=2$ yields 0.842/0.633/0.625/0.775 (chance 0.500), $N=3$ yields
+0.808/0.550/0.592/0.800 (chance 0.333), and $N=5$ yields
+0.758/0.471/0.525/0.717 (chance 0.200). The Planning-to-Search drop
+($\Delta = -0.209$ at $N=2$; $-0.258$ at $N=3$; $-0.287$ at $N=5$) grows
+monotonically with $N$, and Writing recovery is consistent across all three
+settings, confirming the trajectory is not an artefact of the three-way
+choice structure.
 
 \begin{table}[t]
 \centering
@@ -485,12 +486,12 @@ trajectory is not an artefact of the three-way choice structure.
 \toprule
 $N$ & \textbf{Chance} & \textbf{Plan} & \textbf{Search} & \textbf{Comp.} & \textbf{Write} & $\Delta_{\mathrm{P}{\to}\mathrm{S}}$ \\
 \midrule
-2 & 0.500 & 0.817 & 0.683 & 0.600 & 0.800 & $-0.134$ \\
-3 & 0.333 & 0.800 & 0.533 & 0.567 & 0.817 & $-0.267$ \\
-5 & 0.200 & 0.750 & 0.483 & 0.517 & 0.733 & $-0.267$ \\
+2 & 0.500 & 0.842 & 0.633 & 0.625 & 0.775 & $-0.209$ \\
+3 & 0.333 & 0.808 & 0.550 & 0.592 & 0.800 & $-0.258$ \\
+5 & 0.200 & 0.758 & 0.471 & 0.525 & 0.717 & $-0.287$ \\
 \bottomrule
 \end{tabular}
-\caption{Stage accuracy by candidate-set size $N$ (seed 0, $n=60$; Solar Pro
+\caption{Stage accuracy by candidate-set size $N$ (seeds 0 and 1, $n=120$; Solar Pro
   matcher). The dip-and-recovery trajectory holds at all three candidate-set
   sizes. Absolute accuracy decreases with $N$ as discrimination becomes harder.}
 \label{tab:sensitivity}
@@ -637,9 +638,15 @@ donor-minus-shell $-0.533$, $[-0.933,-0.133]$) and Writing
 where donor and shell prediction rates approach parity ($-0.133$,
 $[-0.600,+0.200]$), consistent with its role as the lowest-recoverability
 stage. The Writing result holds in the strict-quality subset ($n=8$: shell
-0.875, donor 0.125). Thus, detectable output identity remains anchored more
-strongly to the identity shell than to transplanted actionable preferences;
-this does not establish that the model ignores actionable preferences.
+0.875, donor 0.125). The two key claims---Planning and Writing shell
+dominance---are supported by confidence intervals entirely below zero
+($[-0.933,-0.133]$ and $[-0.933,-0.400]$ respectively), so the direction
+is reliable despite the small sample; the ambiguous stages (Search, Compression)
+have intervals that include zero, consistent with their role as the
+lowest-accuracy stages where the shell-donor gap is weakest.
+Thus, detectable output identity remains anchored more strongly to the identity
+shell than to transplanted actionable preferences; this does not establish that
+the model ignores actionable preferences.
 
 \begin{table}[t]
 \centering
@@ -715,9 +722,13 @@ GPT-5.4-nano independently reproduces the trajectory and agrees with Solar on
 78.3\% of decisions ($\kappa=0.763$), reducing dependence on a single
 evaluator.
 
-Future work includes scaling the candidate set size ($N > 3$), extending to
-LaMP-QA for domain transfer, and developing persona-aware query diversification
-strategies to improve signal retention at the Search stage.
+Candidate-set-size sensitivity across two seeds at $N=2$ and $N=5$ confirms the
+dip-and-recovery shape is not an artefact of the three-way choice structure;
+the Planning-to-Search drop grows monotonically with $N$ ($-0.209$/$-0.258$/$-0.287$).
+Future work includes extending to LaMP-QA for cross-dataset validation,
+running attribution across additional DRA backbones, and developing
+persona-aware query diversification strategies to improve signal retention at
+the Search stage.
 
 % ---------------------------------------------------------------------------
 \bibliography{refs}
@@ -964,10 +975,11 @@ both of which passed their pre-specified quality criteria.
 \label{app:sensitivity}
 
 Table~\ref{tab:sensitivity_full} reproduces the full sensitivity results
-for all three candidate-set sizes (seed~0, $n=60$; Solar Pro matcher).
-The Planning$\rightarrow$Search drop is $-0.267$ at both $N=3$ and $N=5$,
-and $-0.134$ at $N=2$. Writing accuracy exceeds Search by $+0.117$ ($N=2$),
-$+0.284$ ($N=3$), and $+0.250$ ($N=5$). All stages exceed their
+for all three candidate-set sizes (seeds 0 and 1, $n=120$ per row; Solar Pro matcher).
+The Planning$\rightarrow$Search drop is $-0.209$ at $N=2$, $-0.258$ at $N=3$,
+and $-0.287$ at $N=5$, growing monotonically with $N$.
+Writing accuracy exceeds Search by $+0.142$ ($N=2$),
+$+0.250$ ($N=3$), and $+0.246$ ($N=5$). All stages exceed their
 respective chance levels at all three settings, confirming that the
 dip-and-recovery pattern is robust to the number of hard-negative candidates.
 
@@ -978,12 +990,12 @@ dip-and-recovery pattern is robust to the number of hard-negative candidates.
 \toprule
 $N$ & \textbf{Chance} & \textbf{Plan} & \textbf{Search} & \textbf{Comp.} & \textbf{Write} & \textbf{$\Delta_{\mathrm{P}{\to}\mathrm{S}}$} \\
 \midrule
-2 & 0.500 & 0.817 & 0.683 & 0.600 & 0.800 & $-0.134$ \\
-3 & 0.333 & 0.800 & 0.533 & 0.567 & 0.817 & $-0.267$ \\
-5 & 0.200 & 0.750 & 0.483 & 0.517 & 0.733 & $-0.267$ \\
+2 & 0.500 & 0.842 & 0.633 & 0.625 & 0.775 & $-0.209$ \\
+3 & 0.333 & 0.808 & 0.550 & 0.592 & 0.800 & $-0.258$ \\
+5 & 0.200 & 0.758 & 0.471 & 0.525 & 0.717 & $-0.287$ \\
 \bottomrule
 \end{tabular}
-\caption{Candidate-set-size sensitivity: Solar Acc@1 by $N$ (seed 0, $n=60$
+\caption{Candidate-set-size sensitivity: Solar Acc@1 by $N$ (seeds 0 and 1, $n=120$
   per row). Candidates selected by same-domain actionable-token Jaccard
   ranking. The trajectory shape is stable across all sizes.}
 \label{tab:sensitivity_full}

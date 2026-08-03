@@ -102,9 +102,12 @@ def analyze(
     shuffled: list[dict[str, Any]],
     repetitions: int = 5000,
     seed: int = 20260803,
-    expected_reports: int = 15,
+    expected_reports: int | None = None,
     strict_run_ids: set[str] | None = None,
 ) -> dict[str, Any]:
+    actual_reports = len(set(row["run_id"] for row in shuffled))
+    if expected_reports is None:
+        expected_reports = actual_reports
     if len(shuffled) != expected_reports * len(STAGES):
         raise ValueError(
             f"Expected {expected_reports * len(STAGES)} shuffled decisions, "
@@ -154,7 +157,6 @@ def analyze(
         "population": {
             "reports": expected_reports,
             "stages": list(STAGES),
-            "seed": 0,
         },
         "candidate_order_sha256_verified": expected_reports * len(STAGES),
         "stage_results": _stage_summary(enriched, repetitions, seed),

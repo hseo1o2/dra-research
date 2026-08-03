@@ -19,31 +19,31 @@ should appear at N=2 (harder to fool by chance) and N=5 (harder overall).
 - **Candidate plan**: `provenance/candidate_sensitivity_plan.json` — 60 experiments
   × N∈{2,3,5}, built from same-domain actionable-token Jaccard ranking.
   N=3 re-computation matches manifest 60/60 exactly (validation gate passed).
-- **Artifacts**: existing seed-0 `runs/confirmatory/` artifact files (no new generation).
+- **Artifacts**: existing `runs/confirmatory/` artifact files, seeds 0 and 1.
 - **Matcher**: Solar-pro via `scripts/run_sensitivity_matching.py`.
   Tool-schema `enum` and user-prompt suffix are dynamically constructed per N.
 - **Candidate order**: same SHA-256-derived deterministic shuffle as primary experiment.
-- **Seed**: 0 only (120 Solar calls total: 60 for N=2 + 60 for N=5).
+- **Seeds**: 0 and 1 (240 Solar calls total: 60×2 for N=2 + 60×2 for N=5).
 
-## Results (seed 0, n=60 per N)
+## Results (seeds 0 and 1, n=120 per N)
 
 | N  | Chance | Plan  | Search | Compress | Write | Δ_PS   |
 |----|--------|-------|--------|----------|-------|--------|
-| 2  | 0.500  | 0.817 | 0.683  | 0.600    | 0.800 | −0.134 |
-| 3  | 0.333  | 0.800 | 0.533  | 0.567    | 0.817 | −0.267 |
-| 5  | 0.200  | 0.750 | 0.483  | 0.517    | 0.733 | −0.267 |
+| 2  | 0.500  | 0.842 | 0.633  | 0.625    | 0.775 | −0.209 |
+| 3  | 0.333  | 0.808 | 0.550  | 0.592    | 0.800 | −0.258 |
+| 5  | 0.200  | 0.758 | 0.471  | 0.525    | 0.717 | −0.287 |
 
 All stages exceed their respective chance levels at all three candidate-set sizes.
-The Planning→Search drop (Δ_PS) is −0.267 at both N=3 and N=5, −0.134 at N=2.
-Writing recovery above Search: +0.117 (N=2), +0.284 (N=3), +0.250 (N=5).
+The Planning→Search drop (Δ_PS) grows monotonically with N: −0.209 (N=2), −0.258 (N=3), −0.287 (N=5).
+Writing recovery above Search: +0.142 (N=2), +0.250 (N=3), +0.246 (N=5).
 
 ## Interpretation
 
 The dip-and-recovery trajectory is not an artefact of the three-way choice structure.
 The N=2 setting (binary discrimination, chance 0.500) shows the same directional
 pattern, ruling out that the low Search accuracy is driven by N=3's lower-than-chance
-margin at Search. The N=5 Δ_PS matches N=3 exactly (−0.267), suggesting the
-suppression effect is stable across harder discrimination tasks.
+margin at Search. The Δ_PS grows monotonically with N, suggesting the suppression
+effect becomes more pronounced as discrimination becomes harder.
 
 ## Files
 
@@ -55,5 +55,5 @@ suppression effect is stable across harder discrimination tasks.
 
 ## Cost
 
-- Solar: 120 calls (60 × N=2, 60 × N=5), seed 0 only
+- Solar: 240 calls (60×2 × N=2, 60×2 × N=5), seeds 0 and 1
 - Gemini / GPT / Serper: 0

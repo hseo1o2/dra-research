@@ -4,10 +4,12 @@ Computes stage-wise accuracy for each N and reports the trajectory shape
 (dip-and-recovery) relative to chance (1/N) across all three candidate sizes.
 
 Usage:
-    python scripts/analyze_sensitivity.py
+    python scripts/analyze_sensitivity.py                # seed 0 only
+    python scripts/analyze_sensitivity.py --all-seeds   # combine seeds 0+1
 """
 from __future__ import annotations
 
+import argparse
 import json
 import statistics
 from collections import defaultdict
@@ -44,7 +46,23 @@ def stage_accuracy(records: list[dict]) -> dict[str, float]:
 
 
 def main() -> None:
-    print("Candidate-set sensitivity analysis (seed 0)")
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--all-seeds",
+        action="store_true",
+        help="Combine all seeds (default: seed 0 only)",
+    )
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default=None,
+        help="Output JSON path (default: paper/analysis/sensitivity_summary[_combined].json)",
+    )
+    args = parser.parse_args()
+
+    seed_filter: int | None = None if args.all_seeds else 0
+    label = "all seeds" if args.all_seeds else "seed 0"
+    print(f"Candidate-set sensitivity analysis ({label})")
     print(f"{'N':>4}  {'Chance':>6}  {'Plan':>6}  {'Search':>6}  {'Compress':>8}  {'Write':>6}  {'Avg':>6}  {'Reports':>7}")
     print("-" * 65)
 
@@ -53,13 +71,14 @@ def main() -> None:
         if not match_dir.exists():
             print(f"  N={n}: directory not found, skipping")
             continue
-        records = load_matches(match_dir, seed_filter=0)
+        records = load_matches(match_dir, seed_filter=seed_filter)
         if not records:
             print(f"  N={n}: no records found")
             continue
         acc = stage_accuracy(records)
         chance = round(1 / n, 3)
-        avg = round(statistics.mean(acc[s] for s in STAGES if acc.get(s) == acc.get(s)), 3)
+        valid_vals = [acc[s] for s in STAGES if s in acc and acc[s] == acc[s]]
+        avg = round(statistics.mean(valid_vals), 3) if valid_vals else float("nan")
         n_reports = len(set(rec["run_id"] for rec in records))
         results[n] = {"acc": acc, "chance": chance, "avg": avg, "n_reports": n_reports}
 
@@ -79,8 +98,14 @@ def main() -> None:
             above_chance = "✓" if plan > r["chance"] and write > r["chance"] else "✗"
             print(f"  N={n}: Plan→Search Δ={dip:+.3f}  Search→Write Δ={recovery:+.3f}  above-chance {above_chance}")
 
-    # Write JSON summary
-    summary_path = ROOT / "paper/analysis/sensitivity_summary.json"
+    if args.output:
+        summary_path = args.output
+    elif args.all_seeds:
+        summary_path = ROOT / "paper/analysis/sensitivity_summary_combined.json"
+    else:
+        summary_path = ROOT / "paper/analysis/sensitivity_summary.json"
+
+    summary_path.parent.mkdir(parents=True, exist_ok=True)
     summary_path.write_text(json.dumps(results, indent=2))
     print(f"\nSummary written to {summary_path}")
 
