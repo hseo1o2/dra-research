@@ -470,27 +470,29 @@ structure, we re-ran the Solar matcher on the same seed-0 artifacts with $N=2$
 (GT plus one hard negative; chance 0.500) and $N=5$ (GT plus four hard
 negatives; chance 0.200) candidate sets frozen by the same Jaccard-ranked
 protocol. Table~\ref{tab:sensitivity} reports the trajectories. The
-dip-and-recovery ordering is preserved at all three candidate-set sizes. As
-$N$ increases, absolute accuracy decreases relative to the corresponding chance
-level, as expected from harder discrimination; the shape of the trajectory---
-drop at Search, partial rise at Compression, recovery at Writing---remains
-consistent (see Appendix~\ref{app:sensitivity}).
+dip-and-recovery ordering is preserved at all three candidate-set sizes:
+$N=2$ yields 0.817/0.683/0.600/0.800 (chance 0.500), $N=3$ yields
+0.800/0.533/0.567/0.817 (chance 0.333), and $N=5$ yields
+0.750/0.483/0.517/0.733 (chance 0.200). The Planning-to-Search drop
+($\Delta = -0.267$ at both $N=3$ and $N=5$; $-0.134$ at $N=2$) and
+Writing recovery are consistent across all three settings, confirming the
+trajectory is not an artefact of the three-way choice structure.
 
 \begin{table}[t]
 \centering
 \small
 \begin{tabular}{lcccccr}
 \toprule
-$N$ & \textbf{Chance} & \textbf{Plan} & \textbf{Search} & \textbf{Comp.} & \textbf{Write} & $\Delta_\text{P{\rightarrow}S}$ \\
+$N$ & \textbf{Chance} & \textbf{Plan} & \textbf{Search} & \textbf{Comp.} & \textbf{Write} & $\Delta_{\mathrm{P}{\to}\mathrm{S}}$ \\
 \midrule
 2 & 0.500 & 0.817 & 0.683 & 0.600 & 0.800 & $-0.134$ \\
 3 & 0.333 & 0.800 & 0.533 & 0.567 & 0.817 & $-0.267$ \\
-5 & 0.200 & \multicolumn{4}{c}{\textit{see Appendix~\ref{app:sensitivity}}} & --- \\
+5 & 0.200 & 0.750 & 0.483 & 0.517 & 0.733 & $-0.267$ \\
 \bottomrule
 \end{tabular}
 \caption{Stage accuracy by candidate-set size $N$ (seed 0, $n=60$; Solar Pro
-  matcher). The dip-and-recovery trajectory holds at $N=2$ and $N=3$.
-  $N=5$ results are in Appendix~\ref{app:sensitivity}.}
+  matcher). The dip-and-recovery trajectory holds at all three candidate-set
+  sizes. Absolute accuracy decreases with $N$ as discrimination becomes harder.}
 \label{tab:sensitivity}
 \end{table}
 
@@ -961,23 +963,24 @@ both of which passed their pre-specified quality criteria.
 \section{Candidate-Set-Size Sensitivity}
 \label{app:sensitivity}
 
-Table~\ref{tab:sensitivity_full} extends the body Table~\ref{tab:sensitivity}
-with full $N=5$ results (seed~0, $n=60$; Solar Pro matcher; chance 0.200).
-The dip-and-recovery trajectory is preserved at all three candidate-set sizes.
-Absolute accuracy decreases as $N$ increases because discrimination becomes
-harder, but the Planning$\rightarrow$Search drop and Search-to-Writing
-recovery remain consistent across all three settings.
+Table~\ref{tab:sensitivity_full} reproduces the full sensitivity results
+for all three candidate-set sizes (seed~0, $n=60$; Solar Pro matcher).
+The Planning$\rightarrow$Search drop is $-0.267$ at both $N=3$ and $N=5$,
+and $-0.134$ at $N=2$. Writing accuracy exceeds Search by $+0.117$ ($N=2$),
+$+0.284$ ($N=3$), and $+0.250$ ($N=5$). All stages exceed their
+respective chance levels at all three settings, confirming that the
+dip-and-recovery pattern is robust to the number of hard-negative candidates.
 
 \begin{table}[!ht]
 \centering
 \small
 \begin{tabular}{lcccccc}
 \toprule
-$N$ & \textbf{Chance} & \textbf{Plan} & \textbf{Search} & \textbf{Comp.} & \textbf{Write} & \textbf{$\Delta_\text{P{\rightarrow}S}$} \\
+$N$ & \textbf{Chance} & \textbf{Plan} & \textbf{Search} & \textbf{Comp.} & \textbf{Write} & \textbf{$\Delta_{\mathrm{P}{\to}\mathrm{S}}$} \\
 \midrule
 2 & 0.500 & 0.817 & 0.683 & 0.600 & 0.800 & $-0.134$ \\
 3 & 0.333 & 0.800 & 0.533 & 0.567 & 0.817 & $-0.267$ \\
-5 & 0.200 & \textit{pending} & \textit{pending} & \textit{pending} & \textit{pending} & --- \\
+5 & 0.200 & 0.750 & 0.483 & 0.517 & 0.733 & $-0.267$ \\
 \bottomrule
 \end{tabular}
 \caption{Candidate-set-size sensitivity: Solar Acc@1 by $N$ (seed 0, $n=60$
