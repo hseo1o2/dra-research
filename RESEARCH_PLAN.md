@@ -349,7 +349,49 @@ quality-filtered 결과를 sensitivity analysis로 별도 보고한다.
 - [x] limitations에 utility validation 부재와 LLM matcher 의존성 명시
 - [x] artifact/code 공개 위치가 생기기 전 release 완료형 문구 사용 금지
 - [ ] provenance checksum 검증 후 비공개 off-device backup
-- [x] PDF compile, 6-page limit, anonymous submission metadata와 전 페이지 visual QA
+- [x] PDF compile, anonymous submission metadata와 전 페이지 visual QA (10 pages: 6 body + 4 appendix)
+
+### Phase F — 제출 후 artifact 공개 (accept 이후)
+
+> **타임라인:** 결과 통보 9/7 → camera-ready 9/14 → 워크샵 10/29
+
+#### F-1. 익명 제출 단계 (지금 ~ 9/7)
+- [ ] [anonymous.4open.science](https://anonymous.4open.science) 로 코드 repo 익명 미러 생성
+  - 실제 GitHub repo는 private 유지
+  - 익명화할 식별 문자열 지정: 이름, GitHub username, institution 등
+  - 생성된 `https://anonymous.4open.science/r/<token>/` URL을 논문 footnote에 삽입
+- [ ] supplementary ZIP 준비: `git archive HEAD --output=supplement.zip` 로 git history 제거
+  - ZIP 내 절대경로, author metadata 스크럽 확인
+  - 데이터 샘플(~10 run JSON) 포함, API key 및 `runs/` 전체는 제외
+- [ ] OpenReview 제출 시 supplementary 업로드 (코드 link + ZIP)
+
+#### F-2. Accept 후 공개 단계 (9/7 ~ 9/14)
+
+**코드 repo (GitHub + Zenodo DOI):**
+- [ ] GitHub public repo 생성: `github.com/<org>/dra-pulse`
+- [ ] [zenodo.org](https://zenodo.org) 에서 GitHub 연동 → repo toggle ON
+- [ ] GitHub에서 `v1.0.0` release 태그 생성 → Zenodo가 자동 DOI 발급
+- [ ] DOI 예시: `10.5281/zenodo.XXXXXXX` — 논문 bibliography에 `@software` 항목으로 추가
+- [ ] README에 Zenodo badge 추가
+
+**데이터셋 (HuggingFace Datasets):**
+- [ ] HuggingFace dataset repo 생성: `huggingface.co/datasets/<username>/dra-pulse-bench`
+  - 생성 시 `private=True` 로 시작
+  - 포함 파일: `data/run_artifacts/` (120 JSON), `data/matches/`, `README.md` (dataset card)
+  - 제외 파일: `runs/` 원본, API key, Serper 결과
+- [ ] dataset card (`README.md`) 작성:
+  - YAML 프론트매터: `language: en`, `license: cc-by-4.0`, `task_categories`, `arxiv: 2026.XXXXX`
+  - 섹션: Dataset Summary, Data Fields, Data Splits, Source Data, Annotation Process, Citation
+- [ ] camera-ready PDF에 GitHub URL + Zenodo DOI + HF 링크 반영
+- [ ] HF repo visibility → public 전환 (`Settings > Visibility`)
+
+**라이선스:**
+- 코드(`scripts/`, `tests/`): **Apache 2.0** (PDR-Bench upstream과 동일)
+- 데이터 artifact: **CC-BY 4.0**
+- `LICENSE` 파일에 두 라이선스 병기, PDR-Bench attribution 명시
+
+#### F-3. 워크샵 당일 (10/29, optional)
+- [ ] HuggingFace Space Gradio demo 배포 (시간 여유 있을 때)
 
 추가 API 예산이 승인될 경우의 최우선 실험은 corrected Search
 queries-only/snippets-only paired control이다. 기존 120개 artifact를
@@ -437,7 +479,10 @@ control을 제외한다.
 - [ ] benchmark/framework claim이 실제 공개 범위와 일치
 - [x] limitation과 non-claims가 명시됨
 - [ ] provenance와 off-device backup이 검증됨
-- [x] 현재 ACL review PDF가 6-page limit, anonymity, visual layout 검수를 통과
+- [x] 현재 ACL review PDF가 anonymity, visual layout 검수를 통과 (10 pages)
+- [ ] (accept 후) Anonymous GitHub 익명 미러 → GitHub public repo + Zenodo DOI
+- [ ] (accept 후) HuggingFace dataset repo (CC-BY 4.0) + dataset card
+- [ ] (camera-ready) 논문 내 코드/데이터 링크가 실제 공개 URL로 교체됨
 
 ## 11. Source map
 
