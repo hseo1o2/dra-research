@@ -88,6 +88,7 @@ def _collect_batch_results(
     output_dir: Path,
     experiments: list[tuple[dict[str, Any], str, int, int]],
     current_results: list[dict[str, Any]] | None = None,
+    condition: str = "full",
 ) -> list[dict[str, Any]]:
     """Collect full-batch state, including summaries from prior chunks.
 
@@ -102,7 +103,7 @@ def _collect_batch_results(
     }
     collected: list[dict[str, Any]] = []
     for task, gt_userid, seed, _source_query_id in experiments:
-        run_id = _run_id(task["taskid"], gt_userid, seed)
+        run_id = _run_id(task["taskid"], gt_userid, seed, condition)
         saved = _load_run_summary(output_dir / f"{run_id}_summary.json")
         if saved is not None:
             collected.append(saved)
@@ -173,20 +174,23 @@ def _write_batch_summaries(
     seed: int,
     experiments: list[tuple[dict[str, Any], str, int, int]],
     current_results: list[dict[str, Any]] | None = None,
+    condition: str = "full",
 ) -> dict[str, Any]:
     """Write full run-level and aggregate summaries from per-run truth."""
     full_results = _collect_batch_results(
         output_dir,
         experiments,
         current_results=current_results,
+        condition=condition,
     )
-    batch_summary_path = output_dir / f"batch_{split}_seed{seed}_summary.json"
+    label = split if condition == "full" else f"{split}_{condition}"
+    batch_summary_path = output_dir / f"batch_{label}_seed{seed}_summary.json"
     with open(batch_summary_path, "w", encoding="utf-8") as fh:
         json.dump(full_results, fh, indent=2, ensure_ascii=False, sort_keys=True)
 
     quality = _aggregate_batch_results(full_results)
     quality_summary_path = (
-        output_dir / f"batch_{split}_seed{seed}_quality_summary.json"
+        output_dir / f"batch_{label}_seed{seed}_quality_summary.json"
     )
     with open(quality_summary_path, "w", encoding="utf-8") as fh:
         json.dump(quality, fh, indent=2, ensure_ascii=False, sort_keys=True)
@@ -206,6 +210,7 @@ def _iter_experiments(
     manifest: dict[str, Any],
     split: str,
     seed: int,
+    condition: str = "full",
 ) -> list[tuple[dict[str, Any], str, int, int]]:
     """Return (task_row, gt_userid, seed, source_query_id) for a split."""
     if split == "dev":
@@ -214,6 +219,15 @@ def _iter_experiments(
         groups = manifest["pdr_bench"]["confirmatory"]
     else:
         raise ValueError(f"Unknown split: {split!r}")
+    if condition != "full":
+        if split != "confirmatory":
+            raise ValueError("Persona ablations require confirmatory split")
+        allowed_taskids = set(
+            manifest["pdr_bench"]["ablation_subset"]["taskids"]
+        )
+        groups = [
+            task for task in groups if task["taskid"] in allowed_taskids
+        ]
     rows = []
     for task in groups:
         for exp in task["experiments"]:
@@ -221,8 +235,14 @@ def _iter_experiments(
     return rows
 
 
-def _run_id(taskid: int, userid: str, seed: int) -> str:
-    return f"pilot_task{taskid}_{userid}_seed{seed}"
+def _run_id(
+    taskid: int,
+    userid: str,
+    seed: int,
+    condition: str = "full",
+) -> str:
+    prefix = "pilot" if condition == "full" else f"ablation_{condition}"
+    return f"{prefix}_task{taskid}_{userid}_seed{seed}"
 
 
 async def _run_one(
@@ -238,6 +258,7 @@ async def _run_one(
     output_dir: Path,
     ledger: Any,
     use_flex: bool,
+    condition: str = "full",
 ) -> dict[str, Any]:
     from langchain_core.messages import HumanMessage
 
@@ -250,13 +271,42 @@ async def _run_one(
     )
     from scripts.serper_adapter import SerperAdapter, patch_search, restore_search
     from scripts.tracing_adapter import DRATracer, validate_artifact_file
+    from scripts.persona_ablation import (
+        actionable_donor_userid,
+        compose_shuffled_actionable,
+        project_persona,
+    )
 
-    persona = _load_persona(gt_userid)
+    identity_shell = _load_persona(gt_userid)
+    identity_keys = set(
+        manifest["actionable_identity_split"]["identity_leaf_keys"]
+    )
+    actionable_donor: str | None = None
+    if condition == "shuffled_actionable":
+        actionable_donor = actionable_donor_userid(
+            gt_userid, list(task["personas_n3"])
+        )
+        persona = compose_shuffled_actionable(
+            identity_shell,
+            _load_persona(actionable_donor),
+            identity_keys,
+        )
+    else:
+        persona = project_persona(
+            identity_shell, condition, identity_keys
+        )
     # Find the query from the experiments list
     exp = next(
         e for e in task["experiments"] if e["gt_userid"] == gt_userid
     )
-    user_message = _build_user_message(task, exp, persona)
+    if condition == "full":
+        user_message = _build_user_message(task, exp, persona)
+    else:
+        user_message = _build_user_message(
+            task,
+            {"query": task["task"]},
+            persona,
+        )
 
     model_config = {
         "research_model": MODEL_NAME,
@@ -276,7 +326,15 @@ async def _run_one(
         "split": task["split"],
         "source_query_id": source_query_id,
         "gt_userid": gt_userid,
+        "identity_shell_userid": gt_userid,
+        "actionable_donor_userid": actionable_donor,
+        "actionable_donor_mapping": (
+            "cyclic-next-in-frozen-personas_n3"
+            if condition == "shuffled_actionable"
+            else None
+        ),
         "generation_seed": seed,
+        "persona_condition": condition,
         "service_tier": model_config["service_tier"],
         "timeout_sec": TIMEOUT_SEC,
         "max_retries": MAX_RETRIES,
@@ -364,6 +422,17 @@ def main(argv: list[str] | None = None) -> int:
     )
     parser.add_argument("--seed", type=int, default=0, help="Generation seed")
     parser.add_argument(
+        "--condition",
+        choices=[
+            "full",
+            "actionable_only",
+            "identity_only",
+            "shuffled_actionable",
+        ],
+        default="full",
+        help="Persona conditioning profile (default: full)",
+    )
+    parser.add_argument(
         "--output-dir",
         type=Path,
         default=ROOT / "runs" / "pilot",
@@ -390,6 +459,15 @@ def main(argv: list[str] | None = None) -> int:
         help="Stop after this many runs (for chunked execution; use --resume to continue)",
     )
     parser.add_argument(
+        "--run-id",
+        action="append",
+        default=None,
+        help=(
+            "Run only this exact manifest run ID. Repeat the option to select "
+            "multiple runs. Intended for documented technical retries."
+        ),
+    )
+    parser.add_argument(
         "--summarize-only",
         action="store_true",
         help="Rebuild batch summaries from existing per-run files; no API calls",
@@ -405,9 +483,43 @@ def main(argv: list[str] | None = None) -> int:
         args.manifest.read_bytes()
     ).hexdigest()
 
-    experiments = _iter_experiments(manifest, args.split, args.seed)
+    experiments = _iter_experiments(
+        manifest, args.split, args.seed, args.condition
+    )
+    if args.run_id:
+        requested_run_ids = set(args.run_id)
+        selected = [
+            experiment
+            for experiment in experiments
+            if _run_id(
+                experiment[0]["taskid"],
+                experiment[1],
+                experiment[2],
+                args.condition,
+            )
+            in requested_run_ids
+        ]
+        selected_run_ids = {
+            _run_id(
+                experiment[0]["taskid"],
+                experiment[1],
+                experiment[2],
+                args.condition,
+            )
+            for experiment in selected
+        }
+        unknown_run_ids = sorted(requested_run_ids - selected_run_ids)
+        if unknown_run_ids:
+            parser.error(
+                "run IDs not found in selected split/seed: "
+                + ", ".join(unknown_run_ids)
+            )
+        experiments = selected
 
-    print(f"split={args.split}  seed={args.seed}  model={MODEL_NAME}")
+    print(
+        f"split={args.split}  condition={args.condition}  "
+        f"seed={args.seed}  model={MODEL_NAME}"
+    )
     print(f"flex={'yes' if use_flex else 'no'}  experiments={len(experiments)}")
     print(f"output={args.output_dir}")
     print()
@@ -419,6 +531,7 @@ def main(argv: list[str] | None = None) -> int:
             args.split,
             args.seed,
             experiments,
+            condition=args.condition,
         )
         return 0 if quality["error_runs"] == 0 else 1
 
@@ -477,7 +590,9 @@ def main(argv: list[str] | None = None) -> int:
             if args.limit is not None and executed >= args.limit:
                 print(f"\n--limit {args.limit} reached, stopping. Re-run with --resume to continue.")
                 break
-            rid = _run_id(task["taskid"], gt_userid, seed)
+            rid = _run_id(
+                task["taskid"], gt_userid, seed, args.condition
+            )
             artifact_path = args.output_dir / f"{rid}_artifacts.json"
             label = f"[{idx}/{len(experiments)}] {rid}"
 
@@ -506,6 +621,7 @@ def main(argv: list[str] | None = None) -> int:
                         output_dir=args.output_dir,
                         ledger=ledger,
                         use_flex=use_flex,
+                        condition=args.condition,
                     )
                 )
                 status = "OK" if summary["schema_valid"] else "SCHEMA_FAIL"
@@ -525,13 +641,16 @@ def main(argv: list[str] | None = None) -> int:
             args.seed,
             experiments,
             current_results=results,
+            condition=args.condition,
         )
         return 0 if quality["error_runs"] == 0 else 1
 
     else:
         # Plan-only: just print what would run
         for idx, (task, gt_userid, seed, source_query_id) in enumerate(experiments, 1):
-            rid = _run_id(task["taskid"], gt_userid, seed)
+            rid = _run_id(
+                task["taskid"], gt_userid, seed, args.condition
+            )
             print(
                 f"[{idx}/{len(experiments)}] {rid}  "
                 f"task={task['taskid']} {task['domain']}  "

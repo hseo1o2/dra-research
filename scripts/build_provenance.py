@@ -20,13 +20,22 @@ from typing import Any, Iterable
 
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_OUTPUT_DIR = ROOT / "provenance"
-RUN_DIRS = (ROOT / "runs" / "pilot", ROOT / "runs" / "confirmatory")
+RUN_DIRS = (
+    ROOT / "runs" / "pilot",
+    ROOT / "runs" / "confirmatory",
+    ROOT / "runs" / "ablation",
+)
 TRACKED_INPUTS = (
     ROOT / "manifest.json",
     ROOT / "RUNBOOK.md",
     ROOT / "scripts",
     ROOT / "paper",
     ROOT / "provenance" / "README.md",
+    ROOT / "provenance" / "candidate_sensitivity_plan.json",
+    ROOT / "provenance" / "hardneg_rerun_estimate.json",
+    ROOT / "provenance" / "lamp_qa_run_plan.json",
+    ROOT / "provenance" / "sigir_pdr_sanity_manifest.json",
+    ROOT / "provenance" / "sigir_pdr_sanity_summary.json",
 )
 
 
@@ -73,9 +82,12 @@ def _run_inventory() -> dict[str, Any]:
     for run_dir in RUN_DIRS:
         if not run_dir.exists():
             continue
-        artifacts = sorted(run_dir.glob("*_artifacts.json"))
-        summaries = sorted(run_dir.glob("*_summary.json"))
-        matches = sorted((run_dir / "matches").glob("*_match.json"))
+        artifacts = sorted(run_dir.rglob("*_artifacts.json"))
+        summaries = sorted(run_dir.rglob("*_summary.json"))
+        match_sets: Counter[str] = Counter()
+        for match_file in run_dir.rglob("*_match.json"):
+            directory = str(match_file.parent.relative_to(run_dir))
+            match_sets[directory] += 1
         seeds = Counter()
         for artifact in artifacts:
             for seed in (0, 1):
@@ -90,7 +102,8 @@ def _run_inventory() -> dict[str, Any]:
                     if not path.name.startswith("batch_")
                 ]
             ),
-            "match_files": len(matches),
+            "match_files": sum(match_sets.values()),
+            "match_files_by_directory": dict(sorted(match_sets.items())),
             "artifacts_by_seed": dict(sorted(seeds.items())),
         }
     return inventory

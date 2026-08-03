@@ -547,6 +547,29 @@ def test_batch_runner_plan_only_prints_without_execute(capsys):
     assert "pilot_task3_User10_seed0" in captured.out
 
 
+def test_batch_runner_plan_can_select_exact_retry_run_ids(capsys):
+    """Technical retries can target exact manifest runs without API calls."""
+    from scripts.batch_runner import main
+
+    rc = main([
+        "--split",
+        "confirmatory",
+        "--seed",
+        "1",
+        "--run-id",
+        "pilot_task24_User12_seed1",
+        "--run-id",
+        "pilot_task48_User10_seed1",
+    ])
+
+    captured = capsys.readouterr()
+    assert rc == 0
+    assert "experiments=2" in captured.out
+    assert "pilot_task24_User12_seed1" in captured.out
+    assert "pilot_task48_User10_seed1" in captured.out
+    assert "pilot_task24_User13_seed1" not in captured.out
+
+
 def test_batch_runner_summarize_only_is_network_free(tmp_path, capsys):
     from scripts.batch_runner import main
 
@@ -623,6 +646,24 @@ class TestLLMMatcher:
         assert "should be excluded" not in result
         assert "Intro to Quantum" in result
 
+    def test_serialize_search_query_only_excludes_sources(self):
+        from scripts.llm_matcher import serialize_artifact
+        result = serialize_artifact(
+            self.FAKE_ARTIFACTS, "search", search_view="queries"
+        )
+        assert "quantum computing basics" in result
+        assert "Intro to Quantum" not in result
+        assert "Quantum computers use qubits" not in result
+
+    def test_serialize_search_snippet_only_excludes_queries(self):
+        from scripts.llm_matcher import serialize_artifact
+        result = serialize_artifact(
+            self.FAKE_ARTIFACTS, "search", search_view="snippets"
+        )
+        assert "quantum computing basics" not in result
+        assert "Intro to Quantum" in result
+        assert "Quantum computers use qubits" in result
+
     def test_serialize_compress_includes_topic_ids(self):
         from scripts.llm_matcher import serialize_artifact
         result = serialize_artifact(self.FAKE_ARTIFACTS, "compress")
@@ -650,6 +691,43 @@ class TestLLMMatcher:
         assert "Engineer" in text
         assert "25-30" in text
         assert "Healthy" not in text  # Health Status excluded
+
+    def test_compute_accuracy_single_stage_reports_correct_denominator(self):
+        from scripts.llm_matcher import StageMatch, compute_accuracy
+        rows = [
+            StageMatch(
+                run_id=f"run_{index}",
+                stage="search",
+                gt_userid="User1",
+                candidate_userids=["User1", "User2", "User3"],
+                shuffled_order=["User1", "User2", "User3"],
+                predicted_label="A",
+                predicted_userid="User1",
+                correct=True,
+                reasoning="test",
+                model="test",
+                prompt_chars=1,
+                latency_sec=0,
+            )
+            for index in range(3)
+        ]
+        accuracy = compute_accuracy(rows)
+        assert accuracy["n"] == 3
+        assert accuracy["n_by_stage"]["search"] == 3
+
+    def test_ablation_shuffle_key_matches_full_condition(self):
+        from scripts.llm_matcher import _canonical_shuffle_run_id
+        full = "pilot_task2_User2_seed0"
+        assert _canonical_shuffle_run_id(
+            "ablation_actionable_only_task2_User2_seed0"
+        ) == full
+        assert _canonical_shuffle_run_id(
+            "ablation_identity_only_task2_User2_seed0"
+        ) == full
+        assert _canonical_shuffle_run_id(
+            "ablation_shuffled_actionable_task2_User2_seed0"
+        ) == full
+        assert _canonical_shuffle_run_id(full) == full
 
     def test_shuffle_is_deterministic_same_seed(self):
         import random
@@ -784,5 +862,4 @@ def test_lookup_manifest_finds_correct_candidates():
     manifest = json.loads(MANIFEST_PATH.read_text())
     gt, candidates = _lookup_manifest("pilot_task3_User10_seed0", manifest)
     assert gt == "User10"
-    assert "User10" in candidates
-    assert len(candidates) == 3
+    assert candidates == ["User10", "User18", "User8"]
