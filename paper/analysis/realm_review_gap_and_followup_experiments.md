@@ -422,3 +422,4 @@ equal-budget        현금 0 (Solar)
 | 2026-08-04 | 초안: REALM 비판 리뷰 + 기존 실험 대조 + 추가 실험 ROI + Solar=0 현금 추정 + Package B 권장 |
 | 2026-08-04 | Package B 핵심 실행: no-brief n=15→**30**, utility judge 120; 결과 `nobrief_and_utility_results.md`; equal-budget 보류 |
 | 2026-08-05 | equal-budget seed0 완료 (dip 유지); utility v2 재실행; human spot-check 템플릿; abstract/ethics/contribution polish |
+| 2026-08-05 | REALM framing lock: title→recoverability; abstract slim; Results 위계 (aggregate→report-level→robustness); symmetric 표; shuffled-actionable as metric boundary; conclusion 3-paragraph |

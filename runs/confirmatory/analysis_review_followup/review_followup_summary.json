@@ -1,0 +1,718 @@
+{
+  "schema_version": 1,
+  "external_api_calls": 0,
+  "primary_contrasts": [
+    "plan_to_search",
+    "compress_to_write",
+    "plan_ok_search_wrong_write_recovery"
+  ],
+  "secondary": [
+    "identity_masking",
+    "matcher_replication",
+    "equal_budget",
+    "symmetric_task_shared"
+  ],
+  "exploratory": [
+    "domain",
+    "user10_attractor",
+    "utility_correlation",
+    "search_views"
+  ],
+  "hardneg_per_gt": {
+    "stages": {
+      "plan": {
+        "acc": 0.8083,
+        "ci95": [
+          0.6917,
+          0.9167
+        ],
+        "n": 120,
+        "correct": 97
+      },
+      "search": {
+        "acc": 0.55,
+        "ci95": [
+          0.4333,
+          0.6583
+        ],
+        "n": 120,
+        "correct": 66
+      },
+      "compress": {
+        "acc": 0.5917,
+        "ci95": [
+          0.475,
+          0.7
+        ],
+        "n": 120,
+        "correct": 71
+      },
+      "write": {
+        "acc": 0.8,
+        "ci95": [
+          0.7165,
+          0.8833
+        ],
+        "n": 120,
+        "correct": 96
+      }
+    },
+    "deltas": {
+      "plan_to_search": {
+        "delta": -0.2583,
+        "ci95": [
+          -0.3205,
+          -0.1944
+        ]
+      },
+      "search_to_compress": {
+        "delta": 0.0417,
+        "ci95": [
+          -0.0128,
+          0.0909
+        ]
+      },
+      "compress_to_write": {
+        "delta": 0.2083,
+        "ci95": [
+          0.1528,
+          0.2639
+        ]
+      },
+      "search_to_write": {
+        "delta": 0.25,
+        "ci95": [
+          0.1806,
+          0.3182
+        ]
+      }
+    },
+    "transitions": {
+      "plan_ok_search_wrong": {
+        "n": 32,
+        "write_recover_n": 24,
+        "write_recover_rate": 0.75,
+        "write_recover_ci95": [
+          0.5455,
+          0.9143
+        ]
+      }
+    },
+    "dip_preserved": true
+  },
+  "symmetric_task_shared": {
+    "stages": {
+      "plan": {
+        "acc": 0.7333,
+        "ci95": [
+          0.5917,
+          0.8583
+        ],
+        "n": 120,
+        "correct": 88
+      },
+      "search": {
+        "acc": 0.5417,
+        "ci95": [
+          0.4333,
+          0.65
+        ],
+        "n": 120,
+        "correct": 65
+      },
+      "compress": {
+        "acc": 0.6083,
+        "ci95": [
+          0.5,
+          0.7083
+        ],
+        "n": 120,
+        "correct": 73
+      },
+      "write": {
+        "acc": 0.7083,
+        "ci95": [
+          0.575,
+          0.8333
+        ],
+        "n": 120,
+        "correct": 85
+      }
+    },
+    "deltas": {
+      "plan_to_search": {
+        "delta": -0.1917,
+        "ci95": [
+          -0.25,
+          -0.1282
+        ]
+      },
+      "search_to_compress": {
+        "delta": 0.0667,
+        "ci95": [
+          0.0,
+          0.1364
+        ]
+      },
+      "compress_to_write": {
+        "delta": 0.1,
+        "ci95": [
+          0.0278,
+          0.1667
+        ]
+      },
+      "search_to_write": {
+        "delta": 0.1667,
+        "ci95": [
+          0.0833,
+          0.25
+        ]
+      }
+    },
+    "transitions": {
+      "plan_ok_search_wrong": {
+        "n": 27,
+        "write_recover_n": 21,
+        "write_recover_rate": 0.7778,
+        "write_recover_ci95": [
+          0.6,
+          0.926
+        ]
+      }
+    },
+    "dip_preserved": true
+  },
+  "n_sensitivity_chance_normalized": {
+    "N=2": {
+      "n_reports": 120,
+      "stages": {
+        "plan": {
+          "acc": 0.8417,
+          "chance": 0.5,
+          "chance_normalized": 0.6834,
+          "ci95": [
+            0.75,
+            0.925
+          ]
+        },
+        "search": {
+          "acc": 0.6333,
+          "chance": 0.5,
+          "chance_normalized": 0.2666,
+          "ci95": [
+            0.5,
+            0.7583
+          ]
+        },
+        "compress": {
+          "acc": 0.625,
+          "chance": 0.5,
+          "chance_normalized": 0.25,
+          "ci95": [
+            0.525,
+            0.725
+          ]
+        },
+        "write": {
+          "acc": 0.775,
+          "chance": 0.5,
+          "chance_normalized": 0.55,
+          "ci95": [
+            0.6833,
+            0.8667
+          ]
+        }
+      },
+      "deltas": {
+        "plan_to_search": {
+          "delta": -0.2083,
+          "ci95": [
+            -0.2739,
+            -0.1389
+          ]
+        },
+        "search_to_compress": {
+          "delta": -0.0083,
+          "ci95": [
+            -0.0833,
+            0.0714
+          ]
+        },
+        "compress_to_write": {
+          "delta": 0.15,
+          "ci95": [
+            0.0972,
+            0.2037
+          ]
+        },
+        "search_to_write": {
+          "delta": 0.1417,
+          "ci95": [
+            0.0758,
+            0.2083
+          ]
+        }
+      },
+      "dip_preserved": true
+    },
+    "N=3": {
+      "n_reports": 120,
+      "stages": {
+        "plan": {
+          "acc": 0.8083,
+          "chance": 0.3333,
+          "chance_normalized": 0.7125,
+          "ci95": [
+            0.6833,
+            0.9167
+          ]
+        },
+        "search": {
+          "acc": 0.55,
+          "chance": 0.3333,
+          "chance_normalized": 0.325,
+          "ci95": [
+            0.4333,
+            0.6583
+          ]
+        },
+        "compress": {
+          "acc": 0.5917,
+          "chance": 0.3333,
+          "chance_normalized": 0.3876,
+          "ci95": [
+            0.4831,
+            0.6917
+          ]
+        },
+        "write": {
+          "acc": 0.8,
+          "chance": 0.3333,
+          "chance_normalized": 0.7,
+          "ci95": [
+            0.7165,
+            0.8833
+          ]
+        }
+      },
+      "deltas": {
+        "plan_to_search": {
+          "delta": -0.2583,
+          "ci95": [
+            -0.3205,
+            -0.1969
+          ]
+        },
+        "search_to_compress": {
+          "delta": 0.0417,
+          "ci95": [
+            -0.0139,
+            0.0909
+          ]
+        },
+        "compress_to_write": {
+          "delta": 0.2083,
+          "ci95": [
+            0.1528,
+            0.2639
+          ]
+        },
+        "search_to_write": {
+          "delta": 0.25,
+          "ci95": [
+            0.1818,
+            0.3095
+          ]
+        }
+      },
+      "dip_preserved": true
+    },
+    "N=5": {
+      "n_reports": 120,
+      "stages": {
+        "plan": {
+          "acc": 0.7583,
+          "chance": 0.2,
+          "chance_normalized": 0.6979,
+          "ci95": [
+            0.625,
+            0.875
+          ]
+        },
+        "search": {
+          "acc": 0.4706,
+          "chance": 0.2,
+          "chance_normalized": 0.3382,
+          "ci95": [
+            0.3613,
+            0.5833
+          ]
+        },
+        "compress": {
+          "acc": 0.525,
+          "chance": 0.2,
+          "chance_normalized": 0.4062,
+          "ci95": [
+            0.4167,
+            0.625
+          ]
+        },
+        "write": {
+          "acc": 0.7167,
+          "chance": 0.2,
+          "chance_normalized": 0.6459,
+          "ci95": [
+            0.575,
+            0.8417
+          ]
+        }
+      },
+      "deltas": {
+        "plan_to_search": {
+          "delta": -0.2857,
+          "ci95": [
+            -0.3636,
+            -0.2121
+          ]
+        },
+        "search_to_compress": {
+          "delta": 0.0588,
+          "ci95": [
+            0.0,
+            0.1127
+          ]
+        },
+        "compress_to_write": {
+          "delta": 0.1917,
+          "ci95": [
+            0.1282,
+            0.2564
+          ]
+        },
+        "search_to_write": {
+          "delta": 0.2521,
+          "ci95": [
+            0.1818,
+            0.3247
+          ]
+        }
+      },
+      "dip_preserved": true
+    }
+  },
+  "prior_adjusted": {
+    "candidate_only_prior": {
+      "heuristic": "highest mean pairwise actionable-token Jaccard",
+      "artifact_text_used": false,
+      "candidate_sets": 60,
+      "task_clusters": 20,
+      "correct": 27,
+      "accuracy": 0.45,
+      "chance": 0.333333,
+      "task_cluster_bootstrap_ci95": [
+        0.333333,
+        0.566667
+      ],
+      "bootstrap_repetitions": 5000,
+      "bootstrap_seed": 20260803,
+      "mean_top_score_margin": 0.004833
+    },
+    "all_reports": {
+      "n_reports": 120,
+      "trajectory": {
+        "stages": {
+          "plan": {
+            "acc": 0.8083,
+            "ci95": [
+              0.6833,
+              0.9167
+            ],
+            "n": 120,
+            "correct": 97
+          },
+          "search": {
+            "acc": 0.55,
+            "ci95": [
+              0.4415,
+              0.6583
+            ],
+            "n": 120,
+            "correct": 66
+          },
+          "compress": {
+            "acc": 0.5917,
+            "ci95": [
+              0.475,
+              0.7
+            ],
+            "n": 120,
+            "correct": 71
+          },
+          "write": {
+            "acc": 0.8,
+            "ci95": [
+              0.7083,
+              0.8833
+            ],
+            "n": 120,
+            "correct": 96
+          }
+        },
+        "deltas": {
+          "plan_to_search": {
+            "delta": -0.2583,
+            "ci95": [
+              -0.3205,
+              -0.1969
+            ]
+          },
+          "search_to_compress": {
+            "delta": 0.0417,
+            "ci95": [
+              -0.0128,
+              0.0897
+            ]
+          },
+          "compress_to_write": {
+            "delta": 0.2083,
+            "ci95": [
+              0.1515,
+              0.2619
+            ]
+          },
+          "search_to_write": {
+            "delta": 0.25,
+            "ci95": [
+              0.1818,
+              0.3182
+            ]
+          }
+        },
+        "transitions": {
+          "plan_ok_search_wrong": {
+            "n": 32,
+            "write_recover_n": 24,
+            "write_recover_rate": 0.75,
+            "write_recover_ci95": [
+              0.5517,
+              0.9091
+            ]
+          }
+        }
+      }
+    },
+    "prior_wrong_only": {
+      "n_reports": 66,
+      "trajectory": {
+        "stages": {
+          "plan": {
+            "acc": 0.7273,
+            "ci95": [
+              0.5645,
+              0.875
+            ],
+            "n": 66,
+            "correct": 48
+          },
+          "search": {
+            "acc": 0.5152,
+            "ci95": [
+              0.3485,
+              0.6714
+            ],
+            "n": 66,
+            "correct": 34
+          },
+          "compress": {
+            "acc": 0.5909,
+            "ci95": [
+              0.4428,
+              0.7206
+            ],
+            "n": 66,
+            "correct": 39
+          },
+          "write": {
+            "acc": 0.7727,
+            "ci95": [
+              0.6451,
+              0.8971
+            ],
+            "n": 66,
+            "correct": 51
+          }
+        },
+        "deltas": {
+          "plan_to_search": {
+            "delta": -0.2121,
+            "ci95": [
+              -0.325,
+              -0.1052
+            ]
+          },
+          "search_to_compress": {
+            "delta": 0.0758,
+            "ci95": [
+              0.0,
+              0.1667
+            ]
+          },
+          "compress_to_write": {
+            "delta": 0.1818,
+            "ci95": [
+              0.1175,
+              0.25
+            ]
+          },
+          "search_to_write": {
+            "delta": 0.2576,
+            "ci95": [
+              0.175,
+              0.35
+            ]
+          }
+        },
+        "transitions": {
+          "plan_ok_search_wrong": {
+            "n": 15,
+            "write_recover_n": 13,
+            "write_recover_rate": 0.8667,
+            "write_recover_ci95": [
+              0.6429,
+              1.0
+            ]
+          }
+        }
+      },
+      "dip_preserved": true
+    },
+    "prior_correct_only": {
+      "n_reports": 54,
+      "trajectory": {
+        "stages": {
+          "plan": {
+            "acc": 0.9074,
+            "ci95": [
+              0.8043,
+              0.9821
+            ],
+            "n": 54,
+            "correct": 49
+          },
+          "search": {
+            "acc": 0.5926,
+            "ci95": [
+              0.4167,
+              0.7407
+            ],
+            "n": 54,
+            "correct": 32
+          },
+          "compress": {
+            "acc": 0.5926,
+            "ci95": [
+              0.4348,
+              0.7167
+            ],
+            "n": 54,
+            "correct": 32
+          },
+          "write": {
+            "acc": 0.8333,
+            "ci95": [
+              0.7045,
+              0.9464
+            ],
+            "n": 54,
+            "correct": 45
+          }
+        },
+        "deltas": {
+          "plan_to_search": {
+            "delta": -0.3148,
+            "ci95": [
+              -0.4375,
+              -0.2059
+            ]
+          },
+          "search_to_compress": {
+            "delta": 0.0,
+            "ci95": [
+              -0.0588,
+              0.0625
+            ]
+          },
+          "compress_to_write": {
+            "delta": 0.2407,
+            "ci95": [
+              0.1471,
+              0.3438
+            ]
+          },
+          "search_to_write": {
+            "delta": 0.2407,
+            "ci95": [
+              0.1316,
+              0.375
+            ]
+          }
+        },
+        "transitions": {
+          "plan_ok_search_wrong": {
+            "n": 17,
+            "write_recover_n": 11,
+            "write_recover_rate": 0.6471,
+            "write_recover_ci95": [
+              0.3748,
+              0.9333
+            ]
+          }
+        }
+      }
+    },
+    "interpretation": "prior_wrong_only removes cases where artifact-free centrality already picks the GT; dip-and-recovery should still appear if transitions are not solely prior-driven."
+  },
+  "user10_exposure": {
+    "definition": "P(hat=User10 | User10 in candidates, GT!=User10)",
+    "by_stage": {
+      "plan": {
+        "exposure_n": 58,
+        "false_to_user10_n": 8,
+        "false_rate_given_exposure": 0.1379,
+        "chance_among_3": 0.3333,
+        "gt_user10_n": 14,
+        "gt_user10_acc": 0.8571,
+        "pred_user10_n": 20
+      },
+      "search": {
+        "exposure_n": 58,
+        "false_to_user10_n": 23,
+        "false_rate_given_exposure": 0.3966,
+        "chance_among_3": 0.3333,
+        "gt_user10_n": 14,
+        "gt_user10_acc": 0.8571,
+        "pred_user10_n": 35
+      },
+      "compress": {
+        "exposure_n": 58,
+        "false_to_user10_n": 19,
+        "false_rate_given_exposure": 0.3276,
+        "chance_among_3": 0.3333,
+        "gt_user10_n": 14,
+        "gt_user10_acc": 0.6429,
+        "pred_user10_n": 28
+      },
+      "write": {
+        "exposure_n": 58,
+        "false_to_user10_n": 13,
+        "false_rate_given_exposure": 0.2241,
+        "chance_among_3": 0.3333,
+        "gt_user10_n": 14,
+        "gt_user10_acc": 0.9286,
+        "pred_user10_n": 26
+      }
+    },
+    "note": "If false_rate ≈ chance (0.333), User10 is not an above-chance attractor after exposure normalization."
+  },
+  "construct_definition": "Throughout this analysis, persona recoverability / persona signal means only information in an artifact that supports closed-set recovery of the conditioning persona among hard-negative candidates. It does not imply causal mediation, personalization utility, or factual quality."
+}

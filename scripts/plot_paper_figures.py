@@ -91,8 +91,13 @@ def plot_stage_trajectory(
     stem: str = "stage_attribution_trajectory",
     gpt_seed0_summary: Path | None = None,
     gpt_seed1_summary: Path | None = None,
+    show_seed_lines: bool = False,
 ) -> list[Path]:
-    """Plot stage-wise Acc@1 with task-cluster bootstrap uncertainty."""
+    """Plot stage-wise Acc@1 with task-cluster bootstrap uncertainty.
+
+    Default view emphasises combined Solar (+ optional GPT combined mean).
+    Per-seed lines are optional clutter for publication figures.
+    """
     accuracy_rows = _read_csv(analysis_dir / "stage_accuracy.csv")
     ci_rows = _read_csv(
         analysis_dir / "stage_accuracy_cluster_bootstrap.csv"
@@ -132,8 +137,8 @@ def plot_stage_trajectory(
     figure.patch.set_facecolor("white")
     axis.set_facecolor("white")
 
-    # Seed-specific paths provide context without competing with the aggregate.
-    if len(seed_labels) >= 2:
+    # Optional seed paths (off by default for cleaner publication figures).
+    if show_seed_lines and len(seed_labels) >= 2:
         for index, seed in enumerate(seed_labels):
             seed_rows = {
                 row["stage"]: row
@@ -172,32 +177,18 @@ def plot_stage_trajectory(
         markerfacecolor="white",
         markeredgecolor=BLUE_DARK,
         markeredgewidth=1.2,
-        label=("Combined" if len(seed_labels) >= 2 else "Seed 0"),
+        label="Solar (combined)",
         zorder=4,
     )
 
-    # GPT overlay — individual seeds as thin orange lines, combined as medium dashed.
+    # GPT overlay: publication default is combined mean only (no per-seed clutter).
     gpt_summaries = [
-        (p, label)
-        for p, label in [
-            (gpt_seed0_summary, "GPT seed 0"),
-            (gpt_seed1_summary, "GPT seed 1"),
-        ]
+        p
+        for p in [gpt_seed0_summary, gpt_seed1_summary]
         if p is not None
     ]
     if gpt_summaries:
-        gpt_seed_styles = [
-            dict(linestyle="--", linewidth=0.85, color=ORANGE_LIGHT, marker="^",
-                 markersize=2.8, markerfacecolor="white", markeredgewidth=0.6, zorder=3),
-            dict(linestyle=":", linewidth=0.85, color=ORANGE_LIGHT, marker="v",
-                 markersize=2.8, markerfacecolor="white", markeredgewidth=0.6, zorder=3),
-        ]
-        all_gpt = []
-        for (path, label), style in zip(gpt_summaries, gpt_seed_styles):
-            gpt_vals = _load_gpt_values(path)
-            all_gpt.append(gpt_vals)
-            axis.plot(x, gpt_vals, label=label, **style)
-        # Combined GPT mean
+        all_gpt = [_load_gpt_values(path) for path in gpt_summaries]
         combined_gpt = [
             sum(v[i] for v in all_gpt) / len(all_gpt) for i in range(len(STAGES))
         ]
@@ -284,11 +275,11 @@ def plot_stage_trajectory(
     axis.spines["top"].set_visible(False)
     axis.spines["right"].set_visible(False)
 
-    if len(seed_labels) >= 2 or gpt_summaries:
+    if show_seed_lines or gpt_summaries:
         axis.legend(
             loc="lower right",
             frameon=False,
-            ncol=3,
+            ncol=2 if not show_seed_lines else 3,
             handlelength=1.7,
             columnspacing=0.8,
             borderaxespad=0.2,
@@ -386,12 +377,18 @@ def main() -> int:
                         help="GPT seed-0 match_accuracy_summary.json")
     parser.add_argument("--gpt-seed1-summary", type=Path, default=None,
                         help="GPT seed-1 match_accuracy_summary.json")
+    parser.add_argument(
+        "--show-seed-lines",
+        action="store_true",
+        help="Draw per-seed Solar paths (off by default for cleaner figures)",
+    )
     args = parser.parse_args()
 
     outputs = plot_stage_trajectory(
         args.analysis_dir, args.output_dir,
         gpt_seed0_summary=args.gpt_seed0_summary,
         gpt_seed1_summary=args.gpt_seed1_summary,
+        show_seed_lines=args.show_seed_lines,
     )
     for path in outputs:
         print(f"Figure → {path}")

@@ -10,12 +10,23 @@
 - `../../runs/confirmatory/matches_hardneg_v1/`
 - `../../runs/confirmatory/analysis_hardneg_v1/`
 - `../figures/stage_attribution_trajectory.{pdf,svg,png}`
+- `../figures/protocol_trajectory_comparison.{pdf,svg,png}`
+- `../figures/report_level_transitions.{pdf,svg,png}`
+- `../figures/recovery_flow_plan_search_write.{pdf,svg,png}`
+- `../figures/chance_normalized_n_sensitivity.{pdf,svg,png}`
+- `../figures/user10_exposure_false_rate.{pdf,svg,png}`
+- `../figures/nobrief_write_paired.{pdf,svg,png}`
+- `../figures/brief_intervention_write_acc.{pdf,svg,png}`
+- `otherbrief_writeonly.md`
+- `../../runs/ablation/otherbrief_writeonly/analysis_paired.json`
+- `../../runs/confirmatory/analysis_review_followup/review_followup_summary.json`
 - `next_experiment_priority.md`
 - `search_view_control_hardneg_v1.md`
 - `../../runs/confirmatory/analysis_search_views_hardneg_v1/`
 - `shuffled_actionable_control.md`
 - `../../runs/ablation/analysis_shuffled_actionable/`
 - `nobrief_and_utility_results.md` (no-brief **n=30** + utility + equal-budget)
+- `review_followup_tier1.md` (symmetric CI, prior-adjusted, chance-norm N, User10 exposure)
 - `equal_budget_control.md` (seed0 equal 3500-char Solar rematch)
 - `utility_human_spotcheck_20.md` / `utility_proxy_spotcheck_20.json` (independent human labels, n=20 stratified spot-check)
 - `realm_review_gap_and_followup_experiments.md`

@@ -26,6 +26,7 @@ type: index
 - [[EXP-017 Writing-only no-brief ablation]]
 - [[EXP-018 Attribution–utility GPT judge]]
 - [[EXP-019 Equal character-budget rematch]]
+- [[EXP-020 Mismatched-brief write-only ablation]]
 
 ## Next
 

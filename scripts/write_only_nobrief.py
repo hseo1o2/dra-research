@@ -220,8 +220,8 @@ def _build_prompt(
         return NO_BRIEF_PROMPT.format(
             messages=messages, findings=findings, date=date
         )
-    if condition == "full_control":
-        # Matched control: same write-only path but WITH brief re-injection.
+    if condition in ("full_control", "otherbrief"):
+        # full_control: own Planning brief; otherbrief: donor persona brief.
         return (
             "Based on all the research conducted, create a comprehensive, "
             "well-structured answer to the overall research brief:\n"
@@ -242,6 +242,36 @@ def _build_prompt(
             "Do NOT refer to yourself as the writer. Write a professional report."
         )
     raise ValueError(f"Unknown condition: {condition}")
+
+
+def _donor_brief_for_run(
+    source_run_id: str, manifest: dict[str, Any]
+) -> tuple[str, str]:
+    """Pick another persona's research brief from the same task group.
+
+    Donor = cyclic next userid in the confirmatory personas_n3 list.
+    Returns (donor_run_id, research_brief).
+    """
+    m = re.match(r"pilot_task(\d+)_(User\d+)_seed(\d+)$", source_run_id)
+    if not m:
+        raise ValueError(source_run_id)
+    taskid, gt, seed = int(m.group(1)), m.group(2), int(m.group(3))
+    for task in manifest["pdr_bench"]["confirmatory"]:
+        if int(task["taskid"]) != taskid:
+            continue
+        group = list(task["personas_n3"])
+        if gt not in group:
+            raise KeyError(f"{gt} not in personas_n3 for task {taskid}")
+        idx = group.index(gt)
+        donor = group[(idx + 1) % len(group)]
+        donor_run = f"pilot_task{taskid}_{donor}_seed{seed}"
+        donor_path = _find_source_artifact(donor_run)
+        donor_art = json.loads(donor_path.read_text(encoding="utf-8"))
+        brief = donor_art.get("research_brief") or ""
+        if not brief.strip():
+            raise ValueError(f"empty brief for donor {donor_run}")
+        return donor_run, brief
+    raise KeyError(f"task {taskid} not found")
 
 
 def _generate_report(prompt: str, max_tokens: int = 8192) -> tuple[str, dict[str, Any]]:
@@ -304,7 +334,13 @@ def process_one(
     findings = _findings_from_artifact(source)
     messages = _messages_from_manifest(source_run_id, manifest)
     date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    research_brief = source.get("research_brief") or ""
+    donor_run_id = None
+    if condition == "otherbrief":
+        donor_run_id, research_brief = _donor_brief_for_run(
+            source_run_id, manifest
+        )
+    else:
+        research_brief = source.get("research_brief") or ""
     prompt = _build_prompt(
         messages=messages,
         findings=findings,
@@ -325,6 +361,7 @@ def process_one(
         "findings_chars": len(findings),
         "messages_chars": len(messages),
         "brief_chars": len(research_brief),
+        "donor_run_id": donor_run_id,
         "original_report_chars": len(source.get("final_report") or ""),
     }
 
@@ -344,15 +381,22 @@ def process_one(
         "write_only_ablation": True,
         "source_run_id": source_run_id,
         "brief_injected": condition != "nobrief",
+        "brief_source": (
+            "none"
+            if condition == "nobrief"
+            else ("donor" if condition == "otherbrief" else "own")
+        ),
+        "donor_run_id": donor_run_id,
         "prompt_sha256": prompt_sha,
         "write_model": MODEL_NAME,
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
     }
-    # Keep original brief in artifact for audit, but Writing prompt did not use it
-    # when condition == nobrief.
+    # Keep original brief in artifact for audit; Writing prompt may omit it
+    # (nobrief) or replace it with a donor brief (otherbrief).
     artifact["write_only_meta"] = {
         "condition": condition,
         "source_run_id": source_run_id,
+        "donor_run_id": donor_run_id,
         "prompt_sha256": prompt_sha,
         "prompt_chars": len(prompt),
         "generation": gen_meta,
@@ -390,9 +434,12 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--n", type=int, default=15, help="Number of seed-0 reports")
     parser.add_argument(
         "--condition",
-        choices=["nobrief", "full_control"],
+        choices=["nobrief", "full_control", "otherbrief"],
         default="nobrief",
-        help="nobrief removes Planning brief; full_control re-injects it",
+        help=(
+            "nobrief removes Planning brief; full_control re-injects own brief; "
+            "otherbrief injects another persona's brief from the same task group"
+        ),
     )
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUT)
     parser.add_argument("--execute", action="store_true")

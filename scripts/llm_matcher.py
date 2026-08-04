@@ -53,7 +53,7 @@ except ImportError:
 STAGES = ["plan", "search", "compress", "write"]
 SEARCH_VIEWS = ["full", "queries", "snippets"]
 ABLATION_RUN_PREFIX = re.compile(
-    r"^ablation_(?:actionable_only|identity_only|shuffled_actionable|nobrief|full_control)_"
+    r"^ablation_(?:actionable_only|identity_only|shuffled_actionable|nobrief|full_control|otherbrief)_"
 )
 
 PERSONA_DATA_PATH = ROOT / "data" / "pdr-bench" / "persona_data" / "personas_en.jsonl"
