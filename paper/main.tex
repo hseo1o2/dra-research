@@ -37,11 +37,11 @@ Deep Research Agent}
 The architecture of a deep research agent---how it routes and re-uses stage artifacts---determines which stages retain recoverable persona signal and which do not.
 We introduce \textbf{DRA-PULSE}, an N-way stage-wise persona attribution diagnostic that recovers the conditioning persona from each intermediate artifact against hard-negative candidates, and apply it to 120 PDR-Bench reports from a four-stage DRA (Gemini~3.6~Flash via \texttt{open\_deep\_research}).
 Persona recoverability follows a \emph{dip-and-recovery} trajectory: accuracy decreases from Planning (0.808) to Search (0.550), remains low at Compression (0.592), and recovers at Writing (0.800).
-Persona-to-query alignment thins at query execution (MiniLM cosine: $0.269 \to 0.212$), explaining the Search dip; the Writing prompt's re-injection of the Planning brief creates the late-stage architectural recovery path.
+Persona-to-query alignment thins at query execution (MiniLM cosine: $0.269 \to 0.212$), consistent with the Search dip; the Writing prompt's re-injection of the Planning brief creates the late-stage architectural recovery path.
 At the report level, 32 runs lose correct attribution between Planning and Search; 24 of these recover by Writing.
 Replacing the Planning brief with a mismatched persona's brief (write-only ablation, $n{=}15$) drops Writing accuracy from 0.933 to 0.467, suggesting that brief content---not mere re-injection---drives recovery.
 The trajectory is robust to identity masking, a second LLM matcher, and equal character-budget controls.
-We present DRA-PULSE as a process-level diagnostic of how a specific DRA architecture routes persona signal, not a measure of personalization utility or causal influence.
+We present DRA-PULSE as a process-level diagnostic of how a specific DRA architecture routes recoverable persona information, not a measure of personalization utility or causal influence.
 \end{abstract}
 
 % ---------------------------------------------------------------------------
@@ -52,7 +52,7 @@ In \texttt{open\_deep\_research}, the Writing prompt \emph{re-injects the Planni
 Standard end-to-end personalization metrics cannot detect this internal structure because they observe only the final report.
 We treat each pipeline stage's artifact as an observable probe and ask how well an independent evaluator can recover the conditioning persona---a process-level diagnostic we call DRA-PULSE.
 Throughout this paper, \emph{persona signal} refers operationally to artifact information that supports closed-set recovery of the conditioning persona; the term does not imply causal mediation, personalization utility, or preservation of all persona preferences.
-The architectural bottleneck at query-reformulation stages is not specific to persona: any structured conditioning input---task specifications, user constraints, or domain requirements---that passes through a brief-to-query transformation faces the same information loss mechanism.
+The architectural bottleneck at query-reformulation stages is not specific to persona: any structured conditioning input---task specifications, user constraints, or domain requirements---that passes through a brief-to-query transformation may face a similar information loss mechanism.
 The trajectory we observe is a characterization of this specific DRA architecture, not a general property of deep research agents.
 
 Our contributions are:
@@ -61,7 +61,7 @@ Our contributions are:
   persona attribution for multi-stage DRA pipelines.
   \item \textbf{DRATracer.} A deterministic LangGraph event listener that
   captures artifacts from parallel subgraphs by parent run-ID without
-  post-hoc reconstruction---reusable instrumentation for any DRA pipeline.
+  post-hoc reconstruction---reusable instrumentation for LangGraph-based DRA pipelines.
   \item \textbf{Empirical finding.} On 120 reports we document a report-level
   \emph{loss-and-recovery} process: 32 Planning$\to$Search losses, of which
   24 recover by Writing, with Search as the lowest-recoverability stage.
@@ -362,8 +362,7 @@ lose correctness, only \textbf{1} gains, and 22 stay wrong.
 Compression has 13 gains vs.\ 8 losses (net unresolved at aggregate level);
 Writing has 31 gains vs.\ 6 losses.
 Of the 32 Plan-correct/Search-wrong reports, 24 (75\%) recover by Writing
-(Figure~\ref{fig:recovery_flow}); 8 do not
-(Appendix~\ref{app:recovery}).
+and 8 do not (Appendix~\ref{app:recovery}).
 More broadly, 33 of 54 Search errors (61\%) are correct at Writing.
 Exploratorily, the stage ordering appears in nine of ten domains; Creative is
 the only exception, while Search reaches chance in Career, Finance, and Real
@@ -392,15 +391,6 @@ Compression $\rightarrow$ Writing & 6  & 31 & $+25$ \\
     change is Plan-correct $\rightarrow$ Search-wrong (32), not recovery from
     Plan-wrong (1).}
   \label{fig:plan_search_matrix}
-\end{figure}
-
-\begin{figure}[t]
-  \centering
-  \includegraphics[width=0.88\columnwidth]{figures/recovery_flow_plan_search_write.pdf}
-  \caption{Report-level recovery story for the primary hard-negative protocol:
-    among 32 Plan-correct / Search-wrong reports, 24 (75\%) are again correct at
-    Writing and 8 (25\%) never recover.}
-  \label{fig:recovery_flow}
 \end{figure}
 
 \subsection{Robustness Checks}
@@ -591,7 +581,9 @@ Under an embedding-based similarity probe (MiniLM cosine), mean
 persona--brief alignment is 0.269 and falls to 0.212 for persona--query
 (mean drop $0.057$, task-cluster bootstrap 95\% CI $[0.042,0.075]$);
 brief--query remains higher (0.493), so queries still track the research topic
-while losing persona conditioning.
+while losing persona conditioning: retrieval queries optimize topical recall
+rather than persona specificity, making the conditioning bottleneck a
+structural feature of this reformulation step.
 Persona--query similarity is also higher on Search-correct than Search-wrong
 runs (0.236 vs.\ 0.182; difference $0.055$, CI $[0.019,0.088]$).
 This separation suggests that conditioning-aware query generation---preserving
@@ -641,8 +633,9 @@ Snippets only & 0.483 & 0.583 & 0.533 \\
   \caption{Persona alignment of Planning briefs vs.\ executed Search queries
     ($n{=}120$). Left: lexical overlap of actionable tokens
     (0.068$\to$0.008). Right: MiniLM cosine similarity (0.269$\to$0.212).
-    Both drop at query execution; residual embedding alignment separates
-    Search-correct vs.\ wrong runs (0.236 vs.\ 0.182).}
+    Both drop at query execution. Critically, residual persona--query
+    similarity predicts Search accuracy: Search-correct runs retain higher
+    alignment than Search-wrong runs (0.236 vs.\ 0.182, CI $[0.019,0.088]$).}
   \label{fig:token_retention}
 \end{figure}
 
@@ -650,9 +643,10 @@ Snippets only & 0.483 & 0.583 & 0.533 \\
   \centering
   \includegraphics[width=\columnwidth]{figures/persona_feature_retention.pdf}
   \caption{Section-level persona-token retention in Planning briefs vs.\
-    executed Search queries ($n{=}120$). Identity, interests, and
-    goals/constraints all drop; decision-style language is already sparse in
-    briefs. Field-to-bucket mapping in Appendix~\ref{app:retention_protocol}.}
+    executed Search queries ($n{=}120$). All four profile sections---identity,
+    interests, goals/constraints, and decision style---thin simultaneously;
+    the Search dip is not attributable to a single missing section.
+    Field-to-bucket mapping in Appendix~\ref{app:retention_protocol}.}
   \label{fig:feature_retention}
 \end{figure}
 
@@ -667,8 +661,8 @@ vs.\ $0.435$ when Planning attribution is incorrect.
 Stratifying by Search outcome within Plan-correct runs:
 $P(\text{Write}\checkmark\mid\text{Plan}\checkmark,\text{Search}\checkmark)=0.954$
 (62/65) vs.\ $P(\text{Write}\checkmark\mid\text{Plan}\checkmark,\text{Search}\times)=0.750$
-(24/32)---the Search dip carries a measurable downstream cost even when the
-Planning brief is re-injected at Writing.
+(24/32)---Search-wrong runs are associated with lower Writing recoverability
+even when the Planning brief is re-injected at Writing.
 The 43.5\% rate when Planning is wrong shows Writing recoverability is not
 deterministically tied to the Planning attribution outcome.
 
