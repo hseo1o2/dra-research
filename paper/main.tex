@@ -52,14 +52,16 @@ In \texttt{open\_deep\_research}, the Writing prompt \emph{re-injects the Planni
 Standard end-to-end personalization metrics cannot detect this internal structure because they observe only the final report.
 We treat each pipeline stage's artifact as an observable probe and ask how well an independent evaluator can recover the conditioning persona---a process-level diagnostic we call DRA-PULSE.
 Throughout this paper, \emph{persona signal} refers operationally to artifact information that supports closed-set recovery of the conditioning persona; the term does not imply causal mediation, personalization utility, or preservation of all persona preferences.
-The trajectory we observe is a characterisation of this specific DRA architecture, not a general property of deep research agents.
+The architectural bottleneck at query-reformulation stages is not specific to persona: any structured conditioning input---task specifications, user constraints, or domain requirements---that passes through a brief-to-query transformation faces the same information loss mechanism.
+The trajectory we observe is a characterization of this specific DRA architecture, not a general property of deep research agents.
 
 Our contributions are:
 \begin{itemize}
-  \item \textbf{Diagnostic task.} We formalize stage-wise closed-set persona
-  attribution for multi-stage DRA pipelines and implement DRATracer, a
-  deterministic LangGraph listener that records stage artifacts without
-  post-hoc reconstruction.
+  \item \textbf{Diagnostic task.} We formalize N-way stage-wise closed-set
+  persona attribution for multi-stage DRA pipelines.
+  \item \textbf{DRATracer.} A deterministic LangGraph event listener that
+  captures artifacts from parallel subgraphs by parent run-ID without
+  post-hoc reconstruction---reusable instrumentation for any DRA pipeline.
   \item \textbf{Empirical finding.} On 120 reports we document a report-level
   \emph{loss-and-recovery} process: 32 Planning$\to$Search losses, of which
   24 recover by Writing, with Search as the lowest-recoverability stage.
@@ -83,7 +85,7 @@ models~\cite{zhang2024personalization-survey,salemi2024optimization,richardson20
 \textbf{PDR-Bench}~\cite{pdr-bench} targets personalized \emph{deep research}:
 multi-step, long-form report generation conditioned on rich personas (identity
 plus actionable preferences).
-Industry deep-research systems similarly emphasise multi-step search and
+Industry deep-research systems similarly emphasize multi-step search and
 synthesis~\cite{openai2025deepresearch,google2024gemini-deepresearch}, yet
 evaluation still centres on final reports.
 These settings largely lack stage-level diagnostics of \emph{where} persona
@@ -99,9 +101,9 @@ Probing classifiers similarly test what attributes are linearly readable from
 representations~\cite{conneau2018you,belinkov2022probing}, and attribute
 inference raises dual-use privacy
 concerns~\cite{pan2020privacy}.
-Mechanistic work further localises factual associations inside model
+Mechanistic work further localizes factual associations inside model
 components~\cite{geva2021transformer,meng2022locating}; we share the
-\emph{where is the information?} question, but localise recoverability across
+\emph{where is the information?} question, but localizerecoverability across
 \emph{pipeline stages and artifacts} rather than weights or activations.
 Closest to our task, \citet{authormap} propose \emph{comparative
 personalization} for multi-document summarization as pairwise preference
@@ -117,10 +119,12 @@ LLM agents combine reasoning and tool use~\cite{yao2023react,schick2023toolforme
 and are evaluated on interactive suites such as AgentBench~\cite{liu2024agentbench},
 GAIA~\cite{mialon2023gaia}, and SWE-bench~\cite{jimenez2024swebench}.
 Multi-hop and retrieval-augmented pipelines further stress intermediate
-evidence handling~\cite{yang2018hotpotqa,lewis2020rag,asai2024selfrag,press2023selfask}.
+evidence handling~\cite{yang2018hotpotqa,lewis2020rag,asai2024selfrag,press2023selfask};
+query-reformulation steps in particular risk losing conditioning constraints
+embedded in the original brief, a mechanism DRA-PULSE localizes stage-by-stage.
 Deep research agents such as \texttt{open\_deep\_research}~\cite{open-deep-research}
 (built on LangGraph~\cite{langgraph2024}) elaborate a query into a brief,
-run parallel search/compress subgraphs, then synthesise a report---so
+run parallel search/compress subgraphs, then synthesize a report---so
 persona-conditioned information must pass through multiple transformations.
 \textbf{PrefDisco}~\cite{prefdisco} shows preference accuracy can degrade in
 reasoning/content-selection layers of multi-step pipelines.
@@ -164,7 +168,7 @@ Attribution accuracy at stage $s$ is $\mathrm{Acc}_s = \mathbb{E}[\mathbf{1}[\ha
 Stage-wise accuracy profiles localize \emph{where} persona recoverability is
 high or low: a flat profile suggests little stage-specific change; a peak at
 $a_{\text{plan}}$ that falls at Search and recovers at $a_{\text{write}}$
-localises a dip-and-recovery pattern in closed-set discriminability.
+localizes a dip-and-recovery pattern in closed-set discriminability.
 
 \subsection{DRA Pipeline and Artifact Schema}
 
@@ -565,11 +569,16 @@ chance-normalized Planning accuracy
 
 The Search artifact combines executed queries with retrieved titles/snippets
 and is the lowest-recoverability stage (32 Plan$\to$Search losses vs.\ 1 gain).
-Table~\ref{tab:search_views}: queries-only Acc@1 is 0.600 vs.\ 0.533 snippets-only
-and 0.550 full Search (queries$-$full $+0.050$, CI $[0.000,0.108]$, same in both
-seeds). Cross-seed within-persona URL overlap (0.042) is near cross-persona
-overlap on the same query (0.034), so retrieved sets show little
-persona-specific discriminability by URL metrics.
+A competing explanation is that Search is simply a different textual
+genre---queries and retrieved snippets---that structurally disfavours persona
+attribution regardless of conditioning loss.
+Two results argue against a pure genre effect: (i)~queries-only Acc@1
+(0.600) exceeds snippets-only (0.533) and full Search (0.550), so the
+query sub-artifact retains more signal than the combined artifact,
+and (ii)~an equal-budget rematch preserves the dip (\S\ref{sec:results}).
+Table~\ref{tab:search_views} gives per-seed detail. Cross-seed within-persona
+URL overlap (0.042) is near cross-persona overlap on the same query (0.034),
+so retrieved sets show little persona-specific discriminability by URL metrics.
 
 \paragraph{Where persona alignment thins.}
 We probe lexical and embedding-based alignment from persona profiles into
@@ -585,6 +594,9 @@ brief--query remains higher (0.493), so queries still track the research topic
 while losing persona conditioning.
 Persona--query similarity is also higher on Search-correct than Search-wrong
 runs (0.236 vs.\ 0.182; difference $0.055$, CI $[0.019,0.088]$).
+This separation suggests that conditioning-aware query generation---preserving
+persona cues during brief-to-query reformulation---could narrow the Search dip
+without restructuring the pipeline.
 
 \paragraph{Which persona features disappear?}
 Section-level token retention (Figure~\ref{fig:feature_retention}) shows the
@@ -649,8 +661,12 @@ The Writing prompt re-injects the Planning research brief as its top-level
 instruction, creating an architectural recoverability path.
 Table~\ref{tab:plan_write_2x2}: $P(\text{Write}\checkmark\mid\text{Plan}\checkmark)=0.887$
 vs.\ $0.435$ when Planning attribution is incorrect.
-The conditional gap is consistent with dependence on the Planning artifact;
-the 43.5\% rate when Planning is wrong shows Writing recoverability is not
+Stratifying by Search outcome within Plan-correct runs:
+$P(\text{Write}\checkmark\mid\text{Plan}\checkmark,\text{Search}\checkmark)=0.954$
+(62/65) vs.\ $P(\text{Write}\checkmark\mid\text{Plan}\checkmark,\text{Search}\texttimes)=0.750$
+(24/32)---the Search dip carries a measurable downstream cost even when the
+Planning brief is re-injected at Writing.
+The 43.5\% rate when Planning is wrong shows Writing recoverability is not
 deterministically tied to the Planning attribution outcome.
 
 \begin{table}[t]
@@ -758,7 +774,7 @@ A write-only no-brief ablation on 30 seed-0 reports softens the pure
 tautology reading (Write Acc@1 remains 0.833 without the brief), but does not
 replace multi-backbone or multi-pipeline replication.
 The dip-and-recovery pattern as reported here is therefore a
-characterisation of this architecture, not a general property of DRA pipelines.
+characterization of this architecture, not a general property of DRA pipelines.
 
 \paragraph{Other limitations.}
 The shuffled-actionable control shows recoverability is anchored more in
@@ -791,7 +807,7 @@ recover by Writing (trajectory 0.808/0.550/0.592/0.800).
 The shape holds under lexical baselines, a second matcher, masking, symmetric
 candidates, and $N$-sensitivity; brief interventions and utility checks bound
 re-injection and Acc$\neq$utility.
-Results characterise one DRA stack, not multi-backbone generality or
+Results characterize one DRA stack, not multi-backbone generality or
 downstream usefulness.
 
 % ---------------------------------------------------------------------------
