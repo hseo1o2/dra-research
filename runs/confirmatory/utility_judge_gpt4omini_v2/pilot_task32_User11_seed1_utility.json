@@ -1,0 +1,44 @@
+{
+  "run_id": "pilot_task32_User11_seed1",
+  "gt_userid": "User11",
+  "domain": "Shopping",
+  "taskid": 32,
+  "seed": 1,
+  "prompt_chars": 20731,
+  "report_chars": 20831,
+  "stage_attribution": {
+    "plan": {
+      "correct": false,
+      "predicted_userid": "User8"
+    },
+    "search": {
+      "correct": false,
+      "predicted_userid": "User10"
+    },
+    "compress": {
+      "correct": false,
+      "predicted_userid": "User10"
+    },
+    "write": {
+      "correct": true,
+      "predicted_userid": "User11"
+    },
+    "pattern": "write_correct_other"
+  },
+  "write_correct": true,
+  "pattern": "write_correct_other",
+  "rubric_version": "v2",
+  "status": "completed",
+  "content_personalization": 4,
+  "presentation_personalization": 4,
+  "mean_personalization": 4.0,
+  "content_evidence": "The report includes a detailed budget allocation strategy tailored to a modern 89㎡ apartment, with specific recommendations for furniture, appliances, and decor that align with the user's preferences for cost-effectiveness and smart home integration.",
+  "presentation_evidence": "The writing style is structured and clear, using technical jargon appropriate for an algorithm engineer, while also providing in-depth comparisons and evaluations of materials and products, which suits the user's analytical decision-making style.",
+  "reasoning": "Both dimensions score a 4 due to the report's strong alignment with the user's specific needs and preferences, including a focus on smart home products and a rational budget allocation, as well as a clear, structured presentation that matches the user's technical background.",
+  "latency_sec": 2.664,
+  "input_tokens": 4679,
+  "output_tokens": 157,
+  "total_tokens": 4836,
+  "api_response_id": "chatcmpl-E9B7366FbCNZQOe0vOCoupqTm51R7",
+  "model": "gpt-4o-mini"
+}

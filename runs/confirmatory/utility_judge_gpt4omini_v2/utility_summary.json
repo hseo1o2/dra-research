@@ -1,0 +1,106 @@
+{
+  "model": "gpt-4o-mini",
+  "rubric_version": "v2",
+  "execute": true,
+  "n_runs": 120,
+  "n_completed": 120,
+  "planned_prompt_chars": 2322309,
+  "external_api_calls": 120,
+  "overall_mean_content": 4.008,
+  "overall_mean_presentation": 3.65,
+  "overall_mean": 3.829,
+  "n_identical_content_presentation": 73,
+  "frac_identical_content_presentation": 0.608,
+  "content_score_distribution": {
+    "4": 115,
+    "5": 3,
+    "3": 2
+  },
+  "presentation_score_distribution": {
+    "3": 42,
+    "4": 78
+  },
+  "score_distribution": {
+    "4": 120
+  },
+  "mean_by_write_correct": {
+    "correct": {
+      "n": 96,
+      "mean": 3.849
+    },
+    "wrong": {
+      "n": 24,
+      "mean": 3.75
+    }
+  },
+  "mean_by_pattern": {
+    "all_correct_prefix": {
+      "n": 62,
+      "mean": 3.831
+    },
+    "recovered": {
+      "n": 24,
+      "mean": 3.875
+    },
+    "write_correct_other": {
+      "n": 10,
+      "mean": 3.9
+    },
+    "non_recovered": {
+      "n": 8,
+      "mean": 3.75
+    },
+    "write_wrong_other": {
+      "n": 16,
+      "mean": 3.75
+    }
+  },
+  "delta_write_correct_minus_wrong": 0.099,
+  "delta_bootstrap_95ci": [
+    -0.021,
+    0.225
+  ],
+  "pearson_r_write_correct_vs_mean": 0.151,
+  "delta_by_seed": {
+    "0": {
+      "write_correct_n": 49,
+      "write_wrong_n": 11,
+      "delta": 0.033
+    },
+    "1": {
+      "write_correct_n": 47,
+      "write_wrong_n": 13,
+      "delta": 0.163
+    }
+  },
+  "mean_by_stage_correct": {
+    "plan": {
+      "correct_mean": 3.83,
+      "wrong_mean": 3.826,
+      "correct_n": 97,
+      "wrong_n": 23,
+      "delta": 0.004
+    },
+    "search": {
+      "correct_mean": 3.826,
+      "wrong_mean": 3.833,
+      "correct_n": 66,
+      "wrong_n": 54,
+      "delta": -0.007
+    },
+    "compress": {
+      "correct_mean": 3.824,
+      "wrong_mean": 3.837,
+      "correct_n": 71,
+      "wrong_n": 49,
+      "delta": -0.013
+    },
+    "write": {
+      "correct_mean": 3.849,
+      "wrong_mean": 3.75,
+      "correct_n": 96,
+      "wrong_n": 24,
+      "delta": 0.099
+    }
+  }
+}

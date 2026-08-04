@@ -1,0 +1,44 @@
+{
+  "run_id": "pilot_task24_User12_seed0",
+  "gt_userid": "User12",
+  "domain": "Finance",
+  "taskid": 24,
+  "seed": 0,
+  "prompt_chars": 20888,
+  "report_chars": 9610,
+  "stage_attribution": {
+    "plan": {
+      "correct": false,
+      "predicted_userid": "User10"
+    },
+    "search": {
+      "correct": false,
+      "predicted_userid": "User10"
+    },
+    "compress": {
+      "correct": false,
+      "predicted_userid": "User10"
+    },
+    "write": {
+      "correct": true,
+      "predicted_userid": "User12"
+    },
+    "pattern": "write_correct_other"
+  },
+  "write_correct": true,
+  "pattern": "write_correct_other",
+  "rubric_version": "v2",
+  "status": "completed",
+  "content_personalization": 4,
+  "presentation_personalization": 4,
+  "mean_personalization": 4.0,
+  "content_evidence": "The report provides a detailed analysis of natural disaster risks specific to Xiamen, including recommendations for earthquake and flood coverage, and highlights specific clauses relevant to high-value household items, which align with the user's needs for comprehensive insurance coverage.",
+  "presentation_evidence": "The report is structured logically with clear headings and subheadings, uses appropriate jargon for a finance-savvy audience, and presents information in a depth that matches the user's advanced educational background, making it accessible yet informative.",
+  "reasoning": "Both dimensions show strong personalization, with the content tailored to the user's specific insurance needs and the presentation adapted to his expertise and decision-making style. However, while the report is well-tailored, it does not reach the level of exceptional personalization, hence the scores of 4.",
+  "latency_sec": 3.139,
+  "input_tokens": 8710,
+  "output_tokens": 171,
+  "total_tokens": 8881,
+  "api_response_id": "chatcmpl-E9B5tbE4X9VRjwGMKI0L6gk03f2Ly",
+  "model": "gpt-4o-mini"
+}

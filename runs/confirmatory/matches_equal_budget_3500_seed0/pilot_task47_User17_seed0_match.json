@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task47_User17_seed0",
+    "stage": "plan",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User17",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate A (Liu Qiang) is a medical professional (implied by his emphasis on evidence-backed recommendations) and parent of young children (8 and 5 years old), aligning with the document's focus on pediatric exercise science. The document's structured, guideline-driven approach mirrors his pragmatic, data-analytical decision-making style. His family-oriented values (e.g., weekend park walks with children and pet) align with the document's emphasis on family participatory activities. Unlike Candidates B (nurse focused on adult health) and C (state-owned enterprise manager with less emphasis on pediatric health), Liu Qiang's MBA background and preference for reputable sources (e.g., WHO, ACSM) directly match the document's scientific rigor and organizational framing.",
+    "model": "solar-pro",
+    "prompt_chars": 23872,
+    "latency_sec": 2.06,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5036,
+    "output_tokens": 171,
+    "total_tokens": 5207,
+    "api_response_id": "f8b6d9f4-fb52-46ee-8b37-55d111ff5fae"
+  },
+  {
+    "run_id": "pilot_task47_User17_seed0",
+    "stage": "search",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on youth physical activity guidelines, resistance training, and injury prevention, reflecting a professional interest in structured exercise, child development, and family health. Candidate B, a marketing manager with two children (8 and 5), aligns best: his profile emphasizes family-oriented activities (e.g., weekend park walks with his dog), prioritizes children's education/health (e.g., extracurricular classes), and values quality-of-life investments (e.g., pet-friendly travel, high-end durable goods). Unlike Candidate A (a nurse focused on square dancing/pet care) or Candidate C (a state-owned enterprise manager interested in fishing/photography), Candidate B\u2019s emphasis on youth sports, family bonding, and pragmatic health investments mirrors the document\u2019s focus on evidence-based physical activity recommendations for children and adolescents.",
+    "model": "solar-pro",
+    "prompt_chars": 25513,
+    "latency_sec": 1.78,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5500,
+    "output_tokens": 185,
+    "total_tokens": 5685,
+    "api_response_id": "ed2a4cb6-f896-4215-8ecc-53a54a56f88f"
+  },
+  {
+    "run_id": "pilot_task47_User17_seed0",
+    "stage": "compress",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User17",
+    "correct": true,
+    "reasoning": "The document focuses on physical activity guidelines for children and adolescents, emphasizing health organizations' recommendations (WHO, US PAG, ACSM) and structured exercise parameters. Candidate B, a head nurse with expertise in health and family education, aligns most closely with this content. Her profile highlights interests in health, nursing, family education, and pet care, and she actively engages with health-related content online. The document\u2019s framing\u2014evidence-based, practical, and family-oriented\u2014matches her professional background and personal priorities, such as promoting health for her children and pet. Candidates A and C, while health-conscious, lack B\u2019s direct professional and content engagement with pediatric exercise guidelines.",
+    "model": "solar-pro",
+    "prompt_chars": 25506,
+    "latency_sec": 1.59,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5625,
+    "output_tokens": 156,
+    "total_tokens": 5781,
+    "api_response_id": "e2e15779-d8bc-4984-97fa-e04a17ef7b91"
+  },
+  {
+    "run_id": "pilot_task47_User17_seed0",
+    "stage": "write",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on evidence-based, structured physical activity guidelines for children and adolescents, emphasizing scientific rigor, multi-dimensional health benefits, and age-specific programming. Candidate B, as a marketing manager with an MBA and a family with young children, aligns most closely with this content. His profile highlights a preference for data-driven analysis (LinkedIn, Zhihu/Dedao for industry insights), systematic planning (quarterly family trips, detailed itineraries), and investment in children's education (extracurricular classes, learning resources). The document's emphasis on WHO/ACSM/AAP/CDC guidelines mirrors his pragmatic, research-oriented decision-making style. Unlike Candidate A (focused on practical outdoor activities) or Candidate C (health/nursing professional with pet-centric interests), Candidate B's background in structured management and family-oriented health priorities directly aligns with the document's systematic, evidence-based approach to youth fitness planning.",
+    "model": "solar-pro",
+    "prompt_chars": 25508,
+    "latency_sec": 2.02,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 7400,
+    "output_tokens": 206,
+    "total_tokens": 7606,
+    "api_response_id": "a3ebf7bf-363b-4c3c-9400-95fd74b5e94f"
+  }
+]

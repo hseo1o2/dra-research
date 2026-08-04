@@ -1,0 +1,41 @@
+{
+  "run_id": "pilot_task14_User3_seed1",
+  "gt_userid": "User3",
+  "domain": "Health",
+  "taskid": 14,
+  "seed": 1,
+  "prompt_chars": 18260,
+  "report_chars": 11522,
+  "stage_attribution": {
+    "plan": {
+      "correct": false,
+      "predicted_userid": "User1"
+    },
+    "search": {
+      "correct": false,
+      "predicted_userid": "User5"
+    },
+    "compress": {
+      "correct": false,
+      "predicted_userid": "User5"
+    },
+    "write": {
+      "correct": true,
+      "predicted_userid": "User3"
+    },
+    "pattern": "write_correct_other"
+  },
+  "write_correct": true,
+  "pattern": "write_correct_other",
+  "status": "completed",
+  "content_personalization": 5,
+  "presentation_personalization": 5,
+  "mean_personalization": 5.0,
+  "reasoning": "The report is highly personalized for Zhou Kai, addressing his beginner status, training availability, and safety concerns. It incorporates specific training principles suitable for a novice runner, while also considering his academic schedule and lifestyle. The language and structure are tailored to resonate with a university student, reflecting his background in mechanical engineering and pragmatic approach to challenges. Additionally, the report provides practical advice on equipment and training locations that align with his current resources and environment.",
+  "latency_sec": 2.055,
+  "input_tokens": 7507,
+  "output_tokens": 106,
+  "total_tokens": 7613,
+  "api_response_id": "chatcmpl-E8rnrDSdTIuA9NCjbUv00MgQYOCQJ",
+  "model": "gpt-4o-mini"
+}

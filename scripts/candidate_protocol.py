@@ -23,6 +23,20 @@ def parse_pdr_run_id(run_id: str) -> tuple[int, str]:
     return int(task_token[4:]), user_token
 
 
+def canonical_pilot_run_id(run_id: str) -> str:
+    """Map ablation run IDs onto the paired pilot_ run for candidate/order reuse."""
+    if run_id.startswith("pilot_"):
+        return run_id
+    # ablation_<condition>_taskN_UserM_seedK -> pilot_taskN_UserM_seedK
+    parts = run_id.split("_")
+    task_idx = next(
+        (i for i, part in enumerate(parts) if part.startswith("task")), None
+    )
+    if task_idx is None:
+        return run_id
+    return "pilot_" + "_".join(parts[task_idx:])
+
+
 def lookup_pdr_candidates(
     run_id: str,
     manifest: dict[str, Any],

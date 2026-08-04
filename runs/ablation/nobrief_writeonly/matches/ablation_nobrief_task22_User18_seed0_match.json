@@ -1,0 +1,31 @@
+[
+  {
+    "run_id": "ablation_nobrief_task22_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document explicitly names 'Liu Lu' (Candidate C) as the target persona, describing her as a 25\u201330-year-old female Data Analyst in Shanghai with a conservative risk profile, debt-free status, and strong savings capacity. The content's focus on tax optimization, fixed-income assets, and long-term care insurance aligns with Candidate C's meticulous, data-driven personality and her goal of financial security. Candidate A (male marketing manager) and Candidate B (investment manager) lack the document's specific demographic details and conservative financial framing, which directly match Candidate C's profile.",
+    "model": "solar-pro",
+    "prompt_chars": 30150,
+    "latency_sec": 1.55,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6928,
+    "output_tokens": 143,
+    "total_tokens": 7071,
+    "api_response_id": "29fe5848-547b-492d-b5d0-3df34a2a7d22"
+  }
+]

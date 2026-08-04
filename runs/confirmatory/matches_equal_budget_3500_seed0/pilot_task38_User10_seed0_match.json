@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task38_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on Beijing property acquisition for a family with school-age children, budget constraints, and emphasis on educational quality, park accessibility, and subway proximity. Key matches include: (1) Family composition (wife as teacher, children aged 8 and 5) directly mirrors the document's school district policy concerns; (2) Current residence in Shanghai's high-end community reflects the document's framing of quality-of-life priorities; (3) MBA background and marketing career suggest the analytical, structured approach evident in the research brief's five-part breakdown; (4) Jiangnan cultural background aligns with the document's emphasis on family harmony and long-term planning. Candidates B and C lack the specific urban mobility patterns (Pudong to Beijing relocation) and educational policy urgency (imminent school enrollment) central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 26358,
+    "latency_sec": 2.33,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5643,
+    "output_tokens": 197,
+    "total_tokens": 5840,
+    "api_response_id": "5e79b850-aea2-40d2-9c10-7b4b2ea1a2a5"
+  },
+  {
+    "run_id": "pilot_task38_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on real estate queries in Beijing (\u6d77\u6dc0, \u671d\u9633), emphasizing price ranges, school districts (\u5b66\u533a), and housing policies (1911/630 policies). These topics align with Candidate B's profile as a marketing manager in a foreign enterprise, who is detail-oriented, values cost-effectiveness, and prioritizes family needs (e.g., children's education). The queries reflect a practical, data-driven approach to housing decisions, matching B's rational decision-making style and interest in market trends. Candidates A (manufacturing director) and C (state-owned enterprise manager) lack the explicit focus on urban real estate dynamics and family-centric housing priorities seen in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25507,
+    "latency_sec": 2.1,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 6913,
+    "output_tokens": 164,
+    "total_tokens": 7077,
+    "api_response_id": "aea89d92-46e0-4ae9-b00c-463e845d94cb"
+  },
+  {
+    "run_id": "pilot_task38_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on real estate analysis in Beijing (Haidian and Chaoyang districts), emphasizing budget constraints (\u00a56M), property size (80\u2013100 sqm), and specific metrics like price per sqm, layout efficiency (\u5f97\u623f\u7387), and community amenities. Candidate B, a marketing manager in Shanghai, aligns best due to his pragmatic, data-driven decision-making style, focus on cost-effectiveness, and interest in high-quality urban living environments. His family's need for space (two children, a pet) and preference for well-equipped communities (e.g., parks, schools) mirror the document's emphasis on practical residential features. Unlike Candidate A (manufacturing background, rural ties) or C (state-owned enterprise, rural hometown), B\u2019s urban, family-oriented lifestyle and analytical approach align with the document\u2019s structured, metric-focused real estate evaluation.",
+    "model": "solar-pro",
+    "prompt_chars": 26875,
+    "latency_sec": 1.9,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 6498,
+    "output_tokens": 200,
+    "total_tokens": 6698,
+    "api_response_id": "cd371a9a-3e5f-4300-a1c2-18a489c91e20"
+  },
+  {
+    "run_id": "pilot_task38_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on a family of four (with children aged 8 and 5) and a Labrador, prioritizing education, living space, pet-friendly environments, and cost-effective housing in Beijing. Candidate B matches these priorities: he has an 8-year-old daughter and 5-year-old son, a Labrador, and emphasizes family-centric decisions (e.g., educational expenses, quality-of-life investments). The report\u2019s framing\u2014balancing budget constraints with lifestyle needs (parks, schools, pet-friendly spaces)\u2014aligns with B\u2019s pragmatic, family-oriented values and his background in marketing (evident in the structured, comparative analysis). Candidates A (older, rural nostalgia) and C (focused on manufacturing/tech, no mention of children\u2019s education) lack the direct alignment with the document\u2019s demographic and thematic focus.",
+    "model": "solar-pro",
+    "prompt_chars": 26877,
+    "latency_sec": 2.29,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 7944,
+    "output_tokens": 186,
+    "total_tokens": 8130,
+    "api_response_id": "00cc9675-cf76-4b80-b92f-1dc56639daf1"
+  }
+]

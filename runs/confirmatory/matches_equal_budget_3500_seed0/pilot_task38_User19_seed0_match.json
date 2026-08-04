@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task38_User19_seed0",
+    "stage": "plan",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on family-centric housing needs (e.g., school districts, dog-friendly parks, budget-conscious renovation), practical decision-making style, and emphasis on long-term stability. The document's detailed analysis of school policies, neighborhood amenities, and financial planning mirrors A's meticulous nature, family priorities (wife as teacher, son's education), and preference for rational, research-driven decisions. While B and C also value education and practicality, A's specific focus on Beijing's school district policies (1911 cut-off dates), dog-friendly parks, and budget constraints under \u00a56 million directly reflect his documented priorities (e.g., golden retriever, son's upcoming primary school enrollment, state-owned enterprise salary constraints).",
+    "model": "solar-pro",
+    "prompt_chars": 25670,
+    "latency_sec": 2.15,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5399,
+    "output_tokens": 180,
+    "total_tokens": 5579,
+    "api_response_id": "53bd2a20-4b1a-411b-b423-d786d04b9e7b"
+  },
+  {
+    "run_id": "pilot_task38_User19_seed0",
+    "stage": "search",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on Beijing real estate, specifically housing prices (550\u4e07-600\u4e07), school district policies (\u6d77\u6dc0\u533a/\u671d\u9633\u533a\u5e7c\u5347\u5c0f), and mortgage regulations\u2014topics directly relevant to a family-oriented urban professional prioritizing education, property investment, and quality of life. Candidate C, a Shanghai-based marketing manager with two school-aged children, aligns best: his profile emphasizes high-end communities, educational expenses, and family-centric decision-making. Unlike Candidates A (Chengdu-based, less focused on Beijing) and B (Harbin-based, rural retirement interests), Candidate C\u2019s urban, education-driven lifestyle and financial priorities mirror the document\u2019s focus on Beijing\u2019s competitive housing market and school district policies.",
+    "model": "solar-pro",
+    "prompt_chars": 25810,
+    "latency_sec": 2.24,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 6547,
+    "output_tokens": 172,
+    "total_tokens": 6719,
+    "api_response_id": "4ef6c2c3-71fd-4ea4-a60b-36fe8e0e0ab2"
+  },
+  {
+    "run_id": "pilot_task38_User19_seed0",
+    "stage": "compress",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User19"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on real estate search criteria (budget, square footage, school districts) for a family with young children and a pet, aligning with Candidate A's profile. Candidate A is a married father of two young children (8 and 5) with a pet dog, prioritizing family-friendly communities, schools, and parks. The document's emphasis on unit prices, school districts, and park access matches A's pragmatic, family-oriented decision-making style and lifestyle preferences (e.g., weekend park visits). Candidates B and C lack the specific combination of young children, pet ownership, and high-end urban living context that directly aligns with the document's focus on Beijing's Haidian/Chaoyang districts and family-centric amenities.",
+    "model": "solar-pro",
+    "prompt_chars": 26967,
+    "latency_sec": 2.14,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 6626,
+    "output_tokens": 169,
+    "total_tokens": 6795,
+    "api_response_id": "afea8bf9-a06d-40b9-b5ba-aae0df1220ec"
+  },
+  {
+    "run_id": "pilot_task38_User19_seed0",
+    "stage": "write",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on a family with a 6-year-old child preparing for primary school and a large dog (Alaskan Malamute), prioritizing educational resources, dog-friendly amenities, and practical financial planning. Candidate A explicitly matches these criteria: a 35-40-year-old supply chain manager in Chengdu with a 6-year-old daughter and an Alaskan Malamute, emphasizing school districts, dog walking, and eco-friendly consumption. The document's emphasis on Beijing's Haidian District (premier schools) aligns with Candidate A's background in Sichuan (where education is highly valued) and his family's needs. Candidates B and C, while also family-oriented, lack the specific focus on a 6-year-old child's schooling and a large dog, making A the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 26969,
+    "latency_sec": 1.78,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5858,
+    "output_tokens": 183,
+    "total_tokens": 6041,
+    "api_response_id": "da837a06-3fd2-4529-a0d4-c290dbaa7b7d"
+  }
+]

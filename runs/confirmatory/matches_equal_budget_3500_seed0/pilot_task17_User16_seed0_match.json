@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task17_User16_seed0",
+    "stage": "plan",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on a multi-generational family vacation prioritizing nature photography, fishing, and low-fatigue activities for elderly parents. His background as a state-owned enterprise manager in Harbin, with a preference for Northeastern Chinese cuisine and self-guided itineraries, matches the requester's emphasis on cost-effective yet high-quality options, flexible planning, and local culinary preferences. The document's focus on family bonding, practical accommodations, and balancing diverse interests (photography, sports, relaxation) reflects Candidate A's documented values, such as rational spending, family communication, and outdoor activities like hiking and fishing. Candidates B and C, while sharing some travel preferences, differ in key aspects like urban residence (Shanghai/Suzhou vs. Harbin), cultural influences (Jiangnan/Northwestern vs. Northeastern), and specific interests (e.g., golf/yoga vs. photography/fishing).",
+    "model": "solar-pro",
+    "prompt_chars": 25014,
+    "latency_sec": 2.42,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5265,
+    "output_tokens": 213,
+    "total_tokens": 5478,
+    "api_response_id": "c1cf468d-8c09-439b-a13f-a44e3c7cca6c"
+  },
+  {
+    "run_id": "pilot_task17_User16_seed0",
+    "stage": "search",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on family-oriented travel planning, budget-conscious comparisons of coastal destinations, and interest in photography (e.g., shipwrecks, landscapes). The document emphasizes practical considerations for a multi-generational trip (e.g., 67-year-old mother, 30-day duration) and highlights off-the-beaten-path locations\u2014mirroring A's preference for self-guided tours, detailed itineraries, and recent photography hobby. Unlike B (focused on luxury and business) or C (prioritizing tech/industrial sites), A\u2019s emphasis on cost-effectiveness, family bonding, and Northeastern Chinese roots (e.g., Harbin residence) aligns with the document\u2019s tone and content priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 26882,
+    "latency_sec": 2.14,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5869,
+    "output_tokens": 176,
+    "total_tokens": 6045,
+    "api_response_id": "5bf6cead-d3d2-4f36-a328-74387fca6829"
+  },
+  {
+    "run_id": "pilot_task17_User16_seed0",
+    "stage": "compress",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document focuses on a multi-generational family (elderly, adults, and a middle-school teen) traveling from Harbin in July, emphasizing transportation convenience, climate comfort, beach quality, and activity variety. Candidate C, Zhang Jianguo, resides in Harbin, has a similar family structure (wife, middle-school son, and elderly parents in his hometown), and prioritizes family trips (1-2 times/year) to natural attractions. The document's emphasis on beaches, accessibility for elderly, and activities for teens aligns with C's travel style (self-guided tours, detailed itineraries) and interests (photography of scenic spots, outdoor activities). Candidates A and B, while family-oriented, lack the Harbin origin and specific focus on multi-generational travel logistics highlighted in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 26875,
+    "latency_sec": 1.79,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 6006,
+    "output_tokens": 186,
+    "total_tokens": 6192,
+    "api_response_id": "83d9a75e-af57-4873-ba9b-75d85d35b75d"
+  },
+  {
+    "run_id": "pilot_task17_User16_seed0",
+    "stage": "write",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document focuses on a multi-generational family vacation tailored to specific needs: nature photography (Father), meticulous planning (Mother), active sports (Son), and gentle pacing (Elderly Parents). Candidate B, a 40-45-year-old state-owned enterprise manager from Harbin, aligns perfectly. His profile highlights a three-generation family (wife, middle-school son, elderly parents in hometown), interests in photography (landscape and family), and a preference for self-guided, detailed itineraries. The document\u2019s emphasis on Harbin as the origin, Dalian\u2019s accessibility via high-speed rail (prioritizing elderly comfort), and balancing diverse activities mirrors B\u2019s values: practicality, family bonding, and rational planning. Candidates A and C, while family-oriented, lack the direct connection to Harbin or the specific generational dynamics (e.g., elderly parents\u2019 needs) central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 26877,
+    "latency_sec": 1.91,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5661,
+    "output_tokens": 207,
+    "total_tokens": 5868,
+    "api_response_id": "c999ace6-f9a3-41b6-bb8c-f454ec58c637"
+  }
+]

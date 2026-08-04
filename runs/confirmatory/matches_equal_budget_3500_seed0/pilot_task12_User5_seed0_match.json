@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task12_User5_seed0",
+    "stage": "plan",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User5",
+    "correct": true,
+    "reasoning": "The document explicitly states the author is a 'graduate student in mechanical automation' seeking emotional management strategies, aligning perfectly with Candidate A's identity (mechanical automation graduate student). The request for evidence-based books (CBT, mindfulness), online courses (Coursera/edX), and cost-effective daily strategies mirrors A's analytical mindset, use of digital learning tools, and rational spending habits. Candidate B (law student) and C (clinical psychology graduate) lack the mechanical engineering background and specific focus on emotion regulation for academic performance, making A the only direct match.",
+    "model": "solar-pro",
+    "prompt_chars": 25505,
+    "latency_sec": 1.45,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5321,
+    "output_tokens": 135,
+    "total_tokens": 5456,
+    "api_response_id": "35f87738-bf01-441c-9124-d5e1fe8666f4"
+  },
+  {
+    "run_id": "pilot_task12_User5_seed0",
+    "stage": "search",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "Candidate C, a graduate student in Clinical Psychology, aligns most closely with the document's focus on emotion regulation, psychological well-being, and mindfulness. The document includes searches for psychology-related books (e.g., 'Feeling Good', 'Mind Over Mood'), online courses on well-being (Coursera's 'Science of Well-Being'), and academic references to Gross's Process Model of Emotion Regulation\u2014all directly relevant to C's field of study. C's behavioral traits (e.g., using Coursera, reading psychology articles, and interest in emotional communication) and consumption habits (e.g., purchasing psychology books) further confirm this match. Candidates A (Mechanical Engineering) and B (Law) lack the same depth of engagement with psychological content.",
+    "model": "solar-pro",
+    "prompt_chars": 27330,
+    "latency_sec": 1.71,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5916,
+    "output_tokens": 175,
+    "total_tokens": 6091,
+    "api_response_id": "6a53ef04-30c8-4bda-90c8-85d03ac322da"
+  },
+  {
+    "run_id": "pilot_task12_User5_seed0",
+    "stage": "compress",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User4",
+      "User2",
+      "User5"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "The document focuses on psychological therapies (CBT, DBT, mindfulness) and emphasizes structured, analytical approaches to emotion regulation. Candidate B, a clinical psychology graduate student, aligns perfectly with this content due to her academic background, interest in psychology, and consumption of psychology-related materials. The document's framing\u2014detailing therapeutic protocols, cognitive distortions, and workbook structures\u2014reflects a clinical/academic perspective consistent with B's expertise. Candidates A (law student) and C (mechanical engineering student) lack the direct psychological focus and methodological framing evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 27496,
+    "latency_sec": 1.48,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 6172,
+    "output_tokens": 138,
+    "total_tokens": 6310,
+    "api_response_id": "e38ff6d8-feca-46c5-8a50-0bc37d2e6af9"
+  },
+  {
+    "run_id": "pilot_task12_User5_seed0",
+    "stage": "write",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User4",
+      "User2",
+      "User5"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User5",
+    "correct": true,
+    "reasoning": "The document emphasizes an analytical, systematic approach to emotional regulation, framed as an 'information-processing system' with structured protocols, toolkits, and empirical tracking. Candidate C, a mechanical engineering graduate student in robotics automation, aligns most closely with this analytical mindset. His focus on structured problem-solving, use of digital tools for literature organization, and preference for cost-effective, practical solutions mirror the document's emphasis on deterministic cognitive processes and actionable frameworks. Unlike Candidates A (law student with psychology minor) and B (clinical psychology graduate), Candidate C lacks a psychology background, making the document's CBT/DBT/MBCT content less intuitive to him. The document's framing as a 'debugging manual' for emotional regulation resonates with his engineering perspective, where system troubleshooting and variable isolation are core skills. His recent interest in coffee-making and baking videos also parallels the document's focus on structured daily practices for resilience.",
+    "model": "solar-pro",
+    "prompt_chars": 27498,
+    "latency_sec": 1.99,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5831,
+    "output_tokens": 208,
+    "total_tokens": 6039,
+    "api_response_id": "4a74416c-4e76-4c1a-b246-452df9b06e5b"
+  }
+]

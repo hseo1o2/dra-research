@@ -1,0 +1,31 @@
+[
+  {
+    "run_id": "ablation_nobrief_task2_User2_seed0",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on clinical psychology exchange programs, detailing institutional options, visa requirements, and permissible research activities for graduate students. Candidate B is explicitly a graduate student in Clinical Psychology, aligning directly with the document's academic focus. The content's emphasis on clinical research protocols, international regulations, and institutional pathways matches B's background, goals, and interests in psychology. Candidates A (new media research) and C (computer science) lack the domain-specific relevance to the document's clinical psychology context.",
+    "model": "solar-pro",
+    "prompt_chars": 29978,
+    "latency_sec": 1.88,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6678,
+    "output_tokens": 118,
+    "total_tokens": 6796,
+    "api_response_id": "49e87b6b-b354-4ea4-bdf0-84e4b23dbcc6"
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "run_id": "pilot_task32_User11_seed0",
+  "gt_userid": "User11",
+  "domain": "Shopping",
+  "taskid": 32,
+  "seed": 0,
+  "prompt_chars": 19678,
+  "report_chars": 8956,
+  "stage_attribution": {
+    "plan": {
+      "correct": true,
+      "predicted_userid": "User11"
+    },
+    "search": {
+      "correct": false,
+      "predicted_userid": "User10"
+    },
+    "compress": {
+      "correct": false,
+      "predicted_userid": "User10"
+    },
+    "write": {
+      "correct": true,
+      "predicted_userid": "User11"
+    },
+    "pattern": "recovered"
+  },
+  "write_correct": true,
+  "pattern": "recovered",
+  "rubric_version": "v2",
+  "status": "completed",
+  "content_personalization": 4,
+  "presentation_personalization": 4,
+  "mean_personalization": 4.0,
+  "content_evidence": "The report provides a detailed budget allocation strategy tailored to the user's specific needs, including recommendations for furniture, appliances, and decor that align with the modern style of the home and the user's budget of ¥100,000. It also addresses the user's requirement for smart appliance connectivity and size constraints in the kitchen.",
+  "presentation_evidence": "The report is structured logically, with clear sections that guide the user through the shopping plan. The language is professional yet accessible, using appropriate jargon related to home furnishing and smart appliances, which aligns well with the user's background as an algorithm engineer.",
+  "reasoning": "Both dimensions score a 4 due to the report's strong alignment with the user's specific needs and preferences, as well as its clear and structured presentation style. However, it stops short of being exceptional, as there could be more direct engagement with the user's personal tastes or lifestyle preferences.",
+  "latency_sec": 4.52,
+  "input_tokens": 8029,
+  "output_tokens": 191,
+  "total_tokens": 8220,
+  "api_response_id": "chatcmpl-E9B6zfq46ug1Fh2CqNKNu7EFeEll4",
+  "model": "gpt-4o-mini"
+}

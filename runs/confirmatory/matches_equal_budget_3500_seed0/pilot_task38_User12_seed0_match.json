@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task38_User12_seed0",
+    "stage": "plan",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User22",
+      "User12"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "Candidate C (Zhang Yu) is the best match. The document focuses on a Beijing-based 5-person family (including parents) seeking a home in Haidian/Chaoyang with specific educational and financial criteria\u2014aligning with C's current residence in Haidian, family structure (5-year-old daughter + parents), and entrepreneurial background requiring data-driven decision-making. The report's emphasis on school districts, budget allocation, and transaction workflows reflects C's financial literacy (moderate risk appetite, mortgage experience) and tech-savvy nature (preference for smart home devices, online research habits). Unlike A (Shanghai-based, prioritizing Jiangnan culture) or B (Suzhou-based, focused on manufacturing), C's Beijing-centric lifestyle, AI entrepreneurship, and practical approach to family planning directly mirror the document's scope and priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 25929,
+    "latency_sec": 1.81,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5490,
+    "output_tokens": 191,
+    "total_tokens": 5681,
+    "api_response_id": "ce4d2b69-bdbd-498e-aeee-019859b1f1b0"
+  },
+  {
+    "run_id": "pilot_task38_User12_seed0",
+    "stage": "search",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User22",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on real estate in Haidian District, Beijing, emphasizing factors like proximity to schools (e.g., \u6e05\u6cb3\u5b66\u533a, \u897f\u4e09\u65d7\u5b66\u533a), property size (\u4e09\u5c45, 600\u4e07), and urban amenities. Candidate A, a Haidian-based AI entrepreneur with a 5-year-old daughter, prioritizes family-centric housing (three-bedroom apartments, school districts) and values convenience near his company. His profile aligns with the document's emphasis on practical, high-quality living conditions, cost-effectiveness, and proximity to urban facilities. Candidates B (Suzhou-based, manufacturing) and C (Shanghai-based, marketing) lack the Haidian residency and specific focus on Beijing's school districts and tech-friendly urban infrastructure highlighted in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 26151,
+    "latency_sec": 2.19,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 6874,
+    "output_tokens": 179,
+    "total_tokens": 7053,
+    "api_response_id": "0d157d08-f367-408a-8e7f-70e3cc43b867"
+  },
+  {
+    "run_id": "pilot_task38_User12_seed0",
+    "stage": "compress",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on Beijing's Haidian District real estate, emphasizing school districts (\u5b66\u533a), property sizes (e.g., 80\u33a1, 100\u33a1), and proximity to metro/subway access\u2014key priorities for Candidate A, who lives in Haidian, has a 5-year-old daughter, and values education (e.g., Yuxin School, Shiyan Er Xiao). The queries also align with A's family needs (3-bedroom units, budget ~6M CNY) and tech-savvy, efficiency-driven lifestyle (e.g., 'near subway' for commuting). Candidates B (Shanghai-based, different school focus) and C (Suzhou-based, manufacturing background) lack the geographic and familial alignment with the document's Beijing-centric, education-focused real estate analysis.",
+    "model": "solar-pro",
+    "prompt_chars": 27827,
+    "latency_sec": 1.82,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 6632,
+    "output_tokens": 186,
+    "total_tokens": 6818,
+    "api_response_id": "6c1c001b-bad4-49a8-95c6-9546bca544bb"
+  },
+  {
+    "run_id": "pilot_task38_User12_seed0",
+    "stage": "write",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on Beijing's real estate market, specifically targeting families with 5 members (including three generations) seeking homes under 6 million yuan, near subways, and with access to quality schools. Candidate A lives in Haidian District, Beijing, with a similar family structure (married, 5-year-old daughter, and parents), and has a budget aligning with the report's focus. The report's emphasis on education (e.g., '1911\u540e' school districts, nine-year integrated schools) matches Candidate A's background as a Tsinghua graduate and parent prioritizing education. Additionally, Candidate A's tech-entrepreneur profile aligns with the report's data-driven, analytical tone, which emphasizes financial precision (tax calculations, budget constraints) and systematic decision-making\u2014traits consistent with A's logical, data-focused personality. Candidates B (Shanghai-based, different family size) and C (Suzhou-based, older demographic) lack the geographic and demographic alignment.",
+    "model": "solar-pro",
+    "prompt_chars": 27829,
+    "latency_sec": 2.56,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 7883,
+    "output_tokens": 223,
+    "total_tokens": 8106,
+    "api_response_id": "a6692adc-a950-4363-b0d7-c5992bc080f8"
+  }
+]

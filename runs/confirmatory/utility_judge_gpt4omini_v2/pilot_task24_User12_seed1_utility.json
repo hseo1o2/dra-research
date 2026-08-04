@@ -1,0 +1,44 @@
+{
+  "run_id": "pilot_task24_User12_seed1",
+  "gt_userid": "User12",
+  "domain": "Finance",
+  "taskid": 24,
+  "seed": 1,
+  "prompt_chars": 18324,
+  "report_chars": 7046,
+  "stage_attribution": {
+    "plan": {
+      "correct": false,
+      "predicted_userid": "User10"
+    },
+    "search": {
+      "correct": false,
+      "predicted_userid": "User10"
+    },
+    "compress": {
+      "correct": false,
+      "predicted_userid": "User10"
+    },
+    "write": {
+      "correct": true,
+      "predicted_userid": "User12"
+    },
+    "pattern": "write_correct_other"
+  },
+  "write_correct": true,
+  "pattern": "write_correct_other",
+  "rubric_version": "v2",
+  "status": "completed",
+  "content_personalization": 5,
+  "presentation_personalization": 4,
+  "mean_personalization": 4.5,
+  "content_evidence": "The report provides tailored recommendations for home property insurance specific to Zhang Yu's location in Xiamen, including detailed analysis of natural disaster coverage, special clauses for high-value electronics, and a comparative analysis of insurance products that fit his budget and needs.",
+  "presentation_evidence": "The report is structured logically with clear headings and subheadings, uses appropriate jargon for a knowledgeable audience, and maintains a professional tone, making it accessible for someone with Zhang Yu's educational background and expertise in technology.",
+  "reasoning": "The content score is high due to the comprehensive and specific recommendations that directly address Zhang Yu's unique situation and requirements. The presentation score is slightly lower because, while well-structured and professional, it could benefit from a more engaging tone or visual elements to enhance readability.",
+  "latency_sec": 2.548,
+  "input_tokens": 7171,
+  "output_tokens": 172,
+  "total_tokens": 7343,
+  "api_response_id": "chatcmpl-E9B5wpTfd1sOZ5fzFzxm0pNh7bplg",
+  "model": "gpt-4o-mini"
+}

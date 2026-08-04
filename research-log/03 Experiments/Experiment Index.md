@@ -23,6 +23,9 @@ type: index
 - [[EXP-014 GPT-5.4-nano matcher replication]]
 - [[EXP-015 Shuffled-actionable generation control]]
 - [[EXP-016 N=2 N=5 candidate-set-size sensitivity]]
+- [[EXP-017 Writing-only no-brief ablation]]
+- [[EXP-018 Attribution–utility GPT judge]]
+- [[EXP-019 Equal character-budget rematch]]
 
 ## Next
 

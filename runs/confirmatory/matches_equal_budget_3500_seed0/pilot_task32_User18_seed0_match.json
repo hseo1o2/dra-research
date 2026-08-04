@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task32_User18_seed0",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on modern aesthetics, smart home integration, and cost-effective, research-driven purchasing. The document emphasizes a rational, detail-oriented approach to budget allocation and product selection, mirroring A's meticulous decision-making style and preference for data-backed choices. Additionally, A's interest in sustainability, eco-friendly products, and smart home connectivity (e.g., her cat ownership and tech-savvy habits) aligns with the document's emphasis on smart appliances and durable materials. While B and C also value cost-effectiveness, A's single-person household and focus on a compact, modern space (89\u33a1) better match the document's scope, which does not mention family-oriented needs (e.g., children's spaces or multi-bedroom usage) that are central to C's profile.",
+    "model": "solar-pro",
+    "prompt_chars": 23435,
+    "latency_sec": 2.2,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 4960,
+    "output_tokens": 188,
+    "total_tokens": 5148,
+    "api_response_id": "b4d1ea6f-03cf-4bb7-994e-866d8048f97b"
+  },
+  {
+    "run_id": "pilot_task32_User18_seed0",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on interior design, home appliance selection, and budget planning for a new home, emphasizing practicality, cost-effectiveness, and family-oriented needs. Candidate C, a married marketing manager with two children, aligns best due to his role as a primary breadwinner managing household budgets, his preference for high-quality durable items, and his family-centric lifestyle (e.g., prioritizing children's educational expenses, quarterly family trips). The document's emphasis on space optimization (89\u33a1), appliance integration (zero-embedding refrigerators, washer-dryer combos), and budget-conscious choices reflects C's pragmatic decision-making style and focus on balancing family needs with cost-effectiveness. Candidates A and B, both single professionals prioritizing personal efficiency and minimalist living, lack the document's family-oriented framing and household management focus.",
+    "model": "solar-pro",
+    "prompt_chars": 24202,
+    "latency_sec": 2.25,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 6673,
+    "output_tokens": 189,
+    "total_tokens": 6862,
+    "api_response_id": "3abc5ff4-5fdd-4351-832f-a3f5bf62dbb5"
+  },
+  {
+    "run_id": "pilot_task32_User18_seed0",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User8"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on ultra-thin embedded refrigerators, washer-dryer combos, and dishwashers optimized for small-to-medium kitchens (89m\u00b2), emphasizing technical specs (capacity, dimensions, cooling systems), smart home integration, and cost-performance ratios. Candidate B, a married marketing manager with two children, prioritizes quality, cost-effectiveness, and space-efficient household items for a family. His profile highlights a focus on durable, high-end appliances (e.g., 'invests in hobbies like high-quality photography equipment') and practicality for a family-oriented lifestyle. The document\u2019s framing aligns with B\u2019s need for space-saving, high-performance appliances that balance functionality and budget\u2014key for a family in a modern urban apartment. Candidates A (single data analyst) and C (single investment manager) lack the family-centric consumption patterns and emphasis on household appliance optimization seen in B.",
+    "model": "solar-pro",
+    "prompt_chars": 25639,
+    "latency_sec": 2.09,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 6423,
+    "output_tokens": 210,
+    "total_tokens": 6633,
+    "api_response_id": "47b75bc8-5534-4186-b5f3-6d9dd3031df6"
+  },
+  {
+    "run_id": "pilot_task32_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on a family-oriented, budget-conscious soft furnishing plan for a 3-bedroom apartment, emphasizing warmth, durability, and practicality\u2014aligning with Candidate A's profile as a married father prioritizing family comfort, cost-effectiveness, and quality. The budget breakdown (\u00a5100,000) reflects a household with children (e.g., durable textiles, zone-specific allocations for bedrooms), while the color strategy (warm neutrals, organic accents) matches A's Jiangnan cultural background and preference for cozy, family-friendly spaces. Candidates B (single, data-focused) and C (investment-oriented, minimalist) lack the document's emphasis on multi-generational living, pet-friendly materials, or holistic family budgeting.",
+    "model": "solar-pro",
+    "prompt_chars": 25641,
+    "latency_sec": 2.14,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5795,
+    "output_tokens": 176,
+    "total_tokens": 5971,
+    "api_response_id": "3649d914-f96b-412d-8fea-bf27db066eb4"
+  }
+]

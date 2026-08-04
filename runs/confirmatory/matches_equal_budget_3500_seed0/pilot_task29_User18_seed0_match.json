@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task29_User18_seed0",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User15"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "Candidate B (Liu Lu) aligns most closely with the document's focus on launching a health-conscious fast-food business. As a data analyst with a rational, detail-oriented personality, she values data-driven decision-making, which matches the document's emphasis on market analysis, competitor benchmarking, and financial planning. Her interest in healthy eating (low-calorie, high-protein meals) and frequent use of food delivery services align with the business's target audience and operational model. Additionally, her preference for cost-effectiveness and practicality resonates with the budget constraints and pricing strategy outlined in the document. While Candidate A shares some lifestyle similarities, his focus on family and traditional cuisine makes him less aligned. Candidate C, though health-conscious, prioritizes sustainability and cultural themes, which are not central to the document's pragmatic, business-oriented framing.",
+    "model": "solar-pro",
+    "prompt_chars": 23737,
+    "latency_sec": 1.77,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5062,
+    "output_tokens": 188,
+    "total_tokens": 5250,
+    "api_response_id": "dac8be74-44be-48e4-bfe9-f44ef09260cd"
+  },
+  {
+    "run_id": "pilot_task29_User18_seed0",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on market trends, consumer behavior, and operational costs in Shanghai's light-food industry, emphasizing data-driven insights (e.g., market size, rental costs, pricing strategies). Candidate B, a marketing manager with an MBA, aligns with this analytical and business-oriented framing. His background in marketing, preference for cost-effectiveness, and interest in market trends (e.g., saving articles on business management) make him the most likely audience. Candidates A (freelance writer) and C (data analyst) lack the direct focus on commercial strategy and consumer market dynamics central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 23574,
+    "latency_sec": 1.57,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 6392,
+    "output_tokens": 141,
+    "total_tokens": 6533,
+    "api_response_id": "23689e5b-c7b1-4e8f-938d-befc99ce3763"
+  },
+  {
+    "run_id": "pilot_task29_User18_seed0",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User15",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on market analysis, competitor dynamics, and operational metrics (e.g., store counts, CAGR, profit margins) in Shanghai's light meal industry, aligning with Candidate C's role as a marketing manager in a foreign enterprise. His profile emphasizes data-driven decision-making, cost-effectiveness, and interest in market trends (e.g., saving business case studies, analyzing market reports). Unlike Candidate A (data analyst focused on tools/tech) or Candidate B (freelance writer focused on culture/social issues), Candidate C\u2019s priorities\u2014balancing practicality with strategic growth, family-oriented consumption, and interest in high-end durable goods\u2014mirror the document\u2019s framing of industry benchmarks, regional market segmentation, and competitor performance. His frequent business trips and focus on Shanghai\u2019s market align with the document\u2019s Shanghai-centric data.",
+    "model": "solar-pro",
+    "prompt_chars": 25134,
+    "latency_sec": 2.26,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5884,
+    "output_tokens": 190,
+    "total_tokens": 6074,
+    "api_response_id": "495f8acc-d360-4c70-9f1a-4c2ca5180fcb"
+  },
+  {
+    "run_id": "pilot_task29_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User15",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate A (Liu Qiang) is a marketing manager in a foreign enterprise with an MBA, focusing on business strategy, market trends, and cost-effectiveness. The document emphasizes unit economics, financial projections, and targeting corporate white-collar workers\u2014aligning with his professional background and decision-making style. His preference for data-driven analysis, pragmatic approach, and interest in high-protein, macro-balanced meals (as seen in his fitness habits) directly mirror the report's focus on AOV, break-even analysis, and product offerings. Candidates B and C, while health-conscious, lack the business-oriented framing and financial rigor central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25136,
+    "latency_sec": 2.02,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5457,
+    "output_tokens": 150,
+    "total_tokens": 5607,
+    "api_response_id": "17bcca55-0c55-450f-9b72-a9645ad4d732"
+  }
+]

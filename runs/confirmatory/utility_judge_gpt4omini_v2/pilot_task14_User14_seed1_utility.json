@@ -1,0 +1,44 @@
+{
+  "run_id": "pilot_task14_User14_seed1",
+  "gt_userid": "User14",
+  "domain": "Health",
+  "taskid": 14,
+  "seed": 1,
+  "prompt_chars": 19128,
+  "report_chars": 22165,
+  "stage_attribution": {
+    "plan": {
+      "correct": true,
+      "predicted_userid": "User14"
+    },
+    "search": {
+      "correct": false,
+      "predicted_userid": "User20"
+    },
+    "compress": {
+      "correct": false,
+      "predicted_userid": "User20"
+    },
+    "write": {
+      "correct": true,
+      "predicted_userid": "User14"
+    },
+    "pattern": "recovered"
+  },
+  "write_correct": true,
+  "pattern": "recovered",
+  "rubric_version": "v2",
+  "status": "completed",
+  "content_personalization": 4,
+  "presentation_personalization": 4,
+  "mean_personalization": 4.0,
+  "content_evidence": "The training plan incorporates the Galloway Run/Walk/Run Method, which is specifically tailored for beginners like Lin Nan, emphasizing injury prevention and gradual mileage increase. It also integrates his existing habits of yoga and Pilates, making the plan sustainable and adaptable to his lifestyle.",
+  "presentation_evidence": "The report uses clear, structured sections with a friendly and encouraging tone, suitable for a beginner runner. It avoids technical jargon while providing detailed explanations of the training methods and principles, making it accessible for someone with no prior running experience.",
+  "reasoning": "Both dimensions show strong personalization, with the content specifically addressing Lin Nan's beginner status and lifestyle, while the presentation is adapted to be clear and supportive for someone new to running.",
+  "latency_sec": 2.724,
+  "input_tokens": 4562,
+  "output_tokens": 162,
+  "total_tokens": 4724,
+  "api_response_id": "chatcmpl-E9B4mpmUVnjbbafn8ir6YX8XSoZAj",
+  "model": "gpt-4o-mini"
+}

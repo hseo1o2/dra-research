@@ -1,0 +1,44 @@
+{
+  "run_id": "pilot_task14_User14_seed0",
+  "gt_userid": "User14",
+  "domain": "Health",
+  "taskid": 14,
+  "seed": 0,
+  "prompt_chars": 19128,
+  "report_chars": 19821,
+  "stage_attribution": {
+    "plan": {
+      "correct": true,
+      "predicted_userid": "User14"
+    },
+    "search": {
+      "correct": false,
+      "predicted_userid": "User20"
+    },
+    "compress": {
+      "correct": true,
+      "predicted_userid": "User14"
+    },
+    "write": {
+      "correct": true,
+      "predicted_userid": "User14"
+    },
+    "pattern": "recovered"
+  },
+  "write_correct": true,
+  "pattern": "recovered",
+  "rubric_version": "v2",
+  "status": "completed",
+  "content_personalization": 4,
+  "presentation_personalization": 4,
+  "mean_personalization": 4.0,
+  "content_evidence": "The report includes a detailed 12-week training plan that aligns with Lin Nan's schedule, emphasizing morning runs and integrating yoga and Pilates, which he already practices. It also considers his beginner status by recommending the Galloway Run-Walk-Run method and providing specific run-walk ratios suitable for someone with no prior running experience.",
+  "presentation_evidence": "The tone is supportive and encouraging, suitable for a beginner, and the structure is clear and easy to follow, with a week-by-week breakdown that matches Lin Nan's lifestyle. The use of jargon is minimal, making it accessible, while the depth of information is appropriate for someone new to marathon training.",
+  "reasoning": "Both dimensions score a 4 due to the strong alignment with Lin Nan's specific needs and lifestyle, but they do not reach the level of exceptional personalization, as there could be more tailored recommendations regarding nutrition or injury prevention specific to his artistic lifestyle.",
+  "latency_sec": 3.139,
+  "input_tokens": 4601,
+  "output_tokens": 202,
+  "total_tokens": 4803,
+  "api_response_id": "chatcmpl-E9B4jGSfwyVyeisRglzzqB8UU8b6N",
+  "model": "gpt-4o-mini"
+}

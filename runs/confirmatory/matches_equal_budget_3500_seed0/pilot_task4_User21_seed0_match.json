@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task4_User21_seed0",
+    "stage": "plan",
+    "gt_userid": "User21",
+    "candidate_userids": [
+      "User21",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User21",
+      "User8",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User21",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on strategic leadership, executive decision-making, and technical/digital capabilities for a 40-45-year-old Shanghai-based entrepreneur. The document emphasizes advanced education programs (EMBA, data analytics, etc.) with a comparative analysis of domestic and international options, prioritizing ROI, alumni networks, and practical implementation\u2014key concerns for an experienced entrepreneur like A, who has an MBA, runs a business, and seeks to enhance his strategic and technical skills. Candidate B (a younger investment manager) and C (a marketing manager) lack the entrepreneurial background, age, and specific focus on high-impact executive education that matches the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 24904,
+    "latency_sec": 1.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5240,
+    "output_tokens": 164,
+    "total_tokens": 5404,
+    "api_response_id": "fb76923e-0a93-4245-9eb3-9315480df0ec"
+  },
+  {
+    "run_id": "pilot_task4_User21_seed0",
+    "stage": "search",
+    "gt_userid": "User21",
+    "candidate_userids": [
+      "User21",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User21",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User21",
+    "correct": true,
+    "reasoning": "The document focuses on high-end executive education programs (EMBA/GEMBA) with emphasis on global rankings, tuition costs, curriculum structure, and flexibility\u2014key priorities for seasoned professionals balancing leadership roles and family. Candidate B, a 40-45-year-old entrepreneur with an MBA, aligns best: his decision-making style (data-driven, pragmatic), consumption preferences (quality/brand value, limited-edition items), and travel patterns (business-leisure hybrid trips) mirror the document's framing. His interest in sustainability and eco-friendly products also subtly aligns with modern EMBA program values. Candidates A (young investment manager) and C (marketing manager) prioritize cost-effectiveness and family-centric activities, respectively, which are less central to the document's focus on elite executive education.",
+    "model": "solar-pro",
+    "prompt_chars": 25972,
+    "latency_sec": 2.17,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5662,
+    "output_tokens": 186,
+    "total_tokens": 5848,
+    "api_response_id": "b6d0d0a9-56b5-413e-86c2-277d712d5ab9"
+  },
+  {
+    "run_id": "pilot_task4_User21_seed0",
+    "stage": "compress",
+    "gt_userid": "User21",
+    "candidate_userids": [
+      "User21",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User21"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User21",
+    "correct": true,
+    "reasoning": "The document focuses on high-end EMBA programs (e.g., CEIBS, Tsinghua-INSEAD, Fudan-WashU) with detailed tuition data, ranking information, and curriculum structures\u2014content prioritizing executive education, global business acumen, and elite institutional prestige. Candidate C, an entrepreneur (40-45) with an MBA from Fudan, aligns best: his background in economics, business acumen, and international focus mirror the document's emphasis on cross-border programs (e.g., Tsinghua-INSEAD, Guanghua-Kellogg). His consumption habits (luxury hotels, art collections, sustainability) and travel preferences (combining business/leisure, cultural destinations) reflect the document's framing of programs as investments in high-value networking and leadership development. Candidates A (marketing manager) and B (investment manager) lack the entrepreneurial perspective and global business focus central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 26046,
+    "latency_sec": 1.97,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5903,
+    "output_tokens": 215,
+    "total_tokens": 6118,
+    "api_response_id": "c99ab426-0626-4248-a55f-efcc204aecbd"
+  },
+  {
+    "run_id": "pilot_task4_User21_seed0",
+    "stage": "write",
+    "gt_userid": "User21",
+    "candidate_userids": [
+      "User21",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User21",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User21",
+    "correct": true,
+    "reasoning": "The document focuses on advanced leadership programs for a 40-45-year-old Shanghai entrepreneur with a Zhejiang University economics degree and Fudan MBA, emphasizing technical/digital competence, elite networks, and cross-border strategy. Candidate B matches this profile exactly: same age, occupation, educational background, and location. The document's strategic priorities (AI integration, global networks, cross-border scaling) align with B's pragmatic decision-making style, business acumen, and frequent international travel for business. Candidate A (26-30, investment manager) and C (30-35, marketing manager) lack the entrepreneurial experience, age, and advanced educational background described in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 26048,
+    "latency_sec": 2.07,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5572,
+    "output_tokens": 161,
+    "total_tokens": 5733,
+    "api_response_id": "5488515d-1d61-4388-860d-80e80c4d495f"
+  }
+]

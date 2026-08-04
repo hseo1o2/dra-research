@@ -1,0 +1,94 @@
+{
+  "model": "gpt-4o-mini",
+  "execute": true,
+  "n_runs": 120,
+  "n_completed": 120,
+  "planned_prompt_chars": 2211309,
+  "external_api_calls": 120,
+  "overall_mean_content": 4.508,
+  "overall_mean_presentation": 4.508,
+  "overall_mean": 4.508,
+  "mean_by_write_correct": {
+    "correct": {
+      "n": 96,
+      "mean": 4.573
+    },
+    "wrong": {
+      "n": 24,
+      "mean": 4.25
+    }
+  },
+  "mean_by_pattern": {
+    "all_correct_prefix": {
+      "n": 62,
+      "mean": 4.613
+    },
+    "recovered": {
+      "n": 24,
+      "mean": 4.5
+    },
+    "write_correct_other": {
+      "n": 10,
+      "mean": 4.5
+    },
+    "non_recovered": {
+      "n": 8,
+      "mean": 4.25
+    },
+    "write_wrong_other": {
+      "n": 16,
+      "mean": 4.25
+    }
+  },
+  "delta_write_correct_minus_wrong": 0.323,
+  "pearson_r_write_correct_vs_mean": 0.1827,
+  "delta_bootstrap_95ci": [
+    -0.02,
+    0.717
+  ],
+  "delta_bootstrap_mean": 0.322,
+  "mean_by_stage_correct": {
+    "plan": {
+      "correct_mean": 4.526,
+      "n_correct": 97,
+      "wrong_mean": 4.435,
+      "n_wrong": 23,
+      "delta": 0.091
+    },
+    "search": {
+      "correct_mean": 4.545,
+      "n_correct": 66,
+      "wrong_mean": 4.463,
+      "n_wrong": 54,
+      "delta": 0.082
+    },
+    "compress": {
+      "correct_mean": 4.521,
+      "n_correct": 71,
+      "wrong_mean": 4.49,
+      "n_wrong": 49,
+      "delta": 0.031
+    },
+    "write": {
+      "correct_mean": 4.573,
+      "n_correct": 96,
+      "wrong_mean": 4.25,
+      "n_wrong": 24,
+      "delta": 0.323
+    }
+  },
+  "score_distribution": {
+    "content": {
+      "5": 74,
+      "4": 35,
+      "3": 9,
+      "2": 2
+    },
+    "presentation": {
+      "5": 74,
+      "4": 35,
+      "3": 9,
+      "2": 2
+    }
+  }
+}

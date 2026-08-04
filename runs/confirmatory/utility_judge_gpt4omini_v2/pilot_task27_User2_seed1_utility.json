@@ -1,0 +1,44 @@
+{
+  "run_id": "pilot_task27_User2_seed1",
+  "gt_userid": "User2",
+  "domain": "Creative",
+  "taskid": 27,
+  "seed": 1,
+  "prompt_chars": 19710,
+  "report_chars": 11772,
+  "stage_attribution": {
+    "plan": {
+      "correct": true,
+      "predicted_userid": "User2"
+    },
+    "search": {
+      "correct": true,
+      "predicted_userid": "User2"
+    },
+    "compress": {
+      "correct": false,
+      "predicted_userid": "User1"
+    },
+    "write": {
+      "correct": false,
+      "predicted_userid": "User7"
+    },
+    "pattern": "write_wrong_other"
+  },
+  "write_correct": false,
+  "pattern": "write_wrong_other",
+  "rubric_version": "v2",
+  "status": "completed",
+  "content_personalization": 4,
+  "presentation_personalization": 4,
+  "mean_personalization": 4.0,
+  "content_evidence": "The report provides a detailed budget allocation for music equipment tailored to the user's budget of ¥20,000, along with specific recommendations for microphones, audio interfaces, and DAW software that align with her indie pop and folk music styles. It also outlines a structured 6-month creation plan that matches her available time and production experience level.",
+  "presentation_evidence": "The tone is encouraging and informative, suitable for a music enthusiast with basic production skills, and the structure is clear and logical, breaking down the process into manageable phases. The use of jargon is appropriate for someone with a basic understanding of music production, making it accessible yet professional.",
+  "reasoning": "Both dimensions show strong personalization, with the content specifically addressing the user's budget, style, and experience, while the presentation is well-structured and uses an appropriate tone for her background.",
+  "latency_sec": 2.936,
+  "input_tokens": 7821,
+  "output_tokens": 184,
+  "total_tokens": 8005,
+  "api_response_id": "chatcmpl-E9B6OJHf8mQrbdpbhGxfhGQZsh32F",
+  "model": "gpt-4o-mini"
+}

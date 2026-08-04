@@ -53,7 +53,7 @@ except ImportError:
 STAGES = ["plan", "search", "compress", "write"]
 SEARCH_VIEWS = ["full", "queries", "snippets"]
 ABLATION_RUN_PREFIX = re.compile(
-    r"^ablation_(?:actionable_only|identity_only|shuffled_actionable)_"
+    r"^ablation_(?:actionable_only|identity_only|shuffled_actionable|nobrief|full_control)_"
 )
 
 PERSONA_DATA_PATH = ROOT / "data" / "pdr-bench" / "persona_data" / "personas_en.jsonl"
@@ -75,13 +75,38 @@ STAGE_CHAR_CAPS = {
 # Artifact serializers
 # ---------------------------------------------------------------------------
 
-def _serialize_plan(artifacts: dict) -> str:
-    return artifacts.get("research_brief", "")
+def _head_tail_truncate(text: str, max_chars: int) -> str:
+    """Truncate long text, keeping opening + tail when over budget."""
+    if max_chars <= 0:
+        return ""
+    if len(text) <= max_chars:
+        return text
+    if max_chars < 32:
+        return text[:max_chars]
+    head = int(max_chars * 0.75)
+    tail = max_chars - head
+    # head+tail may leave no room for separator on tiny budgets
+    if head + tail > max_chars:
+        return text[:max_chars]
+    sep = "\n\n[...]\n\n"
+    if head + len(sep) + tail > max_chars:
+        return text[:max_chars]
+    return text[:head] + sep + text[-tail:]
+
+
+def _serialize_plan(
+    artifacts: dict,
+    max_chars: int | None = STAGE_CHAR_CAPS["plan"],
+) -> str:
+    text = artifacts.get("research_brief", "") or ""
+    if max_chars is None:
+        return text
+    return _head_tail_truncate(text, max_chars)
 
 
 def _serialize_search(
     artifacts: dict,
-    max_chars: int = STAGE_CHAR_CAPS["search"],
+    max_chars: int | None = STAGE_CHAR_CAPS["search"],
     view: str = "full",
 ) -> str:
     if view not in SEARCH_VIEWS:
@@ -102,45 +127,62 @@ def _serialize_search(
                 snippet = src.get("snippet", "")
                 lines.append(f"  • {title}: {snippet[:200]}")
     text = "\n".join(lines)
+    if max_chars is None:
+        return text
     return text[:max_chars]
 
 
-def _serialize_compress(artifacts: dict, max_chars: int = STAGE_CHAR_CAPS["compress"]) -> str:
+def _serialize_compress(
+    artifacts: dict,
+    max_chars: int | None = STAGE_CHAR_CAPS["compress"],
+) -> str:
     parts: list[str] = []
     for block in artifacts.get("compressed_research", []):
         topic_id = block.get("topic_id", "")
         content = block.get("compressed_research", "")
         parts.append(f"## {topic_id}\n{content}")
     text = "\n\n".join(parts)
+    if max_chars is None:
+        return text
     return text[:max_chars]
 
 
-def _serialize_write(artifacts: dict, max_chars: int = STAGE_CHAR_CAPS["write"]) -> str:
-    report = artifacts.get("final_report", "")
-    if len(report) <= max_chars:
+def _serialize_write(
+    artifacts: dict,
+    max_chars: int | None = STAGE_CHAR_CAPS["write"],
+) -> str:
+    report = artifacts.get("final_report", "") or ""
+    if max_chars is None:
         return report
-    # keep opening (most persona signal) + tail
-    head = int(max_chars * 0.75)
-    tail = max_chars - head
-    return report[:head] + "\n\n[...]\n\n" + report[-tail:]
+    return _head_tail_truncate(report, max_chars)
 
 
-_SERIALIZERS = {
-    "plan":     _serialize_plan,
-    "search":   _serialize_search,
-    "compress": _serialize_compress,
-    "write":    _serialize_write,
-}
+def _stage_char_cap(
+    stage: str,
+    equal_char_budget: int | None = None,
+) -> int | None:
+    """Per-stage cap; equal_char_budget overrides all stages to one budget."""
+    if equal_char_budget is not None:
+        return int(equal_char_budget)
+    return STAGE_CHAR_CAPS[stage]
 
 
 def serialize_artifact(
     artifacts: dict,
     stage: str,
     search_view: str = "full",
+    equal_char_budget: int | None = None,
 ) -> str:
+    cap = _stage_char_cap(stage, equal_char_budget)
+    if stage == "plan":
+        return _serialize_plan(artifacts, max_chars=cap)
     if stage == "search":
-        return _serialize_search(artifacts, view=search_view)
-    return _SERIALIZERS[stage](artifacts)
+        return _serialize_search(artifacts, max_chars=cap, view=search_view)
+    if stage == "compress":
+        return _serialize_compress(artifacts, max_chars=cap)
+    if stage == "write":
+        return _serialize_write(artifacts, max_chars=cap)
+    raise ValueError(f"Unknown stage: {stage}")
 
 
 def _canonical_shuffle_run_id(run_id: str) -> str:
@@ -238,6 +280,7 @@ class StageMatch:
     shuffle_algorithm: str = "sha256-first-64-bit"
     shuffle_seed: int = 42
     artifact_view: str = "full"
+    char_budget: int | None = None  # equal-budget override; None = stage default
     input_tokens: int | None = None
     output_tokens: int | None = None
     total_tokens: int | None = None
@@ -388,9 +431,13 @@ def match_one_stage(
     dry_run: bool = False,
     estimate_only: bool = False,
     search_view: str = "full",
+    equal_char_budget: int | None = None,
 ) -> StageMatch:
     artifact_text = serialize_artifact(
-        artifacts, stage, search_view=search_view
+        artifacts,
+        stage,
+        search_view=search_view,
+        equal_char_budget=equal_char_budget,
     )
 
     # Shuffle candidate order deterministically per (run_id, stage) to avoid
@@ -424,6 +471,7 @@ def match_one_stage(
             model="none", prompt_chars=prompt_chars, latency_sec=0.0,
             shuffle_seed=shuffle_seed,
             artifact_view=search_view if stage == "search" else "full",
+            char_budget=equal_char_budget,
         )
 
     t0 = time.monotonic()
@@ -443,6 +491,7 @@ def match_one_stage(
         prompt_chars=prompt_chars, latency_sec=round(latency, 2),
         shuffle_seed=shuffle_seed,
         artifact_view=search_view if stage == "search" else "full",
+        char_budget=equal_char_budget,
         input_tokens=response.input_tokens,
         output_tokens=response.output_tokens,
         total_tokens=response.total_tokens,
@@ -460,6 +509,7 @@ def match_one_run(
     dry_run: bool = False,
     estimate_only: bool = False,
     search_view: str = "full",
+    equal_char_budget: int | None = None,
 ) -> list[StageMatch]:
     with open(artifact_path) as f:
         artifacts = json.load(f)
@@ -470,7 +520,10 @@ def match_one_run(
     results: list[StageMatch] = []
     for stage in stages:
         artifact_text = serialize_artifact(
-            artifacts, stage, search_view=search_view
+            artifacts,
+            stage,
+            search_view=search_view,
+            equal_char_budget=equal_char_budget,
         )
         if not artifact_text.strip():
             print(f"  SKIP {stage}: empty artifact")
@@ -482,6 +535,7 @@ def match_one_run(
             dry_run=dry_run,
             estimate_only=estimate_only,
             search_view=search_view,
+            equal_char_budget=equal_char_budget,
         )
         results.append(result)
         status = "✓" if result.correct else "✗"
@@ -564,6 +618,15 @@ def main() -> None:
     )
     parser.add_argument("--resume", action="store_true",
                         help="Skip runs where output file already exists")
+    parser.add_argument(
+        "--equal-char-budget",
+        type=int,
+        default=None,
+        help=(
+            "If set, truncate every stage artifact to this many characters "
+            "(equal-budget hygiene control; default stages use STAGE_CHAR_CAPS)"
+        ),
+    )
 
     args = parser.parse_args()
 
@@ -614,6 +677,7 @@ def main() -> None:
                 dry_run=args.dry_run,
                 estimate_only=args.estimate_only,
                 search_view=args.search_view,
+                equal_char_budget=args.equal_char_budget,
             )
             all_results.extend(results)
             if not args.dry_run and not args.estimate_only:
@@ -629,6 +693,7 @@ def main() -> None:
             "stage": args.stage,
             "search_view": args.search_view,
             "model": args.model,
+            "equal_char_budget": args.equal_char_budget,
         }, indent=2))
     elif all_results and not args.dry_run:
         acc = compute_accuracy(all_results)

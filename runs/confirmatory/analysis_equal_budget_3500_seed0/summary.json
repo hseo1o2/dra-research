@@ -1,0 +1,139 @@
+{
+  "n_reports": 60,
+  "seed": 0,
+  "default_dir": "/Users/janghyeonseo/Desktop/DRA/runs/confirmatory/matches_hardneg_v1",
+  "equal_dir": "/Users/janghyeonseo/Desktop/DRA/runs/confirmatory/matches_equal_budget_3500_seed0",
+  "stages": {
+    "plan": {
+      "n": 60,
+      "default_acc": 0.8,
+      "equal_acc": 0.8,
+      "delta_equal_minus_default": 0.0,
+      "task_bootstrap_95ci_delta": [
+        0.0,
+        0.0
+      ],
+      "both_correct": 48,
+      "both_wrong": 12,
+      "default_only": 0,
+      "equal_only": 0
+    },
+    "search": {
+      "n": 60,
+      "default_acc": 0.533,
+      "equal_acc": 0.517,
+      "delta_equal_minus_default": -0.017,
+      "task_bootstrap_95ci_delta": [
+        -0.05,
+        0.0
+      ],
+      "both_correct": 31,
+      "both_wrong": 28,
+      "default_only": 1,
+      "equal_only": 0
+    },
+    "compress": {
+      "n": 60,
+      "default_acc": 0.567,
+      "equal_acc": 0.6,
+      "delta_equal_minus_default": 0.033,
+      "task_bootstrap_95ci_delta": [
+        -0.033,
+        0.1
+      ],
+      "both_correct": 32,
+      "both_wrong": 22,
+      "default_only": 2,
+      "equal_only": 4
+    },
+    "write": {
+      "n": 60,
+      "default_acc": 0.817,
+      "equal_acc": 0.8,
+      "delta_equal_minus_default": -0.017,
+      "task_bootstrap_95ci_delta": [
+        -0.067,
+        0.033
+      ],
+      "both_correct": 47,
+      "both_wrong": 10,
+      "default_only": 2,
+      "equal_only": 1
+    }
+  },
+  "default_trajectory": {
+    "plan": 0.8,
+    "search": 0.533,
+    "compress": 0.567,
+    "write": 0.817
+  },
+  "equal_trajectory": {
+    "plan": 0.8,
+    "search": 0.517,
+    "compress": 0.6,
+    "write": 0.8
+  },
+  "dip_preserved": true,
+  "run_ids": [
+    "pilot_task12_User2_seed0",
+    "pilot_task12_User5_seed0",
+    "pilot_task12_User9_seed0",
+    "pilot_task14_User14_seed0",
+    "pilot_task14_User22_seed0",
+    "pilot_task14_User3_seed0",
+    "pilot_task17_User10_seed0",
+    "pilot_task17_User16_seed0",
+    "pilot_task17_User17_seed0",
+    "pilot_task18_User10_seed0",
+    "pilot_task18_User19_seed0",
+    "pilot_task18_User22_seed0",
+    "pilot_task22_User14_seed0",
+    "pilot_task22_User15_seed0",
+    "pilot_task22_User18_seed0",
+    "pilot_task24_User12_seed0",
+    "pilot_task24_User13_seed0",
+    "pilot_task24_User17_seed0",
+    "pilot_task27_User13_seed0",
+    "pilot_task27_User14_seed0",
+    "pilot_task27_User2_seed0",
+    "pilot_task29_User10_seed0",
+    "pilot_task29_User13_seed0",
+    "pilot_task29_User18_seed0",
+    "pilot_task2_User2_seed0",
+    "pilot_task2_User6_seed0",
+    "pilot_task2_User7_seed0",
+    "pilot_task32_User11_seed0",
+    "pilot_task32_User13_seed0",
+    "pilot_task32_User18_seed0",
+    "pilot_task33_User12_seed0",
+    "pilot_task33_User13_seed0",
+    "pilot_task33_User7_seed0",
+    "pilot_task37_User14_seed0",
+    "pilot_task37_User20_seed0",
+    "pilot_task37_User8_seed0",
+    "pilot_task38_User10_seed0",
+    "pilot_task38_User12_seed0",
+    "pilot_task38_User19_seed0",
+    "pilot_task42_User11_seed0",
+    "pilot_task42_User18_seed0",
+    "pilot_task42_User1_seed0",
+    "pilot_task43_User10_seed0",
+    "pilot_task43_User11_seed0",
+    "pilot_task43_User18_seed0",
+    "pilot_task47_User12_seed0",
+    "pilot_task47_User16_seed0",
+    "pilot_task47_User17_seed0",
+    "pilot_task48_User10_seed0",
+    "pilot_task48_User12_seed0",
+    "pilot_task48_User13_seed0",
+    "pilot_task4_User19_seed0",
+    "pilot_task4_User21_seed0",
+    "pilot_task4_User9_seed0",
+    "pilot_task7_User10_seed0",
+    "pilot_task7_User18_seed0",
+    "pilot_task7_User19_seed0",
+    "pilot_task9_User18_seed0",
+    "pilot_task9_User8_seed0",
+    "pilot_task9_User9_seed0"
+  ]
+}

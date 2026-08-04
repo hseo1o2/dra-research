@@ -1,0 +1,44 @@
+{
+  "run_id": "pilot_task14_User3_seed1",
+  "gt_userid": "User3",
+  "domain": "Health",
+  "taskid": 14,
+  "seed": 1,
+  "prompt_chars": 19185,
+  "report_chars": 11522,
+  "stage_attribution": {
+    "plan": {
+      "correct": false,
+      "predicted_userid": "User1"
+    },
+    "search": {
+      "correct": false,
+      "predicted_userid": "User5"
+    },
+    "compress": {
+      "correct": false,
+      "predicted_userid": "User5"
+    },
+    "write": {
+      "correct": true,
+      "predicted_userid": "User3"
+    },
+    "pattern": "write_correct_other"
+  },
+  "write_correct": true,
+  "pattern": "write_correct_other",
+  "rubric_version": "v2",
+  "status": "completed",
+  "content_personalization": 4,
+  "presentation_personalization": 4,
+  "mean_personalization": 4.0,
+  "content_evidence": "The report provides a detailed 12-week training plan tailored for a beginner runner with no prior experience, emphasizing safety and gradual mileage increase, which aligns with Zhou Kai's goal of completing a marathon without injury. It also incorporates specific training types and recovery strategies that fit his available training days and time constraints.",
+  "presentation_evidence": "The tone is supportive and encouraging, suitable for a young beginner, while the structure is clear and logical, breaking down complex concepts into manageable sections. The use of practical examples and relatable language makes it accessible for someone with Zhou Kai's background and experience level.",
+  "reasoning": "Both dimensions reflect a strong understanding of Zhou Kai's needs as a beginner runner. The content is specifically designed to address his lack of experience and focus on safety, while the presentation is adapted to be engaging and easy to follow for a young student.",
+  "latency_sec": 2.946,
+  "input_tokens": 7773,
+  "output_tokens": 187,
+  "total_tokens": 7960,
+  "api_response_id": "chatcmpl-E9B54hjrD3S8vhrQAAtf4CzGVHtOc",
+  "model": "gpt-4o-mini"
+}

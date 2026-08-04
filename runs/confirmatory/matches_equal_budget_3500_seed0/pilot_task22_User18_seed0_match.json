@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task22_User18_seed0",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "Candidate C (Liu Lu) is a 25-30-year-old female data analyst in Shanghai with a statistics background, aligning perfectly with the document's author profile. The document's focus on conservative risk appetite, fixed-income products, and systematic planning mirrors her meticulous, data-driven personality. Her modular approach to consumption (e.g., quarterly large purchases, cost-effectiveness) matches the request for tiered financial models. Unlike Candidates A (family-focused marketer) and B (investment manager), her single status and career-oriented goals align with the retirement-planning scope. Her statistical background and preference for structured analysis directly justify the document's emphasis on dynamic allocation strategies and actuarial research.",
+    "model": "solar-pro",
+    "prompt_chars": 23862,
+    "latency_sec": 2.06,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5041,
+    "output_tokens": 162,
+    "total_tokens": 5203,
+    "api_response_id": "b132a7e9-ea2a-407c-bce2-1534ac28c8dc"
+  },
+  {
+    "run_id": "pilot_task22_User18_seed0",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User8",
+    "correct": false,
+    "reasoning": "The document focuses on insurance products (e.g., annuities, medical insurance) and financial reforms (retirement age, tax policies), reflecting a strong interest in financial planning, risk management, and regulatory changes. Candidate B, an investment manager with a finance background, aligns most closely with this content. His behavioral traits\u2014frequent use of financial apps (Xueqiu, Tonghuashun), preference for data-driven decision-making, and interest in market trends\u2014match the document's analytical and policy-oriented framing. While Candidate A (marketing manager) and Candidate C (data analyst) have financial awareness, their priorities (family-centric planning for A, technical/data focus for C) are less directly tied to the insurance/retirement themes dominating the document. B\u2019s independent, cost-effective approach to investments and consumption also resonates with the document\u2019s emphasis on optimizing financial outcomes under regulatory shifts.",
+    "model": "solar-pro",
+    "prompt_chars": 24357,
+    "latency_sec": 1.94,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 6281,
+    "output_tokens": 205,
+    "total_tokens": 6486,
+    "api_response_id": "a3a035f9-9b07-4983-8cdc-cf218ffd7136"
+  },
+  {
+    "run_id": "pilot_task22_User18_seed0",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User8",
+    "correct": false,
+    "reasoning": "The document focuses on technical financial analysis of pension systems, tax implications, and fixed-income products, requiring deep expertise in finance, regulatory frameworks, and quantitative modeling. Candidate A, as an investment manager with a finance background, aligns perfectly with the document's emphasis on tax-deferred structures, yield comparisons, and regulatory details (e.g., '\u91d1\u89c4\u30142024\u301512\u53f7'). His behavior\u2014frequent use of financial apps, data-driven decision-making, and interest in cost-effectiveness\u2014mirrors the document's analytical tone and prioritization of precise financial metrics. Candidates B and C, while financially literate, focus more on family-oriented spending (B) or data analysis in non-finance contexts (C), making them less central to this specialized financial content.",
+    "model": "solar-pro",
+    "prompt_chars": 25639,
+    "latency_sec": 2.17,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 6004,
+    "output_tokens": 179,
+    "total_tokens": 6183,
+    "api_response_id": "ae899be4-61be-45d6-ba29-374bd1f8bb43"
+  },
+  {
+    "run_id": "pilot_task22_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document explicitly mentions a 25-30-year-old female data analyst (Liu Lu) with a statistics background, conservative risk preferences, and specific Shanghai-localized financial planning needs. Candidate C matches all these attributes: same age, gender, occupation, educational background (statistics), and risk profile. The document's focus on low-risk fixed-income products, tax-optimized pension accounts, and long-term care aligns with Candidate C's practical, detail-oriented personality and independent decision-making style. Candidates A (male marketing manager) and B (male investment manager) do not match the demographic or professional profile described in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25641,
+    "latency_sec": 1.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 7205,
+    "output_tokens": 149,
+    "total_tokens": 7354,
+    "api_response_id": "2c02db65-7bc5-4373-b0f0-8d51c3a31dae"
+  }
+]

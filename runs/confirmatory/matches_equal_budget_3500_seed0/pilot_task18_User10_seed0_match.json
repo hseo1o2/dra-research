@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task18_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate A (Liu Qiang) is a marketing manager in a foreign enterprise with an MBA, aligning with the document's focus on business meetings, high-end hotels, and cost-effective planning within a strict budget. His preference for combining Eastern/Western thinking, pragmatic decision-making, and interest in cultural/historical sites (e.g., Museum Island) directly match the document's emphasis on blending business with leisure, prioritizing central Berlin's cultural landmarks, and seeking refined Asian/Chinese dining. Unlike Candidates B (technical director focused on manufacturing) and C (state-owned enterprise manager with rural roots), Liu Qiang\u2019s profile reflects the document\u2019s urban, international, and family-oriented framing, including his role as a primary breadwinner planning a business-leisure trip for himself and family.",
+    "model": "solar-pro",
+    "prompt_chars": 25461,
+    "latency_sec": 1.72,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5387,
+    "output_tokens": 179,
+    "total_tokens": 5566,
+    "api_response_id": "9a2bee39-6f24-4a87-b8b6-c6ed6bb7a304"
+  },
+  {
+    "run_id": "pilot_task18_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on travel logistics (flights, ground transport, hotel status, museum/tourist site details) and cost comparisons, aligning with Candidate A's profile as a marketing manager who prioritizes cost-effectiveness, family travel, and self-guided tours. His frequent business trips, family vacations, and interest in historical/cultural sites (e.g., Dunhuang Mogao Caves) match the document's emphasis on Berlin's airports, hotels (Regent Berlin), and cultural attractions (Pergamonmuseum, Reichstag). Candidate A's preference for high-end chain hotels and detailed itinerary planning also aligns with the document's framing of travel options and pricing. Candidates B and C, while interested in travel, focus more on natural attractions and lack the document's urban/cultural emphasis and cost-conscious framing.",
+    "model": "solar-pro",
+    "prompt_chars": 26865,
+    "latency_sec": 2.18,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5879,
+    "output_tokens": 185,
+    "total_tokens": 6064,
+    "api_response_id": "9b1fc3d0-38e9-4556-94d4-b00f905720c6"
+  },
+  {
+    "run_id": "pilot_task18_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on flight and transportation logistics between Shanghai (PVG) and Berlin (BER), emphasizing cost comparisons, airline routes, and practical details like baggage policies. Candidate B, a marketing manager in a foreign enterprise, aligns best due to his frequent business trips, cost-conscious yet quality-focused consumption habits, and interest in international travel. His role involves data analysis (e.g., market trends) and planning, mirroring the document's structured, detail-oriented approach. Unlike Candidate A (manufacturing director with local travel focus) or Candidate C (state-owned enterprise manager with family-trip emphasis), Candidate B\u2019s professional need for efficient, cost-effective international mobility and his preference for self-guided tours align with the document\u2019s framing as a practical travel guide for business or cross-border purposes.",
+    "model": "solar-pro",
+    "prompt_chars": 26875,
+    "latency_sec": 1.81,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 6159,
+    "output_tokens": 179,
+    "total_tokens": 6338,
+    "api_response_id": "253a4241-69da-4318-9d2c-a3492a82655b"
+  },
+  {
+    "run_id": "pilot_task18_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document emphasizes a high-end, business-leisure hybrid travel plan with a focus on efficiency, cultural exploration, and fine dining\u2014aligning with Candidate B's profile. B, a marketing manager, values quality of life, cost-effectiveness, and family-oriented travel, as evidenced by his preference for self-guided tours, high-end accommodations, and quarterly family trips. The document's framing (e.g., 'executive workspaces,' 'fine dining,' and 'scenic photography') matches B's interests in modern urban experiences, photography, and blending business with leisure. Candidates A (technical director) and C (state-owned enterprise manager) prioritize practicality and local culture over the document's premium, globally oriented framing.",
+    "model": "solar-pro",
+    "prompt_chars": 26877,
+    "latency_sec": 2.11,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 6032,
+    "output_tokens": 170,
+    "total_tokens": 6202,
+    "api_response_id": "4e5a3a54-f9e5-4b2e-a738-6f94bab79e84"
+  }
+]

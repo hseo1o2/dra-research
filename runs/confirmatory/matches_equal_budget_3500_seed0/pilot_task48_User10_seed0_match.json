@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task48_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document's focus on a structured 6-month art education plan for children with specific interests (painting/dancing and building sports), integration of Jiangnan/Chinese and Western cultural elements, and emphasis on family interaction techniques aligns closely with Candidate A's profile. As a Shanghai-based marketing manager with an MBA, Liu Qiang values pragmatic, evidence-based approaches (evident in the request for educational frameworks and pedagogical resources) and combines Eastern/Western thinking. His family dynamics (wife as a teacher, children's interests, pet ownership) and lifestyle (quality-of-life focus, educational investments) mirror the document's priorities. Candidates B and C lack the explicit emphasis on blending cultural traditions with modern art education or the detailed, goal-oriented planning style seen in the query.",
+    "model": "solar-pro",
+    "prompt_chars": 23487,
+    "latency_sec": 2.13,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 4973,
+    "output_tokens": 177,
+    "total_tokens": 5150,
+    "api_response_id": "d3ff54ad-75cd-4f4d-bde6-144e0420b48e"
+  },
+  {
+    "run_id": "pilot_task48_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate C (Liu Qiang) is a marketing manager with two children (5 and 8 years old) who enjoys painting and creative activities. The document focuses on art disciplines, child development, and process art projects for mixed-age siblings\u2014directly aligning with C's role as a parent prioritizing children's education and creative growth. Unlike A (focused on engineering/management) or B (nursing/health), C's profile explicitly mentions art interests (daughter's painting/dancing) and investments in educational resources, making the document most relevant to his family-oriented, quality-of-life priorities. The Reggio Emilia/Orff Schulwerk references also align with C's Jiangnan cultural background and emphasis on holistic child development.",
+    "model": "solar-pro",
+    "prompt_chars": 25513,
+    "latency_sec": 1.73,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5487,
+    "output_tokens": 167,
+    "total_tokens": 5654,
+    "api_response_id": "9222385f-be02-4de6-b34e-2658bf96813e"
+  },
+  {
+    "run_id": "pilot_task48_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on arts education frameworks (Reggio Emilia, Orff Schulwerk, Laban) and their impact on child development (ages 5-8), emphasizing confidence, emotional expression, and parent feedback. Candidate B, a father of an 8-year-old daughter interested in painting/dancing and a 5-year-old son, aligns with this content. His role as a marketing manager in a foreign enterprise suggests an interest in structured, evidence-based approaches (reflected in the document's pedagogical frameworks), while his family's emphasis on education and extracurricular activities matches the document's focus on arts-driven development. Candidate A (engineering manager with a middle-school son) and Candidate C (nurse with older children) lack the direct connection to early childhood arts education prioritized in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25506,
+    "latency_sec": 2.17,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5516,
+    "output_tokens": 184,
+    "total_tokens": 5700,
+    "api_response_id": "bd565e7f-ecb8-423c-8a49-418dfebe83b1"
+  },
+  {
+    "run_id": "pilot_task48_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on a 6-month art education and family interaction plan for an 8-year-old girl (interested in painting/dance) and a 5-year-old boy (interested in building/sports). Candidate C explicitly mentions having children of the same ages (8 and 5) with identical interests (painting/dance for the daughter, building/basketball for the son). The plan's emphasis on integrating Western and Jiangnan Chinese cultural elements aligns with Candidate C's background (grew up in Jiangnan, values blending Eastern/Western thinking). The pedagogical frameworks (Reggio Emilia, DBAE) reflect a focus on holistic education, consistent with C's investment in children's educational expenses and extracurricular activities. Candidates A and B lack direct ties to the document's child-specific focus and cultural framing.",
+    "model": "solar-pro",
+    "prompt_chars": 25508,
+    "latency_sec": 1.83,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5461,
+    "output_tokens": 190,
+    "total_tokens": 5651,
+    "api_response_id": "dbac73f9-6db2-4c27-aee4-65d72cd87123"
+  }
+]

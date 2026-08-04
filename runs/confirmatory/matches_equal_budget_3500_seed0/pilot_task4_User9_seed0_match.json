@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User6",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "Candidate A (Zhao Li) is a 22-25-year-old female in Product Operations at an internet company in Beijing, with an Advertising (New Media Communication) background and a Psychology minor\u2014directly matching the document's author profile. The document's focus on career competitiveness in tech (Product Management/Operations), ROI analysis, and balancing work/study aligns with her practical, goal-oriented mindset (e.g., rational shopping, monthly budgeting, and career-driven decisions). Her interest in data analytics (via Psychology minor) and management skills (MBA/EMBA considerations) mirrors the report's emphasis on technical vs. strategic program trade-offs. Candidate B (Environmental Studies) and C (Algorithm Engineer) lack the document's specific intersection of new media, psychology, and early-career tech operations focus.",
+    "model": "solar-pro",
+    "prompt_chars": 24043,
+    "latency_sec": 2.2,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5049,
+    "output_tokens": 190,
+    "total_tokens": 5239,
+    "api_response_id": "8925099e-e42c-46fd-8040-6f9052a9549f"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User9",
+      "User6"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on MBA program requirements (work experience, tuition, dual degrees) and certifications relevant to tech/internet roles in Beijing, particularly Product Operations. Candidate B, a Product Operations professional at an internet company in Beijing, aligns with the document's emphasis on work experience requirements, non-STEM program costs (e.g., Georgia Tech OMS Analytics), and certifications (e.g., SQL, PMP) mentioned in queries. The document also references Beijing-based tech companies (ByteDance) and hukou policies for international students, which resonate with Candidate B's Beijing residence and career context. Candidates A (Algorithm Engineer) and C (Environmental Studies student) lack the direct professional and geographic alignment with the document's focus on Product Operations and Beijing's internet industry.",
+    "model": "solar-pro",
+    "prompt_chars": 25326,
+    "latency_sec": 2.14,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5564,
+    "output_tokens": 178,
+    "total_tokens": 5742,
+    "api_response_id": "93d2ad6e-2c56-48ad-88cf-e636d100209b"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User6",
+      "User11",
+      "User9"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "The document focuses on MBA program requirements, tuition fees, and work experience criteria, reflecting the priorities of a professional seeking advanced education. Candidate B (Li Zhuo) is a 28-32-year-old algorithm engineer with a graduate degree, relevant work experience, and financial stability\u2014key traits aligning with MBA applicant profiles. His rational decision-making style, interest in cost-effective education, and career-oriented goals (e.g., asset growth, home purchase) further match the document's emphasis on program eligibility and financial planning. Candidates A (undergraduate student) and C (young professional in non-technical operations) lack the work experience, educational background, or financial maturity central to the document's scope.",
+    "model": "solar-pro",
+    "prompt_chars": 25319,
+    "latency_sec": 2.05,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5558,
+    "output_tokens": 164,
+    "total_tokens": 5722,
+    "api_response_id": "e97532da-13c2-4fa2-8047-5047b9113d3f"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User6",
+      "User9"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "Candidate C (Zhao Li) is a 22-25-year-old Product Operations professional in Beijing with an Advertising (New Media Communication) background and Psychology minor, directly aligning with the document's target audience. The report's focus on bridging operational execution with quantitative skills (SQL, Python) and strategic frameworks mirrors her career stage and educational profile. Unlike Candidate A (Algorithm Engineer) or B (Environmental Studies student), C's role, location, and goals (advancing to Data Product Manager/Strategy Operations roles) match the document's Beijing internet sector context and career advancement strategies. Her consumption of tech/fashion/mental health content and interest in certifications also align with the report's emphasis on ROI-driven education choices.",
+    "model": "solar-pro",
+    "prompt_chars": 25321,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5484,
+    "output_tokens": 169,
+    "total_tokens": 5653,
+    "api_response_id": "4650bf3d-feae-44b5-99ad-71eb6c01877e"
+  }
+]

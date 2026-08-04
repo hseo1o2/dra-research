@@ -1,0 +1,44 @@
+{
+  "run_id": "pilot_task42_User1_seed0",
+  "gt_userid": "User1",
+  "domain": "Law",
+  "taskid": 42,
+  "seed": 0,
+  "prompt_chars": 18852,
+  "report_chars": 30731,
+  "stage_attribution": {
+    "plan": {
+      "correct": true,
+      "predicted_userid": "User1"
+    },
+    "search": {
+      "correct": false,
+      "predicted_userid": "User4"
+    },
+    "compress": {
+      "correct": false,
+      "predicted_userid": "User4"
+    },
+    "write": {
+      "correct": true,
+      "predicted_userid": "User1"
+    },
+    "pattern": "recovered"
+  },
+  "write_correct": true,
+  "pattern": "recovered",
+  "rubric_version": "v2",
+  "status": "completed",
+  "content_personalization": 3,
+  "presentation_personalization": 4,
+  "mean_personalization": 3.5,
+  "content_evidence": "The report outlines specific compliance requirements under GDPR, CCPA, and China's PIPL, which are relevant to Li Chen's goal of launching an AI application, but lacks detailed recommendations tailored to a student-level understanding of legal frameworks.",
+  "presentation_evidence": "The report uses a formal tone and includes technical jargon appropriate for a legal audience, but it could benefit from clearer explanations and a more structured approach to suit Li Chen's academic background in computer science.",
+  "reasoning": "The content score reflects a moderate level of personalization, as it addresses relevant legal frameworks but does not provide actionable insights tailored to a student. The presentation score is higher due to the use of appropriate technical language and structure, though it could be simplified for better accessibility.",
+  "latency_sec": 3.11,
+  "input_tokens": 3857,
+  "output_tokens": 163,
+  "total_tokens": 4020,
+  "api_response_id": "chatcmpl-E9B8UGmIvejK7PINLTEBxmS8wHwvT",
+  "model": "gpt-4o-mini"
+}

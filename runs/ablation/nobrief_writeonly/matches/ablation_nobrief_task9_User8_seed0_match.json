@@ -1,0 +1,31 @@
+[
+  {
+    "run_id": "ablation_nobrief_task9_User8_seed0",
+    "stage": "write",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User8",
+    "correct": true,
+    "reasoning": "The document is a career transition roadmap tailored for an Investment Manager (CFA Level 1) in Shanghai aiming to become an AI Product Manager, focusing on leveraging financial/quantitative expertise. Candidate C is the only Investment Manager with a CFA-aligned finance background, matching the document's domain-specific focus (e.g., DCF modeling, earnings call analysis). The roadmap's technical emphasis (RAG, AI PRD frameworks) aligns with C's meticulous, data-driven personality and interest in AI/tech upskilling. Candidates A (marketing) and B (data analyst) lack the financial domain authority central to the document's value proposition.",
+    "model": "solar-pro",
+    "prompt_chars": 30150,
+    "latency_sec": 2.15,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "input_tokens": 6709,
+    "output_tokens": 156,
+    "total_tokens": 6865,
+    "api_response_id": "3ff2a965-2a38-4da9-bdf0-ef87cb30061f"
+  }
+]

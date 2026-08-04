@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task37_User8_seed0",
+    "stage": "plan",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "Candidate B (Liu Lu) aligns most closely with the document's focus on optimizing an open-plan kitchen for cooking, prioritizing natural materials, and emphasizing cost-effective, high-quality selections. The document's emphasis on eco-friendly materials, smart appliances, and a curated budget mirrors B's rational, research-driven consumption style, her interest in sustainable products, and her recent shift toward home cooking. Unlike Candidate A (single, focused on future pet adoption) or Candidate C (family-oriented with children and a pet dog), B's profile as a single cat owner living in a centrally located Shanghai apartment matches the document's emphasis on a couple's shared living space and high-frequency use of the kitchen/living area. Her data-driven decision-making and preference for detailed comparisons also align with the request for a 'data-backed design plan.'",
+    "model": "solar-pro",
+    "prompt_chars": 23548,
+    "latency_sec": 2.18,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 4997,
+    "output_tokens": 186,
+    "total_tokens": 5183,
+    "api_response_id": "54a498a3-da49-4f91-82ba-14bc7b865740"
+  },
+  {
+    "run_id": "pilot_task37_User8_seed0",
+    "stage": "search",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on open-kitchen layouts, storage ratios, and technical specifications for ventilation systems (e.g., wind volume, static pressure, anti-backflow valves), reflecting a practical, family-oriented perspective. Candidate C, a married marketing manager with children, prioritizes quality-of-life improvements, cost-effectiveness, and durable household solutions. His profile emphasizes family-centric consumption (e.g., children\u2019s education, home management) and aligns with the document\u2019s emphasis on optimizing living spaces for functionality and comfort. Unlike Candidates A (single, finance-focused) and B (pet owner, data analyst), Candidate C\u2019s needs for a harmonious home environment, practical storage, and efficient kitchen design directly match the document\u2019s framing.",
+    "model": "solar-pro",
+    "prompt_chars": 24350,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 6778,
+    "output_tokens": 165,
+    "total_tokens": 6943,
+    "api_response_id": "28803c6f-e649-468f-8970-649ab56d8e35"
+  },
+  {
+    "run_id": "pilot_task37_User8_seed0",
+    "stage": "compress",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User8"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on spatial planning, kitchen design, and storage optimization for an 80 sqm 2-bedroom apartment, emphasizing practicality, family needs, and compliance with regulations. Candidate B, a married marketing manager with two children, prioritizes quality of life, family-friendly spaces, and cost-effective durable products. His profile highlights a preference for high-end household items, children's educational expenses, and a harmonious family environment\u2014aligning with the document's emphasis on functional layouts (e.g., LDK for open family interaction), storage distribution (e.g., entryway and living room storage for daily use), and compliance with safety standards (e.g., gas regulation workarounds). Candidate A (single data analyst) and C (single investment manager) lack the family-oriented spatial and consumption priorities evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25639,
+    "latency_sec": 1.81,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5903,
+    "output_tokens": 188,
+    "total_tokens": 6091,
+    "api_response_id": "535545af-13de-47b1-b4ec-9d7cd841f831"
+  },
+  {
+    "run_id": "pilot_task37_User8_seed0",
+    "stage": "write",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on an 80\u33a1 apartment renovation for a couple prioritizing an open LDK layout, budget optimization, and family-friendly design. Candidate C, a married father of two, explicitly mentions family harmony, shared living spaces, and practical budgeting for household needs. His profile highlights a preference for durable, high-quality products, cost-effectiveness, and a harmonious home environment\u2014aligning with the document's emphasis on spatial flow, functional layout, and strict budgeting. Candidates A (single, career-focused) and B (single, investment-oriented) lack the family-centric priorities and spatial needs (e.g., children\u2019s activities, shared cooking/dining) central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25641,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5502,
+    "output_tokens": 161,
+    "total_tokens": 5663,
+    "api_response_id": "2013b24e-54df-4d64-864f-0099f7bc9382"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task14_User22_seed0",
+    "stage": "plan",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "Candidate A (Ma Jianping) is a 50-55-year-old male with a daily routine (6 AM wake-up, 10 PM bedtime) matching the document's schedule. His exercise habits (running 3x/week, brisk walking, cycling) align with the beginner runner's focus on gradual progression and injury prevention. His pragmatic, detail-oriented personality and preference for practical, adaptable solutions mirror the document's emphasis on a sustainable, flexible training plan. Additionally, his lumbar strain history (implied by his mechanical engineering background and gardening activities) and use of basic gear (no specialized equipment) directly match the user's stated constraints. Candidate B and C differ in age, exercise preferences (e.g., golf/yoga for C), and lifestyle priorities (e.g., family trips for B), making A the best fit.",
+    "model": "solar-pro",
+    "prompt_chars": 24457,
+    "latency_sec": 1.84,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5157,
+    "output_tokens": 196,
+    "total_tokens": 5353,
+    "api_response_id": "2103d3fe-4d27-4903-bc6b-c4591a3f3802"
+  },
+  {
+    "run_id": "pilot_task14_User22_seed0",
+    "stage": "search",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "The document focuses on marathon training for masters runners (50-55), biomechanics, core stability exercises (bird dog, dead bug, etc.), and managing lower back pain\u2014topics directly aligned with Candidate C's profile. As a 50-55-year-old technical director with running habits, core stability goals, and a focus on practical, biomechanics-driven solutions, the content matches his age, exercise preferences (running), and health priorities (lower back pain, core strength). Candidates A (30-35, golf/yoga) and B (40-45, hiking/fishing) lack the specific age range, exercise focus, and biomechanical problem-solving framing evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 26822,
+    "latency_sec": 1.76,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5820,
+    "output_tokens": 169,
+    "total_tokens": 5989,
+    "api_response_id": "e92d3caa-ee8a-476b-83d9-8767ff7c4797"
+  },
+  {
+    "run_id": "pilot_task14_User22_seed0",
+    "stage": "compress",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "The document focuses on marathon training principles for masters runners aged 50\u201355, emphasizing physiological considerations, load management, and the Galloway run-walk method. Candidate B (50\u201355, technical director) aligns most closely: his age matches the target demographic, his exercise habits (running 3x/week, brisk walking, cycling) reflect the document\u2019s focus on endurance and recovery, and his pragmatic, detail-oriented personality aligns with the structured, evidence-based training approach described. Unlike Candidate A (40\u201345, less focused on endurance training) and Candidate C (30\u201335, prioritizing golf/yoga), Candidate B\u2019s goals (improving physical strength/endurance, stress relief) and recent investments in cycling directly mirror the document\u2019s emphasis on age-appropriate marathon preparation.",
+    "model": "solar-pro",
+    "prompt_chars": 26875,
+    "latency_sec": 1.81,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5792,
+    "output_tokens": 192,
+    "total_tokens": 5984,
+    "api_response_id": "66abf8e4-1c76-475f-9061-8dedbf69e94a"
+  },
+  {
+    "run_id": "pilot_task14_User22_seed0",
+    "stage": "write",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "The document focuses on a 12-week marathon training plan for beginner masters runners (aged 50\u201355) with a history of lumbar strain, emphasizing injury prevention, structured low-intensity training, and biomechanical considerations. Candidate C (Ma Jianping, 50-55) is the only profile matching the target age group and shares key priorities: (1) a pragmatic, detail-oriented personality aligned with the plan's scientific rigor, (2) exercise habits that include running three times weekly and brisk walking, (3) a focus on physical strength/endurance and stress relief through exercise, and (4) a technical background (mechanical engineering) that resonates with the document's emphasis on physiological and biomechanical principles. Candidates A (30-35) and B (40-45) are younger and lack the age-related physiological context or specific focus on injury-preventive running protocols.",
+    "model": "solar-pro",
+    "prompt_chars": 26877,
+    "latency_sec": 2.39,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5731,
+    "output_tokens": 211,
+    "total_tokens": 5942,
+    "api_response_id": "ca33d0ad-01c4-4d55-9ada-3696e8631a53"
+  }
+]

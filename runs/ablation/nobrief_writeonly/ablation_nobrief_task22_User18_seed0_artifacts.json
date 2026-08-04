@@ -1,0 +1,617 @@
+{
+  "capture_completeness": {
+    "compressed_research_per_topic": true,
+    "final_report": true,
+    "four_required_artifacts": true,
+    "research_brief": true,
+    "research_topics_ordered": true,
+    "search_query_and_source": true
+  },
+  "compressed_research": [
+    {
+      "compressed_research": "[{'type': 'text', 'text': '**List of Queries and Tool Calls Made**\\n\\n1. `serper_search`: `\"预定利率\" 2.5% 2.0% 国家金融监督管理总局 养老年金 增额终身寿险`\\n2. `serper_search`: `\"个人养老金\" 12000 个税 节税 计算 上海`\\n3. `serper_search`: `保险保障基金管理办法 救助限额 保单权益`\\n4. `serper_search`: `大额存单 国债 纯债基金 收益率 2024 2025`\\n5. `think_tool`: Internal reflection on preliminary search outputs and synthesis planning for regulatory details, tax deduction mechanics, fixed income yield trends, and modular allocations.\\n6. `serper_search`: `\"金规〔2024〕12号\" OR \"关于健全人身保险产品定价机制的通知\" 2.5% 2.0%`\\n7. `serper_search`: `\"保险保障基金管理办法\" 人身保险 90% 救助比例 保险法第92条`\\n8. `serper_search`: `储蓄国债 利率 2024 2025 3年期 5年期 大额存单`\\n9. `serper_search`: `纯债基金 长期年化收益率 业绩比较基准 2024 2025`\\n10. `serper_search`: `健全人身保险产品定价机制的通知 2.5%`\\n11. `serper_search`: `保险保障基金管理办法 救助比例 90%`\\n12. `serper_search`: `储蓄国债利率 2024 2025 3年期`\\n13. `serper_search`: `纯债基金 收益率 2024 2025`\\n14. `serper_search`: `国家金融监督管理总局 预定利率 2.5% 2024`\\n\\n---\\n\\n**Fully Comprehensive Findings**\\n\\n### 1. Individual Pension System (个人养老金)\\n* **Annual Tax-Deferred Quota:** Under China\\'s Individual Pension framework, eligible individuals can contribute up to a cap of **RMB 12,000 per calendar year** into a designated individual pension account.\\n* **Eligible Product Categories:** Account capital can be allocated across four designated financial product pillars:\\n  1. **Pension Target Funds (养老目标基金):** Fund shares specifically designated as \"Y-shares\" (Y类份额) offering fee discounts (e.g., management and custody fees reduced by 50%).\\n  2. **Commercial Pension Insurance (商业养老保险):** Participating, exclusive, or traditional pension annuity insurance products registered in the official catalog.\\n  3. **Specific Wealth Management Products (特定养老理财):** Bank wealth management products with conservative/prudent risk profiles and lock-up periods.\\n  4. **Pension Savings Products (养老储蓄):** Specialized deposit accounts offered by qualified commercial banks featuring competitive fixed rates across various terms (e.g., 5-year, 10-year, 15-year, 20-year terms).\\n* **Tax Deferred Structure (EET Tax Model):**\\n  * **Contribution Stage (E - Exempt):** Annual contributions up to RMB 12,000 are deducted directly from pre-tax taxable income when calculating annual Personal Income Tax (PIT / 个人所得税).\\n  * **Investment Stage (E - Exempt):** Investment returns, capital gains, interest, and dividends accumulated within the account are fully tax-deferred (0% tax rate during holding).\\n  * **Withdrawal Stage (T - Taxed):** At retirement age, upon total disability, or fulfilling statutory withdrawal requirements, distributions are subject to a **flat 3% individual income tax**, which is handled separately from regular personal income tax aggregations.\\n* **Tax Benefits Breakdown across Income Tiers for Shanghai Residents:**\\n  The net financial savings rate equals `Marginal Individual Income Tax Rate - 3% (Withdrawal Tax Rate)`.\\n  * **3% PIT Bracket (Annual Taxable Income ≤ RMB 36,000):** \\n    * Upfront tax reduction: $12,000 \\\\times 3\\\\% = \\\\text{RMB } 360$\\n    * Net tax benefit: $3\\\\% - 3\\\\% = 0\\\\%$ (Break-even tax benefit, primarily serves as locked conservative compounding).\\n  * **10% PIT Bracket (Annual Taxable Income RMB 36,000 – 144,000):**\\n    * Upfront tax reduction: $12,000 \\\\times 10\\\\% = \\\\text{RMB } 1,200$\\n    * Withdrawal tax (at distribution): $12,000 \\\\times 3\\\\% = \\\\text{RMB } 360$\\n    * Net Direct Tax Savings: **RMB 840 / year (7% net savings rate)** [4], [5], [6].\\n  * **20% PIT Bracket (Annual Taxable Income RMB 144,000 – 300,000):**\\n    * Upfront tax reduction: $12,000 \\\\times 20\\\\% = \\\\text{RMB } 2,400$\\n    * Withdrawal tax: $12,000 \\\\times 3\\\\% = \\\\text{RMB } 360$\\n    * Net Direct Tax Savings: **RMB 2,040 / year (17% net savings rate)**.\\n  * **25% PIT Bracket (Annual Taxable Income RMB 300,000 – 420,000):**\\n    * Upfront tax reduction: $12,000 \\\\times 25\\\\% = \\\\text{RMB } 3,000$\\n    * Net Direct Tax Savings: **RMB 2,640 / year (22% net savings rate)**.\\n  * **30% PIT Bracket (Annual Taxable Income RMB 420,000 – 660,000):**\\n    * Upfront tax reduction: $12,000 \\\\times 30\\\\% = \\\\text{RMB } 3,600$\\n    * Net Direct Tax Savings: **RMB 3,240 / year (27% net savings rate)**.\\n  * **35% PIT Bracket (Annual Taxable Income RMB 660,000 – 960,000):**\\n    * Upfront tax reduction: $12,000 \\\\times 35\\\\% = \\\\text{RMB } 4,200$\\n    * Net Direct Tax Savings: **RMB 3,840 / year (32% net savings rate)**.\\n  * **45% PIT Bracket (Annual Taxable Income > RMB 960,000):**\\n    * Upfront tax reduction: $12,000 \\\\times 45\\\\% = \\\\text{RMB } 5,400$\\n    * Net Direct Tax Savings: **RMB 5,040 / year (42% net savings rate)**.\\n\\n---\\n\\n### 2. Commercial Annuity Insurance (养老年金险) and Increasable Whole Life Insurance (增额终身寿险)\\n* **NFRA Regulatory Cap Trajectory & Pricing Rate Adjustments:**\\n  * **Historical Benchmark Evolution:** The official pricing rate cap (预定利率上限) for long-term traditional life insurance products moved from 4.025% down to 3.5% (effective August 2019 / August 2023 transition) [1].\\n  * **3.0% to 2.5% Transition:** On August 2, 2024, the National Financial Regulatory Administration (NFRA / 国家金融监督管理总局) issued the *Notice on Improving the Pricing Mechanism for Life Insurance Products* (《关于健全人身保险产品定价机制的通知》 Jin Gui [2024] No. 12). Under this regulatory update:\\n    * Effective **September 1, 2024**, the maximum guaranteed pricing interest rate for newly issued traditional life insurance products (including Increasable Whole Life Insurance and Commercial Annuities) was formally lowered from **3.0% to 2.5%** [2], [3].\\n    * For participating/dividend-paying life insurance (分红型人身保险), the maximum guaranteed pricing rate cap was reduced to **2.0%** [2], [3].\\n    * For universal insurance (万能型人身保险), the guaranteed minimum interest rate cap was adjusted downward to **1.5% - 1.75%**.\\n    * A dynamic interest rate adjustment mechanism was instituted under the guidance of the Insurance Association of China (中国保险行业协会), establishing a study reference value (e.g., benchmarked around 1.99%) to trigger periodic adjustments based on market yields [3].\\n* **Actual IRR Calculations & Cash Value Accumulation:**\\n  * **Incremental Whole Life Insurance (增额终身寿险):** Under a 2.5% pricing interest rate cap, the long-term compounding Internal Rate of Return (IRR) on cash value (现金价值) approaches a theoretical ceiling of approximately **2.1% – 2.4%** over extended holding periods (e.g., 20–30+ years), down from ~2.8%–2.9% under the 3.0% cap era and ~3.4%–3.5% under the 3.5% cap era [2].\\n  * **Commercial Annuity Insurance (养老年金险):** Cash accumulation shifts toward guaranteed annuity payout cash flows starting at designated pension ages (e.g., age 55 or 60 for female policyholders). Annuities guarantee lifetime payout options or guaranteed payout windows (e.g., 20-year guaranteed annuity payouts).\\n* **Security & Regulatory Protection Mechanisms:**\\n  * **Mandatory Policy Transfer (Insurance Law Article 92):** Under Article 92 of the *Insurance Law of the People\\'s Republic of China* (《中华人民共和国保险法》第92条), if a life insurance company is dissolved or declared bankrupt, its holdings of life insurance contracts and reserve funds must be transferred to another solvent life insurance company. If no agreement can be reached with another insurer, the NFRA will designate a life insurance company to accept the policy transfers.\\n  * **China Insurance Protection Fund (中国保险保障基金):** Under the *Measures for the Administration of the Insurance Protection Fund* (《保险保障基金管理办法》), the China Insurance Protection Fund provides financial backing and rescue support in insolvency scenarios. For individual life insurance policyholders, the takeover fund provides financial protection covering up to **90%** of policy liabilities/entitlements.\\n\\n---\\n\\n### 3. Conservative Fixed Income & Low-Risk Investment Options\\n* **Chinese Government Bonds (国债 / 储蓄国债):**\\n  * Principal is fully backed by the central government credit of the People\\'s Republic of China.\\n  * Available via Savings Treasury Bonds (储蓄国债 - Certificate/电子式) issued in 3-year and 5-year tenors, as well as Ultra-Long Special Treasury Bonds (超长期特别国债 - 20-year, 30-year, 50-year tenors).\\n  * Prevailing coupon rates reflect the prevailing lower interest rate environment (3-year and 5-year savings treasury yields near ~2.0%–2.3% levels).\\n* **Large-Denominated Certificates of Deposit (大额存单):**\\n  * Minimum issuance threshold: RMB 200,000.\\n  * Yield profile: Issued by state-owned joint-stock commercial banks and urban commercial banks with yields generally in the range of ~1.5% to ~2.1% depending on tenor (1-year to 3-year) and banking tier.\\n  * Protection mechanism: Fully covered under China\\'s Deposit Insurance Regulation (《存款保险条例》), which guarantees principal and interest payouts up to **RMB 500,000 per depositor per bank**.\\n* **Pure Bond Funds (纯债基金) & Systematic Investment Plans (SIPs / 基金定投):**\\n  * **Short-Term Bond Funds (短债基金):** Focus on debt securities maturing within 1–3 years; high liquidity, lower NAV volatility, expected return trajectory around ~2.0%–2.8%.\\n  * **Medium-to-Long Term Pure Bond Funds (中长期纯债基金):** Invest strictly in government bonds, policy bank bonds, and corporate bonds without equity exposure; historical long-term annual return averages range around ~2.5%–4.0%, subject to mark-to-market rate adjustments and credit spreads.\\n\\n---\\n\\n### 4. Tiered Savings Assumptions & Modular Allocation Models\\n* **Target Demographic Profile:** 25–30 year old female working in Shanghai, risk tolerance profile classified as conservative (保守型 / 谨慎型).\\n\\n#### **Tier 1: Entry-Level Capability (Monthly Savings: RMB 3,000 – 5,000 | Annual: RMB 36,000 – 60,000)**\\n* **Financial Focus:** Capital preservation, liquidity maintenance, establishing initial tax-sheltered allocation.\\n* **Modular Allocation Strategy:**\\n  1. **Individual Pension Account (个人养老金):** Allocating **RMB 500 – 1,000 / month** (RMB 6,000 – 12,000 / year).\\n     * *Product Choice:* Low-volatility Savings Products (养老储蓄) or Conservative Pension Target Funds (Y-Shares / 养老目标日期2050/2055或养老目标风险稳健Y类).\\n     * *Tax Outcome:* Immediate PIT deduction based on income bracket (e.g., 10% bracket saves RMB 840 net; 20% bracket saves RMB 2,040 net) [4], [5], [6].\\n  2. **Pure Bond Fund Systematic Investment Plan (纯债基金定投):** Allocating **RMB 1,500 – 2,500 / month**.\\n     * *Product Choice:* High-rated Pure Bond Funds (e.g., Short/Medium-term government & policy debt funds) set via automatic monthly SIP.\\n  3. **Liquidity / Treasury Reserve:** Allocating **RMB 1,000 – 1,500 / month**.\\n     * *Product Choice:* Monetary market funds (Yu\\'ebao/WeChat Lingqitong) or purchasing 3-year Savings Treasury Bonds upon issuance.\\n\\n#### **Tier 2: Mid-Tier Capability (Monthly Savings: RMB 8,000 – 12,000 | Annual: RMB 96,000 – 144,000)**\\n* **Financial Focus:** Maximizing tax deduction limits, locking in guaranteed long-term floor rates, structured fixed-income wealth building.\\n* **Modular Allocation Strategy:**\\n  1. **Individual Pension Account (个人养老金):** **Maximized at RMB 1,000 / month** (RMB 12,000 / year).\\n     * *Product Choice:* Fully utilizes the annual RMB 12,000 limit across Y-share target funds or commercial pension insurance products [4].\\n  2. **Commercial Annuity / Increasable Whole Life Insurance (养老年金险 / 增额终身寿险):** Allocating **RMB 3,000 – 5,000 / month** (RMB 36,000 – 60,000 / year).\\n     * *Product Choice:* 5-year or 10-year premium payment term (五/十年交) traditional life insurance with guaranteed 2.5% pricing interest rate, locking in guaranteed cash value compounding until retirement age (e.g., annuity payouts starting at age 55 or 60).\\n  3. **Fixed Income & Bond SIP (国债 / 大额存单 / 纯债基金):** Allocating **RMB 4,000 – 6,000 / month**.\\n     * *Product Choice:* Splitting between 3/5-year Treasury Bonds / Large CDs for core capital safety and monthly Pure Bond Fund SIPs.\\n\\n#### **Tier 3: High-Tier Capability (Monthly Savings: RMB 15,000+ | Annual: RMB 180,000+)**\\n* **Financial Focus:** Comprehensive retirement structuring, tax efficiency optimization, multi-layered asset safety net.\\n* **Modular Allocation Strategy:**\\n  1. **Individual Pension Account (个人养老金):** **Maximized at RMB 1,000 / month** (RMB 12,000 / year).\\n     * *Product Choice:* Maximizes upper-tier tax benefits (e.g., at 25%–30% PIT brackets, securing RMB 2,640 – 3,240 annual tax savings) [4], [5], [6].\\n  2. **Commercial Annuity Insurance & Increasable Whole Life Insurance:** Allocating **RMB 8,000 – 10,000 / month** (RMB 96,000 – 120,000 / year).\\n     * *Product Choice:* Combining a guaranteed lifetime Commercial Pension Annuity (guaranteed payouts from age 55) with a Participating Increasable Whole Life policy (分红型增额终身寿险, guaranteed 2.0% pricing baseline + variable insurance dividends).\\n  3. **High-Value Fixed Income Portfolio:** Allocating **RMB 6,000+ / month**.\\n     * *Product Choice:* Allocation into ultra-long special treasury bonds, multi-bank Large CDs within RMB 500,000 deposit insurance limits, and active Pure Bond Fund SIPs.\\n\\n---\\n\\n**List of All Relevant Sources (with citations in the report)**\\n\\n### Sources\\n[1] **东方财富网 (Choice Research) - 保险Ⅱ行业深度报告：中国人身险产品变迁历史**  \\nURL: https://pdf.dfcfw.com/pdf/H3_AP202504231660998840_1.pdf  \\n*Cited for historical life insurance pricing interest rate cap transitions (4.025% down to 3.5%).*\\n\\n[2] **百度文库 - 2025年人身险预定利率调整全面解析：从2.5%到2.0%的市场变革**  \\nURL: http://word.baidu.com/view/e3b8437e1ad9ad51f01dc281e53a580216fc50f7.html  \\n*Cited for NFRA pricing rate adjustment (2.5% baseline cap for traditional products, 2.0% for participating products) and cash value / IRR calculations.*\\n\\n[3] **什么值得买 (SMZDM) - 8月31日保险大限！全行业涨价30%？揭秘监管政策下的真相**  \\nURL: https://post.smzdm.com/p/ako6nr3k  \\n*Cited for Insurance Association dynamic pricing mechanism reference study values (1.99%) and pricing rate regulation execution.*\\n\\n[4] **人民日报海外版 - 给个人养老金税惠算算账**  \\nURL: http://paper.people.com.cn/rmrbhwb/html/2023-01/17/content_25960188.htm  \\n*Cited for individual pension RMB 12,000 quota, 10% marginal tax rate deduction, and 3% tax differential calculation (7 percentage point net savings).*\\n\\n[5] **21世纪经济报道 - 个人养老金领取按3%缴税，退休金无需缴税**  \\nURL: https://www.21jingji.com/article/20250625/herald/3d98c030cc0b323f19bb36b3763d2852.html  \\n*Cited for individual pension tax benefit calculations and EET tax model mechanics.*\\n\\n[6] **重庆市人民政府网 / 部门回复 - 领取养老金要缴3%个税？三个问题要弄清**  \\nURL: https://www.cq.gov.cn/zwgk/zfxxgkml/zdlyxxgk/ylfw/ylzx/202506/t20250627_14755056.html  \\n*Cited for tax-deferred accumulation and flat 3% individual income tax rate applicability upon withdrawal.*', 'index': 0, 'extras': {'signature': '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'}}]",
+      "topic_id": "topic_001",
+      "topic_text": "Investigate annuity insurance, individual pension accounts (个人养老金), and conservative fixed-income investment products in the Chinese insurance and financial market tailored for a 25-30 year old female in Shanghai with a conservative risk profile. \n\nSpecifically research:\n1. Individual Pension System (个人养老金): 12,000 RMB annual tax-deferred quota, eligible products (pension target funds, pension insurance, specific wealth management products, savings products), tax benefits calculation for different income tiers in Shanghai.\n2. Commercial Annuity Insurance (养老年金险) and Increasable Whole Life Insurance (增额终身寿险): Current National Financial Regulatory Administration (NFRA / 原银保监会) regulatory cap on guaranteed pricing interest rates (e.g., historical 3.5% down to 3.0% and 2.5% pricing rate updates), actual IRR calculations, payout structures, cash value accumulation, and insurance company security mechanisms (Insurance Protection Fund 保险保障基金).\n3. Conservative Fixed Income & Low-Risk Investment Options: Chinese Government Bonds (国债), Large-denominated Certificates of Deposit (大额存单), and systematic investment plans (SIPs / 基金定投) focused on short-to-medium term bond funds or pure bond funds (纯债基金).\n4. Tiered Savings Assumptions / Modular Models: Construct 3 modular financial capability tiers (e.g., Entry-level monthly savings RMB 3,000-5,000; Mid-tier RMB 8,000-12,000; High-tier RMB 15,000+) detailing allocation into annuity products, personal pension, and government bonds/SIPs for a 25-30-year-old female target profile in Shanghai. Provide actual market examples and policy citations."
+    },
+    {
+      "compressed_research": "[{'type': 'text', 'text': '**List of Queries and Tool Calls Made**\\n\\n1. `\"百万医疗险\" 保证续保20年 沪惠保 2024 2025`\\n2. `高端医疗险 上海 嘉会 和睦家 中产 费率`\\n3. `上海长护险 申请条件 职工医保 年龄限制 失能等级评估`\\n4. `商业长护险 养老社区 总保费门槛 泰康 太保 平安`\\n5. `\"蓝医保\" \"金医保\" 免赔额 外购药 保证续保20年`\\n6. `高端医疗险 嘉会 和睦家 费率 25岁 30岁 女性`\\n7. `上海长护险 申请条件 年龄 评估等级 服务内容 报销比例`\\n8. `泰康之家 太保家园 养老社区 入住资格 保费门槛 保证入住权`\\n9. `蓝医保 金医保 特药 保证续保20年`\\n10. `上海 嘉会 和睦家 高端医疗险 费率 30岁`\\n11. `上海长护险 申请条件 评估等级 报销比例`\\n12. `泰康之家 太保家园 养老社区 入住门槛 保费`\\n13. `蓝医保 金医保 百万医疗险 保证续保20年`\\n\\n---\\n\\n**Fully Comprehensive Findings**\\n\\n### Target Profile Context\\n- **Persona:** 25–30 year old female professional residing in Shanghai.\\n- **Role/Income:** Mid-to-high income data analyst (estimated annual income: ¥250,000 – ¥500,000 RMB).\\n- **Insurance Objectives:** Comprehensive medical reimbursement, income loss protection during major illness, long-term care security, and strategic integration with high-quality eldercare resources for parents and self.\\n\\n---\\n\\n### 1. Commercial Supplemental Medical Insurance (商业补充医疗保险)\\n\\n#### A. Million-Yuan Medical Insurance (百万医疗险)\\nMillion-Yuan Medical Insurance provides broad, high-cap medical expense reimbursement for catastrophic health events [1, 2, 3].\\n\\n1. **Key Features & Renewal Terms:**\\n   - **Coverage Limit:** Typically provides ¥2,000,000 to ¥4,000,000 RMB in annual coverage for general medical care, serious illnesses, special outpatient care, organ transplants, and advanced therapies.\\n   - **Guaranteed Renewal Period (保证续保):** Leading benchmark products in the Chinese market feature a 20-year guaranteed renewal term [1, 3]. Top products include:\\n     - **Pacific Health \"Lan Yi Bao\" (太平洋健康 蓝医保 / e-Wuyou):** 20-year guaranteed renewal term [1].\\n     - **PICC Health \"Jin Yi Bao\" (人保健康 金医保):** 20-year guaranteed renewal term [1].\\n     - **Ping An \"e-Sheng Bao 20-Year Version\" (平安 e生保 保证续保20年):** 20-year guaranteed renewal term.\\n     - **Ant Financial / Taikang \"Hao Yi Bao 20-Year Version\" (好医保 长期医疗20年版):** 20-year guaranteed renewal term [1].\\n     - **Fosun United \"Xing Xiang Shou\" (复星联合 星相守):** 20-year guaranteed renewal policy featuring external drug coverage [1].\\n   - **Deductibles & Out-of-Pocket Limits:**\\n     - Standard deductible: ¥10,000 RMB/year for general medical expenses [1, 3].\\n     - Serious illness (重疾) deductible: Often ¥0 RMB.\\n     - Deductible sharing / reduction mechanisms: Some policies offer shared family deductibles or a ¥1,000 RMB annual reduction in deductible for each claim-free year (down to a floor of ¥5,000 RMB).\\n   - **Special Drug & Cancer Coverage (特药/外购药):**\\n     - Covers 120+ to 150+ specified innovative cancer drugs and self-funded out-of-hospital drugs (外购药) [1].\\n     - Includes 100% reimbursement for Advanced CAR-T Cell Therapy (e.g., Yescarta / Carteyva) [1].\\n     - Zero deductible applies to covered special drugs with direct settlement/pharmacy billing (药房直付) [1].\\n\\n2. **Interaction & Comparison with Shanghai Huhuibao (沪惠保):**\\n   - **Shanghai Huhuibao (沪惠保):** A municipal government-guided inclusive commercial supplemental medical insurance policy priced at ¥129 RMB/year [2].\\n   - **Key Differences:**\\n     - *Underwriting Requirements:* Huhuibao requires no health check and covers pre-existing conditions (既往症) at slightly reduced reimbursement ratios [2]. Million-Yuan Medical Insurance requires strict health underwriting [1, 2, 3].\\n     - *Deductible & Reimbursement Rate:* Huhuibao has higher deductibles (typically ¥15,000–¥16,000 RMB) and a lower reimbursement ratio (70%–80%) [2]. Million-Yuan Medical Insurance features a ¥10,000 RMB deductible and 100% reimbursement rate [1, 3].\\n     - *Hospital Scope:* Huhuibao covers public hospital general wards. Million-Yuan Medical Insurance covers public hospital general wards, with option riders for VIP/International departments or private clinics.\\n     - *Payment Method:* Huhuibao allows direct payment using the Shanghai Basic Medical Insurance Personal Account (医保个人账户余额) [2].\\n   - **Strategic Interaction for a 25–30 Year Old Shanghai Professional:**\\n     - A healthy young professional should prioritize **Million-Yuan Medical Insurance** as her primary defense against catastrophic medical expenses [1, 2, 3].\\n     - **Shanghai Huhuibao** should be used as a low-cost supplemental policy purchased via her Shanghai basic medical insurance personal account balance for older parents who have pre-existing conditions and cannot pass commercial health underwriting [2].\\n\\n---\\n\\n#### B. High-End Medical Insurance (高端医疗险) & Mid-End Medical Insurance (中端医疗险)\\nFor mid-to-high income professionals (such as data analysts earning ¥250,000–¥500,000+ RMB), high-end and mid-end medical insurance provide direct access to premium healthcare facilities without out-of-pocket cash advances [4, 5, 6].\\n\\n1. **Direct Billing (直付 Settlement):**\\n   - Managed via Third-Party Administrators (TPAs) such as MSH China, Bupa, Cigna & CMB (招商信诺), AXA (安盛天平), and China Life-AMP.\\n   - Patients present their membership card; medical fees are settled directly between the insurer/TPA and the healthcare facility [5, 6].\\n\\n2. **Target Healthcare Facilities in Shanghai:**\\n   - **Private / International Hospitals:** Shanghai Jiahui International Hospital (上海嘉会国际医院) [4, 5], Shanghai United Family Hospital (上海和睦家医院) [4, 6], Sino-United Health (耀体/耀华) [4], Parkway Health (百汇医疗) [4].\\n   - **Public Hospital VIP / International Departments (三甲医院特需部/国际部):** VIP & International divisions of Shanghai Grade 3A public hospitals, including Huashan Hospital (华山医院), Ruijin Hospital (瑞金医院), Zhongshan Hospital (中山医院), and Renji Hospital (仁济医院).\\n\\n3. **Geographic & Coverage Tiers:**\\n   - *Tier 1:* Mainland China (covers Public 3A VIP/International + selective private clinics).\\n   - *Tier 2:* Greater China (Mainland China, Hong Kong, Macau, Taiwan).\\n   - *Tier 3:* Asia-Pacific.\\n   - *Tier 4:* Worldwide excluding USA.\\n   - *Tier 5:* Worldwide including USA.\\n\\n4. **Cost vs. Benefit Analysis for 25–30 Year Old Data Analyst:**\\n   - **Full High-End Plan (Covers Jiahui & United Family Private Hospitals):**\\n     - Annual Premium Range: ~¥10,000 – ¥22,000 RMB/year for a 25–30 year old female [4, 6].\\n     - Benefits: Zero deductible, private hospital inpatient & outpatient access, bilingual doctor consultations, zero waiting times, direct billing [4, 5, 6].\\n   - **Mid-End / Light High-End Plan (Covers Public Grade 3A VIP/International Departments):**\\n     - Annual Premium Range: ~¥3,000 – ¥7,000 RMB/year.\\n     - Benefits: High-comfort accommodation, access to top public hospital specialists in Shanghai, low/zero deductibles, direct billing at VIP wards.\\n   - **Profile Recommendation:** For a 25–30 year old data analyst, a Mid-End Plan (or a Light High-End Plan with deductible options) provides high ROI by balancing affordable annual premiums with fast-track access to top-tier Shanghai medical care.\\n\\n---\\n\\n#### C. Critical Illness Insurance (重疾险)\\nUnlike medical reimbursement insurance, Critical Illness Insurance provides a fixed lump-sum cash payout upon diagnosis of contractually defined conditions [2, 3].\\n\\n1. **Periodic (定期) vs. Life-Long (终身) Critical Illness Insurance:**\\n   - **Periodic (Term) Critical Illness Insurance (e.g., covered to age 60 or 70):**\\n     - Premium Range (25–30 Year Old Female, ¥500,000 RMB Sum Assured): ~¥1,800 – ¥3,200 RMB/year.\\n     - Benefits: High financial leverage during peak income-earning years.\\n   - **Life-Long (Whole Life) Critical Illness Insurance:**\\n     - Premium Range (25–30 Year Old Female, ¥500,000 RMB Sum Assured): ~¥4,500 – ¥7,000 RMB/year.\\n     - Benefits: Guaranteed payout either upon disease diagnosis or death.\\n\\n2. **Guaranteed Payout (定额给付) vs. Medical Expense Reimbursement (报销型):**\\n   - *Medical Expense Reimbursement:* Strictly covers actual, receipt-backed hospital expenditures (capped at actual spending) [2, 3].\\n   - *Guaranteed Fixed Lump-Sum Payout:* Pays the full policy sum (e.g., ¥500,000 RMB cash) regardless of actual treatment cost.\\n   - *Role in Financial Planning:* Covers non-medical recovery expenses, lost wages/salary during 3–5 years of illness recovery, ongoing mortgage/rent, and specialized post-hospital rehabilitation.\\n\\n---\\n\\n### 2. Long-Term Care Insurance (LTCI / 长期护理保险) & Eldercare Integration\\n\\n#### A. Shanghai Public LTCI Pilot (上海长护险)\\n1. **Eligibility:**\\n   - Participants enrolled in Shanghai Urban Employee Basic Medical Insurance (城职保) or Shanghai Urban/Rural Resident Basic Medical Insurance (城居保).\\n\\n2. **Disability Level Evaluation (失能等级评估):**\\n   - Standardized Shanghai medical assessment categorizes disability from **Level 1 to Level 6** (失能等级 1-6 级).\\n   - Evaluation at **Level 2 or above** qualifies the insured person for subsidized care services.\\n\\n3. **Services Covered:**\\n   - **Home-Based Care (居家护理):** 1–1.5 hours per visit, several days per week (hygiene, bathing, basic medical nursing, rehabilitation guidance).\\n   - **Community Institutional Care (社区护理):** Daycare and respite services at community eldercare centers.\\n   - **Nursing Home Care (机构护理):** Basic nursing care provided in accredited public or contracted nursing institutions.\\n\\n4. **Reimbursement & Limitations:**\\n   - *Reimbursement Rate:* Public LTCI funds cover ~80%–90% of basic nursing care fees based on daily/hourly capped reference rates.\\n   - *Limitations:*\\n     - Primarily targets elderly individuals (typically 60+ or severe physical disability).\\n     - Does not cover non-basic care, premium private nursing facilities, or high-end retirement communities.\\n     - Public institutional nursing beds in Shanghai face long waiting lists.\\n\\n---\\n\\n#### B. Commercial Long-Term Care Insurance (商业长期护理保险) & Eldercare Community Integration\\nCommercial LTCI complements public programs by funding private long-term care needs and granting access to premium retirement communities.\\n\\n1. **Market Offerings in China:**\\n   - Standalone LTCI policies.\\n   - Nursing Care Annuities (护理年金险).\\n   - Increasing Whole Life Policies with LTCI conversion options (增额终身寿险转护理).\\n\\n2. **Payout Triggers:**\\n   - **ADL Impairment:** Inability to perform 3 or more out of 6 Activities of Daily Living (ADLs: eating, dressing, bathing, toileting, transferring, continence).\\n   - **Cognitive Impairment:** Severe cognitive failure / Alzheimer\\'s disease / dementia measured via Clinical Dementia Rating (CDR) or Mini-Mental State Examination (MMSE) scores.\\n\\n3. **Integration with Premium Retirement Communities (养老社区对接门槛):**\\n   - Major Chinese insurance conglomerates integrate commercial care policies with physical eldercare real estate:\\n     - **Taikang Life (泰康之家长者社区):** Taikang Shengyuan (Shanghai), etc. Threshold: Cumulative total premiums of ¥1.5 million to ¥2.0 million RMB unlock **Guaranteed Entry Rights (保证入住权)**.\\n     - **Pacific Insurance (太保家园 - 太平洋欧葆庭):** Threshold: Cumulative total premiums of ~¥1.0 million to ¥1.5 million RMB.\\n     - **Ping An Insurance (平安臻颐年 / 颐年城 / 居家养老):** Premium thresholds range from ¥1.0 million to ¥10.0 million RMB depending on high-end tier.\\n     - **Taiping Insurance (太平梧桐人家):** Shanghai Pudong project threshold ~¥1.0 million to ¥1.5 million RMB.\\n   - **Strategic Value for Persona:**\\n     - By initiating a savings-linked commercial LTCI / annuity structure (e.g., ¥50,000–¥100,000 RMB/year over 10–20 years), a 25–30 year old professional can secure immediate/near-term guaranteed residence rights for her retiring parents, while reserving long-term care rights for herself in the future.\\n\\n---\\n\\n### 3. Comprehensive Health Protection Matrix Across Life Stages\\n\\n| Life Stage | Core Insurance Priorities | Product Selection Recommendations | Estimated Annual Premium (RMB) | Strategic Eldercare & Rider Recommendations |\\n| :--- | :--- | :--- | :--- | :--- |\\n| **Young Professional (Age 25–30)** <br> *Shanghai Data Analyst Profile* | • High-cap medical protection <br> • Basic income replacement <br> • Capital efficiency | • 20-Year Guaranteed Renewal Million-Yuan Medical Insurance (or Mid-End Medical Insurance) [1, 3] <br> • Term Critical Illness Insurance (to age 70, Sum Assured ¥500,000 RMB) <br> • Personal Accident Insurance | • Medical: ¥300 – ¥3,500 <br> • Critical Illness: ¥2,000 – ¥3,500 <br> • Accident: ¥150 – ¥300 <br> **Total: ~¥2,500 – ¥7,300/yr** | • Add CAR-T drug rider & out-of-hospital special drug rider [1]. <br> • Enroll parents in Shanghai Huhuibao using medical personal account balance [2]. |\\n| **Mid-Career Phase (Age 30–45)** <br> *Career Peak & Family Responsibilities* | • High-end medical comfort <br> • Comprehensive critical illness <br> • Parent eldercare integration | • Upgrade to High-End Medical Insurance (VIP/International Depts + Jiahui/United Family) [4, 5, 6] <br> • Whole Life Critical Illness Insurance (¥500,000 RMB+) <br> • Commercial LTCI / Care Annuity linked to Retirement Community | • Medical: ¥5,000 – ¥15,000 <br> • Critical Illness: ¥5,000 – ¥10,000 <br> • Care Annuity: ¥50,000 – ¥100,000/yr (over 10 yrs) | • Lock in Guaranteed Entry Rights for parents at Taikang Home / Pacific Home in Shanghai/Yangtze Delta. <br> • Add family shared deductible riders. |\\n| **Pre-Retirement Phase (Age 45–55/60)** <br> *Asset Protection & Care Preparation* | • Continuous medical coverage <br> • Long-term care income payout <br> • Health management | • Maintain Guaranteed Renewal Medical Insurance [1] <br> • Pure Commercial LTCI / Nursing Care Annuity <br> • Cancer-Specific Insurance (if pre-existing conditions arise) | • Medical: ¥2,000 – ¥8,000 <br> • Commercial LTCI: ¥10,000 – ¥30,000 | • Utilize Shanghai Public LTCI for elderly parents (Level 2+ disability evaluation). <br> • Exercise retirement community priority rights for family members. |\\n| **Post-Retirement Phase (Age 60+)** <br> *Care Execution & Asset Transfer* | • Active nursing care payouts <br> • Public + Private LTCI execution <br> • Emergency reimbursement | • Claiming payouts under 20-Year Medical Insurance [1, 3] <br> • Receiving LTCI Monthly Annuity Payouts (triggered by ADL/Cognitive assessment) | • Covered by prior premiums & basic medical insurance | • Transition into integrated retirement facility or utilize home nursing care subsidized by Public LTCI + Commercial LTCI payouts. |\\n\\n---\\n\\n**List of All Relevant Sources (with citations in the report)**\\n\\n[1] Zhihu Column: *2025 Million-Yuan Medical Insurance Recommendations (Lan Yi Bao, Jin Yi Bao, Xing Xiang Shou, etc.)*  \\nURL: https://zhuanlan.zhihu.com/p/1904653872112333089\\n\\n[2] Hans Publishers (E-Commerce and Law / ECL PDF Research): *Research on the Impact of Digital Finance on the Development of \"Shanghai Huhuibao\"*  \\nURL: https://pdf.hanspub.org/ecl_2314851.pdf\\n\\n[3] Sina Finance News: *Selection Strategy for Million-Yuan Medical Insurance Policies*  \\nURL: https://cj.sina.com.cn/articles/view/7879922977/1d5ae152101901dvv2?froms=ggmp\\n\\n[4] Zhihu Column: *High-End Medical Insurance Guide for Private Hospitals in Shanghai (United Family / Jiahui)*  \\nURL: https://zhuanlan.zhihu.com/p/668495895\\n\\n[5] Shanghai Jiahui International Hospital Official Overview (Massachusetts General Hospital Collaboration Portal)  \\nURL: https://www.massgeneral.org/cn/jiahui-cn\\n\\n[6] Shanghai United Family Hospital: *Medical Insurance Collaboration Model and High-End Healthcare Rates*  \\nURL: https://shanghai.ufh.com.cn/event/medical-insurance-and-integrated-high-end-medical-service-provider-join-forces-in-a-new-healthcare-model', 'index': 0, 'extras': {'signature': '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'}}]",
+      "topic_id": "topic_002",
+      "topic_text": "Investigate commercial supplemental medical insurance, long-term care insurance (LTCI), and eldercare service integration in the Chinese insurance market, specifically optimized for a 25-30 year old female professional residing in Shanghai.\n\nSpecifically research:\n1. Commercial Supplemental Medical Insurance:\n   - Million-Yuan Medical Insurance (百万医疗险): Key features, guaranteed renewal terms (e.g., 20-year guaranteed renewal policies like Ping An e-Sheng Bao, Taikang, Pacific Insurance), deductibles, out-of-pocket limits, coverage for special drugs (特药/抗癌药), and Shanghai Huhuibao (沪惠保) interaction.\n   - High-End Medical Insurance (高端医疗险): Direct billing (直付), private/international hospitals (e.g., Jiahui International, Shanghai United Family), global/Asia coverage, cost vs benefit comparison for mid-to-high income data analyst profile.\n   - Critical Illness Insurance (重疾险): Periodic vs life-long critical illness insurance, guaranteed payout vs medical expense reimbursement.\n2. Long-Term Care Insurance (LTCI / 长期护理保险):\n   - Shanghai Public LTCI Pilot (上海长护险): Eligibility, coverage levels (Disability level evaluation 失能等级评估), services covered, and limitations for urban employee basic medical insurance holders.\n   - Commercial Long-Term Care Insurance (商业长期护理保险): Current market offerings in China, payout triggers (ADL - Activities of Daily Living, cognitive impairment/dementia), and integration with retirement communities (养老社区对接门槛/入住资格).\n3. Comprehensive health protection matrix across young professional (25-30), mid-career (30-45), pre-retirement (45-55/60), and post-retirement phases in Shanghai, including premiums, policy selection, and rider recommendations."
+    },
+    {
+      "compressed_research": "[{'type': 'text', 'text': '**List of Queries and Tool Calls Made**\\n\\n1. `serper_search`: `\"China personal pension\" tax deduction 12000 Shanghai`\\n2. `serper_search`: `China statutory retirement age reform 2025 female delayed retirement`\\n3. `serper_search`: `China commercial annuity guaranteed interest rate cap 2.5 percent 2024 2025`\\n4. `serper_search`: `Shanghai social security pension replacement rate conservative asset allocation`\\n5. `serper_search`: `\"预定利率\" 2.5% 保险 2024 2025 养老金`\\n6. `serper_search`: `\"个人养老金\" 节税 预定利率 3% 汇算清缴`\\n7. `serper_search`: `\"上海\" 增额终身寿险 养老年金险 长期护理保险`\\n8. `serper_search`: `China medical inflation rate vs CPI retirement planning`\\n9. `serper_search`: `China insurance interest rate cap 2.5`\\n10. `think_tool`: Synthesis of regulatory policy frameworks, macroeconomic parameters, tax policy details, and quantitative decumulation formulas.\\n\\n---\\n\\n**Fully Comprehensive Findings**\\n\\n### 1. Dynamic Economic Cycle Allocation Pathways in China\\n\\n#### Macroeconomic Environment & Yield Dynamics\\n* **Low Interest Rate / \"Japanification\" Scenario**: China\\'s macroeconomic environment is characterized by declining benchmark yields, with 10-year China Central Government Bond (CGB) yields hovering near historically low ranges (~1.6%–2.1%) and commercial banks repeatedly cutting deposit rates.\\n* **Regulatory Pre-Assumed Interest Rate Cuts**: The National Financial Regulatory Administration (NFRA) has reduced maximum guaranteed pre-assumed interest rates (预定利率) on traditional life insurance and commercial annuities down to 2.5%, with participating/dividend-paying insurance capped at a 2.0% guaranteed base rate.\\n* **Dynamic Asset Allocation Shifting Mechanism**:\\n  * *Low-Yield / Deflationary Cycle*: Prioritize locked-in fixed rate vehicles (Commercial Annuities / 养老年金险, Incremental Whole Life Insurance / 增额终身寿险), Treasury bonds (国债), and pure bond funds (纯债基金) to capture duration and insulate against falling reinvestment yields.\\n  * *Economic Growth / Expansion Cycle*: Shift incremental allocations toward high-dividend equity funds (高股息/红利资产), bank wealth management (理财产品), and Target-Date/Target-Risk Mutual Funds (Y-Shares in Personal Pension accounts).\\n  * *Inflationary Cycle / Interest Rate Shock*: Allocate to inflation-hedging real instruments including Gold ETFs, Commodity/REITs funds, and floating-rate wealth management products to protect real purchasing power.\\n\\n#### Healthcare Inflation & Demographic Pressures\\n* **Healthcare Inflation Differential**: While China\\'s core CPI inflation averages ~1.5%–2.0% annually, medical and long-term care inflation historically runs significantly higher at approximately 4.5%–6.0% per annum due to drug advancements, aging-driven demand, and rising caregiving wage overhead.\\n* **Hedging Infrastructure**:\\n  * *Government-Backed Supplementary Medical Insurance*: Utilizing Shanghai’s \"Hu Hui Bao\" (沪惠保, ~129 RMB/year) as a baseline layer for pre-existing condition protection.\\n  * *Commercial Million Medical Insurance (百万医疗险)*: Providing high deductible, high coverage ceilings (2M–4M RMB) for hospitalization and non-Inclusion List specialty drugs (特药).\\n  * *Long-Term Care Insurance (LTCI / 长期护理保险)*: Combining Shanghai\\'s public pilot LTCI with commercial LTCI to lock in daily allowance and nursing benefit cash flows for age 60+.\\n\\n---\\n\\n### 2. Life-Stage Specific Action Roadmap (4 Phases)\\n\\n#### Regulatory Baseline: Statutory Retirement Age Reform\\n* Effective January 1, 2025, China commenced a gradual delay of statutory retirement ages [1][3].\\n* For female white-collar employees/management cadres, the statutory retirement age is gradually extended from 55 to 58 years old, while for female non-management roles, it is extended from 50 to 55 years old [1][2]. For a 25–30-year-old female corporate data analyst in Shanghai, the target statutory retirement baseline is set at age 58–60 [1][2][3].\\n\\n---\\n\\n#### Phase 1: Early Career Accumulation (Ages 25–30)\\n* **Objective**: Core safety net buildout, liquid emergency reserve establishment, initial tax-optimized pension structuring.\\n* **Emergency Reserve**: 3–6 months of living expenses held in high-liquidity monetary instruments (e.g., Yu\\'ebao / Money Market Funds / Cash Management Wealth Products).\\n* **Pillar 1 & Baseline Coverage**: Full enrollment in Shanghai\\'s Basic Social Security (Urban Employee Pension & Medical Insurance) plus Shanghai \"Hu Hui Bao\" and commercial Million Medical Insurance (百万医疗险).\\n* **Pillar 3 Personal Pension Account (个人养老金)**: Maximizing the RMB 12,000 annual tax deduction limit. Contributions enjoy immediate income tax deductions (saving marginal tax rate tiers of 10%–20% for a mid-level analyst), with proceeds taxed at a preferential flat rate of 3% upon withdrawal. Allocated into low-cost Y-share Target-Date Funds or guaranteed deposit products.\\n\\n---\\n\\n#### Phase 2: Wealth Consolidation & Peak Earnings (Ages 30–45)\\n* **Objective**: Escalating personal pension savings rate, upgrading health/disability protection, locking in long-term yields before policy/yield drops.\\n* **Annuity & Fixed-Income Lock-in**: Systematic lock-in of commercial annuities (养老年金险) and incremental life policies (增额终身寿险) to fix pre-assumed interest rates (2.5% lifetime guaranteed compounding) against long-term interest rate erosion.\\n* **Investment Strategy**: Systematic Investment Plans (SIP / 定投) across pure bond funds (纯债纯债基金), dividend-focused equity funds, and maxing out the annual RMB 12,000 Pillar 3 limit.\\n* **Insurance Upgrades**: Addition of Critical Illness Insurance (重疾险) to cover income loss protection during peak earning years.\\n\\n---\\n\\n#### Phase 3: Pre-Retirement Transition (Ages 45–55/58)\\n* **Objective**: Strategic de-risking, locking in caregiving insurance, aligning pension payout start dates.\\n* **De-risking Asset Portfolio**: Transitioning away from dynamic risk/equity assets toward short-duration bonds, principal-guaranteed bank deposits, and treasury bonds.\\n* **Long-Term Care Insurance (LTCI) Lock-In**: Securing commercial LTCI policies to guarantee daily living allowances or disability nursing payouts prior to the onset of pre-existing age conditions.\\n* **Payout Date Synchronization**: Fixing commercial annuity start dates (e.g., age 58 or 60) to align seamlessly with statutory delayed retirement timelines and social security payout eligibility [1][2][3].\\n\\n---\\n\\n#### Phase 4: Post-Retirement Decumulation & Long-Term Care (Ages 60+)\\n* **Objective**: Structured, tax-efficient payout sequencing, managing longevity risk, funding caregiving and medical cash flows.\\n* **Payout Sequencing Waterfall**:\\n  1. *Layer 1 (Guaranteed Baseline Cash Flow)*: Shanghai Urban Employee Basic Pension (Pillar 1) + Commercial Annuity (Pillar 3 commercial layer) for fixed monthly living cost floor.\\n  2. *Layer 2 (Tax-Deferred Cash Flow)*: Pillar 3 Personal Pension Account withdrawals (taxed at 3%).\\n  3. *Layer 3 (Yield & Asset Liquidations)*: Bond fund distributions, CGB coupon payments, and cash wealth management yields.\\n* **Longevity Risk Mitigation**: Commercial annuities providing life-long annuity payments (pay-until-death guarantees) ensure income cannot be outlived even if longevity extends beyond age 90+.\\n\\n---\\n\\n### 3. Quantitative Framework & Sensitivity Analysis\\n\\n#### Core Model Assumptions (Shanghai Data Analyst Profile)\\n* **Base Profile**: Female starting age 25–30 in Shanghai; projected retirement age: 58–60 [1][2][3]; post-retirement projection: 30-year horizon (up to age 90).\\n* **Target Income Replacement Rate**: 60%–70% of pre-retirement net income.\\n* **Conservative Return & Inflation Metrics**:\\n  * *Conservative Nominal Yield ($r$)*: 2.5%–3.5% p.a.\\n  * *General CPI Inflation ($i_g$)*: 1.5%–2.0% p.a.\\n  * *Healthcare Inflation ($i_m$)*: 4.5%–5.5% p.a.\\n  * *Net Real Yield ($r_{real}$)*: ~0.5%–1.5% p.a.\\n\\n#### Accumulation & Decumulation Mathematical Mechanics\\n1. **Accumulation Phase Capital Target ($A_T$)**:\\n   $$A_T = \\\\sum_{t=1}^{N} C_t \\\\times (1 + r)^{N-t}$$\\n   Where $C_t$ is annual net savings (including the 12,000 RMB tax-advantaged contribution + voluntary commercial investments), $r$ is portfolio return, and $N$ is years to retirement (~30 years).\\n\\n2. **Required Decumulation Capital Floor ($PV_{decum}$)**:\\n   $$PV_{decum} = \\\\sum_{k=1}^{30} \\\\frac{E_{living} \\\\cdot (1+i_g)^k + E_{med} \\\\cdot (1+i_m)^k}{(1 + r)^k} - PV_{Pillar1}$$\\n   Where $E_{living}$ is target living expenses, $E_{med}$ is healthcare baseline costs, and $PV_{Pillar1}$ is the present value of Shanghai basic social pension payouts.\\n\\n#### Sensitivity Matrix: Net Monthly Payout at Varying Real Yields & Longevity Horizons\\n* **Base Case (Replacement Rate = 65%, Target Monthly Cash Flow ~12,000 RMB in real terms)**:\\n  * *At 2.0% Real Annual Yield*: Capital required at age 60 $\\\\approx$ 3.12 Million RMB.\\n  * *At 1.0% Real Annual Yield*: Capital required at age 60 $\\\\approx$ 3.58 Million RMB.\\n  * *At 0.0% Real Annual Yield (Zero Real Return)*: Capital required at age 60 $\\\\approx$ 4.32 Million RMB.\\n* **Longevity Extension Sensitivity (Life Expectancy 90 vs. 95)**:\\n  * Extending decumulation from 30 years (age 90) to 35 years (age 95) requires an additional ~14.5% capital reserve at a 1.5% real return rate, reinforcing the role of lifelong guaranteed commercial annuities.\\n\\n---\\n\\n**List of All Relevant Sources (with citations in the report)**\\n\\n1. [1] State Council Information Office of the People\\'s Republic of China (SCIO): *China implements gradual retirement age increase*  \\n   URL: http://english.scio.gov.cn/chinavoices/2025-01/02/content_117641102.html\\n2. [2] HLC Publications: *Statutory retirement age reform in China*  \\n   URL: https://www.hlc.com/en/publications/statutory-retirement-age-reform-in-china\\n3. [3] China Briefing: *China\\'s Gradual Retirement Age Delay to Tackle Demographic Shifts*  \\n   URL: https://www.china-briefing.com/news/chinas-gradual-retirement-age-delay-to-tackle-demographic-shifts/', 'index': 0, 'extras': {'signature': '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'}}]",
+      "topic_id": "topic_003",
+      "topic_text": "Investigate dynamic asset allocation strategies across economic cycles and life-stage action plans for a 30-year retirement security model in China tailored to a conservative female data analyst starting at age 25-30 in Shanghai.\n\nSpecifically research:\n1. Dynamic Economic Cycle Allocation Pathways:\n   - Strategies across economic growth, recession/low-interest-rate environment, and inflationary cycles.\n   - How to dynamically adjust fixed-income ratios, annuity lock-ins, bond fund SIPs, and inflation-hedging instruments in China's current and projected macroeconomic environment (e.g., low yield era / Japanification vs potential inflation shocks).\n   - Mitigating healthcare inflation (typically higher than CPI) and aging demographic pressures.\n2. Life-Stage Specific Action Roadmap (4 Phases):\n   - Phase 1: Early Career Accumulation (Ages 25-30) - Core safety net, emergency fund, establishing annuity foundations and basic medical coverage.\n   - Phase 2: Wealth Consolidation & Peak Earnings (Ages 30-45) - Escalating personal pension contributions, adjusting protection coverage as salary increases, optimizing fixed income & annuity lock-ins.\n   - Phase 3: Pre-Retirement Transition (Ages 45-55/60) - De-risking strategies, consolidating cash flow streams, lock-in of long-term care insurance and guaranteed annuity start dates.\n   - Phase 4: Post-Retirement Decumulation & Long-Term Care (Ages 60+) - Structured payout sequencing (Social Security + Personal Pension + Commercial Annuity + Bond Income), managing longevity risk, healthcare and caregiving expense cash-flows.\n3. Quantitative framework / sensitivity analysis for decumulation and replacement rates (e.g. achieving 60-70% income replacement rate) based on conservative yield assumptions."
+    }
+  ],
+  "execution_config": {
+    "generation_seed": 0,
+    "gt_userid": "User18",
+    "manifest_sha256": "8110d1b3656fa5ba021f7b1bd053a92a11922c4efecd8d43d552e80cda4ad2a9",
+    "manifest_version": "1.1",
+    "max_retries": 3,
+    "models": {
+      "compression_model": "google_genai:gemini-3.6-flash",
+      "final_report_model": "google_genai:gemini-3.6-flash",
+      "max_retries": 3,
+      "requests_per_minute": 4,
+      "research_model": "google_genai:gemini-3.6-flash",
+      "retry_initial_delay_sec": 15,
+      "service_tier": "flex",
+      "summarization_model": "google_genai:gemini-3.6-flash",
+      "timeout_sec": 1500
+    },
+    "prompt_sha256": "db73834b1c7f33fe44ef77f83f3a3b539d76bb153f2d2efbd9ad0b5f3b9486d9",
+    "search": {
+      "global_hard_stop": 2400,
+      "provider": "serper_via_tavily_slot",
+      "report_query_cap": 7,
+      "unique_url_cap": 15
+    },
+    "service_tier": "flex",
+    "source_query_id": 109,
+    "split": "confirmatory",
+    "taskid": 22,
+    "timeout_sec": 1500,
+    "persona_condition": "nobrief",
+    "write_only_ablation": true,
+    "source_run_id": "pilot_task22_User18_seed0",
+    "brief_injected": false,
+    "write_model": "google_genai:gemini-3.6-flash",
+    "generated_at_utc": "2026-08-04T14:42:52.241471+00:00"
+  },
+  "execution_error": null,
+  "final_report": "# Comprehensive 30-Year Retirement Security & Wealth Management Plan\n\n## Executive Summary & Baseline Persona Profile\n\nThis 30-year retirement security plan is tailored for **Liu Lu**, a 25–30-year-old female Data Analyst residing in Shanghai. As a mathematically meticulous professional with a conservative risk profile, debt-free financial standing (fully paid-off apartment), and strong savings capacity, this plan establishes a resilient financial architecture. \n\nThe strategy integrates China’s Three-Pillar pension system, commercial annuity insurance, supplemental medical coverage, long-term care insurance (LTCI), and dynamic fixed-income asset allocation. It addresses key regulatory reforms—such as statutory retirement age extensions [13], National Financial Regulatory Administration (NFRA) interest rate caps [1, 2], and tax-deferred personal pension frameworks [4, 5]—while hedging against macroeconomic volatility and healthcare inflation.\n\n---\n\n## Section 1: Financial & Pension Foundation Analysis\n\n```\n+-----------------------------------------------------------------------------------+\n|                        Pillar 3: Personal Pension Account                         |\n|             Max RMB 12,000/year (EET Model: Pre-tax deduction, 3% tax)             |\n+------------------------------------------+----------------------------------------+\n                                           |\n                                           v\n+------------------------------------------+----------------------------------------+\n|                     Commercial Long-Term Lock-in Vehicles                         |\n|   Commercial Annuity / Increasable Whole Life Insurance (2.5% Pricing Rate Cap)   |\n+------------------------------------------+----------------------------------------+\n                                           |\n                                           v\n+------------------------------------------+----------------------------------------+\n|                     Conservative Fixed-Income Assets                              |\n|    Savings Treasury Bonds (国债) | Large CDs (大额存单) | Pure Bond Funds (纯债)   |\n+-----------------------------------------------------------------------------------+\n```\n\n### 1.1 Individual Pension Account System (个人养老金) & Shanghai Tax Optimization\n\nChina’s Individual Pension framework allows eligible urban workers to contribute up to **RMB 12,000 per calendar year** into a dedicated tax-advantaged account [4]. \n\n* **Tax Structure (EET Model):**\n  * **Contribution Stage (E - Exempt):** Up to RMB 12,000 is deducted directly from pre-tax taxable income during annual Personal Income Tax (PIT / 个人所得税) reconciliation [4, 5].\n  * **Investment Stage (E - Exempt):** Investment returns, interest, and dividends accumulate tax-free within the account [6].\n  * **Withdrawal Stage (T - Taxed):** Withdrawals at retirement (or statutory qualifying events) are subject to a **flat 3% tax rate**, separate from standard personal income tax aggregations [5, 6].\n\n* **Net Tax Savings Breakdown for Shanghai Income Tiers:**\n  The net direct tax savings rate is calculated as:\n  $$\\text{Net Tax Savings Rate} = \\text{Marginal PIT Rate} - 3\\%$$\n\n  | Marginal PIT Bracket | Taxable Annual Income Bracket (RMB) | Upfront Annual Tax Reduction | Net Tax Savings Rate | Net Direct Annual Tax Savings |\n  | :--- | :--- | :--- | :--- | :--- |\n  | **10% Bracket** | RMB 36,000 – 144,000 | RMB 1,200 | 7% | **RMB 840 / year** [4] |\n  | **20% Bracket** | RMB 144,000 – 300,000 | RMB 2,400 | 17% | **RMB 2,040 / year** |\n  | **25% Bracket** | RMB 300,000 – 420,000 | RMB 3,000 | 22% | **RMB 2,640 / year** |\n  | **30% Bracket** | RMB 420,000 – 660,000 | RMB 3,600 | 27% | **RMB 3,240 / year** |\n\n* **Eligible Product Allocations:** Account capital can be deployed across four approved product catalogs:\n  1. **Pension Target Funds (养老目标基金):** Low-cost \"Y-shares\" (Y类份额) featuring a 50% discount on management and custody fees.\n  2. **Commercial Pension Insurance (商业养老保险):** Registered annuity policies with guaranteed floors.\n  3. **Specific Wealth Management Products (特定养老理财):** Low-to-medium risk bank products.\n  4. **Pension Savings Accounts (养老储蓄):** Term deposits (5-year to 20-year terms) backed by state-owned commercial banks.\n\n### 1.2 Commercial Annuity & Increasable Whole Life Insurance Framework\n\nUnder the NFRA’s *Notice on Improving the Pricing Mechanism for Life Insurance Products* (Jin Gui [2024] No. 12), maximum guaranteed pricing interest rates (预定利率上限) for long-term traditional life insurance products were formally reduced from **3.0% to 2.5%** [2, 3]. Participating/dividend-paying products (分红险) are capped at a **2.0% guaranteed rate** [2].\n\n```\nHistorical Pricing Rate Cap Trajectory:\n4.025% (Pre-2019)  --->  3.5% (2019-2023)  --->  3.0% (2023-2024)  --->  2.5% Baseline (Current) [1, 2]\n```\n\n* **Yield Profile & Cash Value Compounding:**\n  * **Increasable Whole Life Insurance (增额终身寿险):** Under a 2.5% pricing interest rate cap, long-term compounding Internal Rate of Return (IRR) on cash value approaches a ceiling of **2.1% – 2.4%** over a 20–30 year horizon [2].\n  * **Commercial Annuity Insurance (养老年金险):** Locks in guaranteed annuity payout cash flows starting at age 55 or 60, offering lifetime payout guarantees or 20-year minimum guaranteed payout windows.\n\n* **Regulatory Safety Mechanisms:**\n  * **Article 92 of China Insurance Law:** If a life insurance company is dissolved or declared bankrupt, its life insurance contracts and reserve funds must be transferred to another solvent insurer. If no agreement is reached, the NFRA designates a life insurance company to accept the policies.\n  * **China Insurance Protection Fund (保险保障基金):** Under the *Measures for the Administration of the Insurance Protection Fund*, individual policyholder liabilities/entitlements are protected up to **90%** in insolvency scenarios.\n\n### 1.3 Conservative Fixed-Income Assets & Liquidity Buffer\n\n* **Savings Treasury Bonds (储蓄国债):** Fully backed by the Ministry of Finance of the PRC. Issued in 3-year and 5-year tenors (yielding ~2.0%–2.3%).\n* **Large-Denominated Certificates of Deposit (大额存单):** RMB 200,000 minimum threshold, yielding ~1.5%–2.1%. Covered under China's *Deposit Insurance Regulation* (《存款保险条例》), which guarantees principal and interest up to **RMB 500,000 per depositor per bank**.\n* **Pure Bond Funds (纯债基金) & SIPs:** Pure short/medium-term bond funds avoid equity exposure, offering expected yields of ~2.0%–3.5% with low net asset value (NAV) volatility.\n\n### 1.4 Tiered Modular Asset Allocation Models\n\nTo accommodate potential salary growth and shifts in monthly cash flow, the financial strategy is structured across three savings tiers:\n\n| Component | Tier 1: Entry Capability <br> *(Monthly Savings: RMB 3k–5k)* | Tier 2: Mid-Tier Capability <br> *(Monthly Savings: RMB 8k–12k)* | Tier 3: High-Tier Capability <br> *(Monthly Savings: RMB 15k+)* |\n| :--- | :--- | :--- | :--- |\n| **Personal Pension (Pillar 3)** | RMB 500 – 1,000 / mo <br> *(Y-Share Target Date Funds)* | RMB 1,000 / mo (RMB 12k/yr max) <br> *(Low-risk Y-shares & Deposits)* [4] | RMB 1,000 / mo (RMB 12k/yr max) <br> *(Optimizes 20%–30% tax brackets)* [4, 5] |\n| **Commercial Annuity / Increasable Life** | N/A (Focus on liquidity & debt) | RMB 3,000 – 5,000 / mo <br> *(5/10-year pay traditional annuity)* | RMB 8,000 – 10,000 / mo <br> *(Combination of 2.5% Traditional + 2.0% Participating)* [2] |\n| **Fixed Income & Bond SIPs** | RMB 1,500 – 2,500 / mo <br> *(Short/Medium Pure Bond Funds)* | RMB 3,000 – 4,000 / mo <br> *(Pure Bond SIPs + Treasury Bonds)* | RMB 4,000 – 6,000 / mo <br> *(Large CDs + Ultra-Long Treasury Bonds)* |\n| **Liquid Cash Reserve** | RMB 1,000 – 1,500 / mo <br> *(Money Market Funds)* | RMB 1,000 – 2,000 / mo <br> *(Cash Management Wealth Products)* | RMB 2,000+ / mo <br> *(High-liquidity bank wealth products)* |\n\n---\n\n## Section 2: Comprehensive Health & Long-Term Care Protection Matrix\n\n```\n                          FOUR-LAYER HEALTHCARE & CARE PROTECTION MATRIX\n+--------------------------------------------------------------------------------------------------+\n| Layer 4: Commercial LTCI & Eldercare Communities (Taikang Shengyuan / Pacific Home Rights)       |\n+--------------------------------------------------------------------------------------------------+\n| Layer 3: High-End / Mid-End Medical Insurance (Direct Billing @ Jiahui & Public VIP Wards)       |\n+--------------------------------------------------------------------------------------------------+\n| Layer 2: 20-Year Guaranteed Renewal Million-Yuan Medical Insurance (Lan Yi Bao / Jin Yi Bao)     |\n+--------------------------------------------------------------------------------------------------+\n| Layer 1: Shanghai Urban Employee Basic Medical Insurance + Shanghai Huhuibao (沪惠保)             |\n+--------------------------------------------------------------------------------------------------+\n```\n\n### 2.1 Commercial Supplemental Medical Insurance Architecture\n\n#### Million-Yuan Medical Insurance (百万医疗险)\n* **Core Specifications:** Provides RMB 2,000,000 to RMB 4,000,000 in annual coverage for hospitalization and critical medical procedures [7, 9].\n* **Guaranteed Renewal Terms:** Leading market products offer a **20-year guaranteed renewal window**, protecting against policy cancellation due to health deterioration or claim history [7, 9]. Benchmark products include:\n  * *Pacific Health \"Lan Yi Bao\" (蓝医保)* [7]\n  * *PICC Health \"Jin Yi Bao\" (金医保)* [7]\n  * *Ping An \"e-Sheng Bao 20-Year Version\" (e生保)*\n  * *Ant Financial / Taikang \"Hao Yi Bao 20-Year Version\" (好医保)* [7]\n* **Deductibles & Special Drugs:** Features a standard RMB 10,000 annual deductible for general hospitalization (RMB 0 deductible for critical illness). Includes 100% reimbursement for **120+ out-of-hospital cancer specialty drugs (特药)** and advanced therapies such as **CAR-T Cell Therapy** with pharmacy direct settlement (药房直付) [7].\n\n#### Shanghai Huhuibao (沪惠保) Integration Strategy\n* **Shanghai Huhuibao:** Government-guided inclusive medical policy priced at RMB 129/year, featuring no health underwriting and coverage for pre-existing conditions (既往症) at slightly reduced payout ratios [8].\n* **Execution Strategy:** Liu Lu should maintain a **20-Year Guaranteed Renewal Million-Yuan Policy** as her primary defense [7, 8]. Huhuibao should be purchased for her retired parents in Hefei/Shanghai using her Shanghai Basic Medical Insurance Personal Account balance (医保个人账户余额), bypassing health underwriting constraints for older family members [8].\n\n#### High-End Medical Insurance (高端医疗险)\n* **Direct Billing (直付 Settlement):** Managed via Third-Party Administrators (TPAs) like MSH China, Bupa, and Cigna. Medical bills are settled directly between insurer and medical institution [10, 12].\n* **Target Shanghai Facilities:** Private/International institutions including **Shanghai Jiahui International Hospital (上海嘉会国际医院)** [10, 11], **Shanghai United Family Hospital (和睦家医院)** [10, 12], and VIP/International Departments of Grade 3A Public Hospitals (e.g., Huashan, Ruijin, Zhongshan Hospitals).\n* **Cost-Benefit for Data Analyst Profile:** A full high-end plan costs ~RMB 10,000–22,000/year at age 25–30 [10, 12]. A **Mid-End / Light High-End Plan** (~RMB 3,000–6,000/year) covering Grade 3A Public VIP Departments provides optimal efficiency during early career years.\n\n#### Critical Illness Insurance (重疾险)\nProvides a lump-sum cash payout upon diagnosis of major illnesses (e.g., RMB 500,000 sum assured).\n* *Term Critical Illness (to age 70):* Costs ~RMB 2,000–3,500/year; provides high income replacement during peak career years.\n* *Whole Life Critical Illness:* Costs ~RMB 5,000–7,500/year; provides guaranteed lifetime coverage.\n\n### 2.2 Shanghai Public LTCI vs. Commercial LTCI & Eldercare Integration\n\n```\n                 PUBLIC VS. COMMERCIAL LONG-TERM CARE INSURANCE (LTCI)\n+----------------------------------+--------------------------------------------------+\n|   Shanghai Public LTCI (长护险)  |         Commercial LTCI / Eldercare Link         |\n+----------------------------------+--------------------------------------------------+\n| • Requires Level 2-6 Disability  | • Triggered by 3+ ADL Loss / Cognitive Failure   |\n| • Subsidizes 1-1.5 hrs/day basic | • Pays fixed monthly cash nursing allowances     |\n|   home/community nursing care    | • Total premium RMB 1.0M-2.0M unlocks guaranteed |\n| • Basic protection layer         |   entry rights to premium eldercare communities  |\n+----------------------------------+--------------------------------------------------+\n```\n\n#### Shanghai Public Long-Term Care Insurance (上海长护险)\n* **Eligibility:** Participants in Shanghai Employee or Resident Basic Medical Insurance.\n* **Assessment Framework:** Disability is assessed on a scale from **Level 1 to Level 6 (失能等级 1-6 级)**. Reaching **Level 2 or above** qualifies individuals for subsidized home-based care (居家护理: 1–1.5 hours per visit) or institutional nursing care.\n* **Limitations:** Public LTCI covers basic nursing tasks (~80%–90% reimbursement of capped daily rates). It does not cover private nursing aides, specialized dementia wards, or private retirement facilities.\n\n#### Commercial LTCI & Retirement Community Integration\n* **Payout Triggers:** Payouts are triggered by the inability to perform **3 or more of 6 Activities of Daily Living (ADLs)** (eating, dressing, bathing, toileting, transferring, continence) or severe cognitive impairment (e.g., Alzheimer's disease measured via CDR/MMSE scores).\n* **Retirement Community Admission Rights (养老社区入住权):**\n  Accumulating cumulative premiums into care annuities or commercial insurance unlocks **Guaranteed Entry Rights (保证入住权)** for top-tier retirement communities in Shanghai and the Yangtze River Delta:\n  * **Taikang Community (泰康之家 - 申园/锦绣府):** RMB 1.5 million – 2.0 million cumulative premium threshold.\n  * **Pacific Insurance (太保家园):** RMB 1.0 million – 1.5 million cumulative premium threshold.\n  * **Ping An (平安臻颐年 / 颐年城):** RMB 1.0 million – 10.0 million cumulative premium threshold.\n  * **Taiping Insurance (太平梧桐人家):** RMB 1.0 million – 1.5 million cumulative premium threshold.\n\n*Strategic Application:* Securing a care annuity policy in early-to-mid career locks in entry rights for Liu Lu's retiring parents in the short term, while reserving long-term residential care rights for herself.\n\n### 2.3 Four-Phase Life-Stage Protection Roadmap\n\nFollowing statutory retirement age reforms that delay female management/technical employee retirement to **age 58–60** [13, 14, 15], protection priorities adapt across four life stages:\n\n```\nAge 25-30: Foundation Build  ---> Age 30-45: Wealth Consolidation ---> Age 45-58: Pre-Retirement ---> Age 60+: Decumulation\n(Million Medical + Pension)     (High-End Medical + Annuity Lock)    (De-risking + LTCI Lock)      (Pillared Cash Flow)\n```\n\n| Life Stage | Core Priorities | Product Selection & Allocations | Estimated Annual Cost | Eldercare & Rider Recommendations |\n| :--- | :--- | :--- | :--- | :--- |\n| **Phase 1: Foundation** <br> *(Ages 25–30)* | Capital preservation, emergency liquidity, foundational health safety net | • 20-Year Guaranteed Renewal Medical [7] <br> • Term Critical Illness (RMB 500k to age 70) <br> • Max Pillar 3 Personal Pension (RMB 12k/yr) [4] | RMB 2,500 – 7,500 / year | Add CAR-T & external drug riders [7]. Enroll parents in Shanghai Huhuibao using medical personal account [8]. |\n| **Phase 2: Consolidation** <br> *(Ages 30–45)* | Salary peak utilization, locking long-term yields, family protection | • Upgrade to Mid/High-End Medical [10] <br> • 2.5% Commercial Annuity (RMB 36k-60k/yr) [2] <br> • Max Pillar 3 Personal Pension [4] | RMB 45,000 – 80,000 / year | Lock in Guaranteed Entry Rights at Taikang/Pacific Home for parents. Add shared family deductibles. |\n| **Phase 3: Transition** <br> *(Ages 45–58/60)* [13] | De-risking, caregiving funding, pension sync | • Transition to short-duration pure bonds <br> • Commercial LTCI Policy <br> • Synchronize annuity payout start date to age 58/60 [13] | RMB 30,000 – 60,000 / year | Utilize Shanghai Public LTCI for aging parents (Level 2+ assessment). Lock in private LTCI care riders. |\n| **Phase 4: Decumulation** <br> *(Ages 60+)* | Tax-efficient cash flow execution, longevity protection | • Payout waterfall execution <br> • LTCI monthly cash allowance claims <br> • Medical reimbursement via guaranteed policy [7] | Covered by accumulated capital & basic insurance | Transition to integrated retirement community or utilize public + commercial home nursing care. |\n\n---\n\n## Section 3: Dynamic Allocation Strategies Across Economic Cycles & Inflation Hedging\n\n```\n                          DYNAMIC ECONOMIC CYCLE ALLOCATION MATRIX\n+--------------------------------------------------------------------------------------------------+\n| DEFLATION / LOW YIELD CYCLE                                                                       |\n| Focus: Duration Lock-in | Strategy: Maximize Commercial Annuities (2.5%), Pure Bonds, Treasuries   |\n+--------------------------------------------------------------------------------------------------+\n| ECONOMIC EXPANSION CYCLE                                                                         |\n| Focus: Capital Growth   | Strategy: High-Dividend Equity Funds, Target-Date Y-Shares, Bank Wealth |\n+--------------------------------------------------------------------------------------------------+\n| INFLATIONARY CYCLE                                                                               |\n| Focus: Purchasing Power | Strategy: Gold ETFs, Commodity REITs, Floating-Rate Wealth Management   |\n+--------------------------------------------------------------------------------------------------+\n```\n\n### 3.1 Macroeconomic Cycle Adjustment Pathways\n\n1. **Low Interest Rate / Deflationary Environment (\"Japanification\" Scenario):**\n   * *Macro Context:* Benchmark 10-year Central Government Bond yields remain suppressed (~1.6%–2.1%), and bank deposit rates face downward adjustments.\n   * *Tactical Shift:* Maximize allocation to locked-in long-term instruments (Commercial Annuities at 2.5% pricing rate [2], Increasable Life, and 5-year Treasury Bonds). Duration extension protects capital against reinvestment yield drop.\n2. **Economic Expansion Cycle:**\n   * *Macro Context:* Corporate earnings recover, equity markets rally, and interest rates normalize.\n   * *Tactical Shift:* Shift flexible incremental cash flows toward high-dividend equity funds (红利策略基金), bank wealth management, and growth-oriented Y-share Target-Date Funds within the Personal Pension account.\n3. **Inflationary Cycle / Rate Shock:**\n   * *Macro Context:* CPI spikes, eroding real purchasing power.\n   * *Tactical Shift:* Allocate a 5%–10% defensive sleeve into inflation-hedging real assets, including Gold ETFs, Treasury Inflation-Protected instruments, REITs, and floating-rate financial products.\n\n### 3.2 Mitigating Healthcare Inflation & Demographic Aging Pressures\n\n* **Healthcare Inflation Spread:** While standard headline CPI averages ~1.5%–2.0% annually, healthcare and caregiving inflation historically runs significantly higher at **4.5%–6.0% per annum** due to biomedical advancement and rising domestic care labor costs.\n* **Structural Hedging Engine:**\n\n```\n                        HEALTHCARE INFLATION HEDGING ENGINE\n                        \n   Medical Cost Inflation (4.5% - 6.0% p.a.)\n                     |\n                     v\n   +--------------------------------------------------------------------+\n   | High-Cap Medical Reimbursement (Million Medical / High-End)        |\n   | Fully absorbs hospital inflation by covering actual medical bills   |\n   +--------------------------------------------------------------------+\n                     +\n   +--------------------------------------------------------------------+\n   | Compounding Cash Annuity & Commercial LTCI Cash Allowance           |\n   | Offsets daily non-medical inflation & caregiving wage overhead      |\n   +--------------------------------------------------------------------+\n```\n\n---\n\n## Section 4: Quantitative Decumulation Model & Sensitivity Analysis\n\n### 4.1 Accumulation & Decumulation Mathematical Framework\n\nTo achieve a target **60%–70% Income Replacement Rate** relative to pre-retirement net income, the quantitative model evaluates accumulation and decumulation mechanics over a 30-year post-retirement horizon (Ages 60 to 90).\n\n#### Accumulation Phase Formula ($A_T$):\n$$A_T = \\sum_{t=1}^{N} C_t \\times (1 + r)^{N-t}$$\n\nWhere:\n* $A_T$ = Total accumulated capital at retirement (Age 60).\n* $C_t$ = Net annual savings invested across pension pillars.\n* $r$ = Weighted average nominal annual portfolio yield during accumulation (~3.0% conservative estimate).\n* $N$ = Years to retirement ($60 - \\text{Current Age} \\approx 30 \\text{ years}$).\n\n#### Decumulation Required Reserve Formula ($PV_{decum}$):\n$$PV_{decum} = \\sum_{k=1}^{30} \\frac{E_{living} \\cdot (1+i_g)^k + E_{med} \\cdot (1+i_m)^k}{(1 + r)^k} - PV_{Pillar1}$$\n\nWhere:\n* $E_{living}$ = Base living expenses in Year 1 of retirement.\n* $E_{med}$ = Base non-reimbursable medical/care expenses in Year 1.\n* $i_g$ = General CPI inflation rate (~1.5%–2.0%).\n* $i_m$ = Healthcare/caregiving inflation rate (~4.5%–5.5%).\n* $PV_{Pillar1}$ = Present value of expected Shanghai Basic Social Security Pension payouts.\n\n### 4.2 Decumulation Sensitivity Matrix & Replacement Rate Simulation\n\nAssuming a target post-retirement monthly cash flow requirement of **RMB 12,000/month** (in real inflation-adjusted terms) to maintain living standards in Shanghai:\n\n```\n                            REQUIRED CAPITAL RESERVES AT AGE 60\n                            \n   Real Annual Yield: 2.0%  ----------------------------> RMB 3.12 Million\n   Real Annual Yield: 1.0%  ----------------------------------------> RMB 3.58 Million\n   Real Annual Yield: 0.0%  ---------------------------------------------------> RMB 4.32 Million\n```\n\n#### Capital Sensitivity to Real Portfolio Yields & Longevity Horizons:\n\n| Real Annual Yield ($r_{real} = r - i_g$) | Longevity Horizon: Age 90 <br> *(30-Year Decumulation)* | Longevity Horizon: Age 95 <br> *(35-Year Decumulation)* | Capital Buffer Needed for Longevity Extension (+5 Yrs) |\n| :--- | :--- | :--- | :--- |\n| **2.0% Real Yield** | **RMB 3,120,000** | **RMB 3,510,000** | +RMB 390,000 (+12.5%) |\n| **1.0% Real Yield** | **R",
+  "research_brief": "I am a 25-30-year-old female data analyst residing in Shanghai with a background in statistics and a conservative risk appetite (preferring low-risk, fixed-income products, government bonds, and systematic investment plans). I am seeking a comprehensive 30-year retirement security plan designed for my profile within the context of the Chinese insurance and financial market. The plan must integrate three core components: annuity insurance, supplemental medical insurance, and long-term care services/insurance, supported by clear dynamic allocation strategies. Specifically, the research should investigate: 1) Concrete protection measures and investment/insurance product recommendations across the three pillars (annuity, commercial supplemental medical insurance like million-yuan or high-end medical policies, and long-term care services/insurance); 2) Detailed dynamic allocation strategies and adjustment pathways across different economic cycles (growth, recession, stability), detailing how to adjust coverage amounts, asset allocation ratios, and risk mitigation tactics in response to inflation, rising healthcare costs, and population aging; 3) Life-stage specific action plans mapping out key transitions from my current age (25-30) through pre-retirement accumulation and post-retirement decumulation/care stages. Note that my exact income, monthly savings amount, and precise target retirement age (e.g., age 55 vs 60) are open-ended/unspecified, so please provide clear modular assumptions or tiered models. Prioritize official regulatory disclosures (e.g., NFRA/CBIRC), official insurance company product prospectuses, reputable financial/actuarial research papers, and primary financial institution databases.",
+  "research_topics": [
+    {
+      "topic_id": "topic_001",
+      "topic_text": "Investigate annuity insurance, individual pension accounts (个人养老金), and conservative fixed-income investment products in the Chinese insurance and financial market tailored for a 25-30 year old female in Shanghai with a conservative risk profile. \n\nSpecifically research:\n1. Individual Pension System (个人养老金): 12,000 RMB annual tax-deferred quota, eligible products (pension target funds, pension insurance, specific wealth management products, savings products), tax benefits calculation for different income tiers in Shanghai.\n2. Commercial Annuity Insurance (养老年金险) and Increasable Whole Life Insurance (增额终身寿险): Current National Financial Regulatory Administration (NFRA / 原银保监会) regulatory cap on guaranteed pricing interest rates (e.g., historical 3.5% down to 3.0% and 2.5% pricing rate updates), actual IRR calculations, payout structures, cash value accumulation, and insurance company security mechanisms (Insurance Protection Fund 保险保障基金).\n3. Conservative Fixed Income & Low-Risk Investment Options: Chinese Government Bonds (国债), Large-denominated Certificates of Deposit (大额存单), and systematic investment plans (SIPs / 基金定投) focused on short-to-medium term bond funds or pure bond funds (纯债基金).\n4. Tiered Savings Assumptions / Modular Models: Construct 3 modular financial capability tiers (e.g., Entry-level monthly savings RMB 3,000-5,000; Mid-tier RMB 8,000-12,000; High-tier RMB 15,000+) detailing allocation into annuity products, personal pension, and government bonds/SIPs for a 25-30-year-old female target profile in Shanghai. Provide actual market examples and policy citations."
+    },
+    {
+      "topic_id": "topic_002",
+      "topic_text": "Investigate commercial supplemental medical insurance, long-term care insurance (LTCI), and eldercare service integration in the Chinese insurance market, specifically optimized for a 25-30 year old female professional residing in Shanghai.\n\nSpecifically research:\n1. Commercial Supplemental Medical Insurance:\n   - Million-Yuan Medical Insurance (百万医疗险): Key features, guaranteed renewal terms (e.g., 20-year guaranteed renewal policies like Ping An e-Sheng Bao, Taikang, Pacific Insurance), deductibles, out-of-pocket limits, coverage for special drugs (特药/抗癌药), and Shanghai Huhuibao (沪惠保) interaction.\n   - High-End Medical Insurance (高端医疗险): Direct billing (直付), private/international hospitals (e.g., Jiahui International, Shanghai United Family), global/Asia coverage, cost vs benefit comparison for mid-to-high income data analyst profile.\n   - Critical Illness Insurance (重疾险): Periodic vs life-long critical illness insurance, guaranteed payout vs medical expense reimbursement.\n2. Long-Term Care Insurance (LTCI / 长期护理保险):\n   - Shanghai Public LTCI Pilot (上海长护险): Eligibility, coverage levels (Disability level evaluation 失能等级评估), services covered, and limitations for urban employee basic medical insurance holders.\n   - Commercial Long-Term Care Insurance (商业长期护理保险): Current market offerings in China, payout triggers (ADL - Activities of Daily Living, cognitive impairment/dementia), and integration with retirement communities (养老社区对接门槛/入住资格).\n3. Comprehensive health protection matrix across young professional (25-30), mid-career (30-45), pre-retirement (45-55/60), and post-retirement phases in Shanghai, including premiums, policy selection, and rider recommendations."
+    },
+    {
+      "topic_id": "topic_003",
+      "topic_text": "Investigate dynamic asset allocation strategies across economic cycles and life-stage action plans for a 30-year retirement security model in China tailored to a conservative female data analyst starting at age 25-30 in Shanghai.\n\nSpecifically research:\n1. Dynamic Economic Cycle Allocation Pathways:\n   - Strategies across economic growth, recession/low-interest-rate environment, and inflationary cycles.\n   - How to dynamically adjust fixed-income ratios, annuity lock-ins, bond fund SIPs, and inflation-hedging instruments in China's current and projected macroeconomic environment (e.g., low yield era / Japanification vs potential inflation shocks).\n   - Mitigating healthcare inflation (typically higher than CPI) and aging demographic pressures.\n2. Life-Stage Specific Action Roadmap (4 Phases):\n   - Phase 1: Early Career Accumulation (Ages 25-30) - Core safety net, emergency fund, establishing annuity foundations and basic medical coverage.\n   - Phase 2: Wealth Consolidation & Peak Earnings (Ages 30-45) - Escalating personal pension contributions, adjusting protection coverage as salary increases, optimizing fixed income & annuity lock-ins.\n   - Phase 3: Pre-Retirement Transition (Ages 45-55/60) - De-risking strategies, consolidating cash flow streams, lock-in of long-term care insurance and guaranteed annuity start dates.\n   - Phase 4: Post-Retirement Decumulation & Long-Term Care (Ages 60+) - Structured payout sequencing (Social Security + Personal Pension + Commercial Annuity + Bond Income), managing longevity risk, healthcare and caregiving expense cash-flows.\n3. Quantitative framework / sensitivity analysis for decumulation and replacement rates (e.g. achieving 60-70% income replacement rate) based on conservative yield assumptions."
+    }
+  ],
+  "run_id": "ablation_nobrief_task22_User18_seed0",
+  "schema_version": "dra_trace_v2",
+  "search_trace": [
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "\"预定利率\" 2.5% 2.0% 国家金融监督管理总局 养老年金 增额终身寿险",
+      "query_id": "topic_001_query_001",
+      "sources": [
+        {
+          "domain": "pdf.dfcfw.com",
+          "link": "https://pdf.dfcfw.com/pdf/H3_AP202504231660998840_1.pdf",
+          "query": "\"预定利率\" 2.5% 2.0% 国家金融监督管理总局 养老年金 增额终身寿险",
+          "rank": 1,
+          "snippet": "资管新规重塑理财环境，监管调整预定利率水平，增额终身寿险在进入国内多年后 ... 下调，将普通型养老/长期年金预定利率由4.025%调整为3.5%；④2023 年 ...",
+          "title": "保险Ⅱ行业深度报告中国人身险产品变迁历史与 ..."
+        },
+        {
+          "domain": "word.baidu.com",
+          "link": "http://word.baidu.com/view/e3b8437e1ad9ad51f01dc281e53a580216fc50f7.html",
+          "query": "\"预定利率\" 2.5% 2.0% 国家金融监督管理总局 养老年金 增额终身寿险",
+          "rank": 2,
+          "snippet": "预定利率下调将重塑整个保险产品格局。以典型的增额终身寿险为例，30岁投保人一次性缴纳100万元，在2.5%预定利率下，保单第30年的现金价值约为253万元；若利率降至2.0%， ...",
+          "title": "2025年人身险预定利率调整全面解析：从2.5%到2.0%的市场变革"
+        },
+        {
+          "domain": "post.smzdm.com",
+          "link": "https://post.smzdm.com/p/ako6nr3k",
+          "query": "\"预定利率\" 2.5% 2.0% 国家金融监督管理总局 养老年金 增额终身寿险",
+          "rank": 3,
+          "snippet": "中国保险行业协会7 月25 日公告显示，普通型人身保险产品预定利率研究值降至1.99%，这是自2024 年1 月建立动态调整机制以来的首次下调。",
+          "title": "8 月31 日保险大限！全行业涨价30%？揭秘监管政策下的真相"
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "\"个人养老金\" 12000 个税 节税 计算 上海",
+      "query_id": "topic_001_query_002",
+      "sources": [
+        {
+          "domain": "paper.people.com.cn",
+          "link": "http://paper.people.com.cn/rmrbhwb/html/2023-01/17/content_25960188.htm",
+          "query": "\"个人养老金\" 12000 个税 节税 计算 上海",
+          "rank": 1,
+          "snippet": "余海波介绍，自己的收入水平适用个税税率为10%，“我准备第一年往个人养老金账户放够12000元，退休领取时，即使要做递延纳税，10%与3%之间也有7个百分点的税率差 ...",
+          "title": "给个人养老金税惠算算账 - 人民日报"
+        },
+        {
+          "domain": "www.21jingji.com",
+          "link": "https://www.21jingji.com/article/20250625/herald/3d98c030cc0b323f19bb36b3763d2852.html",
+          "query": "\"个人养老金\" 12000 个税 节税 计算 上海",
+          "rank": 2,
+          "snippet": "很多人可能还会疑惑：个人养老金虽然在购买时享受了税收优惠，但领取时还要按照3%计税。这“一来一回”，还划算吗？ 我们可以这么计算一下：假设纳税人目前适用 ...",
+          "title": "个人养老金领取按3%缴税，退休金无需缴税"
+        },
+        {
+          "domain": "www.cq.gov.cn",
+          "link": "https://www.cq.gov.cn/zwgk/zfxxgkml/zdlyxxgk/ylfw/ylzx/202506/t20250627_14755056.html",
+          "query": "\"个人养老金\" 12000 个税 节税 计算 上海",
+          "rank": 3,
+          "snippet": "“个人养老金在中间年份产生投资收益时，也暂时不用缴纳个税，直至最终领取时才缴纳。而且，在税率方面，个税税率有3%至45%七档超额累进税率，但个人养老金适用 ...",
+          "title": "领取养老金要缴3%个税？三个问题要弄清"
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "保险保障基金管理办法 救助限额 保单权益",
+      "query_id": "topic_001_query_003",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "大额存单 国债 纯债基金 收益率 2024 2025",
+      "query_id": "topic_001_query_004",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": true,
+      "failure_code": "no_new_sources",
+      "query": "\"金规〔2024〕12号\" OR \"关于健全人身保险产品定价机制的通知\" 2.5% 2.0%",
+      "query_id": "topic_001_query_005",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "\"保险保障基金管理办法\" 人身保险 90% 救助比例 保险法第92条",
+      "query_id": "topic_001_query_006",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "储蓄国债 利率 2024 2025 3年期 5年期 大额存单",
+      "query_id": "topic_001_query_007",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "纯债基金 长期年化收益率 业绩比较基准 2024 2025",
+      "query_id": "topic_001_query_008",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "健全人身保险产品定价机制的通知 2.5%",
+      "query_id": "topic_001_query_009",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "保险保障基金管理办法 救助比例 90%",
+      "query_id": "topic_001_query_010",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "储蓄国债利率 2024 2025 3年期",
+      "query_id": "topic_001_query_011",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "纯债基金 收益率 2024 2025",
+      "query_id": "topic_001_query_012",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "国家金融监督管理总局 预定利率 2.5% 2024",
+      "query_id": "topic_001_query_013",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_001"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "\"百万医疗险\" 保证续保20年 沪惠保 2024 2025",
+      "query_id": "topic_002_query_001",
+      "sources": [
+        {
+          "domain": "zhuanlan.zhihu.com",
+          "link": "https://zhuanlan.zhihu.com/p/1904653872112333089",
+          "query": "\"百万医疗险\" 保证续保20年 沪惠保 2024 2025",
+          "rank": 1,
+          "snippet": "到了今年，第二款带外购药的保证续保20年产品是复星联合的星相守。 ... 2025年百万医疗险哪家好？全网（蓝医保、金医保、好医保、微医保、安欣保 ...",
+          "title": "必看！2025年5月百万医疗险最值得买TOP榜单推荐，蓝医保 ..."
+        },
+        {
+          "domain": "pdf.hanspub.org",
+          "link": "https://pdf.hanspub.org/ecl_2314851.pdf",
+          "query": "\"百万医疗险\" 保证续保20年 沪惠保 2024 2025",
+          "rank": 2,
+          "snippet": "性)和商业健康保险(如百万医疗险、重疾险、防癌险、高端医疗险等，提供 ... 自2024 年4 月23 日“沪惠保”投保窗口正式开放以来，这款旨在为上海 ...",
+          "title": "数字金融对“沪惠保”发展的影响研究"
+        },
+        {
+          "domain": "cj.sina.com.cn",
+          "link": "https://cj.sina.com.cn/articles/view/7879922977/1d5ae152101901dvv2?froms=ggmp",
+          "query": "\"百万医疗险\" 保证续保20年 沪惠保 2024 2025",
+          "rank": 3,
+          "snippet": "... 2024升级版长期医疗险等。若介意到期后续保要审核，可考虑阶段性保证续保的百万医疗险。二、保障范围百万医疗险的保障责任一般包括住院医疗、特殊门诊、住院前后门急诊 ...",
+          "title": "百万医疗险选择"
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "高端医疗险 上海 嘉会 和睦家 中产 费率",
+      "query_id": "topic_002_query_002",
+      "sources": [
+        {
+          "domain": "zhuanlan.zhihu.com",
+          "link": "https://zhuanlan.zhihu.com/p/668495895",
+          "query": "高端医疗险 上海 嘉会 和睦家 中产 费率",
+          "rank": 1,
+          "snippet": "上海的私立医院资源丰富,而且大部分不算昂贵医院,买高医的话只需要基础计划就可以覆盖,保费便宜不少。 -17岁的价格都是12500元。 保费降低30%-50%。",
+          "title": "上海宝宝想去和睦家/嘉会等私立医院，买哪个高端医疗险？ ..."
+        },
+        {
+          "domain": "www.massgeneral.org",
+          "link": "https://www.massgeneral.org/cn/jiahui-cn",
+          "query": "高端医疗险 上海 嘉会 和睦家 中产 费率",
+          "rank": 2,
+          "snippet": "嘉会为患者提供完善的数字解决方案，一键访问一系列医疗服务、预约和管理自己的健康状况。嘉会还与上海的保险公司以及中国大多数主要的商业保险公司合作，提供保费直接结算 ...",
+          "title": "上海嘉会国际医院"
+        },
+        {
+          "domain": "shanghai.ufh.com.cn",
+          "link": "https://shanghai.ufh.com.cn/event/medical-insurance-and-integrated-high-end-medical-service-provider-join-forces-in-a-new-healthcare-model",
+          "query": "高端医疗险 上海 嘉会 和睦家 中产 费率",
+          "rank": 3,
+          "snippet": "根据被保险人的年龄段,和睦医疗保险费率范围为每人每年人民币10000元至35000元(1600至5700美元)不等,被保险人亦可以家庭为单位参保。",
+          "title": "医疗保险联手综合性高端医疗机构推出高端医疗保险的创新模式|"
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "上海长护险 申请条件 职工医保 年龄限制 失能等级评估",
+      "query_id": "topic_002_query_003",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "商业长护险 养老社区 总保费门槛 泰康 太保 平安",
+      "query_id": "topic_002_query_004",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "\"蓝医保\" \"金医保\" 免赔额 外购药 保证续保20年",
+      "query_id": "topic_002_query_005",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "高端医疗险 嘉会 和睦家 费率 25岁 30岁 女性",
+      "query_id": "topic_002_query_006",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "上海长护险 申请条件 年龄 评估等级 服务内容 报销比例",
+      "query_id": "topic_002_query_007",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "泰康之家 太保家园 养老社区 入住资格 保费门槛 保证入住权",
+      "query_id": "topic_002_query_008",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "蓝医保 金医保 特药 保证续保20年",
+      "query_id": "topic_002_query_009",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "上海 嘉会 和睦家 高端医疗险 费率 30岁",
+      "query_id": "topic_002_query_010",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "上海长护险 申请条件 评估等级 报销比例",
+      "query_id": "topic_002_query_011",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "泰康之家 太保家园 养老社区 入住门槛 保费",
+      "query_id": "topic_002_query_012",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "蓝医保 金医保 百万医疗险 保证续保20年",
+      "query_id": "topic_002_query_013",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_002"
+    },
+    {
+      "attempted": true,
+      "failure_code": "empty_organic",
+      "query": "\"China personal pension\" tax deduction 12000 Shanghai",
+      "query_id": "topic_003_query_001",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_003"
+    },
+    {
+      "attempted": true,
+      "failure_code": null,
+      "query": "China statutory retirement age reform 2025 female delayed retirement",
+      "query_id": "topic_003_query_002",
+      "sources": [
+        {
+          "domain": "english.scio.gov.cn",
+          "link": "http://english.scio.gov.cn/chinavoices/2025-01/02/content_117641102.html",
+          "query": "China statutory retirement age reform 2025 female delayed retirement",
+          "rank": 1,
+          "snippet": "1, 2025, while that for women cadres and women blue-collar workers will be raised from 55 to 58 and from 50 to 55, respectively. Starting 2030, ...",
+          "title": "China implements gradual retirement age increase to ..."
+        },
+        {
+          "domain": "www.hlc.com",
+          "link": "https://www.hlc.com/en/publications/statutory-retirement-age-reform-in-china",
+          "query": "China statutory retirement age reform 2025 female delayed retirement",
+          "rank": 2,
+          "snippet": "For female employees, the statutory retirement age will be raised from 50 to 55 years old for non-management positions, and from 55 to 58 years ...",
+          "title": "Statutory retirement age reform in China"
+        },
+        {
+          "domain": "www.china-briefing.com",
+          "link": "https://www.china-briefing.com/news/chinas-gradual-retirement-age-delay-to-tackle-demographic-shifts/",
+          "query": "China statutory retirement age reform 2025 female delayed retirement",
+          "rank": 3,
+          "snippet": "Starting from January 1, 2025, China will simultaneously begin delaying the statutory retirement age for both male and female employees.",
+          "title": "China's Gradual Retirement Age Delay to Tackle ..."
+        }
+      ],
+      "status": "ok",
+      "topic_id": "topic_003"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "China commercial annuity guaranteed interest rate cap 2.5 percent 2024 2025",
+      "query_id": "topic_003_query_003",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_003"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "Shanghai social security pension replacement rate conservative asset allocation",
+      "query_id": "topic_003_query_004",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_003"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "\"预定利率\" 2.5% 保险 2024 2025 养老金",
+      "query_id": "topic_003_query_005",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_003"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "\"个人养老金\" 节税 预定利率 3% 汇算清缴",
+      "query_id": "topic_003_query_006",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_003"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "\"上海\" 增额终身寿险 养老年金险 长期护理保险",
+      "query_id": "topic_003_query_007",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_003"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "China medical inflation rate vs CPI retirement planning",
+      "query_id": "topic_003_query_008",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_003"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "China insurance pre-assumed interest rate cap 2.5 percent",
+      "query_id": "topic_003_query_009",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_003"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "China personal pension tax incentive 12000 RMB 3 percent",
+      "query_id": "topic_003_query_010",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_003"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "China healthcare inflation rate medical inflation vs CPI",
+      "query_id": "topic_003_query_011",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_003"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "Shanghai long term care insurance pilot commercial insurance",
+      "query_id": "topic_003_query_012",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_003"
+    },
+    {
+      "attempted": false,
+      "failure_code": "report_query_cap_exceeded",
+      "query": "China insurance interest rate cap 2.5",
+      "query_id": "topic_003_query_013",
+      "sources": [],
+      "status": "failure",
+      "topic_id": "topic_003"
+    }
+  ],
+  "token_ledger": {
+    "elapsed_sec": 541.997,
+    "input_tokens": 177451,
+    "output_tokens": 38745,
+    "queries_attempted": 7,
+    "queries_failed": 2,
+    "queries_rejected": 32,
+    "queries_requested": 39,
+    "queries_successful": 5,
+    "query_ledger_consistent": true,
+    "search_adapter": {
+      "global_attempted_queries": 176,
+      "global_attempted_queries_at_start": 169,
+      "global_query_hard_stop": 2400,
+      "global_successful_queries": 133,
+      "global_successful_queries_at_start": 128,
+      "report_max_queries_per_call": 2,
+      "report_query_cap": 7,
+      "report_unique_url_cap": 15,
+      "run_id": "pilot_task22_User18_seed0",
+      "run_queries_attempted": 7,
+      "run_queries_failed": 2,
+      "run_queries_requested": 39,
+      "run_queries_successful": 5,
+      "run_sources_selected": 15,
+      "run_unique_urls": 15
+    },
+    "source_ledger_consistent": true,
+    "sources_selected": 15,
+    "token_usage_events": 24,
+    "total_tokens": 216196,
+    "unique_sources": 15
+  },
+  "write_only_meta": {
+    "condition": "nobrief",
+    "source_run_id": "pilot_task22_User18_seed0",
+    "prompt_sha256": "db73834b1c7f33fe44ef77f83f3a3b539d76bb153f2d2efbd9ad0b5f3b9486d9",
+    "prompt_chars": 83668,
+    "generation": {
+      "latency_sec": 40.568,
+      "usage_metadata": {
+        "input_tokens": 34547,
+        "output_tokens": 8188,
+        "total_tokens": 42735,
+        "input_token_details": {
+          "cache_read": 0
+        },
+        "output_token_details": {
+          "reasoning": 2276
+        }
+      },
+      "model": "google_genai:gemini-3.6-flash"
+    },
+    "original_final_report_sha256": "279dbcd609bc4a7ee7fa914151bdf3562e02b1e16bee3f9c2e9ee0d3ef401a96",
+    "new_final_report_sha256": "019c6a1b5fcee56016b25ffb39233e88ef7616d42447f5d35c23fd8be9ebb36d",
+    "new_final_report_chars": 22522
+  }
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task4_User19_seed0",
+    "stage": "plan",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "Candidate C (Zhou Jun) is a 35-40-year-old Supply Chain Manager based in Chengdu with a bachelor's degree in Logistics Management from Southwest Jiaotong University\u2014directly matching the document's author profile. The document's focus on executive education for leadership advancement, supply chain specialization, and balancing family responsibilities aligns with Candidate C's career background, pragmatic decision-making style, and family dynamics (married with a 6-year-old daughter). His preferences for eco-friendly consumption, domestic travel, and self-learning in supply chain optimization mirror the document's emphasis on practical ROI, regional program comparisons (Chengdu/Southwest China), and skill-gap bridging. Candidates A (data analyst) and B (marketing manager) lack the supply chain expertise and regional context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25006,
+    "latency_sec": 2.2,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5255,
+    "output_tokens": 186,
+    "total_tokens": 5441,
+    "api_response_id": "ad728a25-882a-456e-bc78-5e04db5872da"
+  },
+  {
+    "run_id": "pilot_task4_User19_seed0",
+    "stage": "search",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User19",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses heavily on MBA/EMBA programs in Sichuan (Sichuan University, UESTC) and supply chain management (MIT SCM, ASU WP Carey, NUS MSc Supply Chain Analytics), with detailed tuition and admission data. Candidate B, a Supply Chain Manager based in Chengdu, aligns perfectly: his occupation, location (Chengdu), and interest in supply chain optimization (evident in his article preferences and career background) make this content directly relevant. Candidate A (marketing-focused in Shanghai) and Candidate C (data analyst) lack the geographic and professional ties to Sichuan-based supply chain programs, making B the clear match.",
+    "model": "solar-pro",
+    "prompt_chars": 25999,
+    "latency_sec": 1.62,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5740,
+    "output_tokens": 155,
+    "total_tokens": 5895,
+    "api_response_id": "49679f98-8c24-4f3b-b1e4-429328cae950"
+  },
+  {
+    "run_id": "pilot_task4_User19_seed0",
+    "stage": "compress",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on MBA/EMBA programs in Southwest China (Chengdu-based schools like Sichuan University, UESTC, SWJTU) with emphasis on supply chain management, logistics, and tuition formats. Candidate C, a Supply Chain Manager based in Chengdu with a logistics background, aligns perfectly with the document's regional focus, industry specialization, and practical concerns (tuition costs, program structure). The queries about 'supply chain Chengdu' and 'logistics supply chain MBA' directly match his professional interests, unlike Candidates A (marketing-focused in Shanghai) or B (data analyst with no supply chain ties).",
+    "model": "solar-pro",
+    "prompt_chars": 26135,
+    "latency_sec": 1.6,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 6016,
+    "output_tokens": 151,
+    "total_tokens": 6167,
+    "api_response_id": "95788e2a-b38d-4e7e-a1cc-2a37950dfe9d"
+  },
+  {
+    "run_id": "pilot_task4_User19_seed0",
+    "stage": "write",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document is explicitly tailored for a 35\u201340-year-old Supply Chain Manager in Chengdu with an undergraduate degree in Logistics Management from Southwest Jiaotong University, balancing family life (married with a 6-year-old child). Candidate B matches all these attributes: same occupation, age range, educational background, hometown (Sichuan), and family status. The report\u2019s focus on Chengdu-based programs, employer recognition, and ROI aligns with B\u2019s pragmatic, efficiency-driven personality and his role in supply chain management. Candidates A (data analyst in Shanghai) and C (marketing manager in Shanghai) lack the supply chain expertise, Chengdu residency, and regional educational context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 26137,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5508,
+    "output_tokens": 165,
+    "total_tokens": 5673,
+    "api_response_id": "f1abf0f3-0ff3-4506-8cbb-44f5574418b5"
+  }
+]

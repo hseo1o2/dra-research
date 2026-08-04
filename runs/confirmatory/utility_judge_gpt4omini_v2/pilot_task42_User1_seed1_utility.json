@@ -1,0 +1,44 @@
+{
+  "run_id": "pilot_task42_User1_seed1",
+  "gt_userid": "User1",
+  "domain": "Law",
+  "taskid": 42,
+  "seed": 1,
+  "prompt_chars": 18852,
+  "report_chars": 32101,
+  "stage_attribution": {
+    "plan": {
+      "correct": true,
+      "predicted_userid": "User1"
+    },
+    "search": {
+      "correct": true,
+      "predicted_userid": "User1"
+    },
+    "compress": {
+      "correct": true,
+      "predicted_userid": "User1"
+    },
+    "write": {
+      "correct": false,
+      "predicted_userid": "User4"
+    },
+    "pattern": "write_wrong_other"
+  },
+  "write_correct": false,
+  "pattern": "write_wrong_other",
+  "rubric_version": "v2",
+  "status": "completed",
+  "content_personalization": 3,
+  "presentation_personalization": 4,
+  "mean_personalization": 3.5,
+  "content_evidence": "The report outlines specific compliance requirements under GDPR, CCPA, and PIPL, which are crucial for Li Chen's AI application project, addressing his need for detailed legal frameworks and implementation plans.",
+  "presentation_evidence": "The report uses a structured format with clear headings and tables, making it accessible for an undergraduate student like Li Chen, while maintaining a professional tone that balances technical detail with clarity.",
+  "reasoning": "The content is tailored to the user's project needs, providing relevant legal frameworks, but lacks deeper insights into practical implementation for a student level. The presentation is well-structured and clear, making it suitable for Li Chen's academic background.",
+  "latency_sec": 2.231,
+  "input_tokens": 3882,
+  "output_tokens": 146,
+  "total_tokens": 4028,
+  "api_response_id": "chatcmpl-E9B8XSI4SQKOdh4sGQdKDqWNnM3HQ",
+  "model": "gpt-4o-mini"
+}

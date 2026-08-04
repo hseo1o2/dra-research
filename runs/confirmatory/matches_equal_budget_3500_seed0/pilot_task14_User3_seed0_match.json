@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task14_User3_seed0",
+    "stage": "plan",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User3",
+      "User1",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User1",
+      "User3",
+      "User5"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User3",
+    "correct": true,
+    "reasoning": "Candidate B (Zhou Kai) is the best match. The document emphasizes a budget-friendly, flexible, and injury-preventive marathon plan for a beginner with limited time and resources\u2014aligning with B's pragmatic, frugal personality (e.g., 'prioritizes cost-effectiveness,' 'rational consumer') and his rural upbringing that values resourcefulness. The plan\u2019s focus on campus parks and botanical gardens matches B\u2019s frequent visits to Chengdu\u2019s botanical gardens for relaxation. Unlike A (tech-focused, high-end gear) or C (cycling-centric, graduate-level rigor), B\u2019s exercise habits (jogging, ping-pong) and stress-relief goals mirror the document\u2019s emphasis on sustainable, low-impact training. Additionally, B\u2019s tight academic schedule and reliance on campus facilities directly align with the user\u2019s constraints.",
+    "model": "solar-pro",
+    "prompt_chars": 23561,
+    "latency_sec": 2.28,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 4928,
+    "output_tokens": 197,
+    "total_tokens": 5125,
+    "api_response_id": "91a28055-9d16-42cc-90b6-06a58a4683c0"
+  },
+  {
+    "run_id": "pilot_task14_User3_seed0",
+    "stage": "search",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User3",
+      "User1",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User1",
+      "User5",
+      "User3"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User3",
+    "correct": true,
+    "reasoning": "The document focuses on beginner-friendly marathon training plans, dynamic warm-up routines, run/walk ratios, and budget-friendly electrolyte recipes\u2014topics aligned with practical, cost-effective fitness strategies. Candidate C, a mechanical engineering student from a rural background, values frugality, hands-on problem-solving, and self-guided learning. His exercise habits (jogging, ping-pong), preference for budget accommodations, and interest in DIY solutions (e.g., homemade electrolyte drinks) directly mirror the document's emphasis on accessibility, affordability, and gradual skill-building. Unlike Candidates A (tech-focused) and B (cycling-centric), Candidate C\u2019s pragmatic, resource-conscious approach to fitness and daily life makes him the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 24779,
+    "latency_sec": 2.07,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5323,
+    "output_tokens": 169,
+    "total_tokens": 5492,
+    "api_response_id": "fd945807-48a0-452e-80c0-cffebd1e8a99"
+  },
+  {
+    "run_id": "pilot_task14_User3_seed0",
+    "stage": "compress",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User3",
+      "User1",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User1",
+      "User3"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User3",
+    "correct": true,
+    "reasoning": "The document focuses on a budget-friendly, structured 12-week marathon training plan for beginners, emphasizing cost-effective nutrition, injury prevention, and the Galloway run/walk method. Candidate C, a rural-born mechanical engineering student from a frugal farming family, aligns best with this content. His pragmatic personality, emphasis on cost-effectiveness (e.g., DIY electrolyte recipes), and interest in hands-on problem-solving (e.g., injury prevention exercises) mirror the document's practical, resource-conscious framing. Unlike Candidates A (focused on cycling and academic rigor) and B (interested in tech and basketball), Candidate C\u2019s rural upbringing, frugal habits, and preference for self-guided, low-cost activities (e.g., jogging, ping-pong) directly align with the document\u2019s audience: a budget-conscious beginner seeking a sustainable, injury-aware marathon plan.",
+    "model": "solar-pro",
+    "prompt_chars": 25860,
+    "latency_sec": 1.95,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5756,
+    "output_tokens": 201,
+    "total_tokens": 5957,
+    "api_response_id": "1258e079-046e-41e3-be68-8da937d71857"
+  },
+  {
+    "run_id": "pilot_task14_User3_seed0",
+    "stage": "write",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User3",
+      "User1",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User3",
+      "User5",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User3",
+    "correct": true,
+    "reasoning": "The document emphasizes a 12-week marathon training program tailored for an undergraduate student in Chengdu, balancing academic commitments with injury prevention. Candidate A is a mechanical engineering undergraduate in Chengdu, adheres to a strict academic schedule, and prioritizes frugality and practicality. The program's focus on campus-based training (e.g., botanical garden runs, dorm-room prehab) aligns with A's routine and campus-centric lifestyle. Additionally, the document's emphasis on conservative progression and safety mirrors A's cautious, hands-on problem-solving approach. Candidates B and C, while academically focused, are graduate students (B) or computer science majors (C) with different exercise habits (cycling, basketball) and less direct alignment with the rural-influenced pragmatism and Chengdu-specific context of the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25862,
+    "latency_sec": 1.8,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5607,
+    "output_tokens": 188,
+    "total_tokens": 5795,
+    "api_response_id": "c9773920-ce3f-4b70-97c2-d7cccdc5b95e"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "plan",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User22",
+      "User25"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User17",
+    "correct": true,
+    "reasoning": "Candidate A (Chen Fang) is a 45-50-year-old head nurse in Beijing with two children (high school and college-aged) and elderly family members (husband and pet cat). The document\u2019s focus on a multi-generational beach vacation aligns with her family structure, emphasizing accessibility for seniors, comfort, and activities for teenagers. Her preference for high-quality, clean accommodations, local cuisine, and balanced itineraries matches the document\u2019s emphasis on health-conscious dining, family-friendly lodging, and age-appropriate activities. Additionally, her background in Suzhou (Jiangnan water towns) and affinity for traditional Chinese cuisine resonate with the suggested domestic coastal destinations like Qingdao and Xiamen. Candidate B (Ma Jianping) prioritizes tech and practicality, while Candidate C (Li Xiuying) focuses on frugality and eco-tourism, neither of which directly align with the document\u2019s emphasis on comfort, service quality, and multi-generational appeal.",
+    "model": "solar-pro",
+    "prompt_chars": 23395,
+    "latency_sec": 2.41,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5000,
+    "output_tokens": 223,
+    "total_tokens": 5223,
+    "api_response_id": "2dff322c-4443-4bda-a627-e7ff49866b44"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "search",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User25",
+      "User17"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The document focuses on summer travel in Chinese coastal cities (Qingdao, Weihai, Dalian, Xiamen, Sanya) with emphasis on climate, typhoon risks, and family-friendly accessibility (e.g., train/flight times, hotel amenities). Candidate B, a retired 65-70-year-old woman, aligns best: she prioritizes family travel (with her husband and grandson), values cost-effective yet comfortable accommodations, and shows interest in domestic destinations with natural/historical appeal. Her recent focus on hot springs and eco-tourism matches the document's seasonal travel theme. Candidates A (tech-focused, prefers self-guided urban tours) and C (prioritizes pet-friendly destinations) lack the document's emphasis on multi-generational family planning and climate considerations.",
+    "model": "solar-pro",
+    "prompt_chars": 25618,
+    "latency_sec": 2.23,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5770,
+    "output_tokens": 183,
+    "total_tokens": 5953,
+    "api_response_id": "922fbda6-4abd-4424-9320-1016989aa1ad"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "compress",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User22",
+      "User25"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The document focuses on senior-friendly travel considerations (transportation convenience, climate risks, family vacation suitability) and emphasizes practical, family-oriented planning. Candidate C (65-70, retired, travels 2-3x/year with husband/grandson) aligns best: her profile highlights prioritization of comfort, safety, and accessibility in travel, monthly pet care expenses (Shiba Inu), and domestic trips to natural/historical sites. The document's emphasis on train accessibility (low-stress transfers for seniors) and climate analysis (typhoon risks, sea temperatures) directly matches her age group's needs and her recent interest in hot spring vacations. Candidates A (45-50, nurse with young children) and B (50-55, tech director) lack the same senior-specific mobility constraints and multi-generational travel focus.",
+    "model": "solar-pro",
+    "prompt_chars": 25621,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5677,
+    "output_tokens": 196,
+    "total_tokens": 5873,
+    "api_response_id": "42214eb6-99bb-4888-a53d-725c81db4678"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "write",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The document focuses on multi-generational travel planning, emphasizing senior accessibility, family comfort, and balanced activity options. Candidate B (Li Xiuying) is a retired senior (65-70) with a grandson, prioritizing family travel, health, and destinations with natural/historical appeal. Her profile highlights frequent domestic travel (2-3x/year), preference for self-guided tours with flexibility, and interest in eco-tourism/hot springs\u2014aligning with the report's emphasis on Shandong's accessibility, climate, and multi-generational appeal. Unlike Candidate A (45-50, nurse with teens) or C (50-55, engineer with adult children), B's age, family structure (including elderly and young), and travel preferences directly mirror the document's target audience and priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 25623,
+    "latency_sec": 1.83,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": 3500,
+    "input_tokens": 5644,
+    "output_tokens": 190,
+    "total_tokens": 5834,
+    "api_response_id": "5fc38f94-ddc0-4af8-820b-c7ef265dddbc"
+  }
+]
