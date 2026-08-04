@@ -87,7 +87,7 @@ multi-step, long-form report generation conditioned on rich personas (identity
 plus actionable preferences).
 Industry deep-research systems similarly emphasize multi-step search and
 synthesis~\cite{openai2025deepresearch,google2024gemini-deepresearch}, yet
-evaluation still centres on final reports.
+evaluation still centers on final reports.
 These settings largely lack stage-level diagnostics of \emph{where} persona
 conditioning remains recoverable inside the pipeline---the gap we address
 with closed-set N-way stage-wise attribution.
@@ -103,7 +103,7 @@ inference raises dual-use privacy
 concerns~\cite{pan2020privacy}.
 Mechanistic work further localizes factual associations inside model
 components~\cite{geva2021transformer,meng2022locating}; we share the
-\emph{where is the information?} question, but localizerecoverability across
+\emph{where is the information?} question, but localize recoverability across
 \emph{pipeline stages and artifacts} rather than weights or activations.
 Closest to our task, \citet{authormap} propose \emph{comparative
 personalization} for multi-document summarization as pairwise preference
@@ -436,7 +436,7 @@ We therefore treat \emph{absolute} hard-negative Acc@1 with caution and treat
 \emph{paired stage transitions} as the primary scientific target.
 Importantly, the same report keeps one candidate set across all stages, so a
 static prior cannot alone generate within-report stage changes.
-Table~\ref{tab:symmetric_candidates} summarises protocol and quality subsets.
+Table~\ref{tab:symmetric_candidates} summarizes protocol and quality subsets.
 Symmetric task-shared candidates lower absolute Acc (0.733/0.542/0.608/0.708)
 but preserve Planning$\to$Search ($-0.192$, CI excludes 0) and late recovery.
 Splitting by the candidate-only heuristic: \emph{prior-correct} ($n{=}54$) and
@@ -444,7 +444,7 @@ Splitting by the candidate-only heuristic: \emph{prior-correct} ($n{=}54$) and
 trajectory is not confined to prior-solvable reports.
 A strict-quality subset ($n{=}90$; all pre-defined success criteria) yields
 0.822/0.567/0.611/0.811, ruling out Search dip as a pure completeness/ledger
-artefact.
+artifact.
 Candidate construction affects absolute levels; it does not create the stage
 ordering.
 
@@ -570,12 +570,12 @@ chance-normalized Planning accuracy
 The Search artifact combines executed queries with retrieved titles/snippets
 and is the lowest-recoverability stage (32 Plan$\to$Search losses vs.\ 1 gain).
 A competing explanation is that Search is simply a different textual
-genre---queries and retrieved snippets---that structurally disfavours persona
+genre---queries and retrieved snippets---that structurally disfavors persona
 attribution regardless of conditioning loss.
 Two results argue against a pure genre effect: (i)~queries-only Acc@1
 (0.600) exceeds snippets-only (0.533) and full Search (0.550), so the
 query sub-artifact retains more signal than the combined artifact,
-and (ii)~an equal-budget rematch preserves the dip (\S\ref{sec:results}).
+and (ii)~an equal-budget rematch (seed~0, 3.5k chars for all stages) preserves the dip (\S\ref{sec:limitations}).
 Table~\ref{tab:search_views} gives per-seed detail. Cross-seed within-persona
 URL overlap (0.042) is near cross-persona overlap on the same query (0.034),
 so retrieved sets show little persona-specific discriminability by URL metrics.
@@ -948,7 +948,7 @@ User9  & User12 & Search      & 2 \\
 \section{Stage Accuracy by Domain}
 \label{app:domain}
 
-Figure~\ref{fig:domain_heatmap} visualises the full domain~$\times$~stage
+Figure~\ref{fig:domain_heatmap} visualizes the full domain~$\times$~stage
 accuracy matrix. Table~\ref{tab:domain_accuracy} gives the same data
 numerically.
 
@@ -1040,14 +1040,14 @@ Chegg/Khanmigo/Gauth case studies). Persona-specific founder constraints thin
 out; attribution flips to User8.
 
 \paragraph{Writing (correct $\to$ User18).}
-The final report re-centres the startup-execution plan and recovers User18.
+The final report re-centers the startup-execution plan and recovers User18.
 
 \section{Recovery vs.\ Non-Recovery Report Characteristics}
 \label{app:recovery}
 
 Of the 32 reports that are correct at Planning and wrong at Search,
 24 (75.0\%) recover to a correct Writing attribution and 8 do not.
-Table~\ref{tab:recovery_char} summarises the domain distribution.
+Table~\ref{tab:recovery_char} summarizes the domain distribution.
 The 8 non-recovered reports have a lower Compression accuracy (0.250)
 than the 24 recovered reports (0.375); with $n{=}8$ this is descriptive only.
 Non-recovered reports are spread across six domains; Creative (2/8) and Travel
@@ -1183,7 +1183,7 @@ The matcher is called with temperature 0 and a structured
 
 DRATracer is a LangGraph v2 event listener that captures all four pipeline
 artifacts deterministically from a single pipeline run and writes them as
-a \texttt{dra\_trace\_v2} JSON object. Table~\ref{tab:schema} summarises
+a \texttt{dra\_trace\_v2} JSON object. Table~\ref{tab:schema} summarizes
 the top-level fields.
 
 \begin{table}[!ht]
@@ -1219,7 +1219,7 @@ distractor personas from the same domain as follows.
 
 \begin{enumerate}
 \item \textbf{Actionable-token extraction.} Each persona profile is
-  tokenised (lowercased, whitespace-split) and identity-field tokens
+  tokenized (lowercased, whitespace-split) and identity-field tokens
   (name, age, occupation, education, residence, family) are removed,
   leaving the \emph{actionable token set}.
 \item \textbf{Jaccard similarity.} For each candidate persona $p_i \neq
@@ -1260,7 +1260,7 @@ matches the Search artifact seen by the matcher.
 \paragraph{Tokenisation.}
 Text is lowercased and split on \texttt{[a-z0-9]+}. Tokens of length
 $\le 2$ and a fixed English stopword list are removed. No stemming or
-lemmatisation is applied.
+lemmatization is applied.
 
 \paragraph{Actionable lexical retention.}
 Let $A_{p}$ be the actionable token set of persona $p$ after removing

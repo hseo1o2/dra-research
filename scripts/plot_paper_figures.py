@@ -347,15 +347,15 @@ def plot_domain_heatmap(
     cbar.ax.axhline(chance, color=MUTED, linewidth=0.9, linestyle="--")
 
     ax.set_title("Domain × stage attribution accuracy", loc="left",
-                 pad=6, fontweight="bold", fontsize=8.5)
-    ax.text(0, 1.02, f"Solar Pro · both seeds · $n=12$ per cell · chance = 0.333",
+                 pad=4, fontweight="bold", fontsize=8.5)
+    ax.text(0, 1.13, f"Solar Pro · both seeds · $n=12$ per cell · chance = 0.333",
             transform=ax.transAxes, color=MUTED, fontsize=5.8, ha="left", va="bottom")
 
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
     ax.tick_params(length=0)
 
-    fig.subplots_adjust(left=0.20, right=0.90, bottom=0.08, top=0.88)
+    fig.subplots_adjust(left=0.20, right=0.90, bottom=0.08, top=0.82)
     output_dir.mkdir(parents=True, exist_ok=True)
     outputs = [
         output_dir / f"{stem}.pdf",
