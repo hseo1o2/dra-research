@@ -319,7 +319,7 @@ Std.\ dev.\ of Acc@1 across seeds 0 and 1 as a fragility indicator.
 Table~\ref{tab:main_results} reports the controlled two-seed comparison
 between Solar Pro and three non-LLM baselines. Solar is strongest overall,
 but its advantage over BM25 is stage-dependent
-(Figure~\ref{fig:stage_trajectory}).
+(Table~\ref{tab:main_results}).
 
 \begin{table}[t]
 \centering
@@ -633,9 +633,9 @@ Snippets only & 0.483 & 0.583 & 0.533 \\
   \caption{Persona alignment of Planning briefs vs.\ executed Search queries
     ($n{=}120$). Left: lexical overlap of actionable tokens
     (0.068$\to$0.008). Right: MiniLM cosine similarity (0.269$\to$0.212).
-    Both drop at query execution. Critically, residual persona--query
-    similarity predicts Search accuracy: Search-correct runs retain higher
-    alignment than Search-wrong runs (0.236 vs.\ 0.182, CI $[0.019,0.088]$).}
+    Both drop at query execution. Residual persona--query similarity
+    separates Search-correct from Search-wrong runs
+    (0.236 vs.\ 0.182, CI $[0.019,0.088]$).}
   \label{fig:token_retention}
 \end{figure}
 
