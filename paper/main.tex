@@ -761,6 +761,9 @@ recover by Writing (trajectory 0.808/0.550/0.592/0.800).
 The shape holds under lexical baselines, a second matcher, masking, symmetric
 candidates, and $N$-sensitivity; brief interventions and utility checks bound
 re-injection and Acc$\neq$utility.
+Localizing where recoverability is lost also indicates where to intervene:
+the persona--query alignment gap at Search points to conditioning-aware query
+reformulation as a concrete target within the existing pipeline.
 Results characterize one DRA stack, not multi-backbone generality or
 downstream usefulness.
 
@@ -774,6 +777,10 @@ influence.
 MiniLM cosine is an exploratory embedding-based alignment proxy and may miss
 paraphrased or compositional persona cues; section-level token retention is
 likewise a surface lexical diagnostic, not a causal feature ablation.
+Absolute cosine values are not calibrated against a persona-independent
+reference distribution, so the brief-to-query contrast (0.269 $\to$ 0.212)
+should be read as a within-pipeline comparison rather than an absolute level
+of persona alignment.
 
 \paragraph{Single-backbone scope.}
 All results come from one DRA implementation (Gemini~3.6~Flash via
@@ -794,7 +801,10 @@ measures recoverability of the identity layer more reliably than of actionable
 persona content.
 Default matcher budgets differ by stage (Search 3.5k / Write 8k chars), but
 BM25, queries-only Search, and equal-budget rematch (seed~0, 3.5k for all
-stages: 0.800/0.517/0.600/0.800) each preserves dip-and-recovery. Matchers
+stages: 0.800/0.517/0.600/0.800) each preserves dip-and-recovery.
+Search retains its default 3.5k budget; the 0.017 difference from the
+primary seed-0 result reflects residual API non-determinism at
+temperature~0 across re-runs. Matchers
 lack human attribution validation; seeds share 20 task clusters; hard-negatives
 carry a candidate-only prior (absolute Acc caution); Search views are post-hoc;
 domain/recovery cells and utility scores are exploratory; no correction for
