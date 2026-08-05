@@ -199,7 +199,7 @@ Writing     & $a_{\mathrm{write}}$    & Full long-form research report \\
 
 \textbf{DRATracer} is our LangGraph v2 event listener that captures all four
 artifacts deterministically from a single pipeline run (implementation
-artifact; public release planned with the camera-ready version if accepted).
+artifact; schema and runner code available upon request).
 The key challenge is that three researcher subgraphs run concurrently under
 the supervisor; DRATracer resolves per-artifact topic identity using parent
 run-ID correlation across \texttt{on\_chain\_start} and \texttt{on\_chain\_end}
@@ -416,7 +416,10 @@ Critically, both non-LLM baselines independently reproduce the
 Planning-to-Search dip: BM25 drops from 0.633 to 0.567, and Embedding
 from 0.442 to 0.292. Because these baselines involve no LLM reasoning,
 the dip pattern reflects artifact-level properties rather than an
-evaluator-specific bias.
+evaluator-specific bias. The non-replicable element is BM25's absolute
+advantage over Solar at Search ($+0.067$ in seed~0, reversed in seed~1);
+BM25's own Planning$\to$Search dip (0.667$\to$0.600 in seed~0;
+0.600$\to$0.533 in seed~1) is present in both seeds.
 Recovery, however, is baseline-asymmetric: BM25 rises only from 0.567 to
 0.575 at Writing while Embedding recovers from 0.292 to 0.475, indicating
 the Writing recovery signal is not driven by lexical overlap alone.
@@ -515,6 +518,9 @@ and Compression (0.673)---the two stages with the lowest attribution accuracy.
 On seed 1, GPT-5.4-nano produces 0.833/0.583/0.600/0.733, agreeing with Solar
 on 76.7\% of decisions ($\kappa=0.745$); the dip-and-recovery shape is
 consistent across evaluators and seeds.
+Notably, GPT-5.4-nano (0.850) exceeds Solar (0.817) at Writing in seed~0,
+confirming that Writing artifacts are the most attributable stage
+independently of which LLM evaluates them.
 Table~\ref{tab:matcher_agreement} gives per-stage detail for seed~0.
 
 \begin{table}[t]
@@ -618,7 +624,9 @@ Search collapses to book-title / ISBN lookups (``Feeling Good'',
 attribution flips to User2; Writing recovers User5 after brief re-injection.
 A second recovery case (AI-education startup) is in
 Appendix~\ref{app:case}; extended confusion pairs with a dominant attractor
-persona are in Appendix~\ref{app:confusion_full}.
+persona are in Appendix~\ref{app:confusion_full}: User10 absorbs misattributions
+from eight ground-truth personas at Search and Compression, indicating that
+when stage-level signal is thin the matcher collapses to the most salient profile.
 
 \begin{table}[t]
 \centering
@@ -697,12 +705,12 @@ deterministically tied to the Planning attribution outcome.
 
 \paragraph{Write-only brief interventions.}
 We freeze Plan/Search/Compress and rewrite finals (Figure~\ref{fig:brief_interventions}).
-On a 15-report slice, injecting a mismatched persona's brief drops accuracy
+On a 15-report slice (full-brief Writing Acc: 0.933), injecting a mismatched persona's brief drops accuracy
 to 0.467 ($\Delta=-0.467$; CI $[-0.667,-0.200]$); predictions scatter as
 \textbf{GT 7 / Donor 1 / Other 7}, disrupting target recoverability
 \emph{without} transferring attribution to the donor.
-A wider write-only no-brief ablation ($n{=}30$ seed-0 runs) yields 0.833
-($\Delta=-0.067$; CI $[-0.167,+0.067]$, includes zero); we do not detect
+A wider write-only no-brief ablation ($n{=}30$ seed-0 runs; full-brief Writing Acc for this slice: 0.900)
+yields 0.833 ($\Delta=-0.067$; CI $[-0.167,+0.067]$, includes zero); we do not detect
 a reduction from removing the brief.
 Wrong brief content thus disrupts Writing recoverability; re-injection
 of the brief is not a necessary condition for it.
@@ -710,8 +718,8 @@ of the brief is not a necessary condition for it.
 \begin{figure}[ht]
   \centering
   \includegraphics[width=\columnwidth]{figures/brief_intervention_write_acc.pdf}
-  \caption{Left: Write Acc@1 under full / no-brief / other-persona brief
-    ($n{=}15$). Right: prediction breakdown under other-brief
+  \caption{Left: Write Acc@1 under full and other-brief ($n{=}15$) and
+    no-brief ($n{=}30$). Right: prediction breakdown under other-brief
     (GT / Donor / Other).}
   \label{fig:brief_interventions}
 \end{figure}
@@ -766,6 +774,20 @@ Writing     & 0.733 & 0.167 & 0.100 & $+0.567$ & $[+0.267,+0.867]$ \\
   $\Delta{=}$Shell$-$Donor; task-cluster bootstrap 95\% CI.}
 \label{tab:shuffled_actionable}
 \end{table}
+
+\paragraph{Candidate-profile identity masking.}
+A complementary control masks identity sections from the \emph{candidate profiles}
+rather than the artifacts: removing ``Basic Attributes'' (identity characteristics,
+family status, and spatial characteristics) while leaving actionable sections
+reduces Acc across all four stages (Plan: $0.808\to0.667$, $\Delta=-0.141$;
+Search: $0.550\to0.458$, $\Delta=-0.092$; Compress: $0.592\to0.442$, $\Delta=-0.150$;
+Write: $0.800\to0.650$, $\Delta=-0.150$; $n=120$).
+The dip-and-recovery trajectory is preserved but attenuated.
+This asymmetry---artifact-side identity masking has near-zero Writing impact
+($\Delta=-0.017$) while candidate-side identity masking reduces it by
+$0.150$---localizes the identity dependency: Writing artifacts carry attributable
+discourse signals without verbatim identity tokens, but the matcher relies on
+identity-level cues in the candidate profiles to resolve attribution from those signals.
 
 \FloatBarrier
 % ---------------------------------------------------------------------------
@@ -825,6 +847,10 @@ A pre-registered generation-time ablation with actionable-only and
 identity-only persona conditioning (EXP-011) failed the completeness gate;
 the shuffled-actionable result provides the same directional finding
 without establishing the causal structure EXP-011 would have tested.
+The matcher system prompt instructs the model to focus on cues ``that reflect
+the user's \textbf{background}, goals, and preferences,'' which may additionally bias
+detection toward identity-layer features; a prompt ablation removing this keyword
+is in progress.
 
 \paragraph{Other limitations.}
 Default matcher budgets differ by stage (Search 3.5k / Write 8k chars), but
@@ -887,8 +913,10 @@ No ledger errors     & 0.807 & 0.546 & 0.588 & 0.798 & 119 \\
 Table~\ref{tab:baselines_seed} disaggregates the non-LLM baseline
 accuracies by generation seed. BM25 exceeds Solar at Search in seed~0
 (0.600 vs.\ 0.533) but not seed~1 (0.533 vs.\ 0.567), so the small
-combined advantage is not seed-stable. Random accuracy varies around the
-0.333 chance level, as expected.
+combined advantage is not seed-stable. Random accuracy is near the 0.333
+chance level at most stages; Writing (0.250 in both seeds) falls
+consistently below, consistent with the candidate-prior structure
+at the final stage (construction-center heuristic: 0.450 at Writing).
 
 \begin{table}[!ht]
 \centering
@@ -1151,8 +1179,10 @@ for all three candidate-set sizes (seeds 0 and 1, $n=120$ per row; Solar Pro mat
 The Planning$\rightarrow$Search drop is $-0.209$ at $N=2$, $-0.258$ at $N=3$,
 and $-0.287$ at $N=5$ in raw Acc; chance-normalized
 ($\Delta / (1-\text{chance})$) these become $-0.418$, $-0.387$, $-0.359$,
-\emph{shrinking} with $N$---consistent with the Planning advantage being
-stable while Search difficulty grows relative to a harder chance level.
+\emph{shrinking} with $N$---the raw gap expansion with $N$ is driven by
+chance scaling rather than a genuine worsening of Search attribution
+(chance-normalized Search accuracy rises from 0.266 at $N=2$ to 0.325
+at $N=3$ to 0.339 at $N=5$).
 Writing accuracy exceeds Search by $+0.142$ ($N=2$),
 $+0.250$ ($N=3$), and $+0.246$ ($N=5$). All stages exceed their
 respective chance levels at all three settings, confirming that the
