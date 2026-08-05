@@ -373,8 +373,7 @@ is 0.050 at Compression, and every seed-difference interval includes zero.
 
 \subsection{Report-Level Loss and Recovery}
 
-Table~\ref{tab:transition_flows} and Figure~\ref{fig:plan_search_matrix}
-decompose the aggregate curve for the \emph{same} reports.
+Table~\ref{tab:transition_flows} decomposes the aggregate curve for the \emph{same} reports.
 Planning$\rightarrow$Search is almost purely lossy: 65 stay correct, \textbf{32}
 lose correctness, only \textbf{1} gains, and 22 stay wrong.
 Compression has 13 gains vs.\ 8 losses (net unresolved at aggregate level);
@@ -401,15 +400,6 @@ Compression $\rightarrow$ Writing & 6  & 31 & $+25$ \\
 \caption{Adjacent-stage lost/gained counts ($n{=}120$).}
 \label{tab:transition_flows}
 \end{table}
-
-\begin{figure}[t]
-  \centering
-  \includegraphics[width=0.72\columnwidth]{figures/plan_search_transition_matrix.pdf}
-  \caption{Planning$\rightarrow$Search correctness counts ($n{=}120$). Almost all
-    change is Plan-correct $\rightarrow$ Search-wrong (32), not recovery from
-    Plan-wrong (1).}
-  \label{fig:plan_search_matrix}
-\end{figure}
 
 \subsection{Robustness Checks}
 
@@ -460,7 +450,7 @@ Splitting by the candidate-only heuristic: \emph{prior-correct} ($n{=}54$) and
 trajectory is not confined to prior-solvable reports.
 A strict-quality subset ($n{=}90$; all pre-defined success criteria) yields
 0.822/0.567/0.611/0.811, ruling out Search dip as a pure completeness/ledger
-artifact (full policy breakdown: Appendix~\ref{app:quality}).
+artifact (Table~\ref{tab:symmetric_candidates}).
 Candidate construction affects absolute levels; it does not create the stage
 ordering.
 
@@ -478,10 +468,11 @@ Symmetric task-shared & 120 & 0.733 & 0.542 & 0.608 & 0.708 \\
 Prior-correct subset & 54 & 0.907 & 0.593 & 0.593 & 0.833 \\
 Prior-wrong subset & 66 & 0.727 & 0.515 & 0.591 & 0.773 \\
 Strict-quality subset & 90 & 0.822 & 0.567 & 0.611 & 0.811 \\
+No ledger errors     & 119 & 0.807 & 0.546 & 0.588 & 0.798 \\
 \bottomrule
 \end{tabular}}
 \caption{Stage Acc@1 under candidate protocols, candidate-only-prior splits,
-  and a strict-quality inclusion filter. Dip-and-recovery holds in every row.}
+  and quality-exclusion policies. Dip-and-recovery holds in every row.}
 \label{tab:symmetric_candidates}
 \end{table}
 
@@ -927,33 +918,6 @@ quality certificates without human review and domain safeguards.
 \onecolumn
 % ===========================================================================
 
-\section{Full Quality Sensitivity}
-\label{app:quality}
-
-Table~\ref{tab:quality_full} reports Solar Acc@1 under four inclusion
-policies. The dip-and-recovery ordering is preserved under every
-restriction, confirming that the primary result is not driven by
-low-quality reports.
-
-\begin{table}[!ht]
-\centering
-\small
-\begin{tabular}{lccccr}
-\toprule
-\textbf{Policy} & \textbf{Plan} & \textbf{Search} & \textbf{Comp.} & \textbf{Write} & \textbf{$n$} \\
-\midrule
-All matched          & 0.808 & 0.550 & 0.592 & 0.800 & 120 \\
-Success criteria met & 0.822 & 0.567 & 0.611 & 0.811 &  90 \\
-No completeness err. & 0.824 & 0.571 & 0.615 & 0.813 &  91 \\
-No ledger errors     & 0.807 & 0.546 & 0.588 & 0.798 & 119 \\
-\bottomrule
-\end{tabular}
-\caption{Solar Acc@1 under four quality-filtering policies (Solar Pro
-  matcher, per-GT hard-negative candidates). All policies preserve the
-  same stage ordering.}
-\label{tab:quality_full}
-\end{table}
-
 % ---------------------------------------------------------------------------
 \section{Per-Seed Baseline Results}
 \label{app:baselines_seed}
@@ -1058,23 +1022,7 @@ User9  & User12 & Search      & 2 \\
 \section{Stage Accuracy by Domain}
 \label{app:domain}
 
-Figure~\ref{fig:domain_heatmap} visualizes the full domain~$\times$~stage
-accuracy matrix. Table~\ref{tab:domain_accuracy} gives the same data
-numerically.
-
-\begin{figure}[!ht]
-  \centering
-  \includegraphics[width=0.62\textwidth]{figures/domain_stage_heatmap.pdf}
-  \caption{Domain $\times$ stage attribution accuracy (Solar Pro, both seeds,
-    $n=12$ per cell). Color intensity encodes Acc@1 above the 0.333 chance
-    level (dashed line on color bar). Education is the only domain where
-    Search reaches ceiling (1.000); Career, Finance, and Real~Estate show
-    Search at chance (0.333). Creative is the only domain where Writing
-    (0.500) does not exceed Search.}
-  \label{fig:domain_heatmap}
-\end{figure}
-
-Table~\ref{tab:domain_accuracy} shows Solar Acc@1 across the ten PDR-Bench
+Table~\ref{tab:domain_accuracy} reports Solar Acc@1 across the ten PDR-Bench
 domains (both seeds, $n=12$ per domain per stage). The dip-and-recovery
 trajectory holds in nine of ten domains. The exception is Creative, where
 Writing accuracy (0.500) does not rise above Search (0.500), suggesting that
@@ -1119,23 +1067,33 @@ Both are illustrative, not statistical claims.
 \subsection*{Case A: emotion-regulation curriculum (\texttt{pilot\_task12\_User5\_seed0})}
 
 \paragraph{Planning (correct $\to$ User5).}
-The brief names the occupation and frames a six-month self-study plan for
-emotional triggers, CBT/mindfulness resources, and interpersonal regulation---
-highly persona-specific scope.
+The brief opens: \emph{``I am a graduate student in mechanical automation
+looking for a structured six-month self-study plan to enhance my self-awareness
+and emotional management\ldots''} The occupation and analytical decision-style
+are explicit.
 
 \paragraph{Search (wrong $\to$ User2).}
-Issued queries collapse to book-title / ISBN lookups (e.g., ``Feeling Good''
-Burns; ``Mind Over Mood''; DBT workbook), with little residual occupation or
-decision-style framing. The matcher flips to User2.
+Issued queries collapse entirely to bilingual book-title / ISBN lookups (shown
+with Chinese publisher fields abbreviated as \textsc{[zh: publisher/isbn]}):
+\begin{quote}\small\ttfamily
+``Feeling Good'' ``David Burns'' \textsc{[zh: publisher/isbn]}\\
+``Mind Over Mood'' Greenberger Padesky \textsc{[zh: publisher/isbn]}\\
+``DBT Skills Workbook'' McKay \textsc{[zh: publisher/isbn]}
+\end{quote}
+No trace of mechanical automation, occupation, or decision-style remains.
+The matcher flips to User2.
 
 \paragraph{Compression (wrong $\to$ User2).}
-Compressed notes continue to center cataloged books/courses rather than the
+Compressed notes continue to center cataloged books and courses rather than the
 engineering-student framing.
 
 \paragraph{Writing (correct $\to$ User5).}
-The final report reintroduces an analytical / engineering framing of emotion
-regulation as a structured information-processing system and recovers User5,
-consistent with Planning-brief re-injection plus writing-time synthesis.
+The final report re-injects the analytical framing:
+\emph{``For individuals with an analytical background---such as students or
+professionals in engineering and technical fields---treating emotional
+regulation as an information-processing system yields the most durable
+results.''}
+User5 is recovered, consistent with Planning-brief re-injection at writing time.
 
 \subsection*{Case B: AI-education startup (\texttt{pilot\_task7\_User18\_seed1})}
 
@@ -1145,12 +1103,18 @@ students, with execution goals around learning efficiency, courses, and
 integrated tools.
 
 \paragraph{Search (wrong $\to$ User8).}
-Queries shift to market/metric retrieval (student AI-tool adoption, LTV/CAC,
-Chegg/Khanmigo/Gauth case studies). Persona-specific founder constraints thin
-out; attribution flips to User8.
+Queries shift to generic market-metric retrieval:
+\begin{quote}\small\ttfamily
+university student AI tool adoption habits pain points willingness to pay EdTech\\
+AI EdTech metrics token cost per user LTV CAC retention DAU MAU\\
+AI EdTech monetization models freemium vs campus licensing Quizlet Chegg Gauth
+\end{quote}
+Persona-specific founder constraints thin out; attribution flips to User8.
 
 \paragraph{Writing (correct $\to$ User18).}
-The final report re-centers the startup-execution plan and recovers User18.
+The final report is titled \emph{``Strategic Launch Blueprint: Next-Generation
+AI EdTech Startup for University Students''} and re-centers the concrete
+execution plan, recovering User18.
 
 \section{Recovery vs.\ Non-Recovery Report Characteristics}
 \label{app:recovery}
