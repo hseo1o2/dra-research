@@ -53,7 +53,7 @@ def _arrow(ax, x0, y0, x1, y1, color=MUTED, lw=1.0):
 def _probe_box(ax, x, y, acc, is_low=False):
     fc = ORANGE_LIGHT if is_low else BLUE_LIGHT
     ec = ORANGE_DARK  if is_low else BLUE_DARK
-    w, h = 0.30, 0.18
+    w, h = 0.38, 0.21
     box = FancyBboxPatch(
         (x - w / 2, y - h / 2), w, h,
         boxstyle="round,pad=0.015",
@@ -133,10 +133,10 @@ def main():
         _probe_box(ax, sx, probe_y, acc, is_low=isl)
 
     # "N-way attribution" label left of probes
-    ax.text(1.20, probe_y, "N-way\nattribution\nprobe",
+    ax.text(1.32, probe_y, "N-way\nattribution\nprobe",
             ha="center", va="center", fontsize=5.8, color=MUTED,
             linespacing=1.35)
-    _arrow(ax, 1.35, probe_y, 1.63, probe_y, color=MUTED, lw=0.6)
+    _arrow(ax, 1.48, probe_y, 1.63, probe_y, color=MUTED, lw=0.6)
 
     # ── Candidate set ─────────────────────────────────────────────────────────
     cand_x, cand_y = 5.82, probe_y
@@ -154,7 +154,7 @@ def main():
                 ha="center", va="center", fontsize=6.0, color=col,
                 fontweight=fw, zorder=4)
 
-    ax.text(cand_x, cand_y + 0.30, "Candidates $\\mathcal{C}$",
+    ax.text(cand_x, cand_y + 0.40, "Candidates $\\mathcal{C}$",
             ha="center", va="center", fontsize=6.2, color=GREY_DARK,
             fontweight="bold", zorder=4)
 
