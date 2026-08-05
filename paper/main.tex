@@ -849,8 +849,10 @@ the shuffled-actionable result provides the same directional finding
 without establishing the causal structure EXP-011 would have tested.
 The matcher system prompt instructs the model to focus on cues ``that reflect
 the user's \textbf{background}, goals, and preferences,'' which may additionally bias
-detection toward identity-layer features; a prompt ablation removing this keyword
-is in progress.
+detection toward identity-layer features; however, a prompt ablation removing
+this keyword yields negligible differences ($\Delta\text{Search}=+0.025$,
+$\Delta\text{Write}=-0.017$, all other stages unchanged; $n=120$), suggesting
+that identity-shell dominance is artifact-driven rather than prompt-induced.
 
 \paragraph{Other limitations.}
 Default matcher budgets differ by stage (Search 3.5k / Write 8k chars), but
