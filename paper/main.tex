@@ -691,8 +691,7 @@ the wrong brief disrupts target recoverability \emph{without} simply
 transferring attribution to the donor.
 A wider write-only no-brief ablation ($n{=}30$ seed-0 runs) yields 0.833
 ($\Delta=-0.067$; CI $[-0.167,+0.067]$, includes zero).
-Brief content---not mere presence---is therefore the interventionally relevant
-factor for Writing recoverability.
+Brief content drives Writing recoverability, not the brief's presence alone.
 
 \begin{figure}[t]
   \centering
@@ -761,9 +760,9 @@ recover by Writing (trajectory 0.808/0.550/0.592/0.800).
 The shape holds under lexical baselines, a second matcher, masking, symmetric
 candidates, and $N$-sensitivity; brief interventions and utility checks bound
 re-injection and Acc$\neq$utility.
-Localizing where recoverability is lost also indicates where to intervene:
-the persona--query alignment gap at Search points to conditioning-aware query
-reformulation as a concrete target within the existing pipeline.
+The location of the accuracy drop also indicates where to intervene:
+the persona--query alignment gap at Search is a concrete target for
+conditioning-aware query reformulation.
 Results characterize one DRA stack, not multi-backbone generality or
 downstream usefulness.
 
@@ -802,9 +801,8 @@ persona content.
 Default matcher budgets differ by stage (Search 3.5k / Write 8k chars), but
 BM25, queries-only Search, and equal-budget rematch (seed~0, 3.5k for all
 stages: 0.800/0.517/0.600/0.800) each preserves dip-and-recovery.
-Search retains its default 3.5k budget; the 0.017 difference from the
-primary seed-0 result reflects residual API non-determinism at
-temperature~0 across re-runs. Matchers
+Search already uses a 3.5k budget by default, so the 0.017 gap from the
+primary seed-0 result comes from residual API non-determinism at temperature~0. Matchers
 lack human attribution validation; seeds share 20 task clusters; hard-negatives
 carry a candidate-only prior (absolute Acc caution); Search views are post-hoc;
 domain/recovery cells and utility scores are exploratory; no correction for
