@@ -177,7 +177,7 @@ def plot_stage_trajectory(
         markerfacecolor="white",
         markeredgecolor=BLUE_DARK,
         markeredgewidth=1.2,
-        label="Solar (combined)",
+        label="Solar Pro (combined)",
         zorder=4,
     )
 
@@ -245,15 +245,9 @@ def plot_stage_trajectory(
         if len(seed_labels) >= 2
         else f"Seed {seed_labels[0]}"
     )
-    axis.set_title(
-        "Stage-wise persona attribution accuracy",
-        loc="left",
-        pad=17,
-        fontweight="bold",
-    )
     axis.text(
         0,
-        1.045,
+        1.02,
         f"{seed_scope} · n={n_reports} reports · "
         f"{n_tasks} task clusters · 95% CI",
         transform=axis.transAxes,
@@ -266,8 +260,8 @@ def plot_stage_trajectory(
     axis.set_xticks(x, [STAGE_LABELS[stage] for stage in STAGES])
     axis.set_ylabel("Attribution accuracy (Acc@1)")
     axis.set_xlim(-0.15, 3.15)
-    axis.set_ylim(0, 1.0)
-    axis.yaxis.set_major_locator(MultipleLocator(0.25))
+    axis.set_ylim(0.25, 0.92)
+    axis.yaxis.set_major_locator(MultipleLocator(0.10))
     axis.yaxis.set_major_formatter(FuncFormatter(lambda value, _: f"{value:.2f}"))
     axis.grid(axis="y", color=GRID, linewidth=0.55)
     axis.grid(axis="x", visible=False)
@@ -286,7 +280,7 @@ def plot_stage_trajectory(
             labelspacing=0.3,
         )
 
-    figure.subplots_adjust(left=0.17, right=0.98, bottom=0.19, top=0.80)
+    figure.subplots_adjust(left=0.17, right=0.98, bottom=0.19, top=0.90)
     output_dir.mkdir(parents=True, exist_ok=True)
     outputs = [
         output_dir / f"{stem}.pdf",

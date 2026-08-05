@@ -132,11 +132,11 @@ def main():
                color=MUTED, lw=0.7)
         _probe_box(ax, sx, probe_y, acc, is_low=isl)
 
-    # "N-way attribution" label left of probes
-    ax.text(1.32, probe_y, "N-way\nattribution\nprobe",
-            ha="center", va="center", fontsize=5.8, color=MUTED,
-            linespacing=1.35)
-    _arrow(ax, 1.48, probe_y, 1.63, probe_y, color=MUTED, lw=0.6)
+    # "N-way attribution probe" label below the probe row
+    ax.text(3.35, probe_y - 0.21,
+            "N-way attribution probe (per stage)",
+            ha="center", va="top", fontsize=5.5, color=MUTED,
+            style="italic")
 
     # ── Candidate set ─────────────────────────────────────────────────────────
     cand_x, cand_y = 5.82, probe_y

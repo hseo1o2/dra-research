@@ -15,9 +15,10 @@
 \usepackage{xcolor}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{placeins}
 
 % ---------------------------------------------------------------------------
-\title{DRA-PULSE: Localizing Persona Recoverability Across Stages of a
+\title{DRA-PULSE: Tracing Persona Recoverability Across Stages of a
 Deep Research Agent}
 
 % PRIMARY PROTOCOL STATUS (2026-08-03):
@@ -247,15 +248,16 @@ We report one post-processing masking control and one generation-time shuffled-a
 \centering
 \footnotesize
 \setlength{\tabcolsep}{3pt}
-\begin{tabular}{p{1.55cm}p{2.65cm}p{2.05cm}}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lll}
 \toprule
 \textbf{Condition} & \textbf{Manipulation} & \textbf{Tests} \\
 \midrule
-Full (baseline)       & Unmodified persona                          & Upper bound \\
-Identifier-masked     & NER + all-candidate identity-phrase masking  & Surface mentions? \\
-Shuffled-actionable   & Donor actionable prefs, shell identity       & Actionable vs.\ identity? \\
+Baseline              & Unmodified persona                          & Upper bound \\
+Identifier-masked     & NER + all-candidate identity-phrase masking & Surface mentions? \\
+Shuffled-actionable   & Donor actionable prefs, shell identity      & Actionable vs.\ identity? \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \caption{Shortcut control conditions executed in this paper.
 Identifier masking is a post-processing pass on all four existing stage
 artifacts; shuffled-actionable is a 30-report two-seed generation-time intervention.
@@ -550,6 +552,7 @@ The trajectory also holds for $N{=}2$ and $N{=}5$, with nearly unchanged
 chance-normalized Planning accuracy
 (Table~\ref{tab:sensitivity_full}, Appendix~\ref{app:sensitivity}).
 
+\FloatBarrier
 % ---------------------------------------------------------------------------
 \section{Analysis}
 \label{sec:analysis}
@@ -693,7 +696,7 @@ A wider write-only no-brief ablation ($n{=}30$ seed-0 runs) yields 0.833
 ($\Delta=-0.067$; CI $[-0.167,+0.067]$, includes zero).
 Brief content drives Writing recoverability, not the brief's presence alone.
 
-\begin{figure}[t]
+\begin{figure}[ht]
   \centering
   \includegraphics[width=\columnwidth]{figures/brief_intervention_write_acc.pdf}
   \caption{Left: Write Acc@1 under full / no-brief / other-persona brief
@@ -729,7 +732,7 @@ DRA-PULSE thus detects which conditioning persona remains identifiable, with
 recoverability anchored more in the identity shell than in transplanted
 preferences---a metric boundary, not proof that the model ignores preferences.
 
-\begin{table}[t]
+\begin{table}[ht]
 \centering
 \small
 \resizebox{\columnwidth}{!}{%
@@ -748,6 +751,7 @@ Writing     & 0.733 & 0.167 & 0.100 & $+0.567$ & $[+0.267,+0.867]$ \\
 \label{tab:shuffled_actionable}
 \end{table}
 
+\FloatBarrier
 % ---------------------------------------------------------------------------
 \section{Conclusion}
 \label{sec:conclusion}
