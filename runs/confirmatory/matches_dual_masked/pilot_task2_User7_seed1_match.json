@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task2_User7_seed1",
+    "stage": "plan",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on new media technology, public opinion research, and computational social science. The document emphasizes interdisciplinary coursework, credit transfer mechanisms, and practical research skills\u2014mirroring Candidate A's academic background in new media, proficiency in Python, and interest in social issues/tech trends. Additionally, the document's emphasis on cost analysis, budgeting, and rational spending aligns with Candidate A's meticulous financial habits. While Candidate C shares technical skills, the document's broader scope (cultural integration, visa logistics, etc.) reflects Candidate A's balanced focus on academic rigor and practical life planning, unlike Candidate C's narrower data-centric interests or Candidate B's creative/literary orientation.",
+    "model": "solar-pro",
+    "prompt_chars": 18631,
+    "latency_sec": 1.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4060,
+    "output_tokens": 171,
+    "total_tokens": 4231,
+    "api_response_id": "54857abe-263f-4cdc-92d8-31304c24d7e7"
+  },
+  {
+    "run_id": "pilot_task2_User7_seed1",
+    "stage": "search",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User20",
+      "User7"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on graduate-level exchange programs, tuition fees, and academic requirements (e.g., ECTS credits, non-degree modules, communication science). Candidate C aligns most closely: they are a graduate student (implied by academic pressure, Python/Excel use for research) with interests in communication studies, budget-conscious spending, and a preference for self-guided academic/cultural experiences. Their content preferences (social issues, tech developments, communication research) and travel style (natural scenery, in-depth experiences) mirror the document's emphasis on structured academic mobility and practical program details. Candidates A (data analyst) and B (creative writer) lack the academic/program-specific focus evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 20116,
+    "latency_sec": 1.59,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4559,
+    "output_tokens": 162,
+    "total_tokens": 4721,
+    "api_response_id": "2a8836d3-5f85-4c3e-a858-2ecbabab718f"
+  },
+  {
+    "run_id": "pilot_task2_User7_seed1",
+    "stage": "compress",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User18",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on academic programs, funding requirements, visa logistics, and data-intensive journalism/communication research\u2014topics aligning with Candidate B's profile. B's expertise in data analysis tools (Python, R, SQL), preference for data-driven decision-making, and interest in technology/business analysis articles directly mirror the document's emphasis on computational methods, financial parameters, and program structures. Unlike A (focused on social issues/coffee brewing) or C (creative/artistic interests), B's rational, detail-oriented personality and consumption habits (e.g., purchasing electronic devices, tracking expenses) align with the document's formal, budget-conscious framing. B's travel style (self-guided, efficient itineraries) also parallels the document's structured approach to program logistics.",
+    "model": "solar-pro",
+    "prompt_chars": 22984,
+    "latency_sec": 1.74,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5780,
+    "output_tokens": 177,
+    "total_tokens": 5957,
+    "api_response_id": "eb9b8056-5c6a-4a16-ab8b-b9ba04704a5c"
+  },
+  {
+    "run_id": "pilot_task2_User7_seed1",
+    "stage": "write",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User18",
+      "User7"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on graduate-level research in new media technology, public opinion analysis, and computational social science, emphasizing technical skills (Python, data analysis, machine learning), academic rigor, and structured evaluation of international programs. Candidate B aligns most closely: they are proficient in data analysis tools (Python, R, SQL), prioritize logical decision-making, and have a strong interest in technology and quantitative methods. Their rational, research-driven approach and focus on data-driven content (e.g., saving articles on technology, business analysis, and environmental sustainability) mirror the document's technical and analytical framing. Candidates A and C, while creative or academically inclined, lack the explicit emphasis on computational social science and technical fluency central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24986,
+    "latency_sec": 2.13,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5710,
+    "output_tokens": 169,
+    "total_tokens": 5879,
+    "api_response_id": "7c8f1c2f-fb49-4591-b853-3aed347a6f74"
+  }
+]

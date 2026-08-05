@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task32_User13_seed1",
+    "stage": "plan",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User14",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "Candidate C's profile aligns most closely with the document's focus on aesthetic design, sustainability, and attention to material quality. The request emphasizes modern minimalist style with warm artistic accents, eco-friendly materials, and support for local/independent designers\u2014all priorities reflected in C's consumption characteristics and caf\u00e9 management style. Additionally, C's interest in interior design (evident in caf\u00e9 decoration updates) and preference for boutique accommodations mirrors the document's emphasis on stylish, functional soft furnishings. While A and B share some rational consumption traits, neither prioritizes design aesthetics or material sustainability as centrally as C, whose work in a creative, detail-oriented environment directly informs the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 19232,
+    "latency_sec": 1.86,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4187,
+    "output_tokens": 158,
+    "total_tokens": 4345,
+    "api_response_id": "76e35294-8932-413f-8e1b-4be9a3ab5800"
+  },
+  {
+    "run_id": "pilot_task32_User13_seed1",
+    "stage": "search",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": false,
+    "reasoning": "The document focuses on furniture (sofas, refrigerators, curtains) with an emphasis on design aesthetics, material quality (e.g., '\u732b\u6293\u5e03' fabric, '\u7eaf\u5b9e\u6728' wood), and practicality (sizing, pricing). Candidate B, an artist/designer, prioritizes high-quality tools, supports independent brands, and values design-oriented products. His interest in art, photography, and boutique accommodations aligns with the document's framing of stylish, functional home furnishings. Candidate A (coffee entrepreneur) and C (data analyst) lack the same focus on design/material details or creative consumption habits evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 18738,
+    "latency_sec": 1.96,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5526,
+    "output_tokens": 154,
+    "total_tokens": 5680,
+    "api_response_id": "df3b4d23-3efa-49d7-8fe9-8ce9a404475e"
+  },
+  {
+    "run_id": "pilot_task32_User13_seed1",
+    "stage": "compress",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User14",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on furniture brands (e.g., \u6e90\u6c0f\u6728\u8bed, \u9020\u4f5c, \u5431\u97f3) that emphasize modern design, sustainability, and local craftsmanship\u2014aligning with Candidate C's preferences for eco-friendly, high-quality, and artistically designed products. Candidate C, a caf\u00e9 owner, values aesthetic details, supports independent brands, and prioritizes sustainability, as evidenced by her interest in local designer products and zero-waste initiatives. The document's emphasis on pet-friendly materials (e.g., \u732b\u6293\u5e03) and modular furniture also resonates with her practical yet creative approach to consumption. Candidates A (data analyst) and B (artist) lack the document's focus on interior design, sustainability, and functional aesthetics, which are central to Candidate C's profile.",
+    "model": "solar-pro",
+    "prompt_chars": 22743,
+    "latency_sec": 2.23,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6780,
+    "output_tokens": 183,
+    "total_tokens": 6963,
+    "api_response_id": "9a1f8e6c-8dbb-4f12-a756-e5b335ac16c6"
+  },
+  {
+    "run_id": "pilot_task32_User13_seed1",
+    "stage": "write",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document emphasizes eco-friendly materials, local designer brands, pet/kid safety, and artistic aesthetics\u2014aligning with Candidate B's focus on sustainability, support for independent designers, and artistic sensibilities. B's caf\u00e9 management background (requiring durability and safety) and interest in boutique accommodations mirror the report's priorities. Candidate A (artist) and C (data analyst) lack the document's practical, family/pet-centric framing and emphasis on interior design/materials.",
+    "model": "solar-pro",
+    "prompt_chars": 24745,
+    "latency_sec": 1.57,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5587,
+    "output_tokens": 116,
+    "total_tokens": 5703,
+    "api_response_id": "88ac8e7f-6a7a-43c2-9e63-e39eda815e55"
+  }
+]

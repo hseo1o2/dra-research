@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task2_User7_seed1",
+    "stage": "plan",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on new media technology, public opinion research, and computational social science. Their background in Journalism and Communication, combined with proficiency in Python and data analysis tools, matches the document's emphasis on interdisciplinary and practice-oriented research. Additionally, Candidate A's interest in cost-effective budgeting, international travel for academic purposes, and preference for official university sources reflect the document's practical concerns about cost structures, visa regulations, and source credibility. While Candidate C shares technical skills, their focus on data analysis and environmental sustainability diverges from the document's communication-centric framing. Candidate B's creative and literary interests are less relevant to the research-oriented and policy-focused tone of the document.",
+    "model": "solar-pro",
+    "prompt_chars": 18654,
+    "latency_sec": 2.92,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4038,
+    "output_tokens": 167,
+    "total_tokens": 4205,
+    "api_response_id": "5ed5b067-3971-41a3-9fff-e924a444c69f"
+  },
+  {
+    "run_id": "pilot_task2_User7_seed1",
+    "stage": "search",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User20",
+      "User7"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on graduate exchange programs, tuition fees, ECTS credits, and administrative requirements\u2014topics central to academic mobility and research-oriented communication studies. Candidate C's profile aligns most closely: they are a communication science student (evidenced by their interest in social issues, technological developments, and communication studies), prioritize cost-effective learning (budgeting habits, eco-friendly purchases), and value self-guided academic experiences (independent travel planning, research-focused content consumption). Unlike Candidate A (data analysis focus) or B (creative/artistic interests), Candidate C\u2019s academic background, rational decision-making, and interest in communication studies directly mirror the document\u2019s institutional and procedural framing.",
+    "model": "solar-pro",
+    "prompt_chars": 20491,
+    "latency_sec": 1.83,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4533,
+    "output_tokens": 161,
+    "total_tokens": 4694,
+    "api_response_id": "8ce1cec5-970a-4e1e-a38e-f41a67574d52"
+  },
+  {
+    "run_id": "pilot_task2_User7_seed1",
+    "stage": "compress",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User18",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on graduate exchange/visiting scholar programs, emphasizing tuition, visa requirements, funding, and academic documentation. Candidate B's profile aligns most closely: they are data-driven, detail-oriented, and prioritize cost-effectiveness in education (e.g., researching tuition, fees, and proof of funds). Their interest in data analysis tools (Python, SQL) matches the document's structured, fact-heavy format, and their rational decision-making style aligns with the document's focus on financial planning and institutional requirements. Candidates A and C, while academically inclined, prioritize creative/artistic content and lack the same emphasis on data-driven, logistical aspects of academic programs.",
+    "model": "solar-pro",
+    "prompt_chars": 22984,
+    "latency_sec": 3.26,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5168,
+    "output_tokens": 158,
+    "total_tokens": 5326,
+    "api_response_id": "6386f3f9-7fb0-428b-a801-05b40a1df91a"
+  },
+  {
+    "run_id": "pilot_task2_User7_seed1",
+    "stage": "write",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User18",
+      "User7"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on technical and analytical aspects of new media, public opinion research, and computational social science, emphasizing data journalism, algorithmic literacy, and empirical methods. Candidate B's profile aligns most closely with these priorities: they are proficient in data analysis tools (Python, R, SQL, Tableau), prioritize logical rigor, and engage with industry updates on data analysis. Their decision-making style (data-driven, research-based) and content preferences (technology, business analysis, sustainability) reflect the document's framing. Candidates A and C, while interested in media and creativity, lack the technical depth and methodological focus central to the report.",
+    "model": "solar-pro",
+    "prompt_chars": 24986,
+    "latency_sec": 1.83,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5435,
+    "output_tokens": 151,
+    "total_tokens": 5586,
+    "api_response_id": "571682a2-9a51-45e2-b64f-72c35e72cebe"
+  }
+]

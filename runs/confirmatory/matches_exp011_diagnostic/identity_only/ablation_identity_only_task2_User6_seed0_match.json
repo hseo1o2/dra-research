@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "ablation_identity_only_task2_User6_seed0",
+    "stage": "plan",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User6",
+      "User18",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User18",
+      "User6"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "The document explicitly identifies the author as 'Gao Yi,' an undergraduate in Environmental Studies at a top university in Hangzhou, seeking guidance for an overseas exchange program focused on Environmental Studies. Candidate C matches this identity, academic background, and location. The document's emphasis on environmental curriculum, sustainability, and eco-friendly practices aligns with Candidate C's stated interests in environmental protection, sustainable urban development, and eco-conscious consumption. Additionally, the document's focus on academic exchange preparation mirrors Candidate C's proactive engagement in environmental volunteerism and academic competitions, as well as her preference for eco-certified accommodations and low-carbon travel\u2014all absent in Candidates A (Clinical Psychology) and B (Data Analyst).",
+    "model": "solar-pro",
+    "prompt_chars": 24210,
+    "latency_sec": 1.91,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5009,
+    "output_tokens": 162,
+    "total_tokens": 5171,
+    "api_response_id": "cf32bff0-2b43-47ae-b895-3994f3e44102"
+  },
+  {
+    "run_id": "ablation_identity_only_task2_User6_seed0",
+    "stage": "search",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User6",
+      "User18",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User6",
+      "User2"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "The document focuses on study-abroad programs, tuition fees, language requirements, and credit transfers, particularly highlighting environmental science programs (e.g., UC Berkeley, Imperial College London) and credit systems (e.g., Zhejiang University). Candidate B, an Environmental Studies undergraduate with strong academic performance and interest in sustainability, aligns most closely with these themes. Her focus on eco-friendly practices, environmental competitions, and academic credit systems (evident in her scholarships and coursework) directly mirrors the document's emphasis on environmental science programs and credit transfer policies. Candidates A (data analyst) and C (clinical psychology graduate student) lack the environmental and academic focus central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25245,
+    "latency_sec": 1.83,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5614,
+    "output_tokens": 157,
+    "total_tokens": 5771,
+    "api_response_id": "91e877ea-7f77-4852-b397-5d505acbfa52"
+  },
+  {
+    "run_id": "ablation_identity_only_task2_User6_seed0",
+    "stage": "compress",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User6",
+      "User18",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User6",
+      "User2",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "The document focuses on environmental science programs, language requirements, and study-abroad opportunities in environmental studies. Candidate A is an undergraduate student majoring in Environmental Studies with a strong interest in sustainability, eco-friendly practices, and environmental competitions. Her academic background, content preferences (e.g., environmental protection, climate change), and travel interests (natural attractions, ecological reserves) align directly with the document's emphasis on environmental curricula, fieldwork, and interdisciplinary sustainability. Candidates B (Clinical Psychology) and C (Data Analyst) lack the same domain-specific focus on environmental studies, making A the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 28094,
+    "latency_sec": 1.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6011,
+    "output_tokens": 141,
+    "total_tokens": 6152,
+    "api_response_id": "383c4f45-8a0d-4ba7-b3d1-78fa2bd35654"
+  },
+  {
+    "run_id": "ablation_identity_only_task2_User6_seed0",
+    "stage": "write",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User6",
+      "User18",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User6",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "The document is explicitly designed for 'Gao Yi', an undergraduate in Environmental Studies from Zhejiang Province, focusing on overseas academic exchanges. Candidate B matches this identity exactly, sharing the same name, major, university location, and academic goals. The report's emphasis on environmental science programs, credit transfers, cost structures, and risk management aligns with Candidate B's background (Environmental Studies major, scholarship recipient, and environmental competition awardee) and priorities (sustainability, eco-friendly consumption, and interest in global environmental projects). The document's framing\u2014prioritizing academic integration, field research opportunities, and long-term career value\u2014reflects Candidate B's proactive, environmentally conscious personality and her family's support for her environmental endeavors. Candidates A (Clinical Psychology graduate student) and C (Data Analyst) lack the direct academic and thematic alignment with the document's focus on Environmental Studies and overseas exchange logistics.",
+    "model": "solar-pro",
+    "prompt_chars": 30096,
+    "latency_sec": 2.01,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6704,
+    "output_tokens": 208,
+    "total_tokens": 6912,
+    "api_response_id": "5c192a74-cfbd-4e70-91c8-dbb3c4214543"
+  }
+]

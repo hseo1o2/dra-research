@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task47_User12_seed0",
+    "stage": "plan",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User12"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document focuses on creating a structured, science-based exercise plan for a 5-year-old daughter, emphasizing family participation, practical activities, and long-term health habits. Candidate A aligns most closely: he prioritizes family bonding (e.g., weekend walks, fishing), values practicality (e.g., rational spending, durable purchases), and has a strong interest in health (e.g., recent focus on homemade dishes, morning exercise routines). His offline behaviors\u2014early rising, family budgeting, and outdoor activities\u2014mirror the document\u2019s emphasis on routine, family involvement, and nature-based play. Unlike Candidates B (focused on career/self-guided activities) and C (tech-oriented, high-intensity fitness), Candidate A\u2019s lifestyle and values directly support the document\u2019s child-centered, family-integrated approach to exercise and health.",
+    "model": "solar-pro",
+    "prompt_chars": 20667,
+    "latency_sec": 1.82,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4411,
+    "output_tokens": 189,
+    "total_tokens": 4600,
+    "api_response_id": "f6f867cf-5196-4832-8026-5b5ebb1faa90"
+  },
+  {
+    "run_id": "pilot_task47_User12_seed0",
+    "stage": "search",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document focuses on physical activity, screen time, and sleep guidelines for children under 5, emphasizing practical, family-oriented health recommendations. Candidate B aligns most closely: he is a family-focused parent with a 5-year-old child (implied by his interest in family education and health), prioritizes practical health habits (e.g., jogging, diet), and values structured routines (early bedtime, weekend family activities). Unlike Candidate A (tech-focused, less emphasis on child-specific health) and Candidate C (business-oriented, prioritizing golf/yoga over child-centric guidelines), Candidate B\u2019s offline behaviors (hiking, photography of nature, and health-conscious consumption) reflect the document\u2019s emphasis on balanced, family-friendly physical activity and screen-time moderation for young children.",
+    "model": "solar-pro",
+    "prompt_chars": 22258,
+    "latency_sec": 1.93,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4883,
+    "output_tokens": 178,
+    "total_tokens": 5061,
+    "api_response_id": "ee94303a-e272-43be-85ba-ecdc25c72888"
+  },
+  {
+    "run_id": "pilot_task47_User12_seed0",
+    "stage": "compress",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User12",
+      "User16"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document focuses on physical activity, screen time, and sleep guidelines for children under 5, emphasizing practical, family-oriented health recommendations. Candidate C aligns best due to their emphasis on family bonding (e.g., weekend trips, family meals), practical health habits (e.g., outdoor exercise, interest in health-related content), and rational, cost-effective consumption (e.g., budgeting, durable purchases). Unlike Candidates A (career-focused, high-end purchases) and B (tech-centric, high-intensity lifestyle), Candidate C\u2019s priorities on family well-being, outdoor activities, and balanced routines mirror the document\u2019s focus on holistic child development through manageable daily habits.",
+    "model": "solar-pro",
+    "prompt_chars": 24751,
+    "latency_sec": 1.69,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6684,
+    "output_tokens": 155,
+    "total_tokens": 6839,
+    "api_response_id": "47ddd795-76a0-471b-9dfb-6762498c6ea5"
+  },
+  {
+    "run_id": "pilot_task47_User12_seed0",
+    "stage": "write",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User12",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on early childhood physical activity and athletic development for a 5-year-old girl, emphasizing scientific, evidence-based approaches grounded in pediatric exercise physiology and developmental psychology. Candidate B aligns most closely with this perspective due to their detailed interest in health, fitness, and family-oriented activities. B's exercise preferences (running, gym workouts, yoga, and recent interest in rock climbing) reflect a commitment to physical fitness and stress management, while their offline behaviors (reading bedtime stories, quarterly family travel, and interest in eco-friendly smart home devices) suggest a holistic approach to family well-being. Additionally, B's rational decision-making style and focus on cost-effectiveness align with the document's emphasis on safety, structured guidelines, and long-term developmental benefits. Candidates A and C, while health-conscious, prioritize different aspects (e.g., A's focus on golf/yoga for socializing and C's preference for low-intensity activities like walking/jogging) that are less directly tied to the document's scientific and developmental framework.",
+    "model": "solar-pro",
+    "prompt_chars": 26753,
+    "latency_sec": 2.23,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5738,
+    "output_tokens": 228,
+    "total_tokens": 5966,
+    "api_response_id": "c09bb714-bcd0-4bce-a243-94fa9914eb9e"
+  }
+]

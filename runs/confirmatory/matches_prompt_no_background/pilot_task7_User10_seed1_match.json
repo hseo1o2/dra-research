@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task7_User10_seed1",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate A (Liu Qiang) is a marketing manager with an MBA and experience in organizing campus activities, aligning with the document's focus on launching an EdTech/AI startup targeting university students. His background in marketing, business management, and strategic planning directly matches the document's emphasis on market research, business planning, and operational execution. Unlike Candidates B (investment-focused) and C (data analyst), A's experience in managing teams, organizing events, and understanding student needs (via his student council role) makes him the most likely audience for this comprehensive strategic research document. The document's framing\u2014combining market analysis, business modeling, and operational planning\u2014reflects A's pragmatic, detail-oriented, and efficiency-driven personality, as well as his interest in scalable solutions and long-term strategic growth.",
+    "model": "solar-pro",
+    "prompt_chars": 24514,
+    "latency_sec": 1.91,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5124,
+    "output_tokens": 183,
+    "total_tokens": 5307,
+    "api_response_id": "40dec4de-15a1-406b-bdad-87c54a065f50"
+  },
+  {
+    "run_id": "pilot_task7_User10_seed1",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User8"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User8",
+    "correct": false,
+    "reasoning": "Candidate C, an investment manager with a finance background, aligns most closely with the document's focus on EdTech unit economics (CAC, LTV, pricing models) and AI architecture for education. The document emphasizes financial benchmarks, pricing strategies (Van Westendorp), and scalable AI solutions\u2014topics directly relevant to C's role in analyzing investments and evaluating tech startups. Unlike Candidate A (data analyst) or B (marketing manager), C's expertise in financial modeling, risk assessment, and interest in high-growth sectors like EdTech make him the most likely audience for this document. His consumption habits (financial apps, market analysis) and decision-making style (data-driven, cost-effectiveness) further support this match.",
+    "model": "solar-pro",
+    "prompt_chars": 25607,
+    "latency_sec": 1.87,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5559,
+    "output_tokens": 170,
+    "total_tokens": 5729,
+    "api_response_id": "d9b6b13e-5e81-40bb-9598-0cb84fe1d4fa"
+  },
+  {
+    "run_id": "pilot_task7_User10_seed1",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on market research methodologies for higher education AI tools, emphasizing quantitative analysis (e.g., Cochran\u2019s formula, price sensitivity meters) and qualitative methods (focus groups, interviews). Candidate B, a data analyst with expertise in statistical modeling, certifications in data science, and a preference for data-driven decision-making, aligns most closely with the document\u2019s analytical rigor and methodological depth. Her background in surveys, pricing analysis, and interest in market trends (evident in her LinkedIn/Zhihu activity and saved articles) directly mirrors the document\u2019s priorities. Candidates A (marketing manager) and C (investment manager) lack B\u2019s technical focus on data analysis and survey design, which are central to the document\u2019s framing.",
+    "model": "solar-pro",
+    "prompt_chars": 28126,
+    "latency_sec": 2.14,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6396,
+    "output_tokens": 172,
+    "total_tokens": 6568,
+    "api_response_id": "ae648d75-1bbe-4f60-9e5d-28cbe336d9ac"
+  },
+  {
+    "run_id": "pilot_task7_User10_seed1",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on launching an AI-powered higher education startup, emphasizing pedagogical effectiveness, platform architecture, and market research methodologies. Candidate B, a data analyst with a background in statistics and a focus on data-driven decision-making, aligns most closely with the document's technical and analytical framing. The document's emphasis on quantitative research (e.g., Cochran\u2019s formula, Van Westendorp pricing) and qualitative workflow observation mirrors Candidate B's skills in data analysis, tool usage (Python, R, SQL), and preference for evidence-based decision-making. While Candidate C (investment manager) has some financial relevance, the document's core focus on product development and user workflows (not just financial modeling) makes Candidate B the better match. Candidate A (marketing manager) lacks the technical depth reflected in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30128,
+    "latency_sec": 1.84,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6566,
+    "output_tokens": 186,
+    "total_tokens": 6752,
+    "api_response_id": "3e91fe22-97bc-4a95-aab8-bf3a86e04270"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "ablation_identity_only_task27_User13_seed0",
+    "stage": "plan",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User14",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "Candidate C (Guo Yuan) is a caf\u00e9 owner with a background in business and design, aligning with the document's focus on creating an indie music album while leveraging caf\u00e9 culture for promotion. The document emphasizes practical budgeting, DIY recording, and integrating music with caf\u00e9-based marketing\u2014mirroring C's entrepreneurial mindset, attention to aesthetics, and use of her caf\u00e9 as a creative hub. Unlike Candidates A (writer) and B (illustrator), C's profile directly references music interests (e.g., Norah Jones, Bossa Nova) and aligns with the document's emphasis on local cultural spaces, eco-friendly branding, and event planning (e.g., cultural salons), making her the most contextually relevant match.",
+    "model": "solar-pro",
+    "prompt_chars": 23717,
+    "latency_sec": 2.12,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5001,
+    "output_tokens": 170,
+    "total_tokens": 5171,
+    "api_response_id": "6e370393-9d32-43a4-892e-0a7c8cdd8d54"
+  },
+  {
+    "run_id": "ablation_identity_only_task27_User13_seed0",
+    "stage": "search",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User14",
+      "User15"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": false,
+    "reasoning": "The document focuses on music production tools (microphones, recording equipment), music platforms (NetEase Music, Tencent Music), and Bilibili content related to music creation (composition, mixing, teaching). Candidate B, a freelance illustrator with a strong interest in art, photography, and creative processes, aligns best. His online behavior includes sharing art/photography on social media, uploading drawing process videos on Bilibili, and engaging with creative communities. While not a musician, his artistic mindset, focus on creative tools, and use of platforms like Bilibili for sharing tutorials mirror the document's emphasis on music production and creator ecosystems. Candidates A (caf\u00e9 owner) and C (writer) lack the direct connection to music/artistic creation tools or Bilibili content framing.",
+    "model": "solar-pro",
+    "prompt_chars": 23928,
+    "latency_sec": 1.81,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6237,
+    "output_tokens": 185,
+    "total_tokens": 6422,
+    "api_response_id": "6e3eb383-9e7b-4a0c-8d88-0f3af9ef97d2"
+  },
+  {
+    "run_id": "ablation_identity_only_task27_User13_seed0",
+    "stage": "compress",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User14",
+      "User13"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": false,
+    "reasoning": "The document focuses on microphone pricing, specifications, and comparisons across Chinese e-commerce platforms (JD.com, Taobao) and regional listings (Hong Kong). This aligns with Candidate B's profile as a freelance illustrator who frequently uses social media (Weibo, Instagram) to share creative work, engages with design communities, and values high-quality tools. The technical details and price comparisons mirror B's rational consumption habits for art supplies and photography equipment, as well as his interest in documenting creative processes (e.g., live-streaming drawing sessions). While Candidate C (caf\u00e9 owner) shares some eco-conscious traits, the document\u2019s focus on audio gear and e-commerce research lacks direct ties to coffee culture or sustainability. Candidate A (freelance writer) prioritizes literary and cultural content, which is absent here. B\u2019s artistic background and tool-focused consumption make him the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 27847,
+    "latency_sec": 2.09,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 8285,
+    "output_tokens": 200,
+    "total_tokens": 8485,
+    "api_response_id": "a9349091-d89d-494a-afad-4aed16f81959"
+  },
+  {
+    "run_id": "ablation_identity_only_task27_User13_seed0",
+    "stage": "write",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User14",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on independent music production integrated with a caf\u00e9 space, emphasizing practical budgeting, equipment selection, and cross-promotion strategies between music and caf\u00e9 environments. Candidate C, a caf\u00e9 owner with a background in design and art, aligns perfectly with this focus. Her profile highlights her caf\u00e9's artistic atmosphere, her interest in blending culture with business, and her engagement with local art communities\u2014all mirrored in the document's emphasis on '\u5496\u5561\u9986\u8de8\u754c\u8054\u52a8\u63a8\u5e7f' (caf\u00e9 cross-promotion) and '\u72ec\u7acb\u97f3\u4e50\u4e0e\u5496\u5561\u9986\u5b9e\u4f53\u7a7a\u95f4' (independent music and caf\u00e9 space integration). Unlike Candidates A (writer) and B (illustrator), Candidate C\u2019s entrepreneurial and design-oriented background directly connects to the document\u2019s actionable, business-focused framework for music production and marketing.",
+    "model": "solar-pro",
+    "prompt_chars": 29849,
+    "latency_sec": 2.6,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 10318,
+    "output_tokens": 192,
+    "total_tokens": 10510,
+    "api_response_id": "311129a8-7cef-4d0f-b13e-d2634932d527"
+  }
+]

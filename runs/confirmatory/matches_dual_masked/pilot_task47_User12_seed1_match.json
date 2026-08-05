@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task47_User12_seed1",
+    "stage": "plan",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User12",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "Candidate B aligns most closely with the document's focus on evidence-based, structured exercise planning for a 5-year-old. The document emphasizes scientific guidelines, family participation, and holistic health (exercise, diet, sleep), which mirrors B's traits: his data-driven decision-making, interest in authoritative sources (e.g., tech/AI papers), and prioritization of family time (weekend activities, bedtime stories). Unlike A (career-focused, golf/yoga-centric) or C (casual outdoor hobbies), B's habits\u2014yoga, running, gym workouts, and investment in fitness equipment\u2014reflect a systematic approach to health, aligning with the document's demand for a 'comprehensive exercise plan.' Additionally, B's low-sugar diet and focus on mental well-being resonate with the document's dietary and psychological support requirements.",
+    "model": "solar-pro",
+    "prompt_chars": 20449,
+    "latency_sec": 1.82,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4378,
+    "output_tokens": 196,
+    "total_tokens": 4574,
+    "api_response_id": "fe37d853-2d7a-465a-9dfc-902bf9308c8a"
+  },
+  {
+    "run_id": "pilot_task47_User12_seed1",
+    "stage": "search",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User12",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document focuses on physical activity guidelines for children (WHO, AAP, ACSM), child-friendly outdoor amenities, and caloric/macronutrient recommendations for 5-year-olds. Candidate A's profile aligns most closely: he is a family-oriented father with a 5-year-old child, prioritizes health (exercise habits, diet), and values practical, family-centered activities (hiking, cycling, photography of landscapes). His offline behaviors (family trips, budgeting for children's needs) and content preferences (health articles, family-focused videos) directly reflect the document's emphasis on child health, outdoor play, and nutritional guidance. Candidates B and C, while health-conscious, focus more on adult fitness, tech, or business topics, making them less relevant to the child-centric framing of the document.",
+    "model": "solar-pro",
+    "prompt_chars": 22258,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4974,
+    "output_tokens": 186,
+    "total_tokens": 5160,
+    "api_response_id": "07d897ed-937b-47d2-a00f-4886f4c12aaf"
+  },
+  {
+    "run_id": "pilot_task47_User12_seed1",
+    "stage": "compress",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User12",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on physical activity guidelines for 5-year-olds, emphasizing developmental milestones, motor skill development, and structured exercise recommendations. Candidate B's profile aligns most closely with this content due to his interest in health, family-oriented activities, and his role as a parent (evidenced by reading bedtime stories to his daughter). His exercise preferences (running, gym workouts, and interest in rock climbing) and health goals (maintaining fitness, stress reduction, and immunity) reflect a proactive approach to physical activity that aligns with the document's emphasis on systematic, goal-oriented exercise. Additionally, his tech-savvy nature and data-driven decision-making style resonate with the evidence-based framing of the guidelines. Candidates A and C, while health-conscious, focus more on leisure activities (fishing, hiking) or social exercises (golf, yoga) rather than the structured, developmental focus of the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24751,
+    "latency_sec": 1.92,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5505,
+    "output_tokens": 206,
+    "total_tokens": 5711,
+    "api_response_id": "8971e7f0-d4d4-4884-9c09-f30f33e13387"
+  },
+  {
+    "run_id": "pilot_task47_User12_seed1",
+    "stage": "write",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document focuses on a family-centered approach to physical activity for a 5-year-old, emphasizing practical, age-appropriate exercises, bone health, and emotional resilience through play. Candidate B aligns most closely with this perspective: he prioritizes family bonding (e.g., cooking homemade meals, self-guided family trips), values practical and cost-effective health investments (e.g., smart home devices, outdoor activities), and has a strong interest in natural attractions and hands-on experiences (e.g., hiking, photography of landscapes). Unlike Candidate A (tech-focused, high-intensity fitness) or Candidate C (business-oriented, luxury travel), Candidate B\u2019s emphasis on family-centered routines, moderate exercise (walking/jogging), and interest in outdoor activities directly mirrors the document\u2019s framing of holistic, joyful movement for early childhood development.",
+    "model": "solar-pro",
+    "prompt_chars": 26753,
+    "latency_sec": 2.32,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5812,
+    "output_tokens": 186,
+    "total_tokens": 5998,
+    "api_response_id": "1e3fa843-4610-44b5-b2b3-b5a84d5ab304"
+  }
+]

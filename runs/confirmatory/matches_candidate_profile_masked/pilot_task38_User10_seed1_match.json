@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task38_User10_seed1",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document focuses on family-oriented home-buying priorities (school districts, amenities, parks) and practical financial planning, aligning with Candidate B's emphasis on family needs (children's education, neighborhood amenities) and rational budgeting. Candidate B's interest in practical purchases (smart home products, durable appliances) and preference for self-guided research (detailed comparisons, itinerary planning) mirrors the document's structured, detail-oriented approach. Unlike Candidate A (focused on Suzhou and Industry 4.0) or Candidate C (prioritizing high-end hotels and business trips), Candidate B's lifestyle (family trips, local parks, budget-conscious spending) directly matches the document's context of a Beijing-based family prioritizing education, daily convenience, and cost-effective home-buying.",
+    "model": "solar-pro",
+    "prompt_chars": 19256,
+    "latency_sec": 1.77,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4216,
+    "output_tokens": 180,
+    "total_tokens": 4396,
+    "api_response_id": "a722ff8f-6bb1-497f-9c07-6a2f6bb023b9"
+  },
+  {
+    "run_id": "pilot_task38_User10_seed1",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on Beijing real estate policies, housing prices, and school district regulations (e.g., '1911 policy' and '630 policy'), reflecting a user interested in urban property investment, family education, and cost-effectiveness. Candidate C, a pragmatic professional with a focus on market trends, family-oriented consumption, and frequent business trips to cities like Shenzhen, aligns best. Their interest in high-quality durable goods, educational expenses, and quarterly family trips mirrors the document\u2019s emphasis on housing, school districts, and budget-conscious decision-making. Candidates A (industrial focus) and B (leisure-oriented) lack the document\u2019s urban investment and policy-driven framing.",
+    "model": "solar-pro",
+    "prompt_chars": 19351,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5695,
+    "output_tokens": 160,
+    "total_tokens": 5855,
+    "api_response_id": "4de837f6-d933-4e44-b59c-72d4ce0c0e12"
+  },
+  {
+    "run_id": "pilot_task38_User10_seed1",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document focuses on practical, budget-conscious real estate recommendations in Beijing, emphasizing cost-effective housing options (\u00a56M budget), family-friendly amenities (parks, schools), and detailed financial breakdowns. Candidate A aligns best: they prioritize rational spending, family-centric decisions (monthly budgeting, family trips), and practical purchases (smart home products). Their interest in education (school-zone areas) and outdoor activities (parks, hiking) matches the document's emphasis on green spaces and sub-markets near educational hubs. Candidate B (tech/gardening focus) and C (luxury travel/management) lack the document's domestic, budget-focused framing.",
+    "model": "solar-pro",
+    "prompt_chars": 23280,
+    "latency_sec": 1.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6200,
+    "output_tokens": 160,
+    "total_tokens": 6360,
+    "api_response_id": "b8453eef-29eb-4e55-8199-1e190d5c669c"
+  },
+  {
+    "run_id": "pilot_task38_User10_seed1",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on balancing educational resources, living convenience, and quality-of-life factors for a family with school-aged children and a pet. Candidate C prioritizes children's education (e.g., investing in extracurricular classes and learning resources) and values cost-effectiveness with a focus on quality, aligning with the report's emphasis on budget-conscious yet high-value housing choices. Additionally, Candidate C's preference for urban parks and family-friendly environments matches the document's emphasis on green spaces and pet-friendly amenities. The structured, data-driven analysis in the report also mirrors Candidate C's pragmatic, detail-oriented decision-making style and interest in market trends.",
+    "model": "solar-pro",
+    "prompt_chars": 25282,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5987,
+    "output_tokens": 147,
+    "total_tokens": 6134,
+    "api_response_id": "69def3a7-c8b3-4f53-b9cc-306c70ef2f41"
+  }
+]

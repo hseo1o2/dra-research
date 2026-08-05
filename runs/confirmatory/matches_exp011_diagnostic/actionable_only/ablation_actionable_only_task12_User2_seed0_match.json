@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "ablation_actionable_only_task12_User2_seed0",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "Candidate A is a Clinical Psychology graduate student with a strong foundational interest in psychology, a rigorous learning attitude, and habits like journaling and yoga. The document explicitly mentions a preference for cost-effective resources, an organized routine with morning study and cloud-based note-taking, and a focus on psychological frameworks (CBT, ACT, DBT, etc.). These align directly with Candidate A's background, academic focus, and behavioral traits. Candidate B (new media) and C (computer science) lack the psychological depth and personal habits (e.g., journaling, yoga) central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 23761,
+    "latency_sec": 1.88,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4962,
+    "output_tokens": 143,
+    "total_tokens": 5105,
+    "api_response_id": "f0fbe336-7fbb-46e5-aaf6-7ae3116fe68b"
+  },
+  {
+    "run_id": "ablation_actionable_only_task12_User2_seed0",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on psychological well-being resources (DBT, ACT, RULER framework) and stress-reduction techniques (physiological sigh), aligning with Candidate B's graduate studies in Clinical Psychology and her interest in psychology-related content. Her frequent engagement with psychology forums, academic resources, and emotional communication materials directly reflects the document's emphasis on therapeutic methods and emotional intelligence. Candidates A (new media research) and C (computer science) lack this specific psychological focus, making B the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 25474,
+    "latency_sec": 2.26,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5496,
+    "output_tokens": 119,
+    "total_tokens": 5615,
+    "api_response_id": "ccd55616-563e-4332-805c-0e7f50040bea"
+  },
+  {
+    "run_id": "ablation_actionable_only_task12_User2_seed0",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User1",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on evidence-based psychological frameworks (DBT, ACT, CBT, MBSR, EI) and includes detailed exercises for emotional regulation, self-awareness, and reflection. Candidate C, a graduate student in Clinical Psychology, aligns most closely with this content due to her academic background, interest in psychology, and behavioral patterns (e.g., saving psychology articles, sharing emotional communication tips, and purchasing psychology-related books). The document\u2019s emphasis on therapeutic tools and self-study workbooks directly matches her professional and personal interests, whereas Candidates A (new media research) and B (computer science) lack this specific psychological focus.",
+    "model": "solar-pro",
+    "prompt_chars": 27967,
+    "latency_sec": 2.71,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6117,
+    "output_tokens": 151,
+    "total_tokens": 6268,
+    "api_response_id": "6774afed-1d6c-4663-9671-d19e49b37c8c"
+  },
+  {
+    "run_id": "ablation_actionable_only_task12_User2_seed0",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document's focus on evidence-based psychological frameworks (CBT, DBT, ACT, MBSR) and structured self-study aligns with Candidate B's graduate studies in Clinical Psychology and her deep interest in psychology. Her behavioral traits\u2014such as using psychology apps, sharing academic content, and prioritizing emotional communication\u2014mirror the document's emphasis on emotional regulation, self-awareness, and practical exercises. Candidate A (Journalism) and C (Computer Science) lack the domain-specific expertise and personal/professional alignment with psychological frameworks that make Candidate B the clear match.",
+    "model": "solar-pro",
+    "prompt_chars": 29969,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6425,
+    "output_tokens": 139,
+    "total_tokens": 6564,
+    "api_response_id": "7341f9ef-4709-421f-bee9-988478d7dcc0"
+  }
+]

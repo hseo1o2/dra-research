@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task18_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on high-end business travel, structured planning, and a blend of professional and leisure priorities. The document emphasizes high-end chain hotels in central Berlin (matching A's preference for business hotels), detailed scheduling for business meetings (reflecting A's pragmatic, detail-oriented personality), and a budget-conscious yet quality-focused approach (consistent with A's cost-effectiveness and investment in practicality). Additionally, the request for cultural/historical sites and refined dining (e.g., Asian cuisine) aligns with A's interest in deep experiences and family-oriented leisure, as well as their preference for high-quality dining. Candidate B and C lack the same emphasis on business-centric travel logistics and high-end service expectations.",
+    "model": "solar-pro",
+    "prompt_chars": 19366,
+    "latency_sec": 1.67,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4269,
+    "output_tokens": 175,
+    "total_tokens": 4444,
+    "api_response_id": "6ae76539-04d4-48c3-9227-7b40e54304e4"
+  },
+  {
+    "run_id": "pilot_task18_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on travel logistics (flights, ground transport, hotel status, museum/tourist site details) with a premium emphasis on efficiency, cost-effectiveness, and structured planning\u2014aligning with Candidate A's pragmatic, detail-oriented personality and travel preferences. Candidate A prioritizes self-guided tours, deep cultural experiences, and cost-conscious planning (e.g., budgeting for family trips, comparing flight prices), which mirrors the document's focus on flight costs, transport zones, and museum/tourist site operational details. Candidate B and C, while also rational, lack A's explicit focus on high-end travel experiences (e.g., hotel status, historical sites) and structured itinerary planning, which are central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 20770,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4761,
+    "output_tokens": 169,
+    "total_tokens": 4930,
+    "api_response_id": "204c23eb-6873-4431-a032-1b48852c0591"
+  },
+  {
+    "run_id": "pilot_task18_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on cost-effective travel planning, budget allocation, and detailed comparisons of flight and accommodation options, aligning with Candidate B's pragmatic, detail-oriented personality and preference for cost-effectiveness. Candidate B's interest in market trends, data analysis, and efficient decision-making (evident in their LinkedIn activity and career focus) mirrors the document's structured, analytical approach to travel logistics. Additionally, Candidate B's travel style\u2014self-guided tours, family-focused trips, and emphasis on deep experiences\u2014resonates with the document's emphasis on maximizing value within a budget while prioritizing comfort and local culture. Candidates A and C, while also practical, lack the same level of analytical rigor and business-oriented framing seen in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 23280,
+    "latency_sec": 1.81,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5998,
+    "output_tokens": 166,
+    "total_tokens": 6164,
+    "api_response_id": "aa643469-645f-4f13-80a4-3148d187bd8b"
+  },
+  {
+    "run_id": "pilot_task18_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on high-end business travel, luxury accommodations, and efficient workspaces in Berlin, aligning with Candidate B's profile. B prioritizes cost-effectiveness, quality, and practicality in consumption, values high-end durable items, and prefers self-guided tours with deep cultural experiences. The document's emphasis on executive workspaces, fine dining, and luxury hotels (e.g., Ritz-Carlton, Westin) matches B's preference for high-end chain hotels and cozy homestays for family vacations. Additionally, B's interest in market trends, innovative management, and international travel (e.g., Shenzhen, Chengdu) aligns with the document's global business focus. Candidates A and C, while pragmatic, prioritize local cultural and natural attractions over luxury business travel, making B the best fit.",
+    "model": "solar-pro",
+    "prompt_chars": 25282,
+    "latency_sec": 1.8,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5921,
+    "output_tokens": 187,
+    "total_tokens": 6108,
+    "api_response_id": "c02868d4-5bfc-4b3e-adc1-0becb86db4ff"
+  }
+]

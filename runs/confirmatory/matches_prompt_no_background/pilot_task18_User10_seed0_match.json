@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task18_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate A (Liu Qiang) is a marketing manager in a foreign enterprise with an MBA, aligning with the document's focus on business meetings, high-end hotels, and cost-effective planning within a tight budget. His preference for combining Eastern/Western thinking, self-guided tours, and interest in cultural/historical sites (e.g., Museum Island) matches the itinerary's blend of business and leisure. The document's emphasis on high-quality dining (including Asian cuisine), structured schedules, and family-oriented values (implied by budget-conscious planning) also aligns with A's profile. Candidates B and C, while sharing some travel preferences, lack A's specific focus on marketing, international business, and the pragmatic yet quality-driven approach evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25448,
+    "latency_sec": 1.69,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5384,
+    "output_tokens": 172,
+    "total_tokens": 5556,
+    "api_response_id": "a65c73f1-5ee7-4888-8938-58b2ec899aea"
+  },
+  {
+    "run_id": "pilot_task18_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on travel logistics (flights, ground transport), hotel status, and museum/attraction details\u2014topics aligning with Candidate A's frequent family vacations (twice yearly), preference for historical/cultural sites, and self-guided travel planning. The content's emphasis on cost comparisons (e.g., flight prices, ticket zones) matches A's rational, cost-effective consumption style. Additionally, the document's structure (queries about practical travel details) reflects A's pragmatic, detail-oriented personality and his role as a planner for family trips. Candidates B and C, while interested in travel, prioritize different aspects (e.g., B's photography focus, C's technical/industrial interests) and lack A's explicit emphasis on family-oriented, culturally rich travel experiences.",
+    "model": "solar-pro",
+    "prompt_chars": 26852,
+    "latency_sec": 2.19,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5876,
+    "output_tokens": 177,
+    "total_tokens": 6053,
+    "api_response_id": "77ea90d3-1cd8-4b87-b425-316503f636f1"
+  },
+  {
+    "run_id": "pilot_task18_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on cost-effective travel planning for a family-friendly trip to Berlin, emphasizing budget allocation, accommodation preferences, and cultural experiences. Candidate B, a marketing manager with a family, aligns best due to his emphasis on cost-effectiveness, family-oriented travel (e.g., quarterly trips, educational expenses for children), and interest in cultural/historical destinations. The document's framing (e.g., budget limits, 7-day passes, meal planning) reflects B's pragmatic, family-centric decision-making style and preference for self-guided tours. Candidates A and C, while detail-oriented, prioritize solo or work-related travel and lack the same focus on family-centric budgeting and cultural exploration.",
+    "model": "solar-pro",
+    "prompt_chars": 29362,
+    "latency_sec": 1.71,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 7113,
+    "output_tokens": 162,
+    "total_tokens": 7275,
+    "api_response_id": "91897385-44db-45cd-94d3-1be2516b9731"
+  },
+  {
+    "run_id": "pilot_task18_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on a high-end business-leisure hybrid travel plan with premium accommodations, executive workspaces, and fine dining\u2014aligning with Candidate B's profile as a marketing manager in a foreign enterprise. B values quality of life, cost-effectiveness, and combines Eastern/Western thinking, matching the document's balance of business efficiency (meetings, workspaces) and leisure (cultural exploration, photography). Unlike Candidate A (technical director with local travel focus) or C (state-owned enterprise manager with rural roots), B's frequent international business trips, interest in modern urban environments, and preference for high-end hotels align with the Shanghai-to-Berlin itinerary, budget (~\u00a530,000), and emphasis on luxury amenities (e.g., club lounges, fine dining).",
+    "model": "solar-pro",
+    "prompt_chars": 31364,
+    "latency_sec": 1.87,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 7036,
+    "output_tokens": 186,
+    "total_tokens": 7222,
+    "api_response_id": "28a97fca-f6fe-40de-9c55-a7228ef8ab0c"
+  }
+]

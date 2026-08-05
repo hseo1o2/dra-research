@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task29_User10_seed1",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "Candidate B's profile aligns most closely with the document's focus on data-driven planning, cost-effectiveness, and healthy lifestyle integration. The document emphasizes a structured, data-backed business plan (market analysis, financial modeling) and targets health-conscious audiences\u2014mirroring B's meticulous data analysis habits, rational decision-making, and preference for low-calorie, high-protein meals. Unlike A (focused on family and leisure) or C (prioritizing supply chain and eco-friendly consumption), B's independent, detail-oriented approach and interest in health trends directly reflect the document's pragmatic, efficiency-driven framing for a fast-food startup.",
+    "model": "solar-pro",
+    "prompt_chars": 18987,
+    "latency_sec": 1.55,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4152,
+    "output_tokens": 150,
+    "total_tokens": 4302,
+    "api_response_id": "cb120b63-6152-4484-a108-9ed5ac6d6bbe"
+  },
+  {
+    "run_id": "pilot_task29_User10_seed1",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on market trends, cost analysis, and entrepreneurial strategies for the Chinese light-food industry, particularly in Shanghai. Candidate B, a pragmatic and data-driven individual with interests in market trends, business management, and cost-effectiveness, aligns closely with the document's emphasis on financial planning, supply chain optimization, and strategic decision-making. His frequent use of LinkedIn and Zhihu for industry insights, along with his preference for analytical content (e.g., Harvard Business Review), mirrors the document's framing. Additionally, his role as a family-oriented entrepreneur who balances practicality with long-term value aligns with the document's focus on sustainable business models and cost control within a 500,000 RMB budget. Candidates A and C, while data-savvy or interested in sustainability, lack B's direct focus on entrepreneurial logistics and market analysis.",
+    "model": "solar-pro",
+    "prompt_chars": 18713,
+    "latency_sec": 2.02,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5427,
+    "output_tokens": 196,
+    "total_tokens": 5623,
+    "api_response_id": "92bdf05c-e176-4013-a67a-31935706ede5"
+  },
+  {
+    "run_id": "pilot_task29_User10_seed1",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on the Chinese light meal market, emphasizing data-driven analysis of market size, consumer behavior, and competitive positioning. Candidate A's profile aligns most closely with this analytical, detail-oriented framing. Her expertise in data tools (Python, SQL, Tableau), preference for structured reports, and interest in market trends (evident in her LinkedIn/Zhihu activity) mirror the document's quantitative focus. Additionally, her dietary preferences (low-calorie, high-protein meals) and urban Shanghai context align with the target audience described in the report. Candidates B and C, while rational consumers, lack A's deep analytical focus and data-centric habits, which are central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 22809,
+    "latency_sec": 1.78,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5785,
+    "output_tokens": 164,
+    "total_tokens": 5949,
+    "api_response_id": "2acd9349-f647-440a-b7cf-b03c3cf74c2a"
+  },
+  {
+    "run_id": "pilot_task29_User10_seed1",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on a commercial plan for a health-focused fast-casual brand targeting white-collar workers and fitness enthusiasts in Shanghai's CBD. Candidate B's profile aligns most closely with this content: (1) his frequent business trips to Shenzhen and Chengdu reflect a professional engaged in urban commercial environments, (2) his preference for high-end restaurants and cost-effective quality consumption matches the document's emphasis on balancing affordability with premium quality, and (3) his interest in market trends and management case studies aligns with the strategic framing of the business plan. While Candidate A shares some eco-friendly values, his focus on family and domestic consumption diverges from the document's B2C urban professional focus. Candidate C's data-driven habits and solo travel preferences lack the social and business-oriented context central to the report.",
+    "model": "solar-pro",
+    "prompt_chars": 24811,
+    "latency_sec": 1.96,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 8727,
+    "output_tokens": 187,
+    "total_tokens": 8914,
+    "api_response_id": "d7fcec8d-330f-41c6-96fe-7e7e0b807ff1"
+  }
+]

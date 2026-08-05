@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "ablation_actionable_only_task2_User2_seed0",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User1",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "Candidate C is a graduate student in Clinical Psychology with a strong focus on cost-effective academic opportunities, aligning with the document's emphasis on budget-conscious exchange programs. The document's detailed focus on psychology curriculum, credit transfer, and mental well-being strategies mirrors Candidate C's academic background, research interests, and documented preferences for psychology resources. Additionally, her emphasis on cultural adaptation and stress management (evident in her cat-care routines, yoga, and time-management habits) directly parallels the document's risk-management and psychological well-being sections. Candidates A (new media) and B (computer science) lack the document's psychology-specific framing and financial prioritization.",
+    "model": "solar-pro",
+    "prompt_chars": 24215,
+    "latency_sec": 2.56,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5021,
+    "output_tokens": 149,
+    "total_tokens": 5170,
+    "api_response_id": "499bb6b9-61e5-4c38-beec-18348d891561"
+  },
+  {
+    "run_id": "ablation_actionable_only_task2_User2_seed0",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on psychology-related exchange programs, credit transfers, and scholarships (e.g., CSC), aligning with Candidate A's background as a Clinical Psychology graduate student. Her interests in academic exchanges, credit conversion, and psychology programs directly match the document's content. Candidates B (new media) and C (computer science) lack the psychological focus and academic exchange priorities evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25416,
+    "latency_sec": 1.92,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5350,
+    "output_tokens": 99,
+    "total_tokens": 5449,
+    "api_response_id": "77cd4f13-2c45-46e1-84f5-0c2d27bd8613"
+  },
+  {
+    "run_id": "ablation_actionable_only_task2_User2_seed0",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on psychology exchange programs, academic credit transfers, and clinical psychology restrictions\u2014topics directly relevant to Candidate A, a Clinical Psychology graduate student. Her educational background (Psychology BSc, Clinical Psychology MSc), institutional affiliations (Beijing-based), and frequent engagement with psychology resources align with the document's emphasis on Beijing universities (PKU, BNU) and clinical psychology constraints. Candidates B (new media) and C (computer science) lack the domain-specific focus on psychology exchange infrastructure and clinical limitations central to the text.",
+    "model": "solar-pro",
+    "prompt_chars": 27967,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5884,
+    "output_tokens": 130,
+    "total_tokens": 6014,
+    "api_response_id": "b79d5db1-4742-407c-a8d6-5830d96910b3"
+  },
+  {
+    "run_id": "ablation_actionable_only_task2_User2_seed0",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on psychology undergraduates planning overseas exchange programs, emphasizing academic rigor, clinical psychology restrictions, credit transfer, and financial feasibility. Candidate B is a graduate student in Clinical Psychology with a background in psychology, aligning directly with the document's audience. Her interests in psychology, academic rigor, and practical considerations (e.g., budgeting for pet supplies, cost-effective shopping) mirror the document's framing. Candidates A (Journalism) and C (Computer Science) lack the psychological focus and academic priorities central to the text.",
+    "model": "solar-pro",
+    "prompt_chars": 29969,
+    "latency_sec": 2.72,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6538,
+    "output_tokens": 128,
+    "total_tokens": 6666,
+    "api_response_id": "f70812fd-745a-40ad-a773-1ed9fdd2d4e8"
+  }
+]

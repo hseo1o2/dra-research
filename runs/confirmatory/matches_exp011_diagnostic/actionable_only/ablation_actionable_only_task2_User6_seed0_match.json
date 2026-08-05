@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "ablation_actionable_only_task2_User6_seed0",
+    "stage": "plan",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User6",
+      "User18",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User18",
+      "User6"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "Candidate C is an undergraduate student in Environmental Studies from Hangzhou, aligning with the document's author who is also an undergraduate in Hangzhou with a passion for environmental protection, sustainable urban development, and climate change. The document's focus on exchange programs in environmental science, circular economy, and sustainability directly matches Candidate C's academic background, research interests, and behavioral patterns (e.g., participation in environmental volunteer activities, consumption of eco-friendly products, and content preferences related to environmental protection). Candidate A (Clinical Psychology) and B (Data Analyst) lack the domain-specific alignment in environmental science and sustainability that defines the document's purpose and framing.",
+    "model": "solar-pro",
+    "prompt_chars": 24161,
+    "latency_sec": 1.71,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4972,
+    "output_tokens": 149,
+    "total_tokens": 5121,
+    "api_response_id": "e14961b3-d017-4851-8205-a87c8255c96f"
+  },
+  {
+    "run_id": "ablation_actionable_only_task2_User6_seed0",
+    "stage": "search",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User6",
+      "User18",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User6",
+      "User2"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "The document focuses on environmental science, sustainability, and international student programs (e.g., UC Berkeley BISP, Columbia Climate School, German/Netherlands/Swedish visa requirements for sustainability studies). Candidate B is an undergraduate in Environmental Studies with a strong interest in sustainability, eco-friendly consumption, and environmental activism. Her academic background, content preferences (environmental protection articles/videos), and travel interests (natural attractions, low-carbon trips) align directly with the document's themes. Candidates A (data analyst) and C (clinical psychology graduate student) lack the same focus on environmental sustainability, making B the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 25601,
+    "latency_sec": 2.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5430,
+    "output_tokens": 144,
+    "total_tokens": 5574,
+    "api_response_id": "86e4bd5b-98c3-4021-a2d8-474481653dae"
+  },
+  {
+    "run_id": "ablation_actionable_only_task2_User6_seed0",
+    "stage": "compress",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User6",
+      "User18",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User6",
+      "User2",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "The document focuses on environmental science, sustainability, and visiting student programs at institutions like UC Berkeley and Columbia Climate School. Candidate A is an undergraduate in Environmental Studies with a strong interest in sustainability, eco-friendly practices, and participation in environmental activities. Her content preferences, consumption habits, and travel interests align closely with the document's emphasis on environmental themes. Candidates B (Clinical Psychology) and C (Data Analyst) lack the same direct focus on environmental sustainability, making A the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 28094,
+    "latency_sec": 2.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 7398,
+    "output_tokens": 118,
+    "total_tokens": 7516,
+    "api_response_id": "36ee9116-bf7c-477e-9c2c-30b0585f3834"
+  },
+  {
+    "run_id": "ablation_actionable_only_task2_User6_seed0",
+    "stage": "write",
+    "gt_userid": "User6",
+    "candidate_userids": [
+      "User6",
+      "User18",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User6",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User6",
+    "correct": true,
+    "reasoning": "The document focuses on environmental science, sustainability, and green governance, aligning with Candidate B's undergraduate studies in Environmental Studies and her deep interest in sustainable urban development. The report's emphasis on academic curricula, financial planning, and career returns in environmental fields mirrors B's pragmatic, eco-conscious consumption habits and her active participation in environmental volunteer activities. Unlike Candidate A (Clinical Psychology) or C (Data Analyst), B's background, goals, and preferences directly reflect the document's technical vocabulary, regional program comparisons, and focus on circular economy/climate policy\u2014key themes in her academic and extracurricular pursuits.",
+    "model": "solar-pro",
+    "prompt_chars": 30096,
+    "latency_sec": 3.67,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6411,
+    "output_tokens": 144,
+    "total_tokens": 6555,
+    "api_response_id": "7dca703d-fb17-4e48-96f9-d35265cd3b3f"
+  }
+]

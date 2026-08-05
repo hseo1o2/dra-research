@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task32_User18_seed0",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on meticulous planning, budget allocation, and modern aesthetic preferences. The request for a detailed comparison table, cost-performance analysis, and emphasis on smart home connectivity reflects Candidate A's data-driven, rational decision-making style and preference for high-quality, durable products. Additionally, Candidate A's interest in eco-friendly products and modern design (e.g., boutique hotels, stylish homestays) matches the document's emphasis on a modern aesthetic and sustainable choices. Candidates B and C, while also detail-oriented, prioritize financial investments (B) or family-centric spending (C), which are less relevant to the document's focus on interior design and smart home integration.",
+    "model": "solar-pro",
+    "prompt_chars": 17974,
+    "latency_sec": 1.6,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 3947,
+    "output_tokens": 166,
+    "total_tokens": 4113,
+    "api_response_id": "37976cc5-6512-46a6-ae28-6852d858a6bd"
+  },
+  {
+    "run_id": "pilot_task32_User18_seed0",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on interior design, home appliance recommendations (e.g., zero-embedding refrigerators, washer-dryer combos), and budget planning for an 89\u33a1 apartment. Candidate C, who prioritizes high-quality household items, cost-effectiveness, and family-oriented consumption (e.g., investing in durable home goods and children\u2019s education), aligns most closely. The content\u2019s emphasis on practicality, space optimization, and mid-to-high-end product comparisons mirrors C\u2019s preference for blending quality with cost-effectiveness, as seen in his interest in 'high-end durable household items' and 'thorough comparisons' when shopping. Candidates A (tech/finance-focused) and B (data/analysis-oriented) lack the document\u2019s domestic and lifestyle-centric framing.",
+    "model": "solar-pro",
+    "prompt_chars": 18703,
+    "latency_sec": 1.76,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5565,
+    "output_tokens": 177,
+    "total_tokens": 5742,
+    "api_response_id": "6932d5b7-8914-4ef4-8235-58265e675e9f"
+  },
+  {
+    "run_id": "pilot_task32_User18_seed0",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User8"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on appliance recommendations for a compact 89m\u00b2 apartment, emphasizing cost-effectiveness, smart home integration, and family-oriented features (e.g., heat pump laundry combos for space efficiency). Candidate B aligns best: they prioritize practical, high-quality household items, have a family-oriented consumption cycle (quarterly trips, gift-giving), and value cost-performance ratios. Their interest in durable appliances (e.g., photography equipment, management books) and preference for self-guided planning mirrors the document's detailed product comparisons and space-optimization focus. Candidates A (data analyst) and C (finance-focused) lack the document's emphasis on family-centric, home-optimization priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 22677,
+    "latency_sec": 2.06,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6370,
+    "output_tokens": 163,
+    "total_tokens": 6533,
+    "api_response_id": "c2e71356-a5c3-4c9d-a3a3-885c343cae5f"
+  },
+  {
+    "run_id": "pilot_task32_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on budget-conscious, high-quality interior design for a modern 89\u33a1 apartment, emphasizing practicality, cost-effectiveness, and durable household items. Candidate A aligns with this through their rational consumption habits, focus on quality and cost-effectiveness, and preference for high-end durable household items. The document's emphasis on detailed budget allocation, material selection, and smart home integration (e.g., XiaoAI voice control) also matches Candidate A's pragmatic, data-driven decision-making style and interest in smart home ecosystems. Candidates B and C, while rational consumers, prioritize sustainability (B) or financial investments (C), which are less central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 24679,
+    "latency_sec": 1.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6236,
+    "output_tokens": 156,
+    "total_tokens": 6392,
+    "api_response_id": "7edd2bc2-e3f9-42bc-96cd-645275c8a5df"
+  }
+]

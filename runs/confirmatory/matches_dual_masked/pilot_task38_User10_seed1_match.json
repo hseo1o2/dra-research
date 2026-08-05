@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task38_User10_seed1",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document emphasizes family-centric priorities (school-aged children, pet-friendly neighborhood, educational resources, parks) and practical financial planning (budget constraints, renovation flexibility, transaction precautions). Candidate B aligns most closely: his profile highlights family-oriented consumption (monthly budgeting, homemade meals, family trips), practical shopping habits (cost-effectiveness, smart home investments), and lifestyle preferences (natural attractions, self-guided tours). Unlike Candidate A (focused on mechanical engineering/Industry 4.0) or Candidate C (business management/photography), Candidate B\u2019s emphasis on school districts, park accessibility, and structured budgeting directly mirrors the document\u2019s focus on family needs and pragmatic home-buying considerations.",
+    "model": "solar-pro",
+    "prompt_chars": 19157,
+    "latency_sec": 2.25,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4232,
+    "output_tokens": 165,
+    "total_tokens": 4397,
+    "api_response_id": "8dfe8b1e-22d5-4e6c-865b-3cd457902635"
+  },
+  {
+    "run_id": "pilot_task38_User10_seed1",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on real estate policies, housing prices, and school district regulations in Beijing, reflecting priorities around property investment, family education, and urban living. Candidate C's profile aligns most closely: they prioritize cost-effectiveness in consumption, invest in children's education, and have a rational, data-driven decision-making style. Their interest in market trends, management case studies, and frequent business trips to cities like Shenzhen/Suzhou (similar to Beijing's urban context) further supports this match. Candidates A and B lack the explicit focus on urban real estate dynamics, education policies, or investment-oriented consumption patterns evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 19277,
+    "latency_sec": 2.59,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5568,
+    "output_tokens": 148,
+    "total_tokens": 5716,
+    "api_response_id": "d3e5b833-f49b-4b44-862e-036a3697de69"
+  },
+  {
+    "run_id": "pilot_task38_User10_seed1",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document focuses on Beijing real estate recommendations for a \u00a56M budget, emphasizing practical considerations like pricing, school zones, green spaces, and proximity to amenities. Candidate A's profile aligns with this focus: they prioritize rational spending, value cost-effectiveness, and have a strong interest in family-oriented decisions (e.g., school zones, parks). The document's emphasis on budget constraints, practical sizing, and family-friendly features (e.g., dog-friendly parks, green spaces) matches Candidate A's preferences for practical purchases, family trips, and outdoor activities. Candidates B and C, while also rational consumers, focus more on professional interests (engineering, business) and less on the family-centric, budget-conscious real estate analysis presented here.",
+    "model": "solar-pro",
+    "prompt_chars": 23280,
+    "latency_sec": 2.77,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6358,
+    "output_tokens": 172,
+    "total_tokens": 6530,
+    "api_response_id": "8c5687c2-af63-4d16-810e-d8866968924d"
+  },
+  {
+    "run_id": "pilot_task38_User10_seed1",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document prioritizes educational resources, family-friendly amenities, and quality-of-life factors (parks, green space) for a household with school-aged children and a pet\u2014aligning with Candidate C's focus on children's education, family-centric consumption, and preference for high-quality living environments. Unlike Candidates A (pragmatic engineer with Suzhou-centric habits) and B (photography/hiking enthusiast with less emphasis on education), Candidate C explicitly values 'generous children's educational expenses,' 'family vacations,' and 'cost-effective quality'\u2014mirroring the report's balance of budget constraints, school-zone analysis, and park/amenity evaluations. The document's structured, data-driven framing also matches C's analytical decision-making style and interest in market trends.",
+    "model": "solar-pro",
+    "prompt_chars": 25282,
+    "latency_sec": 2.97,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6193,
+    "output_tokens": 180,
+    "total_tokens": 6373,
+    "api_response_id": "85c37666-a5d5-4a51-b6ce-34970bb228b3"
+  }
+]

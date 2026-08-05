@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task18_User22_seed1",
+    "stage": "plan",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "Candidate C, a Technical Director in Manufacturing, aligns most closely with the document's focus on optimizing practicality, comfort, and value for a business-leisure trip. The request for detailed logistics (flights, accommodation, transport) and emphasis on industrial/museum visits (smart manufacturing, automotive) reflect C's professional background in mechanical engineering and interest in Industry 4.0. The budget constraint (\u00a530,000) and preference for high-cleanliness hotels with gyms match C's rational, cost-effective consumption style and accommodation preferences. Additionally, the inclusion of classical music concerts aligns with C's appreciation for symphonic works (e.g., Tan Dun), while the focus on historical/cultural landmarks and local cuisine resonates with C's travel style of self-guided tours prioritizing local culture. Candidates A (marketing focus) and B (photography/hiking interests) lack the technical and industrial emphasis central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25355,
+    "latency_sec": 2.18,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5372,
+    "output_tokens": 218,
+    "total_tokens": 5590,
+    "api_response_id": "8fe8ad0f-39cc-41f4-928e-4ffbfbe0f1a8"
+  },
+  {
+    "run_id": "pilot_task18_User22_seed1",
+    "stage": "search",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on flight schedules and operational details for Hainan Airlines and Lufthansa, emphasizing practical travel logistics (e.g., flight numbers, departure/arrival times, routes like PVG-PEK-BER). Candidate A, a marketing manager in a foreign enterprise, frequently travels for business (twice yearly to Shenzhen/Chengdu) and prioritizes efficiency, cost-effectiveness, and family-friendly travel. His profile aligns with the document\u2019s focus on structured schedules, international routes (e.g., BER-PEK), and practical travel planning. Candidates B and C, while also interested in travel, prioritize leisure, family bonding, or photography, which are less directly relevant to the document\u2019s logistical framing.",
+    "model": "solar-pro",
+    "prompt_chars": 26780,
+    "latency_sec": 1.86,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6148,
+    "output_tokens": 168,
+    "total_tokens": 6316,
+    "api_response_id": "4e257041-50a0-487a-a3d1-2cd96658978f"
+  },
+  {
+    "run_id": "pilot_task18_User22_seed1",
+    "stage": "compress",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on detailed transportation logistics, cost comparisons, and practical travel planning for Berlin, emphasizing efficiency, cost-effectiveness, and structured information presentation. Candidate A, as a marketing manager with a pragmatic, data-driven decision-making style, aligns with this focus. His preferences for in-depth analysis, cost-benefit comparisons, and structured planning (evident in his career, travel, and consumption habits) mirror the document's framing. Candidates B and C, while also rational, prioritize family-oriented leisure or technical interests, which are less central to the document's purely logistical and business-traveler-oriented content.",
+    "model": "solar-pro",
+    "prompt_chars": 29362,
+    "latency_sec": 1.62,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6912,
+    "output_tokens": 144,
+    "total_tokens": 7056,
+    "api_response_id": "bf40c078-bcec-47ce-ba9c-e108bab6d773"
+  },
+  {
+    "run_id": "pilot_task18_User22_seed1",
+    "stage": "write",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on a high-efficiency, budget-conscious business and technical research trip from Suzhou/Shanghai to Berlin, emphasizing executive-level comfort, connectivity, and practical value. Candidate B, a marketing manager in a foreign enterprise based in Shanghai, aligns most closely with this profile. His occupation involves frequent business travel, his preference for self-guided tours and detailed itineraries matches the document's structured planning, and his emphasis on cost-effectiveness and quality (e.g., high-end hotels, durable purchases) reflects the budget management and accommodation choices described. Additionally, his interest in Western management concepts and international exposure aligns with the document's global context (Shanghai-Berlin route, Star Alliance flights). Candidates A (state-owned enterprise manager) and C (technical director in manufacturing) lack the same focus on international business travel and marketing-oriented efficiency.",
+    "model": "solar-pro",
+    "prompt_chars": 31364,
+    "latency_sec": 1.9,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 7722,
+    "output_tokens": 189,
+    "total_tokens": 7911,
+    "api_response_id": "3a10e519-5565-4578-8d51-68fcbbfd6c5c"
+  }
+]

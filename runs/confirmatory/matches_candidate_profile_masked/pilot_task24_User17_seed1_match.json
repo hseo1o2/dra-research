@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task24_User17_seed1",
+    "stage": "plan",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User17",
+    "correct": true,
+    "reasoning": "The document focuses on home property insurance for a seaside house in Xiamen, emphasizing risks like typhoons, flooding, and household belongings coverage. Candidate A's profile aligns most closely: she owns a seaside home (implied by location and pet-friendly coastal concerns), has a high-value household inventory (\u00a5300k), and prioritizes family safety, pet care, and detailed research\u2014mirroring the document's emphasis on thorough clause analysis, budget constraints, and value-added services like loss prevention. Her rational consumption style and focus on quality (e.g., branded items, pet products) align with the need for cost-effective yet comprehensive coverage. Candidates B and C, while rational consumers, lack explicit ties to coastal risks, pet-related considerations, or the document's household-centric focus.",
+    "model": "solar-pro",
+    "prompt_chars": 19051,
+    "latency_sec": 4.7,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4201,
+    "output_tokens": 186,
+    "total_tokens": 4387,
+    "api_response_id": "a964edbd-9b66-41f8-ba62-f7fe4a83c162"
+  },
+  {
+    "run_id": "pilot_task24_User17_seed1",
+    "stage": "search",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on high-end home insurance products (e.g., '\u9ad8\u7aef\u5bb6\u8d22\u9669', '\u5c0a\u4eab\u7248') with detailed comparisons of coverage limits (30\u4e07-1040\u4e07), premiums (3000-5000\u5143), and technical terms like '\u6298\u65e7\u7387' (depreciation rate) and '\u91cd\u7f6e\u4ef7\u503c' (replacement value). Candidate B, a pragmatic, detail-oriented professional with a focus on cost-effectiveness and high-end durable goods, aligns best. His interest in financial analysis, market trends, and preference for quality/value-driven purchases (e.g., photography equipment, management books) matches the document's emphasis on insurance product specifications, cost-benefit analysis, and technical framing. Candidates A (pet/nursing focus) and C (photography/fishing hobbies) lack the document's financial and insurance-specific depth.",
+    "model": "solar-pro",
+    "prompt_chars": 18647,
+    "latency_sec": 4.8,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5431,
+    "output_tokens": 205,
+    "total_tokens": 5636,
+    "api_response_id": "3b4e8e80-4961-4010-bfbf-0b8418d4edd6"
+  },
+  {
+    "run_id": "pilot_task24_User17_seed1",
+    "stage": "compress",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User17",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on high-end home insurance products with premiums (\u00a53,000\u20135,000), coverage for luxury properties (e.g., \u00a53M valuation, coastal homes), and detailed comparisons of structural/indoor asset protection. Candidate A's profile aligns with this: they prioritize cost-effectiveness for high-end durable goods, invest in property (e.g., home items), and have a pragmatic, data-driven decision-making style. Their interest in financial management (e.g., budgeting, market analysis) and preference for comprehensive coverage (e.g., theft, natural disasters) matches the document's emphasis on maximizing protection for valuable assets. Candidates B and C, while rational consumers, focus more on pet-friendly or health-related needs (B) or practical/tech investments (C), which are less central to the document's core focus on premium property insurance.",
+    "model": "solar-pro",
+    "prompt_chars": 22716,
+    "latency_sec": 5.1,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6369,
+    "output_tokens": 202,
+    "total_tokens": 6571,
+    "api_response_id": "1d93f4c8-7000-480b-bc37-a17b84723f21"
+  },
+  {
+    "run_id": "pilot_task24_User17_seed1",
+    "stage": "write",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on detailed risk assessment, insurance product comparison, and cost-benefit analysis for high-value coastal property protection. Candidate B's profile aligns best with this technical, analytical framing - he is described as pragmatic, data-driven, and detail-oriented, with a focus on cost-effectiveness and quality in consumption decisions. The document's emphasis on insurance coverage limits, depreciation calculations, and risk mitigation strategies matches Candidate B's preference for rational analysis and investment in durable, high-quality household items. Unlike Candidate A (focused on family/pet care) or Candidate C (interested in practical hobbies), Candidate B's professional background in marketing/management and interest in financial analysis make him the most likely audience for this insurance evaluation report.",
+    "model": "solar-pro",
+    "prompt_chars": 24718,
+    "latency_sec": 1.97,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 9406,
+    "output_tokens": 164,
+    "total_tokens": 9570,
+    "api_response_id": "1beef75d-1258-482c-bd26-9a5d29ddd358"
+  }
+]

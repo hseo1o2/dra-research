@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "ablation_actionable_only_task7_User19_seed0",
+    "stage": "plan",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User19",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document's focus on supply chain management, strategic planning for an AI education startup, and structured business frameworks aligns most closely with Candidate B's profile. As a supply chain manager with a logistics background, B's pragmatic, data-driven decision-making style and interest in efficiency/scalability mirror the document's emphasis on actionable strategies, financial forecasting, and risk management. Unlike Candidate A (marketing-focused) or C (data analyst), B's career in supply chain operations and documented interest in business optimization, technological innovation, and sustainability directly correlate with the document's technical depth, operational focus, and scalability considerations. The document's framing as a 'research planning brief' for a startup also matches B's entrepreneurial mindset and experience in solving complex logistical problems.",
+    "model": "solar-pro",
+    "prompt_chars": 24943,
+    "latency_sec": 2.66,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5208,
+    "output_tokens": 175,
+    "total_tokens": 5383,
+    "api_response_id": "9dceae67-89e7-423e-9f8f-d1bd10907890"
+  },
+  {
+    "run_id": "ablation_actionable_only_task7_User19_seed0",
+    "stage": "search",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on EdTech adoption, AI education platforms, and campus ambassador programs\u2014topics aligning with Candidate B's role as a data analyst in an internet company and her interest in technology, data analysis, and EdTech trends. Her online behavior (LinkedIn/Zhihu activity, data tool proficiency) and content preferences (tech articles, case studies) directly mirror the document's technical framing (RAG architecture, LLM applications, KPIs). Candidate A (marketing manager) and C (supply chain manager) lack B's specific technical focus and data-driven perspective, which are central to the document's EdTech/AI architecture and analytical tone.",
+    "model": "solar-pro",
+    "prompt_chars": 25949,
+    "latency_sec": 2.36,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5574,
+    "output_tokens": 156,
+    "total_tokens": 5730,
+    "api_response_id": "bff7b1d2-ce67-44f7-b6b4-c60f0121d3b4"
+  },
+  {
+    "run_id": "ablation_actionable_only_task7_User19_seed0",
+    "stage": "compress",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on EdTech market research, business planning, and monetization models for AI education startups, emphasizing data-driven analysis, pricing strategies, and student pain points. Candidate C, as a marketing manager in a foreign enterprise with an MBA in marketing and business management, aligns most closely with this content. His background in market analysis, preference for data-driven decision-making, and interest in business case studies (e.g., Harvard Business Review) reflect the document's framing. Unlike Candidates A (data analyst) and B (supply chain manager), Candidate C's expertise in marketing, business strategy, and monetization models directly matches the document's focus on TAM/SAM/SOM, value propositions, and pricing frameworks.",
+    "model": "solar-pro",
+    "prompt_chars": 28635,
+    "latency_sec": 2.45,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6158,
+    "output_tokens": 167,
+    "total_tokens": 6325,
+    "api_response_id": "88ffc6b5-b9c6-409f-bdcb-8635998ef33e"
+  },
+  {
+    "run_id": "ablation_actionable_only_task7_User19_seed0",
+    "stage": "write",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on strategic execution for an AI-powered university education platform, emphasizing market research, business planning, and value propositions tailored to students' academic needs. Candidate B, as a marketing manager with an MBA and experience in market analysis, aligns most closely with the document's framing. His background in business strategy, data-driven decision-making, and interest in market trends (evident in his LinkedIn activity, article preferences, and case study engagement) directly mirror the document's priorities. While Candidate A (data analyst) and C (supply chain manager) have analytical skills, their domains (data science, logistics) lack the educational technology and student-centric market focus central to the document. Candidate B\u2019s role and interests in marketing, business management, and educational investments (e.g., children\u2019s extracurricular classes) make him the most likely audience for this strategic plan.",
+    "model": "solar-pro",
+    "prompt_chars": 30637,
+    "latency_sec": 1.88,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6307,
+    "output_tokens": 197,
+    "total_tokens": 6504,
+    "api_response_id": "1bc84e04-4f2d-49b2-9247-9926a7bd59a0"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "ablation_actionable_only_task22_User14_seed0",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User14",
+      "User13"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document focuses on retirement planning for a self-employed freelance illustrator with variable income and moderate-to-conservative risk tolerance. Candidate B explicitly identifies as a freelance illustrator (matching the occupation), has a variable income structure (freelance work), and exhibits moderate risk tolerance (evidenced by rational consumption habits and low-to-medium-risk investment preferences). The document\u2019s emphasis on dynamic allocation strategies across economic cycles aligns with Candidate B\u2019s behavior of budgeting for art supplies, travel, and quarterly expenses, reflecting financial adaptability. Additionally, Candidate B\u2019s interest in long-term planning (e.g., saving for art markets, travel for inspiration) and low-to-medium-risk investments (e.g., art supplies, photography equipment) directly mirrors the document\u2019s focus on insurance policies, protection measures, and low-to-medium-risk investment products. Candidates A (copywriter) and C (caf\u00e9 owner) do not match the illustrator occupation or the specific financial framing of the document.",
+    "model": "solar-pro",
+    "prompt_chars": 23969,
+    "latency_sec": 2.06,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5020,
+    "output_tokens": 224,
+    "total_tokens": 5244,
+    "api_response_id": "b4090c87-92e8-4054-a988-68bf2045e637"
+  },
+  {
+    "run_id": "ablation_actionable_only_task22_User14_seed0",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User14",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document focuses on financial planning topics (Solo 401k/SEP IRA limits, disability insurance, asset allocation, and retirement strategies) that align with Candidate B's profile as a freelance illustrator with variable income. Candidate B's self-employed status, need for income protection (evident in his disability insurance query), and interest in financial stability (reflected in his rational consumption habits and budget planning) make this content directly relevant. While Candidates A and C also show entrepreneurial traits, Candidate B's freelance work inherently involves irregular income and greater financial risk, making retirement planning and insurance coverage particularly critical. The document's emphasis on 'variable income' and 'self-employed' scenarios directly mirrors Candidate B's professional context.",
+    "model": "solar-pro",
+    "prompt_chars": 26551,
+    "latency_sec": 2.32,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5795,
+    "output_tokens": 172,
+    "total_tokens": 5967,
+    "api_response_id": "2e75f50b-8160-4ee0-9cbf-732aae555941"
+  },
+  {
+    "run_id": "ablation_actionable_only_task22_User14_seed0",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document focuses on tax-advantaged retirement strategies for self-employed freelancers, emphasizing Solo 401(k), SEP-IRA, and HSA contributions. Candidate A is a freelance illustrator with variable income, no W-2 employees, and a need for flexible retirement planning. The document's technical depth on contribution limits, catch-up provisions, and income-smoothing aligns with A's profile as a self-employed individual prioritizing financial security. Candidates B (employed copywriter) and C (caf\u00e9 owner with employees) lack the document's specific Solo 401(k) eligibility criteria (no W-2 employees) and freelance income volatility focus.",
+    "model": "solar-pro",
+    "prompt_chars": 29044,
+    "latency_sec": 2.18,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6681,
+    "output_tokens": 165,
+    "total_tokens": 6846,
+    "api_response_id": "cc7d0958-0bb6-4b8f-9484-a6a78904cf97"
+  },
+  {
+    "run_id": "ablation_actionable_only_task22_User14_seed0",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User20"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document focuses on retirement planning for self-employed illustrators, emphasizing tax-advantaged accounts, income smoothing, and health protections tailored to freelance creative work. Candidate A is explicitly identified as a freelance illustrator with variable income, matching the document's audience. The content's technical depth on Solo 401(k) strategies, HSAs, and disability insurance aligns with Candidate A's need for financial stability amid irregular project-based cash flow and physical health risks (e.g., repetitive strain injuries). Candidate B (caf\u00e9 owner) and C (copywriter) lack the document's specific occupational risks and tax-advantaged account priorities (e.g., Solo 401(k) vs. SEP-IRA trade-offs).",
+    "model": "solar-pro",
+    "prompt_chars": 31046,
+    "latency_sec": 1.8,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6629,
+    "output_tokens": 174,
+    "total_tokens": 6803,
+    "api_response_id": "398bb3e6-eb62-4b04-8fe8-fb1f72116c5b"
+  }
+]

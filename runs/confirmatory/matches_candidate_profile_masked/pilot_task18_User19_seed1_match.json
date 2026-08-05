@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task18_User19_seed1",
+    "stage": "plan",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on pragmatic, eco-conscious business travel. The request emphasizes budget efficiency, mid-to-high-end sustainable accommodations, and structured business days with cultural immersion\u2014mirroring A's eco-friendly consumption habits, preference for self-planned itineraries, and interest in historical/cultural experiences. Unlike B (focused on family trips/nature) or C (prioritizing luxury and golf), A's emphasis on supply chain efficiency, carbon footprint reduction, and mid-tier business hotels directly matches the document's framing. The inclusion of buffer times for jet lag and preparation also aligns with A's disciplined morning routine and time-management style.",
+    "model": "solar-pro",
+    "prompt_chars": 19298,
+    "latency_sec": 1.59,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4195,
+    "output_tokens": 161,
+    "total_tokens": 4356,
+    "api_response_id": "bb8b470b-25bd-4ce1-bc99-33925657a323"
+  },
+  {
+    "run_id": "pilot_task18_User19_seed1",
+    "stage": "search",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document focuses on flight routes, baggage allowances, and hotel amenities for a trip from Chengdu to Berlin, emphasizing practical details like cost, airline options, and accommodation features. Candidate A aligns best with this content: they prioritize family trips, value cost-effectiveness, and prefer self-guided tours with detailed planning. Their interest in photography (documented in the queries about hotel amenities and scenic spots) and practical consumption habits (e.g., comparing flight prices, checking baggage limits) directly reflect the document's focus on logistical efficiency and family-oriented travel. Candidates B and C, while also rational consumers, emphasize business travel or luxury/high-end preferences, which are less central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 21023,
+    "latency_sec": 1.61,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4784,
+    "output_tokens": 164,
+    "total_tokens": 4948,
+    "api_response_id": "fb140d87-8077-455a-a21b-bc3d8117ca66"
+  },
+  {
+    "run_id": "pilot_task18_User19_seed1",
+    "stage": "compress",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User19"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on high-end business travel logistics (flights, hotels, baggage allowances) with an emphasis on efficiency, cost-effectiveness, and premium amenities. Candidate A's profile aligns most closely: they prioritize business trips, value seamless travel experiences (e.g., Star Alliance lounge access), and prefer high-end hotels for work. Their pragmatic, detail-oriented personality and interest in management case studies (e.g., Harvard Business Review) reflect the document's analytical tone. Candidate B's focus on family trips and natural destinations, and Candidate C's emphasis on sustainability and domestic travel, are less relevant to the international business-travel context.",
+    "model": "solar-pro",
+    "prompt_chars": 23516,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5773,
+    "output_tokens": 150,
+    "total_tokens": 5923,
+    "api_response_id": "4b5b648d-2974-4a2a-87ed-2561ec69e927"
+  },
+  {
+    "run_id": "pilot_task18_User19_seed1",
+    "stage": "write",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on a budget-conscious, efficiency-driven business trip with eco-friendly considerations, aligning with Candidate B's pragmatic, rational decision-making style and emphasis on cost-effectiveness. Unlike Candidate A (family-focused leisure travel) or Candidate C (high-end business/luxury preferences), Candidate B prioritizes practicality, sustainability, and detailed planning\u2014mirroring the report's structured budget breakdown, eco-certified hotel recommendations, and emphasis on operational efficiency. Additionally, B's interest in supply chain/logistics and preference for self-planned itineraries align with the document's technical framing and logistical focus.",
+    "model": "solar-pro",
+    "prompt_chars": 25518,
+    "latency_sec": 1.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6253,
+    "output_tokens": 141,
+    "total_tokens": 6394,
+    "api_response_id": "defc5070-6b43-4d49-ada5-5dd1b63e6f3d"
+  }
+]

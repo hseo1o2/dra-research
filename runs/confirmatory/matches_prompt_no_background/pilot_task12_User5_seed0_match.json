@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task12_User5_seed0",
+    "stage": "plan",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User5",
+    "correct": true,
+    "reasoning": "Candidate A is a graduate student in mechanical automation (matching the document's stated occupation) seeking structured self-study for emotional management. The document emphasizes analytical, evidence-based resources (books, courses, strategies) aligned with A's detail-oriented, rational mindset. A's challenges with emotional fluctuations and decision-making mirror the document's focus on trigger identification and regulation. While Candidate C is in psychology, the document's framing prioritizes practical, cost-effective tools for an engineering student\u2014not clinical expertise. Candidate B's law focus and social interests lack direct alignment with the mechanical automation context and self-study emphasis.",
+    "model": "solar-pro",
+    "prompt_chars": 25492,
+    "latency_sec": 1.62,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5318,
+    "output_tokens": 141,
+    "total_tokens": 5459,
+    "api_response_id": "e0f928b0-dcea-4d08-9471-77f76ee3861a"
+  },
+  {
+    "run_id": "pilot_task12_User5_seed0",
+    "stage": "search",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "Candidate C, a graduate student in Clinical Psychology, aligns most closely with the document's focus on emotion regulation (Gross's model), positive psychology (Coursera courses), and therapeutic literature (e.g., 'Feeling Good' and 'Mind Over Mood'). The document emphasizes psychological frameworks, mental well-being, and self-help resources\u2014topics directly relevant to C's academic background and interests. Unlike A (mechanical engineering) or B (law), C's behavioral traits (e.g., using Coursera for psychology, sharing mental health content online, and adopting a pet for stress relief) reflect a sustained engagement with the document's themes. The content framing prioritizes emotional and cognitive strategies, which resonate with C's professional training and personal habits.",
+    "model": "solar-pro",
+    "prompt_chars": 27317,
+    "latency_sec": 1.87,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5913,
+    "output_tokens": 176,
+    "total_tokens": 6089,
+    "api_response_id": "cb339265-dc9c-4bba-a109-1b9f3f58e735"
+  },
+  {
+    "run_id": "pilot_task12_User5_seed0",
+    "stage": "compress",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User4",
+      "User2",
+      "User5"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "The document focuses on psychological therapies (CBT, DBT, MBCT, emotion regulation) with structured, analytical frameworks\u2014mirroring Candidate B's identity as a Clinical Psychology graduate student. Her academic background, interest in psychology, and consumption of psychology-related content (articles, videos, books) align with the document's technical focus on therapeutic protocols. Unlike Candidate A (law student with minor psychology interest) or Candidate C (engineering student), B's daily routine, online behavior, and content preferences directly reflect the document's emphasis on psychological methodologies and practical skill-building. The document's framing as a 'compressed research summary' also matches B's research-oriented habits and use of digital tools for academic purposes.",
+    "model": "solar-pro",
+    "prompt_chars": 29983,
+    "latency_sec": 1.83,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6857,
+    "output_tokens": 164,
+    "total_tokens": 7021,
+    "api_response_id": "eeed8b4b-33e1-4869-ba02-a3929301d9e7"
+  },
+  {
+    "run_id": "pilot_task12_User5_seed0",
+    "stage": "write",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User4",
+      "User2",
+      "User5"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User5",
+    "correct": true,
+    "reasoning": "The document emphasizes an analytical, systematic approach to emotional regulation, framed as an 'information-processing system' with structured protocols, cognitive frameworks, and actionable toolkits. Candidate C, a mechanical engineering graduate student, aligns most closely with this perspective. His background in engineering and technical fields (e.g., intelligent manufacturing, robotics automation) mirrors the document's appeal to 'analytical minds' who thrive on 'clear methodologies' and 'actionable toolkits.' His consumption of academic literature, use of digital tools for research, and preference for structured time management (Trello) reflect the document's focus on evidence-based, deterministic processes. Unlike Candidates A (law/psychology) and B (clinical psychology), who have direct psychological training, Candidate C's engineering mindset aligns with the document's reframing of emotional regulation as a 'debugging manual' and 'system troubleshooting,' requiring no prior psychological expertise. His recent interest in coffee-making and baking videos also parallels the document's emphasis on deliberate, skill-based habit formation.",
+    "model": "solar-pro",
+    "prompt_chars": 31985,
+    "latency_sec": 3.55,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6825,
+    "output_tokens": 232,
+    "total_tokens": 7057,
+    "api_response_id": "e2aa431c-3885-4e6b-b3d4-c099608a77aa"
+  }
+]

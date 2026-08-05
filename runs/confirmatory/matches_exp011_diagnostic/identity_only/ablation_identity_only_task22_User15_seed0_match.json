@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "ablation_identity_only_task22_User15_seed0",
+    "stage": "plan",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User20",
+      "User15"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document explicitly identifies the author as Qiu Wen, a 26-30-year-old freelance writer in Beijing's Chaoyang District, seeking a retirement plan tailored to her self-employed status. Candidate C matches this identity exactly, including occupation, location, and demographic details. The document's focus on dynamic financial planning for variable income, integration of insurance components, and scalable frameworks aligns with Candidate C's practical, detail-oriented personality and her role as a freelancer. Additionally, her eco-friendly consumption habits and interest in sustainable products mirror the document's emphasis on long-term, adaptable strategies. No other candidate shares this precise professional or personal alignment.",
+    "model": "solar-pro",
+    "prompt_chars": 23614,
+    "latency_sec": 1.84,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4984,
+    "output_tokens": 156,
+    "total_tokens": 5140,
+    "api_response_id": "e118c75d-8f5d-41fe-af9c-b682d2581713"
+  },
+  {
+    "run_id": "ablation_identity_only_task22_User15_seed0",
+    "stage": "search",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User15",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document focuses on Beijing-based social insurance policies, freelance financial planning, and tax-advantaged personal pension products\u2014topics directly relevant to Candidate B, a Beijing-based freelance writer with variable income. The content's emphasis on social security contributions, cash buffers, and tax optimization aligns with B's freelance status, financial planning needs, and consumption patterns (e.g., eco-friendly, cost-effective choices). Candidate A (data analyst) and C (copywriter) lack the document's geographic (Beijing) and occupational (freelance) specificity, making B the most essential match.",
+    "model": "solar-pro",
+    "prompt_chars": 24452,
+    "latency_sec": 1.53,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6275,
+    "output_tokens": 142,
+    "total_tokens": 6417,
+    "api_response_id": "3bfcf401-7d8c-44ff-9e55-9fd36b10343a"
+  },
+  {
+    "run_id": "ablation_identity_only_task22_User15_seed0",
+    "stage": "compress",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User18",
+      "User15"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document focuses on Beijing's social security, tax-deferred pensions, and commercial insurance systems, with detailed references to Chaoyang District (Candidate C's residence) and practical financial planning for freelancers. Candidate C, a freelance writer in Beijing's Chaoyang District, aligns with the document's emphasis on flexible employment benefits, tax optimization, and localized administrative details. Unlike Candidates A (creative copywriter) and B (data analyst), Candidate C's freelance status, Beijing residency, and interest in sustainable consumption reflect the document's focus on social security, pension systems, and eco-friendly financial products. The document's technical framing and localized administrative guidance (e.g., Chaoyang District registration) are directly relevant to Candidate C's professional and geographic context.",
+    "model": "solar-pro",
+    "prompt_chars": 28174,
+    "latency_sec": 2.02,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6820,
+    "output_tokens": 177,
+    "total_tokens": 6997,
+    "api_response_id": "4f5032c8-4e3b-4f25-ab63-eae956fce7bc"
+  },
+  {
+    "run_id": "ablation_identity_only_task22_User15_seed0",
+    "stage": "write",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User18",
+      "User15"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document explicitly names 'Qiu Wen' as the recipient, a 26-year-old freelance writer in Beijing. Candidate C matches this identity exactly, including occupation, age, gender, residence, and freelance-specific financial challenges (e.g., variable income, lack of employer benefits). The plan's focus on self-sustaining wealth growth, medical risk protection, and long-term care aligns with Candidate C's introverted, detail-oriented personality and her practical consumption habits (eco-friendly focus, sustainable brands). The document's emphasis on structured cash flow management (3-Tier Reservoir System) mirrors her independent decision-making style and interest in financial stability, while her nocturnal writing routine aligns with the plan's long-term, self-directed framing. Candidates A (male copywriter) and B (data analyst) lack the freelance writer identity and context-specific financial vulnerabilities central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30176,
+    "latency_sec": 2.15,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6315,
+    "output_tokens": 201,
+    "total_tokens": 6516,
+    "api_response_id": "51828d20-733b-405e-8add-d82f2b78ad0e"
+  }
+]

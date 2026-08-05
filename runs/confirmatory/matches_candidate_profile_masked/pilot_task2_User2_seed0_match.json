@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task2_User2_seed0",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User1",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "Candidate C's profile aligns most closely with the document's focus on clinical psychology, academic research, and international exchange preparation. Key matches include: (1) High engagement with psychology-related learning apps, forums, and academic resources (mirroring the document's emphasis on clinical psychology research and PhD preparation), (2) Rational budgeting habits and cost-conscious consumption (aligning with the document's detailed cost analysis and scholarship focus), (3) Interest in cultural experiences and homestays (matching the document's emphasis on cultural adaptation and local immersion), and (4) Time management and efficiency-oriented routines (reflecting the structured research planning requested). Unlike Candidates A (general social sciences interest) and B (tech-focused), Candidate C's psychology-centric behaviors, academic priorities, and practical adaptation strategies directly mirror the document's clinical psychology and exchange program focus.",
+    "model": "solar-pro",
+    "prompt_chars": 18720,
+    "latency_sec": 4.12,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4014,
+    "output_tokens": 195,
+    "total_tokens": 4209,
+    "api_response_id": "0167740f-fa14-4a44-b160-148a851af914"
+  },
+  {
+    "run_id": "pilot_task2_User2_seed0",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User7",
+    "correct": false,
+    "reasoning": "The document focuses on international psychology programs, scholarships, and licensing regulations, reflecting academic and professional interests in psychology. Candidate B's profile aligns most closely: they actively engage with academic content (e.g., saving articles on social issues and research trends), prioritize psychology-related learning (e.g., using tools like Python for research), and exhibit a structured, analytical approach to decision-making. Unlike Candidate A (focused on applied psychology and pet care) or Candidate C (centered on AI/tech), Candidate B\u2019s emphasis on psychology, independent research, and rational consumption mirrors the document\u2019s framing of institutional programs, licensing, and scholarly exchange. Their interest in natural destinations and self-guided travel also subtly aligns with the document\u2019s global academic mobility theme.",
+    "model": "solar-pro",
+    "prompt_chars": 20244,
+    "latency_sec": 2.64,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4509,
+    "output_tokens": 174,
+    "total_tokens": 4683,
+    "api_response_id": "1e8648b1-f54c-4b5d-a65c-ff7cdfdc310a"
+  },
+  {
+    "run_id": "pilot_task2_User2_seed0",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on psychology graduate programs, non-degree research opportunities, and clinical vs. research access policies\u2014aligning with Candidate A's deep psychology interest (learning apps, forum participation, book purchases) and academic/research-oriented behavior (cloud notes, time management, library visits). Candidate B's focus on communication studies/social issues and Candidate C's tech/AI focus lack the direct psychology program relevance. Candidate A's emphasis on cost-effective learning, research activities, and psychology content consumption (articles, books, screenshots) mirrors the document's financial/academic framing for international psychology students.",
+    "model": "solar-pro",
+    "prompt_chars": 22737,
+    "latency_sec": 2.5,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5085,
+    "output_tokens": 141,
+    "total_tokens": 5226,
+    "api_response_id": "ca13370e-bd43-4748-a96f-40966590f68c"
+  },
+  {
+    "run_id": "pilot_task2_User2_seed0",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on clinical psychology exchange programs, emphasizing academic rigor, research access, and regulatory boundaries in clinical practice. Candidate B's profile aligns most closely: their online behavior centers on psychology learning (Coursera, Zhihu Psychology), they actively engage in psychology forums, and their content preferences include psychology research, education, and emotional communication. Their offline behavior\u2014frequenting psychology counseling centers, prioritizing academic events, and reading psychology books\u2014directly mirrors the document's clinical psychology focus. Candidate A's interests in communication studies and Candidate C's tech/AI focus lack this domain-specific alignment.",
+    "model": "solar-pro",
+    "prompt_chars": 24739,
+    "latency_sec": 2.46,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5769,
+    "output_tokens": 145,
+    "total_tokens": 5914,
+    "api_response_id": "9c6d4af2-aed5-485b-9dda-46f3a25e0d83"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task14_User3_seed1",
+    "stage": "plan",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User3",
+      "User1",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User1",
+      "User3",
+      "User5"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User3",
+    "correct": true,
+    "reasoning": "The document focuses on a beginner runner prioritizing injury prevention, adaptable training, and balancing a busy student schedule. Candidate B aligns best: (1) Their exercise habits include jogging and stress relief through physical activity, matching the document's goal of safe marathon completion. (2) Their time management (strict evening study, daytime lab work) mirrors the request for dynamic workout adjustments to a packed schedule. (3) Their cost-effective, practical mindset (e.g., budget hotels, cautious tool purchases) aligns with the request for minimal gear and evidence-based, reliable methods. Candidates A (tech-focused, basketball/yoga) and C (cycling, academic conferences) lack the direct connection to marathon training as a stress-relief tool for a student runner.",
+    "model": "solar-pro",
+    "prompt_chars": 17805,
+    "latency_sec": 1.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 3896,
+    "output_tokens": 175,
+    "total_tokens": 4071,
+    "api_response_id": "c8521fe7-1720-495d-a632-89bbe9ea79c1"
+  },
+  {
+    "run_id": "pilot_task14_User3_seed1",
+    "stage": "search",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User3",
+      "User1",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User1",
+      "User3",
+      "User5"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User5",
+    "correct": false,
+    "reasoning": "The document focuses on marathon training plans, workload ratios, and exercise science\u2014topics aligning with Candidate C's exercise habits (cycling, jogging) and interest in structured physical training. Unlike Candidates A (basketball-focused) and B (ping-pong-focused), Candidate C emphasizes endurance activities (cycling 20km weekly) and cost-effective fitness gear, mirroring the document's emphasis on training schedules and injury prevention. Additionally, Candidate C's academic focus on technology and mechanical engineering aligns with the document's data-driven approach to workload ratios, while their preference for self-guided trips parallels the independent training style described.",
+    "model": "solar-pro",
+    "prompt_chars": 20050,
+    "latency_sec": 1.61,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4631,
+    "output_tokens": 148,
+    "total_tokens": 4779,
+    "api_response_id": "a1d28a42-1841-4b41-ac62-3a9b9e21c386"
+  },
+  {
+    "run_id": "pilot_task14_User3_seed1",
+    "stage": "compress",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User3",
+      "User1",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User3",
+      "User5",
+      "User1"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User5",
+    "correct": false,
+    "reasoning": "The document focuses on a structured, science-backed 12-week marathon training plan emphasizing progressive overload, injury prevention (ACWR), and adherence to ACSM/RRCA guidelines. Candidate B aligns best: (1) Their academic focus on mechanical engineering and robotics parallels the document's technical, data-driven approach to training. (2) Their detail-oriented personality and use of time management tools (Trello) mirror the plan's precise weekly volume tracking and recovery weeks. (3) Their cycling habit (20km/week) and interest in cost-effective fitness gear reflect the document's balance of intensity and injury prevention. Candidate A's ping-pong focus and Candidate C's tech/AI interests lack this direct connection to endurance training methodology.",
+    "model": "solar-pro",
+    "prompt_chars": 22543,
+    "latency_sec": 1.74,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5768,
+    "output_tokens": 172,
+    "total_tokens": 5940,
+    "api_response_id": "be002a3e-5586-4758-8308-f736ca3d4099"
+  },
+  {
+    "run_id": "pilot_task14_User3_seed1",
+    "stage": "write",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User3",
+      "User1",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User3",
+      "User1"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User3",
+    "correct": true,
+    "reasoning": "The document focuses on a structured, science-based 12-week marathon training plan tailored for beginners with limited time (5 days/week, 1 hour/day), emphasizing injury prevention, gradual overload, and cost-effective methods (no specialized gear). Candidate B aligns most closely: (1) Their offline behavior shows a disciplined daily routine (7 AM\u201311 PM), rational spending, and prioritization of cost-effectiveness\u2014mirroring the plan\u2019s emphasis on affordability and time management. (2) Their exercise habits include regular low-impact activities (ping-pong, jogging) and a preference for self-guided, stress-relieving workouts, aligning with the plan\u2019s use of cross-training and RPE-based intensity control. (3) Their decision-making style (information-heavy, mentor-guided) matches the plan\u2019s evidence-based approach (citing ACWR models, Hal Higdon, etc.). Candidate A\u2019s cycling focus and Candidate C\u2019s tech/AI interests lack the direct connection to marathon training\u2019s physiological and practical framing.",
+    "model": "solar-pro",
+    "prompt_chars": 24545,
+    "latency_sec": 2.25,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 9023,
+    "output_tokens": 234,
+    "total_tokens": 9257,
+    "api_response_id": "49ef48a0-247d-4438-bc3e-944a60891bf2"
+  }
+]

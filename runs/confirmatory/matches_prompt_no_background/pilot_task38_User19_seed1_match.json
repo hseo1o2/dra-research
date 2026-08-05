@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task38_User19_seed1",
+    "stage": "plan",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on purchasing a second-hand home in Beijing for a family with a 6-year-old daughter, emphasizing school districts, subway access, and family/pet-friendly amenities. Key matches include: (1) Candidate A's identical family structure (married with a 6-year-old daughter and a pet dog), (2) his pragmatic, research-driven decision-making style matching the document's detailed budget and policy analysis, (3) his prioritization of eco-friendly/sustainable choices aligning with the document's emphasis on family well-being, and (4) his current residence in Chengdu (not Beijing) explaining the need for a relocation-focused research brief. Candidates B and C lack the specific urgency around primary school enrollment (B's son is in middle school) and do not emphasize pet-friendly considerations as prominently.",
+    "model": "solar-pro",
+    "prompt_chars": 25715,
+    "latency_sec": 1.86,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5422,
+    "output_tokens": 192,
+    "total_tokens": 5614,
+    "api_response_id": "1512e072-1777-4e36-ad81-f33a08dd9bde"
+  },
+  {
+    "run_id": "pilot_task38_User19_seed1",
+    "stage": "search",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate C, a Shanghai-based marketing manager with school-age children, aligns most closely with the document's focus on Beijing's education policies (e.g., '1911' multi-school districting, '630' policies) and housing regulations. The document emphasizes practical implications for families navigating school admissions, property rights, and mortgage rules\u2014key concerns for Candidate C, who prioritizes children's education, invests in high-quality housing, and demonstrates interest in policy impacts on family planning. Unlike Candidates A (Harbin-based, less urban policy-focused) and B (Chengdu-based, more supply-chain oriented), Candidate C's Shanghai residence, frequent business trips to cities like Shenzhen, and detailed consumption habits around education/property align with the document's Beijing-centric urban policy analysis. His MBA background and data-driven decision-making style also match the document's structured, rule-based framing.",
+    "model": "solar-pro",
+    "prompt_chars": 25364,
+    "latency_sec": 2.06,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6692,
+    "output_tokens": 203,
+    "total_tokens": 6895,
+    "api_response_id": "515d18da-0d5e-4975-a8a9-a6e5b2a44722"
+  },
+  {
+    "run_id": "pilot_task38_User19_seed1",
+    "stage": "compress",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on Beijing's school district policies (Haidian and Chaoyang) and real estate recommendations for families with school-age children, emphasizing education priorities, property ownership, and strategic planning. Candidate C, a Shanghai-based marketing manager with two young children (8 and 5), aligns most closely: his family's emphasis on education (wife as a teacher, children in extracurriculars), financial focus on quality housing and schools, and pragmatic decision-making style mirror the document's framing. Unlike Candidates A (Harbin-based, son in middle school) and B (Chengdu-based, daughter in primary school), Candidate C\u2019s urban Shanghai context, frequent travel for business, and interest in high-quality education/resources directly align with the document\u2019s Beijing-centric focus on competitive school districts and property investments for optimal educational outcomes.",
+    "model": "solar-pro",
+    "prompt_chars": 29454,
+    "latency_sec": 2.29,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6826,
+    "output_tokens": 189,
+    "total_tokens": 7015,
+    "api_response_id": "3fc6473d-882b-40ac-a201-d8a076b94172"
+  },
+  {
+    "run_id": "pilot_task38_User19_seed1",
+    "stage": "write",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User19",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on Beijing's second-hand housing market for a family with a 6-year-old child and a large dog. The document emphasizes educational priorities (primary school enrollment, district policies), commute efficiency (subway access), and family-friendly amenities (parks, green spaces), all of which match Candidate A's status as a married parent with an 8-year-old daughter and a Labrador, relocating from Shanghai to Beijing. Candidate A's pragmatic, detail-oriented personality and emphasis on quality of life (e.g., parks, schools) directly reflect the document's framing. Candidates B and C, while also family-oriented, lack the specific urban mobility (Shanghai to Beijing) and immediate educational urgency (primary school enrollment) highlighted in the text.",
+    "model": "solar-pro",
+    "prompt_chars": 31456,
+    "latency_sec": 2.06,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6830,
+    "output_tokens": 182,
+    "total_tokens": 7012,
+    "api_response_id": "9e69c9bd-f9b4-42df-a413-6a4fd8f84808"
+  }
+]

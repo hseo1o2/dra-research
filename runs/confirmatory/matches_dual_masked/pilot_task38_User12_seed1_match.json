@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task38_User12_seed1",
+    "stage": "plan",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User12",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate C's profile aligns most closely with the document's focus on family-oriented home-buying priorities (school districts, living amenities, budget constraints) and systematic, detail-oriented planning. The document emphasizes practicality, cost-effectiveness, and long-term family needs\u2014mirrored in C's rational decision-making, focus on children's education, and preference for quality durable goods. Unlike A (focused on gardening/tech hobbies) or B (tech/AI-centric with high-risk investments), C's emphasis on balanced family life, structured financial planning, and interest in real estate (evidenced by LinkedIn activity and business trips to Shenzhen/Chengdu) directly aligns with the document's actionable, policy-driven home-buying framework.",
+    "model": "solar-pro",
+    "prompt_chars": 20670,
+    "latency_sec": 2.62,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4541,
+    "output_tokens": 176,
+    "total_tokens": 4717,
+    "api_response_id": "7d494212-b853-4a46-8e3c-d063b7eac273"
+  },
+  {
+    "run_id": "pilot_task38_User12_seed1",
+    "stage": "search",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User22",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on real estate decisions in Beijing's Haidian district, emphasizing factors like proximity to work (West 3rd Ring Road), school districts for a young child, and budget constraints (~6 million yuan). Candidate A's profile aligns most closely: he lives in Beijing, has a 2.5-year-old daughter (matching the document's mention of a child needing schooling), works near the West 3rd Ring Road (Suzhou Bridge), and prioritizes family needs (e.g., bedtime stories, quality-of-life investments). The document's focus on practical, family-oriented housing decisions (e.g., 'good for renting/selling,' 'middle-tier school districts') reflects Candidate A's rational, family-centric decision-making style and financial priorities (mortgage, asset management). Candidates B and C lack the Beijing-specific context, child-related urgency, or direct alignment with the document's housing criteria.",
+    "model": "solar-pro",
+    "prompt_chars": 20167,
+    "latency_sec": 2.44,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5691,
+    "output_tokens": 209,
+    "total_tokens": 5900,
+    "api_response_id": "4454f8a6-af61-4c60-9665-7103cb356412"
+  },
+  {
+    "run_id": "pilot_task38_User12_seed1",
+    "stage": "compress",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on real estate searches for school districts, family-friendly layouts (2-3 bedrooms), and budget constraints (\u00a56 million RMB), reflecting a family-oriented, practical decision-making style. Candidate B emphasizes cost-effectiveness, quality education for children, and family-centric consumption (e.g., quarterly family trips, extracurricular investments). Unlike Candidate A (tech-focused, urban Beijing mobility) or Candidate C (industrial/technical interests, Suzhou-based), Candidate B\u2019s priorities align with the document\u2019s emphasis on school catchments, family-sized housing, and budget-conscious yet quality-driven choices. The framing of the research (e.g., '5-person family,' 'school district options') directly mirrors B\u2019s documented values.",
+    "model": "solar-pro",
+    "prompt_chars": 24297,
+    "latency_sec": 1.79,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6325,
+    "output_tokens": 171,
+    "total_tokens": 6496,
+    "api_response_id": "cce13e42-4225-4849-9281-655b94cf17e1"
+  },
+  {
+    "run_id": "pilot_task38_User12_seed1",
+    "stage": "write",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User12",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on real estate selection for a family of five (including elderly parents and a school-aged child) in Beijing, emphasizing education, housing quality, and long-term financial planning. Candidate C's profile aligns most closely: (1) **Family-centric priorities** (e.g., quarterly family trips, educational investments for children, and joint decision-making with a spouse) mirror the document's focus on multi-generational living and school district planning. (2) **Pragmatic, detail-oriented decision-making** (e.g., cost-effectiveness analysis, thorough comparisons for purchases) aligns with the document's structured evaluation criteria for housing, taxes, and school policies. (3) **Geographical and lifestyle preferences** (e.g., frequent travel to Shenzhen/Chengdu for business, interest in historical/cultural sites) suggest a background compatible with navigating Beijing's competitive real estate and education markets. Candidates A and B lack the explicit family-oriented consumption patterns and long-term housing/education planning focus central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 26299,
+    "latency_sec": 2.3,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 10305,
+    "output_tokens": 229,
+    "total_tokens": 10534,
+    "api_response_id": "44d68966-b5c1-4be3-bc62-fe8326d83b59"
+  }
+]

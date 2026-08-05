@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User6",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on post-graduate education options for a 22-25-year-old female in Product Operations with an Advertising (New Media) and Psychology background, seeking career advancement in tech. Candidate A matches all key attributes: age, gender, occupation, educational background, and location (Beijing). The document\u2019s emphasis on balancing management/technical skills, career competitiveness in tech, and practical ROI aligns with Candidate A\u2019s creative, user-behavior-focused profile and her role in Product Operations. Candidates B (Environmental Studies student) and C (Algorithm Engineer) lack the direct relevance to the document\u2019s context, which prioritizes non-technical post-graduate options for early-career professionals in internet/tech operations.",
+    "model": "solar-pro",
+    "prompt_chars": 24030,
+    "latency_sec": 2.11,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5046,
+    "output_tokens": 171,
+    "total_tokens": 5217,
+    "api_response_id": "1199f4d9-0c88-46bc-800e-d19a691d9d67"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User9",
+      "User6"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on MBA program requirements (work experience, tuition, dual degrees) and certifications relevant to tech/internet roles in Beijing. Candidate B, a Product Operations professional in Beijing, aligns with the document's emphasis on work experience (2+ years), non-STEM program costs (e.g., Georgia Tech OMS Analytics), and certifications (SQL, PMP) mentioned in queries. The document also references ByteDance and internet company contexts, matching B's occupation. Candidate A (Algorithm Engineer) and C (Environmental Student) lack direct ties to the MBA/professional development focus or Beijing-based internet industry context.",
+    "model": "solar-pro",
+    "prompt_chars": 25313,
+    "latency_sec": 1.77,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5561,
+    "output_tokens": 149,
+    "total_tokens": 5710,
+    "api_response_id": "4762376a-5f99-48d3-814e-020af6359900"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User6",
+      "User11",
+      "User9"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "The document focuses on MBA program details (tuition, work experience requirements, eligibility) for Chinese and international programs, reflecting a professional's interest in career advancement through formal education. Candidate B (28-32, algorithm engineer) aligns best: his age, career stage, and financial stability match the MBA target audience. His rational decision-making style, interest in cost-effective education, and periodic mobility for conferences align with the document's emphasis on program logistics. Candidates A (undergrad) and C (young professional) lack the work experience or career maturity implied by the MBA queries.",
+    "model": "solar-pro",
+    "prompt_chars": 27806,
+    "latency_sec": 1.58,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 7330,
+    "output_tokens": 140,
+    "total_tokens": 7470,
+    "api_response_id": "241fe87f-2b12-4b9b-ba26-60952c4412fe"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed0",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User6",
+      "User9"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on post-graduate education strategies for early-career Product Operations professionals in Beijing, emphasizing quantitative skills (SQL, Python), strategic frameworks, and career advancement into roles like Data Product Manager. Candidate C (Zhao Li) is explicitly described as a 22-25-year-old Product Operations professional in Beijing with an Advertising (New Media Communication) background and a Psychology minor\u2014directly aligning with the document's target audience. Her goals (career advancement, skill development) and context (Beijing-based, early-career) match the report's framing. Candidates A (Algorithm Engineer) and B (Environmental Studies student) lack the occupational and educational profile central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29808,
+    "latency_sec": 1.7,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6508,
+    "output_tokens": 163,
+    "total_tokens": 6671,
+    "api_response_id": "65d8d15b-c481-4b4b-a1b7-263addee776c"
+  }
+]

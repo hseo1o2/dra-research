@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task37_User14_seed0",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User13",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on a warm, stylish apartment renovation for a couple with a cat, emphasizing natural materials and an open-plan kitchen for frequent cooking. A's creative background, appreciation for art/literature, and recent adoption of a cat mirror the document's aesthetic and lifestyle priorities. His interest in Japanese cuisine (bento) aligns with the kitchen focus, while his preference for mid-range design-driven products matches the budget-conscious yet stylish material recommendations. Unlike B (caf\u00e9 owner with multiple pets) or C (freelance illustrator prioritizing art tools), A's urban Shanghai apartment and emphasis on personal creative inspiration (via nature, films, and literature) directly reflect the document's framing of a cozy, artistically inclined living space for a young professional couple.",
+    "model": "solar-pro",
+    "prompt_chars": 24137,
+    "latency_sec": 1.83,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5075,
+    "output_tokens": 190,
+    "total_tokens": 5265,
+    "api_response_id": "ffc748f2-1275-4df0-991e-335240984a89"
+  },
+  {
+    "run_id": "pilot_task37_User14_seed0",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on apartment design for heavy cooking, pet-friendly features (cat walk, litter box cabinet, pet screen), and budget allocation for 80 sqm spaces. Candidate A, a caf\u00e9 owner with pets (cats and a dog), prioritizes design aesthetics, functionality for cooking, and pet-friendly spaces. Her profile emphasizes high-quality, sustainable products and supports local/niche brands, aligning with the document's focus on detailed layout planning, kitchen efficiency, and pet accommodations. Candidates B and C, while creative, lack the specific emphasis on pet-friendly design and heavy cooking infrastructure central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 26017,
+    "latency_sec": 1.62,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6130,
+    "output_tokens": 143,
+    "total_tokens": 6273,
+    "api_response_id": "b8f08c1c-808f-41f9-b084-6b9467376ce9"
+  },
+  {
+    "run_id": "pilot_task37_User14_seed0",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User20"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document focuses on an 80 sqm apartment renovation emphasizing heavy cooking, pet-friendly design (cat-centric), and Japandi style\u2014all aligning with Candidate A's profile. A is a freelance illustrator with a cat named 'Mo Mo,' who values high-quality, functional design for his creative lifestyle. The document's emphasis on open kitchens for heavy cooking matches A's recent interest in Italian cuisine and home cooking. Pet-friendly features (cat walks, scratch-resistant materials) directly align with A's cat ownership and integration of the pet into daily life. Japandi style resonates with A's artistic background and preference for warm, minimalist aesthetics. Candidates B and C, while also pet owners, lack the specific focus on heavy cooking and artistic design integration seen in A's profile.",
+    "model": "solar-pro",
+    "prompt_chars": 29031,
+    "latency_sec": 1.92,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6480,
+    "output_tokens": 182,
+    "total_tokens": 6662,
+    "api_response_id": "e8671b18-f1e9-4c62-b5ba-b1e5a14dc502"
+  },
+  {
+    "run_id": "pilot_task37_User14_seed0",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User20"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document emphasizes a pet-friendly (cat-centric) design integrated with an artist's workflow, aligning with Candidate A's identity as a freelance illustrator who draws inspiration from his cat and requires a creative, functional space. The focus on heavy cooking (Italian cuisine) matches A's recent culinary interests, while the Japandi aesthetic resonates with his artistic sensibilities. Candidate B's caf\u00e9-centric priorities and Candidate C's copywriter lifestyle lack the document's specific blend of artistic creation, pet integration, and spatial optimization for a small urban home.",
+    "model": "solar-pro",
+    "prompt_chars": 31033,
+    "latency_sec": 1.59,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6531,
+    "output_tokens": 132,
+    "total_tokens": 6663,
+    "api_response_id": "deea8fc7-8dd2-4f35-81eb-277cf4a8d00e"
+  }
+]

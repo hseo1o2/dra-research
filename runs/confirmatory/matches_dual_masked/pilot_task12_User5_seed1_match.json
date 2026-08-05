@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task12_User5_seed1",
+    "stage": "plan",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User4",
+      "User2",
+      "User5"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "Candidate B's profile aligns most closely with the document's focus on structured self-improvement, emotional regulation, and analytical learning. The document emphasizes cognitive behavioral principles, emotional intelligence, and mindfulness\u2014topics B actively engages with through psychology-related apps, courses, and content consumption. B's rational, cost-effective approach to learning (e.g., cloud-based note-taking, budgeted pet supplies) mirrors the request for 'cost-effectiveness' and 'actionable frameworks.' Additionally, B's interest in time management tools, daily routines (morning study, reflection), and preference for self-guided learning align with the document's emphasis on integrating strategies into a daily schedule. While Candidate A shares some traits (structured learning, meditation), their focus on law and debate lacks the psychological depth central to the document. Candidate C\u2019s engineering/tech focus and nocturnal study habits are less relevant to the emotional regulation theme.",
+    "model": "solar-pro",
+    "prompt_chars": 19224,
+    "latency_sec": 1.83,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4148,
+    "output_tokens": 202,
+    "total_tokens": 4350,
+    "api_response_id": "61c54ca5-6258-4c72-ae94-12a3c761266f"
+  },
+  {
+    "run_id": "pilot_task12_User5_seed1",
+    "stage": "search",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User2",
+      "User4"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "The document focuses on emotion regulation, cognitive behavioral therapy, and neurobiology of emotions\u2014topics aligning with Candidate B's psychology-oriented interests (e.g., Coursera psychology courses, emotion communication articles, and psychology book purchases). The content's analytical yet accessible framing (e.g., 'constructed emotion,' 'process model of emotion regulation') matches B's preference for psychology popular science materials and her habit of sharing such content. Candidate A prioritizes engineering/technology, while Candidate C focuses on law and psychology case analysis, making B the best fit.",
+    "model": "solar-pro",
+    "prompt_chars": 21433,
+    "latency_sec": 1.46,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4799,
+    "output_tokens": 134,
+    "total_tokens": 4933,
+    "api_response_id": "daddf153-7ba4-4de1-8f01-beab0f0a36f3"
+  },
+  {
+    "run_id": "pilot_task12_User5_seed1",
+    "stage": "compress",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User4",
+      "User5",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "The document focuses on psychological frameworks (e.g., emotion regulation, cognitive behavioral therapy) with an emphasis on analytical, evidence-based approaches. Candidate C explicitly prioritizes psychology-related content, engages daily with psychology learning apps, participates in psychology forums, and reads psychology books. Their interest in emotion regulation, cognitive science, and structured self-monitoring tools aligns with the document's focus on mechanistic models, empirical evidence, and practical utility for analytical mindsets. Candidates A (law focus) and B (engineering/tech focus) lack the same depth of engagement with psychological frameworks as described in the text.",
+    "model": "solar-pro",
+    "prompt_chars": 23926,
+    "latency_sec": 1.53,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5464,
+    "output_tokens": 141,
+    "total_tokens": 5605,
+    "api_response_id": "5cf6d7ef-1bb0-4151-b742-d224bea25a51"
+  },
+  {
+    "run_id": "pilot_task12_User5_seed1",
+    "stage": "write",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User2",
+      "User4"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User5",
+    "correct": true,
+    "reasoning": "The document's framing of emotion regulation as a 'feedback control system' and its emphasis on mechanistic clarity, empirical grounding, and engineering analogies (e.g., 'cognitive software errors,' 'debugging') aligns with Candidate A's background in mechanical automation/robotics and preference for structured, analytical learning. The recommended reading list prioritizes cognitive refactoring and systems models over general psychology, matching A's focus on technical literature (robotics automation, IEEE Scholar) and rejection of 'non-empirical' approaches. Candidate B's psychology-centric interests and Candidate C's legal focus lack the document's engineering-centric vocabulary and control-theory framing.",
+    "model": "solar-pro",
+    "prompt_chars": 25928,
+    "latency_sec": 1.62,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5613,
+    "output_tokens": 154,
+    "total_tokens": 5767,
+    "api_response_id": "fc587911-eb9a-412c-8c0a-03210d3872e4"
+  }
+]

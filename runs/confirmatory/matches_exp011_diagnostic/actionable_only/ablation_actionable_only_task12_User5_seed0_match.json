@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "ablation_actionable_only_task12_User5_seed0",
+    "stage": "plan",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User5",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on evidence-based self-improvement, emotional regulation, and structured frameworks. As a mechanical engineering graduate student, A values logical rigor, practicality, and cost-effectiveness\u2014mirrored in the request for evidence-based methods (CBT, Stoicism) and step-by-step implementation. A's habits (journaling, cycling for stress relief) and preferences for online courses (Coursera/edX) match the document's emphasis on actionable daily strategies and accessible learning. Unlike B (law/psychology focus) or C (clinical psychology background), A's technical, self-driven approach to problem-solving and stress management aligns with the document's systematic, low-friction framework for emotional growth.",
+    "model": "solar-pro",
+    "prompt_chars": 25845,
+    "latency_sec": 1.87,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5377,
+    "output_tokens": 176,
+    "total_tokens": 5553,
+    "api_response_id": "65e551a6-72e0-4076-8ade-ef0d32a97d04"
+  },
+  {
+    "run_id": "ablation_actionable_only_task12_User5_seed0",
+    "stage": "search",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "Candidate C, a graduate student in Clinical Psychology, aligns most closely with the document's focus on psychological well-being, mindfulness, and stress reduction. The document includes queries about 'The Happiness Trap' (ACT therapy), 'Emotional Agility' (emotional regulation), and physiological sighing (stress reduction)\u2014topics directly relevant to psychology studies and clinical practice. Candidate C's academic background, online habits (Coursera psychology courses, Zhihu Psychology section), and content preferences (psychology articles, emotional communication) reflect a sustained interest in mental health frameworks. Additionally, her recent adoption of a cat and focus on stress relief through exercise/yoga mirror the document's emphasis on practical well-being strategies. Candidates A (engineering focus) and B (law/psychology minor) lack the same depth of engagement with psychological theories or therapeutic practices evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 27503,
+    "latency_sec": 3.37,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5911,
+    "output_tokens": 200,
+    "total_tokens": 6111,
+    "api_response_id": "237ca5a1-1bc3-4a54-9c40-143f0c98bba8"
+  },
+  {
+    "run_id": "ablation_actionable_only_task12_User5_seed0",
+    "stage": "compress",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User4",
+      "User2",
+      "User5"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "The document focuses on psychological frameworks (ACT, Emotional Agility) and practical exercises for emotional regulation, cognitive reframing, and values-based action\u2014core themes in clinical psychology. Candidate B, a graduate student in Clinical Psychology, aligns directly with this content through her academic focus, interest in psychology case analysis, and consumption of psychology-related media. Her behavioral traits (e.g., sharing psychology articles, using time management tools, and prioritizing emotional communication) reflect the document's emphasis on structured self-reflection and emotional agility. Candidates A (law student with a psychology minor) and C (mechanical engineering student) lack the same depth of psychological training and daily engagement with these frameworks, making B the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 29996,
+    "latency_sec": 1.92,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6568,
+    "output_tokens": 167,
+    "total_tokens": 6735,
+    "api_response_id": "e1828aff-b9d4-450c-a733-c02d7a7a4fca"
+  },
+  {
+    "run_id": "ablation_actionable_only_task12_User5_seed0",
+    "stage": "write",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User4",
+      "User2",
+      "User5"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "The document focuses on evidence-based psychological frameworks (CBT, ACT, MBSR, Stoicism) for emotional regulation and self-awareness, aligning with Candidate B's graduate studies in Clinical Psychology and her deep engagement with psychology-related content. Her behavioral traits\u2014such as using psychology apps, sharing emotional communication articles, and prioritizing mental health\u2014mirror the document's emphasis on actionable psychological tools. Candidate A (law student) and C (mechanical engineering student) lack the same direct academic and practical focus on psychological frameworks, making B the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 31998,
+    "latency_sec": 1.53,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6954,
+    "output_tokens": 135,
+    "total_tokens": 7089,
+    "api_response_id": "f1f2a993-227a-49a6-a366-feedd91cd070"
+  }
+]

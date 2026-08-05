@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task48_User12_seed1",
+    "stage": "plan",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on fostering a 5-year-old's creativity through multidisciplinary arts, eco-friendly materials, and family engagement. Key indicators include his daily bedtime stories, interest in eco-friendly products, and prioritization of family time on weekends. The document's emphasis on developmental impact, structured activities, and parent-child interaction mirrors his values of quality family bonding, health-conscious consumption, and holistic child development. Candidates B and C, while family-oriented, lack the explicit focus on artistic exploration, eco-friendly materials, and integration of classical/modern art education central to the request.",
+    "model": "solar-pro",
+    "prompt_chars": 20259,
+    "latency_sec": 1.57,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4347,
+    "output_tokens": 146,
+    "total_tokens": 4493,
+    "api_response_id": "438ae119-ce6e-437f-962d-9ca53ddb4f85"
+  },
+  {
+    "run_id": "pilot_task48_User12_seed1",
+    "stage": "search",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User12"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on early childhood art education, emphasizing multidisciplinary approaches (art, music, movement), Reggio Emilia principles, and developmental stages (e.g., Lowenfeld\u2019s preschematic stage for 5-year-olds). Candidate B aligns most closely: their profile highlights a focus on children\u2019s education (e.g., investing in extracurricular classes, educational expenses), appreciation for structured learning (e.g., planning itineraries, valuing cost-effectiveness in education), and interest in holistic development (e.g., family vacations to cultural/nature sites, integrating activities like photography and chess). While Candidate A values family and practicality, their interests lean toward personal hobbies (photography, hiking) rather than educational frameworks. Candidate C, though tech-savvy and family-oriented, prioritizes professional and tech-driven interests over early childhood pedagogy. The document\u2019s emphasis on Reggio Emilia, Orff Schulwerk, and developmental stages reflects Candidate B\u2019s pragmatic, education-focused mindset.",
+    "model": "solar-pro",
+    "prompt_chars": 22258,
+    "latency_sec": 1.98,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4877,
+    "output_tokens": 219,
+    "total_tokens": 5096,
+    "api_response_id": "3c13f6af-fa6a-491b-ab95-9d0fdaa67f74"
+  },
+  {
+    "run_id": "pilot_task48_User12_seed1",
+    "stage": "compress",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on early childhood art, music, and movement pedagogy, emphasizing developmental benefits (emotional expression, concentration, self-confidence) and theoretical frameworks (Lowenfeld, Reggio Emilia, Laban, Orff/Kod\u00e1ly). Candidate B's profile aligns most closely: they prioritize children's education (extracurricular classes, learning resources), value in-depth analysis of developmental topics (market trends/management case studies), and have a pragmatic, detail-oriented approach to planning (self-guided tours, itineraries). While Candidate A has a daughter, their interests skew toward tech/AI, not child development. Candidate C\u2019s focus on practicality and family bonding lacks the pedagogical depth reflected in the document. B\u2019s emphasis on structured learning and developmental impact matches the document\u2019s framing.",
+    "model": "solar-pro",
+    "prompt_chars": 24751,
+    "latency_sec": 1.79,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5454,
+    "output_tokens": 182,
+    "total_tokens": 5636,
+    "api_response_id": "58d13e5d-a246-44ad-a826-58963013dbdf"
+  },
+  {
+    "run_id": "pilot_task48_User12_seed1",
+    "stage": "write",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User12"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on child development through multidisciplinary art education, emphasizing structured pedagogical frameworks (e.g., Reggio Emilia, Montessori, Vygotsky\u2019s ZPD) and developmental psychology. Candidate C\u2019s profile aligns most closely: they prioritize their daughter\u2019s education (evening bedtime stories), invest in high-quality learning resources, and balance work (tech/management) with family time. Their interest in developmental topics (via tech/AI applications) and systematic planning mirrors the document\u2019s academic rigor. Candidates A and B, while family-oriented, lack C\u2019s explicit focus on child development theory or educational investment depth.",
+    "model": "solar-pro",
+    "prompt_chars": 26753,
+    "latency_sec": 1.6,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5760,
+    "output_tokens": 146,
+    "total_tokens": 5906,
+    "api_response_id": "7822f8ff-b7e4-4a1c-b885-17775300b12b"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task32_User18_seed1",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User8"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on modern, minimalist design, pet-friendly materials, and budget-conscious yet high-quality recommendations. The document emphasizes practicality, durability, and cost-effectiveness\u2014traits mirrored in A's rational, research-driven shopping habits and preference for eco-friendly, sustainable products. Additionally, A's interest in boutique hotels and stylish homestays reflects the document's emphasis on aesthetic cohesion (white/gray palette) and functional design. While B and C also value quality, their priorities (family-oriented purchases for B, financial investments for C) are less directly relevant to the document's singular focus on optimizing a personal home furnishing budget with ergonomic and pet-friendly features.",
+    "model": "solar-pro",
+    "prompt_chars": 18527,
+    "latency_sec": 1.61,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4083,
+    "output_tokens": 166,
+    "total_tokens": 4249,
+    "api_response_id": "58bd7578-d558-4b4b-afa6-96082f076093"
+  },
+  {
+    "run_id": "pilot_task32_User18_seed1",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on practical, cost-effective home furnishings and appliances (e.g., sofa fabrics, refrigerators, washers, budget allocation for soft furnishings) with an emphasis on durability, space efficiency, and family-oriented design. Candidate C, a pragmatic, family-focused consumer who prioritizes quality, cost-effectiveness, and durable household items (e.g., high-end home goods, children\u2019s education expenses), aligns most closely. His interest in budget planning, mid-to-high-end accommodations, and family vacations to natural/historical sites mirrors the document\u2019s emphasis on practical, value-driven home improvements. Candidates A (data analyst) and B (finance-focused) lack the document\u2019s focus on household management and family-centric consumption.",
+    "model": "solar-pro",
+    "prompt_chars": 18533,
+    "latency_sec": 2.07,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5394,
+    "output_tokens": 171,
+    "total_tokens": 5565,
+    "api_response_id": "ddc7b333-6d00-4ca0-bf40-5adcda726cbe"
+  },
+  {
+    "run_id": "pilot_task32_User18_seed1",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on modern home furniture recommendations for an 89 m\u00b2 apartment, emphasizing cost-effectiveness, practicality, and family-oriented spatial efficiency (e.g., 3-bedroom layout, budget allocation for furniture within a larger soft-furnishing budget). Candidate C aligns best: they prioritize quality and cost-effectiveness, invest in durable household items, and balance family needs (e.g., children\u2019s educational expenses, family vacations). The document\u2019s framing\u2014prioritizing ergonomic, multi-functional furniture (e.g., sofa beds, storage beds) and aesthetic cohesion (cream/gray minimalism)\u2014matches C\u2019s pragmatic, family-focused consumption style. Candidates A (finance-focused, frugal) and B (data-driven, perfectionist) lack the document\u2019s emphasis on household durability, spatial optimization, and family-centric design.",
+    "model": "solar-pro",
+    "prompt_chars": 22677,
+    "latency_sec": 1.87,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5983,
+    "output_tokens": 193,
+    "total_tokens": 6176,
+    "api_response_id": "85711805-b94a-4782-8665-01664c2bf4c4"
+  },
+  {
+    "run_id": "pilot_task32_User18_seed1",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document emphasizes ergonomic furniture, pet-friendly materials, and a balanced budget for a family-oriented 89\u33a1 apartment. Candidate A's profile aligns with these priorities: they prioritize high-quality, durable household items, focus on family needs (e.g., children's education, family vacations), and value cost-effectiveness while investing in long-term comfort (e.g., ergonomic furniture, lumbar support). The document's framing\u2014balancing aesthetics, functionality, and family-centric design\u2014matches Candidate A's pragmatic, family-oriented decision-making style and consumption characteristics. Candidates B and C, while rational consumers, focus more on personal health, tech investments, or independent travel, which are less central to the document's family-focused, ergonomic, and pet-friendly themes.",
+    "model": "solar-pro",
+    "prompt_chars": 24679,
+    "latency_sec": 2.14,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5993,
+    "output_tokens": 176,
+    "total_tokens": 6169,
+    "api_response_id": "7abd8f0e-2435-45ab-83f4-769d696daffd"
+  }
+]

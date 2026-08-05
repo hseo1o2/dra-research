@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task48_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on a structured, cross-disciplinary art education plan for children (8-year-old daughter and 5-year-old son) that integrates Jiangnan/Chinese cultural elements with Western concepts. The document emphasizes pragmatic, evidence-based planning, family interaction techniques, and personalized adaptations\u2014mirroring A's traits as a detail-oriented, efficiency-focused manager who values combining Eastern and Western approaches. A's background (Shanghai Jiao Tong MBA, marketing expertise, and family dynamics) aligns with the document's emphasis on reputable educational frameworks, cost-effectiveness in educational expenses, and harmonious family communication. Additionally, A's lifestyle (e.g., family trips to cultural sites, pet interaction) directly connects to the document's inclusion of collaborative projects involving pets and cultural exploration, unlike B (state-owned enterprise manager with older son) or C (nurse with older children and a cat, focusing on pet-friendly activities).",
+    "model": "solar-pro",
+    "prompt_chars": 23474,
+    "latency_sec": 1.96,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4970,
+    "output_tokens": 215,
+    "total_tokens": 5185,
+    "api_response_id": "b4674430-791b-41b0-bec4-b937dd708c6b"
+  },
+  {
+    "run_id": "pilot_task48_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on art education's impact on child development (ages 5-8), process art, and pedagogical approaches like Reggio Emilia. Candidate C, a father of two children (8 and 5) with interests in painting/dancing (daughter) and educational investments, aligns directly with the document's emphasis on child-centered creative development. His role as a marketing manager in a foreign enterprise also reflects the document's structured, research-backed framing (e.g., citing PMC studies, pedagogical theories). Candidates A and B lack the explicit focus on early childhood art education or mixed-age sibling projects central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25500,
+    "latency_sec": 1.52,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5484,
+    "output_tokens": 147,
+    "total_tokens": 5631,
+    "api_response_id": "c868f913-6497-4cd2-8f2d-7168189a7919"
+  },
+  {
+    "run_id": "pilot_task48_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on arts education frameworks (Reggio Emilia, Orff Schulwerk, Laban) and their impact on child development (ages 5-8), emphasizing self-esteem, confidence, and qualitative feedback through portfolios. Candidate B, a father of an 8-year-old daughter interested in painting/dancing and a 5-year-old son, aligns with this content. His profile highlights investments in children's education, extracurricular activities, and a pragmatic approach to quality-of-life decisions. The document's emphasis on structured pedagogical methods and developmental outcomes matches B's interest in educational resources and his role as a parent prioritizing his children's growth. Candidates A and C lack direct ties to early childhood arts education or the specific age focus (5-8 years).",
+    "model": "solar-pro",
+    "prompt_chars": 27993,
+    "latency_sec": 1.8,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6758,
+    "output_tokens": 179,
+    "total_tokens": 6937,
+    "api_response_id": "2ec07c13-ced1-4455-8a7d-afbe7342af11"
+  },
+  {
+    "run_id": "pilot_task48_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on a 6-month art education plan for an 8-year-old girl (interested in painting/dance) and 5-year-old boy (interested in building/sports), integrating Western and Jiangnan Chinese cultural elements. Candidate C explicitly mentions having children of the same ages (8 and 5) with identical interests (painting/dance for the daughter, building/basketball for the son). Additionally, Candidate C's background in Jiangnan culture, emphasis on combining Eastern/Western approaches, and investment in children's education align perfectly with the document's interdisciplinary, cross-cultural framework. Candidates A and B lack these direct familial and cultural connections.",
+    "model": "solar-pro",
+    "prompt_chars": 29995,
+    "latency_sec": 1.6,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6482,
+    "output_tokens": 155,
+    "total_tokens": 6637,
+    "api_response_id": "f3a9725c-b7bb-44c5-9be7-7b45c0ef95ad"
+  }
+]

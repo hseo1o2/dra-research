@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task17_User17_seed1",
+    "stage": "plan",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User25",
+      "User22",
+      "User17"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on a multi-generational family vacation emphasizing comfort, accessibility, and balanced activities. Her consumption characteristics prioritize health-conscious dining (low-oil, low-salt options) and frugal yet quality-focused spending, matching the document's emphasis on cost-effectiveness and health. Her travel preferences for natural scenery, cultural sites, and self-guided tours with flexibility reflect the itinerary's blend of active and restful activities. Additionally, her recent interest in eco-tourism and organic products resonates with the document's emphasis on clean beaches and quality accommodations. Candidates B and C, while sharing some travel interests, lack A's specific focus on elderly-friendly accessibility, multi-generational activity balancing, and health-conscious dining priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 18094,
+    "latency_sec": 1.67,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 3996,
+    "output_tokens": 178,
+    "total_tokens": 4174,
+    "api_response_id": "89c6e76d-188c-4b46-8a95-e2146b7d55f4"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed1",
+    "stage": "search",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User17",
+    "correct": true,
+    "reasoning": "The document focuses on flight durations, airline options, and hotel details (e.g., The Ritz-Carlton), reflecting travel planning priorities. Candidate A emphasizes pet-friendly travel, self-guided trips, and comfort\u2014aligning with the document's focus on direct flights, duration, and luxury accommodations. Candidates B and C, while also interested in travel, prioritize eco-tourism (B) or industry-related destinations (C), which are not reflected in the document's content. Candidate A\u2019s recent shift toward pet-friendly destinations and detailed travel planning (e.g., itineraries, comfort) directly matches the document\u2019s framing.",
+    "model": "solar-pro",
+    "prompt_chars": 20444,
+    "latency_sec": 1.53,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4955,
+    "output_tokens": 148,
+    "total_tokens": 5103,
+    "api_response_id": "f8bd88d4-74fd-4374-8ac0-f037a1e2053f"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed1",
+    "stage": "compress",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The document focuses on flight logistics, accommodation options, and travel planning for Okinawa and Da Nang, aligning with Candidate B's travel preferences (2-3 trips/year, natural/historical sites, self-guided tours). Unlike Candidate A (pet-centric, domestic focus) or Candidate C (business/tech-oriented), Candidate B explicitly prioritizes travel planning, cost-effectiveness, and comfort\u2014mirrored in the document's emphasis on flight durations, connecting options, and budget-friendly accommodations. Additionally, B's interest in eco-tourism and hot springs subtly aligns with the document's exploration of diverse destinations, while her frequent use of Xiaohongshu for travel advice parallels the research-intensive nature of the document.",
+    "model": "solar-pro",
+    "prompt_chars": 22937,
+    "latency_sec": 1.78,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6172,
+    "output_tokens": 169,
+    "total_tokens": 6341,
+    "api_response_id": "9ffa4256-cee2-4817-aa0a-26b5aa877e52"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed1",
+    "stage": "write",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User25",
+      "User22",
+      "User17"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The document emphasizes multi-generational travel planning with a focus on health-conscious dining (low-oil/low-salt), accessibility (step-free terrain, elevators), and balancing active youth with elderly needs. Candidate A prioritizes health, family travel, and cost-effectiveness, aligning with the report's emphasis on dietary restrictions, accessibility, and generational inclusivity. Her interest in eco-tourism and hot springs also mirrors the document's focus on comfort and wellness. Candidates B and C, while health-conscious, focus more on professional interests (engineering, nursing) and lack the explicit emphasis on multi-generational travel logistics and health-conscious gastronomy central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24939,
+    "latency_sec": 1.58,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5634,
+    "output_tokens": 155,
+    "total_tokens": 5789,
+    "api_response_id": "d3b6e49e-abdb-4ee7-a6fb-05a887a487ba"
+  }
+]

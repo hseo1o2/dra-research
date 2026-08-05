@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task18_User22_seed0",
+    "stage": "plan",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on automotive technology, business travel to industry exhibitions, and practical, detail-oriented planning. The document emphasizes automotive tech (e.g., 'automotive/smart manufacturing sites') and Industry 4.0, which matches Candidate A's mechanical engineering background, Zhihu interests in Industry 4.0, and son's automotive research. Additionally, the request for business-class hotels with gyms, structured itineraries, and frugal yet quality-focused spending aligns with Candidate A's pragmatic, cost-effective preferences and gym-oriented accommodation choices. Candidate B and C lack the specific automotive/manufacturing focus and detail-oriented business-trip planning style evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 19349,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4307,
+    "output_tokens": 168,
+    "total_tokens": 4475,
+    "api_response_id": "11ffd188-ab2a-432a-86da-5b1b640be95d"
+  },
+  {
+    "run_id": "pilot_task18_User22_seed0",
+    "stage": "search",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on flight schedules, premium economy options, ticket pricing, and museum/attraction details, reflecting a user interested in travel planning, cost-effectiveness, and quality experiences. Candidate B aligns best: they prioritize self-guided tours, value cost-effectiveness in travel, and prefer high-end accommodations/services. Their LinkedIn activity and interest in market trends suggest a structured, analytical approach to planning, matching the document's detailed flight and ticket queries. Candidates A and C focus more on local/industrial travel or family trips, respectively, with less emphasis on premium travel options or frequent business-like mobility patterns.",
+    "model": "solar-pro",
+    "prompt_chars": 20444,
+    "latency_sec": 1.56,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4888,
+    "output_tokens": 144,
+    "total_tokens": 5032,
+    "api_response_id": "7a8e3ecf-edc3-46c7-96b9-a06ca000706f"
+  },
+  {
+    "run_id": "pilot_task18_User22_seed0",
+    "stage": "compress",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on premium business-class travel (Lufthansa premium economy, business hotels with fitness centers), cost-conscious planning within a fixed budget (30,000 RMB limit), and efficiency in logistics (flight schedules, transit options). Candidate A aligns with these priorities: they prioritize cost-effectiveness while valuing quality (e.g., high-end hotels for business trips), have a fixed monthly budget, and emphasize efficiency in decision-making. The document's framing around business travel, accommodation with fitness facilities, and structured planning mirrors Candidate A's preferences for business-class hotels, gym access, and pragmatic travel planning. Candidates B and C lack the explicit focus on premium business travel and corporate efficiency evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 23280,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6287,
+    "output_tokens": 166,
+    "total_tokens": 6453,
+    "api_response_id": "2a859b43-c1cd-4f77-9ec8-777b55b24684"
+  },
+  {
+    "run_id": "pilot_task18_User22_seed0",
+    "stage": "write",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "The document emphasizes automotive engineering, smart manufacturing, and technical exhibitions, aligning with Candidate A's focus on mechanical engineering and Industry 4.0. It prioritizes budget-conscious business travel with gym facilities, matching A's preference for practical, cost-effective accommodations with fitness options. The itinerary's self-guided, detail-oriented structure reflects A's independent decision-making style and interest in technical content, unlike B's marketing focus or C's broader lifestyle interests.",
+    "model": "solar-pro",
+    "prompt_chars": 25282,
+    "latency_sec": 1.37,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6301,
+    "output_tokens": 111,
+    "total_tokens": 6412,
+    "api_response_id": "9d8a53a9-b05a-445e-af6d-4632901d8525"
+  }
+]

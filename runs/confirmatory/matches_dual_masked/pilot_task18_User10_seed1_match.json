@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task18_User10_seed1",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate B's profile aligns most closely with the document's emphasis on high-end business hotels, detailed itinerary planning, and integration of leisure activities (golf, cultural landmarks) alongside business meetings. The request for direct booking links and official sources matches B's preference for efficiency, data-driven decisions, and use of professional platforms (LinkedIn, Zhihu for industry insights). Additionally, B's interest in Jiangnan cuisine and high-end restaurants aligns with the document's dining recommendations, while his golfing and yoga habits match the leisure activity suggestions. Candidate A's focus on manufacturing and Candidate C's emphasis on family trips and photography are less relevant to the business-centric, self-guided travel style described.",
+    "model": "solar-pro",
+    "prompt_chars": 18913,
+    "latency_sec": 1.95,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4207,
+    "output_tokens": 163,
+    "total_tokens": 4370,
+    "api_response_id": "8725d801-7428-457d-9f12-2e87601f498b"
+  },
+  {
+    "run_id": "pilot_task18_User10_seed1",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on flight schedules, ticket pricing, and restaurant details in Berlin, reflecting a user with frequent business trips, interest in cost-effective travel planning, and preference for high-end dining. Candidate A's profile aligns best: they take business trips twice yearly, prioritize cost-effectiveness in travel, and enjoy high-end restaurants. Their interest in market trends and management (e.g., saving HBR articles) also matches the document's structured, analytical tone. Candidates B and C lack the same emphasis on business travel and premium dining, focusing more on family trips or technical interests.",
+    "model": "solar-pro",
+    "prompt_chars": 20534,
+    "latency_sec": 1.54,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4937,
+    "output_tokens": 137,
+    "total_tokens": 5074,
+    "api_response_id": "64b987af-fb6e-4851-89b6-03447f21d163"
+  },
+  {
+    "run_id": "pilot_task18_User10_seed1",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document focuses on detailed flight schedules, layovers, and travel logistics for a family trip (7 days/8 days total) with emphasis on practicality, cost-effectiveness, and self-guided planning. Candidate A's profile aligns with this: he prioritizes family trips, plans detailed itineraries, values cost-effectiveness, and has a practical approach to travel (e.g., self-guided tours, budget planning). Unlike Candidate B (focused on business trips and technical interests) or Candidate C (emphasizing high-end hotels and business-related travel), Candidate A\u2019s travel style, budget-consciousness, and family-oriented priorities directly match the document\u2019s framing of a meticulously planned, family-focused trip with practical flight comparisons.",
+    "model": "solar-pro",
+    "prompt_chars": 23280,
+    "latency_sec": 1.92,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6394,
+    "output_tokens": 165,
+    "total_tokens": 6559,
+    "api_response_id": "ae1ef26e-b2e3-442c-baa4-6dd1dd33cfa9"
+  },
+  {
+    "run_id": "pilot_task18_User10_seed1",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document emphasizes premium business travel (high-end hotels, business dining, efficiency-focused flights) and aligns with Candidate A's profile: a pragmatic, detail-oriented professional who prioritizes cost-effectiveness in business contexts, prefers high-end chain hotels for trips, and values efficiency in travel. Candidate A's focus on business management, international travel (Shenzhen/Chengdu), and preference for Jiangnan cuisine (mentioned in the document's dining notes) further support this match. Candidates B and C lack the same emphasis on business-centric travel logistics, premium service expectations, and international corporate mobility.",
+    "model": "solar-pro",
+    "prompt_chars": 25282,
+    "latency_sec": 1.94,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6756,
+    "output_tokens": 139,
+    "total_tokens": 6895,
+    "api_response_id": "562590e3-d309-4254-9ce6-0fb02e7f55ae"
+  }
+]

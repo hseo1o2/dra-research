@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task17_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on high-end, family-friendly travel planning that balances multi-generational needs. The document emphasizes quality accommodations (e.g., 'high-end resorts,' 'spacious cozy villas'), cost-effectiveness, and detailed itineraries\u2014mirroring A's preference for 'high-end chain hotels' and 'cozy homestays' while valuing 'practicality and cost-effectiveness.' A's travel style ('self-guided tours,' 'deep experiences,' 'family interactions') matches the document's emphasis on age-appropriate activities and cultural visits. Additionally, A's dietary preferences (Jiangnan cuisine, high-end restaurants) align with the request for 'high-quality local cuisine,' and their quarterly family trips reflect the document's multi-generational focus. Candidates B and C lack the same emphasis on luxury accommodations and structured, multi-generational planning.",
+    "model": "solar-pro",
+    "prompt_chars": 19173,
+    "latency_sec": 1.94,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4219,
+    "output_tokens": 205,
+    "total_tokens": 4424,
+    "api_response_id": "e1d76af6-7af5-4b7f-8ba7-cfffdec16488"
+  },
+  {
+    "run_id": "pilot_task17_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document focuses on elderly-friendly travel logistics (HSR routes, driving times, multi-generational resorts, and senior transit considerations), aligning with Candidate A's family-oriented travel preferences (summer family trips, multi-generational bonding, and elderly relatives' needs). Candidate A's practical decision-making style (detailed itineraries, cost-effectiveness) and interest in natural scenery/photography also match the document's emphasis on travel planning and resort destinations. Candidates B and C, while also family-focused, prioritize business trips, industry exhibitions, or solo hobbies (golf, pottery), which are less relevant to the document's core themes of elderly-friendly travel and multi-generational family trips.",
+    "model": "solar-pro",
+    "prompt_chars": 20680,
+    "latency_sec": 1.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4876,
+    "output_tokens": 162,
+    "total_tokens": 5038,
+    "api_response_id": "4041908f-cc0f-4132-9b38-df9975c7ef34"
+  },
+  {
+    "run_id": "pilot_task17_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on multi-generational family travel, emphasizing accessibility, child-friendly amenities, senior-friendly environments, and coastal destinations. Candidate B's profile highlights quarterly family trips, children's educational expenses, and preferences for natural/historical destinations with self-guided tours. The document's emphasis on barrier-free access, kids' clubs, and family dining aligns with B's priorities for quality, cost-effectiveness, and family-centric travel. Candidates A and C lack explicit focus on multi-generational travel logistics or detailed family accommodation needs.",
+    "model": "solar-pro",
+    "prompt_chars": 23280,
+    "latency_sec": 1.62,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5554,
+    "output_tokens": 127,
+    "total_tokens": 5681,
+    "api_response_id": "37d7eed0-d4c7-4380-8eb4-1520b269b5a8"
+  },
+  {
+    "run_id": "pilot_task17_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document prioritizes multi-generational comfort, accessibility, and tailored activities for children (painting/outdoor interests) and elderly family members, aligning with Candidate A's focus on family-centric planning, quality accommodations, and cost-effectiveness. Candidate A's preference for natural attractions, self-guided tours, and detailed itineraries matches the document's emphasis on destination analysis, transit convenience, and activity recommendations. Unlike Candidates B (photography-focused) and C (tech/industry-focused), Candidate A's values of family bonding, practicality, and structured planning directly reflect the document's framing as a comprehensive family vacation blueprint.",
+    "model": "solar-pro",
+    "prompt_chars": 25282,
+    "latency_sec": 1.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5918,
+    "output_tokens": 148,
+    "total_tokens": 6066,
+    "api_response_id": "d11410ef-bb6e-45d4-af95-d384ab147d48"
+  }
+]

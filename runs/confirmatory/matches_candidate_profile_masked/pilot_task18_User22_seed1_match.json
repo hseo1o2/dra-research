@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task18_User22_seed1",
+    "stage": "plan",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "Candidate C's profile aligns most closely with the document's focus on business efficiency, technical interests, and structured travel planning. The request emphasizes optimizing practicality, comfort, and value\u2014mirroring C's pragmatic, detail-oriented personality and cost-effectiveness preferences. The document's emphasis on modern technology, industrial exhibitions, and gym-equipped accommodations aligns with C's professional background in mechanical engineering, interest in Industry 4.0, and preference for business hotels with fitness facilities. Additionally, C's travel style (self-guided, culture/tech-focused) and consumption habits (prioritizing quality and practicality) directly match the document's requirements, unlike A (family-centric leisure) or B (nature/photography-focused).",
+    "model": "solar-pro",
+    "prompt_chars": 19273,
+    "latency_sec": 1.67,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4257,
+    "output_tokens": 173,
+    "total_tokens": 4430,
+    "api_response_id": "b00c8619-dbc9-4c54-9d9d-a0d977c10005"
+  },
+  {
+    "run_id": "pilot_task18_User22_seed1",
+    "stage": "search",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on flight schedules, airline operations, and technical details (e.g., aircraft models, flight numbers, timestamps) that align with Candidate A's profile as a pragmatic, detail-oriented professional with a focus on efficiency and data-driven decision-making. Candidate A's interest in market trends, management models, and frequent business trips (to Shenzhen/Chengdu) suggests a need for precise travel logistics, unlike Candidates B (leisure-focused travel) and C (industry exhibitions but less emphasis on frequent international flights). The document's framing\u2014structured, factual, and prioritizing operational specifics\u2014mirrors A's preference for in-depth analysis and cost-effective planning, particularly relevant for business travel.",
+    "model": "solar-pro",
+    "prompt_chars": 20698,
+    "latency_sec": 1.62,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5033,
+    "output_tokens": 161,
+    "total_tokens": 5194,
+    "api_response_id": "bf8cc907-eab3-4ad8-8a90-3ad023d0a25b"
+  },
+  {
+    "run_id": "pilot_task18_User22_seed1",
+    "stage": "compress",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document focuses on practical, cost-effective transportation options in Berlin, including detailed pricing, zone coverage, and comparisons between rail, taxi, and ride-hailing services. Candidate B aligns most closely with this content due to their preference for rational, cost-conscious decision-making, interest in detailed comparisons (e.g., before purchasing), and emphasis on practicality. While Candidate A also values cost-effectiveness, their focus on high-end durable goods and business-oriented content (e.g., market trends) is less relevant to the document's travel and logistics focus. Candidate C, though pragmatic, prioritizes technical/industrial topics (e.g., smart manufacturing) and lacks the document's travel-planning angle. Candidate B\u2019s interest in self-guided tours, detailed itineraries, and photography of scenic spots further reflects the document\u2019s structured, user-centric approach to transit logistics.",
+    "model": "solar-pro",
+    "prompt_chars": 23280,
+    "latency_sec": 2.09,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5797,
+    "output_tokens": 194,
+    "total_tokens": 5991,
+    "api_response_id": "2b428ce3-c398-4892-8bab-ffd154e7566f"
+  },
+  {
+    "run_id": "pilot_task18_User22_seed1",
+    "stage": "write",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "The document emphasizes executive and engineering leadership priorities, technical research, and cost-efficient business travel logistics. Candidate C, a mechanical engineer with Industry 4.0 interests, aligns best: his focus on practicality, cost-effectiveness, and technical content (e.g., saving engineering articles, interest in tech exhibitions) mirrors the report's framing. Unlike Candidates A (family-focused, casual travel) and B (marketing/management-oriented), Candidate C's emphasis on self-guided tours, detailed itineraries, and preference for business hotels with gyms directly matches the document's structured, efficiency-driven approach to combined business/technical travel.",
+    "model": "solar-pro",
+    "prompt_chars": 25282,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6607,
+    "output_tokens": 148,
+    "total_tokens": 6755,
+    "api_response_id": "3743f7ed-5817-4028-be00-c32b7d0cd897"
+  }
+]

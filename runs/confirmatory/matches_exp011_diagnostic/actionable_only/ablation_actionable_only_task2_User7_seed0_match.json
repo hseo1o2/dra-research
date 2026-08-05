@@ -1,0 +1,92 @@
+[
+  {
+    "run_id": "ablation_actionable_only_task2_User7_seed0",
+    "stage": "plan",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "Candidate A is a graduate student in communication studies with a focus on social science research methods (including Python for quantitative analysis), aligning directly with the document's emphasis on interdisciplinary courses, social data analysis, and research-focused training. The document's structure\u2014prioritizing academic advancement, budget-conscious financial planning, and cross-cultural adaptation\u2014mirrors A's background (Beijing-based, budget-tracking habits, interest in social issues) and goals (enhancing research capabilities for Ph.D. applications). Candidate B (copywriter) and C (data analyst) lack the document's academic/research-specific framing, focusing instead on creative industries or corporate data roles, respectively.",
+    "model": "solar-pro",
+    "prompt_chars": 25459,
+    "latency_sec": 1.85,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5282,
+    "output_tokens": 155,
+    "total_tokens": 5437,
+    "api_response_id": "629bff0a-f69b-43b6-bdfa-b973e9c4b534"
+  },
+  {
+    "run_id": "ablation_actionable_only_task2_User7_seed0",
+    "stage": "search",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User7",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on exchange programs, computational social science, media courses, and student work regulations in Singaporean universities (NUS, NTU). Candidate B, a graduate student in new media and public opinion research, aligns most closely with these themes. His academic background in Journalism and Communication, interest in social issues, and focus on data analysis tools (Python) match the document's emphasis on media studies, computational social science, and Singaporean exchange programs. Candidates A (copywriter) and C (data analyst) lack the direct academic and research focus on media/communication that defines the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 26080,
+    "latency_sec": 3.08,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5558,
+    "output_tokens": 145,
+    "total_tokens": 5703,
+    "api_response_id": "2b2f4d8c-4755-43d6-8fce-1e2c9f266add"
+  },
+  {
+    "run_id": "ablation_actionable_only_task2_User7_seed0",
+    "stage": "compress",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User18",
+      "User7"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on academic structures, credit systems, and entry requirements for international exchange programs in communication, media, and computational social science. Candidate C, a graduate student in new media and public opinion research, aligns most closely with this content due to their academic background in journalism/communication, interest in social issues, and technical skills (Python, data analysis). The document's emphasis on interdisciplinary coursework, credit transfers, and research methodologies mirrors Candidate C's graduate-level focus on new media technology and public opinion analysis. Candidates A (copywriter) and B (data analyst) lack the direct academic/programmatic relevance to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 28599,
+    "latency_sec": 3.05,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6373,
+    "output_tokens": 151,
+    "total_tokens": 6524,
+    "api_response_id": "74cc2bb7-77db-46b0-b0fc-335a79fe387f"
+  }
+]

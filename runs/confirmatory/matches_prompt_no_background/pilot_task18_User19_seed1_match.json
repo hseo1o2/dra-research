@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task18_User19_seed1",
+    "stage": "plan",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "Candidate A (Zhou Jun) is a Supply Chain Manager from Chengdu with a focus on efficiency, sustainability, and practicality\u2014key themes in the document. The request emphasizes budget-conscious planning (\u00a530,000 RMB), eco-friendly accommodations, and immersive cultural experiences, aligning with A's eco-friendly consumption habits, preference for mid-to-high-end business hotels, and interest in historical/cultural travel. Unlike Candidate B (state-owned enterprise manager with rural roots) or C (marketing manager favoring luxury), A\u2019s pragmatic, self-planned travel style and emphasis on balancing work (3 business days) with light, sustainable leisure (e.g., Berlin\u2019s cultural spots) directly mirror the document\u2019s structure and priorities. Additionally, A\u2019s Sichuan-based origin and international travel preferences (Asian countries) make Berlin a plausible, non-frequent destination, fitting the one-week trip scope.",
+    "model": "solar-pro",
+    "prompt_chars": 25236,
+    "latency_sec": 1.97,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5306,
+    "output_tokens": 207,
+    "total_tokens": 5513,
+    "api_response_id": "af7ac74a-1001-4a70-973f-4ba4f5cf09a2"
+  },
+  {
+    "run_id": "pilot_task18_User19_seed1",
+    "stage": "search",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on flight routes, baggage allowances, and hotel amenities between Chengdu (TFU) and Berlin (BER), with specific mentions of airlines like Air China, Lufthansa, and Qatar Airways. Candidate C, based in Chengdu and working in supply chain management, frequently travels domestically and internationally for work, prioritizes practicality, and values efficiency in travel planning. The document's emphasis on flight logistics, baggage policies, and business-friendly hotel amenities aligns with Candidate C's professional needs and travel preferences. Candidates A and B, while also traveling, are less directly tied to Chengdu-Berlin routes or the specific airline/baggage details central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 26961,
+    "latency_sec": 1.87,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5895,
+    "output_tokens": 159,
+    "total_tokens": 6054,
+    "api_response_id": "20a9c8d5-ca86-421c-b16b-7f3e5fb907e0"
+  },
+  {
+    "run_id": "pilot_task18_User19_seed1",
+    "stage": "compress",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User19"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on flight routes, baggage allowances, and hotel amenities between Chengdu (TFU/CTU) and Berlin (BER), emphasizing practical logistics, cost comparisons, and sustainable travel options. Candidate C, a Supply Chain Manager based in Chengdu, aligns with this content due to his profession (logistics optimization), frequent domestic travel, and recent interest in eco-friendly consumption. The document's detailed cost breakdowns, airline comparisons, and emphasis on sustainable hotels (e.g., Nordic Swan Ecolabel) mirror C's pragmatic, efficiency-driven decision-making style and his focus on practicality, durability, and sustainability. Candidates A and B, while rational consumers, lack the direct professional and geographic relevance to Chengdu-Berlin logistics that defines Candidate C.",
+    "model": "solar-pro",
+    "prompt_chars": 29454,
+    "latency_sec": 1.76,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6884,
+    "output_tokens": 174,
+    "total_tokens": 7058,
+    "api_response_id": "8d73c070-9a2a-4ac4-ba19-35814a479bd0"
+  },
+  {
+    "run_id": "pilot_task18_User19_seed1",
+    "stage": "write",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on a business travel itinerary from Chengdu to Berlin, emphasizing budget efficiency, logistical convenience, and eco-friendly practices. Candidate B, a supply chain manager based in Chengdu, aligns most closely with these priorities. His role requires frequent travel planning, cost-conscious decision-making, and sustainability awareness, all reflected in the document's framing. Unlike Candidates A (state-owned enterprise manager with rural ties) and C (marketing manager in Shanghai with a focus on luxury and cultural sites), Candidate B's Chengdu residence, pragmatic travel style, and interest in eco-friendly consumption directly match the document's content and perspective.",
+    "model": "solar-pro",
+    "prompt_chars": 31456,
+    "latency_sec": 1.6,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 7364,
+    "output_tokens": 148,
+    "total_tokens": 7512,
+    "api_response_id": "8e273675-eea1-4012-b648-8d67dc0b3f2f"
+  }
+]

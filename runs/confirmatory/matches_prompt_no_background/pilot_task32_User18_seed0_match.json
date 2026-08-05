@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task32_User18_seed0",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on a modern aesthetic, smart home integration, and cost-effective, research-driven purchasing. The document emphasizes a modern hard furnishing base (white walls/gray floors), smart appliance connectivity, and a rational budget split\u2014all priorities reflected in A's meticulous, data-driven decision-making style and preference for eco-friendly, durable products. Unlike B (focused on financial investments) or C (family-oriented with children's needs), A's single-person household, cat ownership, and interest in boutique design align with the document's emphasis on personal, stylish, and tech-integrated solutions without family-specific constraints.",
+    "model": "solar-pro",
+    "prompt_chars": 23422,
+    "latency_sec": 1.58,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4957,
+    "output_tokens": 156,
+    "total_tokens": 5113,
+    "api_response_id": "63687ef6-8e66-4d35-b988-7358e4cdf0fc"
+  },
+  {
+    "run_id": "pilot_task32_User18_seed0",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on home renovation, appliance selection (e.g., ultra-thin embedded refrigerators, washer-dryer combos), and budget planning for a family-oriented space (89\u33a1). Candidate C, a married father with children, prioritizes family-centric decisions, quality-of-life investments, and durable household items. His role as a marketing manager aligns with the document\u2019s emphasis on cost-effectiveness and practicality, while his family responsibilities (e.g., children\u2019s needs, home environment) mirror the document\u2019s focus on space optimization and long-term usability. Candidates A and B, both single professionals, lack the family-oriented context and budgeting priorities evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24189,
+    "latency_sec": 1.66,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6670,
+    "output_tokens": 159,
+    "total_tokens": 6829,
+    "api_response_id": "12d59264-5c9f-4f4f-8b17-ccb7c1d788c6"
+  },
+  {
+    "run_id": "pilot_task32_User18_seed0",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User8"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on ultra-thin embedded appliances (refrigerators, washer-dryers) optimized for small-to-medium kitchens in 89m\u00b2 apartments, emphasizing family-oriented features (e.g., odor control, smart connectivity, cabinet fit) and premium durability. Candidate B, a married marketing manager with two children living in a high-end Shanghai community, prioritizes quality-of-life investments, cost-effective durability, and family-centric consumption (e.g., children's education, home appliances). His profile aligns with the document's emphasis on space-efficient, high-performance appliances for family use, budget-conscious premium purchases, and integration of smart home features. Candidates A (single data analyst) and C (single investment manager) lack the family-oriented consumption patterns and spatial constraints (89m\u00b2 apartment) central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 28126,
+    "latency_sec": 2.04,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 7363,
+    "output_tokens": 193,
+    "total_tokens": 7556,
+    "api_response_id": "d99ae573-f40f-46ac-b17c-52bdb048db86"
+  },
+  {
+    "run_id": "pilot_task32_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on a family-oriented, budget-conscious approach to interior design and home furnishing for an 89\u33a1 apartment, emphasizing warmth, practicality, and long-term value. Candidate A, a married father with two children, prioritizes family harmony, cost-effectiveness, and durable household investments. The document's emphasis on balancing modern aesthetics with cozy functionality aligns with A's preference for high-quality, practical items and his role as a primary breadwinner managing a household budget. In contrast, Candidates B and C, both single professionals, prioritize personal efficiency, minimalism, and self-guided experiences, which are less reflected in the family-centric framing of the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30128,
+    "latency_sec": 1.67,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 7183,
+    "output_tokens": 157,
+    "total_tokens": 7340,
+    "api_response_id": "8ba4b1b6-a2cf-4bba-a28b-ff48aa2b3af1"
+  }
+]

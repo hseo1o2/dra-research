@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task17_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on a high-end, family-oriented beach vacation prioritizing multi-generational comfort, quality accommodations, and balanced activities. Key matches include A's preference for natural attractions (e.g., Zhangjiajie, Huangshan), self-guided tours, and detailed itinerary planning. The emphasis on Jiangnan cuisine, high-end resorts, and child-centric educational activities (e.g., painting, outdoor exploration) reflects A's investment in children's education and family bonding. Additionally, A's pragmatic, detail-oriented personality and cost-effectiveness align with the structured, research-driven approach of the brief. Candidates B and C lack the same emphasis on luxury family travel, cultural-historical destinations, and holistic activity planning for mixed-age groups.",
+    "model": "solar-pro",
+    "prompt_chars": 19204,
+    "latency_sec": 1.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4204,
+    "output_tokens": 181,
+    "total_tokens": 4385,
+    "api_response_id": "150dcb89-8905-4b4c-bc54-207cef99012f"
+  },
+  {
+    "run_id": "pilot_task17_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document focuses on elderly-friendly travel logistics (driving times, HSR routes, beach safety, and senior transfers), family-oriented trips, and practical considerations like weather and budget. Candidate A explicitly prioritizes family trips, values comfort for elderly relatives, and emphasizes practicality in travel planning. Their interest in multi-generational trips, attention to senior mobility, and preference for self-guided tours align with the document's framing. Candidates B and C, while also family-oriented, focus more on business trips, high-end accommodations, or niche interests (e.g., golf, technology exhibitions) not reflected in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 20766,
+    "latency_sec": 1.57,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4728,
+    "output_tokens": 144,
+    "total_tokens": 4872,
+    "api_response_id": "dea6f869-6501-46a6-aadd-0824167e0a19"
+  },
+  {
+    "run_id": "pilot_task17_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on multi-generational family travel, emphasizing accessibility, kids' clubs, senior-friendly amenities, and coastal Zhejiang cuisine. Candidate B prioritizes family vacations (twice yearly), values quality and cost-effectiveness in consumption, and prefers destinations with natural attractions and cultural sites. His travel style aligns with the document's emphasis on self-guided tours, family interactions, and detailed itineraries. Additionally, his interest in high-end accommodations and child-friendly activities (e.g., extracurricular classes) matches the document's recommendations for resorts with kids' clubs and barrier-free access. Candidates A and C, while family-oriented, prioritize solo or couple-focused activities (e.g., gardening, pottery) and lack the explicit focus on multi-generational travel logistics and child-centric amenities central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 23280,
+    "latency_sec": 1.82,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5400,
+    "output_tokens": 187,
+    "total_tokens": 5587,
+    "api_response_id": "1d49f38c-faa6-4ab9-b14f-5bfbd976dde2"
+  },
+  {
+    "run_id": "pilot_task17_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on multi-generational family planning, emphasizing practicality, accessibility, and tailored activities for children (art/painting, building toys) and seniors (barrier-free ease). The document's structured comparison of destinations mirrors A's data-driven decision-making style and preference for detailed itineraries. A's prioritization of high-quality, cost-effective family experiences (e.g., educational expenses, quarterly trips) and interest in natural/historical destinations (Zhangjiajie, Huangshan) aligns with the report's emphasis on child-safe environments, regional dining, and generational comfort. Candidates B and C, while family-oriented, focus more on individual hobbies (photography, gardening) and lack the explicit emphasis on balancing diverse generational needs seen in A.",
+    "model": "solar-pro",
+    "prompt_chars": 25282,
+    "latency_sec": 1.85,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5749,
+    "output_tokens": 191,
+    "total_tokens": 5940,
+    "api_response_id": "5970d1c5-703b-4040-9904-f05f6369b790"
+  }
+]

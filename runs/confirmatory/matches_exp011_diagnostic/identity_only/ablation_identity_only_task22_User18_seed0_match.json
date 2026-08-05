@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "ablation_identity_only_task22_User18_seed0",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document explicitly identifies the author as 'Liu Lu,' a 25-30-year-old female Data Analyst in Shanghai with a statistics background, seeking a retirement plan. Candidate C matches this identity exactly, including name, age, gender, occupation, educational background (Shanghai University of Finance and Economics, Statistics major), and location. The document's focus on structured financial planning, dynamic allocation models, and life-stage adaptation aligns with Candidate C's meticulous, data-driven personality and her career in data analysis. Additionally, her independent decision-making style and preference for detailed research mirror the document's emphasis on flexible, multi-tiered options and adaptable frameworks. Candidates A and B differ significantly in demographics, profession, and personal goals, making them mismatches.",
+    "model": "solar-pro",
+    "prompt_chars": 23351,
+    "latency_sec": 1.77,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4929,
+    "output_tokens": 174,
+    "total_tokens": 5103,
+    "api_response_id": "a5896762-fc34-4e18-86f7-c1c99050724e"
+  },
+  {
+    "run_id": "ablation_identity_only_task22_User18_seed0",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate A, a marketing manager in Shanghai with an MBA, aligns most closely with the document's focus on Shanghai-based personal pension policies, tax deductions (12,000 RMB), and insurance products. The document emphasizes practical financial planning, family-oriented benefits (e.g., '\u6caa\u60e0\u4fdd' coverage for children), and long-term stability\u2014key priorities for A, who manages household budgets, invests in children's education, and values cost-effectiveness. Unlike B (an investment-focused securities manager) or C (a data analyst), A\u2019s profile highlights family responsibilities, Shanghai residency, and pragmatic financial decision-making, mirroring the document\u2019s emphasis on tax-advantaged pensions, insurance, and local Shanghai policies (e.g., '\u6caa\u60e0\u4fdd').",
+    "model": "solar-pro",
+    "prompt_chars": 24429,
+    "latency_sec": 2.33,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6356,
+    "output_tokens": 182,
+    "total_tokens": 6538,
+    "api_response_id": "4ee453a7-d683-4b47-a968-0204d2be63cb"
+  },
+  {
+    "run_id": "ablation_identity_only_task22_User18_seed0",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on Shanghai-specific insurance and pension systems, emphasizing tax optimization, long-term financial planning, and family-oriented benefits (e.g., long-term care insurance, annuity payouts, and intergenerational financial security). Candidate B, as a married father with children and a pragmatic, family-first mindset, aligns most closely with these themes. His profile highlights a focus on cost-effectiveness, quality-of-life investments, and family financial planning (e.g., educational expenses, durable household items, and quarterly family trips). The document\u2019s emphasis on structured financial products (e.g., annuities, tax-deferred savings) and Shanghai-centric policies also matches B\u2019s status as a Shanghai-based manager with a household budget and long-term spatial ties to the city. Candidates A and C, while financially literate, lack the family-oriented framing and Shanghai-specific residential context that directly align with the document\u2019s priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 28139,
+    "latency_sec": 1.97,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6608,
+    "output_tokens": 205,
+    "total_tokens": 6813,
+    "api_response_id": "8aa656f8-9099-4ccd-a15d-abc5fbceb64a"
+  },
+  {
+    "run_id": "ablation_identity_only_task22_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document is tailored for a 25-30-year-old data analyst with a statistics background in Shanghai, focusing on quantitative models, risk probability, and asset allocation logic. Candidate C (Liu Lu) matches this profile exactly: she is a 25-30-year-old data analyst with a statistics degree from Shanghai University of Finance and Economics, working in Shanghai. The document's emphasis on actuarial systems, dynamic optimization, and technical formulas aligns with her analytical background and career in data analysis. Candidates A (marketing manager) and B (investment manager) lack the statistical/data analyst specialization and the document's specific focus on actuarial modeling for retirement planning.",
+    "model": "solar-pro",
+    "prompt_chars": 30141,
+    "latency_sec": 1.76,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 9474,
+    "output_tokens": 154,
+    "total_tokens": 9628,
+    "api_response_id": "0731233d-2a97-4970-81d8-02792f7c8c5a"
+  }
+]

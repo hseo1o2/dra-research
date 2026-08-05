@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task43_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document is a highly specialized legal analysis request focused on non-compete agreements, compensation obligations, and defense strategies under [MASKED] Contract Law. Candidate B's profile aligns most closely with this content: (1) Their background as a former Marketing Manager (implied by LinkedIn use, industry forums, and marketing-related group chats) matches the document's professional context; (2) Their preference for in-depth analysis, case studies, and legal/judicial references (evident in their use of Zhihu/Dedao, article-saving habits, and career focus) directly mirrors the document's evidence-based, legally rigorous framing; (3) Their pragmatic, detail-oriented decision-making style and emphasis on cost-effectiveness align with the document's actionable defense strategy and focus on legal risk mitigation. Candidates A and C lack the same professional/legal focus\u2014Candidate A emphasizes personal hobbies and family-oriented content, while Candidate C focuses on technical/engineering topics unrelated to contract law.",
+    "model": "solar-pro",
+    "prompt_chars": 18978,
+    "latency_sec": 2.0,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4156,
+    "output_tokens": 222,
+    "total_tokens": 4378,
+    "api_response_id": "33a5e34d-8e4b-40f5-bbd1-acd77bf45d49"
+  },
+  {
+    "run_id": "pilot_task43_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on non-compete clauses, trade secrets, and legal interpretations under [MASKED] Labour Contract Law, particularly relevant to senior executives and marketing managers. Candidate A, a Marketing Manager, aligns with the document's emphasis on legal compliance, confidentiality obligations, and strategic business protection. Their role involves high-stakes decision-making, industry-specific knowledge, and a focus on competitive advantage\u2014mirrored in the document's analysis of non-compete agreements and trade secret laws. Candidates B and C lack the direct professional context (marketing/legal compliance) and content preferences (business management, legal case studies) that make A the most likely audience.",
+    "model": "solar-pro",
+    "prompt_chars": 20000,
+    "latency_sec": 1.55,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5154,
+    "output_tokens": 154,
+    "total_tokens": 5308,
+    "api_response_id": "43f860b4-fec3-47d2-9c48-70adc7bbf683"
+  },
+  {
+    "run_id": "pilot_task43_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on PRC non-compete laws, trade secrets, and labor disputes, with a technical framing relevant to legal/management roles. Candidate B's profile aligns most closely: they are a marketing director/manager (explicitly mentioned in the document) with high-frequency use of LinkedIn, industry forums, and a focus on market trends/management models. Their content preferences include business management articles, case studies, and market analysis\u2014directly mirroring the document's legal-commercial focus. Candidate A's interests (photography, fishing) and Candidate C's engineering/manufacturing focus lack this alignment. B's role, research habits, and decision-making style (data-driven, cost-effectiveness) make them the most likely audience for this legally nuanced, role-specific analysis.",
+    "model": "solar-pro",
+    "prompt_chars": 23280,
+    "latency_sec": 1.8,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5764,
+    "output_tokens": 181,
+    "total_tokens": 5945,
+    "api_response_id": "1fcf4266-1cc8-4378-b8a0-57fbaf7b6017"
+  },
+  {
+    "run_id": "pilot_task43_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on legal analysis of non-compete obligations for a Marketing Manager under PRC law, emphasizing enforceability, trade secrets, and defense strategies. Candidate C's profile aligns most closely: they are a marketing professional (LinkedIn activity, marketing group chats), detail-oriented, and prioritize cost-effectiveness and practicality in decision-making. Their interest in business management, market trends, and case studies (e.g., Harvard Business Review articles) reflects the document's focus on legal strategy and practical defense. Candidates A and B lack the marketing-specific context and professional focus on legal/business strategy evident in the text.",
+    "model": "solar-pro",
+    "prompt_chars": 25282,
+    "latency_sec": 1.95,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5583,
+    "output_tokens": 144,
+    "total_tokens": 5727,
+    "api_response_id": "1a0bc0e5-40a9-4c1d-b01b-abf19dc870df"
+  }
+]

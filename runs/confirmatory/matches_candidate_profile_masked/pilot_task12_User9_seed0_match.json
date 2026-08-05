@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User14",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "Candidate A aligns most closely with the document's focus on emotional management, self-awareness, and structured routines. The request emphasizes a morning routine (7:00\u20139:00 AM) for meditation, journaling, and yoga\u2014mirroring A's stated habits. A's low stress tolerance, creative background, and interest in mental health articles further match the document's emphasis on emotional regulation and CBT/MBSR resources. While B and C also engage in exercise and self-improvement, their priorities (artistic creation for B, tech/logical reasoning for C) diverge from the document's psychological and emotional focus. A's explicit need for emotional support and structured stress-management strategies makes them the best fit.",
+    "model": "solar-pro",
+    "prompt_chars": 18364,
+    "latency_sec": 2.04,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 3997,
+    "output_tokens": 171,
+    "total_tokens": 4168,
+    "api_response_id": "852c3059-6662-410f-8981-9bbb9d3234e6"
+  },
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User9",
+      "User11"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on mental health resources (e.g., Marc Brackett's emotional intelligence work, David Burns' cognitive therapy, MBSR mindfulness programs) framed for personal growth and stress management. Candidate B explicitly prioritizes mental health (collects mental health articles, uses meditation/yoga for stress relief, and values emotional support), aligns with the document's emphasis on emotional regulation and mindfulness. While Candidates A and C also engage in wellness activities, B's low stress tolerance and reliance on emotional support systems make the content most directly relevant to her needs. The document's focus on structured programs (e.g., MBSR syllabi, DBT worksheets) also matches B's preference for detailed planning and goal-oriented fitness routines.",
+    "model": "solar-pro",
+    "prompt_chars": 20377,
+    "latency_sec": 1.71,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4588,
+    "output_tokens": 169,
+    "total_tokens": 4757,
+    "api_response_id": "fb723b60-f689-4366-8d0f-b42975ab585b"
+  },
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User14",
+      "User9"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": false,
+    "reasoning": "The document focuses on emotional regulation, CBT, and workplace stress management through structured frameworks (e.g., RULER, DBT, CBT techniques). Candidate B, a creative individual with interests in psychology, art, and stress relief via yoga/meditation, aligns with the document's emphasis on emotional intelligence, mental health, and practical techniques for stress management. Their preference for psychology articles, creative process documentation, and stress-relief exercises (yoga, hiking) reflects the document's framing. Candidates A (tech-focused) and C (fitness/vegetarianism) lack the explicit psychological and emotional regulation focus central to the text.",
+    "model": "solar-pro",
+    "prompt_chars": 23054,
+    "latency_sec": 1.59,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5211,
+    "output_tokens": 153,
+    "total_tokens": 5364,
+    "api_response_id": "f9606bd3-11f7-4798-879d-b068cd1e8a3c"
+  },
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User14",
+      "User11"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "The document focuses on emotional regulation, self-awareness, and stress management tailored for high-pressure corporate environments, particularly in roles like internet product operations. Candidate C, a tech-oriented professional (using PyCharm, TensorFlow, GitHub) in a structured, high-stress field, aligns with the document's emphasis on systematic personal development, evidence-based strategies (CBT, DBT, MBSR), and applications for workplace stress. While Candidates A and B show interest in mental health, their profiles emphasize creative/artistic or social behaviors, whereas Candidate C's rational, goal-oriented personality and tech background match the document's operational focus, vocabulary (e.g., 'cross-functional alignment,' 'rapid decision-making'), and practical exercises (e.g., 'DEAR MAN' protocol for professional boundaries).",
+    "model": "solar-pro",
+    "prompt_chars": 25056,
+    "latency_sec": 2.08,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5456,
+    "output_tokens": 186,
+    "total_tokens": 5642,
+    "api_response_id": "c13538b2-4e7b-40de-96ce-03da88626a97"
+  }
+]

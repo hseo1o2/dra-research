@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task29_User18_seed0",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User15"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "Candidate B's profile aligns most closely with the document's focus on data-driven decision-making, budget constraints, and health-conscious business planning. The document emphasizes market analysis, competitor benchmarking, and cost-structure estimates\u2014all of which reflect B's meticulous, data-oriented personality and her use of tools like Python, R, and Tableau. Additionally, B's preference for low-calorie, high-protein meals and her interest in sustainability align with the healthy fast-food concept targeting fitness enthusiasts. Unlike A (focused on family and leisure) or C (prioritizing cultural/creative interests), B's rational, efficiency-driven approach and emphasis on actionable research match the document's pragmatic, business-oriented framing.",
+    "model": "solar-pro",
+    "prompt_chars": 18366,
+    "latency_sec": 2.02,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4086,
+    "output_tokens": 169,
+    "total_tokens": 4255,
+    "api_response_id": "c392eaa8-bc07-48f2-9a94-626ac8842b07"
+  },
+  {
+    "run_id": "pilot_task29_User18_seed0",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "Candidate C's data-driven focus, interest in market trends (e.g., '\u6570\u8bfb\u8f7b\u98df\u4ea7\u4e1a' report), and emphasis on cost-effectiveness align with the document's analysis of market size, consumer behavior, and operational costs. Her preference for online shopping, food delivery services, and sustainable products mirrors the document's focus on e-commerce, delivery platforms (Meituan), and eco-friendly consumption. Additionally, her Shanghai-based mobility (Suzhou/Hangzhou trips) and interest in urban craft workshops resonate with the Shanghai-centric market data and consumer insights provided.",
+    "model": "solar-pro",
+    "prompt_chars": 18152,
+    "latency_sec": 1.45,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5223,
+    "output_tokens": 137,
+    "total_tokens": 5360,
+    "api_response_id": "de9c3ee7-56e9-489e-bcaf-ea0feb250b9e"
+  },
+  {
+    "run_id": "pilot_task29_User18_seed0",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User15",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on market data, consumer trends, and competitor analysis in Shanghai's light meal industry, emphasizing quantitative metrics (e.g., market size, growth rates, order volumes) and structured research methods. Candidate A aligns best: she is a data-driven analyst proficient in tools like Python, SQL, and Tableau, prioritizes cost-effective, research-backed decisions, and consumes content on business analysis and sustainability. Her interest in low-calorie meals and frequent use of food delivery services also aligns with the document's focus on light meal consumption patterns. Candidates B and C, while rational consumers, focus more on cultural/creative content (B) or family-oriented travel/management (C), which are less central to the document's analytical, market-research framing.",
+    "model": "solar-pro",
+    "prompt_chars": 22298,
+    "latency_sec": 1.81,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6888,
+    "output_tokens": 178,
+    "total_tokens": 7066,
+    "api_response_id": "707b1219-fa0d-47b3-85e0-3438dd9c24f4"
+  },
+  {
+    "run_id": "pilot_task29_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User15",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on launching a lean, financially disciplined fast-casual food venture targeting corporate professionals and fitness enthusiasts, emphasizing unit economics, cost containment, and rapid scalability. Candidate A's pragmatic, data-driven decision-making style, focus on cost-effectiveness, and background in corporate/tech environments (evidenced by LinkedIn use, golf/yoga habits, and interest in business case studies) align most closely with the report's operational and market positioning. Unlike B (creative, less financially focused) or C (data-heavy but less aligned with the hybrid dine-in/delivery model's practical execution), A's emphasis on efficiency, budgeting, and corporate client targeting mirrors the report's strategic priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 24300,
+    "latency_sec": 1.76,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6070,
+    "output_tokens": 167,
+    "total_tokens": 6237,
+    "api_response_id": "6fabebfc-c8d2-4f47-9bd0-14398cf3215c"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task12_User2_seed1",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "Candidate A is a graduate student in Clinical Psychology with a strong academic background in psychology, aligning perfectly with the document's focus on evidence-based emotional regulation strategies (CBT, DBT, ACT, mindfulness). The document emphasizes self-study books, online courses, and practical daily strategies\u2014all of which match A's habits (e.g., using Coursera, psychology forums, structured journaling). A's personality (empathetic, detail-oriented) and interests (psychology, emotional communication) directly reflect the document's priorities. Candidate B (new media) and C (computer science) lack the clinical psychology focus and depth required for the document's specialized recommendations.",
+    "model": "solar-pro",
+    "prompt_chars": 23206,
+    "latency_sec": 1.57,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4852,
+    "output_tokens": 154,
+    "total_tokens": 5006,
+    "api_response_id": "6982aeb7-633a-4f0c-9ce9-d83f395e11a0"
+  },
+  {
+    "run_id": "pilot_task12_User2_seed1",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on evidence-based therapeutic approaches (DBT, ACT, CBT) and includes detailed references to training manuals, online courses, and practical tools like thought records. Candidate B, a clinical psychology graduate student, aligns most closely with this content due to her academic focus, frequent engagement with psychology resources, and interest in therapeutic methods. Her online behavior (e.g., psychology forums, course participation) and consumption habits (e.g., psychology books, exhibition tickets) reflect a direct professional and personal investment in these topics. Candidates A (media research) and C (computer science) lack the same depth of psychological practice or theoretical framing evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25406,
+    "latency_sec": 2.09,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5455,
+    "output_tokens": 155,
+    "total_tokens": 5610,
+    "api_response_id": "f01eb0bd-90ee-4cf6-9d40-c560dd59c62a"
+  },
+  {
+    "run_id": "pilot_task12_User2_seed1",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on clinical psychology therapies (DBT, ACT, CBT, transdiagnostic protocols) with detailed academic references to Guilford Press/Oxford University Press texts. Candidate A is a clinical psychology graduate student actively studying these therapies, evidenced by her psychology-focused learning apps, academic resource downloads, and interest in cognitive-behavioral materials. The document's technical depth aligns with her graduate-level clinical training needs, unlike Candidate B (new media research) or Candidate C (computer science), whose interests and academic focus lack direct relevance to psychotherapy manuals or clinical psychology literature.",
+    "model": "solar-pro",
+    "prompt_chars": 27954,
+    "latency_sec": 1.88,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6132,
+    "output_tokens": 138,
+    "total_tokens": 6270,
+    "api_response_id": "d0eaf83a-b63c-43f3-97b9-0472cfd86132"
+  },
+  {
+    "run_id": "pilot_task12_User2_seed1",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User1",
+      "User7",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document is a 6-month personal development plan tailored for a graduate student in Clinical Psychology, focusing on emotional regulation, self-awareness, and clinical skill-building. Candidate C is explicitly identified as a graduate student in Clinical Psychology, aligning perfectly with the document's academic and clinical focus. The plan's emphasis on therapeutic modalities (DBT, ACT, CBT, MBCT, MBT) and self-study curriculum matches Candidate C's psychology background, online learning habits (Coursera, Zhihu Psychology), and content preferences (psychology articles, emotional communication). The document's structured, evidence-based approach also aligns with Candidate C's meticulous time management, rational consumption of academic resources, and interest in self-improvement through psychology. Candidates A (Computer Science) and B (New Media) lack the clinical psychology focus and specific therapeutic interests central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29956,
+    "latency_sec": 2.16,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6352,
+    "output_tokens": 200,
+    "total_tokens": 6552,
+    "api_response_id": "625c8049-1353-429d-b846-e3e450b5ec6f"
+  }
+]

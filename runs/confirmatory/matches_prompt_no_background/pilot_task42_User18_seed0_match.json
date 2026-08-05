@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task42_User18_seed0",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate C (Liu Qiang) is a marketing manager in a foreign enterprise with an MBA, aligning with the document's focus on global compliance for an AI application launch. His role requires cross-border coordination, budget management, and risk mitigation\u2014mirroring the report's emphasis on regulatory frameworks (GDPR, PIPL, CCPA), infrastructure planning, and risk control. Unlike Candidate A (state-owned enterprise manager) or B (data analyst), C's hybrid Eastern-Western problem-solving style, experience with international business trips, and focus on cost-effective quality align with the document's pragmatic, actionable compliance framework tailored for a 20-person team. His interest in market trends and case studies also reflects the report's strategic, solution-oriented tone.",
+    "model": "solar-pro",
+    "prompt_chars": 24457,
+    "latency_sec": 1.69,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5150,
+    "output_tokens": 174,
+    "total_tokens": 5324,
+    "api_response_id": "188a6f99-0060-4bdf-aba4-c38a64dab005"
+  },
+  {
+    "run_id": "pilot_task42_User18_seed0",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on Chinese cross-border data transfer regulations (PIPL, CAC Interim Measures, March 2024 thresholds) with technical framing around compliance, thresholds (10,000/100,000/1,000,000 data subjects), and procedural details (security assessments, standard contracts). Candidate B, as a marketing manager in a foreign enterprise, would require this information for operational compliance, international business strategy, and understanding regulatory thresholds impacting data transfers. His MBA background, LinkedIn activity, and interest in market trends align with the document's analytical tone. Candidate A (state-owned enterprise manager) lacks the international business focus, while Candidate C (data analyst) would need more technical implementation details absent here.",
+    "model": "solar-pro",
+    "prompt_chars": 26235,
+    "latency_sec": 1.73,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5641,
+    "output_tokens": 177,
+    "total_tokens": 5818,
+    "api_response_id": "ad23a86e-84c1-46e2-8cf9-d7f590286a44"
+  },
+  {
+    "run_id": "pilot_task42_User18_seed0",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on legal compliance for AI applications across jurisdictions, emphasizing data privacy, consent mechanisms, and technical restrictions. Candidate A, a data analyst with a background in statistics and certifications in data science, aligns most closely with the document's technical and regulatory focus. Her role involves handling sensitive data, conducting detailed research, and prioritizing compliance\u2014mirroring the document's emphasis on precise geolocation data, chat records, and jurisdictional legal frameworks. Candidates B and C, while rational consumers, lack the direct professional connection to data privacy regulations and AI compliance that defines Candidate A's expertise and priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 28728,
+    "latency_sec": 1.97,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6373,
+    "output_tokens": 144,
+    "total_tokens": 6517,
+    "api_response_id": "433e2a40-66f3-46eb-90c3-3ac09d572123"
+  },
+  {
+    "run_id": "pilot_task42_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on global AI compliance, cross-border data governance, and strategic budgeting for a tech startup\u2014priorities aligning with Candidate A's role as a marketing manager in a foreign enterprise. His MBA background, focus on cost-efficiency, and experience balancing Eastern/Western frameworks mirror the document's emphasis on multi-jurisdictional compliance and capital optimization. Candidate B (state-owned enterprise manager) and C (data analyst) lack the strategic, cross-regional business perspective evident in the report's framing, which prioritizes executive-level decision-making and international regulatory navigation.",
+    "model": "solar-pro",
+    "prompt_chars": 30730,
+    "latency_sec": 1.92,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6472,
+    "output_tokens": 137,
+    "total_tokens": 6609,
+    "api_response_id": "0387be79-9221-4596-85df-6051ccf377cb"
+  }
+]

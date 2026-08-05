@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task2_User2_seed0",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User1",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on clinical psychology graduate studies, exchange programs, and cultural adaptation\u2014aligning with Candidate C's psychology-centric online behavior (Coursera, Zhihu Psychology), academic interests (saving psychology articles, sharing popular science content), and practical needs (budgeting for studies, interest in homestays for cultural immersion). Unlike Candidate A (general social/communication interests) or B (tech/AI focus), Candidate C's profile explicitly emphasizes psychology, academic resource management, and cross-cultural experiences, mirroring the document's priorities (curriculum analysis, cost structure, cultural adjustment). Her decision-making style (independent but values professional advice) also aligns with the systematic research approach requested.",
+    "model": "solar-pro",
+    "prompt_chars": 18645,
+    "latency_sec": 1.6,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4037,
+    "output_tokens": 166,
+    "total_tokens": 4203,
+    "api_response_id": "9e076a6b-3d7a-46a3-9360-a49ebdaa1bce"
+  },
+  {
+    "run_id": "pilot_task2_User2_seed0",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on psychology-related academic programs, scholarships, and licensure for international students, aligning with Candidate A's deep engagement with psychology (learning apps, forum participation, academic resources). Unlike Candidate B (communication/social issues focus) or C (tech/AI focus), A's behavior\u2014sharing psychology articles, saving research materials, and prioritizing psychology books/exhibitions\u2014directly mirrors the document's emphasis on psychology education and practice. Additionally, A's interest in pet care (mentioned in the document's masked queries) and travel to cultural sites further supports this match.",
+    "model": "solar-pro",
+    "prompt_chars": 19947,
+    "latency_sec": 1.45,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4588,
+    "output_tokens": 139,
+    "total_tokens": 4727,
+    "api_response_id": "1cfaf0a3-46b8-4c56-8703-b423520cbbd8"
+  },
+  {
+    "run_id": "pilot_task2_User2_seed0",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User7",
+    "correct": false,
+    "reasoning": "The document focuses on graduate-level psychology research programs, visa requirements, and academic policies, reflecting a user with strong academic/research interests. Candidate B's profile aligns most closely: they use digital tools for academic research, follow experts on platforms like Zhihu, save articles on social issues/technological developments, and prioritize cost-effective learning resources. Unlike Candidate A (focused on psychology popular science and pet care) or Candidate C (focused on programming/AI), Candidate B's behavior\u2014such as tracking academic trends, analyzing data, and preferring in-depth content\u2014matches the document's formal, research-oriented tone and emphasis on structured academic pathways. Their rational spending habits and interest in eco-friendly products also align with the document's financial breakdowns and institutional policies.",
+    "model": "solar-pro",
+    "prompt_chars": 22737,
+    "latency_sec": 2.11,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5358,
+    "output_tokens": 177,
+    "total_tokens": 5535,
+    "api_response_id": "e2ff52ce-40a6-4a6c-b315-cab31aeec6ac"
+  },
+  {
+    "run_id": "pilot_task2_User2_seed0",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on clinical psychology exchange programs, emphasizing academic rigor, research access, regulatory boundaries, and financial planning\u2014key concerns for a Master\u2019s student in psychology. Candidate B\u2019s profile aligns most closely: their online behavior centers on psychology learning (Coursera, Zhihu Psychology), offline activities include university library and psychology counseling center visits, and their content preferences prioritize psychology articles, lectures, and research materials. Their rational spending habits and interest in cost-effective academic opportunities mirror the report\u2019s financial breakdowns and practical guidance. Candidate A\u2019s focus on communication studies and Candidate C\u2019s tech/AI orientation lack the clinical psychology specificity central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24739,
+    "latency_sec": 1.64,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6130,
+    "output_tokens": 154,
+    "total_tokens": 6284,
+    "api_response_id": "0ef2ec76-4e9d-4a6f-8c9b-b0903e60aa59"
+  }
+]

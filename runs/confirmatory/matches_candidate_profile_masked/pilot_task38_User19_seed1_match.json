@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task38_User19_seed1",
+    "stage": "plan",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on family-centric home-buying priorities, school district analysis, and eco-friendly consumption. The document emphasizes a 6-year-old daughter's schooling needs, which matches A's detailed consumption characteristics for his daughter (e.g., organic food, school supplies). A's pragmatic decision-making style and focus on practicality, durability, and eco-friendly products (e.g., sustainable items, carbon footprint reduction) mirror the document's emphasis on budget-conscious yet quality-driven home-buying. Additionally, A's preference for suburban family outings and community amenities aligns with the document's emphasis on parks, green spaces, and family-friendly neighborhoods. Candidates B and C lack comparable depth in school district analysis or eco-conscious family consumption patterns.",
+    "model": "solar-pro",
+    "prompt_chars": 19777,
+    "latency_sec": 2.12,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4311,
+    "output_tokens": 180,
+    "total_tokens": 4491,
+    "api_response_id": "3dd9013b-2b28-4aae-8165-2bb0085cbf64"
+  },
+  {
+    "run_id": "pilot_task38_User19_seed1",
+    "stage": "search",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document focuses on Beijing's education policies (\u6d77\u6dc0/\u671d\u9633\u533a\u591a\u6821\u5212\u7247, 1911/630 policies) and housing-related financial regulations (\u9996\u4ed8\u6bd4\u4f8b, \u516c\u79ef\u91d1\u8d37\u6b3e), which align with Candidate A's priorities. A's profile highlights family-oriented concerns (monthly budgeting, children's education, home purchases) and practical consumption (smart home products, investment tracking). The content's emphasis on school district rules, housing certificates, and loan policies reflects A's documented interest in 'family education' and 'finance' articles, as well as his role in planning family budgets and housing decisions. Candidates B and C, while financially literate, focus more on professional/industry topics (supply chain, business management) and less on localized education policies or family-centric housing strategies.",
+    "model": "solar-pro",
+    "prompt_chars": 19426,
+    "latency_sec": 1.92,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5581,
+    "output_tokens": 196,
+    "total_tokens": 5777,
+    "api_response_id": "c18a2c2d-eecf-4cf2-b38d-ca32767accce"
+  },
+  {
+    "run_id": "pilot_task38_User19_seed1",
+    "stage": "compress",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on Beijing's school district policies (Haidian and Chaoyang) and real estate recommendations for families, emphasizing practicality, cost-effectiveness, and long-term planning for education and housing. Candidate B aligns most closely: he is a pragmatic, rational consumer with a focus on eco-friendly and sustainable products, values education (evidenced by purchasing school supplies and prioritizing his daughter's needs), and prioritizes family-oriented decisions (e.g., annual trips to historical/cultural destinations). His interest in efficient resource management and attention to policy details (e.g., supply chain optimization) mirrors the document's structured analysis of admission tiers and property strategies. Candidates A and C, while rational, lack B's explicit focus on education systems and family-centric long-term planning, which are central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 23516,
+    "latency_sec": 1.82,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5715,
+    "output_tokens": 186,
+    "total_tokens": 5901,
+    "api_response_id": "2d1d8ee7-8f03-4a95-95cf-93985c3657b5"
+  },
+  {
+    "run_id": "pilot_task38_User19_seed1",
+    "stage": "write",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User19",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on a Beijing-based family prioritizing primary school enrollment, pet-friendly green spaces, and efficient commutes\u2014aligning with Candidate A's emphasis on children's education (extracurricular classes, learning resources) and family-centric lifestyle (cozy homestays, family vacations). Candidate A's pragmatic, detail-oriented personality and focus on cost-effectiveness match the report's budget-conscious analysis of property specs, school policies, and risk mitigation. Candidate B's eco-friendly focus and Candidate C's photography/hiking interests are tangential to the document's core themes of urban real estate, education zoning, and family logistics in Beijing.",
+    "model": "solar-pro",
+    "prompt_chars": 25518,
+    "latency_sec": 1.97,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5719,
+    "output_tokens": 150,
+    "total_tokens": 5869,
+    "api_response_id": "cedb9273-8098-44f3-a7a4-4c1fb75fe0f6"
+  }
+]

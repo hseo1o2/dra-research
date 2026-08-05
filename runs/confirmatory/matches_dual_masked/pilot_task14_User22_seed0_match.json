@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task14_User22_seed0",
+    "stage": "plan",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "Candidate B best matches the document's focus on a beginner runner with a 6 AM\u201310 PM schedule, lumbar strain concerns, and practical, adaptable training needs. The document emphasizes gradual progression, injury prevention, and time-efficient workouts\u2014aligning with B's pragmatic, health-focused exercise habits (e.g., jogging/walking for stress relief and neck health) and preference for self-guided, flexible routines. Unlike A (focused on mechanical engineering and structured Industry 4.0 interests) or C (golf/yoga and business management priorities), B's exercise goals, time management, and emphasis on practicality (e.g., cost-effective gear, outdoor running) directly mirror the document's tone and requirements. B's recent interest in hiking/cycling also parallels the marathoner's adaptable approach to training.",
+    "model": "solar-pro",
+    "prompt_chars": 18369,
+    "latency_sec": 1.83,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4042,
+    "output_tokens": 190,
+    "total_tokens": 4232,
+    "api_response_id": "27d087ab-c52a-4f65-a1cf-904ae2b95493"
+  },
+  {
+    "run_id": "pilot_task14_User22_seed0",
+    "stage": "search",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "The document focuses on marathon training, biomechanics, core stability, and injury prevention for masters runners (50+), emphasizing structured plans, dynamic warm-ups, and exercises like bird dog and plank. Candidate C aligns best: they are a 50+ runner (exercises 3x/week, runs with a dog), prioritize physical health and stress relief through running, and invest in fitness equipment (treadmill, dumbbells). Their technical interests (Industry 4.0, mechanical engineering) mirror the document\u2019s biomechanical focus, and their practical, goal-oriented personality matches the training plans\u2019 structured approach. Candidates A and B lack the same depth in running-specific habits or biomechanical interest.",
+    "model": "solar-pro",
+    "prompt_chars": 20695,
+    "latency_sec": 1.78,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4730,
+    "output_tokens": 169,
+    "total_tokens": 4899,
+    "api_response_id": "2cbd0811-8127-4f5e-ab2e-f331a07cae40"
+  },
+  {
+    "run_id": "pilot_task14_User22_seed0",
+    "stage": "compress",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "The document focuses on marathon training for masters runners (aged 50\u201355), emphasizing physiological changes, recovery strategies, and run-walk ratios for beginners. Candidate B aligns most closely: he is 50\u201355 (implied by 'masters runner' context), runs 3x/week, prioritizes recovery (e.g., cutback weeks), and values practical, age-adaptive training (e.g., 60-minute weekday limits). His exercise goals (strength/endurance, stress relief) and equipment investments (running shoes) match the document's focus on injury prevention and sustainable training. Candidates A and C lack explicit marathon/running focus or age-related physiological considerations.",
+    "model": "solar-pro",
+    "prompt_chars": 23280,
+    "latency_sec": 1.81,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5469,
+    "output_tokens": 166,
+    "total_tokens": 5635,
+    "api_response_id": "dc554955-b568-4595-9d84-fba0bdd47895"
+  },
+  {
+    "run_id": "pilot_task14_User22_seed0",
+    "stage": "write",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document focuses on a 50\u201355-year-old beginner runner with a history of lumbar strain, emphasizing injury prevention, structured low-intensity training, and biomechanical adjustments. Candidate B aligns most closely: he is in the target age range (6 AM wake-up, 10 PM bedtime), prioritizes health and practicality in exercise (jogs 3x/week, aims to improve neck issues via physical activity), and values cost-effectiveness in equipment (e.g., upgrading running shoes). Unlike Candidate A (golf/yoga focus) or C (industry/tech-oriented), B\u2019s exercise habits, injury-consciousness, and preference for outdoor running/parks directly mirror the document\u2019s emphasis on spinal hygiene, cadence, and accessible training. His recent interest in hiking and cycling also aligns with the plan\u2019s gradual progression and time/distance caps.",
+    "model": "solar-pro",
+    "prompt_chars": 25282,
+    "latency_sec": 1.95,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5807,
+    "output_tokens": 199,
+    "total_tokens": 6006,
+    "api_response_id": "d17836c1-139a-4aa0-927e-cd0cb63db579"
+  }
+]

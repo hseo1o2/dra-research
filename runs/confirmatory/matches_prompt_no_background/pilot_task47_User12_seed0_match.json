@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task47_User12_seed0",
+    "stage": "plan",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User12"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on creating a structured, science-based exercise plan for a 5-year-old daughter, emphasizing family participation, scientific sources, and holistic development. Candidate C (Zhang Yu) is a tech entrepreneur with a 5-year-old daughter, aligns with the document's emphasis on scientific rigor (via his AI background), prioritizes family time (evidenced by daily bedtime stories and weekend family activities), and has the financial means to invest in high-quality resources. Unlike Candidates A (focused on a teenage son) and B (with an 8-year-old daughter), Candidate C's profile directly matches the document's target demographic and priorities, including structured routines, health-conscious habits, and family-integrated activities.",
+    "model": "solar-pro",
+    "prompt_chars": 26428,
+    "latency_sec": 1.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5500,
+    "output_tokens": 167,
+    "total_tokens": 5667,
+    "api_response_id": "2fef396d-44a7-4478-97ba-e21f56f9641d"
+  },
+  {
+    "run_id": "pilot_task47_User12_seed0",
+    "stage": "search",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on physical activity, screen time, and sleep guidelines for children under 5, with a strong emphasis on scientific research (e.g., WHO, AAP, ACSM) and technical terms like 'fundamental movement skills (FMS),' 'locomotor skills,' and 'epiphyseal growth plates.' Candidate A, an AI entrepreneur with a master's in computer science, aligns best due to his data-driven decision-making style, interest in scientific literature, and prioritization of evidence-based practices for his 5-year-old daughter. His offline behavior (reading bedtime stories, investing in fitness equipment) and health-conscious habits (yoga, stress management) reflect the document's focus on structured, research-backed child development. Candidates B and C, while family-oriented, lack A's technical rigor and alignment with the document's scientific framing.",
+    "model": "solar-pro",
+    "prompt_chars": 28019,
+    "latency_sec": 1.84,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5972,
+    "output_tokens": 194,
+    "total_tokens": 6166,
+    "api_response_id": "1068f041-de5d-473b-ad35-79d346cad4d8"
+  },
+  {
+    "run_id": "pilot_task47_User12_seed0",
+    "stage": "compress",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User12",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on physical activity, screen time, and sleep guidelines for children under 5 years old, particularly emphasizing WHO and Chinese national guidelines. Candidate A has a 5-year-old son, making this content directly relevant to his family's health priorities. The document's framing aligns with A's pragmatic, family-oriented values (e.g., balancing work and children's education) and his interest in authoritative guidelines (reflected in his MBA background and preference for structured planning). Candidate B, while also having a 5-year-old daughter, focuses more on tech/AI entrepreneurship, which is less central to the document's content. Candidate C, though family-oriented, has a middle-school-aged son, making the age-specific guidelines less immediately applicable.",
+    "model": "solar-pro",
+    "prompt_chars": 30512,
+    "latency_sec": 1.74,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 7773,
+    "output_tokens": 171,
+    "total_tokens": 7944,
+    "api_response_id": "e46fa54d-3149-4e97-a879-6d2ac202064d"
+  },
+  {
+    "run_id": "pilot_task47_User12_seed0",
+    "stage": "write",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User12",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on a 5-year-old girl's physical activity and athletic development, emphasizing scientific, evidence-based guidance from global health organizations. Candidate B, an AI entrepreneur with a 5-year-old daughter, aligns most closely: (1) His technical background (Tsinghua CS, data-driven decision-making) matches the document's emphasis on physiology and structured development; (2) His family-centric values (daily bedtime stories, shared pet care) reflect the document's holistic focus on physical and psychosocial growth; (3) His interest in health (low-sugar diet, mental well-being) and investment in quality-of-life products (eco-friendly tech) align with the document's safety-conscious, long-term developmental framework. Candidates A (marketing focus) and C (state-owned enterprise, less tech-oriented) lack B's direct synergy with the document's scientific rigor and child-development priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 32514,
+    "latency_sec": 2.41,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6827,
+    "output_tokens": 206,
+    "total_tokens": 7033,
+    "api_response_id": "13e9cf93-53f1-4f2a-a873-b7d5986397bd"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "ablation_identity_only_task12_User2_seed0",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "Candidate A is a 22-25-year-old female graduate student in Clinical Psychology in Beijing, aligning perfectly with the document's author profile. The document's focus on evidence-based emotional regulation strategies (CBT, DBT, ACT) matches her academic background and expressed needs for self-awareness tools. Her behavioral traits\u2014such as using psychology apps, sharing emotional content online, and prioritizing academic literature\u2014directly reflect the document's emphasis on structured self-study, authoritative sources, and practical emotional management. Candidate B (male, new media focus) and C (male, computer science) lack the clinical psychology context and personal emotional regulation focus central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 22989,
+    "latency_sec": 1.6,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4812,
+    "output_tokens": 158,
+    "total_tokens": 4970,
+    "api_response_id": "d3b58eec-8fd8-40ac-83f6-3e42032cc612"
+  },
+  {
+    "run_id": "ablation_identity_only_task12_User2_seed0",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on clinical psychology, mental health courses, self-practice/reflection (SP/SR) in CBT, mindfulness (SBNRR), and physiological techniques (resonant breathing, HRV). These topics align with Candidate B's profile as a Clinical Psychology graduate student who actively engages with psychology courses (Coursera/XuetangX), practices self-reflection, and shows interest in mental health applications. Candidate A (new media research) and C (computer science) lack the direct academic and behavioral ties to clinical psychology training and mental health content prioritized in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25474,
+    "latency_sec": 2.02,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5532,
+    "output_tokens": 141,
+    "total_tokens": 5673,
+    "api_response_id": "8c633094-3e26-471a-a26d-319c38caa7cd"
+  },
+  {
+    "run_id": "ablation_identity_only_task12_User2_seed0",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User1",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on clinical psychology resources, including CBT, DBT, and mindfulness-based therapies, with detailed references to Chinese translations of key texts. Candidate C is a graduate student in Clinical Psychology, actively studying these modalities (evidenced by her use of Coursera, psychology forums, and academic resource downloads). The document's emphasis on self-study books, client workbooks, and Chinese translations aligns with her academic background, consumption habits (prioritizing psychology books), and online behavior (saving psychology research materials). Candidates A (new media research) and B (computer science) lack the domain-specific focus on clinical psychology evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 27967,
+    "latency_sec": 1.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6235,
+    "output_tokens": 155,
+    "total_tokens": 6390,
+    "api_response_id": "edb58b94-27b6-4421-ba01-2da794b3965a"
+  },
+  {
+    "run_id": "ablation_identity_only_task12_User2_seed0",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document is a structured six-month self-awareness and emotional regulation program explicitly designed for 'graduate-level trainees in Clinical Psychology,' referencing the SP/SR framework and clinical modalities (CBT, DBT, ACT, Mindfulness) central to clinical psychology training. Candidate B is a Clinical Psychology graduate student whose profile aligns with the document's focus on self-practice, emotional regulation, and clinical competency development. Her interests in psychology, time management, and emotional communication, along with her use of psychology-related apps and participation in academic forums, directly mirror the document's purpose. Candidates A (new media research) and C (computer science) lack the clinical psychology context and professional relevance required to justify the document's specialized framing.",
+    "model": "solar-pro",
+    "prompt_chars": 29969,
+    "latency_sec": 1.83,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6461,
+    "output_tokens": 168,
+    "total_tokens": 6629,
+    "api_response_id": "29aceb98-9616-431a-b25c-cc8f11bfc110"
+  }
+]

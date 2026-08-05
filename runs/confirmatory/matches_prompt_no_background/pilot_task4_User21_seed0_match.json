@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task4_User21_seed0",
+    "stage": "plan",
+    "gt_userid": "User21",
+    "candidate_userids": [
+      "User21",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User21",
+      "User8",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User21",
+    "correct": true,
+    "reasoning": "Candidate A matches the document's focus on strategic leadership, executive decision-making, and technical/digital capabilities for a 40-45-year-old Shanghai-based entrepreneur with an MBA. The document emphasizes domestic/international program comparisons, ROI for entrepreneurs, and balancing work/life commitments\u2014aligning with A's profile as a pragmatic, data-driven entrepreneur prioritizing family, art, and sustainability. Candidate B (younger investment manager) and C (marketing manager) lack the entrepreneurial scope, age, and cultural depth reflected in the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 24891,
+    "latency_sec": 1.53,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5237,
+    "output_tokens": 134,
+    "total_tokens": 5371,
+    "api_response_id": "e991dd37-7e9d-4b0c-ad2e-25d65264b82a"
+  },
+  {
+    "run_id": "pilot_task4_User21_seed0",
+    "stage": "search",
+    "gt_userid": "User21",
+    "candidate_userids": [
+      "User21",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User21",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User21",
+    "correct": true,
+    "reasoning": "The document focuses on high-end executive education programs (EMBA/GEMBA) with emphasis on global rankings, tuition costs, curriculum depth, and flexibility for senior leaders. Candidate B, a 40-45-year-old entrepreneur, aligns best: his occupation requires advanced leadership skills, his consumption patterns favor quality/brand value (matching program costs), and his travel habits (quarterly international business trips) align with the programs' global focus. Unlike Candidate A (junior investment manager) or C (marketing manager), B's age, entrepreneurial background, and interest in sustainability/innovation mirror the programs' target audience of high-achieving executives seeking career transformation.",
+    "model": "solar-pro",
+    "prompt_chars": 25959,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5659,
+    "output_tokens": 159,
+    "total_tokens": 5818,
+    "api_response_id": "58c1d1c7-e17a-4358-9a08-c47027d64948"
+  },
+  {
+    "run_id": "pilot_task4_User21_seed0",
+    "stage": "compress",
+    "gt_userid": "User21",
+    "candidate_userids": [
+      "User21",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User21"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User21",
+    "correct": true,
+    "reasoning": "The document focuses on high-end EMBA programs (CEIBS, Tsinghua-INSEAD, etc.) with detailed tuition data, rankings, and curriculum structures, reflecting the priorities of an experienced entrepreneur (Candidate C) seeking advanced business education. Candidate C's profile as an entrepreneur with an MBA from Fudan University, international business travel, and interest in leadership/management aligns with the document's emphasis on elite executive programs. Candidates A (marketing manager) and B (investment manager) lack the entrepreneurial background and global business focus evident in the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 28533,
+    "latency_sec": 1.58,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 7713,
+    "output_tokens": 139,
+    "total_tokens": 7852,
+    "api_response_id": "7a991a45-e8a5-4c90-80a8-419416bde1b1"
+  },
+  {
+    "run_id": "pilot_task4_User21_seed0",
+    "stage": "write",
+    "gt_userid": "User21",
+    "candidate_userids": [
+      "User21",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User21",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User21",
+    "correct": true,
+    "reasoning": "The document focuses on advanced leadership programs for a 40-45-year-old Shanghai entrepreneur with a ZJU bachelor\u2019s and Fudan MBA, emphasizing technical/digital competence, elite networks, and cross-border strategy. Candidate B matches this profile exactly: same age, occupation, educational background, and location. The report\u2019s framing (e.g., 'future-proofing enterprise operations,' 'global innovation hubs,' 'C-suite networks') aligns with B\u2019s pragmatic, data-driven decision-making style, international business travel, and interest in sustainability/tech. Candidates A (younger investment manager) and C (marketing manager) lack the entrepreneurial experience, age, and strategic focus on global expansion detailed in the report.",
+    "model": "solar-pro",
+    "prompt_chars": 30535,
+    "latency_sec": 1.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6505,
+    "output_tokens": 170,
+    "total_tokens": 6675,
+    "api_response_id": "48110e40-6e20-4915-91d3-596fb64158b6"
+  }
+]

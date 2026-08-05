@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task33_User13_seed0",
+    "stage": "plan",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User18",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "Candidate C's profile aligns most closely with the document's focus on multi-pet essentials, emphasizing material safety, eco-friendliness, and design aesthetics. Like the document, C prioritizes sustainability (e.g., eco-friendly packaging, zero-waste products) and supports independent/local brands. Both the document and C value quality, practicality, and cohesive design systems\u2014evident in C's caf\u00e9 management (e.g., sourcing high-quality beans, curating d\u00e9cor) and the report's demand for 'cohesive product combinations' balancing aesthetics and functionality. Additionally, C's interest in smart home integration (e.g., managing caf\u00e9 operations) mirrors the document's emphasis on smart pet products (automatic feeders, monitoring cameras). Candidates A and B lack this specific overlap in priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 17856,
+    "latency_sec": 1.69,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 3851,
+    "output_tokens": 182,
+    "total_tokens": 4033,
+    "api_response_id": "01d52171-677f-43f3-a369-3e36bff0bea4"
+  },
+  {
+    "run_id": "pilot_task33_User13_seed0",
+    "stage": "search",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on product specifications, pricing, and technical details of pet care devices (litter boxes, feeders, grooming vacuums), aligning with Candidate C's data-driven, analytical mindset. C's preference for detailed research, cost-effectiveness, and interest in durable, high-quality products matches the document's emphasis on specs, comparisons, and practical features. Unlike A (coffee/art focus) and B (artistic/creative focus), C's rational consumption style and interest in technology/equipment align with the document's framing as a product comparison guide for functional pet products.",
+    "model": "solar-pro",
+    "prompt_chars": 19922,
+    "latency_sec": 1.47,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4705,
+    "output_tokens": 140,
+    "total_tokens": 4845,
+    "api_response_id": "462c5862-9fba-4a96-bc8f-30e3e2b34ffe"
+  },
+  {
+    "run_id": "pilot_task33_User13_seed0",
+    "stage": "compress",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User18",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on technical specifications, cost-benefit analysis, and multi-pet household suitability for pet care products, reflecting a data-driven, practical decision-making style. Candidate B's profile aligns with this through her emphasis on rational consumption, detailed research, and preference for high-quality, durable products. Her use of data analysis tools and cost-effective consumption habits mirrors the document's structured comparison of features, pricing, and long-term costs. Candidates A and C, while detail-oriented, prioritize aesthetics, creativity, and emotional connections over the technical and analytical framing seen in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 22743,
+    "latency_sec": 1.48,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5573,
+    "output_tokens": 137,
+    "total_tokens": 5710,
+    "api_response_id": "5c64404e-081e-4ecc-8cb0-488676a0981d"
+  },
+  {
+    "run_id": "pilot_task33_User13_seed0",
+    "stage": "write",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User13",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on pet care products for a multi-pet household, emphasizing design aesthetics, material safety, eco-friendliness, and long-term maintenance costs. Candidate B aligns most closely with these priorities, as they value sustainability, support independent brands, and prioritize eco-friendly packaging. The document's detailed product evaluations mirror Candidate B's meticulous nature and preference for high-quality, durable products. Additionally, Candidate B's interest in boutique accommodations and design aesthetics aligns with the report's emphasis on aesthetic and functional product design.",
+    "model": "solar-pro",
+    "prompt_chars": 24745,
+    "latency_sec": 1.46,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5798,
+    "output_tokens": 123,
+    "total_tokens": 5921,
+    "api_response_id": "da63895a-0658-4915-b721-70867782e9d3"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task22_User15_seed0",
+    "stage": "plan",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User20",
+      "User15"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "Candidate C best matches the document's focus on sustainable/ESG investments, self-employed financial planning, and low-risk retirement strategies. The document emphasizes structured, long-term planning with flexible percentage-based contributions\u2014aligning with C's rational, detail-oriented personality and eco-friendly consumption habits. C's interest in environmental protection (evident in saved articles and sustainable purchases) directly mirrors the document's ESG focus. Additionally, C's freelance writer background, Beijing location, and income variability (via book purchases and quarterly spending patterns) closely match the user profile described. Candidates A (data analyst) and B (creative writer) lack the document's financial prudence and sustainability emphasis, focusing instead on tech tools or artistic pursuits.",
+    "model": "solar-pro",
+    "prompt_chars": 18497,
+    "latency_sec": 1.84,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4020,
+    "output_tokens": 170,
+    "total_tokens": 4190,
+    "api_response_id": "1f7ae135-61dc-4521-b473-9c3d362b7218"
+  },
+  {
+    "run_id": "pilot_task22_User15_seed0",
+    "stage": "search",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User15",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document focuses on social insurance (\u517b\u8001\u4fdd\u9669, \u533b\u7597\u4fdd\u9669) and tax-saving strategies (\u4e2a\u4eba\u517b\u8001\u91d1, \u6263\u7a0e) for flexible employment in Beijing, emphasizing practical, detail-oriented financial planning. Candidate B aligns best: they are introverted, detail-observant, and prioritize eco-friendly, cost-effective consumption. Their interest in social issues and meticulous nature (e.g., saving articles on culture/social observation) reflects the document\u2019s focus on structured, policy-driven financial guidance. Unlike Candidate A (data-driven, tech-focused) or C (creative, impulsive), B\u2019s rational, research-based decision-making and preference for sustainable consumption mirror the document\u2019s emphasis on precise tax calculations, insurance adjustments, and long-term financial planning.",
+    "model": "solar-pro",
+    "prompt_chars": 18896,
+    "latency_sec": 2.19,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5569,
+    "output_tokens": 182,
+    "total_tokens": 5751,
+    "api_response_id": "a9c6caa5-dbda-4efd-978e-16d459414ced"
+  },
+  {
+    "run_id": "pilot_task22_User15_seed0",
+    "stage": "compress",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User18",
+      "User15"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on detailed financial planning, tax optimization, and social security systems with a strong emphasis on data-driven decision-making (e.g., contribution calculations, tax brackets, and investment strategies). Candidate B's profile aligns most closely with this analytical, structured, and data-oriented approach. Her expertise in data analysis tools (Python, R, SQL), preference for logical decision-making, and interest in tax-efficient financial planning (evident in her article collections on business analysis and environmental sustainability) match the document's technical framing. Candidates A and C, while creative and detail-oriented, prioritize artistic expression and social observation over quantitative analysis, making them less aligned with the document's focus on pension calculations, insurance contributions, and tax optimization strategies.",
+    "model": "solar-pro",
+    "prompt_chars": 22893,
+    "latency_sec": 1.7,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5793,
+    "output_tokens": 169,
+    "total_tokens": 5962,
+    "api_response_id": "281e5cb2-a9df-43aa-8aea-c004d29c6058"
+  },
+  {
+    "run_id": "pilot_task22_User15_seed0",
+    "stage": "write",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User18",
+      "User15"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document focuses on a self-employed freelance writer in Beijing with variable income, low risk tolerance, and a preference for sustainable/ESG investments. Candidate C aligns most closely: they are a freelance writer (implied by their writing habits and content preferences), based in Beijing, and share the document's emphasis on financial resilience (e.g., liquidity buffers, policy flexibility) and sustainable consumption. Candidate C's nocturnal writing routine, focus on eco-friendly products, and interest in local Beijing parks/suburbs for inspiration mirror the document's context. Candidates A and B lack the freelance writing profession, Beijing-centric mobility, or the specific financial/ESG framing central to the report.",
+    "model": "solar-pro",
+    "prompt_chars": 24895,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5297,
+    "output_tokens": 163,
+    "total_tokens": 5460,
+    "api_response_id": "20168221-296b-435e-a680-d5153d6a1d12"
+  }
+]

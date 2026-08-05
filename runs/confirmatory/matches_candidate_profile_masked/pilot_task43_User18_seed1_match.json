@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task43_User18_seed1",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document is a highly technical legal analysis request focused on Chinese Labor Contract Law, non-compete clauses, and judicial precedents\u2014topics requiring deep legal and professional expertise. Candidate C, a data analyst with technical proficiency (Python, SQL, Tableau), meticulous research habits, and a focus on factual evidence, aligns best. The document's structured, detail-oriented framing (e.g., numbered legal questions, emphasis on official texts and case law) mirrors Candidate C's independent, logically rigorous decision-making style and preference for data-driven analysis. Candidate A (pragmatic but non-technical) and Candidate B (career-focused but less detail-oriented in legal contexts) lack the document's specialized analytical depth and legal focus.",
+    "model": "solar-pro",
+    "prompt_chars": 18712,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4076,
+    "output_tokens": 169,
+    "total_tokens": 4245,
+    "api_response_id": "73842401-5a04-4559-9966-ef9ac217f542"
+  },
+  {
+    "run_id": "pilot_task43_User18_seed1",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on legal analysis of non-compete clauses, trade secrets, and judicial interpretations under Chinese labor law, emphasizing technical precision, legal frameworks, and case law. Candidate B's profile aligns with this focus: their online behavior includes frequent engagement with industry analysis, case studies, and market trends (e.g., saving articles on business management, market trends, and taking screenshots of market analysis reports). Their offline behavior reflects a pragmatic, detail-oriented approach to decision-making, prioritizing cost-effectiveness and practicality\u2014traits mirrored in the document's structured, evidence-based analysis of legal and economic implications. Candidate A\u2019s data-analyst focus and Candidate C\u2019s general interest in finance/photography lack the direct connection to legal, business, and managerial content framing evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 19653,
+    "latency_sec": 1.74,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4823,
+    "output_tokens": 180,
+    "total_tokens": 5003,
+    "api_response_id": "b10d3189-78c4-4d98-90c9-f35fe0c88cd5"
+  },
+  {
+    "run_id": "pilot_task43_User18_seed1",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document excerpt is empty (topic_001: []), providing no content to analyze for priorities, framing, vocabulary, or topic angles. Since no essential information exists to match any candidate profile, the selection defaults to Candidate A as a neutral placeholder. However, this choice is arbitrary due to the absence of document content, and a valid attribution cannot be made without the actual research summary.",
+    "model": "solar-pro",
+    "prompt_chars": 17042,
+    "latency_sec": 1.19,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 3759,
+    "output_tokens": 100,
+    "total_tokens": 3859,
+    "api_response_id": "5916e1b6-b181-424e-9ab1-5c3f4b43be7c"
+  },
+  {
+    "run_id": "pilot_task43_User18_seed1",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on legal analysis of non-compete agreements for data analysts, emphasizing technical details, statutory requirements, and procedural frameworks. Candidate B's profile aligns most closely: she is a data analyst proficient in tools like SQL, Python, and Tableau, actively engages with industry-specific content (e.g., data analysis forums, technical articles), and exhibits a meticulous, research-driven decision-making style. The document's technical depth, procedural focus, and emphasis on legal boundaries for data professionals reflect Candidate B's background, goals, and analytical mindset. Candidates A and C, while detail-oriented, lack the direct technical and legal context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25029,
+    "latency_sec": 2.15,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5462,
+    "output_tokens": 153,
+    "total_tokens": 5615,
+    "api_response_id": "9f0ca634-87e7-4952-806c-42522b203448"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task2_User7_seed0",
+    "stage": "plan",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on academic research in new media technology, data analysis (Python proficiency), and international exchange planning. The document emphasizes practical research skills, budgeting (monthly expense tracking), and interdisciplinary computational social science\u2014mirroring A's rational decision-making, data-driven habits, and interest in cost-effective learning tools. Unlike B (creative/artistic focus) and C (broader data analysis/tech interests), A's journalism/communication background, social media behavior (academic content sharing), and preference for natural-scenery travel (reflecting stress-relief needs) directly parallel the document's emphasis on public opinion research, structured planning, and cultural adaptation strategies for academic growth.",
+    "model": "solar-pro",
+    "prompt_chars": 18799,
+    "latency_sec": 2.76,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4055,
+    "output_tokens": 172,
+    "total_tokens": 4227,
+    "api_response_id": "ca164416-226b-419e-b416-b12500764a0e"
+  },
+  {
+    "run_id": "pilot_task2_User7_seed0",
+    "stage": "search",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User7",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on visiting student programs in computational social science, journalism, and data analytics at institutions like Annenberg, Columbia, UvA, Oxford, and Wee Kim Wee. Candidate B's profile aligns most closely with these themes: they are active in academic research, follow communication studies, and prioritize self-guided learning and in-depth experiences. Their interest in social issues, data analysis tools (Python), and rational decision-making mirrors the document's emphasis on structured programs and analytical fields. While Candidate C uses data tools, their focus on environmental sustainability and Nordic travel diverges from the document's institutional and disciplinary focus. Candidate A's creative and literary interests are less relevant to the academic/programmatic content.",
+    "model": "solar-pro",
+    "prompt_chars": 20491,
+    "latency_sec": 2.8,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4548,
+    "output_tokens": 166,
+    "total_tokens": 4714,
+    "api_response_id": "3b6e2e66-e561-4b4f-9470-6b210b79af2e"
+  },
+  {
+    "run_id": "pilot_task2_User7_seed0",
+    "stage": "compress",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User18",
+      "User7"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User7",
+    "correct": true,
+    "reasoning": "The document focuses on computational social science, data journalism, and academic logistics (visa requirements, tuition, research labs) \u2014 aligning with Candidate C's profile. C demonstrates technical proficiency (Python, data analysis tools), academic interests (communication studies, social issues), and a rational, research-driven decision-making style. Unlike Candidate A (creative/artistic focus) or B (data analysis but less emphasis on social science), C's background in communication studies, Python, and interest in social issues directly mirrors the document's technical and academic framing. The document's emphasis on structured research, funding logistics, and computational methods also aligns with C's methodical, goal-oriented approach.",
+    "model": "solar-pro",
+    "prompt_chars": 22984,
+    "latency_sec": 1.79,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5212,
+    "output_tokens": 157,
+    "total_tokens": 5369,
+    "api_response_id": "3684b23a-28dc-462e-b9f3-ee5dd5337479"
+  },
+  {
+    "run_id": "pilot_task2_User7_seed0",
+    "stage": "write",
+    "gt_userid": "User7",
+    "candidate_userids": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User20",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on computational social science, Python data analysis, and technical research infrastructure\u2014aligning with Candidate C's expertise in Python, R, SQL, and data analysis tools. Candidate C's rational, detail-oriented personality and emphasis on technical research (e.g., LinkedIn/Zhihu activity, data forums) mirror the document's quantitative rigor and academic framing. Candidates A and B, while interested in communication or creative fields, lack C's technical proficiency and systematic approach to data-driven research, which is central to the document's purpose.",
+    "model": "solar-pro",
+    "prompt_chars": 24986,
+    "latency_sec": 1.61,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5573,
+    "output_tokens": 130,
+    "total_tokens": 5703,
+    "api_response_id": "2724b7be-98cf-4f8a-9c78-72591c241060"
+  }
+]

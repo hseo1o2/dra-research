@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task17_User16_seed0",
+    "stage": "plan",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on a multi-generational family vacation prioritizing nature photography, fishing, and low-fatigue activities for elderly parents. Key matches include: (1) Candidate A's identity as a 40+ Harbin-based state-owned enterprise manager with a middle-school son and elderly parents, mirroring the document's family structure; (2) shared interests in nature photography, fishing, and Northeastern Chinese cuisine; (3) preference for self-guided, cost-effective travel with detailed itineraries; (4) emphasis on clean, comfortable accommodations with high-quality breakfasts; and (5) practical decision-making style focused on family bonding. Candidates B and C lack the specific multi-generational travel context and Northeastern Chinese culinary preferences central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25001,
+    "latency_sec": 1.77,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5262,
+    "output_tokens": 185,
+    "total_tokens": 5447,
+    "api_response_id": "22c53879-ff64-4081-b735-5213e0536f29"
+  },
+  {
+    "run_id": "pilot_task17_User16_seed0",
+    "stage": "search",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document focuses on family-friendly travel comparisons (e.g., 'relaxed family trip', 'luxury family suite') and photography interests (e.g., 'shipwreck photography', 'DSLR camera'). Candidate A explicitly mentions a family trip planning habit, a middle-school son, and a recent photography hobby (DSLR purchase). His travel style (self-guided, detailed itineraries) and interest in natural attractions align with the document's coastal city comparisons and scenic photography spots. Candidates B and C, while also family-oriented, emphasize business travel (B) or technical interests (C), which are absent in the document. A's practical, family-centric focus is the closest match.",
+    "model": "solar-pro",
+    "prompt_chars": 26869,
+    "latency_sec": 1.73,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5866,
+    "output_tokens": 161,
+    "total_tokens": 6027,
+    "api_response_id": "be434aff-282c-46ef-ba25-98323cf52ba7"
+  },
+  {
+    "run_id": "pilot_task17_User16_seed0",
+    "stage": "compress",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document focuses on a multi-generational family (elderly, adults, and a middle-school teen) traveling from Harbin in July, evaluating transportation convenience, climate comfort, beach quality, and activity variety. Candidate C, a state-owned enterprise manager residing in Harbin with a middle-school son, aligns perfectly with this context. The document's emphasis on family-friendly destinations (e.g., beaches with gentle slopes, boardwalks for elderly mobility, and activities for teens) matches Candidate C's travel preferences for natural attractions, self-guided tours, and family bonding. Additionally, Candidate C's recent interest in photography aligns with the document's detailed descriptions of scenic spots (e.g., shipwrecks, lighthouses, and coastal roads). Candidates A and B, while family-oriented, lack the Harbin residence and the specific focus on multi-generational travel planning evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29362,
+    "latency_sec": 2.04,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6756,
+    "output_tokens": 203,
+    "total_tokens": 6959,
+    "api_response_id": "c60e2d25-6817-4e66-b787-93eca9172c3e"
+  },
+  {
+    "run_id": "pilot_task17_User16_seed0",
+    "stage": "write",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document focuses on a multi-generational family vacation tailored to specific needs: nature photography, gentle pacing for elderly parents, and active activities for a middle-school child. Candidate B, a 40-45-year-old state-owned enterprise manager from Harbin, aligns perfectly. His profile highlights a family structure (wife, middle-school son, elderly parents) and interests (photography, fishing, self-guided tours) that mirror the document's priorities. Unlike Candidate A (Shanghai-based, younger family) or Candidate C (Suzhou-based, older children abroad), Candidate B's Harbin residence, Northeastern cuisine preference, and emphasis on family bonding through travel directly match the document's context, destination analysis, and framing.",
+    "model": "solar-pro",
+    "prompt_chars": 31364,
+    "latency_sec": 2.1,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6675,
+    "output_tokens": 170,
+    "total_tokens": 6845,
+    "api_response_id": "9d8aeddd-70bb-410e-9bfb-adb473e0e27a"
+  }
+]

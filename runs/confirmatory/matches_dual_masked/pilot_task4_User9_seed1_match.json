@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task4_User9_seed1",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "The document focuses on career advancement through structured education (MBA/EMBA/Master's) for an early-career tech professional with low risk tolerance. Candidate B aligns best: (1) He works in tech (internet company), has 1-3 years of experience, and prioritizes cost-effective, rational decisions\u2014matching the document's emphasis on ROI and eligibility. (2) His technical background (programming, AI interest) aligns with the Master's in [MASKED] comparison. (3) His conservative risk appetite and focus on low-risk investments mirror the user's low risk tolerance. (4) His nighttime productivity and self-guided learning habits fit the need to balance work/study. Candidates A (creative/artistic) and C (environmental focus) lack the tech-career and ROI-driven framing central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 18628,
+    "latency_sec": 1.83,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4108,
+    "output_tokens": 198,
+    "total_tokens": 4306,
+    "api_response_id": "ca277dbc-679f-49b9-a74f-a09e53aeb3b4"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed1",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User9",
+      "User6"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "The document focuses on MBA admission requirements (work experience, exams, tuition fees) and career outcomes (salary, recognition in large firms) for tech/product management roles. Candidate A's profile aligns with this focus: they work in a technical field (programming/algorithms), have a background in data analysis, and prioritize cost-effective education (e.g., online MBA) for career advancement. Their interest in AI applications and tech-related content mirrors the document's emphasis on MBA value in tech industries. Candidates B and C, who focus on creative/artistic or environmental interests, lack this direct connection to the document's technical and career-oriented framing.",
+    "model": "solar-pro",
+    "prompt_chars": 19082,
+    "latency_sec": 1.54,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4705,
+    "output_tokens": 153,
+    "total_tokens": 4858,
+    "api_response_id": "2d9e8474-a2dc-4847-8de3-a45b7fef09aa"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed1",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User6",
+      "User11",
+      "User9"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "The document focuses on evaluating graduate programs (MBA, EMBA, MSBA/MSDA, non-degree certificates) for a candidate with 1\u20133 years of work experience in internet product operations, highlighting quantitative/technical gaps and prioritizing programs that address these gaps. Candidate B aligns most closely: they have a technical background (programming tools, algorithm focus), 1\u20133 years of work experience, and a rational, data-driven decision-making style. The document\u2019s emphasis on technical skill gaps (Python, SQL, analytics) and program comparisons (MSBA vs. MBA) matches Candidate B\u2019s interests in tech courses, certifications, and career advancement in data/analytics roles. Candidates A and C, while environmentally or creatively focused, lack the technical and career trajectory alignment evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 22661,
+    "latency_sec": 1.87,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5350,
+    "output_tokens": 187,
+    "total_tokens": 5537,
+    "api_response_id": "160f1b81-d7f4-4096-84ad-86478685668f"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed1",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User6",
+      "User11"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "The document focuses on strategic education/career planning for a tech-sector professional with a quantitative skill gap, emphasizing low-risk tolerance, time constraints, and alignment with data-driven roles. Candidate C matches these priorities: (1) their tech background (8+ hours daily in programming tools, GitHub activity) aligns with the document's emphasis on bridging quantitative gaps; (2) their conservative financial risk appetite and rational consumption habits mirror the report's focus on low-risk educational options; (3) their interest in cost-effective tech investments and data-driven decision-making resonates with the document's analysis of MSBA/MSDA programs as optimal for skill transformation. Candidates A and B lack the technical focus and career context central to the report.",
+    "model": "solar-pro",
+    "prompt_chars": 24663,
+    "latency_sec": 1.73,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5584,
+    "output_tokens": 169,
+    "total_tokens": 5753,
+    "api_response_id": "eafc9867-5dad-436e-b7ed-aacaadbbbc8b"
+  }
+]

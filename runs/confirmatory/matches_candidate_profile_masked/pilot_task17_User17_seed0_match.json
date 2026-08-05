@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "plan",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User22",
+      "User25"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User17",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on a multi-generational, comfort-oriented beach vacation. The document emphasizes high-quality, accessible accommodations, family-friendly dining, and balanced activities for all ages\u2014mirroring A's preferences for cleanliness, service standards, and family-centric travel. A's interest in pet-friendly destinations (though not explicitly required here) and her meticulous planning style (evident in her research-heavy shopping habits and self-guided travel preferences) further align with the document's structured, detail-oriented approach. While Candidates B and C also value comfort, their interests in tech/industrial sites (B) or eco-tourism/hot springs (C) are less central to the document's coastal, multi-generational focus. A's emphasis on health-conscious dining and cultural experiences also resonates with the document's balanced activity itinerary and dietary recommendations.",
+    "model": "solar-pro",
+    "prompt_chars": 18211,
+    "latency_sec": 1.88,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4021,
+    "output_tokens": 203,
+    "total_tokens": 4224,
+    "api_response_id": "efe8c9b7-f0a3-4c38-addb-f41bc621f971"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "search",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User25",
+      "User17"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The document focuses on summer travel logistics (transport, climate, typhoon risks) and family-friendly destinations (Qingdao, Weihai, Dalian, Xiamen, Sanya) with practical advice on accessibility. Candidate B aligns best: she prioritizes family travel (with her husband/grandson), values cost-effective planning, and emphasizes safety/comfort. Her interest in seasonal trips (spring/autumn + summer hot springs) and self-guided tours matches the document's framing. Unlike A (work-focused, tech-oriented) or C (pet-centric, domestic focus), B's preferences for natural/historical sites, health-consciousness, and community-oriented planning reflect the document's emphasis on accessible, family-oriented summer travel.",
+    "model": "solar-pro",
+    "prompt_chars": 20434,
+    "latency_sec": 1.71,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4791,
+    "output_tokens": 170,
+    "total_tokens": 4961,
+    "api_response_id": "09b35a32-b542-4431-bae9-9ee2c80cf93e"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "compress",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User22",
+      "User25"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The document focuses on multi-generational travel planning, emphasizing accessibility, climate comfort, and balanced activities for seniors and younger family members. Candidate C's profile aligns most closely: she prioritizes family travel (2-3 times/year), values senior-friendly destinations (e.g., flat promenades, accessible dining), and emphasizes health/wellness (Tai Chi, square dancing). Her interest in eco-tourism and hot springs also matches the document's focus on climate considerations. Unlike Candidate A (pet-centric) or B (tech/industry-focused), Candidate C's travel preferences for natural/historical sites and multi-generational comfort directly reflect the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 22937,
+    "latency_sec": 1.59,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5341,
+    "output_tokens": 157,
+    "total_tokens": 5498,
+    "api_response_id": "39eac696-d1b8-40dc-8265-05a77f353e8e"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "write",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The document focuses on multi-generational travel planning prioritizing senior accessibility, climate comfort, and family-friendly accommodations\u2014aligning with Candidate B's emphasis on health-conscious travel, cost-effective comfort, and domestic trips with family (e.g., her grandson). Candidate B's preferences for natural/historical destinations, self-guided tours, and interest in eco-tourism/hot springs mirror the report's Shandong coastal focus. Unlike Candidate A (pet-centric) or C (tech/industry-focused), B's detailed travel habits (spring/autumn trips, summer short trips) and dietary preferences (light meals, Shandong specialties) directly align with the report's content priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 24939,
+    "latency_sec": 1.66,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5648,
+    "output_tokens": 162,
+    "total_tokens": 5810,
+    "api_response_id": "d02ed15a-32ad-4a03-8e70-70911fcd396c"
+  }
+]

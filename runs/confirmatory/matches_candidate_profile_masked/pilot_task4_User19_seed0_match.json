@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task4_User19_seed0",
+    "stage": "plan",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "Candidate C's profile aligns most closely with the document's focus on executive education for a Supply Chain Manager in Chengdu. Key matches include: (1) Shared location (Chengdu), family status (married with a young child), and career stage (35-40-year-old manager seeking leadership advancement). (2) Content priorities mirror Candidate C's interests in supply chain optimization, sustainability, and practical ROI analysis. (3) Decision-making style matches the document's emphasis on balancing work/family while pursuing structured, data-driven education. (4) Candidate C's focus on domestic programs, eco-friendly consumption, and phased planning aligns with the report's scope. Candidates A (data analyst) and B (marketing/golf-focused) lack the supply chain context and Chengdu-centric framing.",
+    "model": "solar-pro",
+    "prompt_chars": 19180,
+    "latency_sec": 1.91,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4170,
+    "output_tokens": 184,
+    "total_tokens": 4354,
+    "api_response_id": "76d59bb9-43a3-4525-834b-fd243f31e8ff"
+  },
+  {
+    "run_id": "pilot_task4_User19_seed0",
+    "stage": "search",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User19",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on MBA/EMBA tuition, admissions, and supply chain programs (e.g., UESTC, CEIBS, MIT SCM), aligning with Candidate B's supply chain/logistics interests, industry leader engagement on LinkedIn, and content preferences for supply chain optimization. Candidate A prioritizes general management and marketing, while Candidate C focuses on data analytics and technology, making B the best match. The document\u2019s emphasis on program costs, formats, and locations (e.g., Chengdu) also aligns with B\u2019s domestic travel radius and pragmatic decision-making style.",
+    "model": "solar-pro",
+    "prompt_chars": 20173,
+    "latency_sec": 1.59,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4655,
+    "output_tokens": 138,
+    "total_tokens": 4793,
+    "api_response_id": "ac2619f9-fe46-4cf0-ab2e-ce79bba75417"
+  },
+  {
+    "run_id": "pilot_task4_User19_seed0",
+    "stage": "compress",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on MBA/EMBA programs in Southwest China (Chengdu), particularly highlighting supply chain management, logistics, and tuition details. Candidate C's profile aligns most closely: he is based in Chengdu, works in supply chain/logistics, prioritizes practicality and cost-effectiveness in education, and frequently engages with industry-specific content (e.g., supply chain optimization). His geographic focus, professional interests, and consumption habits (e.g., eco-friendly products, family-oriented trips) mirror the document's emphasis on local Chengdu-based programs and practical program details. Candidates A and B lack the supply chain focus and Chengdu-centric mobility patterns evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 22809,
+    "latency_sec": 1.83,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6854,
+    "output_tokens": 157,
+    "total_tokens": 7011,
+    "api_response_id": "9499cc71-23b5-48ba-82dc-48cbf16615a6"
+  },
+  {
+    "run_id": "pilot_task4_User19_seed0",
+    "stage": "write",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on executive education options for a 35\u201340-year-old Supply Chain Manager in Chengdu, balancing family life (married with a child). Candidate B matches this profile geographically (Chengdu-based), professionally (supply chain focus), and personally (family-oriented, eco-conscious). The report's emphasis on practical ROI, regional employer networks, and time-efficient formats aligns with B's pragmatic decision-making, preference for domestic travel, and focus on eco-friendly consumption. Candidates A (Shanghai-based, data-heavy) and C (frequent business traveler, golf/yoga focus) lack the Chengdu-centricity and supply chain executive framing central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24811,
+    "latency_sec": 1.73,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5479,
+    "output_tokens": 162,
+    "total_tokens": 5641,
+    "api_response_id": "c9769b39-02da-4bc4-8b71-575b79d981a4"
+  }
+]

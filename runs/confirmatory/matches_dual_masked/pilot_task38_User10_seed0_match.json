@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task38_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on education quality, strategic financial planning, and family-centric priorities. The document emphasizes school admission policies, budget constraints, and property selection criteria that reflect Candidate A's detail-oriented, pragmatic decision-making style and his wife's role as a teacher. Candidate A's preference for cost-effectiveness, investment in children's education, and structured planning (evident in his career and family activities) mirrors the document's systematic approach to property research. While Candidates B and C share some rational consumption traits, they lack the explicit focus on education policies and urban district analysis that Candidate A demonstrates through his career development and family-oriented content consumption habits.",
+    "model": "solar-pro",
+    "prompt_chars": 20107,
+    "latency_sec": 2.1,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4548,
+    "output_tokens": 158,
+    "total_tokens": 4706,
+    "api_response_id": "e2f902d7-46a5-4f64-bd1a-7b320f9d9ae2"
+  },
+  {
+    "run_id": "pilot_task38_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on real estate market analysis, specifically housing prices, school district policies (1911/630 policies), and transaction data in Beijing's Haidian and Chaoyang districts. Candidate B's profile aligns most closely with this content: (1) Their online behavior includes LinkedIn and Zhihu usage for industry information, matching the document's policy and market analysis focus. (2) Their decision-making style emphasizes data analysis and cost-effectiveness, relevant to evaluating housing investments. (3) Their travel preferences include urban market exploration, consistent with the document's regional economic focus. Candidates A (engineering/manufacturing focus) and C (photography/family travel interests) lack the real estate/policy analysis alignment seen in Candidate B.",
+    "model": "solar-pro",
+    "prompt_chars": 19254,
+    "latency_sec": 2.91,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5569,
+    "output_tokens": 177,
+    "total_tokens": 5746,
+    "api_response_id": "f55cc99a-3703-4616-a391-ee9f8fc5fa84"
+  },
+  {
+    "run_id": "pilot_task38_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on real estate analysis with a strong emphasis on cost-effectiveness, budget constraints (\u00a56M), and detailed comparisons of property features (layout efficiency, price/sqm, subway access). Candidate B's profile aligns most closely: they prioritize cost-effectiveness, make data-driven decisions, and value practicality in purchases (e.g., high-end durable household items, thorough comparisons). The document's structured, analytical tone mirrors B's rational decision-making style and interest in market trends. Candidates A (focused on manufacturing/tech) and C (interested in photography/fishing) lack the document's real estate-specific framing and budget-conscious analysis.",
+    "model": "solar-pro",
+    "prompt_chars": 23280,
+    "latency_sec": 2.61,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6548,
+    "output_tokens": 154,
+    "total_tokens": 6702,
+    "api_response_id": "add44d82-6eb4-44ff-81c6-0601f410b747"
+  },
+  {
+    "run_id": "pilot_task38_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document focuses on a family-oriented housing search for a four-person household (with two children and a pet) prioritizing education, living convenience, and financial planning. Candidate A's profile aligns most closely: he emphasizes family bonding (e.g., cooking homemade meals, weekend trips), values education (saves articles on family education), and prioritizes practical, cost-effective purchases (e.g., smart home products). His interest in outdoor activities (hiking, photography) matches the document's emphasis on parks and pet-friendly environments. Candidate B's focus on business travel and high-end dining, and Candidate C's industrial/technical interests, are less relevant to the document's domestic and educational focus.",
+    "model": "solar-pro",
+    "prompt_chars": 25282,
+    "latency_sec": 2.77,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 10049,
+    "output_tokens": 162,
+    "total_tokens": 10211,
+    "api_response_id": "bfbdf6db-2b8b-4e1e-a02c-d3a3d29afbe3"
+  }
+]

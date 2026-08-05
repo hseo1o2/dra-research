@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task18_User22_seed1",
+    "stage": "plan",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User22",
+    "correct": true,
+    "reasoning": "Candidate C's profile aligns most closely with the document's focus on business efficiency, technology, and practicality. The request emphasizes optimizing a tight budget (\u00a530,000 RMB) for a business-leisure trip, prioritizing high-cleanliness hotels with gyms, and seeking modern industrial/museum visits\u2014all matching C's rational, detail-oriented personality and interest in smart manufacturing/Industry 4.0. The document's structured, goal-driven framing (e.g., allocating 3 working days, specifying tech/industrial attractions) reflects C's pragmatic decision-making style and professional background in mechanical engineering. Unlike A (focused on family/cultural trips) or B (prioritizing natural scenery/photography), C's preferences for business hotels, tech exhibitions, and self-guided itineraries directly mirror the document's priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 19224,
+    "latency_sec": 1.84,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4306,
+    "output_tokens": 198,
+    "total_tokens": 4504,
+    "api_response_id": "655e4ded-8a9a-44d2-9dc9-07bc20bd06fc"
+  },
+  {
+    "run_id": "pilot_task18_User22_seed1",
+    "stage": "search",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on flight schedules, airline operations, and technical details (e.g., aircraft models, delivery timelines, real-time tracking) that align with Candidate A's profile. A prioritizes industry information, market trends, and data-driven analysis (evident in their use of Zhihu/Dedao, interest in Harvard Business Review, and screenshot habits for business reports). The document's framing\u2014emphasizing logistics, operational efficiency, and structured data\u2014mirrors A's pragmatic, detail-oriented personality and career focus on marketing/management. Candidates B and C, while rational consumers, prioritize lifestyle, family, and hobbies (photography, gardening, pottery) over the technical/industry-centric content here.",
+    "model": "solar-pro",
+    "prompt_chars": 20587,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5197,
+    "output_tokens": 171,
+    "total_tokens": 5368,
+    "api_response_id": "24d81657-b587-4675-a739-7381d4c1f125"
+  },
+  {
+    "run_id": "pilot_task18_User22_seed1",
+    "stage": "compress",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document focuses on practical, cost-effective transportation options in Berlin, including detailed pricing, zone coverage, and validation processes for tickets. It also emphasizes self-guided transfers, budget-conscious choices (e.g., comparing taxi vs. rail costs), and family-friendly considerations (e.g., RMB currency conversions). These priorities align with Candidate B's traits: a rational, detail-oriented consumer who values cost-effectiveness, prefers self-guided planning, and prioritizes family-oriented travel (e.g., budgeting for trips, exploring natural destinations). Unlike Candidate A (focused on luxury/high-end experiences) or Candidate C (industry/tech-oriented), Candidate B\u2019s emphasis on practicality, budgeting, and family travel mirrors the document\u2019s framing.",
+    "model": "solar-pro",
+    "prompt_chars": 23280,
+    "latency_sec": 1.72,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6030,
+    "output_tokens": 168,
+    "total_tokens": 6198,
+    "api_response_id": "6be14ef1-14b7-4ca6-aa59-755e09fbdfef"
+  },
+  {
+    "run_id": "pilot_task18_User22_seed1",
+    "stage": "write",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document emphasizes executive-level travel efficiency, high-end accommodations (e.g., fitness centers, business lounges), and cost-conscious luxury within a strict budget\u2014aligning with Candidate B's profile. B prioritizes cost-effectiveness, quality, and practicality in travel (e.g., self-guided tours, budget-conscious luxury), while also valuing business-oriented amenities (e.g., gyms, connectivity) and detailed itinerary planning. Unlike Candidate A (family-focused, budget-conscious) or C (industry-focused, frugal), B's preferences for high-end hotels, business flexibility, and structured travel planning directly mirror the document's framing for an executive/engineering leader balancing professional and personal needs.",
+    "model": "solar-pro",
+    "prompt_chars": 25282,
+    "latency_sec": 1.7,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6946,
+    "output_tokens": 164,
+    "total_tokens": 7110,
+    "api_response_id": "2a6fc6c1-4b58-4a23-9cc1-da16f38816d9"
+  }
+]

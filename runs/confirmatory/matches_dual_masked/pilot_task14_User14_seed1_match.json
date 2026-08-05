@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User13",
+      "User14"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "Candidate C's profile aligns most closely with the document's focus on adaptable, low-pressure marathon training for a creative beginner. The document emphasizes integrating existing habits (yoga, Pilates, hiking) and prioritizing injury prevention\u2014mirroring C's exercise preferences for stress relief and health maintenance. C's creative background (artist, frequent travel for inspiration) aligns with the document's open-ended, adaptable structure, while their preference for home/park-based workouts matches the described training environment. Unlike A (focused on social media/creative writing) or B (coffee industry-centric), C's lifestyle and exercise habits directly reflect the document's balance of creativity, practicality, and holistic well-being.",
+    "model": "solar-pro",
+    "prompt_chars": 18333,
+    "latency_sec": 1.66,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 3964,
+    "output_tokens": 168,
+    "total_tokens": 4132,
+    "api_response_id": "47c5256f-60ca-428e-8fde-37262403a304"
+  },
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "The document focuses on marathon training strategies, run/walk ratios, air quality considerations, and route planning\u2014topics aligned with Candidate B's exercise habits (running, cycling) and goals (stress relief, endurance). Unlike Candidate A (yoga, walking) or C (yoga, Pilates), B explicitly mentions running and cycling as primary exercises, with a focus on improving fitness and endurance. The document's practical, goal-oriented tone (e.g., AQI thresholds, training plans) matches B's structured yet creative approach to health and leisure, while the emphasis on outdoor routes aligns with B's preference for exploring cityscapes and nature during exercise.",
+    "model": "solar-pro",
+    "prompt_chars": 19917,
+    "latency_sec": 1.59,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4538,
+    "output_tokens": 155,
+    "total_tokens": 4693,
+    "api_response_id": "e1f5c798-7c6e-4714-b1cd-c1c68c02c44c"
+  },
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User20"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document focuses on a structured, time-bound marathon training plan emphasizing gradual progression, injury prevention, and balanced exercise routines (yoga/Pilates). Candidate A aligns most closely: they prioritize health through yoga/Pilates, have a disciplined daily routine, and value gradual skill development (artistic). The document\u2019s emphasis on 'conversational effort' and 'no time pressure' mirrors A\u2019s stress-relief exercise goals. While B and C also exercise, their profiles emphasize coffee culture (B) or creative writing (C), which lack the document\u2019s fitness-structure focus. A\u2019s art-focused discipline parallels the plan\u2019s methodical approach.",
+    "model": "solar-pro",
+    "prompt_chars": 23372,
+    "latency_sec": 1.62,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6073,
+    "output_tokens": 154,
+    "total_tokens": 6227,
+    "api_response_id": "0e515c3a-6d80-49cc-b9f4-e18f13b07f69"
+  },
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document emphasizes a structured 12-week marathon training plan integrating yoga, Pilates, and hiking, prioritizing injury prevention and completion over speed. Candidate A's profile aligns most closely: they practice yoga 2\u20133x/week, occasionally cycle, and prioritize health maintenance. The plan\u2019s focus on cross-training (yoga, Pilates) and low-impact endurance matches A\u2019s exercise habits and goals. Additionally, A\u2019s urban environment (Shanghai) and interest in local, sustainable practices mirror the document\u2019s urban adaptation and injury-prevention focus. Candidates B and C, while active, prioritize running/cycling or creative pursuits, respectively, which are less central to the document\u2019s framing.",
+    "model": "solar-pro",
+    "prompt_chars": 25374,
+    "latency_sec": 2.15,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6550,
+    "output_tokens": 167,
+    "total_tokens": 6717,
+    "api_response_id": "eebdffaa-44ee-47b8-99dc-0cb0fa754d1c"
+  }
+]

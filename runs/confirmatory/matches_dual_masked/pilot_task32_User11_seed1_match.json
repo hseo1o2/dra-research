@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task32_User11_seed1",
+    "stage": "plan",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User11",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User8",
+    "correct": false,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on cost-effective, modern minimalist soft furnishings and smart appliances. The document emphasizes budget allocation, smart connectivity (e.g., [MASKED] compatibility), and a preference for practical, high-tech solutions\u2014mirroring Candidate A's frugal yet tech-savvy spending habits, interest in smart home integration, and minimalist aesthetic (white-and-gray interior). Unlike Candidate B (focused on tech gadgets but less on interior design) or Candidate C (prioritizing family-oriented purchases and high-end durability), Candidate A\u2019s independent, data-driven decision-making and emphasis on cost-performance ratios directly match the document\u2019s structured, analytical approach to furnishing a compact urban apartment.",
+    "model": "solar-pro",
+    "prompt_chars": 19587,
+    "latency_sec": 1.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4246,
+    "output_tokens": 174,
+    "total_tokens": 4420,
+    "api_response_id": "ee0a9245-c24a-4954-a56f-8692394a3a79"
+  },
+  {
+    "run_id": "pilot_task32_User11_seed1",
+    "stage": "search",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User11",
+      "User8"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on modern minimalist interior design, furniture brands, and budget-conscious home improvement\u2014aligning with Candidate A's emphasis on cost-effectiveness, high-quality durable household items, and family-oriented consumption. Candidate A's preference for physical store experiences and thorough comparisons before purchasing high-end home goods matches the document's detailed budget lists and brand comparisons (e.g., \u6797\u6c0f\u6728\u4e1a, \u559c\u4e34\u95e8). Candidate B and C prioritize tech products and financial investments, respectively, which are irrelevant to the document's focus on home decor and furniture. Candidate A's family-centric lifestyle (e.g., children's educational expenses, family vacations) also aligns with the document's emphasis on practical, budget-friendly home improvements for living quality.",
+    "model": "solar-pro",
+    "prompt_chars": 20115,
+    "latency_sec": 1.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5704,
+    "output_tokens": 172,
+    "total_tokens": 5876,
+    "api_response_id": "5fff2ad6-0572-4e1e-88f5-fd5df6e898aa"
+  },
+  {
+    "run_id": "pilot_task32_User11_seed1",
+    "stage": "compress",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User8",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on detailed budget allocation, furniture selection, and interior design for a modern minimalist home, emphasizing cost-effectiveness, practicality, and quality. Candidate C's profile aligns most closely with these priorities: they prioritize cost-effective, high-quality household items, invest in durable goods, and value practicality in consumption. Additionally, Candidate C's interest in family-oriented spending (e.g., children's education, family vacations) and their preference for high-end yet functional products (e.g., photography equipment, management books) reflect the document's emphasis on balanced, rational spending for long-term value. Candidates A and B, while rational consumers, focus more on tech products (A) or financial investments (B), which are less central to the document's home-furnishing context.",
+    "model": "solar-pro",
+    "prompt_chars": 24269,
+    "latency_sec": 2.19,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6584,
+    "output_tokens": 180,
+    "total_tokens": 6764,
+    "api_response_id": "467b6960-372a-4324-81e7-95a2deb8e548"
+  },
+  {
+    "run_id": "pilot_task32_User11_seed1",
+    "stage": "write",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User10",
+      "User11"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User11",
+    "correct": true,
+    "reasoning": "The document emphasizes a modern minimalist aesthetic, smart home integration, and cost-effective tech products\u2014aligning with Candidate C's tech-focused habits (8+ hours daily in programming tools, interest in smart home devices) and rational, cost-conscious spending. Unlike Candidate A (finance-heavy, frugal) or B (family-oriented, high-end durable goods), Candidate C's preferences for smart ecosystems, embedded appliances, and tech-driven automation (e.g., Xiaomi ecosystem) directly mirror the document's focus on interoperability, compact space optimization, and tech-centric budgeting. The document\u2019s framing also matches C\u2019s independent, data-driven decision-making style and interest in efficient, high-performance tech solutions.",
+    "model": "solar-pro",
+    "prompt_chars": 26271,
+    "latency_sec": 1.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6593,
+    "output_tokens": 165,
+    "total_tokens": 6758,
+    "api_response_id": "199e254d-7a42-4074-8f3c-8fdf73467c38"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task47_User16_seed0",
+    "stage": "plan",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document focuses on designing a fitness plan for a middle-school-aged son with soccer interest, incorporating family activities (hiking, cycling, dog walks), and adhering to adolescent health guidelines. Candidate B aligns best: (1) He has a son (implied by 'family trips' and 'Wangcai' as a pet dog), prioritizes family bonding through outdoor activities (hiking, cycling), and shares the son's soccer interest (photographing landscapes and family). (2) His exercise habits (jogging, hiking, cycling) and goals (health, stress relief) match the document's emphasis on physical fitness. (3) His rational, family-oriented decision-making and Northeastern cuisine preference (Harbin is in Northeast China) align with the local context. Candidates A (focused on pet care, square dancing) and C (golf, business trips) lack the direct family-sports focus.",
+    "model": "solar-pro",
+    "prompt_chars": 17098,
+    "latency_sec": 2.04,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 3780,
+    "output_tokens": 210,
+    "total_tokens": 3990,
+    "api_response_id": "0bbf4e16-4916-4353-8cbb-30a3c2d113f2"
+  },
+  {
+    "run_id": "pilot_task47_User16_seed0",
+    "stage": "search",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document focuses on physical activity and dietary guidelines for children aged 11\u201314, with a specific emphasis on Chinese national guidelines and sports nutrition. Candidate A, a practical, family-oriented individual with interests in health, outdoor activities, and photography, aligns most closely. His exercise habits (hiking, cycling, jogging), interest in health-related content, and focus on family-oriented activities mirror the document's emphasis on youth physical activity and practical lifestyle recommendations. Candidates B (pet-focused, nursing) and C (business-oriented, golf/yoga) lack the direct connection to adolescent health guidelines and outdoor sports prioritized in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 20223,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4573,
+    "output_tokens": 150,
+    "total_tokens": 4723,
+    "api_response_id": "6cb68775-bd09-4a27-b387-a81e983944ad"
+  },
+  {
+    "run_id": "pilot_task47_User16_seed0",
+    "stage": "compress",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User17",
+    "correct": false,
+    "reasoning": "The document focuses on physical activity guidelines for children and adolescents (ages 6\u201317, with emphasis on 11\u201314 years), including MVPA, outdoor activities, injury prevention (FIFA 11+), and family integration. Candidate A aligns most closely: her profile highlights family-oriented exercise habits (square dancing, family walks/hikes), prioritizes children's health (nursing forums, health-focused content consumption), and emphasizes outdoor activities (pet-friendly parks, community square). The document\u2019s emphasis on Chinese guidelines and outdoor activities for myopia prevention also matches her Suzhou-based background and interest in holistic health. Candidates B and C, while health-conscious, focus more on individual fitness (photography, golf) or business-related priorities, lacking the document\u2019s family/child-centric framing.",
+    "model": "solar-pro",
+    "prompt_chars": 22716,
+    "latency_sec": 1.9,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6167,
+    "output_tokens": 186,
+    "total_tokens": 6353,
+    "api_response_id": "7a9fc414-5647-47dd-8345-7c237a06f092"
+  },
+  {
+    "run_id": "pilot_task47_User16_seed0",
+    "stage": "write",
+    "gt_userid": "User16",
+    "candidate_userids": [
+      "User16",
+      "User10",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User16",
+    "correct": true,
+    "reasoning": "The document focuses on a middle-school boy in Harbin with a passion for soccer, family activities (hiking, cycling, walking with a pet), and seasonal exercise adaptations. Candidate C aligns best: he lives in a Northeastern city (implied by diet preferences for Northeastern cuisine), prioritizes family time, enjoys outdoor activities (fishing, hiking, cycling), and has a pet (Wangcai). His exercise habits (jogging, hiking) and interest in seasonal outdoor activities (photographing landscapes) mirror the document's emphasis on climate adaptation and family engagement. Candidates A (focused on nursing, pets, and square dancing) and B (golf, yoga, business trips) lack the youth-oriented, soccer-centric, and climate-specific framing central to the text.",
+    "model": "solar-pro",
+    "prompt_chars": 24718,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5391,
+    "output_tokens": 183,
+    "total_tokens": 5574,
+    "api_response_id": "f08d0d6d-3a34-4b9d-8946-3249633bd481"
+  }
+]

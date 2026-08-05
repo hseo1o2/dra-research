@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task17_User10_seed1",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate B (Liu Qiang) is the best match. The document describes a multi-generational family (30s couple, young children, elderly parents) planning a 7-day beach vacation from Shanghai, emphasizing family-friendly activities, high-quality accommodations, and balanced itineraries. Candidate B's profile aligns perfectly: he is a 30-35-year-old Shanghai-based father of an 8-year-old daughter (who enjoys painting/dancing) and 5-year-old son (interested in building toys/basketball), with elderly parents in Suzhou. His travel preferences include self-guided family trips, natural attractions, and cultural experiences, matching the document's focus on age-appropriate activities, Jiangnan-style dining, and logistics tailored to a multi-generational group. Additionally, his pet-friendly household (yellow Labrador) aligns with the document's optional pet-friendly accommodation note. Candidates A and C lack the specific family composition (e.g., Candidate A's children are older, Candidate C's children are adults) and Shanghai-based travel context.",
+    "model": "solar-pro",
+    "prompt_chars": 25363,
+    "latency_sec": 2.06,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5342,
+    "output_tokens": 234,
+    "total_tokens": 5576,
+    "api_response_id": "df1787d2-8610-4343-8640-a176d98e1790"
+  },
+  {
+    "run_id": "pilot_task17_User10_seed1",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on family-friendly travel planning (multi-generational resorts, July weather, flight times) and cost-effective logistics (Shanghai to Sanya/Danang/Okinawa flights, budget considerations). Candidate A, a Shanghai-based marketing manager with two young children, prioritizes family vacations (twice yearly, during school holidays), values practicality/cost-effectiveness, and prefers destinations with natural attractions (aligning with Sanya's beaches). His queries about direct flight hours, typhoon risks, and resort amenities reflect his need for efficient, child-friendly travel planning. Candidates B and C, while also family-oriented, lack A's specific focus on Shanghai-to-tropical-destination logistics and multi-generational resort preferences.",
+    "model": "solar-pro",
+    "prompt_chars": 26754,
+    "latency_sec": 1.72,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5835,
+    "output_tokens": 164,
+    "total_tokens": 5999,
+    "api_response_id": "9df660e8-103b-4d5c-8c4a-ebe1fd9bf860"
+  },
+  {
+    "run_id": "pilot_task17_User10_seed1",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on multi-generational family travel with children (8-year-old girl interested in art/dance, 5-year-old boy interested in building toys/water activities) and grandparents, emphasizing accessibility (strollers/wheelchairs), safety (calm waters), and entertainment options (mega-resorts, waterparks). Candidate B explicitly mentions an 8-year-old daughter (art/dance) and 5-year-old son (building toys/basketball), aligns with Shanghai residence (document's Shanghai-to-destination travel focus), and prioritizes family trips with deep experiences. Candidate A (Harbin-based, son in middle school) and Candidate C (older children abroad/studying) lack the age-specific child interests and Shanghai travel context central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29362,
+    "latency_sec": 1.86,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6494,
+    "output_tokens": 177,
+    "total_tokens": 6671,
+    "api_response_id": "68db5956-935c-4664-9f72-7fb5c4cae3d9"
+  },
+  {
+    "run_id": "pilot_task17_User10_seed1",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User22",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on a multi-generational family vacation tailored to an 8-year-old girl (painting/dancing) and 5-year-old boy (building toys/basketball), with elderly parents requiring low-strain access. Candidate A explicitly matches these details: his children have identical ages, interests, and a pet (Xiao Huang, a Labrador). The document\u2019s emphasis on luxury resorts, direct flights from Shanghai, and cost-effective planning aligns with A\u2019s profile as a Shanghai-based marketing manager with a fixed budget, quarterly family trips, and preference for high-end accommodations. Candidates B and C lack the specific child ages/interests and Shanghai residence, making A the only direct match.",
+    "model": "solar-pro",
+    "prompt_chars": 31364,
+    "latency_sec": 1.79,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6603,
+    "output_tokens": 163,
+    "total_tokens": 6766,
+    "api_response_id": "8fbcec5a-338e-4651-89da-a8cb4c865a2e"
+  }
+]

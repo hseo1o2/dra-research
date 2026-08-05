@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task9_User8_seed0",
+    "stage": "plan",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User8",
+    "correct": true,
+    "reasoning": "Candidate B's profile aligns most closely with the document's focus on transitioning from finance to an AI Product Manager role. Key matches include: (1) Shared financial background (CFA Level 1, quantitative analysis) and interest in AI/ML applications in finance; (2) Data-driven decision-making style and technical literacy (Python, financial analysis tools); (3) Rational, meticulous personality with independent learning habits; (4) Shanghai-based location and focus on Chinese job market trends; (5) Interest in skill development (e.g., Keep app for fitness tracking mirrors the document's emphasis on structured skill-building). Candidate A's tech/data focus and Candidate C's family-oriented priorities are less relevant to the document's career-transition context.",
+    "model": "solar-pro",
+    "prompt_chars": 18338,
+    "latency_sec": 2.05,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4029,
+    "output_tokens": 171,
+    "total_tokens": 4200,
+    "api_response_id": "7c0356ee-ce7e-4b16-9929-8e9769f1a987"
+  },
+  {
+    "run_id": "pilot_task9_User8_seed0",
+    "stage": "search",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User8",
+    "correct": true,
+    "reasoning": "The document focuses on AI product management salaries, skill gaps for finance-to-AI PM transitions, and FinTech/LLM applications in equity research\u2014topics aligning with Candidate C's finance background, interest in financial apps (Xueqiu, Tonghuashun), and preference for data-driven decision-making. Unlike Candidate A (marketing-focused) or B (data analysis/tech), Candidate C explicitly prioritizes financial content, cost-effectiveness in tech purchases, and independent research habits (e.g., screenshots of financial data, book preferences like *Poor Charlie's Almanack*). The document\u2019s emphasis on Shanghai-based AI PM roles and salary trends also matches C\u2019s geographic focus and pragmatic career planning.",
+    "model": "solar-pro",
+    "prompt_chars": 19844,
+    "latency_sec": 1.71,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4722,
+    "output_tokens": 162,
+    "total_tokens": 4884,
+    "api_response_id": "f0161264-dd8c-490c-a3ca-7a22e6b71d02"
+  },
+  {
+    "run_id": "pilot_task9_User8_seed0",
+    "stage": "compress",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User8",
+    "correct": true,
+    "reasoning": "The document focuses on AI product management roles in Shanghai, particularly in FinTech and LLM development, emphasizing financial backgrounds, quantitative skills, and industry-specific demands. Candidate A aligns most closely: their behavioral traits (financial app usage, CFA/quant-relevant interests), content preferences (finance articles, market analysis), and professional background (financial hub mobility, data-driven decision-making) directly mirror the document's focus on AI PM roles requiring financial expertise. Candidate B\u2019s marketing/management focus and Candidate C\u2019s general data analysis orientation are less directly relevant to the FinTech AI PM niche described.",
+    "model": "solar-pro",
+    "prompt_chars": 22677,
+    "latency_sec": 1.67,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5406,
+    "output_tokens": 142,
+    "total_tokens": 5548,
+    "api_response_id": "b1f747f8-e100-48b4-9679-a963b966a68c"
+  },
+  {
+    "run_id": "pilot_task9_User8_seed0",
+    "stage": "write",
+    "gt_userid": "User8",
+    "candidate_userids": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User8",
+    "correct": true,
+    "reasoning": "The document focuses on transitioning from investment management to AI product management, emphasizing technical AI/ML literacy, financial domain expertise, and data-driven decision-making. Candidate C aligns most closely: they use financial apps (Xueqiu, Tonghuashun), prioritize cost-effective tech purchases, and have a strong background in financial analysis (screenshots of market data, interest in economics/management articles). Their pragmatic, data-driven personality and focus on bridging finance with new skills (e.g., health apps for fitness tracking) mirror the document's emphasis on skill gaps and structured learning. Candidates A (marketing focus) and B (broader data analysis interests) lack the financial domain specificity and career transition narrative central to the text.",
+    "model": "solar-pro",
+    "prompt_chars": 24679,
+    "latency_sec": 1.83,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5316,
+    "output_tokens": 170,
+    "total_tokens": 5486,
+    "api_response_id": "a0ed7130-a954-45f2-945b-07433fff1a4f"
+  }
+]

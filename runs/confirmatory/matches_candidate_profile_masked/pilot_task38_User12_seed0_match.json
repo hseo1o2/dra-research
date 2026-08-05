@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task38_User12_seed0",
+    "stage": "plan",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User22",
+      "User12"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on purchasing a second-hand home in Beijing for a multi-generational family, emphasizing school districts, budget constraints, and data-driven planning. The document's emphasis on educational resources, family-oriented living amenities, and detailed financial planning mirrors Candidate A's priorities: cost-effectiveness, investment in children's education, and structured decision-making. Unlike Candidate B (focused on Suzhou and mechanical engineering) or Candidate C (tech-centric with a Beijing property already owned), Candidate A's pragmatic, family-first approach and Beijing-centric mobility patterns directly match the document's scope and priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 19899,
+    "latency_sec": 1.54,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4371,
+    "output_tokens": 148,
+    "total_tokens": 4519,
+    "api_response_id": "d8f34909-ffcb-4e7c-8681-5f22a9d71b39"
+  },
+  {
+    "run_id": "pilot_task38_User12_seed0",
+    "stage": "search",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User22",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on real estate queries in Beijing's Haidian district, emphasizing factors like school districts, property prices, and family-friendly amenities (e.g., '\u5b9e\u9a8c\u4e8c\u5c0f\u6d77\u6dc0\u5206\u6821' for Candidate C's children's education focus). Candidate C prioritizes family-oriented consumption (e.g., educational expenses, quality-of-life investments) and values cost-effectiveness in practical purchases, aligning with the document's emphasis on budget-friendly yet high-quality housing options (600\u4e07 price range). Unlike Candidate A (tech-focused, urban mobility) or B (industrial/engineering interests), Candidate C\u2019s preferences for family-centric accommodations, school districts, and balanced spending match the document\u2019s framing of housing as a holistic lifestyle choice for families.",
+    "model": "solar-pro",
+    "prompt_chars": 20121,
+    "latency_sec": 1.74,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5755,
+    "output_tokens": 173,
+    "total_tokens": 5928,
+    "api_response_id": "4e06814f-0b7e-4bfa-92c1-0e8cd1974ec3"
+  },
+  {
+    "run_id": "pilot_task38_User12_seed0",
+    "stage": "compress",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on real estate queries and detailed property analyses in Beijing, emphasizing school districts, pricing, and community amenities. Candidate B's profile aligns most closely: (1) his frequent business trips to Shenzhen and Chengdu mirror the document's Beijing-centric but regionally aware framing, (2) his focus on cost-effectiveness and high-end durable household items matches the document's emphasis on property value and school district quality, and (3) his family-oriented consumption (e.g., educational expenses, quarterly family trips) aligns with the document's focus on family-friendly neighborhoods and school districts. Candidates A (tech-focused, urban Beijing) and C (Suzhou-based, manufacturing interests) lack the document's real estate and school district priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 24297,
+    "latency_sec": 1.73,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6239,
+    "output_tokens": 173,
+    "total_tokens": 6412,
+    "api_response_id": "f7e2aa6f-df06-4613-bdf6-6b8eb5b0f0bc"
+  },
+  {
+    "run_id": "pilot_task38_User12_seed0",
+    "stage": "write",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User22",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User10",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on family-oriented housing needs (5-person household with intergenerational living), education priorities (school districts), and cost-effective financial planning within a 6 million CNY budget. Candidate B's profile aligns most closely: he emphasizes family-centric consumption (educational expenses, quality-of-life investments), values cost-effectiveness, and prioritizes practicality in purchases. His quarterly family trips and focus on children's education mirror the document's emphasis on multi-generational living and school district analysis. Unlike Candidate A (tech-focused, urban mobility) or Candidate C (industrial/engineering interests, Suzhou-based), Candidate B's pragmatic, family-oriented decision-making and Beijing-centric activities directly match the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 26299,
+    "latency_sec": 2.11,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 8900,
+    "output_tokens": 168,
+    "total_tokens": 9068,
+    "api_response_id": "07c12bfc-6190-4c16-b112-94687c1e2525"
+  }
+]

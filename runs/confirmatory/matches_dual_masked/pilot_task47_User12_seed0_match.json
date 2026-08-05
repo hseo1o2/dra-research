@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task47_User12_seed0",
+    "stage": "plan",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User12"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document focuses on creating a structured, science-based exercise plan for a 5-year-old girl, emphasizing family participation, practical activities (e.g., outdoor exploration, swimming, dance), and holistic health (diet, sleep, bonding). Candidate A aligns most closely: he prioritizes family bonding through outdoor activities (hiking, park visits), values practical, health-conscious habits (early bedtime routine, homemade meals), and has a child-centered mindset (planning family trips, recent interest in photography to document family moments). Unlike Candidate B (focused on golf/yoga and business efficiency) or Candidate C (tech-heavy, high-intensity fitness), Candidate A\u2019s emphasis on low-key, family-integrated activities (fishing, walks, weekend park outings) and rational, health-oriented consumption (smart home devices for convenience, budgeting for family needs) directly mirrors the document\u2019s focus on nurturing lifelong habits through accessible, joyful family engagement.",
+    "model": "solar-pro",
+    "prompt_chars": 20539,
+    "latency_sec": 1.93,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4406,
+    "output_tokens": 217,
+    "total_tokens": 4623,
+    "api_response_id": "b3fa5f35-b325-45fc-9f8b-a8e904452ee7"
+  },
+  {
+    "run_id": "pilot_task47_User12_seed0",
+    "stage": "search",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document focuses on physical activity, screen time, and sleep guidelines for children under 5, emphasizing practical, health-oriented recommendations. Candidate B aligns best due to his offline behaviors (e.g., prioritizing family time, health-conscious habits like jogging, and interest in practical home products) and content preferences (e.g., saving health-related articles, interest in family education). Unlike Candidate A (tech-focused, high-intensity fitness) or Candidate C (business-oriented, luxury travel), Candidate B\u2019s rational, family-centered lifestyle and emphasis on cost-effective health practices directly mirror the document\u2019s focus on balanced, evidence-based child-rearing guidelines.",
+    "model": "solar-pro",
+    "prompt_chars": 22258,
+    "latency_sec": 1.64,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4919,
+    "output_tokens": 149,
+    "total_tokens": 5068,
+    "api_response_id": "319d02f4-ccf4-4589-81a0-cb6de44fa20c"
+  },
+  {
+    "run_id": "pilot_task47_User12_seed0",
+    "stage": "compress",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User12",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on physical activity, screen time, and sleep guidelines for children, particularly emphasizing evidence-based recommendations, data analysis, and international/national standards (e.g., WHO, AAP, ACSM). Candidate B aligns most closely with this framing: (1) Their profile highlights a strong interest in data-driven insights (e.g., saving technical articles, analyzing industry trends), (2) They prioritize health and fitness (e.g., running, gym workouts, yoga) while balancing family time, and (3) Their consumption of tech/health content and rational decision-making style mirror the document's analytical tone. Candidates A and C, while health-conscious, focus more on general lifestyle or family-oriented activities without the same emphasis on structured guidelines or technical analysis.",
+    "model": "solar-pro",
+    "prompt_chars": 24751,
+    "latency_sec": 2.07,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6817,
+    "output_tokens": 176,
+    "total_tokens": 6993,
+    "api_response_id": "6aab5359-cb65-4e62-a5b0-0e27a3703b0a"
+  },
+  {
+    "run_id": "pilot_task47_User12_seed0",
+    "stage": "write",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User12",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on early childhood physical activity and athletic development for a 5-year-old girl, emphasizing scientific, evidence-based approaches grounded in pediatric exercise physiology and developmental psychology. Candidate B aligns most closely with this perspective: (1) He has a 5-year-old daughter and prioritizes her development (e.g., bedtime stories, family time), (2) He values health and fitness (runs, gym workouts, yoga, rock climbing), (3) He makes data-driven decisions (tech background, logical reasoning), and (4) He invests in quality-of-life improvements (high-end fitness equipment, eco-friendly smart home devices). While Candidate A also values children's education, his focus on career development and golf/yoga contrasts with the document's emphasis on foundational movement skills for young children. Candidate C, though health-conscious, lacks the document's scientific rigor and focus on structured physical development.",
+    "model": "solar-pro",
+    "prompt_chars": 26753,
+    "latency_sec": 1.91,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5820,
+    "output_tokens": 205,
+    "total_tokens": 6025,
+    "api_response_id": "d6ebc0eb-d166-48f6-bca9-ee9506baf313"
+  }
+]

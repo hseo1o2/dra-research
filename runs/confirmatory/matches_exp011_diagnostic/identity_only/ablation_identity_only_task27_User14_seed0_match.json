@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "ablation_identity_only_task27_User14_seed0",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User13",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User15",
+      "User13"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document explicitly identifies the author as Lin Nan, a 28-32-year-old freelance illustrator in Shanghai with a visual arts background, aligning perfectly with Candidate A's profile. The research brief's focus on integrating visual artistry (e.g., album art, Xiaohongshu/Bilibili content) and indie pop/folk music production reflects Candidate A's creative habits, such as sharing illustration processes on Bilibili and using travel photography for inspiration. Candidate A's budget-conscious yet quality-focused consumption (e.g., investing in art supplies) also matches the document's emphasis on maximizing gear quality within a limited budget. Candidates B (writer) and C (caf\u00e9 owner) lack the illustrator background and visual-centric creative framing central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24137,
+    "latency_sec": 1.78,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5105,
+    "output_tokens": 179,
+    "total_tokens": 5284,
+    "api_response_id": "12fa530f-d790-4823-b55b-ffd200a389bd"
+  },
+  {
+    "run_id": "ablation_identity_only_task27_User14_seed0",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User13",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User15"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User15",
+    "correct": false,
+    "reasoning": "The document focuses on music production tools (audio interfaces), Bilibili tutorials for music creation, and music distribution platforms\u2014topics aligning with Candidate C's profile as a freelance writer with interests in creative content, Bilibili usage, and cultural/artistic production. While Candidate A (illustrator) and B (caf\u00e9 owner) engage with art, their primary domains (visual art/coffee culture) lack the direct connection to music production, distribution, and Bilibili's music tutorials that define Candidate C's documented interests. Candidate C's consumption of Bilibili content, focus on creative processes, and engagement with artistic tools (e.g., yoga for stress relief from writing) make them the most likely audience for this document.",
+    "model": "solar-pro",
+    "prompt_chars": 24463,
+    "latency_sec": 1.93,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5961,
+    "output_tokens": 173,
+    "total_tokens": 6134,
+    "api_response_id": "ceb8fffc-7262-494e-b299-826d950eb9ff"
+  },
+  {
+    "run_id": "ablation_identity_only_task27_User14_seed0",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User13",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User15",
+      "User14"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document focuses on audio equipment (interfaces, microphones) and DAW selection for a home studio, with a budget constraint of 20,000 RMB. Candidate C, a freelance illustrator, aligns best due to his creative background, interest in high-quality tools, and periodic mobility for inspiration. While Candidate A (caf\u00e9 owner) and B (freelance writer) have artistic or creative traits, neither directly connects to audio equipment or home studio setups. Candidate C\u2019s emphasis on investing in high-end tools, supporting independent artists, and using creative spaces (e.g., art exhibitions, coffee shops) reflects the document\u2019s technical and budget-conscious framing for a creative professional\u2019s workspace.",
+    "model": "solar-pro",
+    "prompt_chars": 27847,
+    "latency_sec": 1.74,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 7457,
+    "output_tokens": 168,
+    "total_tokens": 7625,
+    "api_response_id": "4f36eeb4-3df7-4ee5-ab70-5b63d9bc3b9a"
+  },
+  {
+    "run_id": "ablation_identity_only_task27_User14_seed0",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User13",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User15",
+      "User13"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document is explicitly tailored for 'Lin Nan,' a Shanghai-based freelance illustrator with musical skills, matching Candidate A's profile. The content prioritizes cross-disciplinary visual marketing (art zines, illustrated merchandise), aligns with Lin Nan's budget-conscious yet quality-focused consumption habits, and reflects his indie pop/folk musical background. References to Bilibili creators for music production and his preference for artistic accommodations further confirm the match. Candidates B (writer) and C (caf\u00e9 owner) lack the document's focus on illustration, home recording, and indie music production.",
+    "model": "solar-pro",
+    "prompt_chars": 29849,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6679,
+    "output_tokens": 139,
+    "total_tokens": 6818,
+    "api_response_id": "59eb69f1-a35f-4044-99de-3a1c6ae8deae"
+  }
+]

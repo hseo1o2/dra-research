@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "ablation_actionable_only_task12_User9_seed0",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User14",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on emotional regulation, stress management, and integrating practices into a morning routine (7:00\u20139:00 AM). The request emphasizes creativity, work-related anxiety, and a structured morning routine involving meditation and exercise\u2014all mirrored in A's traits. A's minor in psychology, interest in mental health content, and use of social media for creative expression further support this match. While B and C share some interests, neither explicitly ties their creative or technical backgrounds to the document's emphasis on emotional self-study or morning-based habit integration.",
+    "model": "solar-pro",
+    "prompt_chars": 23270,
+    "latency_sec": 1.56,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4920,
+    "output_tokens": 143,
+    "total_tokens": 5063,
+    "api_response_id": "aea69fb8-caea-481f-9e13-dde6accc32e9"
+  },
+  {
+    "run_id": "ablation_actionable_only_task12_User9_seed0",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User9",
+      "User11"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on self-guided mental health resources (MBSR, CBT, ACT) with a strong emphasis on practical tools (workbooks, journaling prompts, free modules). Candidate B, a young female in a tech role with a psychology minor, aligns best: her interest in mental health (evidenced by saved articles on the topic), creative tendencies (sharing artwork online), and preference for self-guided learning (budget travel planning, detailed itineraries) match the document's DIY therapeutic framing. Unlike Candidate A (artist focused on inspiration) or C (tech-focused engineer), B's psychology background and documented interest in mental health resources make her the most likely audience for this content.",
+    "model": "solar-pro",
+    "prompt_chars": 25121,
+    "latency_sec": 1.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5375,
+    "output_tokens": 163,
+    "total_tokens": 5538,
+    "api_response_id": "cd6760d4-4d5d-4f43-884c-134a007f0c44"
+  },
+  {
+    "run_id": "ablation_actionable_only_task12_User9_seed0",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User14",
+      "User9"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": false,
+    "reasoning": "The document focuses on self-guided cognitive behavioral therapy (CBT) and acceptance and commitment therapy (ACT) resources, emphasizing structured, independent learning through books, workbooks, and online courses. Candidate B, a freelance illustrator with a creative but introspective personality, aligns best with this content. His interest in psychology articles, mindfulness practices (yoga/Pilates), and self-improvement through creative processes reflects the document's emphasis on self-directed mental health strategies. Unlike Candidate A (tech-focused, data-driven) or Candidate C (fitness-oriented, social media active), Candidate B's introspective nature, creative problem-solving style, and documented interest in psychological themes make him the most likely audience for this material.",
+    "model": "solar-pro",
+    "prompt_chars": 27835,
+    "latency_sec": 1.78,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5989,
+    "output_tokens": 167,
+    "total_tokens": 6156,
+    "api_response_id": "3e3eb7da-0350-4589-9166-c27e7a15edc2"
+  },
+  {
+    "run_id": "ablation_actionable_only_task12_User9_seed0",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User14",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document emphasizes emotional regulation, self-awareness, and decision-making through structured self-study, aligning with Candidate A's low stress tolerance and need for emotional support. Her psychology minor, interest in mental health articles, and use of mindfulness practices (yoga, meditation) reflect the CBT/ACT/MBSR focus. The guide's practical, step-by-step approach matches her rational but health-conscious shopping habits and structured daily routine. Candidates B and C, while creative or tech-focused, lack A's explicit emphasis on emotional resilience and self-guided psychological tools.",
+    "model": "solar-pro",
+    "prompt_chars": 29837,
+    "latency_sec": 1.49,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6494,
+    "output_tokens": 134,
+    "total_tokens": 6628,
+    "api_response_id": "f35e61b2-adfc-4c1d-b77b-7203a0c99531"
+  }
+]

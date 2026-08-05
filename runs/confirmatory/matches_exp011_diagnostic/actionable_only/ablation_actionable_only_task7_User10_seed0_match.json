@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "ablation_actionable_only_task7_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "Candidate B (Liu Lu) is a data analyst with a strong background in statistics and a focus on EdTech-relevant skills (data modeling, AI tools). The document's emphasis on data-backed analysis, market research design, and tech stack aligns with her analytical mindset and professional interests. Unlike Candidate A (a marketing manager) or C (an investment manager), B's daily use of data tools (Python, R, Tableau) and her goal to transition into product roles make her the most likely audience for an AI EdTech startup report requiring technical feasibility analysis. Her preference for structured frameworks and cost-effectiveness also matches the document's actionable, finance-conscious approach.",
+    "model": "solar-pro",
+    "prompt_chars": 24207,
+    "latency_sec": 3.12,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5074,
+    "output_tokens": 155,
+    "total_tokens": 5229,
+    "api_response_id": "77fc2136-e0f2-4b91-a292-ba0f0bce2072"
+  },
+  {
+    "run_id": "ablation_actionable_only_task7_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User8",
+    "correct": false,
+    "reasoning": "The document focuses on EdTech pricing strategies, freemium conversion rates, AI economics, and B2B/B2C transitions\u2014topics aligning with Candidate B's role as an investment manager. His financial background, data-driven decision-making, and interest in cost-efficiency (e.g., API token economics, freemium benchmarks) directly match the document's emphasis on metrics, pricing models, and startup economics. Unlike Candidate A (data analyst) or C (marketer), B's financial expertise and focus on ROI, margin analysis, and investment trends make him the most likely audience for this content.",
+    "model": "solar-pro",
+    "prompt_chars": 25646,
+    "latency_sec": 2.61,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5615,
+    "output_tokens": 144,
+    "total_tokens": 5759,
+    "api_response_id": "fbc5ea42-129e-4fa9-b996-46cc3286a558"
+  },
+  {
+    "run_id": "ablation_actionable_only_task7_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User8",
+    "correct": false,
+    "reasoning": "The document focuses on AI EdTech market research, pricing strategies, unit economics, and B2C-to-B2B transition frameworks\u2014topics aligning with Candidate C's role as an investment manager. His data-driven decision-making, interest in financial benchmarks (CAC, LTV, gross margins), and preference for structured analysis mirror the document's emphasis on quantitative metrics and strategic feasibility. Unlike Candidate A (marketing manager) or B (data analyst), Candidate C's investment background and focus on financial modeling make him the most likely audience for this business-oriented, economics-heavy research synthesis.",
+    "model": "solar-pro",
+    "prompt_chars": 28139,
+    "latency_sec": 2.27,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6243,
+    "output_tokens": 140,
+    "total_tokens": 6383,
+    "api_response_id": "a58514a3-dabd-491d-960e-e257910c11ba"
+  },
+  {
+    "run_id": "ablation_actionable_only_task7_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User8"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User8",
+    "correct": false,
+    "reasoning": "The document focuses on AI-driven higher education platforms, market research for university students, and pricing strategies for EdTech products. Candidate C, an investment manager with a finance background, aligns best due to their analytical mindset, interest in data-driven decision-making, and focus on cost-effectiveness. The document's emphasis on quantitative analysis (e.g., Van Westendorp PSM, feature ranking) and pricing thresholds resonates with C's financial expertise and preference for data-supported decisions. While Candidate A (data analyst) and B (marketing manager) are relevant, C's investment background and meticulous approach to financial planning make them the most likely audience for a feasibility report targeting EdTech pricing and market validation.",
+    "model": "solar-pro",
+    "prompt_chars": 30141,
+    "latency_sec": 2.54,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6410,
+    "output_tokens": 162,
+    "total_tokens": 6572,
+    "api_response_id": "7411b671-1f1b-49ef-9593-c0b371293c4c"
+  }
+]

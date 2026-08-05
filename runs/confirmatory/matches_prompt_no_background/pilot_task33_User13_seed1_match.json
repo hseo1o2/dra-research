@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task33_User13_seed1",
+    "stage": "plan",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User14",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "Candidate C is the best match because the document explicitly mentions pets named Doudou (orange tabby), Beibei (Ragdoll), and Coco (Corgi), which aligns perfectly with Candidate C's multi-pet household. The research brief prioritizes eco-conscious design, durability, and smart features\u2014key traits in Candidate C's consumption habits (e.g., supporting sustainable brands, investing in high-quality tools). Additionally, the focus on cohesive product curation reflects Candidate C's role as a caf\u00e9 owner who values aesthetics and functionality, mirroring her meticulous approach to caf\u00e9 design and customer experience. Candidates A and B lack the multi-pet context and sustainability emphasis central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 23797,
+    "latency_sec": 2.2,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5013,
+    "output_tokens": 162,
+    "total_tokens": 5175,
+    "api_response_id": "7cf85292-884b-4529-a2a1-41b387460456"
+  },
+  {
+    "run_id": "pilot_task33_User13_seed1",
+    "stage": "search",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on pet care products (automatic litter boxes, cat food, and a dog camera), aligning with Candidate B's role as a caf\u00e9 owner with multiple pets (two cats and a corgi). The content emphasizes product comparisons, health considerations (e.g., hairballs, recalls), and quality\u2014key priorities for someone managing a pet-friendly business. Candidate A (freelance illustrator) and C (data analyst) lack the same direct pet-centric focus or professional context tied to pet product evaluation. Candidate B\u2019s caf\u00e9 environment, which attracts customers via pets, makes her the most likely audience for this document.",
+    "model": "solar-pro",
+    "prompt_chars": 25616,
+    "latency_sec": 1.76,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5602,
+    "output_tokens": 148,
+    "total_tokens": 5750,
+    "api_response_id": "25d1231a-a6e3-43e1-a346-ad25faa3c27d"
+  },
+  {
+    "run_id": "pilot_task33_User13_seed1",
+    "stage": "compress",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User18",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on evaluating pet products (litter boxes, feeders, water fountains) with an emphasis on design, safety, and multi-pet suitability. Candidate C, a caf\u00e9 owner with multiple pets (cats and a corgi), explicitly mentions pets as a key attraction for her business and prioritizes high-quality, sustainable products. Her detailed interest in pet-friendly environments, eco-conscious consumption, and hands-on product research aligns with the document's framing. Candidates A and B, while pet owners, lack C's explicit focus on multi-pet adaptability, product durability, and integration of pets into daily life/work\u2014key themes in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 28109,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6500,
+    "output_tokens": 154,
+    "total_tokens": 6654,
+    "api_response_id": "1ae2eb01-efb8-4552-9054-da6fde59ea06"
+  },
+  {
+    "run_id": "pilot_task33_User13_seed1",
+    "stage": "write",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User14",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User18",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on a multi-pet household with specific needs for three pets (Doudou, Beibei, and Coco), emphasizing product recommendations that align with their unique traits. Candidate A explicitly owns these pets and integrates them into her caf\u00e9 business, making the document's detailed analysis of pet-specific products (e.g., litter boxes for Ragdolls, joint support for Corgis) directly relevant to her needs. The report's emphasis on sustainability, ergonomics, and multi-pet compatibility also aligns with her preference for eco-friendly, high-quality products and her role as a caf\u00e9 owner who values aesthetics and functionality. Candidates B and C, while pet owners, do not match the multi-pet context or the document's depth of product evaluation tailored to distinct animal needs.",
+    "model": "solar-pro",
+    "prompt_chars": 30111,
+    "latency_sec": 1.77,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6477,
+    "output_tokens": 179,
+    "total_tokens": 6656,
+    "api_response_id": "7c413932-5375-423d-b8dd-e6900da0812e"
+  }
+]

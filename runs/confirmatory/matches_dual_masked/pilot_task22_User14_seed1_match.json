@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task22_User14_seed1",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User14",
+      "User20"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on retirement planning for a freelancer in the Yangtze River Delta region, emphasizing annuity insurance, medical coverage, and long-term care. Candidate A, a freelance caf\u00e9 owner in Shanghai (Yangtze River Delta), aligns with the document's freelance income structure, moderate-to-conservative risk tolerance, and regional context. The document's emphasis on dynamic financial strategies mirrors A's meticulous, goal-oriented personality and her need for flexible, sustainable solutions. Candidates B and C, while creative, lack the freelance business and regional specificity central to the document's scope.",
+    "model": "solar-pro",
+    "prompt_chars": 20131,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4338,
+    "output_tokens": 142,
+    "total_tokens": 4480,
+    "api_response_id": "1e1193cf-2303-4b38-9ffc-200be3551c69"
+  },
+  {
+    "run_id": "pilot_task22_User14_seed1",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on medical insurance programs (Huhuibao) and social security rules for flexible workers, emphasizing coverage for pre-existing conditions, deductible reimbursement, and tax incentives for freelancers. Candidate B, a caf\u00e9 owner with flexible employment ties, aligns most closely: their profile highlights interest in social security rules, tax incentives, and periodic mobility for industry research. Their consumption characteristics (supporting sustainable brands, eco-friendly packaging) and travel preferences (coffee culture, cultural sites) reflect the document's focus on flexible workers' benefits. Candidates A (artist) and C (writer) lack the document's emphasis on insurance, social security, and freelance financial planning.",
+    "model": "solar-pro",
+    "prompt_chars": 19494,
+    "latency_sec": 1.64,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4634,
+    "output_tokens": 160,
+    "total_tokens": 4794,
+    "api_response_id": "57f81f78-2239-4e29-a9ba-fe2449ea0a37"
+  },
+  {
+    "run_id": "pilot_task22_User14_seed1",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on pension systems, insurance products, and financial planning tailored for freelancers and flexible workers in China. Candidate C, a caf\u00e9 owner with entrepreneurial interests, aligns best due to their emphasis on financial sustainability, periodic mobility for industry research, and consumption characteristics favoring quality and long-term investments. Their interest in entrepreneurship management and periodic international travel for professional development mirrors the document's focus on flexible employment and strategic financial planning. Candidates A (artist) and B (writer) lack the document's financial and insurance-oriented framing.",
+    "model": "solar-pro",
+    "prompt_chars": 23372,
+    "latency_sec": 1.44,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5531,
+    "output_tokens": 128,
+    "total_tokens": 5659,
+    "api_response_id": "423cbdb1-ae29-4cce-bd34-34bbbfa5dd05"
+  },
+  {
+    "run_id": "pilot_task22_User14_seed1",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document focuses on a freelance illustrator's financial planning, emphasizing income volatility, tax optimization, and cash flow smoothing. Candidate C, an illustrator who uses drawing software daily, shares this freelance creative background. The document's technical focus on financial instruments (e.g., pension accounts, annuity insurance) aligns with Candidate C's rational consumption habits and investment in high-end tools. Additionally, both the document and Candidate C prioritize liquidity management and long-term security, reflecting a meticulous, goal-oriented approach to freelance sustainability. Candidates A (caf\u00e9 owner) and B (writer) lack the document's specific financial framing and freelance illustrator context.",
+    "model": "solar-pro",
+    "prompt_chars": 25374,
+    "latency_sec": 1.61,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5519,
+    "output_tokens": 158,
+    "total_tokens": 5677,
+    "api_response_id": "54b0e592-aa6e-4336-8f61-d1bac88553d2"
+  }
+]

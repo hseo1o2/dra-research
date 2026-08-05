@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task48_User10_seed1",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User17",
+    "correct": false,
+    "reasoning": "Candidate C's profile aligns most closely with the document's focus on children's art education, family engagement, and cultural integration. Key indicators include her active role in family education (monthly educational purchases, health/nursing forums), interest in traditional Chinese culture (Jiangnan cuisine, historical sites), and emphasis on creativity through activities like cooking experiments and square dancing. Her detailed planning style (monthly shopping trips, itinerary-focused travel) matches the structured 6-month plan request, while her prioritization of children's growth (sharing milestones on WeChat, pet-friendly activities) reflects the document's goal of fostering creativity and emotional expression. Candidates A and B lack comparable depth in child-centric educational planning and cultural integration.",
+    "model": "solar-pro",
+    "prompt_chars": 17905,
+    "latency_sec": 1.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 3927,
+    "output_tokens": 170,
+    "total_tokens": 4097,
+    "api_response_id": "ce7f583a-8b76-428c-8839-f2d665ab023f"
+  },
+  {
+    "run_id": "pilot_task48_User10_seed1",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User17",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on art education curricula integrating Jiangnan culture, Western art, and traditional crafts (blue calico, Huishan clay figurines), alongside developmental psychology (Lowenfeld stages) and multidisciplinary approaches (Reggio Emilia, Orff). Candidate C, who has a strong interest in Jiangnan cuisine, cultural heritage, and educational investments (e.g., extracurricular classes for children), aligns with the document's emphasis on cultural fusion, art education, and developmental frameworks. His preference for high-quality educational resources and family-oriented activities (e.g., trips to historical sites) further supports this match. Candidates A and B lack the documented focus on art education, cultural synthesis, or developmental psychology.",
+    "model": "solar-pro",
+    "prompt_chars": 20172,
+    "latency_sec": 1.64,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4568,
+    "output_tokens": 164,
+    "total_tokens": 4732,
+    "api_response_id": "34fe9a2c-bccc-4c3d-88c3-9d920144f9d4"
+  },
+  {
+    "run_id": "pilot_task48_User10_seed1",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on integrating Jiangnan cultural elements with Western art pedagogy for children, emphasizing structured educational synthesis, cultural aesthetics, and creative craft activities. Candidate B's profile aligns most closely: he values quality education for his children, prioritizes cultural experiences (e.g., Jiangnan cuisine, historical sites), and engages in analytical, detail-oriented planning (evident in his career and travel styles). His interest in blending cultural heritage with modern approaches (e.g., business innovation) mirrors the document's pedagogical synthesis of Eastern and Western art. Candidates A and C, while culturally engaged, focus more on personal hobbies (pet care, photography) and lack the explicit emphasis on educational integration and cultural depth seen in B.",
+    "model": "solar-pro",
+    "prompt_chars": 22716,
+    "latency_sec": 1.66,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5387,
+    "output_tokens": 167,
+    "total_tokens": 5554,
+    "api_response_id": "02315fc5-c887-4ff8-8c90-2b4107eed7ae"
+  },
+  {
+    "run_id": "pilot_task48_User10_seed1",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User16",
+      "User17"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User17",
+    "correct": false,
+    "reasoning": "The document's focus on home art education for children (ages 5 and 8), integration of Jiangnan cultural elements (Suzhou gardens, ink wash painting), and emphasis on developmental psychology aligns most closely with Candidate A. Her profile highlights active involvement in children's education, interest in cultural heritage (hometown in Suzhou), and engagement with creative activities (cooking, dance, pet care). Unlike Candidates B (focused on photography, finance, and outdoor hobbies) and C (prioritizing business, golf, and management), Candidate A's lifestyle and preferences directly reflect the document's themes of family-centered, culturally rich, and developmentally tailored art education.",
+    "model": "solar-pro",
+    "prompt_chars": 24718,
+    "latency_sec": 1.72,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5434,
+    "output_tokens": 161,
+    "total_tokens": 5595,
+    "api_response_id": "8028bca9-2e09-458f-9cb3-b75b872bb903"
+  }
+]

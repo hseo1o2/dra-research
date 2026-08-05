@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task29_User18_seed0",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User15"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "Candidate B (Liu Lu) aligns most closely with the document's focus on launching a healthy fast-food business targeting fitness enthusiasts and office workers. Her data-driven decision-making style, interest in cost-effective, high-protein meals, and frequent use of food delivery services mirror the document's emphasis on market analysis, budget constraints, and delivery-centric operations. Unlike Candidate A (a pragmatic marketer with family-centric priorities) or Candidate C (a freelance writer focused on cultural/eco-conscious consumption), Candidate B's profession as a data analyst and her personal habits (e.g., tracking fitness metrics, researching purchases) directly reflect the document's analytical rigor, financial planning, and health-conscious product strategy. Her preference for online tools and self-guided research also aligns with the document's structured, research-driven approach.",
+    "model": "solar-pro",
+    "prompt_chars": 23724,
+    "latency_sec": 2.01,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5059,
+    "output_tokens": 185,
+    "total_tokens": 5244,
+    "api_response_id": "0084eb00-6093-4172-a528-13cb5ae2e608"
+  },
+  {
+    "run_id": "pilot_task29_User18_seed0",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on Shanghai's light meal market trends, consumer behavior, cost structures, and operational strategies, emphasizing data-driven insights (e.g., market size, rental costs, menu pricing) and practical business considerations. Candidate B, a marketing manager in Shanghai, aligns with this focus: his profile highlights data analysis, cost-effectiveness, and strategic decision-making. His interest in market trends, business management, and frequent use of platforms like LinkedIn and Zhihu for industry insights mirrors the document's framing. Unlike Candidate A (a freelance writer focused on cultural/environmental content) or Candidate C (a data analyst with a narrower focus on personal fitness and tech), Candidate B\u2019s professional background and consumption habits (e.g., budgeting, family-oriented spending) directly align with the document\u2019s emphasis on market scalability, operational logistics, and consumer segmentation in Shanghai\u2019s competitive food sector.",
+    "model": "solar-pro",
+    "prompt_chars": 23561,
+    "latency_sec": 2.26,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6389,
+    "output_tokens": 200,
+    "total_tokens": 6589,
+    "api_response_id": "5c8c804e-6a43-4dda-87e9-5681be19944d"
+  },
+  {
+    "run_id": "pilot_task29_User18_seed0",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User15",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on market analysis, competitor landscapes, and industry trends in Shanghai's light meal sector, emphasizing data-driven insights, business models, and strategic growth. Candidate C, a marketing manager with an MBA, aligns most closely due to his professional background in marketing, interest in market trends, and preference for data-driven decision-making. His consumption habits (e.g., prioritizing cost-effectiveness, investing in durable products) and content preferences (e.g., saving business management articles, screenshotting market analysis) reflect the document's analytical and strategic framing. Candidates A and B, while data-savvy or detail-oriented, lack C's direct focus on business growth, competitor analysis, and industry benchmarking, which are central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 27621,
+    "latency_sec": 1.87,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 7756,
+    "output_tokens": 170,
+    "total_tokens": 7926,
+    "api_response_id": "d7eb5252-5926-4d1b-bdbc-30e07e37c3ef"
+  },
+  {
+    "run_id": "pilot_task29_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User10",
+      "User15"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User15",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on launching a healthy fast-food business targeting corporate white-collar workers and fitness enthusiasts in Shanghai, emphasizing cost-effectiveness, rapid throughput, and strategic site selection. Candidate A, a marketing manager in a foreign enterprise, aligns with this focus due to his pragmatic, data-driven decision-making style, emphasis on cost-effectiveness, and target demographic (corporate workers in tech parks like Zhangjiang). His preference for high-quality, practical solutions and his location in Pudong (near Zhangjiang) make him the most likely audience for this report. Candidates B and C, while health-conscious, are freelance or data-focused individuals less aligned with the corporate, operational, and budgetary priorities central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 29623,
+    "latency_sec": 1.91,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6888,
+    "output_tokens": 167,
+    "total_tokens": 7055,
+    "api_response_id": "0ce4ef66-a9cf-4d42-a413-c7e33d15369f"
+  }
+]

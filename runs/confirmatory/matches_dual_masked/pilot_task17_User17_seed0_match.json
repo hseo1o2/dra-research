@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "plan",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User22",
+      "User25"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User17",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on a multi-generational, comfort-oriented beach vacation. The document emphasizes high-quality, accessible accommodations, family-friendly dining, and balanced activities\u2014mirroring A's preferences for cleanliness, service standards, and senior-friendly facilities. A's interest in pet-friendly destinations (though not explicitly mentioned in the query) and her role as a caregiver (evident in her nursing-related activities) suggest a nuanced understanding of both elderly and younger family members' needs. Additionally, A's tendency to plan self-guided trips in advance and prioritize cultural experiences aligns with the document's structured yet flexible itinerary. While Candidates B and C also value comfort, their profiles emphasize technical/industrial interests (B) or frugal, eco-focused travel (C), which are less directly relevant to the document's priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 18223,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4034,
+    "output_tokens": 198,
+    "total_tokens": 4232,
+    "api_response_id": "d33ae91a-d5ba-408e-b1b3-a104febefa0a"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "search",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User25",
+      "User17"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The document focuses on travel logistics (high-speed trains, flights, climate considerations) and family-friendly destinations, aligning with Candidate B's travel preferences for natural/historical sites, hot springs, and eco-tourism. Her interest in seasonal planning (spring/autumn trips, summer short trips) matches the July climate queries. Unlike Candidate A (tech-focused, business trips) or C (pet-friendly, family-centric), B's emphasis on comfort, cost-effectiveness, and local cuisine (e.g., Shandong specialties) reflects the document's practical tone and accessibility focus (e.g., 'doable 1-night trip'). Her Xiaohongshu usage for travel advice also mirrors the query's informal, experience-sharing style.",
+    "model": "solar-pro",
+    "prompt_chars": 20388,
+    "latency_sec": 1.71,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4971,
+    "output_tokens": 171,
+    "total_tokens": 5142,
+    "api_response_id": "3922a1ff-5d9b-4f4b-b6d7-a083aea2f4be"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "compress",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User22",
+      "User25"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User17",
+    "correct": true,
+    "reasoning": "The document focuses on multi-generational travel planning, emphasizing senior-friendly transportation (HSR over flights due to lower stress), climate considerations (typhoon risks, humidity), and balanced activities for different ages (gentle walks for seniors vs. water sports for younger members). Candidate A's profile aligns most closely: she prioritizes family time, has elderly parents (implied by 'multi-generational' focus), values comfort and accessibility in travel, and recently shifted toward pet-friendly destinations (mirroring the document's emphasis on accommodating diverse needs). Her decision-making style (independent but consults family) and travel preferences (self-guided, cultural experiences) match the document's framing. Candidates B and C, while interested in travel, focus more on solo or couple-oriented activities (e.g., B's tech exhibitions, C's hot springs) and lack the explicit multi-generational family dynamic central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 22937,
+    "latency_sec": 1.97,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5521,
+    "output_tokens": 205,
+    "total_tokens": 5726,
+    "api_response_id": "9ebd091c-1152-4ead-868d-d6d9d2926956"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "write",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The document focuses on multi-generational travel planning prioritizing senior accessibility, climate comfort, and family-friendly infrastructure\u2014aligning with Candidate B's emphasis on health-conscious travel, eco-tourism, and domestic trips with family (husband, grandson). B's interest in hot springs and natural/historical sites matches the coastal cultural destinations (Qingdao/Weihai). Her frugal yet health-focused consumption (organic foods, low-salt meals) mirrors the report's dietary recommendations for seniors. Unlike A (pet-centric) or C (tech/industry-focused), B's travel style (self-guided, safety-conscious) and seasonal mobility (spring/autumn trips + summer relaxation) directly reflect the July beach plan's structure and priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 24939,
+    "latency_sec": 1.78,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5812,
+    "output_tokens": 174,
+    "total_tokens": 5986,
+    "api_response_id": "1f96c88c-7536-4abe-81c0-f58632385daf"
+  }
+]

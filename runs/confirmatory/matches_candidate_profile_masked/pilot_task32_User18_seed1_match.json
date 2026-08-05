@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task32_User18_seed1",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User8"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on meticulous research, cost-effectiveness, and modern design preferences. The request for detailed budget breakdowns, brand comparisons, and emphasis on durability/scratch-resistant materials reflects A's rational, data-driven decision-making style and preference for high-quality, long-term value. Additionally, A's interest in eco-friendly products and modern aesthetic (evident in their boutique hotel preference) matches the document's emphasis on stylish, functional solutions. While B and C also value practicality, A's focus on independent research, detailed specifications, and modern design priorities (e.g., white/gray aesthetic, smart appliances) is most directly mirrored in the document's structure and requirements.",
+    "model": "solar-pro",
+    "prompt_chars": 18591,
+    "latency_sec": 1.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4079,
+    "output_tokens": 167,
+    "total_tokens": 4246,
+    "api_response_id": "921f340a-aca6-4372-9af8-daa9962b3921"
+  },
+  {
+    "run_id": "pilot_task32_User18_seed1",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on practical, cost-effective home furnishings and appliances (e.g., sofas, refrigerators, washers) with an emphasis on durability, size, and budget allocation\u2014aligning with Candidate C's rational, family-oriented consumption habits. Candidate C prioritizes quality and cost-effectiveness for household items, plans quarterly family trips, and invests in durable goods (e.g., high-end home appliances, photography equipment). The document\u2019s framing around budget allocation for soft furnishings, furniture, and appliances mirrors C\u2019s focus on practicality and long-term value, unlike A\u2019s tech/data focus or B\u2019s financial/investment orientation.",
+    "model": "solar-pro",
+    "prompt_chars": 18730,
+    "latency_sec": 1.59,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5673,
+    "output_tokens": 151,
+    "total_tokens": 5824,
+    "api_response_id": "98e76d12-5ce3-4fdf-8bab-2a6e0905348a"
+  },
+  {
+    "run_id": "pilot_task32_User18_seed1",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on modern home furniture recommendations for an 89 m\u00b2 apartment, emphasizing cost-effectiveness, practicality, and family-oriented design (e.g., pet-friendly sofas, ergonomic chairs, and durable materials). Candidate C aligns best due to their preference for high-quality, durable household items, cost-effectiveness, and family-centric consumption (e.g., prioritizing children's education and family vacations). The document's emphasis on budget allocation, material durability, and space optimization mirrors Candidate C's pragmatic, family-oriented decision-making style and interest in practical home furnishings. Candidates A and B, while rational consumers, prioritize personal health/tech investments (A) or data-driven efficiency (B), which are less relevant to the document's focus on household furniture planning.",
+    "model": "solar-pro",
+    "prompt_chars": 22677,
+    "latency_sec": 1.78,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5920,
+    "output_tokens": 178,
+    "total_tokens": 6098,
+    "api_response_id": "2b96eacb-cbfa-45b5-9a50-2708917c2248"
+  },
+  {
+    "run_id": "pilot_task32_User18_seed1",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document emphasizes ergonomic furniture, pet-friendly materials, and a balanced budget for a family-oriented 89\u33a1 home, aligning with Candidate A's focus on quality, durability, and family needs (e.g., children's education, family trips). Candidate A's preference for high-end, practical household items and cost-effectiveness matches the report's prioritization of functional furniture, smart appliances, and warm textiles. Unlike Candidates B (tech/finance focus) and C (data-driven, minimalist lifestyle), Candidate A's pragmatic, family-centric values and interest in home comfort (e.g., cozy homestays, family dining) directly reflect the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 24679,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5926,
+    "output_tokens": 154,
+    "total_tokens": 6080,
+    "api_response_id": "2f02f0c7-c780-49f3-80a7-7318b249cb59"
+  }
+]

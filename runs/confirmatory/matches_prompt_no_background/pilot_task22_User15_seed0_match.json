@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task22_User15_seed0",
+    "stage": "plan",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User20",
+      "User15"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "Candidate C is a 26-30-year-old freelance writer in Beijing (matching the document's author profile), with variable income, low risk tolerance, and interest in sustainable/ESG topics. The document's focus on retirement planning for self-employed individuals aligns with C's freelance status, while its emphasis on annuities, medical insurance, and care services reflects her practical, low-risk financial preferences. Unlike Candidates A (data analyst) and B (copywriter), C's introverted, detail-oriented personality and focus on sustainable consumption mirror the document's structured, long-term planning approach. Her Beijing residence and minimalist lifestyle further align with the document's context.",
+    "model": "solar-pro",
+    "prompt_chars": 23765,
+    "latency_sec": 1.67,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5012,
+    "output_tokens": 161,
+    "total_tokens": 5173,
+    "api_response_id": "4bfd310d-f844-43c0-a6bb-58591876069a"
+  },
+  {
+    "run_id": "pilot_task22_User15_seed0",
+    "stage": "search",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User15",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document focuses on social insurance (\u793e\u4fdd), personal pension tax deductions (\u4e2a\u4eba\u517b\u8001\u91d1), and health insurance (\u533b\u4fdd) in Beijing, emphasizing procedural details, cost calculations, and policy adjustments. Candidate B, a freelance writer in Beijing, aligns most closely with this content due to her status as a flexible worker (\u7075\u6d3b\u5c31\u4e1a) and her practical interest in financial planning, eco-friendly consumption, and policy awareness. Her frequent use of WeChat, Weibo, and Douban for news and inspiration also matches the document's reliance on official announcements and policy updates. While Candidates A and C are data-driven or creatively inclined, neither directly addresses the document's core themes of social security and tax optimization for freelancers in Beijing.",
+    "model": "solar-pro",
+    "prompt_chars": 24164,
+    "latency_sec": 1.79,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6561,
+    "output_tokens": 175,
+    "total_tokens": 6736,
+    "api_response_id": "8d2ee13f-d38c-45b8-9637-8b3643d33b66"
+  },
+  {
+    "run_id": "pilot_task22_User15_seed0",
+    "stage": "compress",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User18",
+      "User15"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document focuses on Beijing's social security systems, personal pension schemes, and tax optimization strategies\u2014topics requiring detailed financial planning and policy analysis. Candidate C, a freelance writer in Beijing with a journalism background, aligns best due to their: (1) **geographic relevance** (permanent residence in Beijing's Chaoyang District), (2) **content interests** (saving articles on social issues, feminism, and environmental protection, which overlap with policy-focused research), and (3) **behavioral traits** (independent decision-making, eco-friendly consumption, and periodic mobility within Beijing for inspiration). The document\u2019s technical framing (e.g., tax brackets, contribution limits) also matches C\u2019s analytical tendencies and preference for cost-effectiveness, unlike A\u2019s creative focus or B\u2019s data-centric but Shanghai-based perspective.",
+    "model": "solar-pro",
+    "prompt_chars": 28161,
+    "latency_sec": 1.93,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6785,
+    "output_tokens": 190,
+    "total_tokens": 6975,
+    "api_response_id": "12085943-65a1-456a-a7dd-dcef17d72dcd"
+  },
+  {
+    "run_id": "pilot_task22_User15_seed0",
+    "stage": "write",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User18",
+      "User15"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "Candidate C is a freelance writer in Beijing (matching the document's target demographic), prioritizes sustainable/ESG investments (aligned with the plan's focus), and exhibits low risk tolerance (reflected in the plan's conservative, multi-layered strategy). The document's emphasis on dynamic cash flow management, liquidity buffers, and flexible insurance mechanisms directly addresses the income volatility typical of freelance work, which Candidate C's profile explicitly describes. Additionally, Candidate C's focus on eco-friendly consumption and cultural interests aligns with the ESG framing, while their Beijing residency and nighttime writing habits mirror the document's context. Candidates A (employed copywriter) and B (data analyst) lack the freelance self-employment status and ESG focus central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 30163,
+    "latency_sec": 1.94,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6289,
+    "output_tokens": 178,
+    "total_tokens": 6467,
+    "api_response_id": "dd5960c2-293e-44f0-9687-842ad336923d"
+  }
+]

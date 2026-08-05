@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task37_User14_seed1",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on natural materials, aesthetic warmth, and functional optimization of high-use spaces (living room/kitchen). As a caf\u00e9 owner with a design background, her emphasis on art, sustainability, and creating inviting environments mirrors the request for natural wood/fabrics and budget-conscious yet high-quality recommendations. Her role managing a space that blends industrial and organic elements also reflects the document's balance of practicality (open-plan kitchen) and beauty (south-facing bedroom lighting). While B and C share artistic interests, A's direct experience with spatial design, material selection, and budgeting for hospitality spaces makes her the strongest match.",
+    "model": "solar-pro",
+    "prompt_chars": 24350,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5121,
+    "output_tokens": 157,
+    "total_tokens": 5278,
+    "api_response_id": "9df83131-7eca-4c64-9374-8c975e583863"
+  },
+  {
+    "run_id": "pilot_task37_User14_seed1",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User13",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on detailed budget allocation for interior design (\u786c\u88c5/\u8f6f\u88c5) and home furnishings, emphasizing aesthetic balance (e.g., '\u539f\u6728\u98ce \u65e5\u5f0f' style, '\u5976\u5496 \u8272\u53f7' color schemes) and practical cost management. Candidate B, a caf\u00e9 owner with a design background, aligns most closely: her profile highlights meticulous attention to design, sustainability, and budget-conscious creativity (e.g., quarterly caf\u00e9 decoration updates, eco-friendly product preferences). The document\u2019s emphasis on blending functionality and artistry mirrors her caf\u00e9\u2019s industrial-natural aesthetic and her interest in art exhibitions. Candidates A (copywriter) and C (illustrator) lack the document\u2019s focus on spatial budgeting and material selection, which are central to B\u2019s professional and personal interests.",
+    "model": "solar-pro",
+    "prompt_chars": 24501,
+    "latency_sec": 1.92,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6257,
+    "output_tokens": 185,
+    "total_tokens": 6442,
+    "api_response_id": "1c5052bb-275a-45a2-b5b1-d10fd8ddc05a"
+  },
+  {
+    "run_id": "pilot_task37_User14_seed1",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on detailed budget allocation for an 80sqm apartment renovation, emphasizing cost-effective yet high-quality materials (e.g., eco-friendly paint, wood-grain tiles), functional design (e.g., open kitchen, custom cabinetry), and a balance between aesthetics (e.g., '\u539f\u6728\u98ce' style) and practicality. Candidate C, a caf\u00e9 owner with a design background, aligns most closely: her profile highlights meticulous attention to aesthetics, sustainability (eco-friendly packaging), and practicality (supporting local/niche brands). The document\u2019s emphasis on budget-conscious yet stylish renovations mirrors her rational consumption habits and focus on design quality. Candidates A and B, while creative, prioritize art/illustration and literary interests respectively, with less direct alignment to the renovation\u2019s material and spatial planning focus.",
+    "model": "solar-pro",
+    "prompt_chars": 29031,
+    "latency_sec": 2.1,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 7174,
+    "output_tokens": 189,
+    "total_tokens": 7363,
+    "api_response_id": "c4b843b0-1561-4da7-834a-2c3a742e79f8"
+  },
+  {
+    "run_id": "pilot_task37_User14_seed1",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User14",
+      "User13"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document emphasizes minimalist, natural aesthetics (Japandi/Warm Muji), tactile materials, and organic textures\u2014aligning with Candidate B's artistic background and preference for design-oriented spaces. The focus on craftsmanship (e.g., FAS-grade wood, matte finishes) and integration of art into daily life mirrors B's identity as an illustrator who values high-quality tools and creative environments. Unlike A (a copywriter prioritizing literary inspiration) or C (a caf\u00e9 owner focused on industrial-natural hybrid spaces), B's profile directly reflects the document's emphasis on material authenticity, spatial harmony, and the blending of art with functional design.",
+    "model": "solar-pro",
+    "prompt_chars": 31033,
+    "latency_sec": 1.75,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6827,
+    "output_tokens": 154,
+    "total_tokens": 6981,
+    "api_response_id": "b53cfba4-d17a-43fd-805b-d57ad81d22ee"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task29_User10_seed1",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "Candidate B (Liu Lu) aligns most closely with the document's focus on launching a healthy fast-food business targeting fitness enthusiasts and office workers. Her data-driven decision-making style, interest in cost-effective solutions, and preference for healthy, low-calorie meals mirror the document's emphasis on market analysis, budget constraints, and nutritional positioning. Additionally, her urban Shanghai residence and frequent use of food delivery services align with the proposed CBD/office cluster location strategy. While Candidate A shares some lifestyle similarities, his focus on family and traditional cuisine diverges from the document's entrepreneurial and health-centric framing. Candidate C\u2019s supply chain expertise and domestic travel preferences are less relevant to the urban, fast-paced business model described.",
+    "model": "solar-pro",
+    "prompt_chars": 24800,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5234,
+    "output_tokens": 167,
+    "total_tokens": 5401,
+    "api_response_id": "0754dd8c-41e2-4136-ab41-b4edbf433257"
+  },
+  {
+    "run_id": "pilot_task29_User10_seed1",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on market trends, cost analysis, and strategic decision-making for light-food entrepreneurship in Shanghai, emphasizing data-driven insights, cost-efficiency, and practical business models. Candidate B, a marketing manager with an MBA, aligns closely with this content due to his pragmatic, data-oriented decision-making style, interest in market trends, and focus on cost-effectiveness. His role in marketing and his habit of analyzing industry reports (e.g., saving market analysis screenshots) reflect the document's emphasis on strategic business planning. Additionally, his Shanghai-based residence and family-oriented consumption patterns (e.g., budgeting for household expenses) align with the Shanghai-centric cost and location analysis in the document. Candidates A (data analyst) and C (supply chain manager) are less directly relevant, as the document prioritizes entrepreneurial and marketing perspectives over pure data analysis or supply chain logistics.",
+    "model": "solar-pro",
+    "prompt_chars": 24526,
+    "latency_sec": 1.96,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6509,
+    "output_tokens": 199,
+    "total_tokens": 6708,
+    "api_response_id": "14196ca7-0b08-40f5-87ad-5f198486a47b"
+  },
+  {
+    "run_id": "pilot_task29_User10_seed1",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on Shanghai's light meal market, premium pricing (\u00a540\u2013\u00a560), and white-collar professionals\u2014key demographics aligning with Candidate A. As a Shanghai-based data analyst, A prioritizes cost-effective, high-quality meals (40\u201360 RMB), matches the target audience (fitness/wellness enthusiasts), and uses delivery services frequently. The document's emphasis on data-driven market analysis (e.g., growth rates, consumer behavior) also aligns with A's analytical background and preference for detailed research. Candidates B and C, while rational consumers, are less directly tied to Shanghai's Tier-1 urban context or the specific price/behavioral focus of the document.",
+    "model": "solar-pro",
+    "prompt_chars": 28622,
+    "latency_sec": 1.81,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6867,
+    "output_tokens": 168,
+    "total_tokens": 7035,
+    "api_response_id": "372780f0-abcf-4d24-a140-c9bd6a8d30aa"
+  },
+  {
+    "run_id": "pilot_task29_User10_seed1",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on a health-focused fast-casual brand targeting white-collar workers and fitness enthusiasts in Shanghai's CBD, emphasizing efficiency, cost-effectiveness, and quality. Candidate B, a marketing manager in Shanghai, aligns most closely with this profile. He lives in Pudong, frequents high-end restaurants, values quality and cost-effectiveness, and uses food delivery services. His interest in market trends and preference for self-guided travel (mirroring the document's emphasis on self-planning) further align with the brand's target audience. Candidates A (Chengdu-based supply chain manager) and C (data analyst with less focus on urban CBD dining) show weaker connections to the document's Shanghai-centric, white-collar focus.",
+    "model": "solar-pro",
+    "prompt_chars": 30624,
+    "latency_sec": 1.97,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 9809,
+    "output_tokens": 171,
+    "total_tokens": 9980,
+    "api_response_id": "7c400f66-9de0-41ba-9ab4-bd9f52b8ddad"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task22_User15_seed1",
+    "stage": "plan",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User15",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "Candidate B's profile aligns most closely with the document's focus on long-term financial security, risk aversion, and structured planning. The document emphasizes a 30-year retirement plan with dynamic allocation strategies across life stages and macroeconomic cycles, reflecting B's meticulous, detail-oriented personality and independent decision-making style. B's preference for sustainable consumption, eco-friendly products, and interest in low-risk investments (e.g., tea culture, intermittent fasting) parallels the document's emphasis on stability and long-term value. Additionally, B's introverted, thoughtful nature and focus on cultural/social issues resonate with the document's serious, analytical tone and emphasis on tailored financial strategies. Candidates A and C, while detail-oriented, prioritize data analysis/creative pursuits respectively, which are less central to the retirement-planning context.",
+    "model": "solar-pro",
+    "prompt_chars": 18440,
+    "latency_sec": 1.77,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4058,
+    "output_tokens": 187,
+    "total_tokens": 4245,
+    "api_response_id": "248aff85-f8b1-4ec9-a301-d4a2d4eb7206"
+  },
+  {
+    "run_id": "pilot_task22_User15_seed1",
+    "stage": "search",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User20",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on tax policies, insurance products, and financial planning for retirement and health, emphasizing data-driven comparisons (e.g., tax deductions, premiums, deductibles) and structured analysis. Candidate C\u2019s profile aligns with this through her data analysis expertise, rational decision-making style, and interest in financial sustainability. Unlike A (literary/creative focus) and B (artistic/creative interests), C\u2019s preference for logical, evidence-based content (e.g., saving articles on business analysis, technology, and sustainability) and her practical consumption habits (researching purchases, favoring durable products) directly match the document\u2019s technical, policy-oriented framing. Her interest in environmental protection and sustainability also aligns with the document\u2019s focus on long-term financial planning.",
+    "model": "solar-pro",
+    "prompt_chars": 18693,
+    "latency_sec": 1.97,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5328,
+    "output_tokens": 179,
+    "total_tokens": 5507,
+    "api_response_id": "bbb604de-4366-4cf1-945a-6e4275c9f4cd"
+  },
+  {
+    "run_id": "pilot_task22_User15_seed1",
+    "stage": "compress",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User15",
+      "User18",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on tax-efficient retirement planning, commercial insurance products, and low-risk ESG investments\u2014topics requiring analytical rigor, financial literacy, and strategic decision-making. Candidate B's profile aligns most closely: her data-driven mindset (Python, R, SQL), meticulous research habits, and interest in sustainability/ESG match the document's technical framing. Unlike A (literary focus) or C (creative/artistic), B's emphasis on tax optimization, product comparisons, and structured financial planning (e.g., quarterly trips, cost-effectiveness) directly reflects the document's priorities. Her LinkedIn/Zhihu activity also suggests engagement with professional financial topics.",
+    "model": "solar-pro",
+    "prompt_chars": 22893,
+    "latency_sec": 2.03,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5642,
+    "output_tokens": 159,
+    "total_tokens": 5801,
+    "api_response_id": "532cd092-ec61-431e-8a48-9d2ab84d777d"
+  },
+  {
+    "run_id": "pilot_task22_User15_seed1",
+    "stage": "write",
+    "gt_userid": "User15",
+    "candidate_userids": [
+      "User15",
+      "User20",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User15",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User15",
+    "correct": true,
+    "reasoning": "The document focuses on a 30-year retirement plan for a risk-averse freelancer with variable income (royalties), emphasizing healthcare, long-term care, and low-risk investments. Candidate B aligns best: she is a freelance writer (implied by 'writing at night' and 'book royalties' context), prioritizes financial stability (eco-friendly, sustainable consumption), and shares the document's focus on healthcare (intermittent fasting, tea culture) and long-term planning (quarterly book purchases, annual travel). Unlike A (data analyst) or C (creative/artistic), B's introverted, detail-oriented nature and independent decision-making mirror the document's meticulous, self-directed financial strategy. Her reduced travel and focus on local cultural immersion also align with the plan's emphasis on steady, localized asset accumulation.",
+    "model": "solar-pro",
+    "prompt_chars": 24895,
+    "latency_sec": 2.11,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5854,
+    "output_tokens": 191,
+    "total_tokens": 6045,
+    "api_response_id": "1350d75b-7c22-4c68-8463-6fd09437e191"
+  }
+]

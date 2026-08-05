@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task4_User21_seed1",
+    "stage": "plan",
+    "gt_userid": "User21",
+    "candidate_userids": [
+      "User21",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User21",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User8",
+    "correct": false,
+    "reasoning": "Candidate A (Chen Hao) is a 26-30-year-old investment manager seeking to enhance career competitiveness through structured learning, aligning with the document's focus on MBA/EMBA/program comparisons for professional advancement. The document's emphasis on balancing work/study, cost-effectiveness, and ROI payback periods mirrors A's frugal yet strategic spending habits, preference for data-driven decisions, and focus on finance/economics content. Unlike B (entrepreneur prioritizing family/art) and C (married marketing manager with family-centric priorities), A's single status, urban Shanghai lifestyle, and interest in skill-gap bridging (e.g., data analytics) directly align with the document's individual career-centric framing, lack of family logistics considerations, and focus on domestic/international program flexibility for working professionals.",
+    "model": "solar-pro",
+    "prompt_chars": 24740,
+    "latency_sec": 1.84,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5219,
+    "output_tokens": 190,
+    "total_tokens": 5409,
+    "api_response_id": "5cadaa8f-1e37-478c-b61b-fdffce3b6ccf"
+  },
+  {
+    "run_id": "pilot_task4_User21_seed1",
+    "stage": "search",
+    "gt_userid": "User21",
+    "candidate_userids": [
+      "User21",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User21",
+      "User10",
+      "User8"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User21",
+    "correct": true,
+    "reasoning": "The document focuses on high-end MBA/EMBA programs (CEIBS, Tsinghua, Peking University) with detailed tuition costs (RMB 488,000\u20131,000,000), scholarship criteria, and international prestige. Candidate A, an entrepreneur (40-45) with a strong STEM background and MBA, prioritizes elite education, values brand prestige, and has the financial capacity for such investments. His interest in sustainability and global business aligns with the programs' international focus. Candidates B (marketing manager) and C (investment manager) lack A's entrepreneurial profile, deep STEM roots, or explicit emphasis on executive education at this tier, making A the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 25786,
+    "latency_sec": 1.74,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5889,
+    "output_tokens": 175,
+    "total_tokens": 6064,
+    "api_response_id": "0443cfe5-7a69-4fe6-b03a-397d2cc75957"
+  },
+  {
+    "run_id": "pilot_task4_User21_seed1",
+    "stage": "compress",
+    "gt_userid": "User21",
+    "candidate_userids": [
+      "User21",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User21",
+      "User8"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User21",
+    "correct": true,
+    "reasoning": "The document focuses on detailed tuition costs, rankings, and program specifics of elite Chinese business schools (CEIBS, Tsinghua, PKU, Fudan, SJTU), emphasizing global partnerships, executive education, and specialized master's programs. Candidate B, an entrepreneur with an MBA from Fudan, aligns most closely: his background in economics and business, interest in global rankings (e.g., FT rankings mentioned in the document), and focus on high-end, value-driven education for his children (e.g., international school) reflect the document's emphasis on premium, internationally recognized programs. His entrepreneurial decision-making style and attention to market trends also mirror the document's analytical framing of institutional competitiveness. Candidates A (marketing manager) and C (investment manager) lack the direct entrepreneurial and global business school engagement evident in Candidate B.",
+    "model": "solar-pro",
+    "prompt_chars": 28533,
+    "latency_sec": 1.93,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6753,
+    "output_tokens": 193,
+    "total_tokens": 6946,
+    "api_response_id": "6ea6d359-809e-43b8-8343-fbdd18afc886"
+  },
+  {
+    "run_id": "pilot_task4_User21_seed1",
+    "stage": "write",
+    "gt_userid": "User21",
+    "candidate_userids": [
+      "User21",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User21"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User21",
+    "correct": true,
+    "reasoning": "Candidate C, a 40-45-year-old entrepreneur with an MBA from Fudan University, aligns most closely with the document's focus on executive education, strategic leadership, and global business perspectives. The report emphasizes advanced management programs (EMBAs, executive certificates) tailored for senior professionals (10-20+ years experience) seeking C-suite readiness, cross-border business execution, and peer networking\u2014mirroring C's entrepreneurial background, international business travel, and interest in leadership development. Unlike Candidate A (marketing manager) or B (investment manager), C's profile reflects the document's emphasis on pragmatic decision-making, integrative technology skills, and balancing family with high-level career demands, as seen in his quarterly international trips, art/tech investments, and family-oriented travel preferences.",
+    "model": "solar-pro",
+    "prompt_chars": 30535,
+    "latency_sec": 1.89,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6591,
+    "output_tokens": 187,
+    "total_tokens": 6778,
+    "api_response_id": "6197b4db-82f9-470c-ad2e-0f0863bfa17b"
+  }
+]

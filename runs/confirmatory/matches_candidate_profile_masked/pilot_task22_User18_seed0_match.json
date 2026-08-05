@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task22_User18_seed0",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User8",
+    "correct": false,
+    "reasoning": "Candidate B's profile aligns most closely with the document's focus on conservative financial planning, risk aversion, and systematic investment strategies. The document emphasizes annuity insurance, medical coverage, and long-term care within the Chinese market\u2014topics that resonate with B's meticulous, data-driven decision-making style and preference for low-risk financial products. B's frequent use of financial apps (Xueqiu, Tonghuashun), interest in market analysis, and habit of organizing financial data into personal notes reflect the document's emphasis on dynamic allocation strategies and regulatory research. Unlike A (focused on family-centric consumption) or C (prioritizing tech/data tools), B's frugal yet strategic approach to investments, cost-effectiveness, and long-term health planning directly mirror the document's modular, tiered retirement framework and conservative risk appetite.",
+    "model": "solar-pro",
+    "prompt_chars": 18400,
+    "latency_sec": 2.19,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4025,
+    "output_tokens": 192,
+    "total_tokens": 4217,
+    "api_response_id": "96f5b397-9315-487b-884f-0ace441ce645"
+  },
+  {
+    "run_id": "pilot_task22_User18_seed0",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User8",
+    "correct": false,
+    "reasoning": "The document focuses on insurance products (e.g., annuities, medical insurance), retirement age reforms, and financial planning\u2014topics aligning with Candidate B's financial industry background, frequent use of financial apps (Xueqiu, Tonghuashun), and interest in cost-effective investments. Unlike Candidate A (marketing-focused) or C (data analysis/tech-oriented), B's consumption habits (frugal, tech/electronics-focused) and content preferences (finance, economics, market analysis) directly mirror the document's emphasis on insurance premiums, tax calculations, and retirement policies. B's meticulous decision-making style and data-driven approach also align with the document's detailed financial comparisons (e.g., 2.5% vs. 2.0% interest rates).",
+    "model": "solar-pro",
+    "prompt_chars": 18895,
+    "latency_sec": 2.15,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5265,
+    "output_tokens": 183,
+    "total_tokens": 5448,
+    "api_response_id": "92edd48c-0f17-48ee-bb9b-7957e61fd8b0"
+  },
+  {
+    "run_id": "pilot_task22_User18_seed0",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User8",
+    "correct": false,
+    "reasoning": "The document focuses on tax optimization, insurance products, and fixed-income investments with detailed financial calculations and regulatory analysis. Candidate A's profile aligns most closely: they are a meticulous financial analyst (frequent use of Xueqiu/Tonghuashun, saves financial screenshots, reads 'Poor Charlie's Almanack'), prioritizes cost-effectiveness in spending, and has a strong interest in tax-efficient strategies (e.g., pension savings calculations). Unlike B (family-focused, marketing/management interests) or C (data analysis/tech focus), A's deep engagement with financial instruments, regulatory details, and quantitative tax-benefit modeling directly mirrors the document's technical framing and priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 22677,
+    "latency_sec": 1.64,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5924,
+    "output_tokens": 161,
+    "total_tokens": 6085,
+    "api_response_id": "eea8264d-6fd4-47f9-8037-689f8c69371b"
+  },
+  {
+    "run_id": "pilot_task22_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on a 25-30-year-old female data analyst in Shanghai with a statistics background, emphasizing conservative risk preferences, tax-optimized retirement planning, and long-term asset allocation. Candidate C aligns perfectly: she is a data analyst proficient in statistical tools (Python, R, SQL), meticulous in decision-making, and prioritizes long-term value in consumption. The document's technical framing (e.g., actuarial formulas, policy analysis) matches her logical, detail-oriented personality. Unlike Candidates A (family-focused, leisure-oriented) and B (finance-focused but less aligned with the document's actuarial depth), Candidate C\u2019s focus on data-driven planning, sustainability, and structured financial habits directly mirrors the document\u2019s priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 24679,
+    "latency_sec": 3.29,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 9686,
+    "output_tokens": 173,
+    "total_tokens": 9859,
+    "api_response_id": "87173089-f6de-40a1-9bdb-462324ca0b32"
+  }
+]

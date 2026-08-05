@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "plan",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User22",
+      "User25"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User17",
+    "correct": true,
+    "reasoning": "Candidate A (Chen Fang) is a 45-50-year-old head nurse in Beijing with two children (high school and college-aged) and elderly family members (husband and cat). The document\u2019s focus on a multi-generational family vacation aligns with her role as a caregiver and her emphasis on family harmony. Her preferences for high-comfort, accessible destinations (e.g., Qingdao, Weihai) match her documented prioritization of cleanliness, service quality, and senior-friendly accommodations. Additionally, her interest in healthy dining (low-oil, low-salt recipes) and pet-friendly destinations (she recently adopted a cat) directly correlates with the document\u2019s emphasis on balanced meals and family inclusivity. While Candidates B and C also value travel, their profiles lack the specific focus on multi-generational needs and pet-friendly considerations central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 23382,
+    "latency_sec": 1.93,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4997,
+    "output_tokens": 196,
+    "total_tokens": 5193,
+    "api_response_id": "9d257cbf-5c8d-4b6e-bb24-a6c6a266940f"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "search",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User25",
+      "User17"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The document focuses on summer travel in Chinese coastal cities (Qingdao, Weihai, Dalian, Xiamen, Sanya) with emphasis on climate, typhoon risks, family-friendly accessibility, and transport options (HSR/flights). Candidate B (Li Xiuying) aligns best: she is a retired traveler (2-3 trips/year) who prioritizes family vacations (with her grandson), values comfort/safety, and shows interest in coastal destinations (e.g., Shandong hometown, hot springs). Her queries about accessibility, family suites, and beach amenities match the document's framing. Candidates A (tech-focused) and C (pet-centric) lack the document's travel-centric priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 25605,
+    "latency_sec": 1.76,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5767,
+    "output_tokens": 171,
+    "total_tokens": 5938,
+    "api_response_id": "11446afa-6d82-4c04-b6e4-e43c6b3dd79d"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "compress",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User22",
+      "User25"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The document focuses on multi-generational travel planning for July, emphasizing senior-friendly transportation (HSR over flights), climate considerations (typhoon risks, humidity), and balanced activities for all ages. Candidate C (Li Xiuying) is a 65-70-year-old retiree prioritizing family travel, health, and comfort. Her profile highlights: (1) **senior travel preferences** (monthly family trips, hot spring vacations, and attention to safety/comfort), (2) **transportation priorities** (preference for low-stress travel, reflected in her grandson\u2019s short trips and subway use), and (3) **climate/activity alignment** (interest in natural scenery, hiking, and pet-friendly destinations). The document\u2019s emphasis on HSR accessibility, typhoon risks, and multi-generational activities (e.g., gentle walks for seniors, watersports for teens) directly mirrors Candidate C\u2019s documented priorities. Candidates A and B, while family-oriented, focus on younger family members (A\u2019s teens/college kids, B\u2019s adult children abroad) and lack the explicit senior-centric travel framing.",
+    "model": "solar-pro",
+    "prompt_chars": 28108,
+    "latency_sec": 2.4,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6317,
+    "output_tokens": 252,
+    "total_tokens": 6569,
+    "api_response_id": "bbb4e7e4-d343-4f15-a16b-eb141fccac6a"
+  },
+  {
+    "run_id": "pilot_task17_User17_seed0",
+    "stage": "write",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User25",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User25",
+    "correct": false,
+    "reasoning": "The document focuses on multi-generational travel planning prioritizing senior accessibility, comfort, and family harmony\u2014key concerns for Candidate B (65-70, retired, with a grandson and Shiba Inu). Her profile emphasizes frugal yet health-conscious spending, domestic travel (2-3x/year), and a preference for natural/historical destinations with barrier-free amenities. The report's emphasis on Shandong (B's hometown province) and rail travel aligns with her nostalgia for Jinan and preference for low-stress transit. Unlike Candidate A (45-50, nurse with teens) or C (50-55, engineer with adult children), B's age, family structure (elderly couple + young grandson), and travel style (self-guided, comfort-focused) directly mirror the document's multi-generational balancing act and accessibility priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 30110,
+    "latency_sec": 1.95,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6624,
+    "output_tokens": 199,
+    "total_tokens": 6823,
+    "api_response_id": "fd812b19-b2fa-4361-8b3f-54b3b60bf6b2"
+  }
+]

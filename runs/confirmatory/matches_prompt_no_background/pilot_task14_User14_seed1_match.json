@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User13",
+      "User14"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document's focus on a freelance illustrator in Shanghai, 5-day/week training in city parks, integration of yoga/Pilates, and emphasis on adaptable routines aligns perfectly with Candidate C's profile. C is explicitly described as a freelance illustrator in Shanghai with a 5-day creative schedule, existing yoga/Pilates habits, and a preference for outdoor activities in parks. The document's emphasis on balancing training with artistic work, avoiding injury, and accommodating a flexible routine mirrors C's introverted yet health-conscious lifestyle and need for stress relief through exercise. Candidates A (copywriter) and B (caf\u00e9 owner) lack the specific occupational and behavioral parallels to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 24005,
+    "latency_sec": 2.13,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5045,
+    "output_tokens": 165,
+    "total_tokens": 5210,
+    "api_response_id": "4488093e-f899-4697-a317-313ff3a2cb13"
+  },
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "The document focuses on marathon training (Galloway method, run/walk ratios) and environmental factors (Shanghai air quality, running routes). Candidate B explicitly mentions running once a week, cycling, and using fitness trackers for health maintenance\u2014directly aligning with the document's exercise focus. While Candidates A and C mention walking or yoga, neither emphasizes structured marathon training or endurance sports like Candidate B. The Shanghai-specific route (West Bund Century Park) also matches B's frequent exploration of city parks and natural history museums for inspiration, whereas A and C prioritize art/cultural spaces over athletic routes.",
+    "model": "solar-pro",
+    "prompt_chars": 25696,
+    "latency_sec": 1.62,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5578,
+    "output_tokens": 141,
+    "total_tokens": 5719,
+    "api_response_id": "7933744a-d9ad-47e4-9305-a03940fed5bc"
+  },
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User20"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "The document focuses on a 12-week beginner marathon training plan using the Galloway Run/Walk/Run method, emphasizing gradual progression, injury prevention, and adaptable pacing. Candidate C, a copywriter with a strong interest in creative processes and a recent adoption of exercise habits (running, cycling), aligns best. His exercise goals (stress relief, endurance) and preferences (self-paced, nature-inspired) mirror the plan's emphasis on accessibility and mental well-being. Unlike Candidates A (yoga/Pilates-focused) and B (coffee-culture-centric), C's documented interest in running and adaptable fitness routines directly connects to the document's content priorities and framing.",
+    "model": "solar-pro",
+    "prompt_chars": 29031,
+    "latency_sec": 1.8,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6957,
+    "output_tokens": 161,
+    "total_tokens": 7118,
+    "api_response_id": "6d16f21b-927a-4d21-b1a1-9960263a300b"
+  },
+  {
+    "run_id": "pilot_task14_User14_seed1",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document explicitly states it is 'customized for a freelance illustrator living in Shanghai' and integrates existing habits like Yoga, Pilates, and hiking. Candidate C matches this description exactly: he is a freelance illustrator in Shanghai who practices Yoga 2\u20133 times weekly, Pilates, and hiking. The training plan's focus on injury prevention, cross-training integration, and urban environmental factors aligns with Candidate C's creative lifestyle, time preferences (evenings for peak creativity), and frequent visits to art exhibitions/coffee shops in Shanghai. Candidates A (caf\u00e9 owner) and B (copywriter) lack the specific occupation, exercise habits, and spatial/creative context detailed in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 31033,
+    "latency_sec": 1.83,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 7420,
+    "output_tokens": 167,
+    "total_tokens": 7587,
+    "api_response_id": "e698faed-fc88-4f3a-b2e3-44f72681289e"
+  }
+]

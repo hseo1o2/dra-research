@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task22_User14_seed1",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User14",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document focuses on retirement planning for a freelance illustrator in Shanghai with variable income, moderate-to-conservative risk tolerance, and specific needs for annuity, medical, and long-term care integration. Candidate B aligns most closely: he is a freelance illustrator (explicitly stated in his profile), lives in Shanghai, and shares the document's emphasis on financial flexibility, risk management, and long-term security. His consumption habits (e.g., prioritizing quality tools, supporting local artists) and lifestyle (independent work rhythm, travel for inspiration) mirror the document's freelance context. Unlike Candidates A (caf\u00e9 owner) and C (writer/creative writer), B's identity and priorities directly match the document's target audience.",
+    "model": "solar-pro",
+    "prompt_chars": 20411,
+    "latency_sec": 2.1,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4344,
+    "output_tokens": 174,
+    "total_tokens": 4518,
+    "api_response_id": "e8f3ee86-1ba1-47c1-8c67-6d8a7a73d29e"
+  },
+  {
+    "run_id": "pilot_task22_User14_seed1",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User20"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on Shanghai's Huhuibao insurance program, emphasizing coverage for pre-existing conditions, flexible workers, and social security adjustments. Candidate B, a caf\u00e9 owner with interests in health, sustainability, and employee management, aligns most closely. B's attention to health (organic diet, yoga), support for independent/local brands, and periodic mobility (domestic/international trips for industry insights) reflect the document's themes of insurance coverage for flexible workers and pre-existing conditions. Additionally, B's rational consumption and focus on sustainability mirror the document's emphasis on accessible yet comprehensive health solutions. Candidates A (artist) and C (writer) lack the direct connection to health insurance, social security, or flexible employment contexts.",
+    "model": "solar-pro",
+    "prompt_chars": 19648,
+    "latency_sec": 1.62,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4713,
+    "output_tokens": 167,
+    "total_tokens": 4880,
+    "api_response_id": "522cca50-6fd4-4654-a290-29f05fddd999"
+  },
+  {
+    "run_id": "pilot_task22_User14_seed1",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on pension systems, insurance mechanics, and supplemental medical coverage tailored for freelancers and flexible workers in Shanghai. Candidate C, a caf\u00e9 owner with entrepreneurial interests in sustainability and industry trends, aligns best. Their consumption characteristics (supporting independent brands, eco-friendly products), periodic mobility (traveling for industry research), and content preferences (coffee culture, entrepreneurship management) reflect a pragmatic, long-term planning mindset consistent with the document's emphasis on financial security, insurance flexibility, and regulatory compliance for self-employed individuals. Candidates A (artist) and B (writer) lack the document's focus on financial systems, tax rules, and insurance products for freelancers.",
+    "model": "solar-pro",
+    "prompt_chars": 23372,
+    "latency_sec": 1.61,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5417,
+    "output_tokens": 159,
+    "total_tokens": 5576,
+    "api_response_id": "6c7d77fa-050d-4219-aaae-29c20184310b"
+  },
+  {
+    "run_id": "pilot_task22_User14_seed1",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User20",
+      "User14"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document focuses on financial planning for a freelance illustrator in Shanghai, emphasizing cash flow management, tax optimization, and long-term retirement security. Candidate C is a freelance illustrator (explicitly stated in the document) with matching demographics (28-32, single, Shanghai-based) and aligns with the document's priorities: (1) Freelance income volatility (C's variable earnings from commissions, sponsorships, and courses), (2) Tax-conscious behavior (C's rational consumption and research before purchases), (3) Investment in creative tools/equipment (C's focus on high-quality art supplies and photography gear), and (4) Lifestyle preferences (C's evening creativity, independent travel for inspiration, and interest in financial stability for artistic freedom). The document's framing\u2014practical, structured, and future-oriented\u2014mirrors C's meticulous, goal-driven personality and decision-making style.",
+    "model": "solar-pro",
+    "prompt_chars": 25374,
+    "latency_sec": 2.34,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5402,
+    "output_tokens": 209,
+    "total_tokens": 5611,
+    "api_response_id": "2885831c-ad8c-456c-9a20-84adfad35ff3"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "ablation_identity_only_task7_User19_seed0",
+    "stage": "plan",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User19",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "Candidate C (Liu Lu) is a data analyst with a background in statistics and a focus on AI/edtech-relevant skills (Python, R, SQL, Tableau). The document emphasizes market research, tech architecture, and data-driven strategies\u2014aligning with her analytical mindset and career goals in product/management roles. Unlike Candidates A (marketing manager) and B (supply chain), C\u2019s technical expertise, interest in AI tools, and preference for structured, evidence-based decision-making directly mirror the document\u2019s focus on AI-driven education innovation. Her urban, tech-savvy lifestyle in Shanghai also aligns with the startup\u2019s target demographic (university students).",
+    "model": "solar-pro",
+    "prompt_chars": 24402,
+    "latency_sec": 1.66,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5112,
+    "output_tokens": 157,
+    "total_tokens": 5269,
+    "api_response_id": "8020c876-18c4-45db-b5c1-aa1de04e72e2"
+  },
+  {
+    "run_id": "ablation_identity_only_task7_User19_seed0",
+    "stage": "search",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on AI EdTech startup metrics (LTV-CAC, TAM/SAM/SOM), technical architecture (RAG, vector databases, LLM orchestration), and tech stacks (Next.js, FastAPI, Qdrant). Candidate B, a data analyst with a statistics background, aligns best: her expertise in data analysis, certifications in data science, and interest in tech trends (evident from her LinkedIn/Zhihu activity, TED Talks, and tech-related content consumption) directly match the document's analytical and technical focus. Unlike Candidate A (marketing manager) or C (supply chain manager), B's daily work with data tools (Python, SQL, Tableau) and her goal to transition into product roles make her the most likely audience for this EdTech/AI technical-business hybrid content.",
+    "model": "solar-pro",
+    "prompt_chars": 26142,
+    "latency_sec": 1.87,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5653,
+    "output_tokens": 194,
+    "total_tokens": 5847,
+    "api_response_id": "eb530432-d291-4e7d-816f-d5f40ee9a334"
+  },
+  {
+    "run_id": "ablation_identity_only_task7_User19_seed0",
+    "stage": "compress",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate C, a marketing manager in a foreign enterprise, aligns most closely with the document's focus on AI EdTech market research, business planning, and strategic analysis. The document emphasizes data-driven methodologies (e.g., Van Westendorp, conjoint analysis), market sizing (TAM/SAM/SOM), and academic integrity compliance\u2014topics that resonate with C's MBA background, marketing expertise, and interest in business case studies. Unlike A (data analyst) or B (supply chain manager), C's role involves synthesizing market trends, optimizing product features, and balancing cost/value\u2014mirroring the document's emphasis on pricing strategies, feature prioritization, and pilot testing. Additionally, C's preference for high-end hotels, self-guided travel, and in-depth content aligns with the document's professional, analytical tone and structured approach to problem-solving.",
+    "model": "solar-pro",
+    "prompt_chars": 28635,
+    "latency_sec": 1.92,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6174,
+    "output_tokens": 198,
+    "total_tokens": 6372,
+    "api_response_id": "f567c9d1-e7ac-4b0a-904c-3225fb2dd43a"
+  },
+  {
+    "run_id": "ablation_identity_only_task7_User19_seed0",
+    "stage": "write",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on launching an AI learning platform for university students, emphasizing market research, academic integrity, and course-grounded pedagogy. Candidate B, as a marketing manager with an MBA and experience in market analysis, aligns most closely with the document's strategic, data-driven, and business-oriented framing. His background in marketing, decision-making style, and interest in market trends (e.g., saving articles on business management, participating in industry forums) reflect the document's emphasis on structured market research, pricing strategies, and product-led growth. While Candidate A (data analyst) and Candidate C (supply chain manager) have analytical skills, their professional contexts (data analysis, logistics) are less directly tied to the document's core themes of education technology, student pain points, and market validation for an AI learning platform.",
+    "model": "solar-pro",
+    "prompt_chars": 30637,
+    "latency_sec": 1.84,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6333,
+    "output_tokens": 185,
+    "total_tokens": 6518,
+    "api_response_id": "530307ee-f47d-4e1d-a23d-02fc453f59ed"
+  }
+]

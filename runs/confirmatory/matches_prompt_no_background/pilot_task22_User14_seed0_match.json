@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task22_User14_seed0",
+    "stage": "plan",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User20",
+      "User14",
+      "User13"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document explicitly introduces 'Lin Nan,' a 28-32-year-old freelance illustrator in Shanghai, seeking a 30-year retirement plan tailored to freelance income variability and conservative risk tolerance. Candidate B's profile matches this identity, occupation, age, location, and freelance career trajectory. The document's focus on dynamic financial planning for fluctuating income, integration of insurance products, and life-stage adaptation aligns with Candidate B's behavioral traits (e.g., budgeting for art supplies, quarterly travel planning) and priorities (e.g., balancing creative work with financial stability). Candidates A (copywriter) and C (caf\u00e9 owner) lack the freelance illustrator identity and specific financial context described in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24593,
+    "latency_sec": 1.87,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5139,
+    "output_tokens": 172,
+    "total_tokens": 5311,
+    "api_response_id": "9112cb7b-cd16-42b5-8b34-4dc322206a9d"
+  },
+  {
+    "run_id": "pilot_task22_User14_seed0",
+    "stage": "search",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User14",
+      "User20"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User20",
+    "correct": false,
+    "reasoning": "The document focuses on Shanghai's social insurance policies for flexible employment, tax deductions for pensions, and practical financial planning\u2014topics aligning with Candidate C's profile as a copywriter in Shanghai. C's rational consumption habits, interest in financial stability (evident in his restrained spending and budgeting), and frequent engagement with policy-related content (e.g., saving articles on advertising creativity and tax deductions) make him the most likely audience. While Candidates A and B are creatively inclined, their priorities (caf\u00e9 management/artistic tools) do not directly align with the document's focus on social security and freelance financial planning. Candidate C\u2019s urban lifestyle, mid-range product preferences, and interest in practical services (e.g., food delivery, housekeeping) further support this match.",
+    "model": "solar-pro",
+    "prompt_chars": 25609,
+    "latency_sec": 1.82,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6297,
+    "output_tokens": 181,
+    "total_tokens": 6478,
+    "api_response_id": "9a2ec5e2-8527-41d6-83c2-dbf47f39cc05"
+  },
+  {
+    "run_id": "pilot_task22_User14_seed0",
+    "stage": "compress",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": false,
+    "reasoning": "The document focuses on social security, insurance, and long-term care systems in Shanghai, emphasizing financial planning, regulatory changes, and benefit structures. Candidate C, a caf\u00e9 owner with a business background and interest in sustainability, aligns most closely with this content. Her profile highlights rational consumption, attention to financial details (e.g., caf\u00e9 inventory, equipment updates), and periodic mobility for industry research\u2014traits that reflect the document\u2019s emphasis on structured financial planning and regulatory awareness. While Candidates A and B are creatives, their priorities (artistic inspiration, literary interests) do not directly engage with the document\u2019s systemic, policy-driven framing. Candidate C\u2019s entrepreneurial focus and practical approach to business operations make her the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 29031,
+    "latency_sec": 1.73,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 7013,
+    "output_tokens": 165,
+    "total_tokens": 7178,
+    "api_response_id": "64b769aa-1608-4f6f-8f1f-a5f252faeb7f"
+  },
+  {
+    "run_id": "pilot_task22_User14_seed0",
+    "stage": "write",
+    "gt_userid": "User14",
+    "candidate_userids": [
+      "User14",
+      "User20",
+      "User13"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User13",
+      "User20"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User14",
+    "correct": true,
+    "reasoning": "The document is explicitly tailored for Lin Nan, a 28-32-year-old freelance illustrator in Shanghai, matching Candidate A's identity. It focuses on financial planning for freelancers with fluctuating income, conservative risk tolerance, and no debt\u2014key traits of Candidate A. The content emphasizes Shanghai-specific social insurance policies, tax-advantaged retirement tools, and commercial insurance products, aligning with Candidate A's need for liquidity and long-term stability. Candidate B (caf\u00e9 owner) and C (copywriter) lack the freelance illustrator context, project-based income volatility, and specific Shanghai-based social security focus that defines the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 31033,
+    "latency_sec": 1.79,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 9744,
+    "output_tokens": 155,
+    "total_tokens": 9899,
+    "api_response_id": "6ead1633-64ee-42ec-9203-4d04a72e2441"
+  }
+]

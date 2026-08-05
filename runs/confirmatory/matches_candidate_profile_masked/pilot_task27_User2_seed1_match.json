@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task27_User2_seed1",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on indie music production, budget-conscious gear acquisition, and DIY recording/marking strategies\u2014aligning with Candidate A's traits as a cost-effective, self-guided creator. While Candidate B (tech-focused) and C (academic/analytical) show some overlap in learning habits, Candidate A's emphasis on independent projects (crafts, music), social media promotion (Xiaohongshu/Weibo), and budget-conscious purchases (\u00a520,000 RMB gear) directly mirrors the document's priorities. Her psychology background also aligns with the reflective, self-driven tone of the research brief.",
+    "model": "solar-pro",
+    "prompt_chars": 18639,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4082,
+    "output_tokens": 152,
+    "total_tokens": 4234,
+    "api_response_id": "67b2b590-1532-4a5d-8fb3-17b039b0c81d"
+  },
+  {
+    "run_id": "pilot_task27_User2_seed1",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on music promotion strategies, copyright management, and platform-specific distribution (NetEase, Tencent, Xiaohongshu, Spotify), aligning with Candidate B's interests in content creation, social media engagement, and psychology/education topics. B's active use of Xiaohongshu, participation in online communities, and preference for eco-friendly/sustainable products (relevant to ethical music distribution) make them the most likely audience. Candidate A's focus on academic research and Candidate C's tech-centric habits are less directly tied to the document's practical, platform-driven music industry focus.",
+    "model": "solar-pro",
+    "prompt_chars": 20145,
+    "latency_sec": 1.64,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4494,
+    "output_tokens": 143,
+    "total_tokens": 4637,
+    "api_response_id": "947597c0-fa1e-4d88-88dd-58477e8a68ab"
+  },
+  {
+    "run_id": "pilot_task27_User2_seed1",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User1",
+    "correct": false,
+    "reasoning": "The document focuses on technical audio equipment (microphones, interfaces, monitors) with repeated price queries in RMB on Chinese platforms (JD, Tmall). This aligns with Candidate C's tech-oriented profile: a computer science student/programmer who prioritizes cost-effective electronics, uses platforms like JD/Taobao for purchases, and has a consumption pattern centered on high-end tech products. Candidates A and B lack the technical focus and hardware purchasing behavior evident in the document. Candidate C's independent research style (e.g., price comparisons) and interest in tech specifications directly match the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 22737,
+    "latency_sec": 1.7,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 7079,
+    "output_tokens": 142,
+    "total_tokens": 7221,
+    "api_response_id": "6faa4be5-7451-4294-b156-80e3d957c245"
+  },
+  {
+    "run_id": "pilot_task27_User2_seed1",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on indie music production, budgeting, and global distribution, emphasizing practical, step-by-step guidance for independent creators. Candidate B aligns best due to their interest in creative content (sharing psychology articles, craft tutorials, and travel vlogs), rational consumption habits (cost-effective purchases, budget planning), and engagement with self-guided projects (online courses, cloud note-taking). While Candidate A has academic interests and Candidate C focuses on tech, neither reflects the artistic, hands-on, and distribution-oriented mindset of the document. Candidate B\u2019s blend of creativity, structured planning, and interest in niche content (e.g., indie music parallels their psychology/artistic pursuits) makes them the most likely audience.",
+    "model": "solar-pro",
+    "prompt_chars": 24739,
+    "latency_sec": 1.9,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 9193,
+    "output_tokens": 165,
+    "total_tokens": 9358,
+    "api_response_id": "52fbda1a-df7a-4788-9e4f-3a0e69b38da6"
+  }
+]

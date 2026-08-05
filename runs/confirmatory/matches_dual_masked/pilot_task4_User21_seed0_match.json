@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task4_User21_seed0",
+    "stage": "plan",
+    "gt_userid": "User21",
+    "candidate_userids": [
+      "User21",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User21",
+      "User8",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User21",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on strategic leadership, executive decision-making, and global business transformation. The document emphasizes international exposure (Europe, Southeast Asia), high-end networking, and ROI for entrepreneurs\u2014mirroring A's quarterly business travels, luxury consumption habits, and interest in sustainability/art (reflected in the document's 'emerging technologies' and 'brand reputation' criteria). A's pragmatic, data-driven decision-making style and focus on long-term value (e.g., art collections, MBA) directly match the document's emphasis on ROI analysis, skill-gap bridging, and executive education. Candidate B's frugality and finance-centric interests, and Candidate C's family-oriented, domestic focus, are less aligned with the document's entrepreneurial, global scope.",
+    "model": "solar-pro",
+    "prompt_chars": 19347,
+    "latency_sec": 2.12,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4232,
+    "output_tokens": 184,
+    "total_tokens": 4416,
+    "api_response_id": "40385fc6-c044-4ee1-9fde-420fd35fd6f5"
+  },
+  {
+    "run_id": "pilot_task4_User21_seed0",
+    "stage": "search",
+    "gt_userid": "User21",
+    "candidate_userids": [
+      "User21",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User21",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User21",
+    "correct": true,
+    "reasoning": "The document focuses on high-end EMBA programs (CEIBS, Tsinghua-INSEAD, INSEAD) with emphasis on global rankings, tuition costs, and rigorous curricula\u2014key priorities for Candidate B, who values elite education, international exposure, and data-driven decision-making. Candidate B's profile aligns with the document's framing: (1) his frequent business travel to Europe/Asia mirrors the programs' global focus; (2) his preference for luxury hotels and personalized services matches the programs' premium positioning; (3) his interest in sustainability and eco-friendly services aligns with INSEAD's emphasis on modern, responsible leadership. Candidates A and C lack B's combination of executive-level business acumen, international mobility, and preference for high-end, globally recognized programs.",
+    "model": "solar-pro",
+    "prompt_chars": 20327,
+    "latency_sec": 2.17,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4685,
+    "output_tokens": 182,
+    "total_tokens": 4867,
+    "api_response_id": "a1eb24e8-22f6-4fd0-9998-17194531b6ae"
+  },
+  {
+    "run_id": "pilot_task4_User21_seed0",
+    "stage": "compress",
+    "gt_userid": "User21",
+    "candidate_userids": [
+      "User21",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User21"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User21",
+    "correct": true,
+    "reasoning": "The document focuses on high-end EMBA programs (CEIBS, Tsinghua-INSEAD, PKU BiMBA, Fudan) with detailed cost, ranking, and curriculum data, reflecting a user prioritizing elite business education, global exposure, and cost-effectiveness. Candidate C aligns best: they travel internationally for business, prioritize high-end products/brands, invest in art/tech, and value sustainability\u2014mirroring the document's emphasis on premium programs (e.g., USD 118k tuition) and dual-degree partnerships (Tsinghua-INSEAD). Their interest in leadership, market analysis, and global cultural experiences (Kyoto, Florence) aligns with the document's focus on executive education and international rankings. Candidates A and B lack the same level of global business mobility, luxury consumption, or explicit interest in high-stakes executive education.",
+    "model": "solar-pro",
+    "prompt_chars": 23170,
+    "latency_sec": 1.94,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6871,
+    "output_tokens": 202,
+    "total_tokens": 7073,
+    "api_response_id": "9a5526e4-19aa-4b60-80db-a06573bbe21e"
+  },
+  {
+    "run_id": "pilot_task4_User21_seed0",
+    "stage": "write",
+    "gt_userid": "User21",
+    "candidate_userids": [
+      "User21",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User21",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User21",
+    "correct": true,
+    "reasoning": "The document focuses on advanced executive education for seasoned entrepreneurs with a strong emphasis on global networks, tech integration, and cross-border strategy. Candidate B aligns most closely: (1) their high-end consumption preferences (luxury hotels, art collections) mirror the document's elite program focus; (2) their quarterly international travel for business aligns with the cross-border strategic vision; (3) their decision-making style (data-driven, market analysis) matches the document's analytical framing. Candidate A's frugality and Candidate C's family-oriented focus are less relevant to the document's executive/entrepreneurial priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 25172,
+    "latency_sec": 2.0,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5826,
+    "output_tokens": 147,
+    "total_tokens": 5973,
+    "api_response_id": "9e75308b-af02-4a77-bf8d-06a2157cc417"
+  }
+]

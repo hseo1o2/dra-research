@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task12_User9_seed1",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "Candidate A aligns most closely with the document's focus on emotional regulation, self-awareness, and morning routines. The document emphasizes psychology, mindfulness, and integrating strategies into a 7:00\u20139:00 AM routine\u2014mirroring Candidate A's morning habits (exercise, meditation, reading) and her background in psychology. Candidate A's low stress tolerance and need for emotional support further align with the request for stress resilience and emotional management. While Candidate C shares some interest in psychology, their focus on art and evening creativity diverges from the document's structured, morning-oriented approach. Candidate B's tech-centric habits and nighttime productivity preferences make them less relevant to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 18447,
+    "latency_sec": 1.64,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4009,
+    "output_tokens": 165,
+    "total_tokens": 4174,
+    "api_response_id": "8e68c00b-6685-45ce-ac59-6347b9758707"
+  },
+  {
+    "run_id": "pilot_task12_User9_seed1",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses heavily on emotional regulation, cognitive behavioral therapy (CBT), and mental health resources\u2014topics directly aligned with Candidate A's interests in mental health articles, yoga/Pilates, and stress management. The content prioritizes practical emotional tools (e.g., DBT, mindfulness) and creative framing (e.g., podcasts, art-inspired wellness), matching A's creative personality, social media sharing habits, and preference for holistic health. Candidate B\u2019s tech focus and Candidate C\u2019s art-centric priorities lack the document\u2019s emphasis on therapeutic frameworks and emotional support, making A the best fit.",
+    "model": "solar-pro",
+    "prompt_chars": 19564,
+    "latency_sec": 1.5,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4919,
+    "output_tokens": 143,
+    "total_tokens": 5062,
+    "api_response_id": "b63023a1-f997-408b-b041-ebdf233197d4"
+  },
+  {
+    "run_id": "pilot_task12_User9_seed1",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User14",
+      "User11"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "The document emphasizes evidence-based behavioral science, neuroscience, and practical frameworks (CBT/ACT) applied to product operations and high-pressure environments. Candidate C, a 22\u201325yo psychology minor in product ops with an advertising/new media background, aligns perfectly: their technical rationality (programming/algorithm focus), interest in cost-effective solutions, and preference for data-driven decision-making mirror the document's focus on predictive modeling, habit loops, and operational protocols. Unlike Candidates A (creative/artistic) and B (introverted artist), Candidate C's background in product ops, psychology minor, and interest in applying structured frameworks to real-world problems directly match the document's emphasis on connecting behavioral science to product lifecycle management and stakeholder collaboration.",
+    "model": "solar-pro",
+    "prompt_chars": 23054,
+    "latency_sec": 1.71,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5306,
+    "output_tokens": 174,
+    "total_tokens": 5480,
+    "api_response_id": "c5868676-05de-43f9-a894-07544aa226cf"
+  },
+  {
+    "run_id": "pilot_task12_User9_seed1",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User9",
+      "User14"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document emphasizes a structured, evidence-based approach to emotional regulation and self-awareness, aligning with Candidate B's focus on mental health, creative expression, and systematic routines (e.g., 7:00\u20139:00 AM morning routine). The content prioritizes psychological frameworks (ACT, CBT) and operational mindfulness, mirroring B's interest in mental health articles, meditation, and disciplined exercise habits. Unlike Candidate A (tech-focused) or C (artistic/creative), B's profile reflects a blend of psychological curiosity, structured self-improvement, and somatic practices (yoga, Pilates) that directly resonate with the roadmap's integration of neurobiology, habit loops, and workplace micro-interventions.",
+    "model": "solar-pro",
+    "prompt_chars": 25056,
+    "latency_sec": 1.7,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5346,
+    "output_tokens": 173,
+    "total_tokens": 5519,
+    "api_response_id": "92fa2703-6ad5-4940-ba62-c48f9d722f3f"
+  }
+]

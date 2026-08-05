@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task14_User22_seed0",
+    "stage": "plan",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User22",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "Candidate B best matches the document's focus on a 50-55-year-old beginner runner with a pragmatic, health-oriented approach. The document emphasizes adaptable training, injury prevention, and time constraints (6 AM wake-up, 1-hour sessions) that align with B's routine (6 AM wake-up, 3x weekly jogging/walks, and preference for practical, health-focused activities). B's exercise goals (health, stress relief, neck problem improvement) and habits (outdoor running/walking, dog walks) mirror the user's needs. Unlike A (focused on mechanical engineering and gardening) or C (golf/yoga and business-oriented), B's lifestyle (family trips, photography, and Northeastern cuisine) and rational, cost-effective decision-making style directly reflect the document's emphasis on sustainable, beginner-friendly marathon training without specialized gear or rigid metrics.",
+    "model": "solar-pro",
+    "prompt_chars": 18362,
+    "latency_sec": 2.03,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4039,
+    "output_tokens": 202,
+    "total_tokens": 4241,
+    "api_response_id": "a9626523-d66a-4e74-8230-a1899a2dcc3d"
+  },
+  {
+    "run_id": "pilot_task14_User22_seed0",
+    "stage": "search",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document focuses on marathon training, lower back pain management, and core stability exercises for masters runners (50-60+ age group). Candidate B aligns most closely: (1) He is a masters runner (55+) with exercise goals targeting health and stress relief, including running 3x/week; (2) He explicitly mentions lower back pain as a concern addressed through exercise; (3) His practical, cost-effective decision-making style matches the document's emphasis on biomechanics and accessible routines (e.g., bird dog, plank). Candidates A (golf/yoga focus) and C (technical/Industry 4.0 interests) lack the document's specific focus on running-related injury prevention and core stability for older athletes.",
+    "model": "solar-pro",
+    "prompt_chars": 20727,
+    "latency_sec": 1.8,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4702,
+    "output_tokens": 176,
+    "total_tokens": 4878,
+    "api_response_id": "29a98c80-8533-4c8c-ace9-66b8c394cb64"
+  },
+  {
+    "run_id": "pilot_task14_User22_seed0",
+    "stage": "compress",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User22",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document focuses on marathon training for first-time masters runners (aged 50\u201355), emphasizing physiological considerations, run-walk strategies, and structured weekly plans. Candidate A aligns best: he is 50\u201355 (implied by 'masters runner' age range), exercises outdoors (jogs/walks), prioritizes health (neck problems), and has a practical, goal-oriented approach to fitness (recently started hiking/cycling). His weekday 60-minute exercise constraint matches the document's training structure. Candidates B and C, while active, focus on running/strength (B) or golf/yoga (C), lacking the beginner marathoner context and age-specific physiological focus central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 23280,
+    "latency_sec": 1.79,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5361,
+    "output_tokens": 172,
+    "total_tokens": 5533,
+    "api_response_id": "9195319c-93b3-4dd0-b799-37dc17bc9dee"
+  },
+  {
+    "run_id": "pilot_task14_User22_seed0",
+    "stage": "write",
+    "gt_userid": "User22",
+    "candidate_userids": [
+      "User22",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User22"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document focuses on a 50\u201355-year-old beginner runner with a history of lumbar strain, emphasizing injury prevention, low-intensity training, and strict consistency. Candidate B aligns most closely: he is 50\u201355 (inferred from age range), prioritizes health and stress relief through exercise (jogging, hiking), and has a history of neck issues (mirroring the lumbar strain focus). His routine includes morning exercise, a 6:00 AM wake-up time (matching the document's schedule), and a preference for practical, cost-effective health investments (e.g., running shoes, outdoor activities). Unlike Candidate A (golf/yoga focus) or C (industrial/tech interests), B\u2019s exercise habits, health goals, and daily structure directly reflect the document\u2019s audience.",
+    "model": "solar-pro",
+    "prompt_chars": 25282,
+    "latency_sec": 1.95,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5738,
+    "output_tokens": 189,
+    "total_tokens": 5927,
+    "api_response_id": "ffaa1068-1c61-47b6-977c-65ccc0ef96dc"
+  }
+]

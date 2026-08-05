@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task29_User10_seed1",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "Candidate B's profile aligns most closely with the document's focus on data-driven planning, cost control, and healthy meal preferences. The document emphasizes market analysis, budget allocation, and nutritional positioning\u2014key priorities for Candidate B, who is meticulous about data analysis, values cost-effectiveness, and has recently shifted toward healthy eating. Unlike Candidate A (focused on family and leisure) or Candidate C (prioritizing supply chain and eco-friendly consumption), Candidate B's independent, logically meticulous decision-making style and interest in market trends directly mirror the document's pragmatic, detail-oriented approach to launching a healthy fast-food business.",
+    "model": "solar-pro",
+    "prompt_chars": 18932,
+    "latency_sec": 1.5,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4158,
+    "output_tokens": 147,
+    "total_tokens": 4305,
+    "api_response_id": "a503bed4-75ab-40a8-a0e8-971ccc06b23c"
+  },
+  {
+    "run_id": "pilot_task29_User10_seed1",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on market analysis, cost structures, and entrepreneurial strategies for the light food industry, emphasizing data-driven insights (e.g., market size projections, cost breakdowns, and competitive rankings). Candidate B aligns most closely with this framing: their profile highlights a preference for in-depth market analysis, case studies, and data-driven decision-making (e.g., saving market reports, reading business management books like *Good to Great*, and prioritizing cost-effectiveness in consumption). Additionally, Candidate B\u2019s interest in entrepreneurial topics (e.g., supply chain optimization, business trips to Shenzhen/Chengdu) and their role as a pragmatic, detail-oriented decision-maker aligns with the document\u2019s focus on actionable business insights. Candidates A and C, while rational consumers, lack the explicit emphasis on market analysis and entrepreneurial strategy that defines the document\u2019s core themes.",
+    "model": "solar-pro",
+    "prompt_chars": 18606,
+    "latency_sec": 1.81,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5295,
+    "output_tokens": 194,
+    "total_tokens": 5489,
+    "api_response_id": "1ed251b7-673a-4f30-964e-c21490abb872"
+  },
+  {
+    "run_id": "pilot_task29_User10_seed1",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on data-driven analysis, market trends, and premium health-conscious consumption. The document emphasizes market size data, consumer behavior analytics, and competitive positioning\u2014topics that match Candidate A's expertise in data analysis tools (Python, R, SQL) and her interest in business analysis content. Additionally, her preference for healthy, high-protein meals and cost-effective spending aligns with the document's discussion of the \u00a540\u2013\u00a560 price band targeting white-collar professionals seeking balanced nutrition. Candidates B and C, while rational consumers, focus more on family-oriented spending, eco-friendly products, and leisure activities, which are less central to the document's analytical and market-strategy framing.",
+    "model": "solar-pro",
+    "prompt_chars": 22809,
+    "latency_sec": 1.81,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5835,
+    "output_tokens": 172,
+    "total_tokens": 6007,
+    "api_response_id": "11bbde22-07f5-4d5d-8f3a-48d9e5f896d0"
+  },
+  {
+    "run_id": "pilot_task29_User10_seed1",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on a commercial plan for a health-focused fast-casual brand targeting Shanghai's CBD white-collar workers and fitness-oriented consumers. Candidate B's profile aligns most closely with this focus: (1) his frequent business trips to Shenzhen/Chengdu and interest in market trends reflect the document's emphasis on urban commercial expansion; (2) his preference for high-quality, cost-effective products matches the brand's mid-tier pricing strategy (\u00a540\u2013\u00a560); (3) his dietary preferences for diverse cuisines and occasional home cooking align with the brand's balance of health-conscious and practical offerings. While Candidate A shares some eco-friendly values, his Sichuan cuisine preference and Chengdu-centric mobility contrast with the Shanghai-centric document. Candidate C's data-driven focus and Nordic travel interests lack direct relevance to the document's urban Chinese market context.",
+    "model": "solar-pro",
+    "prompt_chars": 24811,
+    "latency_sec": 2.11,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 8660,
+    "output_tokens": 199,
+    "total_tokens": 8859,
+    "api_response_id": "ec380229-3d28-4981-a6ec-f4a94d429d33"
+  }
+]

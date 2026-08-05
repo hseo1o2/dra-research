@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task18_User19_seed0",
+    "stage": "plan",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User19",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "Candidate B's profile aligns most closely with the document's focus on a business trip to [MASKED] with a structured itinerary, budget constraints, and emphasis on sustainable practices. B's pragmatic, data-driven decision-making style, preference for mid-to-high-end eco-friendly accommodations, and interest in self-guided cultural experiences mirror the document's requirements. Additionally, B's focus on cost-effectiveness, sustainable consumption, and interest in historical/cultural destinations align with the document's budget breakdown, accommodation criteria, and leisure activities. Candidates A and C, while sharing some similarities, prioritize different travel styles (A: family-focused, C: nature-focused) and lack B's explicit emphasis on business efficiency and sustainability.",
+    "model": "solar-pro",
+    "prompt_chars": 19317,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4274,
+    "output_tokens": 165,
+    "total_tokens": 4439,
+    "api_response_id": "e4b1fd61-9733-45ef-bc25-044cbe8d8737"
+  },
+  {
+    "run_id": "pilot_task18_User19_seed0",
+    "stage": "search",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User19",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on flight costs, currency exchange rates, and public transportation ticket pricing (e.g., 7-day tickets, airport express trains) in a practical, cost-conscious manner. Candidate B aligns best: he prioritizes rational spending, eco-friendly consumption, and values efficiency in travel (e.g., self-planned itineraries, light travel to reduce carbon footprint). His interest in domestic historical/cultural trips and attention to budget-friendly options (e.g., second-hand platforms) mirror the document\u2019s emphasis on cost comparisons and practical logistics. Candidates A and C, while also rational consumers, focus more on family-centric leisure travel or high-end accommodations, respectively, which are less directly reflected in the document\u2019s transactional tone.",
+    "model": "solar-pro",
+    "prompt_chars": 20798,
+    "latency_sec": 1.76,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5112,
+    "output_tokens": 169,
+    "total_tokens": 5281,
+    "api_response_id": "ef77e409-3008-4618-90cd-9889c8a010d2"
+  },
+  {
+    "run_id": "pilot_task18_User19_seed0",
+    "stage": "compress",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User19"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on flight logistics, currency exchange, and visa requirements for international travel, particularly from Chengdu to Berlin. Candidate C's profile aligns most closely with this content: (1) He has a pragmatic, efficiency-oriented personality and a background in supply chain/logistics, which matches the document's structured, data-driven analysis of travel options. (2) His periodic mobility includes international business trips and a preference for self-planned itineraries, reflecting the document's detailed flight duration comparisons and visa research. (3) His eco-conscious consumption and focus on practicality align with the document's emphasis on cost-effective travel (e.g., exchange rate comparisons). Candidates A and B lack the international travel frequency, logistical focus, and data-driven decision-making style evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 23516,
+    "latency_sec": 1.81,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 7117,
+    "output_tokens": 178,
+    "total_tokens": 7295,
+    "api_response_id": "b21e11d7-543c-4948-910a-384d9e8f5cc7"
+  },
+  {
+    "run_id": "pilot_task18_User19_seed0",
+    "stage": "write",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User19"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document emphasizes eco-friendly practices, logistics efficiency, mid-to-high-end accommodations, and structured business frameworks\u2014all aligning with Candidate C's profile. Candidate C is a supply chain executive (explicitly mentioned in the document) who prioritizes sustainability (eco-friendly products, carbon footprint reduction), values efficiency (independent decision-making, quick judgments), and prefers mid-to-high-end business hotels. Unlike Candidates A (focused on family trips and leisure) and B (interested in photography and casual travel), Candidate C's professional background, consumption habits (eco-friendly focus), and travel style (self-planned, immersive, light travel) directly mirror the document's framing for a business trip to Berlin.",
+    "model": "solar-pro",
+    "prompt_chars": 25518,
+    "latency_sec": 1.71,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6345,
+    "output_tokens": 163,
+    "total_tokens": 6508,
+    "api_response_id": "3eb79fb2-5858-450b-8447-557a8f15d88a"
+  }
+]

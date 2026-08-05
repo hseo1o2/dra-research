@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task38_User19_seed0",
+    "stage": "plan",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document focuses on practical, family-oriented housing needs (budget, school districts, pet-friendly amenities, renovation flexibility) and emphasizes detailed financial planning, legal processes, and liveability factors. Candidate A's profile aligns most closely: he is a rational, family-focused consumer who prioritizes cost-effectiveness, practicality, and long-term planning (e.g., monthly budgeting, interest in smart home products, outdoor activities with his dog). His emphasis on school districts, budget constraints, and hands-on research mirrors the document's priorities. Candidates B and C, while also rational, focus more on career-driven or luxury-oriented preferences (e.g., high-end hotels, golf, international travel) that are less central to the document's domestic, family-centric framing.",
+    "model": "solar-pro",
+    "prompt_chars": 19546,
+    "latency_sec": 1.76,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4295,
+    "output_tokens": 174,
+    "total_tokens": 4469,
+    "api_response_id": "987631a2-aa99-458b-8961-58585e2ad6bd"
+  },
+  {
+    "run_id": "pilot_task38_User19_seed0",
+    "stage": "search",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on real estate decisions in Beijing (\u6d77\u6dc0, \u671d\u9633), emphasizing budget constraints (550\u4e07-600\u4e07), family needs (\u5e7c\u5347\u5c0f policies, school districts), and practical considerations (down payment ratios, tax policies). Candidate A, a pragmatic supply chain professional with a daughter, aligns perfectly: his offline behavior highlights monthly family shopping (school supplies), eco-friendly consumption (sustainability focus), and domestic travel (cultural/historical sites). His decision-making style (independent but consults family) and content preferences (management trends, data charts) match the document's analytical tone. Candidate B\u2019s focus on photography/hiking and Candidate C\u2019s emphasis on luxury travel/management books are less relevant to the document\u2019s core themes of family-centric real estate planning and policy analysis.",
+    "model": "solar-pro",
+    "prompt_chars": 19847,
+    "latency_sec": 1.87,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5405,
+    "output_tokens": 190,
+    "total_tokens": 5595,
+    "api_response_id": "8be2feeb-377c-47db-a7e8-80f8ed235756"
+  },
+  {
+    "run_id": "pilot_task38_User19_seed0",
+    "stage": "compress",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User19"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on real estate analysis for families with children, emphasizing school districts, unit sizes, and budget constraints (5.5M\u20136.0M RMB). Candidate A prioritizes children's education (extracurricular classes, learning resources) and family-centric consumption, aligning with the document's emphasis on schools (e.g., 'Yayuncun No. 1 Kindergarten') and family-friendly communities. Candidate A's pragmatic, data-driven decision-making style also matches the document's structured, analytical approach to property selection. Candidates B and C lack the same explicit focus on education and family-oriented consumption patterns.",
+    "model": "solar-pro",
+    "prompt_chars": 23516,
+    "latency_sec": 2.04,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6736,
+    "output_tokens": 148,
+    "total_tokens": 6884,
+    "api_response_id": "3924a134-1a81-4fcf-9feb-b7f2515284a0"
+  },
+  {
+    "run_id": "pilot_task38_User19_seed0",
+    "stage": "write",
+    "gt_userid": "User19",
+    "candidate_userids": [
+      "User19",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User19",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User19",
+    "correct": true,
+    "reasoning": "The document focuses on a family with a 6-year-old child preparing for primary school and a large dog, emphasizing school districts, pet-friendly amenities, and practical financial planning. Candidate A's profile aligns most closely: he has a daughter of similar age, prioritizes education (e.g., school supplies, extracurriculars), values eco-friendly and sustainable products (reflected in the document's emphasis on green spaces and parks), and has a large dog (Alaskan Malamute) requiring outdoor space. Additionally, Candidate A's pragmatic, family-oriented decision-making style matches the document's structured, solution-focused approach to property selection. Candidates B and C, while also family-oriented, lack the specific emphasis on school districts, pet-friendly features, and the exact demographic details (child's age, dog size) that define the document's core audience.",
+    "model": "solar-pro",
+    "prompt_chars": 25518,
+    "latency_sec": 1.94,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6407,
+    "output_tokens": 192,
+    "total_tokens": 6599,
+    "api_response_id": "5fd5dfe3-0c53-4c17-b9b5-e0bf5c7ff3a8"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task48_User13_seed0",
+    "stage": "plan",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User12",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User13",
+      "User12"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document emphasizes art education for a 5-year-old, eco-friendly materials, creative home interaction, and cultural context\u2014aligning with Candidate B's artistic background, caf\u00e9 ownership, and focus on sustainability. B's interest in design, art, and child-friendly creative activities (evident in her coffee tutorials, art district visits, and Bossa Nova music preference) directly mirrors the document's priorities. Candidate A's pragmatic, career-focused profile and Candidate C's tech-centric habits lack the artistic and child-centric framing central to the request.",
+    "model": "solar-pro",
+    "prompt_chars": 20111,
+    "latency_sec": 1.45,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4309,
+    "output_tokens": 130,
+    "total_tokens": 4439,
+    "api_response_id": "d3e58be7-cc53-4942-bd29-d01018da6939"
+  },
+  {
+    "run_id": "pilot_task48_User13_seed0",
+    "stage": "search",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User12",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User10",
+      "User13"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document focuses on early childhood development, arts education, music pedagogy (Dalcroze/Orff), and creative art activities (e.g., coffee-grounds crafts). These themes align with Candidate C's profile as a caf\u00e9 owner/entrepreneur with interests in art, design, and child-friendly creative activities. C's consumption of content about art design, entrepreneurship, and hands-on creative processes (e.g., coffee tutorials, short videos on handicrafts) directly mirrors the document's emphasis on integrating art, music, and sensory play into early childhood education. Candidates A (tech-focused) and B (business/management-oriented) lack the artistic and child-centric framing evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 21826,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4772,
+    "output_tokens": 164,
+    "total_tokens": 4936,
+    "api_response_id": "b9e5f00d-b688-40a0-aaf6-22cf0837738f"
+  },
+  {
+    "run_id": "pilot_task48_User13_seed0",
+    "stage": "compress",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User12",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User13",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": false,
+    "reasoning": "The document focuses on early childhood development through arts and music, emphasizing emotional regulation, executive function, and creative self-efficacy for 5-year-olds. Candidate A, a tech professional with a daughter, reads bedtime stories nightly and values family-oriented activities. His interest in child development aligns with the document\u2019s focus on fostering creativity and emotional growth in young children. Candidates B (a coffee entrepreneur) and C (a pragmatic marketer) lack direct ties to early childhood education or parenting priorities, making A the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 24319,
+    "latency_sec": 1.4,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5243,
+    "output_tokens": 127,
+    "total_tokens": 5370,
+    "api_response_id": "65818d3b-1ebe-44b1-9640-020ace3a9cbd"
+  },
+  {
+    "run_id": "pilot_task48_User13_seed0",
+    "stage": "write",
+    "gt_userid": "User13",
+    "candidate_userids": [
+      "User13",
+      "User12",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User13",
+      "User12",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User13",
+    "correct": true,
+    "reasoning": "The document emphasizes art education, caf\u00e9 materials, Shanghai's Haipai culture, and creative integration\u2014aligning with Candidate A's background as a design-artist, boutique caf\u00e9 owner, and interest in eco-friendly art. Her profile highlights art-focused content consumption (e.g., art films, Bossa Nova), use of caf\u00e9 materials for creativity, and Shanghai-centric cultural exploration. Candidates B (tech-focused) and C (business/pragmatic) lack the document's artistic, child-developmental, and culturally localized framing.",
+    "model": "solar-pro",
+    "prompt_chars": 26321,
+    "latency_sec": 1.43,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5645,
+    "output_tokens": 127,
+    "total_tokens": 5772,
+    "api_response_id": "1b5504e9-9f5c-49a3-b6c1-9f728749946e"
+  }
+]

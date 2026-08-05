@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "ablation_identity_only_task7_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate A's background in marketing management and MBA specialization aligns with the document's focus on market research, business strategy, and startup execution. The document emphasizes actionable frameworks, strategic positioning, and financial forecasting\u2014areas where A's experience as a marketing manager and his MBA in marketing/business management directly apply. Additionally, A's pragmatic, data-driven decision-making style and interest in innovative management models mirror the document's emphasis on feasibility assessments, risk management, and scalable business models. Candidates B (data analyst) and C (investment manager) lack the marketing and business strategy focus central to the document's scope.",
+    "model": "solar-pro",
+    "prompt_chars": 24238,
+    "latency_sec": 1.54,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5072,
+    "output_tokens": 145,
+    "total_tokens": 5217,
+    "api_response_id": "20216eaf-77db-455e-8104-db92858c2952"
+  },
+  {
+    "run_id": "ablation_identity_only_task7_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User8",
+    "correct": false,
+    "reasoning": "The document focuses on SaaS unit economics (CAC/LTV), pricing sensitivity (Van Westendorp), and B2C EdTech challenges like negative unit economics from high API costs\u2014topics aligning with Candidate B's role as an investment manager. His financial background, data-driven decision-making, and interest in cost-effectiveness (e.g., second-hand purchases, eco-friendly packaging) directly mirror the document's emphasis on optimizing margins and analyzing economic metrics. Candidates A (data analyst) and C (marketing manager) lack the financial investment lens central to the document's framing.",
+    "model": "solar-pro",
+    "prompt_chars": 25610,
+    "latency_sec": 1.8,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5571,
+    "output_tokens": 138,
+    "total_tokens": 5709,
+    "api_response_id": "77d6fd48-c706-4cdb-859a-933cf774e230"
+  },
+  {
+    "run_id": "ablation_identity_only_task7_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on quantitative market research methodology for university students, emphasizing survey design, statistical analysis (e.g., Cochran\u2019s formula, Van Westendorp PSM), and EdTech product validation. Candidate B, a data analyst with a statistics background, aligns most closely: her expertise in data modeling, use of analytical tools (Python, R, SQL), and interest in market trends and research methodologies directly mirror the document's technical framing. Unlike Candidate A (marketing manager with a broader focus) or Candidate C (investment manager prioritizing financial metrics), Candidate B\u2019s daily work involves designing surveys, analyzing datasets, and interpreting statistical significance\u2014skills central to the document\u2019s content. Her preference for data-driven decision-making and tools like Notion/Trello for task management also align with the structured, methodical approach described.",
+    "model": "solar-pro",
+    "prompt_chars": 28139,
+    "latency_sec": 1.97,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6315,
+    "output_tokens": 189,
+    "total_tokens": 6504,
+    "api_response_id": "eb11c7e2-8ddf-4483-8e05-76166b307e75"
+  },
+  {
+    "run_id": "ablation_identity_only_task7_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User8"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User8",
+    "correct": false,
+    "reasoning": "The document focuses on rigorous market research methodology, statistical analysis, and feature trade-off modeling for an AI-powered higher education platform. Candidate C, an investment manager with a finance background, aligns most closely with this analytical, data-driven framing. His meticulous personality, preference for cost-effectiveness, and focus on data analysis (evident in his use of financial apps, market analysis habits, and decision-making style) mirror the document's emphasis on quantitative research, price sensitivity modeling, and feature prioritization. Unlike Candidates A (data analyst with a broader interest in sustainability) and B (marketing manager with family-oriented priorities), Candidate C's professional and personal traits directly reflect the document's technical, research-oriented perspective.",
+    "model": "solar-pro",
+    "prompt_chars": 30141,
+    "latency_sec": 1.86,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6619,
+    "output_tokens": 163,
+    "total_tokens": 6782,
+    "api_response_id": "5eb3296a-2c61-4455-9e7f-3ebdaa4b1d76"
+  }
+]

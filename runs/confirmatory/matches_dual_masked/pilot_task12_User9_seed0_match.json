@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User14",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "Candidate A aligns most closely with the document's focus on emotional management, self-awareness, and structured daily routines (7:00\u20139:00 AM). The request emphasizes integrating practices like meditation, journaling, and yoga\u2014all explicitly mentioned in A's exercise habits (yoga, Pilates) and morning routine. A's low stress tolerance and need for emotional support further match the document's emphasis on anxiety reduction. While B and C also engage in wellness activities, B prioritizes evening creativity and A's morning time preference directly mirrors the document's timing focus. C's rational, tech-oriented profile lacks the emotional/psychological depth central to the request.",
+    "model": "solar-pro",
+    "prompt_chars": 18343,
+    "latency_sec": 1.8,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 3999,
+    "output_tokens": 158,
+    "total_tokens": 4157,
+    "api_response_id": "b0e20172-4310-4416-90e3-d54cdd9857d8"
+  },
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User9",
+      "User11"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on mental health, emotion regulation, and mindfulness practices (e.g., MBSR courses, DBT worksheets, and books like 'Permission to Feel' and 'Feeling Good'). Candidate B aligns most closely with these themes: her content preferences include mental health articles, she uses emotion-tracking methods (screenshots of inspiration/creative ideas), and her recent interest in documentaries and travel-themed films suggests an openness to psychological and reflective content. Additionally, her low stress tolerance and need for emotional support align with the document's emphasis on managing mental distress. Candidates A and C, while interested in psychology and non-fiction, prioritize art/creativity (A) and technology/data-driven topics (C), making B the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 20136,
+    "latency_sec": 1.71,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4646,
+    "output_tokens": 176,
+    "total_tokens": 4822,
+    "api_response_id": "d524770b-27eb-4314-99e5-79e894598d8b"
+  },
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User14",
+      "User9"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "The document focuses on emotional regulation, workplace stress management, and evidence-based psychological techniques (e.g., RULER Framework, DBT skills, CBT) framed for professionals. Candidate A's profile aligns best: they are a tech-oriented professional with high work stress, rational decision-making, and interest in self-improvement (e.g., exercise for stress relief, reading books like *Sapiens* that blend science and human behavior). The document's emphasis on structured, logic-driven emotional strategies (e.g., 'Opposite Action,' 'Cognitive Reframing') matches A's preference for data-driven reasoning and cost-effective solutions. Candidates B and C, while interested in mental well-being, prioritize artistic/creative or social-emotional approaches (e.g., B's focus on intuition, C's impulsivity and interest in documentaries), which diverge from the document's clinical, workplace-centric framing.",
+    "model": "solar-pro",
+    "prompt_chars": 23054,
+    "latency_sec": 2.0,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5308,
+    "output_tokens": 210,
+    "total_tokens": 5518,
+    "api_response_id": "ae565643-6ed4-464a-805b-dc19abb7e98e"
+  },
+  {
+    "run_id": "pilot_task12_User9_seed0",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User14",
+      "User11"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User11",
+    "correct": false,
+    "reasoning": "The document focuses on emotional regulation, self-awareness, and psychological resilience tailored for high-pressure corporate environments, particularly in internet product operations. Candidate C, a tech-oriented professional (using PyCharm, TensorFlow, active on GitHub/Zhihu), aligns with this context through their role in fast-paced, decision-heavy operational roles. The document's emphasis on structured self-reflection, cognitive restructuring, and stress management directly addresses Candidate C's traits: calm/rational personality, work stress mitigation via exercise/music, and interest in mental health (evidenced by Xiaohongshu usage for lifestyle suggestions). Unlike Candidates A (creative/artistic focus) and B (artistic/design-oriented), Candidate C's tech background, logical decision-making style, and interest in evidence-based self-improvement (e.g., algorithmic thinking) match the document's framing of emotional regulation as a systematic skill for operational excellence.",
+    "model": "solar-pro",
+    "prompt_chars": 25056,
+    "latency_sec": 1.95,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5616,
+    "output_tokens": 213,
+    "total_tokens": 5829,
+    "api_response_id": "879d43d8-e58a-44e2-a403-0468684d7880"
+  }
+]

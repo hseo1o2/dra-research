@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task22_User18_seed1",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document's focus on conservative risk profiles, long-term retirement planning with annuity/medical integration, and Shanghai-based data analyst background aligns most closely with Candidate B. Key matches include: (1) B's identical occupation (data analyst), age (25-30), gender (female), and Shanghai residence; (2) B's conservative financial habits (debt-free, high savings, systematic investments) mirror the document's emphasis on low-risk strategies; (3) B's meticulous data-driven decision-making style matches the document's structured, multi-pillar analytical approach. Candidate A (male investment manager) and C (married father in marketing) lack the document's specific demographic and risk-profile alignment.",
+    "model": "solar-pro",
+    "prompt_chars": 24330,
+    "latency_sec": 1.67,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5124,
+    "output_tokens": 166,
+    "total_tokens": 5290,
+    "api_response_id": "5c065c9d-c9c8-4515-aa24-296f5e26079f"
+  },
+  {
+    "run_id": "pilot_task22_User18_seed1",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User8",
+    "correct": false,
+    "reasoning": "Candidate A, an investment manager with a finance background, aligns most closely with the document's focus on Chinese pension policies, commercial annuity rates (2.5%), and retirement planning benchmarks. The document emphasizes financial metrics (IRR, pre-defined interest rates, pension replacement rates) and regulatory changes\u2014topics directly relevant to A's role in securities and his habit of analyzing financial data. Unlike B (data analyst) or C (marketing manager), A's expertise in finance, preference for cost-effective investments, and interest in long-term planning (e.g., retirement age reforms) make him the most likely audience. The document\u2019s technical framing (e.g., '\u9884\u5b9a\u5229\u7387', '\u5185\u90e8\u6536\u76ca\u7387') matches A's analytical style and professional focus.",
+    "model": "solar-pro",
+    "prompt_chars": 24352,
+    "latency_sec": 2.26,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6115,
+    "output_tokens": 178,
+    "total_tokens": 6293,
+    "api_response_id": "0a1ac917-aae8-4066-aacc-2b1b1263ca08"
+  },
+  {
+    "run_id": "pilot_task22_User18_seed1",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on conservative financial planning, insurance products (e.g., annuities, medical coverage), and tax-efficient retirement strategies tailored to a young professional in Shanghai. Candidate C, a 25\u201330-year-old female data analyst, aligns perfectly: her occupation matches the document's audience, her age fits the 'conservative young professional' framing, and her rational, detail-oriented personality (evident in her data-driven decision-making and preference for long-term value) mirrors the document's emphasis on structured savings, tax optimization, and risk-averse insurance products. The document's focus on Shanghai-specific policies (e.g., '\u6caa\u60e0\u4fdd') and her residence in Shanghai further confirm this match. Candidates A and B, while financially aware, are older, married, or in roles (marketing manager/investment manager) less directly tied to the document's core themes of personal retirement planning and conservative risk management.",
+    "model": "solar-pro",
+    "prompt_chars": 28126,
+    "latency_sec": 2.05,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6562,
+    "output_tokens": 213,
+    "total_tokens": 6775,
+    "api_response_id": "65370408-e598-464d-9219-13380b636781"
+  },
+  {
+    "run_id": "pilot_task22_User18_seed1",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User8"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document explicitly targets a 25\u201330-year-old female data analyst in Shanghai with a conservative risk appetite, statistical background, and specific financial profile (debt-free, owning assets, high savings). Candidate B matches all these attributes: female data analyst (25-30), Shanghai-based, statistics graduate, and exhibits conservative financial behavior (rational spending, long-term value focus). The report's emphasis on tax-efficient pension accounts, low-risk annuities, and health protections aligns with her meticulous, data-driven personality and career-oriented goals. Candidates A (male marketing manager, family-focused) and C (investment manager, higher-risk tolerance implied) lack the direct demographic and professional alignment.",
+    "model": "solar-pro",
+    "prompt_chars": 30128,
+    "latency_sec": 1.91,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6737,
+    "output_tokens": 167,
+    "total_tokens": 6904,
+    "api_response_id": "81dddc88-f1d6-424c-bbf7-7f48a0eef488"
+  }
+]

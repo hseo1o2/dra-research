@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "ablation_actionable_only_task22_User18_seed0",
+    "stage": "plan",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate A (Liu Qiang) is a Shanghai-based internet industry professional with a conservative investment style, high savings rate, and family-oriented priorities, aligning with the document's focus on low-risk retirement planning, annuity integration, and long-term care. The document's emphasis on Shanghai-specific products, family-centric financial security, and pragmatic allocation strategies mirrors A's pragmatic personality, family responsibilities (married with children), and preference for quality-of-life investments. Candidates B (single, high-risk finance role) and C (younger, single data analyst with tech/environmental interests) lack the document's mature family context and conservative risk profile.",
+    "model": "solar-pro",
+    "prompt_chars": 24117,
+    "latency_sec": 2.83,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5047,
+    "output_tokens": 148,
+    "total_tokens": 5195,
+    "api_response_id": "c3aa08a9-b58c-4df1-990c-0491849aa936"
+  },
+  {
+    "run_id": "ablation_actionable_only_task22_User18_seed0",
+    "stage": "search",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate A (Liu Qiang) is a 30-35-year-old marketing manager with a family in Shanghai, focusing on long-term financial planning, insurance products, and retirement strategies. The document excerpts emphasize commercial annuities, life insurance, Shanghai's healthcare policies (Huhuibao), and long-term care insurance (Changhu Bao), all aligning with his role as a breadwinner prioritizing family security, tax-advantaged retirement planning, and healthcare coverage. His MBA background and pragmatic decision-making style also match the document's focus on product analysis, risk management, and cost-effectiveness. Candidates B (investment manager) and C (data analyst) lack the family-centric financial planning and insurance product focus evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 25067,
+    "latency_sec": 3.03,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5933,
+    "output_tokens": 177,
+    "total_tokens": 6110,
+    "api_response_id": "e8a2da88-078f-4e6e-9506-26055c181645"
+  },
+  {
+    "run_id": "ablation_actionable_only_task22_User18_seed0",
+    "stage": "compress",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User8",
+    "correct": false,
+    "reasoning": "The document focuses on insurance annuities, pension products, and financial regulations\u2014topics directly aligned with Candidate A's role as an investment manager at a securities company. His background in finance, frequent use of financial apps (Xueqiu, Tonghuashun), and interest in market trends and data analysis make him the most likely audience. The document's technical depth, regulatory focus, and emphasis on asset-savvy strategies reflect A's meticulous, data-driven decision-making style. Candidates B (marketing manager) and C (data analyst) lack the same domain-specific focus on insurance/pension products and regulatory frameworks.",
+    "model": "solar-pro",
+    "prompt_chars": 28139,
+    "latency_sec": 2.92,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6381,
+    "output_tokens": 148,
+    "total_tokens": 6529,
+    "api_response_id": "5f49b63b-74f4-41a5-8680-f1158d094590"
+  },
+  {
+    "run_id": "ablation_actionable_only_task22_User18_seed0",
+    "stage": "write",
+    "gt_userid": "User18",
+    "candidate_userids": [
+      "User18",
+      "User8",
+      "User10"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User8",
+      "User18"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User18",
+    "correct": true,
+    "reasoning": "The document focuses on a Shanghai-based internet data analyst with a conservative risk profile, emphasizing capital preservation, fixed-income products, and structured retirement planning. Candidate C is a data analyst in Shanghai, shares the same occupation, and exhibits a data-driven, meticulous personality aligned with the document's quantitative and disciplined approach. Unlike Candidates A (marketing manager) and B (investment manager), Candidate C's background, financial prudence, and focus on low-risk, long-term planning (e.g., certifications, retirement savings) directly mirror the document's priorities. Her independent decision-making and preference for factual evidence also align with the report's emphasis on structured, evidence-based strategies.",
+    "model": "solar-pro",
+    "prompt_chars": 30141,
+    "latency_sec": 2.71,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6591,
+    "output_tokens": 158,
+    "total_tokens": 6749,
+    "api_response_id": "adb99f88-8ae0-4c40-ad9d-cd0e73fe0de9"
+  }
+]

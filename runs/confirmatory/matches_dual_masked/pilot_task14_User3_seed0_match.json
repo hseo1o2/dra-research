@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task14_User3_seed0",
+    "stage": "plan",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User3",
+      "User1",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User1",
+      "User3",
+      "User5"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User3",
+    "correct": true,
+    "reasoning": "The document's focus on a beginner runner with a tight academic schedule, budget-friendly needs, and preference for campus-based training aligns most closely with Candidate B. While all candidates are students, Candidate B's emphasis on cost-effectiveness, use of campus facilities (e.g., ping-pong hall), and preference for simple, sustainable exercise routines (jogging, ping-pong) mirror the document's priorities. Unlike Candidate A (tech-focused, gym memberships) or Candidate C (cycling, academic conferences), Candidate B's exercise habits, budget-conscious behavior, and campus-centric lifestyle directly match the document's requirements for a structured yet flexible, low-cost marathon plan tailored to a novice runner.",
+    "model": "solar-pro",
+    "prompt_chars": 17745,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 3860,
+    "output_tokens": 161,
+    "total_tokens": 4021,
+    "api_response_id": "b6e179bc-0232-416f-b33d-8fab50296c2b"
+  },
+  {
+    "run_id": "pilot_task14_User3_seed0",
+    "stage": "search",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User3",
+      "User1",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User1",
+      "User5",
+      "User3"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User1",
+    "correct": false,
+    "reasoning": "The document focuses on beginner marathon training, dynamic warm-up routines, run/walk ratios, and budget-friendly electrolyte recipes\u2014topics aligned with Candidate A's exercise habits (jogging, yoga) and cost-conscious approach to fitness (e.g., homemade electrolyte drinks). Candidate A also prioritizes practicality and cost-effectiveness in purchases, matching the document's emphasis on budget-friendly solutions. While Candidates B and C engage in physical activity, their exercise preferences (cycling, ping-pong) and content interests (academic/technical) do not align as closely with the document's marathon-running and budget-conscious fitness framing.",
+    "model": "solar-pro",
+    "prompt_chars": 18889,
+    "latency_sec": 1.56,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4264,
+    "output_tokens": 148,
+    "total_tokens": 4412,
+    "api_response_id": "f2dddcf1-98aa-4fef-97ad-2447839a7eaa"
+  },
+  {
+    "run_id": "pilot_task14_User3_seed0",
+    "stage": "compress",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User3",
+      "User1",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User1",
+      "User3"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User3",
+    "correct": true,
+    "reasoning": "The document focuses on a budget-friendly, structured 12-week beginner marathon training plan with an emphasis on injury prevention, cost-effective nutrition, and gradual progression. Candidate C aligns best due to their rational spending habits, preference for cost-effective products (especially study-related), and interest in mechanical tools/processes (mirrored in the document's methodical training framework). Unlike A (cycling-focused) or B (tech/AI-oriented), C's exercise habits (jogging, ping-pong) and stress-relief goals through exercise directly parallel the document's audience. Additionally, C's meticulous planning style and budget-consciousness match the document's emphasis on safe, affordable training.",
+    "model": "solar-pro",
+    "prompt_chars": 22543,
+    "latency_sec": 1.81,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5502,
+    "output_tokens": 161,
+    "total_tokens": 5663,
+    "api_response_id": "038f7f4a-2d9d-41a6-9e2c-f33eb77dc80a"
+  },
+  {
+    "run_id": "pilot_task14_User3_seed0",
+    "stage": "write",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User3",
+      "User1",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User3",
+      "User5",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User3",
+    "correct": true,
+    "reasoning": "The document emphasizes a 12-week marathon training program tailored for an undergraduate student balancing classes, lab work, and campus life. It prioritizes injury prevention, time-efficient workouts (30\u201360 minutes on weekdays), and flexibility around academic commitments. Candidate A's profile aligns most closely: they are a diligent undergraduate with a structured daily routine (7 AM\u201311 PM), frequent campus mobility (lab/library/botanical garden), and stress-relief exercise habits (jogging, ping-pong). The program's focus on conservative mileage progression, cutback weeks, and campus-friendly activities (e.g., botanical garden runs) matches A's time constraints and preference for cost-effective, practical solutions. Candidates B and C, while academically focused, prioritize cycling/badminton and tech-intensive hobbies, respectively, which lack the direct connection to the document's running-centric, injury-aware framework.",
+    "model": "solar-pro",
+    "prompt_chars": 24545,
+    "latency_sec": 2.06,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6053,
+    "output_tokens": 213,
+    "total_tokens": 6266,
+    "api_response_id": "8906bf97-bec6-4e8c-961a-6bf6c0da377c"
+  }
+]

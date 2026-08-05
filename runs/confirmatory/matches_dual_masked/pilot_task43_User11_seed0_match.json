@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task43_User11_seed0",
+    "stage": "plan",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User11"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User11",
+    "correct": true,
+    "reasoning": "The document focuses on legal analysis of non-compete clauses for a technical specialist, emphasizing statutory conditions, compensation disputes, and case law in the IT/tech industry. Candidate C is a tech professional (using PyCharm, TensorFlow, GitHub) with a background in algorithms and programming, aligning with the document's technical context. Their interest in legal/technical intersections (e.g., AI applications in social fields) and rational, detail-oriented personality matches the document's analytical and precise framing. Candidates A (marketing-focused) and B (data analysis) lack the specific tech-industry and legal nuance central to the query.",
+    "model": "solar-pro",
+    "prompt_chars": 19414,
+    "latency_sec": 1.91,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4245,
+    "output_tokens": 149,
+    "total_tokens": 4394,
+    "api_response_id": "4caf497b-149d-46a9-a5a6-79631d747011"
+  },
+  {
+    "run_id": "pilot_task43_User11_seed0",
+    "stage": "search",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User10",
+      "User18"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on legal and regulatory aspects of non-compete clauses, compensation standards, and judicial interpretations\u2014topics aligned with Candidate B's profile as a pragmatic, detail-oriented professional with a focus on compliance, career development, and industry analysis. Candidate B's preference for in-depth case studies, market trends, and management models (e.g., Harvard Business Review articles) reflects the document's emphasis on legal frameworks and compensation guidelines. Additionally, B's role in business trips, client meetings, and interest in cost-effectiveness aligns with the document's practical, regulation-driven content. Candidates A (tech-focused) and C (data/analysis-focused) lack the direct connection to labor law, compliance, and business-oriented framing evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 20280,
+    "latency_sec": 1.67,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5318,
+    "output_tokens": 169,
+    "total_tokens": 5487,
+    "api_response_id": "b56b93eb-6005-4d32-a23c-ec22aaf621a3"
+  },
+  {
+    "run_id": "pilot_task43_User11_seed0",
+    "stage": "compress",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User18",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User11",
+    "correct": true,
+    "reasoning": "The document focuses on legal nuances of non-compete agreements for tech professionals, particularly algorithm engineers, with technical vocabulary (e.g., 'proprietary source code', 'machine learning algorithms') and case law analysis. Candidate A's profile aligns most closely: they are an algorithm engineer using tools like TensorFlow, active in technical forums (Zhihu/GitHub), and prioritize AI/tech content. Their interest in 'applications of AI in social fields' and consumption habits (tech gadgets, online learning) reflect the document's tech-centric framing. Candidates B (data analysis focus) and C (business/management orientation) lack the document's deep technical and legal specificity for algorithm engineers.",
+    "model": "solar-pro",
+    "prompt_chars": 23912,
+    "latency_sec": 1.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5543,
+    "output_tokens": 165,
+    "total_tokens": 5708,
+    "api_response_id": "8bb5ebaa-67a7-406c-8462-7027f82aa910"
+  },
+  {
+    "run_id": "pilot_task43_User11_seed0",
+    "stage": "write",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User18"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User11"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User11",
+    "correct": true,
+    "reasoning": "The document focuses on PRC labor law regarding non-compete agreements for technical personnel, emphasizing legal nuances around trade secrets, technical roles, and enforceability. Candidate C's profile aligns most closely: they are a technical professional (using PyCharm, TensorFlow, GitHub) with a focus on AI/tech, legal compliance (e.g., non-compete clauses), and detailed analysis. Their interests in technology, logical reasoning, and legal/ethical considerations in tech mirror the document's framing. Candidates A (marketing/management focus) and B (data analysis/environmental interests) lack the technical depth and legal context central to the excerpt.",
+    "model": "solar-pro",
+    "prompt_chars": 25914,
+    "latency_sec": 1.97,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5688,
+    "output_tokens": 153,
+    "total_tokens": 5841,
+    "api_response_id": "e318c32b-dd2b-43d4-998e-0a59584c4055"
+  }
+]

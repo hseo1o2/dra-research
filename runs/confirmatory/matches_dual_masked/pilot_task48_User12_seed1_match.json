@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task48_User12_seed1",
+    "stage": "plan",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on a structured, multi-disciplinary art education plan for a 5-year-old. Key indicators include A's emphasis on family time (e.g., bedtime stories, weekend activities), interest in eco-friendly products (matching the document's requirement for non-toxic materials), and prioritization of creativity (evident in his tech/art crossover interests like Liu Cixin's sci-fi novels and Hans Zimmer's music). Additionally, A's morning creativity preference and data-driven decision-making style align with the document's structured, research-backed approach. Candidate B and C lack the same depth of family-centric creative engagement or eco-conscious framing.",
+    "model": "solar-pro",
+    "prompt_chars": 20236,
+    "latency_sec": 1.59,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4347,
+    "output_tokens": 161,
+    "total_tokens": 4508,
+    "api_response_id": "10302d54-d378-491e-b3d1-a1e40486ace8"
+  },
+  {
+    "run_id": "pilot_task48_User12_seed1",
+    "stage": "search",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User10",
+      "User12"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on early childhood art education, Reggio Emilia-inspired multidisciplinary curricula, and integrated creative development for 5-year-olds. Candidate B's profile aligns most closely: they prioritize children's education (e.g., investing in extracurricular classes), value holistic development (evident in their interest in art, music, and movement integration), and emphasize quality educational experiences (reflected in their preference for high-end learning resources and curated environments). Unlike Candidate A (focused on practicality and family bonding) or Candidate C (tech-oriented with less emphasis on early childhood pedagogy), Candidate B's interest in Reggio Emilia, Orff Schulwerk, and multidisciplinary art curricula directly mirrors the document's framing and priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 22206,
+    "latency_sec": 1.65,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4996,
+    "output_tokens": 167,
+    "total_tokens": 5163,
+    "api_response_id": "7e2245ad-804b-4fd7-84c7-b47f9ab2a574"
+  },
+  {
+    "run_id": "pilot_task48_User12_seed1",
+    "stage": "compress",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on early childhood art, music, and movement pedagogy, emphasizing developmental benefits (emotional expression, cognitive skills, self-confidence) for 5-year-olds. Candidate B's profile highlights a strong interest in education (e.g., investing in children's extracurricular classes, saving articles on management and innovation), a preference for in-depth analysis, and a family-oriented approach to travel and activities. While Candidate A has a daughter, his interests skew toward tech and fitness, with no explicit focus on child development. Candidate C\u2019s interests in photography and practical hobbies lack the pedagogical depth reflected in the document. Candidate B\u2019s rational, detail-oriented personality and emphasis on quality education align most closely with the document\u2019s structured, research-backed analysis of developmental strategies for young children.",
+    "model": "solar-pro",
+    "prompt_chars": 24751,
+    "latency_sec": 1.74,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5513,
+    "output_tokens": 180,
+    "total_tokens": 5693,
+    "api_response_id": "c1225abd-a0e6-43e3-9b17-1a4466493f85"
+  },
+  {
+    "run_id": "pilot_task48_User12_seed1",
+    "stage": "write",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User16",
+      "User12"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on early childhood development through multidisciplinary arts, emphasizing pedagogy, developmental psychology, and structured creative environments. Candidate C, a tech entrepreneur with a daughter, aligns best: his offline behavior includes bedtime stories, his consumption prioritizes children's education, and his interest in Montessori/Reggio-inspired environments (via eco-friendly smart homes) matches the document's emphasis on child-centered learning. Unlike A (career-focused) and B (practical hobbies), C's blend of technical rationality and family-oriented creativity mirrors the document's balance of developmental theory and hands-on application.",
+    "model": "solar-pro",
+    "prompt_chars": 26753,
+    "latency_sec": 2.03,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5803,
+    "output_tokens": 143,
+    "total_tokens": 5946,
+    "api_response_id": "ea7084f5-5c35-438f-820b-ccbb110acd27"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task12_User2_seed1",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on psychology, emotional regulation, and structured self-study. The document emphasizes academic rigor, mindfulness, and practical strategies\u2014mirroring A's psychology-focused learning habits, use of platforms like Coursera, and interest in emotional communication. A's background in psychology, cost-effective budgeting for books, and daily routine (morning study, evening reading) directly match the document's requirements. Unlike B (focused on social issues/tech) and C (tech/AI-centric), A's persona reflects the document's clinical and self-help orientation, including journaling, emotional trigger logs, and psychology-based resources.",
+    "model": "solar-pro",
+    "prompt_chars": 17883,
+    "latency_sec": 1.64,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 3900,
+    "output_tokens": 159,
+    "total_tokens": 4059,
+    "api_response_id": "7af960de-07a4-4a06-8e5c-0b2eb859b507"
+  },
+  {
+    "run_id": "pilot_task12_User2_seed1",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on evidence-based therapeutic techniques (DBT, ACT, CBT) and structured training materials, aligning with Candidate B's psychology-centric interests. B's frequent engagement with psychology forums, online courses, and academic resources (e.g., Coursera, Zhihu Psychology) directly matches the document's emphasis on therapeutic manuals, ACT/DBT training, and thought records. Unlike A (communication studies/social issues) or C (AI/tech), B's consumption of psychology books, participation in counseling-related activities, and interest in emotional communication tools (e.g., thought records) make her the most likely audience for this content. The document's framing as a professional training resource also aligns with B's use of digital tools for academic learning and cloud-based note-taking.",
+    "model": "solar-pro",
+    "prompt_chars": 19912,
+    "latency_sec": 1.73,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4577,
+    "output_tokens": 182,
+    "total_tokens": 4759,
+    "api_response_id": "f737ff63-aa6c-468b-a34c-c6cf9333f9f0"
+  },
+  {
+    "run_id": "pilot_task12_User2_seed1",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User7",
+    "correct": false,
+    "reasoning": "The document focuses on evidence-based psychological therapies (DBT, ACT, CBT, transdiagnostic protocols) with a clinical, research-oriented framing, emphasizing theoretical foundations, empirical data, and structured interventions. Candidate B aligns best: they prioritize academic rigor (uses Python for research, follows experts on Zhihu/Weibo), values data-driven decision-making, and engages deeply with theoretical content (saves academic resources, enjoys non-fiction/sociology books). Their interest in communication studies and analytical thinking mirrors the document's focus on therapeutic frameworks. Candidate A's focus on practical psychology apps and pet care, and Candidate C's tech/AI focus, are less relevant to the clinical-psychology depth of the document.",
+    "model": "solar-pro",
+    "prompt_chars": 22737,
+    "latency_sec": 1.86,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5282,
+    "output_tokens": 167,
+    "total_tokens": 5449,
+    "api_response_id": "cd1e86df-19e8-4e00-83cd-ed79aabb45e3"
+  },
+  {
+    "run_id": "pilot_task12_User2_seed1",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User1",
+      "User7",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on clinical psychology, emotional regulation, and self-awareness through structured therapeutic modalities (DBT, ACT, CBT, MBCT, etc.). Candidate C's profile aligns most closely: they use psychology-learning apps, participate in psychology forums, study emotional communication, and prioritize psychology-related content (books, articles, videos). Their academic interests, consumption habits (psychology books/exhibitions), and self-study routines mirror the document's clinical and introspective focus. Candidates A (tech-focused) and B (sociology/natural-scenes interests) lack this direct engagement with therapeutic frameworks or emotional regulation science.",
+    "model": "solar-pro",
+    "prompt_chars": 24739,
+    "latency_sec": 1.72,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5646,
+    "output_tokens": 151,
+    "total_tokens": 5797,
+    "api_response_id": "08029c22-411f-41e1-be1c-46794d24f574"
+  }
+]

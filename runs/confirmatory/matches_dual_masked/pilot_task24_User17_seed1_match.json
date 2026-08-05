@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task24_User17_seed1",
+    "stage": "plan",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User17",
+    "correct": true,
+    "reasoning": "The document focuses on seaside home insurance with specific concerns about natural disasters (typhoons, flooding), household belongings (\u00a5300k), and value-added services like loss prevention guidance. Candidate A's profile aligns most closely: she owns a seaside property, prioritizes family/pet safety, and values detailed research on practical coverage (e.g., theft, accidental damage). Her interest in home safety (e.g., pet-friendly outdoor activities, community square usage) and rational consumption habits match the document's emphasis on cost-effectiveness and risk mitigation. Candidates B and C, while detail-oriented, focus more on investment/tech (B) or business/management (C), which are less relevant to the domestic, family-centric insurance needs described.",
+    "model": "solar-pro",
+    "prompt_chars": 18943,
+    "latency_sec": 1.79,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4218,
+    "output_tokens": 175,
+    "total_tokens": 4393,
+    "api_response_id": "b7058113-85fe-4080-af33-1b95b7f1a18c"
+  },
+  {
+    "run_id": "pilot_task24_User17_seed1",
+    "stage": "search",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on high-value home insurance products (e.g., 300\u4e07\u623f\u5c4b\u4fdd\u969c, 100\u4e07\u5ba4\u5185\u8d22\u4ea7) with detailed coverage comparisons, cost-benefit analysis, and technical terms like '\u6298\u65e7\u7387' and '\u91cd\u7f6e\u4ef7\u503c'. This aligns with Candidate B's pragmatic, data-driven decision-making style, interest in cost-effectiveness, and focus on high-end durable household items. Unlike Candidate A (pet/nursing focus) or C (photography/hiking hobbies), B's emphasis on financial planning, market analysis, and rational consumption matches the document's insurance product evaluation framework and technical framing.",
+    "model": "solar-pro",
+    "prompt_chars": 18533,
+    "latency_sec": 1.59,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5229,
+    "output_tokens": 153,
+    "total_tokens": 5382,
+    "api_response_id": "9130e83c-2d11-4116-9362-c3d5526017b7"
+  },
+  {
+    "run_id": "pilot_task24_User17_seed1",
+    "stage": "compress",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User17",
+      "User16"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on high-end home insurance products with premium coverage tiers (\u00a5300,000\u2013\u00a510,400,000), emphasizing structural protection, indoor property valuation, and disaster add-ons (typhoons, earthquakes). Candidate A's profile aligns with this through their preference for high-end durable household items, cost-effectiveness in quality purchases, and ownership of a high-value home (implied by \u00a53M valuation examples). Their pragmatic, data-driven decision-making style matches the document's detailed coverage comparisons, while their focus on family safety (e.g., children's education, home investments) aligns with the insurance's comprehensive risk mitigation framing. Candidates B and C lack the explicit focus on high-value property ownership or insurance prioritization seen in A's consumption characteristics.",
+    "model": "solar-pro",
+    "prompt_chars": 22716,
+    "latency_sec": 2.12,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6616,
+    "output_tokens": 187,
+    "total_tokens": 6803,
+    "api_response_id": "40404eed-9541-4b5b-a7a7-72db0c98faef"
+  },
+  {
+    "run_id": "pilot_task24_User17_seed1",
+    "stage": "write",
+    "gt_userid": "User17",
+    "candidate_userids": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User17",
+      "User10",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on a highly structured, data-driven analysis of insurance options for a high-value coastal property, emphasizing risk assessment, cost-benefit comparisons, and technical details like depreciation calculations and exclusion clauses. This aligns with Candidate B's pragmatic, detail-oriented personality and preference for rational, cost-effective decision-making. The document's formal tone, emphasis on financial planning, and inclusion of matrices for comparing insurance plans reflect B's professional background in business/management and his habit of analyzing market trends. Unlike Candidate A (focused on family/pet care) or Candidate C (interested in photography/hobbies), B's priorities around durable household investments, quarterly budgeting, and data-driven decision-making directly match the document's framing as a technical financial assessment for a high-value asset.",
+    "model": "solar-pro",
+    "prompt_chars": 24718,
+    "latency_sec": 2.1,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 9456,
+    "output_tokens": 179,
+    "total_tokens": 9635,
+    "api_response_id": "d16827de-70a8-4bfe-a238-d4837173d14a"
+  }
+]

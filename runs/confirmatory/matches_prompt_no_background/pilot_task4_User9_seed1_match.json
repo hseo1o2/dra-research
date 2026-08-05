@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task4_User9_seed1",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document's focus on career competitiveness, MBA/EMBA evaluations, and balancing work/study aligns with Candidate A's profile as a young Product Operations professional seeking to enhance her career in Beijing's internet sector. The emphasis on part-time/hybrid formats, brand influence, and low-risk tolerance matches her early-career stage, harmonious family expectations, and preference for stable job progression. Candidate B (tech-focused engineer) and C (environmental student) lack the document's operational/business education focus and career-stage context.",
+    "model": "solar-pro",
+    "prompt_chars": 23874,
+    "latency_sec": 1.87,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5025,
+    "output_tokens": 129,
+    "total_tokens": 5154,
+    "api_response_id": "f03ce153-ad1e-4418-ab1d-1c4d8e79f687"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed1",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User9",
+      "User6"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on MBA admissions (work experience requirements, GRK exams, tuition fees) and the value of MBAs for career advancement in '\u5927\u5382' (large tech firms) as product managers, including salary increases and recognition. Candidate B, a product operations professional at an internet company, aligns with this focus: her role, interest in career development, and queries about MBA recognition in tech firms (e.g., '\u5927\u5382' PM salaries) match the document's emphasis on MBAs as a career accelerator in tech. Candidates A (algorithm engineer) and C (environmental student) lack direct relevance to product management or MBA career framing.",
+    "model": "solar-pro",
+    "prompt_chars": 24363,
+    "latency_sec": 1.87,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5613,
+    "output_tokens": 154,
+    "total_tokens": 5767,
+    "api_response_id": "23c785be-7612-402f-8e99-75b6963b2a03"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed1",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User6",
+      "User11",
+      "User9"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on a candidate with 1\u20133 years of experience in internet product operations, an Advertising major with a Psychology minor from Communication University of China, and a gap in quantitative skills. Candidate C matches these attributes exactly: she is 22\u201325, works in product operations, studied Advertising (New Media Communication) with a Psychology minor at Communication University, and lacks formal technical training. The document\u2019s emphasis on balancing human-centric skills with technical skill gaps aligns with her profile, while Candidates A (Environmental Studies student) and B (Algorithm Engineer) do not match the academic, professional, or skill-gap context.",
+    "model": "solar-pro",
+    "prompt_chars": 27806,
+    "latency_sec": 2.08,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6073,
+    "output_tokens": 153,
+    "total_tokens": 6226,
+    "api_response_id": "e50558f2-42d4-467f-bbdf-37402a4def83"
+  },
+  {
+    "run_id": "pilot_task4_User9_seed1",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User6"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User6",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on Zhao Li, a 22\u201325-year-old Product Operations professional with an Advertising background, low risk tolerance, and constraints like a full-time job in Beijing. Candidate A matches this profile exactly in age, occupation, educational background (Advertising/Psychology), and behavioral traits (low stress tolerance, reliance on others for major decisions). The report's emphasis on balancing academic rigor, financial risk, and career growth in tech aligns with Candidate A's pragmatic shopping preferences, health-conscious lifestyle, and focus on skill development (e.g., data analytics). Candidate B (Environmental Studies student) and Candidate C (Algorithm Engineer) do not match the document's context, which targets an early-career Product Operations professional, not a student or technical engineer.",
+    "model": "solar-pro",
+    "prompt_chars": 29808,
+    "latency_sec": 2.3,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6317,
+    "output_tokens": 180,
+    "total_tokens": 6497,
+    "api_response_id": "089873bb-6a8e-426b-96a8-1bca94bc5b25"
+  }
+]

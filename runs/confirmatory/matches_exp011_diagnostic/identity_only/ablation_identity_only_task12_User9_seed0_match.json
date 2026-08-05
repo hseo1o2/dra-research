@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "ablation_identity_only_task12_User9_seed0",
+    "stage": "plan",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User14",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "Candidate A (Zhao Li) is a 22-25-year-old female in Product Operations with a New Media Communication major and Psychology minor, aligning perfectly with the document's author profile. The document's focus on emotional regulation, self-awareness, and practical strategies (e.g., journaling, trigger tracking) matches her low stress tolerance and need for emotional support. Her creative interests (art, social media sharing) and morning routine (exercise/meditation) align with the request for actionable daily routines. Unlike Candidates B (male illustrator) and C (male engineer), her background, gender, occupation, and psychological interests directly mirror the document's framing and priorities.",
+    "model": "solar-pro",
+    "prompt_chars": 23166,
+    "latency_sec": 1.68,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4872,
+    "output_tokens": 161,
+    "total_tokens": 5033,
+    "api_response_id": "92ffa57e-0eff-4aa1-8915-3e9460ac5dd9"
+  },
+  {
+    "run_id": "ablation_identity_only_task12_User9_seed0",
+    "stage": "search",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User14",
+      "User9",
+      "User11"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document focuses on evidence-based therapeutic workbooks (CBT/DBT), mindfulness programs (MBSR), and structured psychological tools (7-column thought records). Candidate B, with a psychology minor and interest in mental health articles, aligns best. Her social media behavior (sharing art/creative content) and consumption of mental health/wellness content reflect the document's therapeutic and self-improvement framing. Candidates A (illustrator) and C (engineer) lack explicit psychological interests or therapeutic content engagement, making B the most relevant match.",
+    "model": "solar-pro",
+    "prompt_chars": 24917,
+    "latency_sec": 1.53,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5381,
+    "output_tokens": 135,
+    "total_tokens": 5516,
+    "api_response_id": "300bed93-1964-456c-885e-26ee891a5aaa"
+  },
+  {
+    "run_id": "ablation_identity_only_task12_User9_seed0",
+    "stage": "compress",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User14",
+      "User9"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document explicitly describes a 22\u201325-year-old female in Product Operations with a psychology minor, seeking evidence-based self-help resources for workplace stress, emotional resilience, and interpersonal dynamics. Candidate C matches this profile exactly: same age, gender, occupation, academic background (psychology minor), and goals (emotional regulation in high-pressure work environments). The document\u2019s focus on ACT, CBT, and DBT aligns with her need for structured, empirical techniques\u2014consistent with her rational consumption style and interest in mental health. Candidates A (tech-focused engineer) and B (illustrator) lack the psychology background and workplace context described.",
+    "model": "solar-pro",
+    "prompt_chars": 27835,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6058,
+    "output_tokens": 153,
+    "total_tokens": 6211,
+    "api_response_id": "0e1e6ce1-ad8d-42a5-a722-cd875f48af79"
+  },
+  {
+    "run_id": "ablation_identity_only_task12_User9_seed0",
+    "stage": "write",
+    "gt_userid": "User9",
+    "candidate_userids": [
+      "User9",
+      "User11",
+      "User14"
+    ],
+    "shuffled_order": [
+      "User9",
+      "User14",
+      "User11"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User9",
+    "correct": true,
+    "reasoning": "The document's focus on Product Operations, emotional regulation for high-velocity tech environments, and its integration of psychology (CBT, DBT, ACT) aligns with Candidate A's role as a Product Operations professional with a New Media Communication and Psychology background. The blueprint's emphasis on workplace stress, cross-functional friction, and habit architecture mirrors A's challenges in managing operational volatility. Candidates B (freelance illustrator) and C (algorithm engineer) lack the document's specific operational and psychological framing, which directly addresses A's documented needs for emotional agility in tech workflows.",
+    "model": "solar-pro",
+    "prompt_chars": 29837,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6407,
+    "output_tokens": 139,
+    "total_tokens": 6546,
+    "api_response_id": "892e405e-8ad4-4b06-9266-f724b898393e"
+  }
+]

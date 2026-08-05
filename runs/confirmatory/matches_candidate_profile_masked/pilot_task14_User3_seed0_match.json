@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task14_User3_seed0",
+    "stage": "plan",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User3",
+      "User1",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User1",
+      "User3",
+      "User5"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User3",
+    "correct": true,
+    "reasoning": "The document focuses on a beginner runner with no prior experience, emphasizing a structured yet flexible 3-month marathon training plan. Candidate B aligns best due to their (1) **budget-friendly mindset** (prioritizing cost-effectiveness in purchases, avoiding expensive gear), (2) **time constraints** (tight academic schedule, evening availability for training), and (3) **exercise habits** (occasional jogging, stress-relief through physical activity). Unlike Candidate A (tech-focused, basketball-centric) or C (cycling-focused, academic intensity), Candidate B\u2019s **casual jogging experience**, **rational consumption**, and **emphasis on injury prevention** mirror the document\u2019s priorities. The plan\u2019s flexibility, injury prevention, and budget-conscious nutrition also align with B\u2019s cautious, practical decision-making style.",
+    "model": "solar-pro",
+    "prompt_chars": 17744,
+    "latency_sec": 2.04,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 3857,
+    "output_tokens": 191,
+    "total_tokens": 4048,
+    "api_response_id": "3784a296-e7a7-478c-a770-6ce8ed61e07b"
+  },
+  {
+    "run_id": "pilot_task14_User3_seed0",
+    "stage": "search",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User3",
+      "User1",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User1",
+      "User5",
+      "User3"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User3",
+    "correct": true,
+    "reasoning": "The document focuses on beginner-friendly marathon training, dynamic warm-up/cool-down routines, run/walk ratios, and budget-friendly electrolyte recipes\u2014topics aligned with Candidate C's exercise habits (jogging, ping-pong, stress relief via exercise) and cost-conscious lifestyle. Unlike Candidates A (basketball-focused) and B (cycling-focused), Candidate C explicitly mentions jogging and values practical, budget-conscious solutions (e.g., DIY electrolyte drinks), matching the document's emphasis on affordability and accessibility. Additionally, Candidate C's preference for self-guided tours and independent planning mirrors the document's DIY framing, while their mechanical/technical interests (e.g., tools, study materials) align with the structured, methodical approach to training described.",
+    "model": "solar-pro",
+    "prompt_chars": 18962,
+    "latency_sec": 2.13,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4252,
+    "output_tokens": 175,
+    "total_tokens": 4427,
+    "api_response_id": "9e62f213-fec0-42ee-8215-d40ee9d8efaa"
+  },
+  {
+    "run_id": "pilot_task14_User3_seed0",
+    "stage": "compress",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User3",
+      "User1",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User1",
+      "User3"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User3",
+    "correct": true,
+    "reasoning": "The document focuses on a budget-friendly, structured 12-week marathon training plan for beginners, emphasizing cost-effective nutrition, injury prevention, and time-efficient routines. Candidate C aligns most closely with these priorities: they are a rational, cost-conscious consumer who prioritizes budget-friendly tools (e.g., DIY electrolyte recipes), values practical exercise routines (ping-pong, jogging), and has a strong interest in mechanical/technical content (mirroring the document's emphasis on precise training metrics). Unlike Candidates A (cycling-focused) and B (tech/AI-focused), Candidate C\u2019s exercise habits, frugal spending, and preference for self-guided, low-cost activities directly reflect the document\u2019s framing for budget-conscious beginners.",
+    "model": "solar-pro",
+    "prompt_chars": 22543,
+    "latency_sec": 2.2,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5429,
+    "output_tokens": 172,
+    "total_tokens": 5601,
+    "api_response_id": "a6a5034f-eade-41a8-a3dd-cf40e0b18199"
+  },
+  {
+    "run_id": "pilot_task14_User3_seed0",
+    "stage": "write",
+    "gt_userid": "User3",
+    "candidate_userids": [
+      "User3",
+      "User1",
+      "User5"
+    ],
+    "shuffled_order": [
+      "User3",
+      "User5",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User3",
+    "correct": true,
+    "reasoning": "The document's focus on a 12-week marathon training program for a beginner aligns with Candidate A's exercise habits (jogging with classmates, interest in stress relief through exercise) and geographical context (campus botanical garden walks). The emphasis on balancing training with academic commitments (lab work, classes in Chengdu) matches Candidate A's structured daily routine and time management. Additionally, the program's cost-effective, injury-prevention approach resonates with Candidate A's rational consumption style and preference for practical, hands-on solutions. Candidates B (cycling focus) and C (basketball/AI interests) lack the direct connection to marathon training or the document's specific framing.",
+    "model": "solar-pro",
+    "prompt_chars": 24545,
+    "latency_sec": 1.76,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5972,
+    "output_tokens": 160,
+    "total_tokens": 6132,
+    "api_response_id": "2f558cbd-1dae-4432-a354-3128466a7d95"
+  }
+]

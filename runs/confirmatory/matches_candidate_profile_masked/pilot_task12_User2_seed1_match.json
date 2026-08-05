@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task12_User2_seed1",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on clinical psychology, emotional regulation, and structured self-study. The document emphasizes academically rigorous resources (CBT, DBT, ACT, mindfulness) and practical daily strategies, which match A's psychology-focused learning habits, use of platforms like Coursera, and interest in emotional communication. A's rational consumption (cost-effective books, cloud-stored study notes) and time management preferences (morning study, evening reading) directly reflect the document's budget-conscious, routine-integrated approach. Unlike B (social issues/tech focus) or C (AI/tech emphasis), A's behavioral traits and content preferences (psychology forums, emotional regulation articles, art films) mirror the document's clinical and self-reflective framing.",
+    "model": "solar-pro",
+    "prompt_chars": 17989,
+    "latency_sec": 2.01,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 3907,
+    "output_tokens": 181,
+    "total_tokens": 4088,
+    "api_response_id": "09ca9f25-36d5-48b9-a1ed-592ad4751e00"
+  },
+  {
+    "run_id": "pilot_task12_User2_seed1",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User2",
+      "User1"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on evidence-based therapeutic approaches (DBT, ACT, CBT) and professional training resources (PsychWire, Beck Institute, CBT tools). Candidate B's profile strongly aligns with this content: they actively engage with psychology learning apps, participate in psychology forums, prioritize academic resources, and frequently save psychology-related materials. Their decision-making style (values professional advice) and consumption habits (prioritizes psychology books/exhibitions) reflect a deep interest in therapeutic frameworks. In contrast, Candidate A\u2019s focus on communication studies and Candidate C\u2019s emphasis on AI/tech lack the direct psychological focus evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 20189,
+    "latency_sec": 1.98,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4510,
+    "output_tokens": 149,
+    "total_tokens": 4659,
+    "api_response_id": "fc0bc602-b800-40a9-a77b-886a959b61ae"
+  },
+  {
+    "run_id": "pilot_task12_User2_seed1",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User7",
+    "correct": false,
+    "reasoning": "The document focuses on evidence-based psychological therapies (DBT, ACT, CBT, transdiagnostic protocols) with a clinical, theoretical, and practical emphasis. Candidate B's profile aligns most closely: they actively engage with academic content (saves articles on research trends, follows experts), prioritize analytical thinking, and show interest in structured learning (proficient in data tools, values factual support). Their consumption of non-fiction/sociology books and preference for logical communication mirror the document's scholarly tone. While Candidate A shares psychology interests, their focus on popular science and emotional communication contrasts with the document's clinical depth. Candidate C's tech-centric habits and AI interests lack direct relevance to the psychological content.",
+    "model": "solar-pro",
+    "prompt_chars": 22737,
+    "latency_sec": 1.84,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5187,
+    "output_tokens": 164,
+    "total_tokens": 5351,
+    "api_response_id": "ae25f820-8814-4923-a8f6-581f1d719d29"
+  },
+  {
+    "run_id": "pilot_task12_User2_seed1",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User1",
+      "User7",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document is a 6-month personal development plan tailored for a graduate student in Clinical Psychology, focusing on emotional regulation, self-awareness, and clinical mastery. Candidate C aligns most closely with this content: (1) their online habits include psychology-related learning apps and active participation in psychology forums, reflecting academic interest in the subject; (2) their consumption characteristics prioritize psychology books and exhibition tickets, matching the document's emphasis on clinical literature and self-study; (3) their content preferences focus on psychology articles, emotional communication, and research materials, directly mirroring the document's focus on therapeutic modalities and self-awareness. Candidates A (tech-focused) and B (sociology/natural scenery interests) lack the clinical psychology specialization and emotional regulation focus central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24739,
+    "latency_sec": 1.97,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5407,
+    "output_tokens": 181,
+    "total_tokens": 5588,
+    "api_response_id": "292bf9c5-f9a7-453a-8b95-e368121f7a67"
+  }
+]

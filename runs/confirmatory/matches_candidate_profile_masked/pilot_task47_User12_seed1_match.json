@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task47_User12_seed1",
+    "stage": "plan",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User12",
+      "User16"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "Candidate B aligns most closely with the document's focus on evidence-based, structured exercise planning for a 5-year-old. The document emphasizes scientific guidelines, family participation, and holistic health (exercise, diet, sleep), which mirrors B's traits: his data-driven decision-making, interest in authoritative sources (e.g., tech/AI research habits), and prioritization of family time (weekend outdoor activities, bedtime stories). Unlike A (career-focused, less detail on child health) or C (pragmatic but less emphasis on scientific rigor), B's habits\u2014such as tracking health metrics, investing in fitness equipment, and balancing work/family\u2014directly reflect the document's systematic, research-oriented approach to cultivating lifelong health habits in children.",
+    "model": "solar-pro",
+    "prompt_chars": 20456,
+    "latency_sec": 2.07,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4374,
+    "output_tokens": 175,
+    "total_tokens": 4549,
+    "api_response_id": "48772cb9-8158-4076-bc63-fcb8723820e3"
+  },
+  {
+    "run_id": "pilot_task47_User12_seed1",
+    "stage": "search",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User12",
+      "User10"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document focuses on physical activity guidelines for children (WHO, AAP, ACSM), child-friendly park features, and caloric intake for 5-year-olds\u2014topics aligning with Candidate A's family-oriented lifestyle. A prioritizes family health, outdoor activities (fishing, hiking, park visits), and practical investments in children's well-being (e.g., smart home devices for family convenience). Unlike B (tech-focused, high-intensity fitness) and C (business-oriented, golf/yoga), A's interests in parks, child-friendly amenities, and balanced family routines directly reflect the document's emphasis on children's physical activity, nutrition, and accessible outdoor spaces.",
+    "model": "solar-pro",
+    "prompt_chars": 22258,
+    "latency_sec": 1.59,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4898,
+    "output_tokens": 154,
+    "total_tokens": 5052,
+    "api_response_id": "9dc551bd-e862-4818-bc0a-9fb3a64f1bab"
+  },
+  {
+    "run_id": "pilot_task47_User12_seed1",
+    "stage": "compress",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User16",
+      "User12",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User12",
+    "correct": true,
+    "reasoning": "The document focuses on pediatric physical activity guidelines, developmental frameworks, and sports science for 5-year-olds, emphasizing evidence-based recommendations, systematic reviews, and technical terminology (e.g., 'MVPA', 'FMS', 'bone mineral density'). Candidate B, a tech professional with a data-driven decision-making style, aligns most closely: his profile highlights analytical thinking, interest in systematic trends (AI/tech papers), and prioritization of health through structured exercise (rock climbing, gym routines). Unlike Candidates A (general health focus) and C (business/management interests), B\u2019s emphasis on technical precision, systematic planning, and health science mirrors the document\u2019s framing. His role in synthesizing complex information (e.g., GitHub/Slack workflows) also parallels the document\u2019s synthesis of guidelines from WHO, ACSM, and pediatric sports science.",
+    "model": "solar-pro",
+    "prompt_chars": 24751,
+    "latency_sec": 1.97,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5444,
+    "output_tokens": 193,
+    "total_tokens": 5637,
+    "api_response_id": "05ef01e4-a76c-46c7-ba73-d1e2fe739c97"
+  },
+  {
+    "run_id": "pilot_task47_User12_seed1",
+    "stage": "write",
+    "gt_userid": "User12",
+    "candidate_userids": [
+      "User12",
+      "User10",
+      "User16"
+    ],
+    "shuffled_order": [
+      "User12",
+      "User16",
+      "User10"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User16",
+    "correct": false,
+    "reasoning": "The document focuses on a family-centered approach to physical development for a 5-year-old, emphasizing practical, age-appropriate activities, outdoor exploration, and balanced routines. Candidate B aligns most closely: he prioritizes family time, values practical and cost-effective purchases (e.g., smart home devices), and engages in outdoor activities like hiking and photography\u2014mirroring the document's emphasis on nature-based play and family bonding. Unlike Candidate A (tech-focused, high-intensity fitness) or Candidate C (business-oriented, luxury travel), Candidate B\u2019s interests in local parks, budget-conscious spending, and hands-on parenting align with the document\u2019s tone and goals. His recent interest in photography also complements the guide\u2019s focus on documenting and enjoying outdoor activities with children.",
+    "model": "solar-pro",
+    "prompt_chars": 26753,
+    "latency_sec": 2.58,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5718,
+    "output_tokens": 173,
+    "total_tokens": 5891,
+    "api_response_id": "2c3b4586-4f25-48dc-8f30-5e3aee730064"
+  }
+]

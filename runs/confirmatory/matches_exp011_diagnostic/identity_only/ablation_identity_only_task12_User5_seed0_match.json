@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "ablation_identity_only_task12_User5_seed0",
+    "stage": "plan",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User5",
+    "correct": true,
+    "reasoning": "The document explicitly identifies the author as Han Lei, a 22-25-year-old male graduate student in Mechanical Automation from Jinan, aligning perfectly with Candidate A's attributes. The request for resources on emotional intelligence, cognitive behavioral principles, and actionable daily habits reflects Han Lei's stated challenges with emotional fluctuations and decision-making, which are central to Candidate A's profile. The framing\u2014prioritizing analytical approaches, structured strategies, and integration with a busy academic schedule\u2014mirrors Candidate A's detail-oriented, rational, and time-management-focused personality. Candidate B (law student) and C (clinical psychology graduate) lack the mechanical engineering background, specific emotional regulation challenges, and lifestyle details (e.g., book clubs, cycling) that define the document's context. Thus, Candidate A is the only match.",
+    "model": "solar-pro",
+    "prompt_chars": 25313,
+    "latency_sec": 1.85,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5288,
+    "output_tokens": 186,
+    "total_tokens": 5474,
+    "api_response_id": "3c90053a-6040-4483-ae04-e9cc6273238c"
+  },
+  {
+    "run_id": "ablation_identity_only_task12_User5_seed0",
+    "stage": "search",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": false,
+    "reasoning": "Candidate C, a graduate student in Clinical Psychology, aligns most closely with the document's focus on mindfulness, emotional well-being, and self-help resources. The document includes searches for mindfulness courses (e.g., 'Search Inside Yourself', 'De-Mystifying Mindfulness'), psychological well-being programs (e.g., 'The Science of Well-Being'), and self-help books (e.g., 'Feeling Good'). These topics directly intersect with Candidate C's academic background, interests in psychology, and behavioral traits (e.g., using Coursera for psychology courses, sharing psychology articles online, and adopting a cat for stress relief). Candidates A (Mechanical Engineering) and B (Law) lack the same depth of engagement with psychological or mindfulness content, making C the best match.",
+    "model": "solar-pro",
+    "prompt_chars": 27474,
+    "latency_sec": 1.9,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5872,
+    "output_tokens": 178,
+    "total_tokens": 6050,
+    "api_response_id": "91882ef2-7bd5-4023-a136-c46521f8089a"
+  },
+  {
+    "run_id": "ablation_identity_only_task12_User5_seed0",
+    "stage": "compress",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User4",
+      "User2",
+      "User5"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User5",
+    "correct": true,
+    "reasoning": "The document emphasizes an engineering/analytical mindset, framing psychological concepts through metaphors like 'system debugging' (CBT), 'control theory' (emotional regulation), and 'API design' (interpersonal communication). Candidate C, a mechanical automation graduate student, aligns perfectly: his background in engineering, focus on structured problem-solving, and interest in robotics/automation mirror the document's technical framing. Unlike Candidates A (law student) and B (clinical psychology student), Candidate C's profile explicitly highlights analytical thinking, systematic decision-making, and a preference for cost-effective, practical tools\u2014all echoed in the document's emphasis on empirical, algorithmic approaches to psychology. His recent interest in coffee-making and sci-fi novels (e.g., *The Three-Body Problem*) also parallels the document's blend of technical rigor and self-improvement themes.",
+    "model": "solar-pro",
+    "prompt_chars": 29996,
+    "latency_sec": 2.08,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6523,
+    "output_tokens": 194,
+    "total_tokens": 6717,
+    "api_response_id": "5d6f47ad-dd1f-40cc-91bf-f686663eb952"
+  },
+  {
+    "run_id": "ablation_identity_only_task12_User5_seed0",
+    "stage": "write",
+    "gt_userid": "User5",
+    "candidate_userids": [
+      "User5",
+      "User4",
+      "User2"
+    ],
+    "shuffled_order": [
+      "User4",
+      "User2",
+      "User5"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User5",
+    "correct": true,
+    "reasoning": "The document's engineering-centric framing (e.g., mapping psychology to control theory, code debugging, and system optimization) directly aligns with Candidate C's background as a mechanical automation graduate student. His academic focus on intelligent manufacturing, preference for structured problem-solving, and interest in sci-fi novels like *The Three-Body Problem* reflect the document's deterministic, systems-based approach to emotional management. Candidates A (law student) and B (clinical psychology student) lack the engineering-specific vocabulary and mindset emphasized in the text, which prioritizes analogies to PID controllers, API protocols, and cognitive refactoring over general psychological or legal frameworks.",
+    "model": "solar-pro",
+    "prompt_chars": 31998,
+    "latency_sec": 1.77,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6614,
+    "output_tokens": 149,
+    "total_tokens": 6763,
+    "api_response_id": "4e361146-b46f-4209-a6d1-aa82a4a50e01"
+  }
+]

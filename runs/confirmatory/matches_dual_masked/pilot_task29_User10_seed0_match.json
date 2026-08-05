@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task29_User10_seed0",
+    "stage": "plan",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "Candidate A's profile aligns most closely with the document's focus on a health-conscious, data-driven, and efficiency-oriented approach to launching a fast-casual business. The document emphasizes nutritional focus, pricing strategy, and detailed market research\u2014mirroring A's data analysis skills (Python, R, SQL) and preference for meticulous planning. A's lifestyle (low-calorie meals, fitness routines, and interest in sustainability) aligns with the target market of fitness enthusiasts and the menu's health-centric framing. Additionally, A's use of WeChat and social media for professional networking matches the proposed marketing strategy. Candidates B and C, while rational consumers, focus more on family-oriented or leisure activities, which are less central to the document's entrepreneurial and health-tech angle.",
+    "model": "solar-pro",
+    "prompt_chars": 18333,
+    "latency_sec": 2.11,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4058,
+    "output_tokens": 180,
+    "total_tokens": 4238,
+    "api_response_id": "8313bd5e-05a4-4e6a-bfcf-594318265d93"
+  },
+  {
+    "run_id": "pilot_task29_User10_seed0",
+    "stage": "search",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User18",
+      "User10",
+      "User19"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "Candidate B's profile aligns most closely with the document's focus on market trends, competitive analysis, and business-oriented framing. The document emphasizes market size, growth projections, brand competition, and cost structures (e.g., gross margins, pricing between 40-60 RMB), which reflect B's interest in market trends, management case studies, and data-driven decision-making. B's preference for high-end dining, self-guided travel planning, and saving business-related content (e.g., market analysis reports) further supports this match. While A and C show interest in health and sustainability, the document's primary lens is commercial and strategic, aligning with B's pragmatic, business-focused persona.",
+    "model": "solar-pro",
+    "prompt_chars": 19553,
+    "latency_sec": 2.01,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5034,
+    "output_tokens": 160,
+    "total_tokens": 5194,
+    "api_response_id": "dce65d28-432d-4cc0-b2cb-e9fa74c46acf"
+  },
+  {
+    "run_id": "pilot_task29_User10_seed0",
+    "stage": "compress",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "predicted_label": "B",
+    "predicted_userid": "User18",
+    "correct": false,
+    "reasoning": "The document focuses on market trends, competitor analysis, and data-driven insights in the light meal industry, aligning with Candidate B's data-centric habits (Python, R, Tableau), preference for detailed market research, and interest in sustainability (evident in the document's emphasis on eco-friendly consumer shifts). Unlike Candidates A (general management focus) and C (supply chain/logistics), B's analytical rigor, frequent use of data tools, and interest in market trends (e.g., energy bowls, brand strategies) directly mirror the document's framing. Her screenshot-taking of charts and case studies also matches the report's data-heavy structure.",
+    "model": "solar-pro",
+    "prompt_chars": 22809,
+    "latency_sec": 1.57,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6111,
+    "output_tokens": 151,
+    "total_tokens": 6262,
+    "api_response_id": "cd6307e1-6b16-4cba-955d-378c74e873a6"
+  },
+  {
+    "run_id": "pilot_task29_User10_seed0",
+    "stage": "write",
+    "gt_userid": "User10",
+    "candidate_userids": [
+      "User10",
+      "User18",
+      "User19"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User19",
+      "User18"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": true,
+    "reasoning": "The document focuses on a business plan for a light-meal brand targeting urban professionals (ages 22\u201338) and fitness enthusiasts in Tier-1 cities, emphasizing nutritional transparency, cost-effectiveness (\u00a540\u2013\u00a560 price band), and hybrid fast-casual service. Candidate A aligns most closely: (1) their role as a pragmatic, data-driven professional in marketing aligns with the report's strategic framing and market analysis; (2) their preference for cost-effective, high-quality consumption matches the target audience's budget-conscious yet health-aware habits; (3) their interest in fitness (yoga, running) and macro-nutrient tracking resonates with the document's emphasis on protein ratios and low-GI meals. Candidates B and C, while health-conscious, focus more on eco-friendly/sustainable consumption and international travel, which are tangential to the report's core urban professional and fitness-centric audience.",
+    "model": "solar-pro",
+    "prompt_chars": 24811,
+    "latency_sec": 1.97,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5924,
+    "output_tokens": 214,
+    "total_tokens": 6138,
+    "api_response_id": "92517803-d458-429a-99c9-6ff0f3710835"
+  }
+]

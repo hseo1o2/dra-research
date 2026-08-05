@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task2_User2_seed1",
+    "stage": "plan",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User1",
+      "User7",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on psychology-specific exchange programs, clinical observation opportunities, and cultural adaptation strategies, aligning with Candidate C's psychology studies, interest in psychology seminars, and emphasis on cross-cultural communication. Candidate C's behavior\u2014frequent use of psychology learning apps, participation in psychology forums, and interest in cultural/educational travel\u2014directly mirrors the document's priorities. Candidates A (tech-focused) and B (communication/social sciences) lack the psychology-specific framing and practical concerns (e.g., credit transfer for psychology, clinical research labs) central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 19546,
+    "latency_sec": 1.91,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4202,
+    "output_tokens": 136,
+    "total_tokens": 4338,
+    "api_response_id": "2a0c1896-47a1-4261-8c75-3bc7dd72fe3d"
+  },
+  {
+    "run_id": "pilot_task2_User2_seed1",
+    "stage": "search",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on a visiting graduate student in psychology, particularly addressing J-1 visa restrictions, clinical practicum limitations, tuition fees, and language-of-instruction requirements. Candidate A's profile aligns most closely: her online behavior centers on psychology learning apps, academic resources, and sharing psychology content. Her offline activities include attending psychology counseling centers, prioritizing psychology-related purchases, and saving psychology research materials. In contrast, Candidate B focuses on communication studies and social issues, while Candidate C emphasizes AI/technology. The document\u2019s emphasis on clinical psychology, HIPAA, and exchange programs directly reflects Candidate A\u2019s academic and professional interests.",
+    "model": "solar-pro",
+    "prompt_chars": 20083,
+    "latency_sec": 1.54,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 4579,
+    "output_tokens": 149,
+    "total_tokens": 4728,
+    "api_response_id": "45b16393-6862-4716-900f-525303f25643"
+  },
+  {
+    "run_id": "pilot_task2_User2_seed1",
+    "stage": "compress",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User7",
+      "User1",
+      "User2"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on clinical psychology research restrictions, visa regulations, and academic logistics for international graduate students\u2014topics directly aligned with Candidate C's psychology-focused academic interests (e.g., Coursera psychology courses, Zhihu Psychology section, cloud-stored study notes). The document's emphasis on non-clinical research roles (e.g., data analysis, lab rotations) matches C's behavioral traits as a psychology student who prioritizes academic research over clinical practice. Additionally, C's interest in international travel (coastal cities, cultural sites) and budget-conscious spending aligns with the document's cost analyses for visiting students. Candidates A (communication studies) and B (AI/tech focus) lack the domain-specific psychology focus evident in the document.",
+    "model": "solar-pro",
+    "prompt_chars": 22737,
+    "latency_sec": 1.7,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5192,
+    "output_tokens": 171,
+    "total_tokens": 5363,
+    "api_response_id": "f82ea38b-97ac-4c3c-a618-6f366fc245ea"
+  },
+  {
+    "run_id": "pilot_task2_User2_seed1",
+    "stage": "write",
+    "gt_userid": "User2",
+    "candidate_userids": [
+      "User2",
+      "User1",
+      "User7"
+    ],
+    "shuffled_order": [
+      "User2",
+      "User7",
+      "User1"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User2",
+    "correct": true,
+    "reasoning": "The document focuses on clinical psychology graduate students seeking international exchange opportunities, emphasizing empirical methodologies, research networks, and practical logistics (visas, costs, credit transfers). Candidate A's profile aligns most closely: they are a psychology student in Beijing (implied by frequent visits to Changsha and Beijing-based activities), prioritize academic resources (online courses, cloud notes), and show interest in psychology research (forums, articles, book purchases). Their rational consumption and budgeting for academic/pet-related expenses mirror the document's financial planning focus. Candidate B (communication studies) and C (AI/tech focus) lack the clinical psychology specialization and research-oriented framing central to the document.",
+    "model": "solar-pro",
+    "prompt_chars": 24739,
+    "latency_sec": 1.63,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5625,
+    "output_tokens": 157,
+    "total_tokens": 5782,
+    "api_response_id": "f2a7ec41-9183-45fc-80c3-0c305048f50d"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "run_id": "pilot_task32_User11_seed1",
+    "stage": "plan",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User11",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "Candidate C (Liu Qiang) best matches the document's focus on a family-oriented, budget-conscious soft furnishing plan for a modern 89\u33a1 apartment. The document emphasizes cost-effective allocation across furniture, appliances, and decor\u2014aligning with C's pragmatic, cost-effective consumption style and household responsibilities (married with two children). C's preference for high-end durable items, family-centric budgeting, and interest in smart home ecosystems (e.g., kitchen appliances) directly reflect the document's requirements. Candidates A and B, while rational consumers, lack C's family-oriented spatial planning needs and focus on mid-to-high-end quality within budget constraints.",
+    "model": "solar-pro",
+    "prompt_chars": 25068,
+    "latency_sec": 1.88,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 5251,
+    "output_tokens": 152,
+    "total_tokens": 5403,
+    "api_response_id": "fa037b72-83ec-4fc6-bba1-893ae474b071"
+  },
+  {
+    "run_id": "pilot_task32_User11_seed1",
+    "stage": "search",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User10",
+      "User11",
+      "User8"
+    ],
+    "predicted_label": "A",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on modern minimalist interior design, budget-friendly furniture solutions, and practical home appliances (e.g., refrigerators, washer-dryers) for a family-oriented household. Candidate A, a married marketing manager with two children, prioritizes cost-effective yet high-quality home goods, family-centric living spaces, and aligns with the document's emphasis on space optimization (89\u33a1) and durable, stylish furniture. His role as a breadwinner and his wife\u2019s focus on household management reflect the document\u2019s framing of budget-conscious, family-friendly renovations. Candidates B (tech-focused, single) and C (investment-oriented, single) lack the family dynamics and lifestyle priorities (e.g., children\u2019s needs, harmonious living environment) central to the document\u2019s content.",
+    "model": "solar-pro",
+    "prompt_chars": 25634,
+    "latency_sec": 1.83,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 6821,
+    "output_tokens": 182,
+    "total_tokens": 7003,
+    "api_response_id": "d52f83c0-d539-49c4-878e-ddf06353e2fd"
+  },
+  {
+    "run_id": "pilot_task32_User11_seed1",
+    "stage": "compress",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User11",
+      "User8",
+      "User10"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User10",
+    "correct": false,
+    "reasoning": "The document focuses on a comprehensive, family-oriented interior design and soft furnishing budget for an 89\u33a1 apartment, emphasizing cost-effectiveness, modern minimalist aesthetics, and practical allocation across furniture, appliances, and decor. Candidate C, a married marketing manager with two children, aligns best due to his family-centric lifestyle, emphasis on quality-of-life investments (e.g., children's education, durable household items), and pragmatic decision-making style. The document's detailed budgeting and space optimization reflect C's need for a functional, family-friendly environment, contrasting with A's single-person tech focus and B's individualistic financial priorities. C's preference for cost-effective yet high-end durable goods and his role as a family provider further align with the document's balanced allocation model.",
+    "model": "solar-pro",
+    "prompt_chars": 29741,
+    "latency_sec": 1.85,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 7447,
+    "output_tokens": 176,
+    "total_tokens": 7623,
+    "api_response_id": "be5b46ce-9b16-4d90-907a-a418d0c4f3bd"
+  },
+  {
+    "run_id": "pilot_task32_User11_seed1",
+    "stage": "write",
+    "gt_userid": "User11",
+    "candidate_userids": [
+      "User11",
+      "User10",
+      "User8"
+    ],
+    "shuffled_order": [
+      "User8",
+      "User10",
+      "User11"
+    ],
+    "predicted_label": "C",
+    "predicted_userid": "User11",
+    "correct": true,
+    "reasoning": "Candidate C (Li Zhuo) is an algorithm engineer with a strong focus on cost-effectiveness, smart home technology, and modern minimalist aesthetics, aligning with the document's emphasis on a 'clean, modern minimalist aesthetic' and 'fully connected smart home ecosystem.' The document's prioritization of 'high price-to-performance ratio products' and Xiaomi Mijia ecosystem (mentioned in the text) matches C's interest in smart home products, tech-related impulsive purchases, and rational spending habits. Unlike Candidate A (finance-focused) or B (family-oriented), C's technical background, urban lifestyle in Hangzhou, and preference for compact, efficient living spaces (evident in the 89\u33a1 apartment plan) make him the most likely audience for this document. The document's detailed budgeting and smart home integration also reflect C's data-driven decision-making style and interest in AI/social applications.",
+    "model": "solar-pro",
+    "prompt_chars": 31743,
+    "latency_sec": 2.08,
+    "shuffle_algorithm": "sha256-first-64-bit",
+    "shuffle_seed": 42,
+    "artifact_view": "full",
+    "char_budget": null,
+    "input_tokens": 7415,
+    "output_tokens": 203,
+    "total_tokens": 7618,
+    "api_response_id": "c44a1467-cda3-4968-a636-026bc74c433a"
+  }
+]
