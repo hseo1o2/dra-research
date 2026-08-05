@@ -519,8 +519,7 @@ On seed 1, GPT-5.4-nano produces 0.833/0.583/0.600/0.733, agreeing with Solar
 on 76.7\% of decisions ($\kappa=0.745$); the dip-and-recovery shape is
 consistent across evaluators and seeds.
 Notably, GPT-5.4-nano (0.850) exceeds Solar (0.817) at Writing in seed~0,
-confirming that Writing artifacts are the most attributable stage
-independently of which LLM evaluates them.
+showing that Writing's recoverability advantage is not Solar-specific.
 Table~\ref{tab:matcher_agreement} gives per-stage detail for seed~0.
 
 \begin{table}[t]
@@ -718,9 +717,9 @@ of the brief is not a necessary condition for it.
 \begin{figure}[ht]
   \centering
   \includegraphics[width=\columnwidth]{figures/brief_intervention_write_acc.pdf}
-  \caption{Left: Write Acc@1 under full and other-brief ($n{=}15$) and
-    no-brief ($n{=}30$). Right: prediction breakdown under other-brief
-    (GT / Donor / Other).}
+  \caption{Left: Write Acc@1 under full / no-brief / other-persona brief
+    ($n{=}15$; all conditions from the same 15-report slice).
+    Right: prediction breakdown under other-brief (GT / Donor / Other).}
   \label{fig:brief_interventions}
 \end{figure}
 
@@ -779,15 +778,18 @@ Writing     & 0.733 & 0.167 & 0.100 & $+0.567$ & $[+0.267,+0.867]$ \\
 A complementary control masks identity sections from the \emph{candidate profiles}
 rather than the artifacts: removing ``Basic Attributes'' (identity characteristics,
 family status, and spatial characteristics) while leaving actionable sections
-reduces Acc across all four stages (Plan: $0.808\to0.667$, $\Delta=-0.141$;
-Search: $0.550\to0.458$, $\Delta=-0.092$; Compress: $0.592\to0.442$, $\Delta=-0.150$;
-Write: $0.800\to0.650$, $\Delta=-0.150$; $n=120$).
+reduces Acc across all four stages (Plan: $0.808\to0.667$, $\Delta=-0.142$,
+CI $[-0.242,-0.042]$; Search: $0.550\to0.458$, $\Delta=-0.092$,
+CI $[-0.175,0.000]$; Compress: $0.592\to0.442$, $\Delta=-0.150$,
+CI $[-0.225,-0.075]$; Write: $0.800\to0.650$, $\Delta=-0.150$,
+CI $[-0.242,-0.050]$; $n=120$).
 The dip-and-recovery trajectory is preserved but attenuated.
 This asymmetry---artifact-side identity masking has near-zero Writing impact
 ($\Delta=-0.017$) while candidate-side identity masking reduces it by
-$0.150$---localizes the identity dependency: Writing artifacts carry attributable
-discourse signals without verbatim identity tokens, but the matcher relies on
-identity-level cues in the candidate profiles to resolve attribution from those signals.
+$0.150$ (CI excludes zero)---localizes the identity dependency: Writing artifacts
+carry attributable discourse signals without verbatim identity tokens, but the
+matcher relies on identity-level cues in the candidate profiles to resolve
+attribution from those signals.
 
 \FloatBarrier
 % ---------------------------------------------------------------------------
@@ -843,6 +845,13 @@ cues rather than transplanted actionable preferences at all four stages
 DRA-PULSE measures recoverability of the identity layer reliably, but cannot
 confirm that attributable signal reflects preference-conditioned content rather
 than demographic marker leakage.
+Candidate-profile identity masking (§\ref{sec:shortcut_results}) partially
+mitigates this concern: the dip-and-recovery trajectory is preserved even when
+identity sections are removed from candidate profiles ($\Delta\text{Write}=-0.150$
+vs.\ $-0.017$ for artifact-side masking), suggesting the stage-level pattern is
+not an artifact of identity recognition alone; but the absolute accuracy
+reduction across all stages confirms that the matcher still draws substantially
+on identity cues when resolving attribution.
 A pre-registered generation-time ablation with actionable-only and
 identity-only persona conditioning (EXP-011) failed the completeness gate;
 the shuffled-actionable result provides the same directional finding
@@ -850,9 +859,11 @@ without establishing the causal structure EXP-011 would have tested.
 The matcher system prompt instructs the model to focus on cues ``that reflect
 the user's \textbf{background}, goals, and preferences,'' which may additionally bias
 detection toward identity-layer features; however, a prompt ablation removing
-this keyword yields negligible differences ($\Delta\text{Search}=+0.025$,
-$\Delta\text{Write}=-0.017$, all other stages unchanged; $n=120$), suggesting
-that identity-shell dominance is artifact-driven rather than prompt-induced.
+this keyword yields negligible differences (all stage CIs include zero;
+$\Delta\text{Search}=+0.025$ CI $[0.000,+0.050]$,
+$\Delta\text{Write}=-0.017$ CI $[-0.058,+0.025]$,
+$\Delta\text{Plan}=\Delta\text{Compress}=0$; $n=120$), confirming that
+identity-shell dominance is artifact-driven rather than prompt-induced.
 
 \paragraph{Other limitations.}
 Default matcher budgets differ by stage (Search 3.5k / Write 8k chars), but
