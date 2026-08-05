@@ -41,7 +41,7 @@ Persona recoverability follows a \emph{dip-and-recovery} trajectory: accuracy de
 Persona-to-query alignment thins at query execution (MiniLM cosine: $0.269 \to 0.212$), consistent with the Search dip; the Writing prompt's re-injection of the Planning brief is the structural source of the recoverability advantage over Search.
 At the report level, 32 runs lose correct attribution between Planning and Search; 24 of these recover by Writing.
 Injecting a mismatched persona's brief at Writing drops accuracy from 0.933 to 0.467 ($n{=}15$); removing the brief entirely yields 0.833 ($n{=}30$; $\Delta{=}{-}0.067$, CI includes zero)---we do not detect a reduction from removing the brief.
-The trajectory is robust to identity masking, a second LLM matcher, and equal character-budget controls.
+The trajectory is robust to identity masking, a second LLM matcher, and equal character-budget controls; removing identity information from both artifacts and candidate profiles simultaneously preserves the dip-and-recovery shape and keeps all stages above chance (Writing: 0.617).
 We present DRA-PULSE as a process-level diagnostic of how a specific DRA architecture routes recoverable persona information, not a measure of personalization utility or causal influence.
 \end{abstract}
 
@@ -800,6 +800,20 @@ carry attributable discourse signals without verbatim identity tokens, but the
 matcher relies on identity-level cues in the candidate profiles to resolve
 attribution from those signals.
 
+\paragraph{Dual-masked condition.}
+Applying both removals simultaneously (identity-masked artifacts presented with
+identity-stripped candidate profiles) drops attribution further but preserves
+the dip-and-recovery trajectory across all stages (Plan: $0.808\to0.575$,
+$\Delta=-0.233$, CI $[-0.350,-0.125]$; Search: $0.550\to0.450$,
+$\Delta=-0.100$, CI $[-0.192,+0.008]$; Compress: $0.592\to0.442$,
+$\Delta=-0.150$, CI $[-0.250,-0.058]$; Write: $0.800\to0.617$,
+$\Delta=-0.183$, CI $[-0.258,-0.100]$; $n=120$).
+All stages remain above chance ($0.333$), including Writing ($0.617$).
+This is the most conservative test of the identity-shell concern: even when
+identity information is absent from both artifact and candidate, preference-layer
+discourse features alone sustain above-chance attribution and the full
+dip-and-recovery shape.
+
 \FloatBarrier
 % ---------------------------------------------------------------------------
 \section{Conclusion}
@@ -854,13 +868,13 @@ cues rather than transplanted actionable preferences at all four stages
 DRA-PULSE measures recoverability of the identity layer reliably, but cannot
 confirm that attributable signal reflects preference-conditioned content rather
 than demographic marker leakage.
-Candidate-profile identity masking (§\ref{sec:shortcut_results}) partially
-mitigates this concern: the dip-and-recovery trajectory is preserved even when
-identity sections are removed from candidate profiles ($\Delta\text{Write}=-0.150$
-vs.\ $-0.017$ for artifact-side masking), suggesting the stage-level pattern is
-not an artifact of identity recognition alone; but the absolute accuracy
-reduction across all stages confirms that the matcher still draws substantially
-on identity cues when resolving attribution.
+The dual-masked condition (§\ref{sec:shortcut_results}) substantially mitigates
+this concern: removing identity from \emph{both} artifact and candidate profiles
+simultaneously preserves the dip-and-recovery trajectory and keeps all stages
+above chance, including Writing ($0.617 > 0.333$).
+Preference-layer discourse features alone thus support above-chance attribution,
+though the absolute accuracy reduction ($\Delta\text{Write}=-0.183$ from
+baseline) confirms that identity-level cues increase resolution when present.
 A pre-registered generation-time ablation with actionable-only and
 identity-only persona conditioning (EXP-011) failed the completeness gate;
 the shuffled-actionable result provides the same directional finding
