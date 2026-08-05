@@ -65,7 +65,9 @@ Our contributions are:
   post-hoc reconstruction---reusable instrumentation for LangGraph-based DRA pipelines.
   \item \textbf{Empirical finding.} On 120 reports we document a report-level
   \emph{loss-and-recovery} process: 32 Planning$\to$Search losses, of which
-  24 recover by Writing, with Search as the lowest-recoverability stage.
+  24 recover by Writing, with Search showing the largest single-stage accuracy
+  drop (Planning~0.808~$\to$~Search~0.550; the Search--Compression gap is smaller
+  and its CI includes zero).
   \item \textbf{Mechanistic analysis.} Search-view decomposition, Planning-brief
   re-injection analysis, and shortcut controls bound how architecture and
   identity cues shape recoverability---without equating Acc@1 with utility.
@@ -203,13 +205,14 @@ the supervisor; DRATracer resolves per-artifact topic identity using parent
 run-ID correlation across \texttt{on\_chain\_start} and \texttt{on\_chain\_end}
 events.
 All artifacts are serialized to a versioned JSON schema (\texttt{dra\_trace\_v2})
-with SHA-256 prompt hashes and a query/source ledger for reconciliation.
+with SHA-256 prompt hashes and a query/source ledger for reconciliation
+(schema: Appendix~\ref{app:schema}).
 
 \subsection{Attribution Protocol}
 
 \paragraph{LLM Matcher.}
 We use Upstage Solar Pro (API model ID: \texttt{solar-pro}) as the primary attribution model (temperature~$=0$, structured output).
-Given artifact text $a$ and persona set $\mathcal{C}$ (order-shuffled to prevent position bias), the matcher returns a single predicted persona $\hat{p}$.
+Given artifact text $a$ and persona set $\mathcal{C}$ (order-shuffled to prevent position bias), the matcher returns a single predicted persona $\hat{p}$ (full prompt template: Appendix~\ref{app:prompt}).
 Candidate order is deterministically shuffled per run and stage using a SHA-256-derived seed.
 To bound matcher context consistently, serialized artifacts are truncated to
 4,000 characters for Planning, 3,500 for Search, 6,000 for Compression, and
@@ -234,7 +237,7 @@ fewer than two exceed it).
 This makes chance-level performance a meaningful baseline and selects distractors
 by preference content rather than demographic identity.
 Candidate-set-size sensitivity uses prefixes of the same ranking
-(top-1 for $N=2$; top-4 for $N=5$).
+(top-1 for $N=2$; top-4 for $N=5$; construction details: Appendix~\ref{app:candidates}).
 
 \subsection{Shortcut Controls}
 \label{sec:shortcut}
@@ -404,6 +407,9 @@ $[0.083,0.258]$) and 0.225 at Writing ($[0.142,0.308]$).
 At Search, BM25 is 0.017 higher than Solar, but the paired difference
 includes zero ($[-0.125,0.092]$); the Compression difference is similarly
 unresolved ($+0.025$, $[-0.058,0.117]$).
+Importantly, the BM25 Search advantage is seed-0 driven (BM25 0.600 vs.\
+Solar 0.533 in seed~0; direction reverses in seed~1, BM25 0.533 vs.\ Solar
+0.567) and does not replicate (Appendix~\ref{app:baselines_seed}).
 Thus, the LLM evaluator's advantage is concentrated at Planning and Writing,
 while the low Search score is shared with a strong lexical baseline.
 Critically, both non-LLM baselines independently reproduce the
@@ -438,7 +444,7 @@ Splitting by the candidate-only heuristic: \emph{prior-correct} ($n{=}54$) and
 trajectory is not confined to prior-solvable reports.
 A strict-quality subset ($n{=}90$; all pre-defined success criteria) yields
 0.822/0.567/0.611/0.811, ruling out Search dip as a pure completeness/ledger
-artifact.
+artifact (full policy breakdown: Appendix~\ref{app:quality}).
 Candidate construction affects absolute levels; it does not create the stage
 ordering.
 
@@ -611,7 +617,8 @@ Search collapses to book-title / ISBN lookups (``Feeling Good'',
 ``Mind Over Mood''), persona--query MiniLM similarity drops to 0.115, and
 attribution flips to User2; Writing recovers User5 after brief re-injection.
 A second recovery case (AI-education startup) is in
-Appendix~\ref{app:case}.
+Appendix~\ref{app:case}; extended confusion pairs with a dominant attractor
+persona are in Appendix~\ref{app:confusion_full}.
 
 \begin{table}[t]
 \centering
@@ -1142,7 +1149,10 @@ both of which passed their pre-specified quality criteria.
 Table~\ref{tab:sensitivity_full} reproduces the full sensitivity results
 for all three candidate-set sizes (seeds 0 and 1, $n=120$ per row; Solar Pro matcher).
 The Planning$\rightarrow$Search drop is $-0.209$ at $N=2$, $-0.258$ at $N=3$,
-and $-0.287$ at $N=5$, growing monotonically with $N$.
+and $-0.287$ at $N=5$ in raw Acc; chance-normalized
+($\Delta / (1-\text{chance})$) these become $-0.418$, $-0.387$, $-0.359$,
+\emph{shrinking} with $N$---consistent with the Planning advantage being
+stable while Search difficulty grows relative to a harder chance level.
 Writing accuracy exceeds Search by $+0.142$ ($N=2$),
 $+0.250$ ($N=3$), and $+0.246$ ($N=5$). All stages exceed their
 respective chance levels at all three settings, confirming that the
