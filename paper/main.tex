@@ -37,10 +37,10 @@ Deep Research Agent}
 \begin{abstract}
 The architecture of a deep research agent---how it routes and re-uses stage artifacts---determines which stages retain recoverable persona signal and which do not.
 We introduce \textbf{DRA-PULSE}, an N-way stage-wise persona attribution diagnostic that recovers the conditioning persona from each intermediate artifact against hard-negative candidates, and apply it to 120 PDR-Bench reports from a four-stage DRA (Gemini~3.6~Flash via \texttt{open\_deep\_research}).
-Persona recoverability follows a \emph{dip-and-recovery} trajectory: accuracy decreases from Planning (0.808) to Search (0.550), remains low at Compression (0.592), and recovers at Writing (0.800).
-Persona-to-query alignment thins at query execution (MiniLM cosine: $0.269 \to 0.212$), consistent with the Search dip; the Writing prompt's re-injection of the Planning brief creates the late-stage architectural recovery path.
+Persona recoverability follows a \emph{dip-and-recovery} trajectory: accuracy decreases from Planning (0.808) to Search (0.550), remains low at Compression (0.592), and recovers at Writing (0.800); under a symmetric candidate protocol these values are 0.733/0.542/0.608/0.708.
+Persona-to-query alignment thins at query execution (MiniLM cosine: $0.269 \to 0.212$), consistent with the Search dip; the Writing prompt's re-injection of the Planning brief is the structural source of the recoverability advantage over Search.
 At the report level, 32 runs lose correct attribution between Planning and Search; 24 of these recover by Writing.
-Replacing the Planning brief with a mismatched persona's brief (write-only ablation, $n{=}15$) drops Writing accuracy from 0.933 to 0.467, suggesting that brief content---not mere re-injection---drives recovery.
+Injecting a mismatched persona's brief at Writing drops accuracy from 0.933 to 0.467 ($n{=}15$); removing the brief entirely yields 0.833 ($n{=}30$; $\Delta{=}{-}0.067$, CI includes zero), indicating that wrong brief content disrupts recoverability while re-injection alone is not required.
 The trajectory is robust to identity masking, a second LLM matcher, and equal character-budget controls.
 We present DRA-PULSE as a process-level diagnostic of how a specific DRA architecture routes recoverable persona information, not a measure of personalization utility or causal influence.
 \end{abstract}
@@ -687,14 +687,16 @@ deterministically tied to the Planning attribution outcome.
 
 \paragraph{Write-only brief interventions.}
 We freeze Plan/Search/Compress and rewrite finals (Figure~\ref{fig:brief_interventions}).
-On a 15-report slice, removing the brief yields 0.800; injecting another
-persona's brief drops further to 0.467 ($\Delta=-0.467$; CI $[-0.667,-0.200]$).
-Under mismatched briefs, predictions are \textbf{GT 7 / Donor 1 / Other 7}:
-the wrong brief disrupts target recoverability \emph{without} simply
-transferring attribution to the donor.
-A wider write-only no-brief ablation ($n{=}30$ seed-0 runs) yields 0.833
-($\Delta=-0.067$; CI $[-0.167,+0.067]$, includes zero).
-Brief content drives Writing recoverability, not the brief's presence alone.
+A write-only no-brief ablation ($n{=}30$ seed-0 runs) yields 0.833
+($\Delta=-0.067$; CI $[-0.167,+0.067]$, includes zero): the final report
+retains recoverable persona signal even without the Planning brief,
+showing re-injection is not a necessary condition for Writing recoverability.
+On a 15-report slice, injecting a mismatched persona's brief drops accuracy
+to 0.467 ($\Delta=-0.467$; CI $[-0.667,-0.200]$); predictions scatter as
+\textbf{GT 7 / Donor 1 / Other 7}, disrupting target recoverability
+\emph{without} transferring attribution to the donor.
+Together these results show that \emph{wrong} brief content disrupts
+Writing recoverability, while brief re-injection itself is not required for it.
 
 \begin{figure}[ht]
   \centering
@@ -797,11 +799,20 @@ replace multi-backbone or multi-pipeline replication.
 The dip-and-recovery pattern as reported here is therefore a
 characterization of this architecture, not a general property of DRA pipelines.
 
+\paragraph{Identity-shell dominance.}
+The shuffled-actionable control reveals a major limitation of the
+diagnostic's construct validity: recoverability is anchored in identity-shell
+cues rather than transplanted actionable preferences at all four stages
+(Planning Shell$-$Donor $+0.433$; Writing $+0.567$).
+DRA-PULSE measures recoverability of the identity layer reliably, but cannot
+confirm that attributable signal reflects preference-conditioned content rather
+than demographic marker leakage.
+A pre-registered generation-time ablation with actionable-only and
+identity-only persona conditioning (EXP-011) failed the completeness gate;
+the shuffled-actionable result provides the same directional finding
+without establishing the causal structure EXP-011 would have tested.
+
 \paragraph{Other limitations.}
-The shuffled-actionable control shows recoverability is anchored more in
-identity-shell cues than transplanted preferences; DRA-PULSE therefore
-measures recoverability of the identity layer more reliably than of actionable
-persona content.
 Default matcher budgets differ by stage (Search 3.5k / Write 8k chars), but
 BM25, queries-only Search, and equal-budget rematch (seed~0, 3.5k for all
 stages: 0.800/0.517/0.600/0.800) each preserves dip-and-recovery.
