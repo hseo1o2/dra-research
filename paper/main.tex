@@ -412,9 +412,8 @@ evaluator-specific bias.
 The both-evaluator-wrong rate provides a further evaluator-agnostic
 measure: at Search (seed~0), Solar and GPT-5.4-nano both err
 simultaneously on 40\% of decisions (24 of 60), versus 12\% at Writing
-(7 of 60). This 3.3-fold difference in concurrent evaluator failure
-confirms that Search artifacts contain less recoverable persona evidence
-regardless of the evaluator's reasoning capacity.
+(7 of 60). This 3.3-fold difference in concurrent evaluator failure is consistent
+with Search artifacts containing less recoverable persona evidence.
 
 \paragraph{Candidate-construction sensitivity.}
 Because per-ground-truth hard negatives are selected around the target
@@ -685,13 +684,13 @@ deterministically tied to the Planning attribution outcome.
 
 \paragraph{Write-only brief interventions.}
 We freeze Plan/Search/Compress and rewrite finals (Figure~\ref{fig:brief_interventions}).
-On a 15-report slice, injecting another persona's brief drops Write Acc@1 from
-0.933 to 0.467 ($\Delta=-0.467$; CI $[-0.667,-0.200]$).
+On a 15-report slice, removing the brief yields 0.800; injecting another
+persona's brief drops further to 0.467 ($\Delta=-0.467$; CI $[-0.667,-0.200]$).
 Under mismatched briefs, predictions are \textbf{GT 7 / Donor 1 / Other 7}:
 the wrong brief disrupts target recoverability \emph{without} simply
 transferring attribution to the donor.
-Removing the brief entirely on 30 seed-0 runs yields a smaller drop to 0.833
-($\Delta=-0.067$; CI $[-0.167,+0.067]$), with the CI including zero.
+A wider write-only no-brief ablation ($n{=}30$ seed-0 runs) yields 0.833
+($\Delta=-0.067$; CI $[-0.167,+0.067]$, includes zero).
 Brief content---not mere presence---is therefore the interventionally relevant
 factor for Writing recoverability.
 
@@ -751,6 +750,21 @@ Writing     & 0.733 & 0.167 & 0.100 & $+0.567$ & $[+0.267,+0.867]$ \\
 \end{table}
 
 % ---------------------------------------------------------------------------
+\section{Conclusion}
+\label{sec:conclusion}
+
+We introduced N-way stage-wise persona attribution as a process-level
+diagnostic of \emph{persona recoverability}, with DRATracer capturing
+intermediate artifacts.
+On 120 reports, 32 cases lose attribution from Planning to Search and 24
+recover by Writing (trajectory 0.808/0.550/0.592/0.800).
+The shape holds under lexical baselines, a second matcher, masking, symmetric
+candidates, and $N$-sensitivity; brief interventions and utility checks bound
+re-injection and Acc$\neq$utility.
+Results characterize one DRA stack, not multi-backbone generality or
+downstream usefulness.
+
+% ---------------------------------------------------------------------------
 \section{Limitations}
 \label{sec:limitations}
 
@@ -779,11 +793,13 @@ identity-shell cues than transplanted preferences; DRA-PULSE therefore
 measures recoverability of the identity layer more reliably than of actionable
 persona content.
 Default matcher budgets differ by stage (Search 3.5k / Write 8k chars), but
-BM25, queries-only Search, and equal-budget rematch (seed~0, 3.5k all stages)
-preserve dip-and-recovery. Matchers lack human attribution validation;
-seeds share 20 task clusters; hard-negatives carry a candidate-only prior
-(absolute Acc caution); Search views are post-hoc; domain/recovery cells and
-utility scores are exploratory. Acc@1 is not causal mediation or utility.
+BM25, queries-only Search, and equal-budget rematch (seed~0, 3.5k for all
+stages: 0.800/0.517/0.600/0.800) each preserves dip-and-recovery. Matchers
+lack human attribution validation; seeds share 20 task clusters; hard-negatives
+carry a candidate-only prior (absolute Acc caution); Search views are post-hoc;
+domain/recovery cells and utility scores are exploratory; no correction for
+multiple comparisons is applied and interval-based claims should be read
+descriptively. Acc@1 is not causal mediation or utility.
 
 % ---------------------------------------------------------------------------
 \section*{Ethics Statement}
@@ -791,21 +807,6 @@ Stage-wise persona attribution can be dual-use for profiling system logs.
 We study synthetic PDR-Bench personas in closed candidate sets only.
 Recoverability metrics must not be treated as privacy or personalization
 quality certificates without human review and domain safeguards.
-
-% ---------------------------------------------------------------------------
-\section{Conclusion}
-\label{sec:conclusion}
-
-We introduced N-way stage-wise persona attribution as a process-level
-diagnostic of \emph{persona recoverability}, with DRATracer capturing
-intermediate artifacts.
-On 120 reports, 32 cases lose attribution from Planning to Search and 24
-recover by Writing (trajectory 0.808/0.550/0.592/0.800).
-The shape holds under lexical baselines, a second matcher, masking, symmetric
-candidates, and $N$-sensitivity; brief interventions and utility checks bound
-re-injection and Acc$\neq$utility.
-Results characterize one DRA stack, not multi-backbone generality or
-downstream usefulness.
 
 % ---------------------------------------------------------------------------
 \bibliography{refs}
