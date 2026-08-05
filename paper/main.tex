@@ -41,7 +41,7 @@ Persona recoverability follows a \emph{dip-and-recovery} trajectory: accuracy de
 Persona-to-query alignment thins at query execution (MiniLM cosine: $0.269 \to 0.212$), consistent with the Search dip; the Writing prompt's re-injection of the Planning brief is the structural source of the recoverability advantage over Search.
 At the report level, 32 runs lose correct attribution between Planning and Search; 24 of these recover by Writing.
 Injecting a mismatched persona's brief at Writing drops accuracy from 0.933 to 0.467 ($n{=}15$); removing the brief entirely yields 0.833 ($n{=}30$; $\Delta{=}{-}0.067$, CI includes zero)---we do not detect a reduction from removing the brief.
-The trajectory is robust to identity masking, a second LLM matcher, and equal character-budget controls; removing identity information from both artifacts and candidate profiles simultaneously preserves the dip-and-recovery shape and keeps all stages above chance (Writing: 0.617).
+The trajectory is robust to identity masking, a second LLM matcher, and equal character-budget controls; removing identity information from both artifacts and candidate profiles simultaneously sharpens the stage contrast---Planning (0.575) and Writing (0.617) remain above the artifact-free prior (0.450) while Search and Compression collapse to prior level.
 We present DRA-PULSE as a process-level diagnostic of how a specific DRA architecture routes recoverable persona information, not a measure of personalization utility or causal influence.
 \end{abstract}
 
@@ -77,8 +77,8 @@ Our contributions are:
   features---framing, vocabulary register, topical angle---not verbatim
   identity leakage.
   The brief-to-query reformulation at Search is the conditioning bottleneck,
-  compressing structured persona input uniformly across all feature
-  types---a mechanism that generalizes beyond persona to any conditioning
+  compressing structured persona input across all four feature
+  types---a mechanism that may generalize beyond persona to any conditioning
   input passing through a brief-to-query transformation.
 \end{itemize}
 
@@ -254,7 +254,7 @@ Candidate-set-size sensitivity uses prefixes of the same ranking
 High attribution accuracy could arise from \textbf{lexical leakage}---name
 tokens, demographic phrases, or verbatim persona text appearing in an
 artifact---rather than broader persona-conditioned content selection.
-We report one post-processing masking control and one generation-time shuffled-actionable intervention (Table~\ref{tab:shortcut}); two additional generation-time ablations were attempted but did not pass the pre-specified completeness gate (Appendix~\ref{app:exp011}).
+We report five shortcut controls (Table~\ref{tab:shortcut}): two post-matching candidate-profile ablations (candidate-side masking, dual-masked), one post-processing artifact masking, and one generation-time shuffled-actionable intervention; two additional generation-time ablations were attempted but did not pass the pre-specified completeness gate (Appendix~\ref{app:exp011}).
 
 \begin{table}[t]
 \centering
@@ -265,14 +265,18 @@ We report one post-processing masking control and one generation-time shuffled-a
 \toprule
 \textbf{Condition} & \textbf{Manipulation} & \textbf{Tests} \\
 \midrule
-Baseline              & Unmodified persona                          & Upper bound \\
-Identifier-masked     & NER + all-candidate identity-phrase masking & Surface mentions? \\
+Baseline              & Unmodified persona \& profiles              & Upper bound \\
+Artifact-side masked  & NER + identity-phrase masking in artifacts  & Surface mentions in artifacts? \\
 Shuffled-actionable   & Donor actionable prefs, shell identity      & Actionable vs.\ identity? \\
+Candidate-side masked & Basic Attributes removed from candidates    & Identity cues in candidates? \\
+Dual-masked           & Both artifact-side and candidate-side       & Preference-layer only? \\
 \bottomrule
 \end{tabular}}
 \caption{Shortcut control conditions executed in this paper.
-Identifier masking is a post-processing pass on all four existing stage
-artifacts; shuffled-actionable is a 30-report two-seed generation-time intervention.
+Artifact-side masking is a post-processing pass on existing stage artifacts;
+shuffled-actionable is a generation-time intervention (30 reports, both seeds);
+candidate-side and dual-masked conditions re-run the Solar matcher with
+modified candidate profiles.
 Two additional generation-time conditions (actionable-only, identity-only)
 were attempted but did not pass the pre-specified completeness gate
 (Appendix~\ref{app:exp011}).}
@@ -503,7 +507,7 @@ Compression & 0.592 & 0.575 & $-0.017$ \\
 Writing     & 0.800 & 0.783 & $-0.017$ \\
 \bottomrule
 \end{tabular}
-\caption{Solar Acc@1 before and after candidate-derived identity masking.
+\caption{Solar Acc@1 before and after artifact-side identity masking.
 Only Planning changes reliably: $\Delta=-0.083$, task-cluster bootstrap
 95\% CI $[-0.150,-0.025]$. Intervals for the other three deltas include
 zero.}
@@ -802,17 +806,19 @@ attribution from those signals.
 
 \paragraph{Dual-masked condition.}
 Applying both removals simultaneously (identity-masked artifacts presented with
-identity-stripped candidate profiles) drops attribution further but preserves
-the dip-and-recovery trajectory across all stages (Plan: $0.808\to0.575$,
-$\Delta=-0.233$, CI $[-0.350,-0.125]$; Search: $0.550\to0.450$,
-$\Delta=-0.100$, CI $[-0.192,+0.008]$; Compress: $0.592\to0.442$,
-$\Delta=-0.150$, CI $[-0.250,-0.058]$; Write: $0.800\to0.617$,
-$\Delta=-0.183$, CI $[-0.258,-0.100]$; $n=120$).
-All stages remain above chance ($0.333$), including Writing ($0.617$).
-This is the most conservative test of the identity-shell concern: even when
-identity information is absent from both artifact and candidate, preference-layer
-discourse features alone sustain above-chance attribution and the full
-dip-and-recovery shape.
+identity-stripped candidate profiles) drops attribution further
+(Plan: $0.808\to0.575$, $\Delta=-0.233$, CI $[-0.350,-0.125]$;
+Search: $0.550\to0.450$, $\Delta=-0.100$, CI $[-0.192,+0.008]$;
+Compress: $0.592\to0.442$, $\Delta=-0.150$, CI $[-0.250,-0.058]$;
+Write: $0.800\to0.617$, $\Delta=-0.183$, CI $[-0.258,-0.100]$; $n=120$).
+The stage pattern sharpens rather than dissolves: Planning (0.575) and Writing
+(0.617) remain above the artifact-free prior (0.450), while Search (0.450)
+and Compression (0.442) collapse to approximately prior level---the same
+gap that defines the dip-and-recovery trajectory, here in its starkest form.
+This is the most conservative test of the identity-shell concern: the stage
+contrast between brief-reinjected stages (Planning, Writing) and query-execution
+stages (Search, Compression) is preserved by preference-layer discourse features
+alone, without any identity information in artifact or candidate.
 
 \FloatBarrier
 % ---------------------------------------------------------------------------
@@ -824,9 +830,10 @@ diagnostic of \emph{persona recoverability}, with DRATracer capturing
 intermediate artifacts.
 On 120 reports, 32 cases lose attribution from Planning to Search and 24
 recover by Writing (trajectory 0.808/0.550/0.592/0.800).
-The shape holds under lexical baselines, a second matcher, masking, symmetric
-candidates, and $N$-sensitivity; brief interventions and utility checks bound
-re-injection and Acc$\neq$utility.
+The shape holds under lexical baselines, a second matcher, artifact-side masking,
+symmetric candidates, $N$-sensitivity, and dual-masked conditions (Planning and Writing
+stay above the artifact-free prior; Search and Compression collapse to prior level);
+brief interventions and utility checks bound re-injection and Acc$\neq$utility.
 The location of the accuracy drop also indicates where to intervene:
 the persona--query alignment gap at Search is a concrete target for
 conditioning-aware query reformulation.
@@ -870,11 +877,12 @@ confirm that attributable signal reflects preference-conditioned content rather
 than demographic marker leakage.
 The dual-masked condition (§\ref{sec:shortcut_results}) substantially mitigates
 this concern: removing identity from \emph{both} artifact and candidate profiles
-simultaneously preserves the dip-and-recovery trajectory and keeps all stages
-above chance, including Writing ($0.617 > 0.333$).
-Preference-layer discourse features alone thus support above-chance attribution,
-though the absolute accuracy reduction ($\Delta\text{Write}=-0.183$ from
-baseline) confirms that identity-level cues increase resolution when present.
+simultaneously preserves the stage contrast---Planning (0.575) and Writing (0.617)
+remain above the artifact-free prior (0.450) while Search (0.450) and Compression
+(0.442) collapse to approximately prior level.
+The dip-and-recovery pattern is thus preserved by preference-layer discourse
+features alone, though the absolute accuracy reduction ($\Delta\text{Write}=-0.183$
+from baseline) confirms that identity-level cues increase resolution when present.
 A pre-registered generation-time ablation with actionable-only and
 identity-only persona conditioning (EXP-011) failed the completeness gate;
 the shuffled-actionable result provides the same directional finding
@@ -885,7 +893,7 @@ detection toward identity-layer features; however, a prompt ablation removing
 this keyword yields negligible differences (all stage CIs include zero;
 $\Delta\text{Search}=+0.025$ CI $[0.000,+0.050]$,
 $\Delta\text{Write}=-0.017$ CI $[-0.058,+0.025]$,
-$\Delta\text{Plan}=\Delta\text{Compress}=0$; $n=120$), confirming that
+$\Delta\text{Plan}=\Delta\text{Compress}=0$; $n=120$), suggesting that
 identity-shell dominance is artifact-driven rather than prompt-induced.
 
 \paragraph{Other limitations.}
