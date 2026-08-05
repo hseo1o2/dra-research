@@ -58,8 +58,11 @@ The trajectory we observe is a characterization of this specific DRA architectur
 
 Our contributions are:
 \begin{itemize}
-  \item \textbf{Diagnostic task.} We formalize N-way stage-wise closed-set
-  persona attribution for multi-stage DRA pipelines.
+  \item \textbf{Diagnostic reframing.} We re-frame multi-stage DRA evaluation
+  as closed-set persona attribution: given a stage artifact, which of $N$
+  candidate personas generated it? This operationalizes \emph{persona signal}
+  as stage-level recoverability independent of utility, enabling process-level
+  localization of where conditioning signal is lost or recovered across pipeline stages.
   \item \textbf{DRATracer.} A deterministic LangGraph event listener that
   captures artifacts from parallel subgraphs by parent run-ID without
   post-hoc reconstruction---reusable instrumentation for LangGraph-based DRA pipelines.
@@ -68,9 +71,15 @@ Our contributions are:
   24 recover by Writing, with Search showing the largest single-stage accuracy
   drop (Planning~0.808~$\to$~Search~0.550; the Search--Compression gap is smaller
   and its CI includes zero).
-  \item \textbf{Mechanistic analysis.} Search-view decomposition, Planning-brief
-  re-injection analysis, and shortcut controls bound how architecture and
-  identity cues shape recoverability---without equating Acc@1 with utility.
+  \item \textbf{Mechanistic analysis.} Shortcut controls (identity masking,
+  shuffled-actionable, candidate-profile masking) jointly locate the signal:
+  late-stage recoverability carries identity-derived discourse
+  features---framing, vocabulary register, topical angle---not verbatim
+  identity leakage.
+  The brief-to-query reformulation at Search is the conditioning bottleneck,
+  compressing structured persona input uniformly across all feature
+  types---a mechanism that generalizes beyond persona to any conditioning
+  input passing through a brief-to-query transformation.
 \end{itemize}
 
 % ---------------------------------------------------------------------------
