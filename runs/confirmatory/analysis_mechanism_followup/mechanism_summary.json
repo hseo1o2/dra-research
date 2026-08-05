@@ -1,0 +1,95 @@
+{
+  "otherbrief_pred_distribution": {
+    "GT": 7,
+    "Other": 7,
+    "Donor": 1
+  },
+  "robust_table": {
+    "per_gt_hardneg": {
+      "plan": 0.808,
+      "search": 0.55,
+      "compress": 0.592,
+      "write": 0.8
+    },
+    "symmetric": {
+      "plan": 0.7333,
+      "search": 0.5417,
+      "compress": 0.6083,
+      "write": 0.7083
+    },
+    "prior_correct": {
+      "plan": 0.907,
+      "search": 0.593,
+      "compress": 0.593,
+      "write": 0.833,
+      "n": 54
+    },
+    "prior_wrong": {
+      "plan": 0.727,
+      "search": 0.515,
+      "compress": 0.591,
+      "write": 0.773,
+      "n": 66
+    },
+    "strict_quality": {
+      "plan": 0.822,
+      "search": 0.567,
+      "compress": 0.611,
+      "write": 0.811,
+      "n": 90
+    }
+  },
+  "plan_search_transition_matrix": {
+    "plan_ok_search_ok": 65,
+    "plan_ok_search_wrong": 32,
+    "plan_wrong_search_ok": 1,
+    "plan_wrong_search_wrong": 22
+  },
+  "token_retention": {
+    "mean_persona_in_brief": 0.061,
+    "mean_persona_in_queries": 0.019,
+    "mean_brief_actionable_kept_in_queries": 0.169,
+    "by_domain_query_retention": {
+      "Career": 0.022,
+      "Creative": 0.018,
+      "Education": 0.028,
+      "Finance": 0.01,
+      "Health": 0.024,
+      "Law": 0.017,
+      "Parenting": 0.036,
+      "Real Estate": 0.006,
+      "Shopping": 0.009,
+      "Travel": 0.018
+    },
+    "query_retention_search_correct": 0.02,
+    "query_retention_search_wrong": 0.017,
+    "n_reports": 120
+  },
+  "qualitative_case": {
+    "run_id": "pilot_task12_User5_seed0",
+    "gt": "User5",
+    "preds": {
+      "plan": "User5",
+      "search": "User2",
+      "compress": "User2",
+      "write": "User5"
+    },
+    "correct": {
+      "plan": true,
+      "search": false,
+      "compress": false,
+      "write": true
+    },
+    "brief_excerpt": "I am a graduate student in mechanical automation looking for a structured six-month self-study plan to enhance my self-awareness and emotional management. I frequently experience emotional fluctuations that lead to poor decision-making and strained interpersonal relationships. I need actionable recommendations for self-study books, online courses, and practical daily strategies to help me systematically identify emotional triggers, enhance self-reflection, and build effective emotional regulation mechanisms. Specifically, the research should cover: 1. Self-Study Books: High-quality, evidence-based books (focusing on emotional intelligence, Cognitive Behavioral Therapy principles, mindfulness",
+    "queries": [
+      "\"Feeling Good\" \"David Burns\" 中文书名 出版社 ISBN",
+      "\"Mind Over Mood\" Greenberger Padesky 中文书名 出版社 ISBN",
+      "\"Dialectical Behavior Therapy Skills Workbook\" McKay 中文书名 出版社 ISBN",
+      "\"Mindfulness: An Eight-Week Plan for Finding Peace in a Frantic World\" 中文书名 出版社 ISBN",
+      "\"The Dialectical Behavior Therapy Skills Workbook\" McKay 中文 出版社 ISBN",
+      "\"Mindfulness: An Eight-Week Plan for Finding Peace in a Frantic World\" 中文 出版社 ISBN"
+    ],
+    "compress_excerpt": "Research top evidence-based self-study books on Cognitive Behavioral Therapy (CB\n[{'type': 'text', 'text': '**List of Queries and Tool Calls Made**\\n\\n1. `serper_search`: `\"Feeling Good\" \"David Burns\" 中文书名 出版社 ISBN`\\n2. `serper_search`: `\"Mind Over Mood\" Greenberger Padesky 中文书名 出版社 ISBN`\\n3. `serper_search`: `\"Dialectical Behavi\nResearch top-rated online courses on major platforms like Coursera and edX (and \n[{'type': 'text', 'text': '**List of Queries and Tool Calls Made**\\n\\n* **Serper Web Se",
+    "report_excerpt": "# Comprehensive Six-Month Self-Study Guide for Emotional Regulation and Self-Awareness\n\n## Executive Overview\n\nDeveloping self-awareness and emotional management requires a systematic, evidence-based approach. For individuals with an analytical background—such as students or professionals in engineering and technical fields—treating emotional regulation as an information-processing system yields the highest rate of skill acquisition. Emotional fluctuations, interpersonal friction, and reactive d"
+  }
+}
