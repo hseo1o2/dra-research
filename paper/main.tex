@@ -675,9 +675,12 @@ Snippets only & 0.483 & 0.583 & 0.533 \\
   \centering
   \includegraphics[width=\columnwidth]{figures/persona_feature_retention.pdf}
   \caption{Section-level persona-token retention in Planning briefs vs.\
-    executed Search queries ($n{=}120$). All four profile sections---identity,
-    interests, goals/constraints, and decision style---thin simultaneously;
-    the Search dip is not attributable to a single missing section.
+    executed Search queries ($n{=}120$). Retention is computed over
+    actionable tokens (identity fields excluded from the denominator for the
+    aggregate figure; each bucket uses its own token set).
+    All four profile sections---identity, interests, goals/constraints, and
+    decision style---thin simultaneously; the Search dip is not attributable
+    to a single missing section.
     Field-to-bucket mapping in Appendix~\ref{app:retention_protocol}.}
   \label{fig:feature_retention}
 \end{figure}
@@ -744,7 +747,7 @@ A GPT-4o-mini exploratory judge on 120 reports yields mean 4.01/3.65
 \subsection{Shortcut Controls}
 \label{sec:shortcut_results}
 
-\paragraph{Identity masking.}
+\paragraph{Artifact-side identity masking.}
 The strong Planning reduction under masking indicates that early-stage
 recoverability partly uses direct identity evidence. In contrast, Search,
 Compression, and Writing change by at most 0.017, and the masked Writing
@@ -787,7 +790,7 @@ Writing     & 0.733 & 0.167 & 0.100 & $+0.567$ & $[+0.267,+0.867]$ \\
 \label{tab:shuffled_actionable}
 \end{table}
 
-\paragraph{Candidate-profile identity masking.}
+\paragraph{Candidate-side identity masking.}
 A complementary control masks identity sections from the \emph{candidate profiles}
 rather than the artifacts: removing ``Basic Attributes'' (identity characteristics,
 family status, and spatial characteristics) while leaving actionable sections
@@ -813,8 +816,9 @@ Compress: $0.592\to0.442$, $\Delta=-0.150$, CI $[-0.250,-0.058]$;
 Write: $0.800\to0.617$, $\Delta=-0.183$, CI $[-0.258,-0.100]$; $n=120$).
 The stage pattern sharpens rather than dissolves: Planning (0.575) and Writing
 (0.617) remain above the artifact-free prior (0.450), while Search (0.450)
-and Compression (0.442) collapse to approximately prior level---the same
-gap that defines the dip-and-recovery trajectory, here in its starkest form.
+and Compression (0.442) collapse to approximately prior level (Search $\Delta$
+CI includes zero)---the same gap that defines the dip-and-recovery trajectory,
+here in its starkest form.
 This is the most conservative test of the identity-shell concern: the stage
 contrast between brief-reinjected stages (Planning, Writing) and query-execution
 stages (Search, Compression) is preserved by preference-layer discourse features
@@ -875,7 +879,7 @@ cues rather than transplanted actionable preferences at all four stages
 DRA-PULSE measures recoverability of the identity layer reliably, but cannot
 confirm that attributable signal reflects preference-conditioned content rather
 than demographic marker leakage.
-The dual-masked condition (§\ref{sec:shortcut_results}) substantially mitigates
+The dual-masked condition (\S\ref{sec:shortcut_results}) substantially mitigates
 this concern: removing identity from \emph{both} artifact and candidate profiles
 simultaneously preserves the stage contrast---Planning (0.575) and Writing (0.617)
 remain above the artifact-free prior (0.450) while Search (0.450) and Compression
@@ -959,8 +963,7 @@ accuracies by generation seed. BM25 exceeds Solar at Search in seed~0
 (0.600 vs.\ 0.533) but not seed~1 (0.533 vs.\ 0.567), so the small
 combined advantage is not seed-stable. Random accuracy is near the 0.333
 chance level at most stages; Writing (0.250 in both seeds) falls
-consistently below, consistent with the candidate-prior structure
-at the final stage (construction-center heuristic: 0.450 at Writing).
+consistently below, consistent with sampling variation at $n{=}60$.
 
 \begin{table}[!ht]
 \centering
@@ -1209,10 +1212,15 @@ pre-registered gate protocol (DEC-006).
 The Solar matcher was not run on these artifacts. Because the gate failure
 disqualifies these results from confirmatory use, we do not report
 attribution accuracy for the ablation conditions. The primary shortcut
-evidence in this paper relies instead on the post-hoc identifier-masking
-control (Table~\ref{tab:masked_results}) and the generation-time
-shuffled-actionable intervention (Table~\ref{tab:shuffled_actionable}),
-both of which passed their pre-specified quality criteria.
+evidence in this paper relies instead on the artifact-side masking control
+(Table~\ref{tab:masked_results}), the generation-time shuffled-actionable
+intervention (Table~\ref{tab:shuffled_actionable}), and the candidate-side
+and dual-masked conditions (\S\ref{sec:shortcut_results}), all of which
+passed their pre-specified quality criteria.
+The dual-masked condition is the closest available proxy to EXP-011's
+intended question---it removes identity from both artifact and candidate
+and demonstrates that the dip-and-recovery stage contrast is preserved
+by preference-layer features alone.
 
 % ---------------------------------------------------------------------------
 \section{Candidate-Set-Size Sensitivity}
@@ -1228,8 +1236,9 @@ chance scaling rather than a genuine worsening of Search attribution
 (chance-normalized Search accuracy rises from 0.266 at $N=2$ to 0.325
 at $N=3$ to 0.339 at $N=5$).
 Writing accuracy exceeds Search by $+0.142$ ($N=2$),
-$+0.250$ ($N=3$), and $+0.246$ ($N=5$). All stages exceed their
-respective chance levels at all three settings, confirming that the
+$+0.250$ ($N=3$), and $+0.246$ ($N=5$). All stages exceed their respective 1/$N$ chance levels (0.500, 0.333,
+0.200 for $N{=}2,3,5$; distinct from the 0.450 artifact-free prior used
+in the main analysis) at all three settings, confirming that the
 dip-and-recovery pattern is robust to the number of hard-negative candidates.
 
 \begin{table}[!ht]
