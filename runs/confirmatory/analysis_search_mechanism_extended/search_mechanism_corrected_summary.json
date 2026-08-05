@@ -1,0 +1,87 @@
+{
+  "query_definition": "status in {ok,success} only (matcher-aligned Search artifact)",
+  "n": 120,
+  "means": {
+    "n_requested": 29.35,
+    "n_attempted": 6.9,
+    "n_ok": 5.241666666666666,
+    "sim_persona_brief": 0.2688106716610491,
+    "sim_persona_query": 0.21160787011807164,
+    "sim_brief_query": 0.49342818213626743,
+    "feature_retention": {
+      "identity": {
+        "brief": 0.10001353837730888,
+        "query": 0.019511961893639674
+      },
+      "decision_style": {
+        "brief": 0.01971873007167125,
+        "query": 0.0019295709736886209
+      },
+      "interests": {
+        "brief": 0.0806771079563702,
+        "query": 0.009546991703810674
+      },
+      "goals_constraints": {
+        "brief": 0.07462878466756036,
+        "query": 0.007759948395450934
+      }
+    },
+    "lex_actionable_brief": 0.06848573394350048,
+    "lex_actionable_query": 0.007869205182445336
+  },
+  "search_correct": {
+    "n": 66,
+    "sim_persona_query": 0.23617875938670654,
+    "n_ok": 5.2727272727272725,
+    "unique_ok_tokens": 25.696969696969695,
+    "academic_frac": 0.12247474747474749
+  },
+  "search_wrong": {
+    "n": 54,
+    "sim_persona_query": 0.18157678323418455,
+    "n_ok": 5.203703703703703,
+    "unique_ok_tokens": 25.14814814814815,
+    "academic_frac": 0.04864672364672365
+  },
+  "bootstrap": {
+    "unit": "taskid",
+    "reps": 2000,
+    "persona_brief_minus_query": {
+      "mean": 0.057202801542977494,
+      "ci95_low": 0.041823934949934485,
+      "ci95_high": 0.07497310607383649,
+      "n_boot": 2000
+    },
+    "search_correct_minus_wrong_persona_query": {
+      "mean": 0.05460197615252199,
+      "ci95_low": 0.019009299858934542,
+      "ci95_high": 0.08811218626325645,
+      "n_boot": 2000
+    }
+  },
+  "protocol": {
+    "feature_buckets": {
+      "identity": [
+        "Basic Attributes.Identity Characteristics",
+        "Basic Attributes.Family Status",
+        "Basic Attributes.Long-term Spatial Characteristics"
+      ],
+      "decision_style": [
+        "Behavioral Characteristics.Personality Traits",
+        "Behavioral Characteristics.Environment.Time"
+      ],
+      "interests": [
+        "Behavioral Characteristics.Preferences and Interests",
+        "Behavioral Characteristics.Online Usage Habits",
+        "Behavioral Characteristics.Offline Long-term Behavior"
+      ],
+      "goals_constraints": [
+        "Health Status",
+        "Financial Information"
+      ]
+    },
+    "token_pattern": "[a-z0-9]+ lowercased; stopwords removed; len>2",
+    "retention": "|persona_bucket \u2229 artifact_tokens| / |persona_bucket|",
+    "embedding": "all-MiniLM-L6-v2 cosine on full persona flatten vs brief vs joined ok-queries"
+  }
+}

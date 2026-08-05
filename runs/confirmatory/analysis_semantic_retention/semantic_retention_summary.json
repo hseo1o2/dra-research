@@ -1,0 +1,37 @@
+{
+  "model": "all-MiniLM-L6-v2",
+  "n": 120,
+  "means": {
+    "sim_persona_brief": 0.284,
+    "sim_persona_query": 0.217,
+    "sim_brief_query": 0.484,
+    "sim_actionable_brief": 0.236,
+    "sim_actionable_query": 0.234,
+    "drop_persona_brief_to_query": 0.067
+  },
+  "search_correct": {
+    "n": 66,
+    "sim_persona_query": 0.235,
+    "sim_brief_query": 0.493,
+    "generic_hit_rate": 0.007
+  },
+  "search_wrong": {
+    "n": 54,
+    "sim_persona_query": 0.195,
+    "sim_brief_query": 0.473,
+    "generic_hit_rate": 0.022
+  },
+  "by_domain_persona_query_sim": {
+    "Career": 0.232,
+    "Creative": 0.16,
+    "Education": 0.279,
+    "Finance": 0.187,
+    "Health": 0.098,
+    "Law": 0.248,
+    "Parenting": 0.248,
+    "Real Estate": 0.277,
+    "Shopping": 0.183,
+    "Travel": 0.257
+  },
+  "interpretation": "Semantic cosine similarities show planning briefs retain moderate persona alignment, while aggregated Search queries drop substantially. This supports genericity at query formulation beyond pure lexical token loss."
+}

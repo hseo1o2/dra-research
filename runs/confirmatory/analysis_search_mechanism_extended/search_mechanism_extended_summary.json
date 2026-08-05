@@ -1,0 +1,263 @@
+{
+  "n": 120,
+  "n_search_correct": 66,
+  "n_search_wrong": 54,
+  "overall": {
+    "n_queries": 29.35,
+    "n_unique_queries": 29.333333333333332,
+    "query_unique_ratio": 0.9994252873563219,
+    "mean_query_chars": 52.448521481327035,
+    "unique_query_tokens": 69.51666666666667,
+    "query_ttr": 0.47272288718321676,
+    "query_entropy": 5.286146126407586,
+    "generic_hit_rate": 0.05093174552380981,
+    "n_unique_hosts": 12.208333333333334,
+    "url_retail_books_frac": 0.06853535353535353,
+    "url_academic_frac": 0.08925213675213675,
+    "url_course_frac": 0.0038888888888888888,
+    "ret_identity_brief": 0.10001353837730888,
+    "ret_identity_query": 0.034751103131360477,
+    "drop_identity": 0.0652624352459484,
+    "ret_decision_style_brief": 0.01971873007167125,
+    "ret_decision_style_query": 0.00546887426299191,
+    "drop_decision_style": 0.01424985580867934,
+    "ret_interests_brief": 0.0806771079563702,
+    "ret_interests_query": 0.022455941023236,
+    "drop_interests": 0.0582211669331342,
+    "ret_goals_constraints_brief": 0.07462878466756036,
+    "ret_goals_constraints_query": 0.018278493263505013,
+    "drop_goals_constraints": 0.05635029140405534
+  },
+  "search_correct": {
+    "n_queries": 31.37878787878788,
+    "n_unique_queries": 31.37878787878788,
+    "query_unique_ratio": 1.0,
+    "mean_query_chars": 53.47531920469391,
+    "unique_query_tokens": 72.89393939393939,
+    "query_ttr": 0.4397736496989322,
+    "query_entropy": 5.3476598890606,
+    "generic_hit_rate": 0.04942735932366526,
+    "n_unique_hosts": 12.363636363636363,
+    "url_retail_books_frac": 0.07095959595959596,
+    "url_academic_frac": 0.12247474747474749,
+    "url_course_frac": 0.00101010101010101,
+    "ret_identity_brief": 0.11599195308182224,
+    "ret_identity_query": 0.0407440215384458,
+    "drop_identity": 0.07524793154337645,
+    "ret_decision_style_brief": 0.01952770541005835,
+    "ret_decision_style_query": 0.007276764629705806,
+    "drop_decision_style": 0.012250940780352545,
+    "ret_interests_brief": 0.08421695939513836,
+    "ret_interests_query": 0.02474989900698088,
+    "drop_interests": 0.05946706038815748,
+    "ret_goals_constraints_brief": 0.07469023686169501,
+    "ret_goals_constraints_query": 0.018525538980270734,
+    "drop_goals_constraints": 0.05616469788142428
+  },
+  "search_wrong": {
+    "n_queries": 26.87037037037037,
+    "n_unique_queries": 26.833333333333332,
+    "query_unique_ratio": 0.9987228607918263,
+    "mean_query_chars": 51.19354648610085,
+    "unique_query_tokens": 65.38888888888889,
+    "query_ttr": 0.5129941774417868,
+    "query_entropy": 5.210962638720567,
+    "generic_hit_rate": 0.052770439768430925,
+    "n_unique_hosts": 12.018518518518519,
+    "url_retail_books_frac": 0.06557239057239057,
+    "url_academic_frac": 0.04864672364672365,
+    "url_course_frac": 0.007407407407407408,
+    "ret_identity_brief": 0.08048436484957032,
+    "ret_identity_query": 0.027426425078256208,
+    "drop_identity": 0.05305793977131411,
+    "ret_decision_style_brief": 0.01995220465808701,
+    "ret_decision_style_query": 0.0032592304814527038,
+    "drop_decision_style": 0.016692974176634307,
+    "ret_interests_brief": 0.07635062286454246,
+    "ret_interests_query": 0.01965221459865893,
+    "drop_interests": 0.056698408265883515,
+    "ret_goals_constraints_brief": 0.07455367643028465,
+    "ret_goals_constraints_query": 0.01797654849856913,
+    "drop_goals_constraints": 0.056577127931715515
+  },
+  "certainty_by_stage": {
+    "plan": {
+      "certainty_score": 0.7583333333333333,
+      "has_strong": 0.425,
+      "has_hedge": 0.03333333333333333,
+      "cand_mentions": 1.5416666666666667,
+      "acc": 0.8083333333333333
+    },
+    "search": {
+      "certainty_score": 0.7958333333333333,
+      "has_strong": 0.39166666666666666,
+      "has_hedge": 0.008333333333333333,
+      "cand_mentions": 1.2583333333333333,
+      "acc": 0.55
+    },
+    "compress": {
+      "certainty_score": 0.6583333333333333,
+      "has_strong": 0.2833333333333333,
+      "has_hedge": 0.058333333333333334,
+      "cand_mentions": 1.2916666666666667,
+      "acc": 0.5916666666666667
+    },
+    "write": {
+      "certainty_score": 0.5833333333333334,
+      "has_strong": 0.25833333333333336,
+      "has_hedge": 0.016666666666666666,
+      "cand_mentions": 1.4416666666666667,
+      "acc": 0.8
+    }
+  },
+  "feature_retention_overall": {
+    "identity": {
+      "brief": 0.10001353837730888,
+      "query": 0.034751103131360477,
+      "drop": 0.0652624352459484
+    },
+    "decision_style": {
+      "brief": 0.01971873007167125,
+      "query": 0.00546887426299191,
+      "drop": 0.01424985580867934
+    },
+    "interests": {
+      "brief": 0.0806771079563702,
+      "query": 0.022455941023236,
+      "drop": 0.0582211669331342
+    },
+    "goals_constraints": {
+      "brief": 0.07462878466756036,
+      "query": 0.018278493263505013,
+      "drop": 0.05635029140405534
+    }
+  },
+  "deltas_search_correct_minus_wrong": {
+    "n_queries": 4.508417508417509,
+    "n_unique_queries": 4.545454545454547,
+    "query_unique_ratio": 0.0012771392081737387,
+    "mean_query_chars": 2.2817727185930607,
+    "unique_query_tokens": 7.505050505050505,
+    "query_ttr": -0.07322052774285459,
+    "query_entropy": 0.136697250340033,
+    "generic_hit_rate": -0.003343080444765667,
+    "n_unique_hosts": 0.34511784511784427,
+    "url_retail_books_frac": 0.005387205387205385,
+    "url_academic_frac": 0.07382802382802384,
+    "url_course_frac": -0.006397306397306398,
+    "ret_identity_brief": 0.03550758823225192,
+    "ret_identity_query": 0.013317596460189592,
+    "drop_identity": 0.022189991772062337,
+    "ret_decision_style_brief": -0.00042449924802865843,
+    "ret_decision_style_query": 0.004017534148253102,
+    "drop_decision_style": -0.004442033396281762,
+    "ret_interests_brief": 0.007866336530595902,
+    "ret_interests_query": 0.005097684408321951,
+    "drop_interests": 0.002768652122273965,
+    "ret_goals_constraints_brief": 0.00013656043141035967,
+    "ret_goals_constraints_query": 0.0005489904817016049,
+    "drop_goals_constraints": -0.0004124300502912348
+  },
+  "qualitative_candidates": [
+    {
+      "run_id": "pilot_task12_User5_seed0",
+      "gt": "User5",
+      "generic_hit_rate": 0.8620689655172413,
+      "drop_identity": 0.07758620689655173,
+      "drop_decision_style": 0.05454545454545455,
+      "drop_interests": 0.07058823529411765,
+      "brief_excerpt": "I am a graduate student in mechanical automation looking for a structured six-month self-study plan to enhance my self-awareness and emotional management. I frequently experience emotional fluctuations that lead to poor decision-making and strained interpersonal relationships. I ",
+      "sample_queries": [
+        "\"Feeling Good\" \"David Burns\" \u4e2d\u6587\u4e66\u540d \u51fa\u7248\u793e ISBN",
+        "\"Mind Over Mood\" Greenberger Padesky \u4e2d\u6587\u4e66\u540d \u51fa\u7248\u793e ISBN",
+        "\"Dialectical Behavior Therapy Skills Workbook\" McKay \u4e2d\u6587\u4e66\u540d \u51fa\u7248\u793e ISBN",
+        "\"Mindfulness: An Eight-Week Plan for Finding Peace in a Frantic World\" \u4e2d\u6587\u4e66\u540d \u51fa\u7248\u793e ISBN",
+        "\"The Dialectical Behavior Therapy Skills Workbook\" McKay \u4e2d\u6587 \u51fa\u7248\u793e ISBN",
+        "\"Mindfulness: An Eight-Week Plan for Finding Peace in a Frantic World\" \u4e2d\u6587 \u51fa\u7248\u793e ISBN"
+      ],
+      "search_pred": "User2",
+      "write_pred": "User5"
+    },
+    {
+      "run_id": "pilot_task12_User5_seed1",
+      "gt": "User5",
+      "generic_hit_rate": 0.5,
+      "drop_identity": 0.03448275862068966,
+      "drop_decision_style": 0.10909090909090907,
+      "drop_interests": 0.050980392156862744,
+      "brief_excerpt": "I am a 22-25 year old male graduate student in mechanical automation with a strong preference for structured, analytical learning and evidence-based self-improvement. Over the next six months, I plan to systematically improve my self-awareness and emotional regulation to reduce d",
+      "sample_queries": [
+        "\"cognitive behavioral therapy\" books for engineers analytical mindset",
+        "books emotion regulation neurobiology cognitive science analytical mindset engineering",
+        "\"Unwinding Anxiety\" \"Search Inside Yourself\" \"The Happiness Trap\" \"Mind Over Mood\"",
+        "\"Handbook of Emotion Regulation\" \"James Gross\" process model situation attention appraisal response",
+        "\"How Emotions Are Made\" Lisa Feldman Barrett predictive processing emotion regulation",
+        "\"Managing Emotions in Times of Uncertainty and Stress\" Yale Coursera"
+      ],
+      "search_pred": "User2",
+      "write_pred": "User5"
+    },
+    {
+      "run_id": "pilot_task7_User18_seed1",
+      "gt": "User18",
+      "generic_hit_rate": 0.17647058823529413,
+      "drop_identity": 0.03738317757009346,
+      "drop_decision_style": 0.0,
+      "drop_interests": 0.04807692307692307,
+      "brief_excerpt": "I am planning to launch an online AI education startup targeting university students within the next year, with the core goal of significantly improving their learning efficiency through innovative courses and integrated AI tools. To move systematically from concept to execution,",
+      "sample_queries": [
+        "university student AI tool adoption habits pain points willingness to pay EdTech",
+        "AI EdTech metrics token cost per user LTV CAC retention DAU MAU",
+        "AI EdTech monetization models freemium vs campus licensing case studies Quizlet Chegg Gauth",
+        "\"Chegg\" AI impact revenue subscriber decline \"ChatGPT\"",
+        "\"Khanmigo\" pricing cost per student \"Khan Academy\" AI",
+        "\"Gauth\" ByteDance \"Answer.ai\" AI study app revenue growth"
+      ],
+      "search_pred": "User8",
+      "write_pred": "User18"
+    },
+    {
+      "run_id": "pilot_task33_User7_seed1",
+      "gt": "User7",
+      "generic_hit_rate": 0.15151515151515152,
+      "drop_identity": 0.05263157894736842,
+      "drop_decision_style": 0.0,
+      "drop_interests": 0.07766990291262135,
+      "brief_excerpt": "I am looking to purchase a complete set of daily pet care essentials for my pet, a lively small white Pomeranian named Xiaobai, to improve his daily comfort and optimize my pet care efficiency. Please conduct a detailed market research study comparing mainstream pet product brand",
+      "sample_queries": [
+        "PETKIT YumShare Dual Hopper Fresh Element Solo PETLIBRO Granary Air smart feeder comparison specs price desiccant",
+        "PETKIT Eversweet 3 Pro Dockstream wireless Uahpet Catit PIXI water fountain noise db filter cost",
+        "Furbo 360 Dog Camera Eufy Pet D605 Enabot Ebo Air Aqara pet camera subscription treats local storage",
+        "PETLIBRO Granary Smart Feeder PETLIBRO Air smart feeder kibble size bowl price desiccant",
+        "PETLIBRO Dockstream vs Uahpet Zero vs Catit PIXI Smart Fountain noise dB stainless steel filter replacement cost",
+        "Furbo 360 vs Eufy D605 vs Enabot Ebo Air vs Aqara G3 pricing subscription treats local storage"
+      ],
+      "search_pred": "User2",
+      "write_pred": "User7"
+    },
+    {
+      "run_id": "pilot_task48_User13_seed1",
+      "gt": "User13",
+      "generic_hit_rate": 0.06666666666666667,
+      "drop_identity": 0.10084033613445378,
+      "drop_decision_style": 0.0,
+      "drop_interests": 0.0,
+      "brief_excerpt": "I am a single mother living in Shanghai with a background in design and art, and I want to design a comprehensive 6-month art education plan to promote the creative development and emotional expression of my 5-year-old child, Xiaoyu. Please conduct thorough research to help me bu",
+      "sample_queries": [
+        "Viktor Lowenfeld preschematic stage 5 year old artistic development transition schematic",
+        "Reggio Emilia early childhood art atelier provocation documentation hundred languages",
+        "Orff Schulwerk Dalcroze Eurhythmics Kodaly comparison early childhood music movement",
+        "early childhood art therapy self regulation emotional release 5 year old fine motor",
+        "\"Preschematic stage\" Lowenfeld age 5 visual arts symbols baseline human figure",
+        "process vs product praise early childhood art descriptive praise language examples"
+      ],
+      "search_pred": "User10",
+      "write_pred": "User13"
+    }
+  ],
+  "notes": [
+    "Matcher has no calibrated confidence field; certainty_score is a free-text proxy (strong exclusive language \u2212 hedge language).",
+    "Feature buckets are section-level lexical retention, not causal ablation.",
+    "Generic phrases are a fixed surface list for topic-catalog query patterns."
+  ]
+}
